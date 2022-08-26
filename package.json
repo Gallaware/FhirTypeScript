@@ -25,7 +25,10 @@
     "4.0",
     "TypeScript",
     "ValidValues",
-    "Labels"
+    "FHIR Labels",
+    "serialization",
+    "deserialization",
+    "class-transformer"
   ],
   "author": "Gallaware, Inc.",
   "license": "Apache-2.0",
