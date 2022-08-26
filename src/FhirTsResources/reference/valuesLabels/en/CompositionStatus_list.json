@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "preliminary", "label": "Preliminary", "description": "Preliminary" },
+{ "value": "final", "label": "Final", "description": "Final" },
+{ "value": "amended", "label": "Amended", "description": "Amended" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" }
+]
+}

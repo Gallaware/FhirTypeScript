@@ -1,0 +1,11 @@
+{ "valuesLabels":[
+{ "value": "preparation", "label": "Preparation", "description": "Preparation" },
+{ "value": "in-progress", "label": "In Progress", "description": "In Progress" },
+{ "value": "not-done", "label": "Not Done", "description": "Not Done" },
+{ "value": "on-hold", "label": "On Hold", "description": "On Hold" },
+{ "value": "stopped", "label": "Stopped", "description": "Stopped" },
+{ "value": "completed", "label": "Completed", "description": "Completed" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "on", "label": "On", "description": "On" },
+{ "value": "off", "label": "Off", "description": "Off" },
+{ "value": "standby", "label": "Standby", "description": "Standby" },
+{ "value": "entered-in-error", "label": "Entered In Error", "description": "Entered In Error" }
+]
+}

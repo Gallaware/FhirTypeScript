@@ -1,0 +1,33 @@
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "Appointment", "description": "Appointment" },
+{ "value": "CommunicationRequest", "label": "CommunicationRequest", "description": "CommunicationRequest" },
+{ "value": "DeviceRequest", "label": "DeviceRequest", "description": "DeviceRequest" },
+{ "value": "MedicationRequest", "label": "MedicationRequest", "description": "MedicationRequest" },
+{ "value": "NutritionOrder", "label": "NutritionOrder", "description": "NutritionOrder" },
+{ "value": "Task", "label": "Task", "description": "Task" },
+{ "value": "ServiceRequest", "label": "ServiceRequest", "description": "ServiceRequest" },
+{ "value": "VisionPrescription", "label": "VisionPrescription", "description": "VisionPrescription" }
+]
+}
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "Appuntamento", "description": "Appuntamento" },
+{ "value": "CommunicationRequest", "label": "RichiestaDiComunicazione", "description": "RichiestaDiComunicazione" },
+{ "value": "DeviceRequest", "label": "RichiestaDispositivo", "description": "RichiestaDispositivo" },
+{ "value": "MedicationRequest" },
+{ "value": "NutritionOrder" },
+{ "value": "Task" },
+{ "value": "ServiceRequest", "label": "RichiestaDiServizio", "description": "RichiestaDiServizio" },
+{ "value": "VisionPrescription" }
+]
+}
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "RendezVous", "description": "RendezVous" },
+{ "value": "CommunicationRequest", "label": "DemandeDeCommunication", "description": "DemandeDeCommunication" },
+{ "value": "DeviceRequest", "label": "DemandeUtilisationDispositif", "description": "DemandeUtilisationDispositif" },
+{ "value": "MedicationRequest", "label": "PrescriptionMédicamenteuseTODO", "description": "PrescriptionMédicamenteuseTODO" },
+{ "value": "NutritionOrder", "label": "OrdreNutrition", "description": "OrdreNutrition" },
+{ "value": "Task" },
+{ "value": "ServiceRequest", "label": "DemandeService", "description": "DemandeService" },
+{ "value": "VisionPrescription", "label": "PrescriptionVision", "description": "PrescriptionVision" }
+]
+}

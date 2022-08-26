@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "mon", "label": "Monday", "description": "Monday" },
+{ "value": "tue", "label": "Tuesday", "description": "Tuesday" },
+{ "value": "wed", "label": "Wednesday", "description": "Wednesday" },
+{ "value": "thu", "label": "Thursday", "description": "Thursday" },
+{ "value": "fri", "label": "Friday", "description": "Friday" },
+{ "value": "sat", "label": "Saturday", "description": "Saturday" },
+{ "value": "sun", "label": "Sunday", "description": "Sunday" }
+]
+}

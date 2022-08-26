@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "completed", "label": "Completed", "description": "Completed" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "intended", "label": "Intended", "description": "Intended" },
+{ "value": "stopped", "label": "Stopped", "description": "Stopped" },
+{ "value": "on-hold", "label": "On Hold", "description": "On Hold" }
+]
+}

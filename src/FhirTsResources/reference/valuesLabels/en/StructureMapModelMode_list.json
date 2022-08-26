@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "source", "label": "Source Structure Definition", "description": "Source Structure Definition" },
+{ "value": "queried", "label": "Queried Structure Definition", "description": "Queried Structure Definition" },
+{ "value": "target", "label": "Target Structure Definition", "description": "Target Structure Definition" },
+{ "value": "produced", "label": "Produced Structure Definition", "description": "Produced Structure Definition" }
+]
+}

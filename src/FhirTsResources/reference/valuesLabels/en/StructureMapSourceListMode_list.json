@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "first", "label": "First", "description": "First" },
+{ "value": "not_first", "label": "All but the first", "description": "All but the first" },
+{ "value": "last", "label": "Last", "description": "Last" },
+{ "value": "not_last", "label": "All but the last", "description": "All but the last" },
+{ "value": "only_one", "label": "Enforce only one", "description": "Enforce only one" }
+]
+}

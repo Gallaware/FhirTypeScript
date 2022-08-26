@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "phone", "label": "Phone", "description": "Phone" },
+{ "value": "fax", "label": "Fax", "description": "Fax" },
+{ "value": "email", "label": "Email", "description": "Email" },
+{ "value": "pager", "label": "Pager", "description": "Pager" },
+{ "value": "url", "label": "URL", "description": "URL" },
+{ "value": "sms", "label": "SMS", "description": "SMS" },
+{ "value": "other", "label": "Other", "description": "Other" }
+]
+}

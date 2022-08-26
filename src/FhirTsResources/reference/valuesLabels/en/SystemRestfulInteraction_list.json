@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "transaction", "label": "transaction", "description": "transaction" },
+{ "value": "batch", "label": "batch", "description": "batch" },
+{ "value": "search-system", "label": "search-system", "description": "search-system" },
+{ "value": "history-system", "label": "history-system", "description": "history-system" }
+]
+}

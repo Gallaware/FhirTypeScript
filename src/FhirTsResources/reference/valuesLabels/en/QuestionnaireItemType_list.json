@@ -1,0 +1,19 @@
+{ "valuesLabels":[
+{ "value": "group", "label": "Group", "description": "Group" },
+{ "value": "display", "label": "Display", "description": "Display" },
+{ "value": "boolean", "label": "Boolean", "description": "Boolean" },
+{ "value": "decimal", "label": "Decimal", "description": "Decimal" },
+{ "value": "integer", "label": "Integer", "description": "Integer" },
+{ "value": "date", "label": "Date", "description": "Date" },
+{ "value": "dateTime", "label": "Date Time", "description": "Date Time" },
+{ "value": "time", "label": "Time", "description": "Time" },
+{ "value": "string", "label": "String", "description": "String" },
+{ "value": "text", "label": "Text", "description": "Text" },
+{ "value": "url", "label": "Url", "description": "Url" },
+{ "value": "choice", "label": "Choice", "description": "Choice" },
+{ "value": "open-choice", "label": "Open Choice", "description": "Open Choice" },
+{ "value": "attachment", "label": "Attachment", "description": "Attachment" },
+{ "value": "reference", "label": "Reference", "description": "Reference" },
+{ "value": "quantity", "label": "Quantity", "description": "Quantity" }
+]
+}

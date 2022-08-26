@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "triggers", "label": "Triggers", "description": "Triggers" },
+{ "value": "is-replaced-by", "label": "Replaced By", "description": "Replaced By" }
+]
+}

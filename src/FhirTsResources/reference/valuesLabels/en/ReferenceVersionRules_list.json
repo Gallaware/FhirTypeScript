@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "either", "label": "Either Specific or independent", "description": "Either Specific or independent" },
+{ "value": "independent", "label": "Version independent", "description": "Version independent" },
+{ "value": "specific", "label": "Version Specific", "description": "Version Specific" }
+]
+}

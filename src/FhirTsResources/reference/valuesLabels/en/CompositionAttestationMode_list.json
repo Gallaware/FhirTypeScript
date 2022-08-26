@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "personal", "label": "Personal", "description": "Personal" },
+{ "value": "professional", "label": "Professional", "description": "Professional" },
+{ "value": "legal", "label": "Legal", "description": "Legal" },
+{ "value": "official", "label": "Official", "description": "Official" }
+]
+}

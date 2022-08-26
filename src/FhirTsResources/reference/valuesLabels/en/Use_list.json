@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "claim", "label": "Claim", "description": "Claim" },
+{ "value": "preauthorization", "label": "Preauthorization", "description": "Preauthorization" },
+{ "value": "predetermination", "label": "Predetermination", "description": "Predetermination" }
+]
+}

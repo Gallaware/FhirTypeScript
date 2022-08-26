@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "sense", "label": "Sense orientation of referenceSeq", "description": "Sense orientation of referenceSeq" },
+{ "value": "antisense", "label": "Antisense orientation of referenceSeq", "description": "Antisense orientation of referenceSeq" }
+]
+}

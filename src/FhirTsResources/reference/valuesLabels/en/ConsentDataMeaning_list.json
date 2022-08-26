@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "instance", "label": "Instance", "description": "Instance" },
+{ "value": "related", "label": "Related", "description": "Related" },
+{ "value": "dependents", "label": "Dependents", "description": "Dependents" },
+{ "value": "authoredby", "label": "AuthoredBy", "description": "AuthoredBy" }
+]
+}

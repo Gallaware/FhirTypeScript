@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "current", "label": "Current", "description": "Current" },
+{ "value": "retired", "label": "Retired", "description": "Retired" },
+{ "value": "entered-in-error", "label": "Entered In Error", "description": "Entered In Error" }
+]
+}

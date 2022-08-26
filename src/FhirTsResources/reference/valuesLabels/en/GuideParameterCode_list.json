@@ -1,0 +1,13 @@
+{ "valuesLabels":[
+{ "value": "apply", "label": "Apply Metadata Value", "description": "Apply Metadata Value" },
+{ "value": "path-resource", "label": "Resource Path", "description": "Resource Path" },
+{ "value": "path-pages", "label": "Pages Path", "description": "Pages Path" },
+{ "value": "path-tx-cache", "label": "Terminology Cache Path", "description": "Terminology Cache Path" },
+{ "value": "expansion-parameter", "label": "Expansion Profile", "description": "Expansion Profile" },
+{ "value": "rule-broken-links", "label": "Broken Links Rule", "description": "Broken Links Rule" },
+{ "value": "generate-xml", "label": "Generate XML", "description": "Generate XML" },
+{ "value": "generate-json", "label": "Generate JSON", "description": "Generate JSON" },
+{ "value": "generate-turtle", "label": "Generate Turtle", "description": "Generate Turtle" },
+{ "value": "html-template", "label": "HTML Template", "description": "HTML Template" }
+]
+}

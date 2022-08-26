@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "identical", "label": "Identical", "description": "Identical" },
+{ "value": "matching", "label": "Matching", "description": "Matching" },
+{ "value": "different", "label": "Different", "description": "Different" },
+{ "value": "custom", "label": "Custom", "description": "Custom" }
+]
+}

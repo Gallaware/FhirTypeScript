@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "allergy", "label": "Allergy", "description": "Allergy" },
+{ "value": "intolerance", "label": "Intolerance", "description": "Intolerance" }
+]
+}

@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "oid", "label": "OID", "description": "OID" },
+{ "value": "uuid", "label": "UUID", "description": "UUID" },
+{ "value": "uri", "label": "URI", "description": "URI" },
+{ "value": "other", "label": "Other", "description": "Other" }
+]
+}

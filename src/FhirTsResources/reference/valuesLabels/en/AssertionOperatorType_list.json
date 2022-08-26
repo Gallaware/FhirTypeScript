@@ -1,0 +1,14 @@
+{ "valuesLabels":[
+{ "value": "equals", "label": "equals", "description": "equals" },
+{ "value": "notEquals", "label": "notEquals", "description": "notEquals" },
+{ "value": "in", "label": "in", "description": "in" },
+{ "value": "notIn", "label": "notIn", "description": "notIn" },
+{ "value": "greaterThan", "label": "greaterThan", "description": "greaterThan" },
+{ "value": "lessThan", "label": "lessThan", "description": "lessThan" },
+{ "value": "empty", "label": "empty", "description": "empty" },
+{ "value": "notEmpty", "label": "notEmpty", "description": "notEmpty" },
+{ "value": "contains", "label": "contains", "description": "contains" },
+{ "value": "notContains", "label": "notContains", "description": "notContains" },
+{ "value": "eval", "label": "evaluate", "description": "evaluate" }
+]
+}

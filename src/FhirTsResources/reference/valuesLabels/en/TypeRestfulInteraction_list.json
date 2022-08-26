@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "read", "label": "read", "description": "read" },
+{ "value": "vread", "label": "vread", "description": "vread" },
+{ "value": "update", "label": "update", "description": "update" },
+{ "value": "patch", "label": "patch", "description": "patch" },
+{ "value": "delete", "label": "delete", "description": "delete" },
+{ "value": "history-instance", "label": "history-instance", "description": "history-instance" },
+{ "value": "history-type", "label": "history-type", "description": "history-type" },
+{ "value": "create", "label": "create", "description": "create" },
+{ "value": "search-type", "label": "search-type", "description": "search-type" }
+]
+}

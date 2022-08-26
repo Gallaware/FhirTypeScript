@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "none", "label": "Not a Default", "description": "Not a Default" },
+{ "value": "types", "label": "Default for Type Combination", "description": "Default for Type Combination" },
+{ "value": "type-and-types", "label": "Default for type + combination", "description": "Default for type + combination" }
+]
+}

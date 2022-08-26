@@ -1,0 +1,11 @@
+{ "valuesLabels":[
+{ "value": "black", "label": "Color Black", "description": "Color Black" },
+{ "value": "red", "label": "Color Red", "description": "Color Red" },
+{ "value": "green", "label": "Color Green", "description": "Color Green" },
+{ "value": "yellow", "label": "Color Yellow", "description": "Color Yellow" },
+{ "value": "blue", "label": "Color Blue", "description": "Color Blue" },
+{ "value": "magenta", "label": "Color Magenta", "description": "Color Magenta" },
+{ "value": "cyan", "label": "Color Cyan", "description": "Color Cyan" },
+{ "value": "white", "label": "Color White", "description": "Color White" }
+]
+}

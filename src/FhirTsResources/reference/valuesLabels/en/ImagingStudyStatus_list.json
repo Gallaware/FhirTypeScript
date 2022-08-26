@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "registered", "label": "Registered", "description": "Registered" },
+{ "value": "available", "label": "Available", "description": "Available" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

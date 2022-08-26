@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "s", "label": "秒", "description": "秒" },
+{ "value": "min", "label": "分钟", "description": "分钟" },
+{ "value": "h", "label": "小时", "description": "小时" },
+{ "value": "d", "label": "天", "description": "天" },
+{ "value": "wk", "label": "星期", "description": "星期" },
+{ "value": "mo", "label": "月", "description": "月" },
+{ "value": "a", "label": "年", "description": "年" }
+]
+}

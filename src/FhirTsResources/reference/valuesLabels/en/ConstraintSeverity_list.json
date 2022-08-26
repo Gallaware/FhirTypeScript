@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "error", "label": "Error", "description": "Error" },
+{ "value": "warning", "label": "Warning", "description": "Warning" }
+]
+}

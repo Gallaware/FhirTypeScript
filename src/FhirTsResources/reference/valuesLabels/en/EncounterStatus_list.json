@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "planned", "label": "Planned", "description": "Planned" },
+{ "value": "arrived", "label": "Arrived", "description": "Arrived" },
+{ "value": "triaged", "label": "Triaged", "description": "Triaged" },
+{ "value": "in-progress", "label": "In Progress", "description": "In Progress" },
+{ "value": "onleave", "label": "On Leave", "description": "On Leave" },
+{ "value": "finished", "label": "Finished", "description": "Finished" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

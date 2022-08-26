@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "active", "label": "Active", "description": "The medication is still being taken." },
+{ "value": "inactive", "label": "Inactive", "description": "Inactive" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" }
+]
+}

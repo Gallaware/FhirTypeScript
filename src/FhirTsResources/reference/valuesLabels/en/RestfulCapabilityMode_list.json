@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "client", "label": "Client", "description": "Client" },
+{ "value": "server", "label": "Server", "description": "Server" }
+]
+}

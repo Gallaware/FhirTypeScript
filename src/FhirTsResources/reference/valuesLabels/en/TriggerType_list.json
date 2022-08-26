@@ -1,0 +1,11 @@
+{ "valuesLabels":[
+{ "value": "named-event", "label": "Named Event", "description": "Named Event" },
+{ "value": "periodic", "label": "Periodic", "description": "Periodic" },
+{ "value": "data-changed", "label": "Data Changed", "description": "Data Changed" },
+{ "value": "data-added", "label": "Data Added", "description": "Data Added" },
+{ "value": "data-modified", "label": "Data Updated", "description": "Data Updated" },
+{ "value": "data-removed", "label": "Data Removed", "description": "Data Removed" },
+{ "value": "data-accessed", "label": "Data Accessed", "description": "Data Accessed" },
+{ "value": "data-access-ended", "label": "Data Access Ended", "description": "Data Access Ended" }
+]
+}

@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "fhirpath", "label": "FHIRPath", "description": "FHIRPath" },
+{ "value": "element", "label": "Element ID", "description": "Element ID" },
+{ "value": "extension", "label": "Extension URL", "description": "Extension URL" }
+]
+}

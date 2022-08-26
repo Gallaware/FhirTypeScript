@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "provided", "label": "Provided Code", "description": "Provided Code" },
+{ "value": "fixed", "label": "Fixed Code", "description": "Fixed Code" },
+{ "value": "other-map", "label": "Other Map", "description": "Other Map" }
+]
+}

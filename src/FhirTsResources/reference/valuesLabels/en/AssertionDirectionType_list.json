@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "response", "label": "response", "description": "response" },
+{ "value": "request", "label": "request", "description": "request" }
+]
+}

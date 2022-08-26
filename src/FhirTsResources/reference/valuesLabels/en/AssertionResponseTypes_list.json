@@ -1,0 +1,15 @@
+{ "valuesLabels":[
+{ "value": "okay", "label": "okay", "description": "okay" },
+{ "value": "created", "label": "created", "description": "created" },
+{ "value": "noContent", "label": "noContent", "description": "noContent" },
+{ "value": "notModified", "label": "notModified", "description": "notModified" },
+{ "value": "bad", "label": "bad", "description": "bad" },
+{ "value": "forbidden", "label": "forbidden", "description": "forbidden" },
+{ "value": "notFound", "label": "notFound", "description": "notFound" },
+{ "value": "methodNotAllowed", "label": "methodNotAllowed", "description": "methodNotAllowed" },
+{ "value": "conflict", "label": "conflict", "description": "conflict" },
+{ "value": "gone", "label": "gone", "description": "gone" },
+{ "value": "preconditionFailed", "label": "preconditionFailed", "description": "preconditionFailed" },
+{ "value": "unprocessable", "label": "unprocessable", "description": "unprocessable" }
+]
+}

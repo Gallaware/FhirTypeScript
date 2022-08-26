@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "first", "label": "First", "description": "First" },
+{ "value": "share", "label": "Share", "description": "Share" },
+{ "value": "last", "label": "Last", "description": "Last" },
+{ "value": "collate", "label": "Collate", "description": "Collate" }
+]
+}

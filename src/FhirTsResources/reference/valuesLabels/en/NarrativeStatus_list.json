@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "generated", "label": "Generated", "description": "Generated" },
+{ "value": "extensions", "label": "Extensions", "description": "Extensions" },
+{ "value": "additional", "label": "Additional", "description": "Additional" },
+{ "value": "empty", "label": "Empty", "description": "Empty" }
+]
+}

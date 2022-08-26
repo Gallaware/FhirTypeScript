@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "required", "label": "Required", "description": "Required" },
+{ "value": "extensible", "label": "Extensible", "description": "Extensible" },
+{ "value": "preferred", "label": "Preferred", "description": "Preferred" },
+{ "value": "example", "label": "Example", "description": "Example" }
+]
+}

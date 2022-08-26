@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "planned", "label": "Planned", "description": "Planned" },
+{ "value": "billable", "label": "Billable", "description": "Billable" },
+{ "value": "not-billable", "label": "Not billable", "description": "Not billable" },
+{ "value": "aborted", "label": "Aborted", "description": "Aborted" },
+{ "value": "billed", "label": "Billed", "description": "Billed" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

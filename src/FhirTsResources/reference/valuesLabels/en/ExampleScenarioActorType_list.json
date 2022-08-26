@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "person", "label": "Person", "description": "Person" },
+{ "value": "entity", "label": "System", "description": "System" }
+]
+}

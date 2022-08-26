@@ -1,0 +1,20 @@
+{ "valuesLabels":[
+{ "value": "create", "label": "create", "description": "create" },
+{ "value": "copy", "label": "copy", "description": "copy" },
+{ "value": "truncate", "label": "truncate", "description": "truncate" },
+{ "value": "escape", "label": "escape", "description": "escape" },
+{ "value": "cast", "label": "cast", "description": "cast" },
+{ "value": "append", "label": "append", "description": "append" },
+{ "value": "translate", "label": "translate", "description": "translate" },
+{ "value": "reference", "label": "reference", "description": "reference" },
+{ "value": "dateOp", "label": "dateOp", "description": "dateOp" },
+{ "value": "uuid", "label": "uuid", "description": "uuid" },
+{ "value": "pointer", "label": "pointer", "description": "pointer" },
+{ "value": "evaluate", "label": "evaluate", "description": "evaluate" },
+{ "value": "cc", "label": "cc", "description": "cc" },
+{ "value": "c", "label": "c", "description": "c" },
+{ "value": "qty", "label": "qty", "description": "qty" },
+{ "value": "id", "label": "id", "description": "id" },
+{ "value": "cp", "label": "cp", "description": "cp" }
+]
+}

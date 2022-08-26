@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "barcode", "label": "Barcode", "description": "Barcode" },
+{ "value": "rfid", "label": "RFID", "description": "RFID" },
+{ "value": "manual", "label": "Manual", "description": "Manual" },
+{ "value": "card", "label": "Card", "description": "Card" },
+{ "value": "self-reported", "label": "Self Reported", "description": "Self Reported" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

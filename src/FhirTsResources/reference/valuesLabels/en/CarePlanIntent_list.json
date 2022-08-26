@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "proposal", "label": "Proposal", "description": "Proposal" },
+{ "value": "plan", "label": "Plan", "description": "Plan" },
+{ "value": "order", "label": "Order", "description": "Order" },
+{ "value": "option", "label": "Option", "description": "Option" }
+]
+}

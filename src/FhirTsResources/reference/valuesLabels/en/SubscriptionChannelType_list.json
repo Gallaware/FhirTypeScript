@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "rest-hook", "label": "Rest Hook", "description": "Rest Hook" },
+{ "value": "websocket", "label": "Websocket", "description": "Websocket" },
+{ "value": "email", "label": "Email", "description": "Email" },
+{ "value": "sms", "label": "SMS", "description": "SMS" },
+{ "value": "message", "label": "Message", "description": "Message" }
+]
+}

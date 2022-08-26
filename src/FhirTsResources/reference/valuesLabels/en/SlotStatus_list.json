@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "busy", "label": "Busy", "description": "Busy" },
+{ "value": "free", "label": "Free", "description": "Free" },
+{ "value": "busy-unavailable", "label": "Busy (Unavailable)", "description": "Busy (Unavailable)" },
+{ "value": "busy-tentative", "label": "Busy (Tentative)", "description": "Busy (Tentative)" },
+{ "value": "entered-in-error", "label": "Entered in error", "description": "Entered in error" }
+]
+}

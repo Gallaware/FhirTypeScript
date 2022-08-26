@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "codesystem", "label": "Code System", "description": "Code System" },
+{ "value": "identifier", "label": "Identifier", "description": "Identifier" },
+{ "value": "root", "label": "Root", "description": "Root" }
+]
+}

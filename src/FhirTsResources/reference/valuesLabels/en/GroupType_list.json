@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "person", "label": "Person", "description": "Person" },
+{ "value": "animal", "label": "Animal", "description": "Animal" },
+{ "value": "practitioner", "label": "Practitioner", "description": "Practitioner" },
+{ "value": "device", "label": "Device", "description": "Device" },
+{ "value": "medication", "label": "Medication", "description": "Medication" },
+{ "value": "substance", "label": "Substance", "description": "Substance" }
+]
+}

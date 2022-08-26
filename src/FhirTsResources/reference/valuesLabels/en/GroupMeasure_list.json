@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "mean", "label": "Mean", "description": "Mean" },
+{ "value": "median", "label": "Median", "description": "Median" },
+{ "value": "mean-of-mean", "label": "Mean of Study Means", "description": "Mean of Study Means" },
+{ "value": "mean-of-median", "label": "Mean of Study Medins", "description": "Mean of Study Medins" },
+{ "value": "median-of-mean", "label": "Median of Study Means", "description": "Median of Study Means" },
+{ "value": "median-of-median", "label": "Median of Study Medians", "description": "Median of Study Medians" }
+]
+}

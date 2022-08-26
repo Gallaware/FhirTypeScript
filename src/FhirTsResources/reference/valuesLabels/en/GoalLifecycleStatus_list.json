@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "proposed", "label": "Proposed", "description": "Proposed" },
+{ "value": "planned", "label": "Planned", "description": "Planned" },
+{ "value": "accepted", "label": "Accepted", "description": "Accepted" },
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "on-hold", "label": "On Hold", "description": "On Hold" },
+{ "value": "completed", "label": "Completed", "description": "Completed" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "rejected", "label": "Rejected", "description": "Rejected" }
+]
+}

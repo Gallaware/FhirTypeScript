@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "text/cql", "label": "CQL", "description": "CQL" },
+{ "value": "text/fhirpath", "label": "FHIRPath", "description": "FHIRPath" },
+{ "value": "application/x-fhir-query", "label": "FHIR Query", "description": "FHIR Query" }
+]
+}

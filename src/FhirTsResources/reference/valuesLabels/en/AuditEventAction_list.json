@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "C", "label": "Create", "description": "Create" },
+{ "value": "R", "label": "Read/View/Print", "description": "Read/View/Print" },
+{ "value": "U", "label": "Update", "description": "Update" },
+{ "value": "D", "label": "Delete", "description": "Delete" },
+{ "value": "E", "label": "Execute", "description": "Execute" }
+]
+}

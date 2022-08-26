@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "instance", "label": "Instance", "description": "Instance" },
+{ "value": "kind", "label": "Kind", "description": "Kind" }
+]
+}

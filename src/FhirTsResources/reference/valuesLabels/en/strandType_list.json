@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "watson", "label": "Watson strand of referenceSeq", "description": "Watson strand of referenceSeq" },
+{ "value": "crick", "label": "Crick strand of referenceSeq", "description": "Crick strand of referenceSeq" }
+]
+}

@@ -1,0 +1,18 @@
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "Appointment", "description": "Appointment" },
+{ "value": "AppointmentResponse", "label": "AppointmentResponse", "description": "AppointmentResponse" },
+{ "value": "CarePlan", "label": "CarePlan", "description": "CarePlan" },
+{ "value": "Claim", "label": "Claim", "description": "Claim" },
+{ "value": "CommunicationRequest", "label": "CommunicationRequest", "description": "CommunicationRequest" },
+{ "value": "Contract", "label": "Contract", "description": "Contract" },
+{ "value": "DeviceRequest", "label": "DeviceRequest", "description": "DeviceRequest" },
+{ "value": "EnrollmentRequest", "label": "EnrollmentRequest", "description": "EnrollmentRequest" },
+{ "value": "ImmunizationRecommendation", "label": "ImmunizationRecommendation", "description": "ImmunizationRecommendation" },
+{ "value": "MedicationRequest", "label": "MedicationRequest", "description": "MedicationRequest" },
+{ "value": "NutritionOrder", "label": "NutritionOrder", "description": "NutritionOrder" },
+{ "value": "ServiceRequest", "label": "ServiceRequest", "description": "ServiceRequest" },
+{ "value": "SupplyRequest", "label": "SupplyRequest", "description": "SupplyRequest" },
+{ "value": "Task", "label": "Task", "description": "Task" },
+{ "value": "VisionPrescription", "label": "VisionPrescription", "description": "VisionPrescription" }
+]
+}

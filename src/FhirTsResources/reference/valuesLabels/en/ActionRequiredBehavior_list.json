@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "must", "label": "Must", "description": "Must" },
+{ "value": "could", "label": "Could", "description": "Could" },
+{ "value": "must-unless-documented", "label": "Must Unless Documented", "description": "Must Unless Documented" }
+]
+}

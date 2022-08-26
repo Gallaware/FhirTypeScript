@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "draft", "label": "Draft", "description": "Draft" },
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "suspended", "label": "Suspended", "description": "Suspended" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "completed", "label": "Completed", "description": "Completed" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

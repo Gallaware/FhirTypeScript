@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "population", "label": "Population", "description": "Population" },
+{ "value": "exposure", "label": "Exposure", "description": "Exposure" },
+{ "value": "outcome", "label": "Outcome", "description": "Outcome" }
+]
+}

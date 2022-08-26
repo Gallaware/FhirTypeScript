@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "dichotomous", "label": "Dichotomous", "description": "Dichotomous" },
+{ "value": "continuous", "label": "Continuous", "description": "Continuous" },
+{ "value": "descriptive", "label": "Descriptive", "description": "Descriptive" }
+]
+}

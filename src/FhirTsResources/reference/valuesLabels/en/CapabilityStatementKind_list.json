@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "instance", "label": "Instance", "description": "Instance" },
+{ "value": "capability", "label": "Capability", "description": "Capability" },
+{ "value": "requirements", "label": "Requirements", "description": "Requirements" }
+]
+}

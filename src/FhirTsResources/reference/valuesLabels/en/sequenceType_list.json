@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "aa", "label": "AA Sequence", "description": "AA Sequence" },
+{ "value": "dna", "label": "DNA Sequence", "description": "DNA Sequence" },
+{ "value": "rna", "label": "RNA Sequence", "description": "RNA Sequence" }
+]
+}

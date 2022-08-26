@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "available", "label": "Available", "description": "Available" },
+{ "value": "unavailable", "label": "Unavailable", "description": "Unavailable" },
+{ "value": "unsatisfactory", "label": "Unsatisfactory", "description": "Unsatisfactory" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" }
+]
+}

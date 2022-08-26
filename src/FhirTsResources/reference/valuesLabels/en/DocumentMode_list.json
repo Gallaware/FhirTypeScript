@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "producer", "label": "Producer", "description": "Producer" },
+{ "value": "consumer", "label": "Consumer", "description": "Consumer" }
+]
+}

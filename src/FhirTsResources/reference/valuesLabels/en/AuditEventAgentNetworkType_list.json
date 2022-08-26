@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "1", "label": "Machine Name", "description": "Machine Name" },
+{ "value": "2", "label": "IP Address", "description": "IP Address" },
+{ "value": "3", "label": "Telephone Number", "description": "Telephone Number" },
+{ "value": "4", "label": "Email address", "description": "Email address" },
+{ "value": "5", "label": "URI", "description": "URI" }
+]
+}

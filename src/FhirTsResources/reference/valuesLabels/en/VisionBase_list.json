@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "up", "label": "Up", "description": "Up" },
+{ "value": "down", "label": "Down", "description": "Down" },
+{ "value": "in", "label": "In", "description": "In" },
+{ "value": "out", "label": "Out", "description": "Out" }
+]
+}

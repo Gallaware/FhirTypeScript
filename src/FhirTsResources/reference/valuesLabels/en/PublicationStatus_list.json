@@ -1,0 +1,14 @@
+{ "valuesLabels":[
+{ "value": "draft", "label": "черновик", "description": "черновик" },
+{ "value": "active", "label": "активный", "description": "активный" },
+{ "value": "retired", "label": "удалён", "description": "удалён" },
+{ "value": "unknown" }
+]
+}
+{ "valuesLabels":[
+{ "value": "draft", "label": "Draft", "description": "Draft" },
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "retired", "label": "Retired", "description": "Retired" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

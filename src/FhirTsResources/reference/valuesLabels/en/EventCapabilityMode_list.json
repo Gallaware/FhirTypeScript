@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "sender", "label": "Sender", "description": "Sender" },
+{ "value": "receiver", "label": "Receiver", "description": "Receiver" }
+]
+}

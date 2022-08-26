@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "usual", "label": "Usual", "description": "Usual" },
+{ "value": "official", "label": "Official", "description": "Official" },
+{ "value": "temp", "label": "Temp", "description": "Temp" },
+{ "value": "nickname", "label": "Nickname", "description": "Nickname" },
+{ "value": "anonymous", "label": "Anonymous", "description": "Anonymous" },
+{ "value": "old", "label": "Old", "description": "Old" },
+{ "value": "maiden", "label": "Name changed for Marriage", "description": "Name changed for Marriage" }
+]
+}

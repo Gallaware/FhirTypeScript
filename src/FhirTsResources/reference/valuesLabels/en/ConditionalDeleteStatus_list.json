@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "not-supported", "label": "Not Supported", "description": "Not Supported" },
+{ "value": "single", "label": "Single Deletes Supported", "description": "Single Deletes Supported" },
+{ "value": "multiple", "label": "Multiple Deletes Supported", "description": "Multiple Deletes Supported" }
+]
+}

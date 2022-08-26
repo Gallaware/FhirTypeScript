@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "queued", "label": "Queued", "description": "Queued" },
+{ "value": "complete", "label": "Processing Complete", "description": "Processing Complete" },
+{ "value": "error", "label": "Error", "description": "Error" },
+{ "value": "partial", "label": "Partial Processing", "description": "Partial Processing" }
+]
+}

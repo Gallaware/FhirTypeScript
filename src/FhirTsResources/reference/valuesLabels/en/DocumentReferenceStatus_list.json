@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "current", "label": "Current", "description": "Current" },
+{ "value": "superseded", "label": "Superseded", "description": "Superseded" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" }
+]
+}

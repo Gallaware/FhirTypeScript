@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "auth-requirements", "label": "Coverage auth-requirements", "description": "Coverage auth-requirements" },
+{ "value": "benefits", "label": "Coverage benefits", "description": "Coverage benefits" },
+{ "value": "discovery", "label": "Coverage Discovery", "description": "Coverage Discovery" },
+{ "value": "validation", "label": "Coverage Validation", "description": "Coverage Validation" }
+]
+}

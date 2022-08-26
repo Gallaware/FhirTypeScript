@@ -1,0 +1,15 @@
+{ "valuesLabels":[
+{ "value": "missing", "label": "Missing", "description": "Missing" },
+{ "value": "exact", "label": "Exact", "description": "Exact" },
+{ "value": "contains", "label": "Contains", "description": "Contains" },
+{ "value": "not", "label": "Not", "description": "Not" },
+{ "value": "text", "label": "Text", "description": "Text" },
+{ "value": "in", "label": "In", "description": "In" },
+{ "value": "not-in", "label": "Not In", "description": "Not In" },
+{ "value": "below", "label": "Below", "description": "Below" },
+{ "value": "above", "label": "Above", "description": "Above" },
+{ "value": "type", "label": "Type", "description": "Type" },
+{ "value": "identifier", "label": "Identifier", "description": "Identifier" },
+{ "value": "ofType", "label": "Of Type", "description": "Of Type" }
+]
+}

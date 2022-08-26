@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "html", "label": "HTML", "description": "HTML" },
+{ "value": "markdown", "label": "Markdown", "description": "Markdown" },
+{ "value": "xml", "label": "XML", "description": "XML" },
+{ "value": "generated", "label": "Generated", "description": "Generated" }
+]
+}

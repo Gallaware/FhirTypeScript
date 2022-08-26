@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "exists", "label": "Exists", "description": "Exists" },
+{ "value": "=", "label": "Equals", "description": "Equals" },
+{ "value": "!=", "label": "Not Equals", "description": "Not Equals" },
+{ "value": ">", "label": "Greater Than", "description": "Greater Than" },
+{ "value": "<", "label": "Less Than", "description": "Less Than" },
+{ "value": ">=", "label": "Greater or Equals", "description": "Greater or Equals" },
+{ "value": "<=", "label": "Less or Equals", "description": "Less or Equals" }
+]
+}

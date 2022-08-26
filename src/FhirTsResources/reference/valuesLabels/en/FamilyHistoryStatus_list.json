@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "partial", "label": "Partial", "description": "Partial" },
+{ "value": "completed", "label": "Completed", "description": "Completed" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "health-unknown", "label": "Health Unknown", "description": "Health Unknown" }
+]
+}

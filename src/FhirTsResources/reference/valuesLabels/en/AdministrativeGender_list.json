@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "male", "label": "Male", "description": "Male" },
+{ "value": "female", "label": "Female", "description": "Female" },
+{ "value": "other", "label": "Other", "description": "Other" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

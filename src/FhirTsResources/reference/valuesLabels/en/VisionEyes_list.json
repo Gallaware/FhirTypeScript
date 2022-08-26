@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "right", "label": "Right Eye", "description": "Right Eye" },
+{ "value": "left", "label": "Left Eye", "description": "Left Eye" }
+]
+}

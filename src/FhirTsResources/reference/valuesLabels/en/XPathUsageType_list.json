@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "normal", "label": "Normal", "description": "Normal" },
+{ "value": "phonetic", "label": "Phonetic", "description": "Phonetic" },
+{ "value": "nearby", "label": "Nearby", "description": "Nearby" },
+{ "value": "distance", "label": "Distance", "description": "Distance" },
+{ "value": "other", "label": "Other", "description": "Other" }
+]
+}

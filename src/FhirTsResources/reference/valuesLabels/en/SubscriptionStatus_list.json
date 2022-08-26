@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "requested", "label": "Requested", "description": "Requested" },
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "error", "label": "Error", "description": "Error" },
+{ "value": "off", "label": "Off", "description": "Off" }
+]
+}

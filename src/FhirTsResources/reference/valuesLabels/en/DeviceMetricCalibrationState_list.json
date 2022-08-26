@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "not-calibrated", "label": "Not Calibrated", "description": "Not Calibrated" },
+{ "value": "calibration-required", "label": "Calibration Required", "description": "Calibration Required" },
+{ "value": "calibrated", "label": "Calibrated", "description": "Calibrated" },
+{ "value": "unspecified", "label": "Unspecified", "description": "Unspecified" }
+]
+}

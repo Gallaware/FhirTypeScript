@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "yes", "label": "Yes", "description": "Yes" },
+{ "value": "no", "label": "No", "description": "No" }
+]
+}

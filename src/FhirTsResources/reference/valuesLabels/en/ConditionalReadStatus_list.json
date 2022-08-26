@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "not-supported", "label": "Not Supported", "description": "Not Supported" },
+{ "value": "modified-since", "label": "If-Modified-Since", "description": "If-Modified-Since" },
+{ "value": "not-match", "label": "If-None-Match", "description": "If-None-Match" },
+{ "value": "full-support", "label": "Full Support", "description": "Full Support" }
+]
+}

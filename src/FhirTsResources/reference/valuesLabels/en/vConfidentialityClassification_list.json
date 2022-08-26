@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "U", "label": "unrestricted", "description": "unrestricted" },
+{ "value": "L", "label": "low", "description": "low" },
+{ "value": "M", "label": "moderate", "description": "moderate" },
+{ "value": "N", "label": "normal", "description": "normal" },
+{ "value": "R", "label": "restricted", "description": "restricted" },
+{ "value": "V", "label": "very restricted", "description": "very restricted" }
+]
+}

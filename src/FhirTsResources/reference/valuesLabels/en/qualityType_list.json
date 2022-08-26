@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "indel", "label": "INDEL Comparison", "description": "INDEL Comparison" },
+{ "value": "snp", "label": "SNP Comparison", "description": "SNP Comparison" },
+{ "value": "unknown", "label": "UNKNOWN Comparison", "description": "UNKNOWN Comparison" }
+]
+}

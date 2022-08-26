@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "xmlAttr", "label": "XML Attribute", "description": "XML Attribute" },
+{ "value": "xmlText", "label": "XML Text", "description": "XML Text" },
+{ "value": "typeAttr", "label": "Type Attribute", "description": "Type Attribute" },
+{ "value": "cdaText", "label": "CDA Text Format", "description": "CDA Text Format" },
+{ "value": "xhtml", "label": "XHTML", "description": "XHTML" }
+]
+}

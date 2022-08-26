@@ -1,0 +1,55 @@
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "Appointment", "description": "Appointment" },
+{ "value": "CommunicationRequest", "label": "CommunicationRequest", "description": "CommunicationRequest" },
+{ "value": "DeviceRequest", "label": "DeviceRequest", "description": "DeviceRequest" },
+{ "value": "MedicationRequest", "label": "MedicationRequest", "description": "MedicationRequest" },
+{ "value": "NutritionOrder", "label": "NutritionOrder", "description": "NutritionOrder" },
+{ "value": "Task", "label": "Task", "description": "Task" },
+{ "value": "ServiceRequest", "label": "ServiceRequest", "description": "ServiceRequest" },
+{ "value": "VisionPrescription", "label": "VisionPrescription", "description": "VisionPrescription" }
+]
+}
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "Appuntamento", "description": "Appuntamento" },
+{ "value": "CommunicationRequest", "label": "RichiestaDiComunicazione", "description": "RichiestaDiComunicazione" },
+{ "value": "DeviceRequest", "label": "RichiestaDispositivo", "description": "RichiestaDispositivo" },
+{ "value": "MedicationRequest" },
+{ "value": "NutritionOrder" },
+{ "value": "Task" },
+{ "value": "ServiceRequest", "label": "RichiestaDiServizio", "description": "RichiestaDiServizio" },
+{ "value": "VisionPrescription" }
+]
+}
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "RendezVous", "description": "RendezVous" },
+{ "value": "CommunicationRequest", "label": "DemandeDeCommunication", "description": "DemandeDeCommunication" },
+{ "value": "DeviceRequest", "label": "DemandeUtilisationDispositif", "description": "DemandeUtilisationDispositif" },
+{ "value": "MedicationRequest", "label": "PrescriptionMédicamenteuseTODO", "description": "PrescriptionMédicamenteuseTODO" },
+{ "value": "NutritionOrder", "label": "OrdreNutrition", "description": "OrdreNutrition" },
+{ "value": "Task" },
+{ "value": "ServiceRequest", "label": "DemandeService", "description": "DemandeService" },
+{ "value": "VisionPrescription", "label": "PrescriptionVision", "description": "PrescriptionVision" }
+]
+}
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "Cita", "description": "Cita" },
+{ "value": "CommunicationRequest", "label": "ComunicaciónRequerimiento", "description": "ComunicaciónRequerimiento" },
+{ "value": "DeviceRequest", "label": "SolicitudDeDispositivo", "description": "SolicitudDeDispositivo" },
+{ "value": "MedicationRequest", "label": "PrescripciónMedicaciónTODO  /PrescripcionMedicamento", "description": "PrescripciónMedicaciónTODO  /PrescripcionMedicamento" },
+{ "value": "NutritionOrder", "label": "OrdenNutrición", "description": "OrdenNutrición" },
+{ "value": "Task", "label": "Tarea", "description": "Tarea" },
+{ "value": "ServiceRequest", "label": "PeticiónServicio", "description": "PeticiónServicio" },
+{ "value": "VisionPrescription", "label": "PrescripcionDeVision", "description": "PrescripcionDeVision" }
+]
+}
+{ "valuesLabels":[
+{ "value": "Appointment", "label": "预约", "description": "预约" },
+{ "value": "CommunicationRequest", "label": "通讯请求", "description": "通讯请求" },
+{ "value": "DeviceRequest", "label": "装置请求", "description": "装置请求" },
+{ "value": "MedicationRequest", "label": "药物请求", "description": "药物请求" },
+{ "value": "NutritionOrder", "label": "营养医嘱", "description": "营养医嘱" },
+{ "value": "Task", "label": "任务", "description": "任务" },
+{ "value": "ServiceRequest", "label": "服务项目请求", "description": "服务项目请求" },
+{ "value": "VisionPrescription", "label": "视力处方", "description": "视力处方" }
+]
+}

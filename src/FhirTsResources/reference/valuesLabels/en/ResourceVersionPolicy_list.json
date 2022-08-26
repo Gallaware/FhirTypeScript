@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "no-version", "label": "No VersionId Support", "description": "No VersionId Support" },
+{ "value": "versioned", "label": "Versioned", "description": "Versioned" },
+{ "value": "versioned-update", "label": "VersionId tracked fully", "description": "VersionId tracked fully" }
+]
+}

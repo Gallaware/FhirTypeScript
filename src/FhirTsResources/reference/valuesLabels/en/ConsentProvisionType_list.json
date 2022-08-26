@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "deny", "label": "Opt Out", "description": "Opt Out" },
+{ "value": "permit", "label": "Opt In", "description": "Opt In" }
+]
+}

@@ -1,0 +1,14 @@
+{ "valuesLabels":[
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "administratively-completed", "label": "Administratively Completed", "description": "Administratively Completed" },
+{ "value": "approved", "label": "Approved", "description": "Approved" },
+{ "value": "closed-to-accrual", "label": "Closed to Accrual", "description": "Closed to Accrual" },
+{ "value": "closed-to-accrual-and-intervention", "label": "Closed to Accrual and Intervention", "description": "Closed to Accrual and Intervention" },
+{ "value": "completed", "label": "Completed", "description": "Completed" },
+{ "value": "disapproved", "label": "Disapproved", "description": "Disapproved" },
+{ "value": "in-review", "label": "In Review", "description": "In Review" },
+{ "value": "temporarily-closed-to-accrual", "label": "Temporarily Closed to Accrual", "description": "Temporarily Closed to Accrual" },
+{ "value": "temporarily-closed-to-accrual-and-intervention", "label": "Temporarily Closed to Accrual and Intervention", "description": "Temporarily Closed to Accrual and Intervention" },
+{ "value": "withdrawn", "label": "Withdrawn", "description": "Withdrawn" }
+]
+}

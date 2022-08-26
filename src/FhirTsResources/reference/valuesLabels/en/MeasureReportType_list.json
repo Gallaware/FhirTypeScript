@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "individual", "label": "Individual", "description": "Individual" },
+{ "value": "subject-list", "label": "Subject List", "description": "Subject List" },
+{ "value": "summary", "label": "Summary", "description": "Summary" },
+{ "value": "data-collection", "label": "Data Collection", "description": "Data Collection" }
+]
+}

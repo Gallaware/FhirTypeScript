@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" },
+{ "value": "proposal", "label": "Proposal", "description": "Proposal" },
+{ "value": "plan", "label": "Plan", "description": "Plan" },
+{ "value": "order", "label": "Order", "description": "Order" },
+{ "value": "original-order", "label": "Original Order", "description": "Original Order" },
+{ "value": "reflex-order", "label": "Reflex Order", "description": "Reflex Order" },
+{ "value": "filler-order", "label": "Filler Order", "description": "Filler Order" },
+{ "value": "instance-order", "label": "Instance Order", "description": "Instance Order" },
+{ "value": "option", "label": "Option", "description": "Option" }
+]
+}

@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "Patient", "label": "Patient", "description": "Patient" },
+{ "value": "Encounter", "label": "Encounter", "description": "Encounter" },
+{ "value": "RelatedPerson", "label": "RelatedPerson", "description": "RelatedPerson" },
+{ "value": "Practitioner", "label": "Practitioner", "description": "Practitioner" },
+{ "value": "Device", "label": "Device", "description": "Device" }
+]
+}

@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "GET", "label": "GET", "description": "GET" },
+{ "value": "HEAD", "label": "HEAD", "description": "HEAD" },
+{ "value": "POST", "label": "POST", "description": "POST" },
+{ "value": "PUT", "label": "PUT", "description": "PUT" },
+{ "value": "DELETE", "label": "DELETE", "description": "DELETE" },
+{ "value": "PATCH", "label": "PATCH", "description": "PATCH" }
+]
+}

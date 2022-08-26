@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "required", "label": "Required", "description": "Required" },
+{ "value": "optional", "label": "Optional", "description": "Optional" },
+{ "value": "information-only", "label": "Information Only", "description": "Information Only" }
+]
+}

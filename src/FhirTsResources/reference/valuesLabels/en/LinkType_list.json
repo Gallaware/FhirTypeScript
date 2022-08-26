@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "replaced-by", "label": "Replaced-by", "description": "Replaced-by" },
+{ "value": "replaces", "label": "Replaces", "description": "Replaces" },
+{ "value": "refer", "label": "Refer", "description": "Refer" },
+{ "value": "seealso", "label": "See also", "description": "See also" }
+]
+}

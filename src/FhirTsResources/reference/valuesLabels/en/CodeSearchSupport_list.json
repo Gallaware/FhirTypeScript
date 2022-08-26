@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "explicit", "label": "Explicit Codes", "description": "Explicit Codes" },
+{ "value": "all", "label": "Implicit Codes", "description": "Implicit Codes" }
+]
+}

@@ -1,0 +1,43 @@
+{ "valuesLabels":[
+    {
+        "value": "UNKNOWN",
+        "label": "Unknown",
+        "description": "Unknown"
+    },
+     {
+        "value": "IDINJ",
+        "label": "Injection, intradermal",
+        "description": "Injectied into the fatty layer under the skin."
+      },
+      {
+        "value": "IM",
+        "label": "Injection, intramuscular",
+        "description": "Injected into the muscle under the skin."
+    },
+    {
+      "value": "IVINJ",
+      "label": "Injection, intravenous", 
+      "description": "Injected directly into a vain."
+    },
+    {
+      "value": "SQ",
+      "label": "Injection, subcutaneous",
+      "description": "Injected just under the skin with a short needle."
+    },
+    {
+      "value": "NASINHLC",
+      "label": "Inhalation, nasal", 
+      "description": "Inhaled through the nose."
+    },
+    {
+      "value": "PO",
+      "label": "Swallow, oral", 
+      "description": "Swallowed or drank."
+    },
+    {
+      "value": "TRNSDERM",
+      "label": "Transdermal",
+      "description": "Administered on the skin such as using a patch or ointment."
+    }
+]}
+

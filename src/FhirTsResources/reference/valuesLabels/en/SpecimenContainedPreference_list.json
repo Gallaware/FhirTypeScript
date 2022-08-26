@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "preferred", "label": "Preferred", "description": "Preferred" },
+{ "value": "alternate", "label": "Alternate", "description": "Alternate" }
+]
+}

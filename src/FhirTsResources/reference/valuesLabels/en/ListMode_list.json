@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "working", "label": "Working List", "description": "Working List" },
+{ "value": "snapshot", "label": "Snapshot List", "description": "Snapshot List" },
+{ "value": "changes", "label": "Change List", "description": "Change List" }
+]
+}

@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "grouped-by", "label": "Grouped By", "description": "Grouped By" },
+{ "value": "is-a", "label": "Is-A", "description": "Is-A" },
+{ "value": "part-of", "label": "Part Of", "description": "Part Of" },
+{ "value": "classified-with", "label": "Classified With", "description": "Classified With" }
+]
+}

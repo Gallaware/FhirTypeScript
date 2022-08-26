@@ -1,0 +1,10 @@
+{ "valuesLabels":[
+{ "value": "code", "label": "code (internal reference)", "description": "code (internal reference)" },
+{ "value": "Coding", "label": "Coding (external reference)", "description": "Coding (external reference)" },
+{ "value": "string", "label": "string", "description": "string" },
+{ "value": "integer", "label": "integer", "description": "integer" },
+{ "value": "boolean", "label": "boolean", "description": "boolean" },
+{ "value": "dateTime", "label": "dateTime", "description": "dateTime" },
+{ "value": "decimal", "label": "decimal", "description": "decimal" }
+]
+}

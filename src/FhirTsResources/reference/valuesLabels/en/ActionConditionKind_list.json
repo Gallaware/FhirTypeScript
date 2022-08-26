@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "applicability", "label": "Applicability", "description": "Applicability" },
+{ "value": "start", "label": "Start", "description": "Start" },
+{ "value": "stop", "label": "Stop", "description": "Stop" }
+]
+}

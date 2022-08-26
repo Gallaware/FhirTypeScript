@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "in-progress", "label": "In Progress", "description": "In Progress" },
+{ "value": "completed", "label": "Delivered", "description": "Delivered" },
+{ "value": "abandoned", "label": "Abandoned", "description": "Abandoned" },
+{ "value": "entered-in-error", "label": "Entered In Error", "description": "Entered In Error" }
+]
+}

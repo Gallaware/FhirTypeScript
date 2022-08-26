@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "success", "label": "Success", "description": "Success" },
+{ "value": "data-requested", "label": "Data Requested", "description": "Data Requested" },
+{ "value": "data-required", "label": "Data Required", "description": "Data Required" },
+{ "value": "in-progress", "label": "In Progress", "description": "In Progress" },
+{ "value": "failure", "label": "Failure", "description": "Failure" },
+{ "value": "entered-in-error", "label": "Entered In Error", "description": "Entered In Error" }
+]
+}

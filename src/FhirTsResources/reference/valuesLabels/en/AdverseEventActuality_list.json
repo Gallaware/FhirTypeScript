@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "actual", "label": "Adverse Event", "description": "Adverse Event" },
+{ "value": "potential", "label": "Potential Adverse Event", "description": "Potential Adverse Event" }
+]
+}

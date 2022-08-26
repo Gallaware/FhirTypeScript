@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "any", "label": "Any", "description": "Any" },
+{ "value": "all", "label": "All", "description": "All" },
+{ "value": "all-or-none", "label": "All Or None", "description": "All Or None" },
+{ "value": "exactly-one", "label": "Exactly One", "description": "Exactly One" },
+{ "value": "at-most-one", "label": "At Most One", "description": "At Most One" },
+{ "value": "one-or-more", "label": "One Or More", "description": "One Or More" }
+]
+}

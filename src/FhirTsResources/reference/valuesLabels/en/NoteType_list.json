@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "display", "label": "Display", "description": "Display" },
+{ "value": "print", "label": "Print (Form)", "description": "Print (Form)" },
+{ "value": "printoper", "label": "Print (Operator)", "description": "Print (Operator)" }
+]
+}

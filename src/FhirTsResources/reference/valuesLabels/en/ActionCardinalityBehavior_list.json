@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "single", "label": "Single", "description": "Single" },
+{ "value": "multiple", "label": "Multiple", "description": "Multiple" }
+]
+}

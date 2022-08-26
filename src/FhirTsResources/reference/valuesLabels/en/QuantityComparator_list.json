@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "<", "label": "Less than", "description": "Less than" },
+{ "value": "<=", "label": "Less or Equal to", "description": "Less or Equal to" },
+{ "value": ">=", "label": "Greater or Equal to", "description": "Greater or Equal to" },
+{ "value": ">", "label": "Greater than", "description": "Greater than" }
+]
+}

@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "high", "label": "High", "description": "High" },
+{ "value": "moderate", "label": "Moderate", "description": "Moderate" },
+{ "value": "low", "label": "Low", "description": "Low" }
+]
+}

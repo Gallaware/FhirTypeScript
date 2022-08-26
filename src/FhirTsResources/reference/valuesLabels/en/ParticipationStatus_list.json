@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "accepted", "label": "Accepted", "description": "Accepted" },
+{ "value": "declined", "label": "Declined", "description": "Declined" },
+{ "value": "tentative", "label": "Tentative", "description": "Tentative" },
+{ "value": "needs-action", "label": "Needs Action", "description": "Needs Action" }
+]
+}

@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "number", "label": "Number", "description": "Number" },
+{ "value": "date", "label": "Date/DateTime", "description": "Date/DateTime" },
+{ "value": "string", "label": "String", "description": "String" },
+{ "value": "token", "label": "Token", "description": "Token" },
+{ "value": "reference", "label": "Reference", "description": "Reference" },
+{ "value": "composite", "label": "Composite", "description": "Composite" },
+{ "value": "quantity", "label": "Quantity", "description": "Quantity" },
+{ "value": "uri", "label": "URI", "description": "URI" },
+{ "value": "special", "label": "Special", "description": "Special" }
+]
+}

@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "eq", "label": "Equals", "description": "Equals" },
+{ "value": "ne", "label": "Not Equals", "description": "Not Equals" },
+{ "value": "gt", "label": "Greater Than", "description": "Greater Than" },
+{ "value": "lt", "label": "Less Than", "description": "Less Than" },
+{ "value": "ge", "label": "Greater or Equals", "description": "Greater or Equals" },
+{ "value": "le", "label": "Less of Equal", "description": "Less of Equal" },
+{ "value": "sa", "label": "Starts After", "description": "Starts After" },
+{ "value": "eb", "label": "Ends Before", "description": "Ends Before" },
+{ "value": "ap", "label": "Approximately", "description": "Approximately" }
+]
+}

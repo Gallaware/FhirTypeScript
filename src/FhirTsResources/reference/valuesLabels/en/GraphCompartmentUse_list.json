@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "condition", "label": "Condition", "description": "Condition" },
+{ "value": "requirement", "label": "Requirement", "description": "Requirement" }
+]
+}

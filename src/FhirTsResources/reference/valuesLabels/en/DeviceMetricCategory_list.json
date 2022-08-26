@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "measurement", "label": "Measurement", "description": "Measurement" },
+{ "value": "setting", "label": "Setting", "description": "Setting" },
+{ "value": "calculation", "label": "Calculation", "description": "Calculation" },
+{ "value": "unspecified", "label": "Unspecified", "description": "Unspecified" }
+]
+}

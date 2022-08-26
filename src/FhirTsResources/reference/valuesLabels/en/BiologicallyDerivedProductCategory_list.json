@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "organ", "label": "Organ", "description": "Organ" },
+{ "value": "tissue", "label": "Tissue", "description": "Tissue" },
+{ "value": "fluid", "label": "Fluid", "description": "Fluid" },
+{ "value": "cells", "label": "Cells", "description": "Cells" },
+{ "value": "biologicalAgent", "label": "BiologicalAgent", "description": "BiologicalAgent" }
+]
+}

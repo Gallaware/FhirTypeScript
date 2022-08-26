@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "type", "label": "Type", "description": "Type" },
+{ "value": "variable", "label": "Variable", "description": "Variable" }
+]
+}

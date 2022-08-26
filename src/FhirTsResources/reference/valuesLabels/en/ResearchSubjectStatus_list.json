@@ -1,0 +1,16 @@
+{ "valuesLabels":[
+{ "value": "candidate", "label": "Candidate", "description": "Candidate" },
+{ "value": "eligible", "label": "Eligible", "description": "Eligible" },
+{ "value": "follow-up", "label": "Follow-up", "description": "Follow-up" },
+{ "value": "ineligible", "label": "Ineligible", "description": "Ineligible" },
+{ "value": "not-registered", "label": "Not Registered", "description": "Not Registered" },
+{ "value": "off-study", "label": "Off-study", "description": "Off-study" },
+{ "value": "on-study", "label": "On-study", "description": "On-study" },
+{ "value": "on-study-intervention", "label": "On-study-intervention", "description": "On-study-intervention" },
+{ "value": "on-study-observation", "label": "On-study-observation", "description": "On-study-observation" },
+{ "value": "pending-on-study", "label": "Pending on-study", "description": "Pending on-study" },
+{ "value": "potential-candidate", "label": "Potential Candidate", "description": "Potential Candidate" },
+{ "value": "screening", "label": "Screening", "description": "Screening" },
+{ "value": "withdrawn", "label": "Withdrawn", "description": "Withdrawn" }
+]
+}

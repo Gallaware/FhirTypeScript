@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "visual-group", "label": "Visual Group", "description": "Visual Group" },
+{ "value": "logical-group", "label": "Logical Group", "description": "Logical Group" },
+{ "value": "sentence-group", "label": "Sentence Group", "description": "Sentence Group" }
+]
+}

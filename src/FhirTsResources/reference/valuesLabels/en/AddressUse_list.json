@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "home", "label": "Home", "description": "Home" },
+{ "value": "work", "label": "Work", "description": "Work" },
+{ "value": "temp", "label": "Temporary", "description": "Temporary" },
+{ "value": "old", "label": "Old / Incorrect", "description": "Old / Incorrect" },
+{ "value": "billing", "label": "Billing", "description": "Billing" }
+]
+}

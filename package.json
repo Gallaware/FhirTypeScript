@@ -1,0 +1,43 @@
+{
+  "name": "fhirtypescript",
+  "version": "1.0.0",
+  "description": "Implementation of FHIR JSON protocol using TypeScript. Includes valid values and multi-language oriented display labels.",
+  "main": "index.ts",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "jest": "^28.1.3",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "debug": "node --inspect-brk --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gallaware/FhirTypeScript"
+  },
+  "keywords": [
+    "FHIR",
+    "4.0",
+    "TypeScript",
+    "ValidValues",
+    "Labels"
+  ],
+  "author": "Gallaware, Inc.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Gallaware/FhirTypeScript/issues"
+  },
+  "homepage": "https://github.com/Gallaware/FhirTypeScript#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.7.6",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0"
+  }
+}

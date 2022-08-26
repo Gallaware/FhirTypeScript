@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "planned", "label": "Planned", "description": "Planned" },
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "reserved", "label": "Reserved", "description": "Reserved" },
+{ "value": "completed", "label": "Completed", "description": "Completed" }
+]
+}

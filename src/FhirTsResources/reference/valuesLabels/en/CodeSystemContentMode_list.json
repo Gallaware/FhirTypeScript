@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "not-present", "label": "Not Present", "description": "Not Present" },
+{ "value": "example", "label": "Example", "description": "Example" },
+{ "value": "fragment", "label": "Fragment", "description": "Fragment" },
+{ "value": "complete", "label": "Complete", "description": "Complete" },
+{ "value": "supplement", "label": "Supplement", "description": "Supplement" }
+]
+}

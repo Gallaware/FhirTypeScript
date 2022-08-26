@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "always", "label": "Always", "description": "Always" },
+{ "value": "on-error", "label": "Error/reject conditions only", "description": "Error/reject conditions only" },
+{ "value": "never", "label": "Never", "description": "Never" },
+{ "value": "on-success", "label": "Successful completion only", "description": "Successful completion only" }
+]
+}

@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "document", "label": "Document", "description": "Document" },
+{ "value": "message", "label": "Message", "description": "Message" },
+{ "value": "transaction", "label": "Transaction", "description": "Transaction" },
+{ "value": "transaction-response", "label": "Transaction Response", "description": "Transaction Response" },
+{ "value": "batch", "label": "Batch", "description": "Batch" },
+{ "value": "batch-response", "label": "Batch Response", "description": "Batch Response" },
+{ "value": "history", "label": "History List", "description": "History List" },
+{ "value": "searchset", "label": "Search Results", "description": "Search Results" },
+{ "value": "collection", "label": "Collection", "description": "Collection" }
+]
+}

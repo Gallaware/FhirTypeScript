@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "primitive-type", "label": "Primitive Data Type", "description": "Primitive Data Type" },
+{ "value": "complex-type", "label": "Complex Data Type", "description": "Complex Data Type" },
+{ "value": "resource", "label": "Resource", "description": "Resource" },
+{ "value": "logical", "label": "Logical", "description": "Logical" }
+]
+}

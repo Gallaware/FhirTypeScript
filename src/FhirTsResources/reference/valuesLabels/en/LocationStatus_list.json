@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "suspended", "label": "Suspended", "description": "Suspended" },
+{ "value": "inactive", "label": "Inactive", "description": "Inactive" }
+]
+}

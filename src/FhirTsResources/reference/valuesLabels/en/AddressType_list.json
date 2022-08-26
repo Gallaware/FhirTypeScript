@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "postal", "label": "Postal", "description": "Postal" },
+{ "value": "physical", "label": "Physical", "description": "Physical" },
+{ "value": "both", "label": "Postal &amp; Physical", "description": "Postal &amp; Physical" }
+]
+}

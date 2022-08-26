@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "farenheit", "label": "Fahrenheit", "description": "Fahrenheit" },
+{ "value": "celsius", "label": "Celsius", "description": "Celsius" },
+{ "value": "kelvin", "label": "Kelvin", "description": "Kelvin" }
+]
+}

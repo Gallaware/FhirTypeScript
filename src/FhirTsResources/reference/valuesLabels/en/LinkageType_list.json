@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "source", "label": "Source of Truth", "description": "Source of Truth" },
+{ "value": "alternate", "label": "Alternate Record", "description": "Alternate Record" },
+{ "value": "historical", "label": "Historical/Obsolete Record", "description": "Historical/Obsolete Record" }
+]
+}

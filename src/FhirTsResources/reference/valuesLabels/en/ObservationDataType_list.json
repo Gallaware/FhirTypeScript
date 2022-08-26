@@ -1,0 +1,14 @@
+{ "valuesLabels":[
+{ "value": "Quantity", "label": "Quantity", "description": "Quantity" },
+{ "value": "CodeableConcept", "label": "CodeableConcept", "description": "CodeableConcept" },
+{ "value": "string", "label": "string", "description": "string" },
+{ "value": "boolean", "label": "boolean", "description": "boolean" },
+{ "value": "integer", "label": "integer", "description": "integer" },
+{ "value": "Range", "label": "Range", "description": "Range" },
+{ "value": "Ratio", "label": "Ratio", "description": "Ratio" },
+{ "value": "SampledData", "label": "SampledData", "description": "SampledData" },
+{ "value": "time", "label": "time", "description": "time" },
+{ "value": "dateTime", "label": "dateTime", "description": "dateTime" },
+{ "value": "Period", "label": "Period", "description": "Period" }
+]
+}

@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "literal", "label": "Literal References", "description": "Literal References" },
+{ "value": "logical", "label": "Logical References", "description": "Logical References" },
+{ "value": "resolves", "label": "Resolves References", "description": "Resolves References" },
+{ "value": "enforced", "label": "Reference Integrity Enforced", "description": "Reference Integrity Enforced" },
+{ "value": "local", "label": "Local References Only", "description": "Local References Only" }
+]
+}

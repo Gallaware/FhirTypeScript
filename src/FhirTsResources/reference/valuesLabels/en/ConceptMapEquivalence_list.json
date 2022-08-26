@@ -1,0 +1,13 @@
+{ "valuesLabels":[
+{ "value": "relatedto", "label": "Related To", "description": "Related To" },
+{ "value": "equivalent", "label": "Equivalent", "description": "Equivalent" },
+{ "value": "equal", "label": "Equal", "description": "Equal" },
+{ "value": "wider", "label": "Wider", "description": "Wider" },
+{ "value": "subsumes", "label": "Subsumes", "description": "Subsumes" },
+{ "value": "narrower", "label": "Narrower", "description": "Narrower" },
+{ "value": "specializes", "label": "Specializes", "description": "Specializes" },
+{ "value": "inexact", "label": "Inexact", "description": "Inexact" },
+{ "value": "unmatched", "label": "Unmatched", "description": "Unmatched" },
+{ "value": "disjoint", "label": "Disjoint", "description": "Disjoint" }
+]
+}

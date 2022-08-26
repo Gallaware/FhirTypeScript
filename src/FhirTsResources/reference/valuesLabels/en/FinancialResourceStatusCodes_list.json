@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "draft", "label": "Draft", "description": "Draft" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" }
+]
+}

@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "derivation", "label": "Derivation", "description": "Derivation" },
+{ "value": "revision", "label": "Revision", "description": "Revision" },
+{ "value": "quotation", "label": "Quotation", "description": "Quotation" },
+{ "value": "source", "label": "Source", "description": "Source" },
+{ "value": "removal", "label": "Removal", "description": "Removal" }
+]
+}

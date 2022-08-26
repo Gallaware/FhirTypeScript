@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "match", "label": "Match", "description": "Match" },
+{ "value": "include", "label": "Include", "description": "Include" },
+{ "value": "outcome", "label": "Outcome", "description": "Outcome" }
+]
+}

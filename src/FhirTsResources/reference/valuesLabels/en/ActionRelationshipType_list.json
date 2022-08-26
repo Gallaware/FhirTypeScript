@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "before-start", "label": "Before Start", "description": "Before Start" },
+{ "value": "before", "label": "Before", "description": "Before" },
+{ "value": "before-end", "label": "Before End", "description": "Before End" },
+{ "value": "concurrent-with-start", "label": "Concurrent With Start", "description": "Concurrent With Start" },
+{ "value": "concurrent", "label": "Concurrent", "description": "Concurrent" },
+{ "value": "concurrent-with-end", "label": "Concurrent With End", "description": "Concurrent With End" },
+{ "value": "after-start", "label": "After Start", "description": "After Start" },
+{ "value": "after", "label": "After", "description": "After" },
+{ "value": "after-end", "label": "After End", "description": "After End" }
+]
+}

@@ -1,0 +1,13 @@
+{ "valuesLabels":[
+{ "value": "proposed", "label": "Proposed", "description": "Proposed" },
+{ "value": "pending", "label": "Pending", "description": "Pending" },
+{ "value": "booked", "label": "Booked", "description": "Booked" },
+{ "value": "arrived", "label": "Arrived", "description": "Arrived" },
+{ "value": "fulfilled", "label": "Fulfilled", "description": "Fulfilled" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "noshow", "label": "No Show", "description": "No Show" },
+{ "value": "entered-in-error", "label": "Entered in error", "description": "Entered in error" },
+{ "value": "checked-in", "label": "Checked In", "description": "Checked In" },
+{ "value": "waitlist", "label": "Waitlisted", "description": "Waitlisted" }
+]
+}

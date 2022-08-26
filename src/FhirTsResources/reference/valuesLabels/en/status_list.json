@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "attested", "label": "Attested", "description": "Attested" },
+{ "value": "validated", "label": "Validated", "description": "Validated" },
+{ "value": "in-process", "label": "In process", "description": "In process" },
+{ "value": "req-revalid", "label": "Requires revalidation", "description": "Requires revalidation" },
+{ "value": "val-fail", "label": "Validation failed", "description": "Validation failed" },
+{ "value": "reval-fail", "label": "Re-Validation failed", "description": "Re-Validation failed" }
+]
+}

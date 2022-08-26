@@ -1,0 +1,12 @@
+{ "valuesLabels":[
+{ "value": "=", "label": "Equals", "description": "Equals" },
+{ "value": "is-a", "label": "Is A (by subsumption)", "description": "Is A (by subsumption)" },
+{ "value": "descendent-of", "label": "Descendent Of (by subsumption)", "description": "Descendent Of (by subsumption)" },
+{ "value": "is-not-a", "label": "Not (Is A) (by subsumption)", "description": "Not (Is A) (by subsumption)" },
+{ "value": "regex", "label": "Regular Expression", "description": "Regular Expression" },
+{ "value": "in", "label": "In Set", "description": "In Set" },
+{ "value": "not-in", "label": "Not in Set", "description": "Not in Set" },
+{ "value": "generalizes", "label": "Generalizes (by Subsumption)", "description": "Generalizes (by Subsumption)" },
+{ "value": "exists", "label": "Exists", "description": "Exists" }
+]
+}

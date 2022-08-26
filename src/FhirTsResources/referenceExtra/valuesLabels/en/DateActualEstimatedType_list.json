@@ -1,0 +1,33 @@
+{ "valuesLabels":[
+    {
+        "value": "notset",
+        "label": "Not set",
+        "description": "Not set"
+    },
+    {
+        "value": "date",
+        "label": "Date",
+        "description": "Date"
+    },
+    {
+        "value": "age",
+        "label": "Age",
+        "description": "Age"
+    },
+    {
+        "value": "period",
+        "label": "Period of time",
+        "description": "Period of time"
+    },
+    {
+        "value": "range",
+        "label": "Range of time",
+        "description": "Range between dates"
+    },
+    {
+        "value": "stringdate",
+        "label": "Date string",
+        "description": "Date string"
+    }
+]
+}

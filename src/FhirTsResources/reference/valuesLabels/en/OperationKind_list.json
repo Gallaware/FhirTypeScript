@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "operation", "label": "Operation", "description": "Operation" },
+{ "value": "query", "label": "Query", "description": "Query" }
+]
+}

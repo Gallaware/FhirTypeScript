@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "reference", "label": "reference range", "description": "reference range" },
+{ "value": "critical", "label": "critical range", "description": "critical range" },
+{ "value": "absolute", "label": "absolute range", "description": "absolute range" }
+]
+}

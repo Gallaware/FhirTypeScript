@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "low", "label": "Low Risk", "description": "Low Risk" },
+{ "value": "high", "label": "High Risk", "description": "High Risk" },
+{ "value": "unable-to-assess", "label": "Unable to Assess Risk", "description": "Unable to Assess Risk" }
+]
+}

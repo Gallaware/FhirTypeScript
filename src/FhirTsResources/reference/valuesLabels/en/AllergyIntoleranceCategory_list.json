@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "food", "label": "Food", "description": "Food" },
+{ "value": "medication", "label": "Medication", "description": "Medication" },
+{ "value": "environment", "label": "Environment", "description": "Environment" },
+{ "value": "biologic", "label": "Biologic", "description": "Biologic" }
+]
+}

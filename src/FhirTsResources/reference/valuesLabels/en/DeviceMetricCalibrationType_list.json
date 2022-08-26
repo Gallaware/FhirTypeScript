@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "unspecified", "label": "Unspecified", "description": "Unspecified" },
+{ "value": "offset", "label": "Offset", "description": "Offset" },
+{ "value": "gain", "label": "Gain", "description": "Gain" },
+{ "value": "two-point", "label": "Two Point", "description": "Two Point" }
+]
+}

@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "directlink", "label": "Click and see", "description": "Click and see" },
+{ "value": "openapi", "label": "The URL is the RESTful or other kind of API that can access to the result.", "description": "The URL is the RESTful or other kind of API that can access to the result." },
+{ "value": "login", "label": "Result cannot be access unless an account is logged in", "description": "Result cannot be access unless an account is logged in" },
+{ "value": "oauth", "label": "Result need to be fetched with API and need LOGIN( or cookies are required when visiting the link of resource)", "description": "Result need to be fetched with API and need LOGIN( or cookies are required when visiting the link of resource)" },
+{ "value": "other", "label": "Some other complicated or particular way to get resource from URL.", "description": "Some other complicated or particular way to get resource from URL." }
+]
+}

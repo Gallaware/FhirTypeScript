@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "0", "label": "Success", "description": "Success" },
+{ "value": "4", "label": "Minor failure", "description": "Minor failure" },
+{ "value": "8", "label": "Serious failure", "description": "Serious failure" },
+{ "value": "12", "label": "Major failure", "description": "Major failure" }
+]
+}

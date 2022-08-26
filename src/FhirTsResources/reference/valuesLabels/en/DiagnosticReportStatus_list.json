@@ -1,0 +1,13 @@
+{ "valuesLabels":[
+{ "value": "registered", "label": "Registered", "description": "Registered" },
+{ "value": "partial", "label": "Partial", "description": "Partial" },
+{ "value": "preliminary", "label": "Preliminary", "description": "Preliminary" },
+{ "value": "final", "label": "Final", "description": "Final" },
+{ "value": "amended", "label": "Amended", "description": "Amended" },
+{ "value": "corrected", "label": "Corrected", "description": "Corrected" },
+{ "value": "appended", "label": "Appended", "description": "Appended" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "unknown", "label": "Unknown", "description": "Unknown" }
+]
+}

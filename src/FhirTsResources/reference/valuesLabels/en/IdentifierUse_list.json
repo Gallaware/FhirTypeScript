@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "usual", "label": "Usual", "description": "Usual" },
+{ "value": "official", "label": "Official", "description": "Official" },
+{ "value": "temp", "label": "Temp", "description": "Temp" },
+{ "value": "secondary", "label": "Secondary", "description": "Secondary" },
+{ "value": "old", "label": "Old", "description": "Old" }
+]
+}

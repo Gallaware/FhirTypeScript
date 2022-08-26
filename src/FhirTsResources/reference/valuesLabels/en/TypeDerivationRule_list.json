@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "specialization", "label": "Specialization", "description": "Specialization" },
+{ "value": "constraint", "label": "Constraint", "description": "Constraint" }
+]
+}

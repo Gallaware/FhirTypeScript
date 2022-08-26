@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "consequence", "label": "Consequence", "description": "Consequence" },
+{ "value": "currency", "label": "Currency", "description": "Currency" },
+{ "value": "notification", "label": "Notification", "description": "Notification" }
+]
+}

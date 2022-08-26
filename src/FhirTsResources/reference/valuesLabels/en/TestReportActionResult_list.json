@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "pass", "label": "Pass", "description": "Pass" },
+{ "value": "skip", "label": "Skip", "description": "Skip" },
+{ "value": "fail", "label": "Fail", "description": "Fail" },
+{ "value": "warning", "label": "Warning", "description": "Warning" },
+{ "value": "error", "label": "Error", "description": "Error" }
+]
+}

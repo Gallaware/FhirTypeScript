@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "author", "label": "Author", "description": "Author" },
+{ "value": "editor", "label": "Editor", "description": "Editor" },
+{ "value": "reviewer", "label": "Reviewer", "description": "Reviewer" },
+{ "value": "endorser", "label": "Endorser", "description": "Endorser" }
+]
+}

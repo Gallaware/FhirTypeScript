@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "draft", "label": "Pending", "description": "Pending" },
+{ "value": "proposed", "label": "Proposed", "description": "Proposed" },
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "rejected", "label": "Rejected", "description": "Rejected" },
+{ "value": "inactive", "label": "Inactive", "description": "Inactive" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" }
+]
+}

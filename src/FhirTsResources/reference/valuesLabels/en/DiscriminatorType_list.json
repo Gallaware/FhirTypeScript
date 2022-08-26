@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "value", "label": "Value", "description": "Value" },
+{ "value": "exists", "label": "Exists", "description": "Exists" },
+{ "value": "pattern", "label": "Pattern", "description": "Pattern" },
+{ "value": "type", "label": "Type", "description": "Type" },
+{ "value": "profile", "label": "Profile", "description": "Profile" }
+]
+}

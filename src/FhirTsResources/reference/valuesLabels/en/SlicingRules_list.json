@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "closed", "label": "Closed", "description": "Closed" },
+{ "value": "open", "label": "Open", "description": "Open" },
+{ "value": "openAtEnd", "label": "Open at End", "description": "Open at End" }
+]
+}

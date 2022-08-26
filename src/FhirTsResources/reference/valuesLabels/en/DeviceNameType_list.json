@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "udi-label-name", "label": "UDI Label name", "description": "UDI Label name" },
+{ "value": "user-friendly-name", "label": "User Friendly name", "description": "User Friendly name" },
+{ "value": "patient-reported-name", "label": "Patient Reported name", "description": "Patient Reported name" },
+{ "value": "manufacturer-name", "label": "Manufacturer name", "description": "Manufacturer name" },
+{ "value": "model-name", "label": "Model name", "description": "Model name" },
+{ "value": "other", "label": "other", "description": "other" }
+]
+}

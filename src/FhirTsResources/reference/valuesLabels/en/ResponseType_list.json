@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "ok", "label": "OK", "description": "OK" },
+{ "value": "transient-error", "label": "Transient Error", "description": "Transient Error" },
+{ "value": "fatal-error", "label": "Fatal Error", "description": "Fatal Error" }
+]
+}

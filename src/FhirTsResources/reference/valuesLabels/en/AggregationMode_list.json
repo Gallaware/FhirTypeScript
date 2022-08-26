@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "contained", "label": "Contained", "description": "Contained" },
+{ "value": "referenced", "label": "Referenced", "description": "Referenced" },
+{ "value": "bundled", "label": "Bundled", "description": "Bundled" }
+]
+}

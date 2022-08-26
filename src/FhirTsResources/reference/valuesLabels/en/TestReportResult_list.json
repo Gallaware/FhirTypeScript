@@ -1,0 +1,6 @@
+{ "valuesLabels":[
+{ "value": "pass", "label": "Pass", "description": "Pass" },
+{ "value": "fail", "label": "Fail", "description": "Fail" },
+{ "value": "pending", "label": "Pending", "description": "Pending" }
+]
+}

@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "exposure", "label": "Exposure", "description": "Exposure" },
+{ "value": "exposure-alternative", "label": "Exposure Alternative", "description": "Exposure Alternative" }
+]
+}

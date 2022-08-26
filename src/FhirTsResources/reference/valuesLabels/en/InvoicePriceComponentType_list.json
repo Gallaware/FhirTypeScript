@@ -1,0 +1,9 @@
+{ "valuesLabels":[
+{ "value": "base", "label": "base price", "description": "base price" },
+{ "value": "surcharge", "label": "surcharge", "description": "surcharge" },
+{ "value": "deduction", "label": "deduction", "description": "deduction" },
+{ "value": "discount", "label": "discount", "description": "discount" },
+{ "value": "tax", "label": "tax", "description": "tax" },
+{ "value": "informational", "label": "informational", "description": "informational" }
+]
+}

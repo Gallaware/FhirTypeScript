@@ -1,0 +1,7 @@
+{ "valuesLabels":[
+{ "value": "replaces", "label": "Replaces", "description": "Replaces" },
+{ "value": "transforms", "label": "Transforms", "description": "Transforms" },
+{ "value": "signs", "label": "Signs", "description": "Signs" },
+{ "value": "appends", "label": "Appends", "description": "Appends" }
+]
+}

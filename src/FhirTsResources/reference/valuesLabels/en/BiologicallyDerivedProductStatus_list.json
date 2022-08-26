@@ -1,0 +1,5 @@
+{ "valuesLabels":[
+{ "value": "available", "label": "Available", "description": "Available" },
+{ "value": "unavailable", "label": "Unavailable", "description": "Unavailable" }
+]
+}

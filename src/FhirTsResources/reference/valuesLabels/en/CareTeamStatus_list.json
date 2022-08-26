@@ -1,0 +1,8 @@
+{ "valuesLabels":[
+{ "value": "proposed", "label": "Proposed", "description": "Proposed" },
+{ "value": "active", "label": "Active", "description": "Active" },
+{ "value": "suspended", "label": "Suspended", "description": "Suspended" },
+{ "value": "inactive", "label": "Inactive", "description": "Inactive" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" }
+]
+}

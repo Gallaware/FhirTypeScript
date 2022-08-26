@@ -1,0 +1,18 @@
+{ "valuesLabels":[
+{ "value": "amended", "label": "Amended", "description": "Amended" },
+{ "value": "appended", "label": "Appended", "description": "Appended" },
+{ "value": "cancelled", "label": "Cancelled", "description": "Cancelled" },
+{ "value": "disputed", "label": "Disputed", "description": "Disputed" },
+{ "value": "entered-in-error", "label": "Entered in Error", "description": "Entered in Error" },
+{ "value": "executable", "label": "Executable", "description": "Executable" },
+{ "value": "executed", "label": "Executed", "description": "Executed" },
+{ "value": "negotiable", "label": "Negotiable", "description": "Negotiable" },
+{ "value": "offered", "label": "Offered", "description": "Offered" },
+{ "value": "policy", "label": "Policy", "description": "Policy" },
+{ "value": "rejected", "label": "Rejected", "description": "Rejected" },
+{ "value": "renewed", "label": "Renewed", "description": "Renewed" },
+{ "value": "revoked", "label": "Revoked", "description": "Revoked" },
+{ "value": "resolved", "label": "Resolved", "description": "Resolved" },
+{ "value": "terminated", "label": "Terminated", "description": "Terminated" }
+]
+}

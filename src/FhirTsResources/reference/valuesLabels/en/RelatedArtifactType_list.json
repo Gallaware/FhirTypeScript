@@ -1,0 +1,11 @@
+{ "valuesLabels":[
+{ "value": "documentation", "label": "Documentation", "description": "Documentation" },
+{ "value": "justification", "label": "Justification", "description": "Justification" },
+{ "value": "citation", "label": "Citation", "description": "Citation" },
+{ "value": "predecessor", "label": "Predecessor", "description": "Predecessor" },
+{ "value": "successor", "label": "Successor", "description": "Successor" },
+{ "value": "derived-from", "label": "Derived From", "description": "Derived From" },
+{ "value": "depends-on", "label": "Depends On", "description": "Depends On" },
+{ "value": "composed-of", "label": "Composed Of", "description": "Composed Of" }
+]
+}
