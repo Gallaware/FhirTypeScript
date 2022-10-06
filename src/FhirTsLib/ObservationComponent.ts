@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_VALUESTRING, REGEX_VALUETIME, REGEX_VALUEDATETIME } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, Extension, ObservationReferenceRange, Period, Quantity, Range, Ratio, SampledData } from './FhirType';
+import { CodeableConcept, Element, Extension, ObservationReferenceRange, Period, Quantity, Range, Ratio, SampledData } from './index';
 
 
 

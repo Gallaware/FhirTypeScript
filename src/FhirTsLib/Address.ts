@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_TEXT, REGEX_CITY, REGEX_DISTRICT, REGEX_STATE, REGEX_POSTALCODE, REGEX_COUNTRY } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension, Period } from './FhirType';
+import { Element, Extension, Period } from './index';
 import { AddressUse_list_ValidValues, AddressType_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

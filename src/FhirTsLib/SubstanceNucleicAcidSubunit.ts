@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_SEQUENCE } from '../FhirTsLibValidation/FhirRegex';
-import { Attachment, CodeableConcept, Element, Extension, SubstanceNucleicAcidLinkage, SubstanceNucleicAcidSugar } from './FhirType';
+import { Attachment, CodeableConcept, Element, Extension, SubstanceNucleicAcidLinkage, SubstanceNucleicAcidSugar } from './index';
 
 
 

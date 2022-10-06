@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, ExplanationOfBenefitAdjudication, ExplanationOfBenefitSubDetail, Extension, Money, Quantity, Reference } from './FhirType';
+import { CodeableConcept, Element, ExplanationOfBenefitAdjudication, ExplanationOfBenefitSubDetail, Extension, Money, Quantity, Reference } from './index';
 
 
 

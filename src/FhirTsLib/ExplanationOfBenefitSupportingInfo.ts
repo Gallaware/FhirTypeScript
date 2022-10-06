@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_TIMINGDATE, REGEX_VALUESTRING } from '../FhirTsLibValidation/FhirRegex';
-import { Attachment, CodeableConcept, Coding, Element, Extension, Period, Quantity, Reference } from './FhirType';
+import { Attachment, CodeableConcept, Coding, Element, Extension, Period, Quantity, Reference } from './index';
 
 
 

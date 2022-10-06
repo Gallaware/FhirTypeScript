@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { ChargeItemDefinitionApplicability, ChargeItemDefinitionPriceComponent, Extension } from './FhirType';
+import { ChargeItemDefinitionApplicability, ChargeItemDefinitionPriceComponent, Extension } from './index';
 
 
 

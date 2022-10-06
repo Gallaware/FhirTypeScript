@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_REPEATUNIT } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, Extension, SubstanceAmount, SubstancePolymerDegreeOfPolymerisation, SubstancePolymerStructuralRepresentation } from './FhirType';
+import { CodeableConcept, Element, Extension, SubstanceAmount, SubstancePolymerDegreeOfPolymerisation, SubstancePolymerStructuralRepresentation } from './index';
 
 
 

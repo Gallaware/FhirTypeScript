@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { Extension, MedicationKnowledgeMaxDispense, MedicationKnowledgeSchedule, MedicationKnowledgeSubstitution, Reference } from './FhirType';
+import { Extension, MedicationKnowledgeMaxDispense, MedicationKnowledgeSchedule, MedicationKnowledgeSubstitution, Reference } from './index';
 
 
 

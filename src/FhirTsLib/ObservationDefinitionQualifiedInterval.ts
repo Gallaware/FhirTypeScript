@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_CONDITION } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, Extension, Range } from './FhirType';
+import { CodeableConcept, Element, Extension, Range } from './index';
 import { ObservationDefinitionQualifiedIntervalCategory_list_ValidValues, ObservationDefinitionQualifiedIntervalGender_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

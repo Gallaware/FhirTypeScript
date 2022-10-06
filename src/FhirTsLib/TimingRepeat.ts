@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { Duration, Element, Extension, Period, Range } from './FhirType';
+import { Duration, Element, Extension, Period, Range } from './index';
 import { TimingRepeatDurationUnit_list_ValidValues, TimingRepeatPeriodUnit_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

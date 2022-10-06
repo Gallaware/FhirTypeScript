@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Coding, ConsentActor, ConsentData, Element, Extension, Period } from './FhirType';
+import { CodeableConcept, Coding, ConsentActor, ConsentData, Element, Extension, Period } from './index';
 import { ConsentProvisionType_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

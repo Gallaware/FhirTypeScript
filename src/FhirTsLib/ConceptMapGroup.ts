@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_SOURCE, REGEX_SOURCEVERSION, REGEX_TARGET, REGEX_TARGETVERSION } from '../FhirTsLibValidation/FhirRegex';
-import { ConceptMapElement, ConceptMapUnmapped, Element, Extension } from './FhirType';
+import { ConceptMapElement, ConceptMapUnmapped, Element, Extension } from './index';
 
 
 

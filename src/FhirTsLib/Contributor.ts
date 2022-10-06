@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_NAME } from '../FhirTsLibValidation/FhirRegex';
-import { ContactDetail, Element, Extension } from './FhirType';
+import { ContactDetail, Element, Extension } from './index';
 import { ContributorType_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

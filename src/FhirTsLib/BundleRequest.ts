@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_URL, REGEX_IFNONEMATCH, REGEX_IFMODIFIEDSINCE, REGEX_IFMATCH, REGEX_IFNONEEXIST } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension } from './FhirType';
+import { Element, Extension } from './index';
 import { BundleRequestMethod_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

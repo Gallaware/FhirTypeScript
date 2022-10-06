@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_CODE, REGEX_DISPLAY, REGEX_COMMENT } from '../FhirTsLibValidation/FhirRegex';
-import { ConceptMapDependsOn, Element, Extension } from './FhirType';
+import { ConceptMapDependsOn, Element, Extension } from './index';
 import { ConceptMapTargetEquivalence_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

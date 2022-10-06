@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_FULLURL } from '../FhirTsLibValidation/FhirRegex';
-import { BundleLink, BundleRequest, BundleResponse, BundleSearch, Element, Extension } from './FhirType';
+import { BundleLink, BundleRequest, BundleResponse, BundleSearch, Element, Extension } from './index';
 
 
 

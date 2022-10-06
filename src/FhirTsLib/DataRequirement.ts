@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_TYPE } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, DataRequirementCodeFilter, DataRequirementDateFilter, DataRequirementSort, Element, Extension, Reference } from './FhirType';
+import { CodeableConcept, DataRequirementCodeFilter, DataRequirementDateFilter, DataRequirementSort, Element, Extension, Reference } from './index';
 
 
 

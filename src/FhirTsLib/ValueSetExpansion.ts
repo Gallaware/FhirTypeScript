@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_IDENTIFIER_000, REGEX_TIMESTAMP_000 } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension, ValueSetContains, ValueSetParameter } from './FhirType';
+import { Element, Extension, ValueSetContains, ValueSetParameter } from './index';
 
 
 

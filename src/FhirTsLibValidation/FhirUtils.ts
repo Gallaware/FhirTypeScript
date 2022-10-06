@@ -15,7 +15,6 @@ import { Range } from "../FhirTsLib/Range";
 import { ContactPointSystem_list_ValidValues, ContactPointUse_list_ValidValues } from "./Fhir_ValidValues";
 import { DateActualEstimatedType_list_ValidValues } from "./Fhir_ValidValuesExtra";
 
-
 /*
   returns true if the value is in the valid values array. The compare is case sensitive.
 */
@@ -69,11 +68,7 @@ export function createPatient(newId: string, isActive: boolean,
     name.setFamily(familyName);
     name.addGiven(givenName);
     patient.addName(name);
-    try {
-      patient.setGender(newGender);
-    } catch (e) {
-
-    }
+    patient.setGender(newGender);
     patient.setBirthDate(dateToStringDate(newBirthDate));
 
     patient.addTelecom(createContactPointEmail(email));
@@ -84,7 +79,8 @@ export function createPatient(newId: string, isActive: boolean,
 /*
 *
 */
-export function createHumanName(given: string, family: string, prefix = undefined, suffix = undefined ) {
+export function createHumanName(given: string, family: string, prefix: string | undefined, 
+      suffix: string | undefined) {
   const name = new HumanName();
   name.addGiven(given);
   name.setFamily(family); 

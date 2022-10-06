@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { ClaimResponseAdjudication, ClaimResponseSubDetail, Element, Extension } from './FhirType';
+import { ClaimResponseAdjudication, ClaimResponseSubDetail, Element, Extension } from './index';
 
 
 

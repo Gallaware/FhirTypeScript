@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_PREFIX, REGEX_TITLE, REGEX_DESCRIPTION, REGEX_TEXTEQUIVALENT, REGEX_PRIORITY, REGEX_TIMINGDATETIME, REGEX_GROUPINGBEHAVIOR, REGEX_SELECTIONBEHAVIOR, REGEX_REQUIREDBEHAVIOR, REGEX_PRECHECKBEHAVIOR, REGEX_CARDINALITYBEHAVIOR } from '../FhirTsLibValidation/FhirRegex';
-import { Age, CodeableConcept, Duration, Element, Extension, Period, Range, Reference, RelatedArtifact, RequestGroupCondition, RequestGroupRelatedAction, Timing } from './FhirType';
+import { Age, CodeableConcept, Duration, Element, Extension, Period, Range, Reference, RelatedArtifact, RequestGroupCondition, RequestGroupRelatedAction, Timing } from './index';
 
 
 

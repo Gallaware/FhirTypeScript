@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_PROFILE, REGEX_DOCUMENTATION } from '../FhirTsLibValidation/FhirRegex';
-import { CapabilityStatementInteraction, CapabilityStatementOperation, CapabilityStatementSearchParam, Element, Extension } from './FhirType';
+import { CapabilityStatementInteraction, CapabilityStatementOperation, CapabilityStatementSearchParam, Element, Extension } from './index';
 import { ResourceType_list_ValidValues, CapabilityStatementResourceVersioning_list_ValidValues, CapabilityStatementResourceConditionalRead_list_ValidValues, CapabilityStatementResourceConditionalDelete_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

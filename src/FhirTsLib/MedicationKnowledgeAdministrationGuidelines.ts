@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Extension, MedicationKnowledgeDosage, MedicationKnowledgePatientCharacteristics, Reference } from './FhirType';
+import { CodeableConcept, Extension, MedicationKnowledgeDosage, MedicationKnowledgePatientCharacteristics, Reference } from './index';
 
 
 

@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { Address, CodeableConcept, ContactPoint, Element, Extension, HumanName, Period, Reference } from './FhirType';
+import { Address, CodeableConcept, ContactPoint, Element, Extension, HumanName, Period, Reference } from './index';
 import { PatientContactGender_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

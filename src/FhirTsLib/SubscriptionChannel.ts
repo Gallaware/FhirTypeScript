@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_ENDPOINT, REGEX_PAYLOAD } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension } from './FhirType';
+import { Element, Extension } from './index';
 import { SubscriptionChannelType_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

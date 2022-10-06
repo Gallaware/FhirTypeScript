@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_PREFIX, REGEX_TITLE, REGEX_DESCRIPTION, REGEX_TEXTEQUIVALENT, REGEX_PRIORITY, REGEX_TIMINGDATETIME, REGEX_DEFINITIONCANONICAL, REGEX_DEFINITIONURI, REGEX_TRANSFORM } from '../FhirTsLibValidation/FhirRegex';
-import { Age, CodeableConcept, DataRequirement, Duration, Element, Extension, Period, PlanDefinitionCondition, PlanDefinitionDynamicValue, PlanDefinitionParticipant, PlanDefinitionRelatedAction, Range, Reference, RelatedArtifact, Timing, TriggerDefinition } from './FhirType';
+import { Age, CodeableConcept, DataRequirement, Duration, Element, Extension, Period, PlanDefinitionCondition, PlanDefinitionDynamicValue, PlanDefinitionParticipant, PlanDefinitionRelatedAction, Range, Reference, RelatedArtifact, Timing, TriggerDefinition } from './index';
 import { PlanDefinitionActionGroupingBehavior_list_ValidValues, PlanDefinitionActionSelectionBehavior_list_ValidValues, PlanDefinitionActionRequiredBehavior_list_ValidValues, PlanDefinitionActionPrecheckBehavior_list_ValidValues, PlanDefinitionActionCardinalityBehavior_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

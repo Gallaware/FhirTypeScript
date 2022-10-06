@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_NAME_000, REGEX_DOCUMENTATION } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension, StructureMapDependent, StructureMapSource, StructureMapTarget } from './FhirType';
+import { Element, Extension, StructureMapDependent, StructureMapSource, StructureMapTarget } from './index';
 
 
 

@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID_000, REGEX_IMPLICITRULES, REGEX_LANGUAGE } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Meta, ParametersParameter } from './FhirType';
+import { Element, Meta, ParametersParameter } from './index';
 
 
 

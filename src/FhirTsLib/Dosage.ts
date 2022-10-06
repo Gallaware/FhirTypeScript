@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_TEXT, REGEX_PATIENTINSTRUCTION } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, DosageDoseAndRate, Element, Extension, Quantity, Ratio, Timing } from './FhirType';
+import { CodeableConcept, DosageDoseAndRate, Element, Extension, Quantity, Ratio, Timing } from './index';
 
 
 

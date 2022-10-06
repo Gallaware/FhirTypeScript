@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_UNIT, REGEX_SYSTEM, REGEX_CODE } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension } from './FhirType';
+import { Element, Extension } from './index';
 import { AgeComparator_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

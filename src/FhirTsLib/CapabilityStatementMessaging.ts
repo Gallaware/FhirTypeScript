@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_DOCUMENTATION } from '../FhirTsLibValidation/FhirRegex';
-import { CapabilityStatementEndpoint, CapabilityStatementSupportedMessage, Element, Extension } from './FhirType';
+import { CapabilityStatementEndpoint, CapabilityStatementSupportedMessage, Element, Extension } from './index';
 
 
 

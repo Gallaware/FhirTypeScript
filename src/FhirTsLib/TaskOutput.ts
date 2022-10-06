@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_VALUEBASE64BINARY, REGEX_VALUECANONICAL, REGEX_VALUECODE, REGEX_VALUEDATE, REGEX_VALUEDATETIME, REGEX_VALUEID, REGEX_VALUEINSTANT, REGEX_VALUEMARKDOWN, REGEX_VALUEOID, REGEX_VALUESTRING, REGEX_VALUETIME, REGEX_VALUEURI, REGEX_VALUEURL, REGEX_VALUEUUID } from '../FhirTsLibValidation/FhirRegex';
-import { Address, Age, Annotation, Attachment, CodeableConcept, Coding, ContactDetail, ContactPoint, Contributor, Count, DataRequirement, Distance, Dosage, Duration, Element, Expression, Extension, HumanName, Identifier, Meta, Money, ParameterDefinition, Period, Quantity, Range, Ratio, Reference, RelatedArtifact, SampledData, Signature, Timing, TriggerDefinition, UsageContext } from './FhirType';
+import { Address, Age, Annotation, Attachment, CodeableConcept, Coding, ContactDetail, ContactPoint, Contributor, Count, DataRequirement, Distance, Dosage, Duration, Element, Expression, Extension, HumanName, Identifier, Meta, Money, ParameterDefinition, Period, Quantity, Range, Ratio, Reference, RelatedArtifact, SampledData, Signature, Timing, TriggerDefinition, UsageContext } from './index';
 
 
 

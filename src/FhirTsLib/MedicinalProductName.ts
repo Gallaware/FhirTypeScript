@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_PRODUCTNAME } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension, MedicinalProductCountryLanguage, MedicinalProductNamePart } from './FhirType';
+import { Element, Extension, MedicinalProductCountryLanguage, MedicinalProductNamePart } from './index';
 
 
 

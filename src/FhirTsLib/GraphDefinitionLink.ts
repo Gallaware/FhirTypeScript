@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_PATH, REGEX_SLICENAME, REGEX_MAX, REGEX_DESCRIPTION } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension, GraphDefinitionTarget } from './FhirType';
+import { Element, Extension, GraphDefinitionTarget } from './index';
 
 
 

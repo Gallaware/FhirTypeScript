@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_KIND, REGEX_SCHEDULEDSTRING, REGEX_DESCRIPTION } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, Extension, Period, Quantity, Reference, Timing } from './FhirType';
+import { CodeableConcept, Element, Extension, Period, Quantity, Reference, Timing } from './index';
 import { CarePlanDetailStatus_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

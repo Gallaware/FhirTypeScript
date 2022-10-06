@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Extension, InsurancePlanCost } from './FhirType';
+import { CodeableConcept, Extension, InsurancePlanCost } from './index';
 
 
 

@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_LABEL, REGEX_DESCRIPTION, REGEX_COMPARETOSOURCEID, REGEX_COMPARETOSOURCEEXPRESSION, REGEX_COMPARETOSOURCEPATH, REGEX_CONTENTTYPE, REGEX_EXPRESSION, REGEX_HEADERFIELD, REGEX_MINIMUMID, REGEX_PATH, REGEX_REQUESTURL, REGEX_RESOURCE_000, REGEX_RESPONSECODE, REGEX_SOURCEID_000, REGEX_VALIDATEPROFILEID, REGEX_VALUE } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension } from './FhirType';
+import { Element, Extension } from './index';
 import { TestScriptAssertDirection_list_ValidValues, TestScriptAssertOperator_list_ValidValues, TestScriptAssertRequestMethod_list_ValidValues, TestScriptAssertResponse_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

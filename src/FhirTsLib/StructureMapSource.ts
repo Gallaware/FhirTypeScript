@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_CONTEXT, REGEX_MAX, REGEX_TYPE_000, REGEX_DEFAULTVALUEBASE64BINARY, REGEX_DEFAULTVALUECANONICAL, REGEX_DEFAULTVALUECODE, REGEX_DEFAULTVALUEDATE, REGEX_DEFAULTVALUEDATETIME, REGEX_DEFAULTVALUEID, REGEX_DEFAULTVALUEINSTANT, REGEX_DEFAULTVALUEMARKDOWN, REGEX_DEFAULTVALUEOID, REGEX_DEFAULTVALUESTRING, REGEX_DEFAULTVALUETIME, REGEX_DEFAULTVALUEURI, REGEX_DEFAULTVALUEURL, REGEX_DEFAULTVALUEUUID, REGEX_ELEMENT, REGEX_VARIABLE, REGEX_CONDITION, REGEX_CHECK, REGEX_LOGMESSAGE } from '../FhirTsLibValidation/FhirRegex';
-import { Address, Age, Annotation, Attachment, CodeableConcept, Coding, ContactDetail, ContactPoint, Contributor, Count, DataRequirement, Distance, Dosage, Duration, Element, Expression, Extension, HumanName, Identifier, Meta, Money, ParameterDefinition, Period, Quantity, Range, Ratio, Reference, RelatedArtifact, SampledData, Signature, Timing, TriggerDefinition, UsageContext } from './FhirType';
+import { Address, Age, Annotation, Attachment, CodeableConcept, Coding, ContactDetail, ContactPoint, Contributor, Count, DataRequirement, Distance, Dosage, Duration, Element, Expression, Extension, HumanName, Identifier, Meta, Money, ParameterDefinition, Period, Quantity, Range, Ratio, Reference, RelatedArtifact, SampledData, Signature, Timing, TriggerDefinition, UsageContext } from './index';
 import { StructureMapSourceListMode_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

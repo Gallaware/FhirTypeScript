@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_MOLECULARFORMULA, REGEX_MOLECULARFORMULABYMOIETY } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, Extension, Reference, SubstanceSpecificationIsotope, SubstanceSpecificationMolecularWeight, SubstanceSpecificationRepresentation } from './FhirType';
+import { CodeableConcept, Element, Extension, Reference, SubstanceSpecificationIsotope, SubstanceSpecificationMolecularWeight, SubstanceSpecificationRepresentation } from './index';
 
 
 

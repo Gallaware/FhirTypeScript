@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_ONSETSTRING } from '../FhirTsLibValidation/FhirRegex';
-import { Age, Annotation, CodeableConcept, Element, Extension, Period, Range } from './FhirType';
+import { Age, Annotation, CodeableConcept, Element, Extension, Period, Range } from './index';
 
 
 

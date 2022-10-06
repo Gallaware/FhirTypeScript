@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_GENOMEBUILD, REGEX_REFERENCESEQSTRING } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, Extension, Reference } from './FhirType';
+import { CodeableConcept, Element, Extension, Reference } from './index';
 import { MolecularSequenceReferenceSeqOrientation_list_ValidValues, MolecularSequenceReferenceSeqStrand_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

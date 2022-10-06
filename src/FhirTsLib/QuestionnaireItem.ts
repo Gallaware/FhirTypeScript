@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_LINKID, REGEX_DEFINITION_000, REGEX_PREFIX, REGEX_TEXT, REGEX_ANSWERVALUESET } from '../FhirTsLibValidation/FhirRegex';
-import { Coding, Element, Extension, QuestionnaireAnswerOption, QuestionnaireEnableWhen, QuestionnaireInitial } from './FhirType';
+import { Coding, Element, Extension, QuestionnaireAnswerOption, QuestionnaireEnableWhen, QuestionnaireInitial } from './index';
 import { QuestionnaireItemType_list_ValidValues, QuestionnaireItemEnableBehavior_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_NAME_000, REGEX_TYPE_000, REGEX_DOCUMENTATION } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension } from './FhirType';
+import { Element, Extension } from './index';
 import { StructureMapInputMode_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_EFFECTIVETIME, REGEX_PAYMENT, REGEX_PAYMENTDATE } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Element, Extension, Identifier, Money, Quantity, Reference } from './FhirType';
+import { CodeableConcept, Element, Extension, Identifier, Money, Quantity, Reference } from './index';
 
 
 

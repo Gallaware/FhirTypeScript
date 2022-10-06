@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { AdverseEventCausality, Extension, Reference } from './FhirType';
+import { AdverseEventCausality, Extension, Reference } from './index';
 
 
 

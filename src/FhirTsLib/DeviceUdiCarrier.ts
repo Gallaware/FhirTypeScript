@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_DEVICEIDENTIFIER, REGEX_ISSUER, REGEX_JURISDICTION, REGEX_CARRIERHRF } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension } from './FhirType';
+import { Element, Extension } from './index';
 import { DeviceUdiCarrierEntryType_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

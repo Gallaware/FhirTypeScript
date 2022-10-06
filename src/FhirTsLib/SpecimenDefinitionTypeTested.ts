@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_REQUIREMENT } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, Duration, Element, Extension, SpecimenDefinitionContainer, SpecimenDefinitionHandling } from './FhirType';
+import { CodeableConcept, Duration, Element, Extension, SpecimenDefinitionContainer, SpecimenDefinitionHandling } from './index';
 import { SpecimenDefinitionTypeTestedPreference_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

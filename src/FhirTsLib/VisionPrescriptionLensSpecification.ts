@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_COLOR, REGEX_BRAND } from '../FhirTsLibValidation/FhirRegex';
-import { Annotation, CodeableConcept, Element, Extension, Quantity, VisionPrescriptionPrism } from './FhirType';
+import { Annotation, CodeableConcept, Element, Extension, Quantity, VisionPrescriptionPrism } from './index';
 import { VisionPrescriptionLensSpecificationEye_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_DESCRIPTION, REGEX_ONSET } from '../FhirTsLibValidation/FhirRegex';
-import { Annotation, CodeableConcept, Element, Extension } from './FhirType';
+import { Annotation, CodeableConcept, Element, Extension } from './index';
 import { AllergyIntoleranceReactionSeverity_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_NAME, REGEX_TIMINGDATE, REGEX_TIMINGDATETIME } from '../FhirTsLibValidation/FhirRegex';
-import { DataRequirement, Element, Expression, Extension, Reference, Timing } from './FhirType';
+import { DataRequirement, Element, Expression, Extension, Reference, Timing } from './index';
 import { TriggerDefinitionType_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

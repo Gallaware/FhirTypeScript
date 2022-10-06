@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_URL, REGEX_NAME, REGEX_DATASETID, REGEX_VARIANTSETID, REGEX_READSETID } from '../FhirTsLibValidation/FhirRegex';
-import { Element, Extension } from './FhirType';
+import { Element, Extension } from './index';
 import { MolecularSequenceRepositoryType_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

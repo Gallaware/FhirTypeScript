@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_DESCRIPTION, REGEX_DEFINITIONCANONICAL, REGEX_PARTICIPANTEFFECTIVEDATETIME } from '../FhirTsLibValidation/FhirRegex';
-import { CodeableConcept, DataRequirement, Duration, Element, Expression, Extension, Period, Reference, Timing, TriggerDefinition, UsageContext } from './FhirType';
+import { CodeableConcept, DataRequirement, Duration, Element, Expression, Extension, Period, Reference, Timing, TriggerDefinition, UsageContext } from './index';
 import { EvidenceVariableCharacteristicGroupMeasure_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 

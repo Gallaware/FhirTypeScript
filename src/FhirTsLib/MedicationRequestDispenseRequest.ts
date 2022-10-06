@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import { REGEX_ID } from '../FhirTsLibValidation/FhirRegex';
-import { Duration, Element, Extension, MedicationRequestInitialFill, Period, Quantity, Reference } from './FhirType';
+import { Duration, Element, Extension, MedicationRequestInitialFill, Period, Quantity, Reference } from './index';
 
 
 

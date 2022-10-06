@@ -1,7 +1,7 @@
 import { getValidValueIdx } from '../FhirTsLibValidation/FhirUtils';
 import { Type } from 'class-transformer';
 import { REGEX_ID, REGEX_ACTIONID } from '../FhirTsLibValidation/FhirRegex';
-import { Duration, Element, Extension, Range } from './FhirType';
+import { Duration, Element, Extension, Range } from './index';
 import { PlanDefinitionRelatedActionRelationship_list_ValidValues } from '../FhirTsLibValidation/Fhir_ValidValues';
 
 
