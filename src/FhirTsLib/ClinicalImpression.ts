@@ -537,6 +537,13 @@ export class ClinicalImpression {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -555,6 +562,13 @@ export class ClinicalImpression {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -573,6 +587,13 @@ export class ClinicalImpression {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -591,6 +612,13 @@ export class ClinicalImpression {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -721,6 +749,13 @@ export class ClinicalImpression {
     }
     this.problem.push(newValue);
   }
+  public deleteProblemAll() {
+    if (typeof(this.problem) !== 'undefined') {
+       delete this.problem;
+    }
+    return;
+  }
+  
 
   public getProblem(): Reference[] | undefined {
       return this.problem;
@@ -739,6 +774,13 @@ export class ClinicalImpression {
     }
     this.investigation.push(newValue);
   }
+  public deleteInvestigationAll() {
+    if (typeof(this.investigation) !== 'undefined') {
+       delete this.investigation;
+    }
+    return;
+  }
+  
 
   public getInvestigation(): ClinicalImpressionInvestigation[] | undefined {
       return this.investigation;
@@ -757,6 +799,13 @@ export class ClinicalImpression {
     }
     this.protocol.push(newValue);
   }
+  public deleteProtocolAll() {
+    if (typeof(this.protocol) !== 'undefined') {
+       delete this.protocol;
+    }
+    return;
+  }
+  
 
   public getProtocol(): string[] | undefined {
       return this.protocol;
@@ -775,6 +824,13 @@ export class ClinicalImpression {
     }
     this._protocol.push(newValue);
   }
+  public delete_protocolAll() {
+    if (typeof(this._protocol) !== 'undefined') {
+       delete this._protocol;
+    }
+    return;
+  }
+  
 
   public get_protocol(): Element[] | undefined {
       return this._protocol;
@@ -821,6 +877,13 @@ export class ClinicalImpression {
     }
     this.finding.push(newValue);
   }
+  public deleteFindingAll() {
+    if (typeof(this.finding) !== 'undefined') {
+       delete this.finding;
+    }
+    return;
+  }
+  
 
   public getFinding(): ClinicalImpressionFinding[] | undefined {
       return this.finding;
@@ -839,6 +902,13 @@ export class ClinicalImpression {
     }
     this.prognosisCodeableConcept.push(newValue);
   }
+  public deletePrognosisCodeableConceptAll() {
+    if (typeof(this.prognosisCodeableConcept) !== 'undefined') {
+       delete this.prognosisCodeableConcept;
+    }
+    return;
+  }
+  
 
   public getPrognosisCodeableConcept(): CodeableConcept[] | undefined {
       return this.prognosisCodeableConcept;
@@ -857,6 +927,13 @@ export class ClinicalImpression {
     }
     this.prognosisReference.push(newValue);
   }
+  public deletePrognosisReferenceAll() {
+    if (typeof(this.prognosisReference) !== 'undefined') {
+       delete this.prognosisReference;
+    }
+    return;
+  }
+  
 
   public getPrognosisReference(): Reference[] | undefined {
       return this.prognosisReference;
@@ -875,6 +952,13 @@ export class ClinicalImpression {
     }
     this.supportingInfo.push(newValue);
   }
+  public deleteSupportingInfoAll() {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       delete this.supportingInfo;
+    }
+    return;
+  }
+  
 
   public getSupportingInfo(): Reference[] | undefined {
       return this.supportingInfo;
@@ -893,6 +977,13 @@ export class ClinicalImpression {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

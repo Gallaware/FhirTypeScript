@@ -2264,6 +2264,13 @@ export class ElementDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -2282,6 +2289,13 @@ export class ElementDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -2328,6 +2342,13 @@ export class ElementDefinition {
     }
     this.representation.push(newValue);
   }
+  public deleteRepresentationAll() {
+    if (typeof(this.representation) !== 'undefined') {
+       delete this.representation;
+    }
+    return;
+  }
+  
 
   public getRepresentation(): string[] | undefined {
       return this.representation;
@@ -2346,6 +2367,13 @@ export class ElementDefinition {
     }
     this._representation.push(newValue);
   }
+  public delete_representationAll() {
+    if (typeof(this._representation) !== 'undefined') {
+       delete this._representation;
+    }
+    return;
+  }
+  
 
   public get_representation(): Element[] | undefined {
       return this._representation;
@@ -2420,6 +2448,13 @@ export class ElementDefinition {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): Coding[] | undefined {
       return this.code;
@@ -2550,6 +2585,13 @@ export class ElementDefinition {
     }
     this.alias.push(newValue);
   }
+  public deleteAliasAll() {
+    if (typeof(this.alias) !== 'undefined') {
+       delete this.alias;
+    }
+    return;
+  }
+  
 
   public getAlias(): string[] | undefined {
       return this.alias;
@@ -2568,6 +2610,13 @@ export class ElementDefinition {
     }
     this._alias.push(newValue);
   }
+  public delete_aliasAll() {
+    if (typeof(this._alias) !== 'undefined') {
+       delete this._alias;
+    }
+    return;
+  }
+  
 
   public get_alias(): Element[] | undefined {
       return this._alias;
@@ -2642,6 +2691,13 @@ export class ElementDefinition {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): ElementDefinitionType[] | undefined {
       return this.type;
@@ -3892,6 +3948,13 @@ export class ElementDefinition {
     }
     this.example.push(newValue);
   }
+  public deleteExampleAll() {
+    if (typeof(this.example) !== 'undefined') {
+       delete this.example;
+    }
+    return;
+  }
+  
 
   public getExample(): ElementDefinitionExample[] | undefined {
       return this.example;
@@ -4134,6 +4197,13 @@ export class ElementDefinition {
     }
     this.condition.push(newValue);
   }
+  public deleteConditionAll() {
+    if (typeof(this.condition) !== 'undefined') {
+       delete this.condition;
+    }
+    return;
+  }
+  
 
   public getCondition(): string[] | undefined {
       return this.condition;
@@ -4152,6 +4222,13 @@ export class ElementDefinition {
     }
     this._condition.push(newValue);
   }
+  public delete_conditionAll() {
+    if (typeof(this._condition) !== 'undefined') {
+       delete this._condition;
+    }
+    return;
+  }
+  
 
   public get_condition(): Element[] | undefined {
       return this._condition;
@@ -4170,6 +4247,13 @@ export class ElementDefinition {
     }
     this.constraint.push(newValue);
   }
+  public deleteConstraintAll() {
+    if (typeof(this.constraint) !== 'undefined') {
+       delete this.constraint;
+    }
+    return;
+  }
+  
 
   public getConstraint(): ElementDefinitionConstraint[] | undefined {
       return this.constraint;
@@ -4216,6 +4300,13 @@ export class ElementDefinition {
     }
     this.mapping.push(newValue);
   }
+  public deleteMappingAll() {
+    if (typeof(this.mapping) !== 'undefined') {
+       delete this.mapping;
+    }
+    return;
+  }
+  
 
   public getMapping(): ElementDefinitionMapping[] | undefined {
       return this.mapping;

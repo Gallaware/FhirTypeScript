@@ -625,6 +625,13 @@ export class CodeSystem {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -643,6 +650,13 @@ export class CodeSystem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -661,6 +675,13 @@ export class CodeSystem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -707,6 +728,13 @@ export class CodeSystem {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -894,6 +922,13 @@ export class CodeSystem {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -940,6 +975,13 @@ export class CodeSystem {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -958,6 +1000,13 @@ export class CodeSystem {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1146,6 +1195,13 @@ export class CodeSystem {
     }
     this.filter.push(newValue);
   }
+  public deleteFilterAll() {
+    if (typeof(this.filter) !== 'undefined') {
+       delete this.filter;
+    }
+    return;
+  }
+  
 
   public getFilter(): CodeSystemFilter[] | undefined {
       return this.filter;
@@ -1164,6 +1220,13 @@ export class CodeSystem {
     }
     this.property.push(newValue);
   }
+  public deletePropertyAll() {
+    if (typeof(this.property) !== 'undefined') {
+       delete this.property;
+    }
+    return;
+  }
+  
 
   public getProperty(): CodeSystemProperty[] | undefined {
       return this.property;
@@ -1182,6 +1245,13 @@ export class CodeSystem {
     }
     this.concept.push(newValue);
   }
+  public deleteConceptAll() {
+    if (typeof(this.concept) !== 'undefined') {
+       delete this.concept;
+    }
+    return;
+  }
+  
 
   public getConcept(): CodeSystemConcept[] | undefined {
       return this.concept;

@@ -303,6 +303,13 @@ export class ContractAction {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -321,6 +328,13 @@ export class ContractAction {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -339,6 +353,13 @@ export class ContractAction {
     }
     this.subject.push(newValue);
   }
+  public deleteSubjectAll() {
+    if (typeof(this.subject) !== 'undefined') {
+       delete this.subject;
+    }
+    return;
+  }
+  
 
   public getSubject(): ContractSubject[] | undefined {
       return this.subject;
@@ -357,6 +378,13 @@ export class ContractAction {
     }
     this.linkId.push(newValue);
   }
+  public deleteLinkIdAll() {
+    if (typeof(this.linkId) !== 'undefined') {
+       delete this.linkId;
+    }
+    return;
+  }
+  
 
   public getLinkId(): string[] | undefined {
       return this.linkId;
@@ -375,6 +403,13 @@ export class ContractAction {
     }
     this._linkId.push(newValue);
   }
+  public delete_linkIdAll() {
+    if (typeof(this._linkId) !== 'undefined') {
+       delete this._linkId;
+    }
+    return;
+  }
+  
 
   public get_linkId(): Element[] | undefined {
       return this._linkId;
@@ -393,6 +428,13 @@ export class ContractAction {
     }
     this.contextLinkId.push(newValue);
   }
+  public deleteContextLinkIdAll() {
+    if (typeof(this.contextLinkId) !== 'undefined') {
+       delete this.contextLinkId;
+    }
+    return;
+  }
+  
 
   public getContextLinkId(): string[] | undefined {
       return this.contextLinkId;
@@ -411,6 +453,13 @@ export class ContractAction {
     }
     this._contextLinkId.push(newValue);
   }
+  public delete_contextLinkIdAll() {
+    if (typeof(this._contextLinkId) !== 'undefined') {
+       delete this._contextLinkId;
+    }
+    return;
+  }
+  
 
   public get_contextLinkId(): Element[] | undefined {
       return this._contextLinkId;
@@ -457,6 +506,13 @@ export class ContractAction {
     }
     this.requester.push(newValue);
   }
+  public deleteRequesterAll() {
+    if (typeof(this.requester) !== 'undefined') {
+       delete this.requester;
+    }
+    return;
+  }
+  
 
   public getRequester(): Reference[] | undefined {
       return this.requester;
@@ -475,6 +531,13 @@ export class ContractAction {
     }
     this.requesterLinkId.push(newValue);
   }
+  public deleteRequesterLinkIdAll() {
+    if (typeof(this.requesterLinkId) !== 'undefined') {
+       delete this.requesterLinkId;
+    }
+    return;
+  }
+  
 
   public getRequesterLinkId(): string[] | undefined {
       return this.requesterLinkId;
@@ -493,6 +556,13 @@ export class ContractAction {
     }
     this._requesterLinkId.push(newValue);
   }
+  public delete_requesterLinkIdAll() {
+    if (typeof(this._requesterLinkId) !== 'undefined') {
+       delete this._requesterLinkId;
+    }
+    return;
+  }
+  
 
   public get_requesterLinkId(): Element[] | undefined {
       return this._requesterLinkId;
@@ -511,6 +581,13 @@ export class ContractAction {
     }
     this.performerType.push(newValue);
   }
+  public deletePerformerTypeAll() {
+    if (typeof(this.performerType) !== 'undefined') {
+       delete this.performerType;
+    }
+    return;
+  }
+  
 
   public getPerformerType(): CodeableConcept[] | undefined {
       return this.performerType;
@@ -529,6 +606,13 @@ export class ContractAction {
     }
     this.performerLinkId.push(newValue);
   }
+  public deletePerformerLinkIdAll() {
+    if (typeof(this.performerLinkId) !== 'undefined') {
+       delete this.performerLinkId;
+    }
+    return;
+  }
+  
 
   public getPerformerLinkId(): string[] | undefined {
       return this.performerLinkId;
@@ -547,6 +631,13 @@ export class ContractAction {
     }
     this._performerLinkId.push(newValue);
   }
+  public delete_performerLinkIdAll() {
+    if (typeof(this._performerLinkId) !== 'undefined') {
+       delete this._performerLinkId;
+    }
+    return;
+  }
+  
 
   public get_performerLinkId(): Element[] | undefined {
       return this._performerLinkId;
@@ -565,6 +656,13 @@ export class ContractAction {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -583,6 +681,13 @@ export class ContractAction {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -601,6 +706,13 @@ export class ContractAction {
     }
     this.reason.push(newValue);
   }
+  public deleteReasonAll() {
+    if (typeof(this.reason) !== 'undefined') {
+       delete this.reason;
+    }
+    return;
+  }
+  
 
   public getReason(): string[] | undefined {
       return this.reason;
@@ -619,6 +731,13 @@ export class ContractAction {
     }
     this._reason.push(newValue);
   }
+  public delete_reasonAll() {
+    if (typeof(this._reason) !== 'undefined') {
+       delete this._reason;
+    }
+    return;
+  }
+  
 
   public get_reason(): Element[] | undefined {
       return this._reason;
@@ -637,6 +756,13 @@ export class ContractAction {
     }
     this.reasonLinkId.push(newValue);
   }
+  public deleteReasonLinkIdAll() {
+    if (typeof(this.reasonLinkId) !== 'undefined') {
+       delete this.reasonLinkId;
+    }
+    return;
+  }
+  
 
   public getReasonLinkId(): string[] | undefined {
       return this.reasonLinkId;
@@ -655,6 +781,13 @@ export class ContractAction {
     }
     this._reasonLinkId.push(newValue);
   }
+  public delete_reasonLinkIdAll() {
+    if (typeof(this._reasonLinkId) !== 'undefined') {
+       delete this._reasonLinkId;
+    }
+    return;
+  }
+  
 
   public get_reasonLinkId(): Element[] | undefined {
       return this._reasonLinkId;
@@ -673,6 +806,13 @@ export class ContractAction {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -691,6 +831,13 @@ export class ContractAction {
     }
     this.securityLabelNumber.push(newValue);
   }
+  public deleteSecurityLabelNumberAll() {
+    if (typeof(this.securityLabelNumber) !== 'undefined') {
+       delete this.securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public getSecurityLabelNumber(): number[] | undefined {
       return this.securityLabelNumber;
@@ -709,6 +856,13 @@ export class ContractAction {
     }
     this._securityLabelNumber.push(newValue);
   }
+  public delete_securityLabelNumberAll() {
+    if (typeof(this._securityLabelNumber) !== 'undefined') {
+       delete this._securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public get_securityLabelNumber(): Element[] | undefined {
       return this._securityLabelNumber;

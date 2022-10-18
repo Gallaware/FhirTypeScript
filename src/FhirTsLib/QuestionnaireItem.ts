@@ -250,6 +250,13 @@ export class QuestionnaireItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -268,6 +275,13 @@ export class QuestionnaireItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -342,6 +356,13 @@ export class QuestionnaireItem {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): Coding[] | undefined {
       return this.code;
@@ -445,6 +466,13 @@ export class QuestionnaireItem {
     }
     this.enableWhen.push(newValue);
   }
+  public deleteEnableWhenAll() {
+    if (typeof(this.enableWhen) !== 'undefined') {
+       delete this.enableWhen;
+    }
+    return;
+  }
+  
 
   public getEnableWhen(): QuestionnaireEnableWhen[] | undefined {
       return this.enableWhen;
@@ -520,6 +548,13 @@ export class QuestionnaireItem {
     }
     this.answerOption.push(newValue);
   }
+  public deleteAnswerOptionAll() {
+    if (typeof(this.answerOption) !== 'undefined') {
+       delete this.answerOption;
+    }
+    return;
+  }
+  
 
   public getAnswerOption(): QuestionnaireAnswerOption[] | undefined {
       return this.answerOption;
@@ -538,6 +573,13 @@ export class QuestionnaireItem {
     }
     this.initial.push(newValue);
   }
+  public deleteInitialAll() {
+    if (typeof(this.initial) !== 'undefined') {
+       delete this.initial;
+    }
+    return;
+  }
+  
 
   public getInitial(): QuestionnaireInitial[] | undefined {
       return this.initial;
@@ -556,6 +598,13 @@ export class QuestionnaireItem {
     }
     this.item.push(newValue);
   }
+  public deleteItemAll() {
+    if (typeof(this.item) !== 'undefined') {
+       delete this.item;
+    }
+    return;
+  }
+  
 
   public getItem(): QuestionnaireItem[] | undefined {
       return this.item;

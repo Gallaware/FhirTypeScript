@@ -100,6 +100,13 @@ export class TestScriptMetadata {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -118,6 +125,13 @@ export class TestScriptMetadata {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -136,6 +150,13 @@ export class TestScriptMetadata {
     }
     this.link.push(newValue);
   }
+  public deleteLinkAll() {
+    if (typeof(this.link) !== 'undefined') {
+       delete this.link;
+    }
+    return;
+  }
+  
 
   public getLink(): TestScriptLink[] | undefined {
       return this.link;
@@ -154,6 +175,13 @@ export class TestScriptMetadata {
     }
     this.capability.push(newValue);
   }
+  public deleteCapabilityAll() {
+    if (typeof(this.capability) !== 'undefined') {
+       delete this.capability;
+    }
+    return;
+  }
+  
 
   public getCapability(): TestScriptCapability[] | undefined {
       return this.capability;

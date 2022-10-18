@@ -117,6 +117,13 @@ export class ExplanationOfBenefitInsurance {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -135,6 +142,13 @@ export class ExplanationOfBenefitInsurance {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -153,6 +167,13 @@ export class ExplanationOfBenefitInsurance {
     }
     this.preAuthRef.push(newValue);
   }
+  public deletePreAuthRefAll() {
+    if (typeof(this.preAuthRef) !== 'undefined') {
+       delete this.preAuthRef;
+    }
+    return;
+  }
+  
 
   public getPreAuthRef(): string[] | undefined {
       return this.preAuthRef;
@@ -171,6 +192,13 @@ export class ExplanationOfBenefitInsurance {
     }
     this._preAuthRef.push(newValue);
   }
+  public delete_preAuthRefAll() {
+    if (typeof(this._preAuthRef) !== 'undefined') {
+       delete this._preAuthRef;
+    }
+    return;
+  }
+  
 
   public get_preAuthRef(): Element[] | undefined {
       return this._preAuthRef;

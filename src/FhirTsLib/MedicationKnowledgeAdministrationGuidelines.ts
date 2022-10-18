@@ -113,6 +113,13 @@ export class MedicationKnowledgeAdministrationGuidelines {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -131,6 +138,13 @@ export class MedicationKnowledgeAdministrationGuidelines {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -149,6 +163,13 @@ export class MedicationKnowledgeAdministrationGuidelines {
     }
     this.dosage.push(newValue);
   }
+  public deleteDosageAll() {
+    if (typeof(this.dosage) !== 'undefined') {
+       delete this.dosage;
+    }
+    return;
+  }
+  
 
   public getDosage(): MedicationKnowledgeDosage[] | undefined {
       return this.dosage;
@@ -167,6 +188,13 @@ export class MedicationKnowledgeAdministrationGuidelines {
     }
     this.patientCharacteristics.push(newValue);
   }
+  public deletePatientCharacteristicsAll() {
+    if (typeof(this.patientCharacteristics) !== 'undefined') {
+       delete this.patientCharacteristics;
+    }
+    return;
+  }
+  
 
   public getPatientCharacteristics(): MedicationKnowledgePatientCharacteristics[] | undefined {
       return this.patientCharacteristics;

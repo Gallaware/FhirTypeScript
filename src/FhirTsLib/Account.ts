@@ -445,6 +445,13 @@ export class Account {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -463,6 +470,13 @@ export class Account {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -481,6 +495,13 @@ export class Account {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -499,6 +520,13 @@ export class Account {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -574,6 +602,13 @@ export class Account {
     }
     this.subject.push(newValue);
   }
+  public deleteSubjectAll() {
+    if (typeof(this.subject) !== 'undefined') {
+       delete this.subject;
+    }
+    return;
+  }
+  
 
   public getSubject(): Reference[] | undefined {
       return this.subject;
@@ -592,6 +627,13 @@ export class Account {
     }
     this.coverage.push(newValue);
   }
+  public deleteCoverageAll() {
+    if (typeof(this.coverage) !== 'undefined') {
+       delete this.coverage;
+    }
+    return;
+  }
+  
 
   public getCoverage(): AccountCoverage[] | undefined {
       return this.coverage;
@@ -638,6 +680,13 @@ export class Account {
     }
     this.guarantor.push(newValue);
   }
+  public deleteGuarantorAll() {
+    if (typeof(this.guarantor) !== 'undefined') {
+       delete this.guarantor;
+    }
+    return;
+  }
+  
 
   public getGuarantor(): AccountGuarantor[] | undefined {
       return this.guarantor;

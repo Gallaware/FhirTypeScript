@@ -397,6 +397,13 @@ export class SubstancePolymer {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -415,6 +422,13 @@ export class SubstancePolymer {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -433,6 +447,13 @@ export class SubstancePolymer {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -451,6 +472,13 @@ export class SubstancePolymer {
     }
     this.copolymerConnectivity.push(newValue);
   }
+  public deleteCopolymerConnectivityAll() {
+    if (typeof(this.copolymerConnectivity) !== 'undefined') {
+       delete this.copolymerConnectivity;
+    }
+    return;
+  }
+  
 
   public getCopolymerConnectivity(): CodeableConcept[] | undefined {
       return this.copolymerConnectivity;
@@ -469,6 +497,13 @@ export class SubstancePolymer {
     }
     this.modification.push(newValue);
   }
+  public deleteModificationAll() {
+    if (typeof(this.modification) !== 'undefined') {
+       delete this.modification;
+    }
+    return;
+  }
+  
 
   public getModification(): string[] | undefined {
       return this.modification;
@@ -487,6 +522,13 @@ export class SubstancePolymer {
     }
     this._modification.push(newValue);
   }
+  public delete_modificationAll() {
+    if (typeof(this._modification) !== 'undefined') {
+       delete this._modification;
+    }
+    return;
+  }
+  
 
   public get_modification(): Element[] | undefined {
       return this._modification;
@@ -505,6 +547,13 @@ export class SubstancePolymer {
     }
     this.monomerSet.push(newValue);
   }
+  public deleteMonomerSetAll() {
+    if (typeof(this.monomerSet) !== 'undefined') {
+       delete this.monomerSet;
+    }
+    return;
+  }
+  
 
   public getMonomerSet(): SubstancePolymerMonomerSet[] | undefined {
       return this.monomerSet;
@@ -523,6 +572,13 @@ export class SubstancePolymer {
     }
     this.repeat.push(newValue);
   }
+  public deleteRepeatAll() {
+    if (typeof(this.repeat) !== 'undefined') {
+       delete this.repeat;
+    }
+    return;
+  }
+  
 
   public getRepeat(): SubstancePolymerRepeat[] | undefined {
       return this.repeat;

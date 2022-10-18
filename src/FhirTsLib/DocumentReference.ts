@@ -491,6 +491,13 @@ export class DocumentReference {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -509,6 +516,13 @@ export class DocumentReference {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -527,6 +541,13 @@ export class DocumentReference {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -545,6 +566,13 @@ export class DocumentReference {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -620,6 +648,13 @@ export class DocumentReference {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -666,6 +701,13 @@ export class DocumentReference {
     }
     this.author.push(newValue);
   }
+  public deleteAuthorAll() {
+    if (typeof(this.author) !== 'undefined') {
+       delete this.author;
+    }
+    return;
+  }
+  
 
   public getAuthor(): Reference[] | undefined {
       return this.author;
@@ -684,6 +726,13 @@ export class DocumentReference {
     }
     this.relatesTo.push(newValue);
   }
+  public deleteRelatesToAll() {
+    if (typeof(this.relatesTo) !== 'undefined') {
+       delete this.relatesTo;
+    }
+    return;
+  }
+  
 
   public getRelatesTo(): DocumentReferenceRelatesTo[] | undefined {
       return this.relatesTo;
@@ -730,6 +779,13 @@ export class DocumentReference {
     }
     this.securityLabel.push(newValue);
   }
+  public deleteSecurityLabelAll() {
+    if (typeof(this.securityLabel) !== 'undefined') {
+       delete this.securityLabel;
+    }
+    return;
+  }
+  
 
   public getSecurityLabel(): CodeableConcept[] | undefined {
       return this.securityLabel;
@@ -748,6 +804,13 @@ export class DocumentReference {
     }
     this.content.push(newValue);
   }
+  public deleteContentAll() {
+    if (typeof(this.content) !== 'undefined') {
+       delete this.content;
+    }
+    return;
+  }
+  
 
   public getContent(): DocumentReferenceContent[] | undefined {
       return this.content;

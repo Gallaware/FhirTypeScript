@@ -448,6 +448,13 @@ export class MeasureReport {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -466,6 +473,13 @@ export class MeasureReport {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -484,6 +498,13 @@ export class MeasureReport {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -502,6 +523,13 @@ export class MeasureReport {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -634,6 +662,13 @@ export class MeasureReport {
     }
     this.group.push(newValue);
   }
+  public deleteGroupAll() {
+    if (typeof(this.group) !== 'undefined') {
+       delete this.group;
+    }
+    return;
+  }
+  
 
   public getGroup(): MeasureReportGroup[] | undefined {
       return this.group;
@@ -652,6 +687,13 @@ export class MeasureReport {
     }
     this.evaluatedResource.push(newValue);
   }
+  public deleteEvaluatedResourceAll() {
+    if (typeof(this.evaluatedResource) !== 'undefined') {
+       delete this.evaluatedResource;
+    }
+    return;
+  }
+  
 
   public getEvaluatedResource(): Reference[] | undefined {
       return this.evaluatedResource;

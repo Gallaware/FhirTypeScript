@@ -312,6 +312,13 @@ export class ExplanationOfBenefitItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -330,6 +337,13 @@ export class ExplanationOfBenefitItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -348,6 +362,13 @@ export class ExplanationOfBenefitItem {
     }
     this.careTeamSequence.push(newValue);
   }
+  public deleteCareTeamSequenceAll() {
+    if (typeof(this.careTeamSequence) !== 'undefined') {
+       delete this.careTeamSequence;
+    }
+    return;
+  }
+  
 
   public getCareTeamSequence(): number[] | undefined {
       return this.careTeamSequence;
@@ -366,6 +387,13 @@ export class ExplanationOfBenefitItem {
     }
     this._careTeamSequence.push(newValue);
   }
+  public delete_careTeamSequenceAll() {
+    if (typeof(this._careTeamSequence) !== 'undefined') {
+       delete this._careTeamSequence;
+    }
+    return;
+  }
+  
 
   public get_careTeamSequence(): Element[] | undefined {
       return this._careTeamSequence;
@@ -384,6 +412,13 @@ export class ExplanationOfBenefitItem {
     }
     this.diagnosisSequence.push(newValue);
   }
+  public deleteDiagnosisSequenceAll() {
+    if (typeof(this.diagnosisSequence) !== 'undefined') {
+       delete this.diagnosisSequence;
+    }
+    return;
+  }
+  
 
   public getDiagnosisSequence(): number[] | undefined {
       return this.diagnosisSequence;
@@ -402,6 +437,13 @@ export class ExplanationOfBenefitItem {
     }
     this._diagnosisSequence.push(newValue);
   }
+  public delete_diagnosisSequenceAll() {
+    if (typeof(this._diagnosisSequence) !== 'undefined') {
+       delete this._diagnosisSequence;
+    }
+    return;
+  }
+  
 
   public get_diagnosisSequence(): Element[] | undefined {
       return this._diagnosisSequence;
@@ -420,6 +462,13 @@ export class ExplanationOfBenefitItem {
     }
     this.procedureSequence.push(newValue);
   }
+  public deleteProcedureSequenceAll() {
+    if (typeof(this.procedureSequence) !== 'undefined') {
+       delete this.procedureSequence;
+    }
+    return;
+  }
+  
 
   public getProcedureSequence(): number[] | undefined {
       return this.procedureSequence;
@@ -438,6 +487,13 @@ export class ExplanationOfBenefitItem {
     }
     this._procedureSequence.push(newValue);
   }
+  public delete_procedureSequenceAll() {
+    if (typeof(this._procedureSequence) !== 'undefined') {
+       delete this._procedureSequence;
+    }
+    return;
+  }
+  
 
   public get_procedureSequence(): Element[] | undefined {
       return this._procedureSequence;
@@ -456,6 +512,13 @@ export class ExplanationOfBenefitItem {
     }
     this.informationSequence.push(newValue);
   }
+  public deleteInformationSequenceAll() {
+    if (typeof(this.informationSequence) !== 'undefined') {
+       delete this.informationSequence;
+    }
+    return;
+  }
+  
 
   public getInformationSequence(): number[] | undefined {
       return this.informationSequence;
@@ -474,6 +537,13 @@ export class ExplanationOfBenefitItem {
     }
     this._informationSequence.push(newValue);
   }
+  public delete_informationSequenceAll() {
+    if (typeof(this._informationSequence) !== 'undefined') {
+       delete this._informationSequence;
+    }
+    return;
+  }
+  
 
   public get_informationSequence(): Element[] | undefined {
       return this._informationSequence;
@@ -492,6 +562,13 @@ export class ExplanationOfBenefitItem {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
@@ -510,6 +587,13 @@ export class ExplanationOfBenefitItem {
     }
     this.programCode.push(newValue);
   }
+  public deleteProgramCodeAll() {
+    if (typeof(this.programCode) !== 'undefined') {
+       delete this.programCode;
+    }
+    return;
+  }
+  
 
   public getProgramCode(): CodeableConcept[] | undefined {
       return this.programCode;
@@ -556,6 +640,13 @@ export class ExplanationOfBenefitItem {
     }
     this.udi.push(newValue);
   }
+  public deleteUdiAll() {
+    if (typeof(this.udi) !== 'undefined') {
+       delete this.udi;
+    }
+    return;
+  }
+  
 
   public getUdi(): Reference[] | undefined {
       return this.udi;
@@ -574,6 +665,13 @@ export class ExplanationOfBenefitItem {
     }
     this.subSite.push(newValue);
   }
+  public deleteSubSiteAll() {
+    if (typeof(this.subSite) !== 'undefined') {
+       delete this.subSite;
+    }
+    return;
+  }
+  
 
   public getSubSite(): CodeableConcept[] | undefined {
       return this.subSite;
@@ -592,6 +690,13 @@ export class ExplanationOfBenefitItem {
     }
     this.encounter.push(newValue);
   }
+  public deleteEncounterAll() {
+    if (typeof(this.encounter) !== 'undefined') {
+       delete this.encounter;
+    }
+    return;
+  }
+  
 
   public getEncounter(): Reference[] | undefined {
       return this.encounter;
@@ -610,6 +715,13 @@ export class ExplanationOfBenefitItem {
     }
     this.noteNumber.push(newValue);
   }
+  public deleteNoteNumberAll() {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       delete this.noteNumber;
+    }
+    return;
+  }
+  
 
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
@@ -628,6 +740,13 @@ export class ExplanationOfBenefitItem {
     }
     this._noteNumber.push(newValue);
   }
+  public delete_noteNumberAll() {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       delete this._noteNumber;
+    }
+    return;
+  }
+  
 
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
@@ -646,6 +765,13 @@ export class ExplanationOfBenefitItem {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ExplanationOfBenefitAdjudication[] | undefined {
       return this.adjudication;
@@ -664,6 +790,13 @@ export class ExplanationOfBenefitItem {
     }
     this.detail.push(newValue);
   }
+  public deleteDetailAll() {
+    if (typeof(this.detail) !== 'undefined') {
+       delete this.detail;
+    }
+    return;
+  }
+  
 
   public getDetail(): ExplanationOfBenefitDetail[] | undefined {
       return this.detail;

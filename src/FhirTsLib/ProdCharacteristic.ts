@@ -188,6 +188,13 @@ export class ProdCharacteristic {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -206,6 +213,13 @@ export class ProdCharacteristic {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -252,6 +266,13 @@ export class ProdCharacteristic {
     }
     this.color.push(newValue);
   }
+  public deleteColorAll() {
+    if (typeof(this.color) !== 'undefined') {
+       delete this.color;
+    }
+    return;
+  }
+  
 
   public getColor(): string[] | undefined {
       return this.color;
@@ -270,6 +291,13 @@ export class ProdCharacteristic {
     }
     this._color.push(newValue);
   }
+  public delete_colorAll() {
+    if (typeof(this._color) !== 'undefined') {
+       delete this._color;
+    }
+    return;
+  }
+  
 
   public get_color(): Element[] | undefined {
       return this._color;
@@ -288,6 +316,13 @@ export class ProdCharacteristic {
     }
     this.imprint.push(newValue);
   }
+  public deleteImprintAll() {
+    if (typeof(this.imprint) !== 'undefined') {
+       delete this.imprint;
+    }
+    return;
+  }
+  
 
   public getImprint(): string[] | undefined {
       return this.imprint;
@@ -306,6 +341,13 @@ export class ProdCharacteristic {
     }
     this._imprint.push(newValue);
   }
+  public delete_imprintAll() {
+    if (typeof(this._imprint) !== 'undefined') {
+       delete this._imprint;
+    }
+    return;
+  }
+  
 
   public get_imprint(): Element[] | undefined {
       return this._imprint;
@@ -324,6 +366,13 @@ export class ProdCharacteristic {
     }
     this.image.push(newValue);
   }
+  public deleteImageAll() {
+    if (typeof(this.image) !== 'undefined') {
+       delete this.image;
+    }
+    return;
+  }
+  
 
   public getImage(): Attachment[] | undefined {
       return this.image;

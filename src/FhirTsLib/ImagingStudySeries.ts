@@ -199,6 +199,13 @@ export class ImagingStudySeries {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -217,6 +224,13 @@ export class ImagingStudySeries {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -291,6 +305,13 @@ export class ImagingStudySeries {
     }
     this.endpoint.push(newValue);
   }
+  public deleteEndpointAll() {
+    if (typeof(this.endpoint) !== 'undefined') {
+       delete this.endpoint;
+    }
+    return;
+  }
+  
 
   public getEndpoint(): Reference[] | undefined {
       return this.endpoint;
@@ -309,6 +330,13 @@ export class ImagingStudySeries {
     }
     this.specimen.push(newValue);
   }
+  public deleteSpecimenAll() {
+    if (typeof(this.specimen) !== 'undefined') {
+       delete this.specimen;
+    }
+    return;
+  }
+  
 
   public getSpecimen(): Reference[] | undefined {
       return this.specimen;
@@ -355,6 +383,13 @@ export class ImagingStudySeries {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): ImagingStudyPerformer[] | undefined {
       return this.performer;
@@ -373,6 +408,13 @@ export class ImagingStudySeries {
     }
     this.instance.push(newValue);
   }
+  public deleteInstanceAll() {
+    if (typeof(this.instance) !== 'undefined') {
+       delete this.instance;
+    }
+    return;
+  }
+  
 
   public getInstance(): ImagingStudyInstance[] | undefined {
       return this.instance;

@@ -389,6 +389,13 @@ export class SubstanceReferenceInformation {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -407,6 +414,13 @@ export class SubstanceReferenceInformation {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -425,6 +439,13 @@ export class SubstanceReferenceInformation {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -471,6 +492,13 @@ export class SubstanceReferenceInformation {
     }
     this.gene.push(newValue);
   }
+  public deleteGeneAll() {
+    if (typeof(this.gene) !== 'undefined') {
+       delete this.gene;
+    }
+    return;
+  }
+  
 
   public getGene(): SubstanceReferenceInformationGene[] | undefined {
       return this.gene;
@@ -489,6 +517,13 @@ export class SubstanceReferenceInformation {
     }
     this.geneElement.push(newValue);
   }
+  public deleteGeneElementAll() {
+    if (typeof(this.geneElement) !== 'undefined') {
+       delete this.geneElement;
+    }
+    return;
+  }
+  
 
   public getGeneElement(): SubstanceReferenceInformationGeneElement[] | undefined {
       return this.geneElement;
@@ -507,6 +542,13 @@ export class SubstanceReferenceInformation {
     }
     this.classification.push(newValue);
   }
+  public deleteClassificationAll() {
+    if (typeof(this.classification) !== 'undefined') {
+       delete this.classification;
+    }
+    return;
+  }
+  
 
   public getClassification(): SubstanceReferenceInformationClassification[] | undefined {
       return this.classification;
@@ -525,6 +567,13 @@ export class SubstanceReferenceInformation {
     }
     this.target.push(newValue);
   }
+  public deleteTargetAll() {
+    if (typeof(this.target) !== 'undefined') {
+       delete this.target;
+    }
+    return;
+  }
+  
 
   public getTarget(): SubstanceReferenceInformationTarget[] | undefined {
       return this.target;

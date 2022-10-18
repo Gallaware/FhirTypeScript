@@ -513,6 +513,13 @@ export class Patient {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -531,6 +538,13 @@ export class Patient {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -549,6 +563,13 @@ export class Patient {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -567,6 +588,13 @@ export class Patient {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -585,6 +613,13 @@ export class Patient {
     }
     this.name.push(newValue);
   }
+  public deleteNameAll() {
+    if (typeof(this.name) !== 'undefined') {
+       delete this.name;
+    }
+    return;
+  }
+  
 
   public getName(): HumanName[] | undefined {
       return this.name;
@@ -603,6 +638,13 @@ export class Patient {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -706,6 +748,13 @@ export class Patient {
     }
     this.address.push(newValue);
   }
+  public deleteAddressAll() {
+    if (typeof(this.address) !== 'undefined') {
+       delete this.address;
+    }
+    return;
+  }
+  
 
   public getAddress(): Address[] | undefined {
       return this.address;
@@ -724,6 +773,13 @@ export class Patient {
     }
     this.photo.push(newValue);
   }
+  public deletePhotoAll() {
+    if (typeof(this.photo) !== 'undefined') {
+       delete this.photo;
+    }
+    return;
+  }
+  
 
   public getPhoto(): Attachment[] | undefined {
       return this.photo;
@@ -742,6 +798,13 @@ export class Patient {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): PatientContact[] | undefined {
       return this.contact;
@@ -760,6 +823,13 @@ export class Patient {
     }
     this.communication.push(newValue);
   }
+  public deleteCommunicationAll() {
+    if (typeof(this.communication) !== 'undefined') {
+       delete this.communication;
+    }
+    return;
+  }
+  
 
   public getCommunication(): PatientCommunication[] | undefined {
       return this.communication;
@@ -778,6 +848,13 @@ export class Patient {
     }
     this.generalPractitioner.push(newValue);
   }
+  public deleteGeneralPractitionerAll() {
+    if (typeof(this.generalPractitioner) !== 'undefined') {
+       delete this.generalPractitioner;
+    }
+    return;
+  }
+  
 
   public getGeneralPractitioner(): Reference[] | undefined {
       return this.generalPractitioner;
@@ -796,6 +873,13 @@ export class Patient {
     }
     this.link.push(newValue);
   }
+  public deleteLinkAll() {
+    if (typeof(this.link) !== 'undefined') {
+       delete this.link;
+    }
+    return;
+  }
+  
 
   public getLink(): PatientLink[] | undefined {
       return this.link;

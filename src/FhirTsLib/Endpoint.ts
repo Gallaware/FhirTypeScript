@@ -458,6 +458,13 @@ export class Endpoint {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -476,6 +483,13 @@ export class Endpoint {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -494,6 +508,13 @@ export class Endpoint {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -512,6 +533,13 @@ export class Endpoint {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -587,6 +615,13 @@ export class Endpoint {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactPoint[] | undefined {
       return this.contact;
@@ -605,6 +640,13 @@ export class Endpoint {
     }
     this.payloadType.push(newValue);
   }
+  public deletePayloadTypeAll() {
+    if (typeof(this.payloadType) !== 'undefined') {
+       delete this.payloadType;
+    }
+    return;
+  }
+  
 
   public getPayloadType(): CodeableConcept[] | undefined {
       return this.payloadType;
@@ -623,6 +665,13 @@ export class Endpoint {
     }
     this.payloadMimeType.push(newValue);
   }
+  public deletePayloadMimeTypeAll() {
+    if (typeof(this.payloadMimeType) !== 'undefined') {
+       delete this.payloadMimeType;
+    }
+    return;
+  }
+  
 
   public getPayloadMimeType(): string[] | undefined {
       return this.payloadMimeType;
@@ -641,6 +690,13 @@ export class Endpoint {
     }
     this._payloadMimeType.push(newValue);
   }
+  public delete_payloadMimeTypeAll() {
+    if (typeof(this._payloadMimeType) !== 'undefined') {
+       delete this._payloadMimeType;
+    }
+    return;
+  }
+  
 
   public get_payloadMimeType(): Element[] | undefined {
       return this._payloadMimeType;
@@ -687,6 +743,13 @@ export class Endpoint {
     }
     this.header.push(newValue);
   }
+  public deleteHeaderAll() {
+    if (typeof(this.header) !== 'undefined') {
+       delete this.header;
+    }
+    return;
+  }
+  
 
   public getHeader(): string[] | undefined {
       return this.header;
@@ -705,6 +768,13 @@ export class Endpoint {
     }
     this._header.push(newValue);
   }
+  public delete_headerAll() {
+    if (typeof(this._header) !== 'undefined') {
+       delete this._header;
+    }
+    return;
+  }
+  
 
   public get_header(): Element[] | undefined {
       return this._header;

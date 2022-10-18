@@ -280,6 +280,13 @@ export class Bundle {
     }
     this.link.push(newValue);
   }
+  public deleteLinkAll() {
+    if (typeof(this.link) !== 'undefined') {
+       delete this.link;
+    }
+    return;
+  }
+  
 
   public getLink(): BundleLink[] | undefined {
       return this.link;
@@ -298,6 +305,13 @@ export class Bundle {
     }
     this.entry.push(newValue);
   }
+  public deleteEntryAll() {
+    if (typeof(this.entry) !== 'undefined') {
+       delete this.entry;
+    }
+    return;
+  }
+  
 
   public getEntry(): BundleEntry[] | undefined {
       return this.entry;

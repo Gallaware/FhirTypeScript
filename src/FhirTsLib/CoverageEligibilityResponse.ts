@@ -502,6 +502,13 @@ export class CoverageEligibilityResponse {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -520,6 +527,13 @@ export class CoverageEligibilityResponse {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -538,6 +552,13 @@ export class CoverageEligibilityResponse {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -556,6 +577,13 @@ export class CoverageEligibilityResponse {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -602,6 +630,13 @@ export class CoverageEligibilityResponse {
     }
     this.purpose.push(newValue);
   }
+  public deletePurposeAll() {
+    if (typeof(this.purpose) !== 'undefined') {
+       delete this.purpose;
+    }
+    return;
+  }
+  
 
   public getPurpose(): string[] | undefined {
       return this.purpose;
@@ -620,6 +655,13 @@ export class CoverageEligibilityResponse {
     }
     this._purpose.push(newValue);
   }
+  public delete_purposeAll() {
+    if (typeof(this._purpose) !== 'undefined') {
+       delete this._purpose;
+    }
+    return;
+  }
+  
 
   public get_purpose(): Element[] | undefined {
       return this._purpose;
@@ -751,6 +793,13 @@ export class CoverageEligibilityResponse {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): CoverageEligibilityResponseInsurance[] | undefined {
       return this.insurance;
@@ -797,6 +846,13 @@ export class CoverageEligibilityResponse {
     }
     this.error.push(newValue);
   }
+  public deleteErrorAll() {
+    if (typeof(this.error) !== 'undefined') {
+       delete this.error;
+    }
+    return;
+  }
+  
 
   public getError(): CoverageEligibilityResponseError[] | undefined {
       return this.error;

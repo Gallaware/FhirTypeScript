@@ -521,6 +521,13 @@ export class ImagingStudy {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -539,6 +546,13 @@ export class ImagingStudy {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -557,6 +571,13 @@ export class ImagingStudy {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -575,6 +596,13 @@ export class ImagingStudy {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -622,6 +650,13 @@ export class ImagingStudy {
     }
     this.modality.push(newValue);
   }
+  public deleteModalityAll() {
+    if (typeof(this.modality) !== 'undefined') {
+       delete this.modality;
+    }
+    return;
+  }
+  
 
   public getModality(): Coding[] | undefined {
       return this.modality;
@@ -668,6 +703,13 @@ export class ImagingStudy {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -686,6 +728,13 @@ export class ImagingStudy {
     }
     this.interpreter.push(newValue);
   }
+  public deleteInterpreterAll() {
+    if (typeof(this.interpreter) !== 'undefined') {
+       delete this.interpreter;
+    }
+    return;
+  }
+  
 
   public getInterpreter(): Reference[] | undefined {
       return this.interpreter;
@@ -704,6 +753,13 @@ export class ImagingStudy {
     }
     this.endpoint.push(newValue);
   }
+  public deleteEndpointAll() {
+    if (typeof(this.endpoint) !== 'undefined') {
+       delete this.endpoint;
+    }
+    return;
+  }
+  
 
   public getEndpoint(): Reference[] | undefined {
       return this.endpoint;
@@ -722,6 +778,13 @@ export class ImagingStudy {
     }
     this.procedureCode.push(newValue);
   }
+  public deleteProcedureCodeAll() {
+    if (typeof(this.procedureCode) !== 'undefined') {
+       delete this.procedureCode;
+    }
+    return;
+  }
+  
 
   public getProcedureCode(): CodeableConcept[] | undefined {
       return this.procedureCode;
@@ -740,6 +803,13 @@ export class ImagingStudy {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -758,6 +828,13 @@ export class ImagingStudy {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -776,6 +853,13 @@ export class ImagingStudy {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -822,6 +906,13 @@ export class ImagingStudy {
     }
     this.series.push(newValue);
   }
+  public deleteSeriesAll() {
+    if (typeof(this.series) !== 'undefined') {
+       delete this.series;
+    }
+    return;
+  }
+  
 
   public getSeries(): ImagingStudySeries[] | undefined {
       return this.series;

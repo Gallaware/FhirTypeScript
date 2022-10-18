@@ -116,6 +116,13 @@ export class CoverageEligibilityResponseInsurance {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -134,6 +141,13 @@ export class CoverageEligibilityResponseInsurance {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -152,6 +166,13 @@ export class CoverageEligibilityResponseInsurance {
     }
     this.item.push(newValue);
   }
+  public deleteItemAll() {
+    if (typeof(this.item) !== 'undefined') {
+       delete this.item;
+    }
+    return;
+  }
+  
 
   public getItem(): CoverageEligibilityResponseItem[] | undefined {
       return this.item;

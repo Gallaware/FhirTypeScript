@@ -441,6 +441,13 @@ export class EpisodeOfCare {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -459,6 +466,13 @@ export class EpisodeOfCare {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -477,6 +491,13 @@ export class EpisodeOfCare {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -495,6 +516,13 @@ export class EpisodeOfCare {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -542,6 +570,13 @@ export class EpisodeOfCare {
     }
     this.statusHistory.push(newValue);
   }
+  public deleteStatusHistoryAll() {
+    if (typeof(this.statusHistory) !== 'undefined') {
+       delete this.statusHistory;
+    }
+    return;
+  }
+  
 
   public getStatusHistory(): EpisodeOfCareStatusHistory[] | undefined {
       return this.statusHistory;
@@ -560,6 +595,13 @@ export class EpisodeOfCare {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -578,6 +620,13 @@ export class EpisodeOfCare {
     }
     this.diagnosis.push(newValue);
   }
+  public deleteDiagnosisAll() {
+    if (typeof(this.diagnosis) !== 'undefined') {
+       delete this.diagnosis;
+    }
+    return;
+  }
+  
 
   public getDiagnosis(): EpisodeOfCareDiagnosis[] | undefined {
       return this.diagnosis;
@@ -596,6 +645,13 @@ export class EpisodeOfCare {
     }
     this.referralRequest.push(newValue);
   }
+  public deleteReferralRequestAll() {
+    if (typeof(this.referralRequest) !== 'undefined') {
+       delete this.referralRequest;
+    }
+    return;
+  }
+  
 
   public getReferralRequest(): Reference[] | undefined {
       return this.referralRequest;
@@ -614,6 +670,13 @@ export class EpisodeOfCare {
     }
     this.team.push(newValue);
   }
+  public deleteTeamAll() {
+    if (typeof(this.team) !== 'undefined') {
+       delete this.team;
+    }
+    return;
+  }
+  
 
   public getTeam(): Reference[] | undefined {
       return this.team;
@@ -632,6 +695,13 @@ export class EpisodeOfCare {
     }
     this.account.push(newValue);
   }
+  public deleteAccountAll() {
+    if (typeof(this.account) !== 'undefined') {
+       delete this.account;
+    }
+    return;
+  }
+  
 
   public getAccount(): Reference[] | undefined {
       return this.account;

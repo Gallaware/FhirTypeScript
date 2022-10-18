@@ -229,6 +229,13 @@ export class VisionPrescriptionLensSpecification {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -247,6 +254,13 @@ export class VisionPrescriptionLensSpecification {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -294,6 +308,13 @@ export class VisionPrescriptionLensSpecification {
     }
     this.prism.push(newValue);
   }
+  public deletePrismAll() {
+    if (typeof(this.prism) !== 'undefined') {
+       delete this.prism;
+    }
+    return;
+  }
+  
 
   public getPrism(): VisionPrescriptionPrism[] | undefined {
       return this.prism;
@@ -368,6 +389,13 @@ export class VisionPrescriptionLensSpecification {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

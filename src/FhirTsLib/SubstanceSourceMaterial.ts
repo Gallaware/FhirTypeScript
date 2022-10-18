@@ -487,6 +487,13 @@ export class SubstanceSourceMaterial {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -505,6 +512,13 @@ export class SubstanceSourceMaterial {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -523,6 +537,13 @@ export class SubstanceSourceMaterial {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -569,6 +590,13 @@ export class SubstanceSourceMaterial {
     }
     this.parentSubstanceId.push(newValue);
   }
+  public deleteParentSubstanceIdAll() {
+    if (typeof(this.parentSubstanceId) !== 'undefined') {
+       delete this.parentSubstanceId;
+    }
+    return;
+  }
+  
 
   public getParentSubstanceId(): Identifier[] | undefined {
       return this.parentSubstanceId;
@@ -587,6 +615,13 @@ export class SubstanceSourceMaterial {
     }
     this.parentSubstanceName.push(newValue);
   }
+  public deleteParentSubstanceNameAll() {
+    if (typeof(this.parentSubstanceName) !== 'undefined') {
+       delete this.parentSubstanceName;
+    }
+    return;
+  }
+  
 
   public getParentSubstanceName(): string[] | undefined {
       return this.parentSubstanceName;
@@ -605,6 +640,13 @@ export class SubstanceSourceMaterial {
     }
     this._parentSubstanceName.push(newValue);
   }
+  public delete_parentSubstanceNameAll() {
+    if (typeof(this._parentSubstanceName) !== 'undefined') {
+       delete this._parentSubstanceName;
+    }
+    return;
+  }
+  
 
   public get_parentSubstanceName(): Element[] | undefined {
       return this._parentSubstanceName;
@@ -623,6 +665,13 @@ export class SubstanceSourceMaterial {
     }
     this.countryOfOrigin.push(newValue);
   }
+  public deleteCountryOfOriginAll() {
+    if (typeof(this.countryOfOrigin) !== 'undefined') {
+       delete this.countryOfOrigin;
+    }
+    return;
+  }
+  
 
   public getCountryOfOrigin(): CodeableConcept[] | undefined {
       return this.countryOfOrigin;
@@ -641,6 +690,13 @@ export class SubstanceSourceMaterial {
     }
     this.geographicalLocation.push(newValue);
   }
+  public deleteGeographicalLocationAll() {
+    if (typeof(this.geographicalLocation) !== 'undefined') {
+       delete this.geographicalLocation;
+    }
+    return;
+  }
+  
 
   public getGeographicalLocation(): string[] | undefined {
       return this.geographicalLocation;
@@ -659,6 +715,13 @@ export class SubstanceSourceMaterial {
     }
     this._geographicalLocation.push(newValue);
   }
+  public delete_geographicalLocationAll() {
+    if (typeof(this._geographicalLocation) !== 'undefined') {
+       delete this._geographicalLocation;
+    }
+    return;
+  }
+  
 
   public get_geographicalLocation(): Element[] | undefined {
       return this._geographicalLocation;
@@ -677,6 +740,13 @@ export class SubstanceSourceMaterial {
     }
     this.fractionDescription.push(newValue);
   }
+  public deleteFractionDescriptionAll() {
+    if (typeof(this.fractionDescription) !== 'undefined') {
+       delete this.fractionDescription;
+    }
+    return;
+  }
+  
 
   public getFractionDescription(): SubstanceSourceMaterialFractionDescription[] | undefined {
       return this.fractionDescription;
@@ -695,6 +765,13 @@ export class SubstanceSourceMaterial {
     }
     this.partDescription.push(newValue);
   }
+  public deletePartDescriptionAll() {
+    if (typeof(this.partDescription) !== 'undefined') {
+       delete this.partDescription;
+    }
+    return;
+  }
+  
 
   public getPartDescription(): SubstanceSourceMaterialPartDescription[] | undefined {
       return this.partDescription;

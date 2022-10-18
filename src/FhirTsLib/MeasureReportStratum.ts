@@ -116,6 +116,13 @@ export class MeasureReportStratum {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -134,6 +141,13 @@ export class MeasureReportStratum {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -152,6 +166,13 @@ export class MeasureReportStratum {
     }
     this.component.push(newValue);
   }
+  public deleteComponentAll() {
+    if (typeof(this.component) !== 'undefined') {
+       delete this.component;
+    }
+    return;
+  }
+  
 
   public getComponent(): MeasureReportComponent[] | undefined {
       return this.component;
@@ -170,6 +191,13 @@ export class MeasureReportStratum {
     }
     this.population.push(newValue);
   }
+  public deletePopulationAll() {
+    if (typeof(this.population) !== 'undefined') {
+       delete this.population;
+    }
+    return;
+  }
+  
 
   public getPopulation(): MeasureReportPopulation1[] | undefined {
       return this.population;

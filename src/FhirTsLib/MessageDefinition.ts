@@ -606,6 +606,13 @@ export class MessageDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -624,6 +631,13 @@ export class MessageDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -642,6 +656,13 @@ export class MessageDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -688,6 +709,13 @@ export class MessageDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -790,6 +818,13 @@ export class MessageDefinition {
     }
     this.replaces.push(newValue);
   }
+  public deleteReplacesAll() {
+    if (typeof(this.replaces) !== 'undefined') {
+       delete this.replaces;
+    }
+    return;
+  }
+  
 
   public getReplaces(): string[] | undefined {
       return this.replaces;
@@ -893,6 +928,13 @@ export class MessageDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -939,6 +981,13 @@ export class MessageDefinition {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -957,6 +1006,13 @@ export class MessageDefinition {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1059,6 +1115,13 @@ export class MessageDefinition {
     }
     this.parent.push(newValue);
   }
+  public deleteParentAll() {
+    if (typeof(this.parent) !== 'undefined') {
+       delete this.parent;
+    }
+    return;
+  }
+  
 
   public getParent(): string[] | undefined {
       return this.parent;
@@ -1134,6 +1197,13 @@ export class MessageDefinition {
     }
     this.focus.push(newValue);
   }
+  public deleteFocusAll() {
+    if (typeof(this.focus) !== 'undefined') {
+       delete this.focus;
+    }
+    return;
+  }
+  
 
   public getFocus(): MessageDefinitionFocus[] | undefined {
       return this.focus;
@@ -1181,6 +1251,13 @@ export class MessageDefinition {
     }
     this.allowedResponse.push(newValue);
   }
+  public deleteAllowedResponseAll() {
+    if (typeof(this.allowedResponse) !== 'undefined') {
+       delete this.allowedResponse;
+    }
+    return;
+  }
+  
 
   public getAllowedResponse(): MessageDefinitionAllowedResponse[] | undefined {
       return this.allowedResponse;
@@ -1199,6 +1276,13 @@ export class MessageDefinition {
     }
     this.graph.push(newValue);
   }
+  public deleteGraphAll() {
+    if (typeof(this.graph) !== 'undefined') {
+       delete this.graph;
+    }
+    return;
+  }
+  
 
   public getGraph(): string[] | undefined {
       return this.graph;

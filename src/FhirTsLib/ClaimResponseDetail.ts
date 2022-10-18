@@ -123,6 +123,13 @@ export class ClaimResponseDetail {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -141,6 +148,13 @@ export class ClaimResponseDetail {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -159,6 +173,13 @@ export class ClaimResponseDetail {
     }
     this.noteNumber.push(newValue);
   }
+  public deleteNoteNumberAll() {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       delete this.noteNumber;
+    }
+    return;
+  }
+  
 
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
@@ -177,6 +198,13 @@ export class ClaimResponseDetail {
     }
     this._noteNumber.push(newValue);
   }
+  public delete_noteNumberAll() {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       delete this._noteNumber;
+    }
+    return;
+  }
+  
 
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
@@ -195,6 +223,13 @@ export class ClaimResponseDetail {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ClaimResponseAdjudication[] | undefined {
       return this.adjudication;
@@ -213,6 +248,13 @@ export class ClaimResponseDetail {
     }
     this.subDetail.push(newValue);
   }
+  public deleteSubDetailAll() {
+    if (typeof(this.subDetail) !== 'undefined') {
+       delete this.subDetail;
+    }
+    return;
+  }
+  
 
   public getSubDetail(): ClaimResponseSubDetail[] | undefined {
       return this.subDetail;

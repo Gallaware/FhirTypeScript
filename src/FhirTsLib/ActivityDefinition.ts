@@ -837,6 +837,13 @@ export class ActivityDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -855,6 +862,13 @@ export class ActivityDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -873,6 +887,13 @@ export class ActivityDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -919,6 +940,13 @@ export class ActivityDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -1134,6 +1162,13 @@ export class ActivityDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -1180,6 +1215,13 @@ export class ActivityDefinition {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -1198,6 +1240,13 @@ export class ActivityDefinition {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1356,6 +1405,13 @@ export class ActivityDefinition {
     }
     this.topic.push(newValue);
   }
+  public deleteTopicAll() {
+    if (typeof(this.topic) !== 'undefined') {
+       delete this.topic;
+    }
+    return;
+  }
+  
 
   public getTopic(): CodeableConcept[] | undefined {
       return this.topic;
@@ -1374,6 +1430,13 @@ export class ActivityDefinition {
     }
     this.author.push(newValue);
   }
+  public deleteAuthorAll() {
+    if (typeof(this.author) !== 'undefined') {
+       delete this.author;
+    }
+    return;
+  }
+  
 
   public getAuthor(): ContactDetail[] | undefined {
       return this.author;
@@ -1392,6 +1455,13 @@ export class ActivityDefinition {
     }
     this.editor.push(newValue);
   }
+  public deleteEditorAll() {
+    if (typeof(this.editor) !== 'undefined') {
+       delete this.editor;
+    }
+    return;
+  }
+  
 
   public getEditor(): ContactDetail[] | undefined {
       return this.editor;
@@ -1410,6 +1480,13 @@ export class ActivityDefinition {
     }
     this.reviewer.push(newValue);
   }
+  public deleteReviewerAll() {
+    if (typeof(this.reviewer) !== 'undefined') {
+       delete this.reviewer;
+    }
+    return;
+  }
+  
 
   public getReviewer(): ContactDetail[] | undefined {
       return this.reviewer;
@@ -1428,6 +1505,13 @@ export class ActivityDefinition {
     }
     this.endorser.push(newValue);
   }
+  public deleteEndorserAll() {
+    if (typeof(this.endorser) !== 'undefined') {
+       delete this.endorser;
+    }
+    return;
+  }
+  
 
   public getEndorser(): ContactDetail[] | undefined {
       return this.endorser;
@@ -1446,6 +1530,13 @@ export class ActivityDefinition {
     }
     this.relatedArtifact.push(newValue);
   }
+  public deleteRelatedArtifactAll() {
+    if (typeof(this.relatedArtifact) !== 'undefined') {
+       delete this.relatedArtifact;
+    }
+    return;
+  }
+  
 
   public getRelatedArtifact(): RelatedArtifact[] | undefined {
       return this.relatedArtifact;
@@ -1464,6 +1555,13 @@ export class ActivityDefinition {
     }
     this.library.push(newValue);
   }
+  public deleteLibraryAll() {
+    if (typeof(this.library) !== 'undefined') {
+       delete this.library;
+    }
+    return;
+  }
+  
 
   public getLibrary(): string[] | undefined {
       return this.library;
@@ -1622,6 +1720,13 @@ export class ActivityDefinition {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): ActivityDefinitionParticipant[] | undefined {
       return this.participant;
@@ -1640,6 +1745,13 @@ export class ActivityDefinition {
     }
     this.dosage.push(newValue);
   }
+  public deleteDosageAll() {
+    if (typeof(this.dosage) !== 'undefined') {
+       delete this.dosage;
+    }
+    return;
+  }
+  
 
   public getDosage(): Dosage[] | undefined {
       return this.dosage;
@@ -1658,6 +1770,13 @@ export class ActivityDefinition {
     }
     this.bodySite.push(newValue);
   }
+  public deleteBodySiteAll() {
+    if (typeof(this.bodySite) !== 'undefined') {
+       delete this.bodySite;
+    }
+    return;
+  }
+  
 
   public getBodySite(): CodeableConcept[] | undefined {
       return this.bodySite;
@@ -1676,6 +1795,13 @@ export class ActivityDefinition {
     }
     this.specimenRequirement.push(newValue);
   }
+  public deleteSpecimenRequirementAll() {
+    if (typeof(this.specimenRequirement) !== 'undefined') {
+       delete this.specimenRequirement;
+    }
+    return;
+  }
+  
 
   public getSpecimenRequirement(): Reference[] | undefined {
       return this.specimenRequirement;
@@ -1694,6 +1820,13 @@ export class ActivityDefinition {
     }
     this.observationRequirement.push(newValue);
   }
+  public deleteObservationRequirementAll() {
+    if (typeof(this.observationRequirement) !== 'undefined') {
+       delete this.observationRequirement;
+    }
+    return;
+  }
+  
 
   public getObservationRequirement(): Reference[] | undefined {
       return this.observationRequirement;
@@ -1712,6 +1845,13 @@ export class ActivityDefinition {
     }
     this.observationResultRequirement.push(newValue);
   }
+  public deleteObservationResultRequirementAll() {
+    if (typeof(this.observationResultRequirement) !== 'undefined') {
+       delete this.observationResultRequirement;
+    }
+    return;
+  }
+  
 
   public getObservationResultRequirement(): Reference[] | undefined {
       return this.observationResultRequirement;
@@ -1758,6 +1898,13 @@ export class ActivityDefinition {
     }
     this.dynamicValue.push(newValue);
   }
+  public deleteDynamicValueAll() {
+    if (typeof(this.dynamicValue) !== 'undefined') {
+       delete this.dynamicValue;
+    }
+    return;
+  }
+  
 
   public getDynamicValue(): ActivityDefinitionDynamicValue[] | undefined {
       return this.dynamicValue;

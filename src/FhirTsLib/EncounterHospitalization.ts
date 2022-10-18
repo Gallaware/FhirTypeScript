@@ -148,6 +148,13 @@ export class EncounterHospitalization {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -166,6 +173,13 @@ export class EncounterHospitalization {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -184,6 +198,13 @@ export class EncounterHospitalization {
     }
     this.dietPreference.push(newValue);
   }
+  public deleteDietPreferenceAll() {
+    if (typeof(this.dietPreference) !== 'undefined') {
+       delete this.dietPreference;
+    }
+    return;
+  }
+  
 
   public getDietPreference(): CodeableConcept[] | undefined {
       return this.dietPreference;
@@ -202,6 +223,13 @@ export class EncounterHospitalization {
     }
     this.specialCourtesy.push(newValue);
   }
+  public deleteSpecialCourtesyAll() {
+    if (typeof(this.specialCourtesy) !== 'undefined') {
+       delete this.specialCourtesy;
+    }
+    return;
+  }
+  
 
   public getSpecialCourtesy(): CodeableConcept[] | undefined {
       return this.specialCourtesy;
@@ -220,6 +248,13 @@ export class EncounterHospitalization {
     }
     this.specialArrangement.push(newValue);
   }
+  public deleteSpecialArrangementAll() {
+    if (typeof(this.specialArrangement) !== 'undefined') {
+       delete this.specialArrangement;
+    }
+    return;
+  }
+  
 
   public getSpecialArrangement(): CodeableConcept[] | undefined {
       return this.specialArrangement;

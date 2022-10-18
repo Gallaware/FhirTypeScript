@@ -549,6 +549,13 @@ export class HealthcareService {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -567,6 +574,13 @@ export class HealthcareService {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -585,6 +599,13 @@ export class HealthcareService {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -603,6 +624,13 @@ export class HealthcareService {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -621,6 +649,13 @@ export class HealthcareService {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -639,6 +674,13 @@ export class HealthcareService {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -657,6 +699,13 @@ export class HealthcareService {
     }
     this.specialty.push(newValue);
   }
+  public deleteSpecialtyAll() {
+    if (typeof(this.specialty) !== 'undefined') {
+       delete this.specialty;
+    }
+    return;
+  }
+  
 
   public getSpecialty(): CodeableConcept[] | undefined {
       return this.specialty;
@@ -675,6 +724,13 @@ export class HealthcareService {
     }
     this.location.push(newValue);
   }
+  public deleteLocationAll() {
+    if (typeof(this.location) !== 'undefined') {
+       delete this.location;
+    }
+    return;
+  }
+  
 
   public getLocation(): Reference[] | undefined {
       return this.location;
@@ -777,6 +833,13 @@ export class HealthcareService {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -795,6 +858,13 @@ export class HealthcareService {
     }
     this.coverageArea.push(newValue);
   }
+  public deleteCoverageAreaAll() {
+    if (typeof(this.coverageArea) !== 'undefined') {
+       delete this.coverageArea;
+    }
+    return;
+  }
+  
 
   public getCoverageArea(): Reference[] | undefined {
       return this.coverageArea;
@@ -813,6 +883,13 @@ export class HealthcareService {
     }
     this.serviceProvisionCode.push(newValue);
   }
+  public deleteServiceProvisionCodeAll() {
+    if (typeof(this.serviceProvisionCode) !== 'undefined') {
+       delete this.serviceProvisionCode;
+    }
+    return;
+  }
+  
 
   public getServiceProvisionCode(): CodeableConcept[] | undefined {
       return this.serviceProvisionCode;
@@ -831,6 +908,13 @@ export class HealthcareService {
     }
     this.eligibility.push(newValue);
   }
+  public deleteEligibilityAll() {
+    if (typeof(this.eligibility) !== 'undefined') {
+       delete this.eligibility;
+    }
+    return;
+  }
+  
 
   public getEligibility(): HealthcareServiceEligibility[] | undefined {
       return this.eligibility;
@@ -849,6 +933,13 @@ export class HealthcareService {
     }
     this.program.push(newValue);
   }
+  public deleteProgramAll() {
+    if (typeof(this.program) !== 'undefined') {
+       delete this.program;
+    }
+    return;
+  }
+  
 
   public getProgram(): CodeableConcept[] | undefined {
       return this.program;
@@ -867,6 +958,13 @@ export class HealthcareService {
     }
     this.characteristic.push(newValue);
   }
+  public deleteCharacteristicAll() {
+    if (typeof(this.characteristic) !== 'undefined') {
+       delete this.characteristic;
+    }
+    return;
+  }
+  
 
   public getCharacteristic(): CodeableConcept[] | undefined {
       return this.characteristic;
@@ -885,6 +983,13 @@ export class HealthcareService {
     }
     this.communication.push(newValue);
   }
+  public deleteCommunicationAll() {
+    if (typeof(this.communication) !== 'undefined') {
+       delete this.communication;
+    }
+    return;
+  }
+  
 
   public getCommunication(): CodeableConcept[] | undefined {
       return this.communication;
@@ -903,6 +1008,13 @@ export class HealthcareService {
     }
     this.referralMethod.push(newValue);
   }
+  public deleteReferralMethodAll() {
+    if (typeof(this.referralMethod) !== 'undefined') {
+       delete this.referralMethod;
+    }
+    return;
+  }
+  
 
   public getReferralMethod(): CodeableConcept[] | undefined {
       return this.referralMethod;
@@ -921,6 +1033,13 @@ export class HealthcareService {
     }
     this.availableTime.push(newValue);
   }
+  public deleteAvailableTimeAll() {
+    if (typeof(this.availableTime) !== 'undefined') {
+       delete this.availableTime;
+    }
+    return;
+  }
+  
 
   public getAvailableTime(): HealthcareServiceAvailableTime[] | undefined {
       return this.availableTime;
@@ -939,6 +1058,13 @@ export class HealthcareService {
     }
     this.notAvailable.push(newValue);
   }
+  public deleteNotAvailableAll() {
+    if (typeof(this.notAvailable) !== 'undefined') {
+       delete this.notAvailable;
+    }
+    return;
+  }
+  
 
   public getNotAvailable(): HealthcareServiceNotAvailable[] | undefined {
       return this.notAvailable;
@@ -985,6 +1111,13 @@ export class HealthcareService {
     }
     this.endpoint.push(newValue);
   }
+  public deleteEndpointAll() {
+    if (typeof(this.endpoint) !== 'undefined') {
+       delete this.endpoint;
+    }
+    return;
+  }
+  
 
   public getEndpoint(): Reference[] | undefined {
       return this.endpoint;

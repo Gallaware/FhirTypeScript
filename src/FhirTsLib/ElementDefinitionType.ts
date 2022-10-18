@@ -148,6 +148,13 @@ export class ElementDefinitionType {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -166,6 +173,13 @@ export class ElementDefinitionType {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -212,6 +226,13 @@ export class ElementDefinitionType {
     }
     this.profile.push(newValue);
   }
+  public deleteProfileAll() {
+    if (typeof(this.profile) !== 'undefined') {
+       delete this.profile;
+    }
+    return;
+  }
+  
 
   public getProfile(): string[] | undefined {
       return this.profile;
@@ -230,6 +251,13 @@ export class ElementDefinitionType {
     }
     this.targetProfile.push(newValue);
   }
+  public deleteTargetProfileAll() {
+    if (typeof(this.targetProfile) !== 'undefined') {
+       delete this.targetProfile;
+    }
+    return;
+  }
+  
 
   public getTargetProfile(): string[] | undefined {
       return this.targetProfile;
@@ -248,6 +276,13 @@ export class ElementDefinitionType {
     }
     this.aggregation.push(newValue);
   }
+  public deleteAggregationAll() {
+    if (typeof(this.aggregation) !== 'undefined') {
+       delete this.aggregation;
+    }
+    return;
+  }
+  
 
   public getAggregation(): string[] | undefined {
       return this.aggregation;
@@ -266,6 +301,13 @@ export class ElementDefinitionType {
     }
     this._aggregation.push(newValue);
   }
+  public delete_aggregationAll() {
+    if (typeof(this._aggregation) !== 'undefined') {
+       delete this._aggregation;
+    }
+    return;
+  }
+  
 
   public get_aggregation(): Element[] | undefined {
       return this._aggregation;

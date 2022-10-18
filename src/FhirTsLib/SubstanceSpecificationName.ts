@@ -172,6 +172,13 @@ export class SubstanceSpecificationName {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -190,6 +197,13 @@ export class SubstanceSpecificationName {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -236,6 +250,13 @@ export class SubstanceSpecificationName {
     }
     this.language.push(newValue);
   }
+  public deleteLanguageAll() {
+    if (typeof(this.language) !== 'undefined') {
+       delete this.language;
+    }
+    return;
+  }
+  
 
   public getLanguage(): CodeableConcept[] | undefined {
       return this.language;
@@ -254,6 +275,13 @@ export class SubstanceSpecificationName {
     }
     this.domain.push(newValue);
   }
+  public deleteDomainAll() {
+    if (typeof(this.domain) !== 'undefined') {
+       delete this.domain;
+    }
+    return;
+  }
+  
 
   public getDomain(): CodeableConcept[] | undefined {
       return this.domain;
@@ -272,6 +300,13 @@ export class SubstanceSpecificationName {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -290,6 +325,13 @@ export class SubstanceSpecificationName {
     }
     this.synonym.push(newValue);
   }
+  public deleteSynonymAll() {
+    if (typeof(this.synonym) !== 'undefined') {
+       delete this.synonym;
+    }
+    return;
+  }
+  
 
   public getSynonym(): SubstanceSpecificationName[] | undefined {
       return this.synonym;
@@ -308,6 +350,13 @@ export class SubstanceSpecificationName {
     }
     this.translation.push(newValue);
   }
+  public deleteTranslationAll() {
+    if (typeof(this.translation) !== 'undefined') {
+       delete this.translation;
+    }
+    return;
+  }
+  
 
   public getTranslation(): SubstanceSpecificationName[] | undefined {
       return this.translation;
@@ -326,6 +375,13 @@ export class SubstanceSpecificationName {
     }
     this.official.push(newValue);
   }
+  public deleteOfficialAll() {
+    if (typeof(this.official) !== 'undefined') {
+       delete this.official;
+    }
+    return;
+  }
+  
 
   public getOfficial(): SubstanceSpecificationOfficial[] | undefined {
       return this.official;
@@ -344,6 +400,13 @@ export class SubstanceSpecificationName {
     }
     this.source.push(newValue);
   }
+  public deleteSourceAll() {
+    if (typeof(this.source) !== 'undefined') {
+       delete this.source;
+    }
+    return;
+  }
+  
 
   public getSource(): Reference[] | undefined {
       return this.source;

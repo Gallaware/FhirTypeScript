@@ -146,6 +146,13 @@ export class CodeSystemConcept {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -164,6 +171,13 @@ export class CodeSystemConcept {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -266,6 +280,13 @@ export class CodeSystemConcept {
     }
     this.designation.push(newValue);
   }
+  public deleteDesignationAll() {
+    if (typeof(this.designation) !== 'undefined') {
+       delete this.designation;
+    }
+    return;
+  }
+  
 
   public getDesignation(): CodeSystemDesignation[] | undefined {
       return this.designation;
@@ -284,6 +305,13 @@ export class CodeSystemConcept {
     }
     this.property.push(newValue);
   }
+  public deletePropertyAll() {
+    if (typeof(this.property) !== 'undefined') {
+       delete this.property;
+    }
+    return;
+  }
+  
 
   public getProperty(): CodeSystemProperty1[] | undefined {
       return this.property;
@@ -302,6 +330,13 @@ export class CodeSystemConcept {
     }
     this.concept.push(newValue);
   }
+  public deleteConceptAll() {
+    if (typeof(this.concept) !== 'undefined') {
+       delete this.concept;
+    }
+    return;
+  }
+  
 
   public getConcept(): CodeSystemConcept[] | undefined {
       return this.concept;

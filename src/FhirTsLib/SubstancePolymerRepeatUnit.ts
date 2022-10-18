@@ -128,6 +128,13 @@ export class SubstancePolymerRepeatUnit {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -146,6 +153,13 @@ export class SubstancePolymerRepeatUnit {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -192,6 +206,13 @@ export class SubstancePolymerRepeatUnit {
     }
     this.degreeOfPolymerisation.push(newValue);
   }
+  public deleteDegreeOfPolymerisationAll() {
+    if (typeof(this.degreeOfPolymerisation) !== 'undefined') {
+       delete this.degreeOfPolymerisation;
+    }
+    return;
+  }
+  
 
   public getDegreeOfPolymerisation(): SubstancePolymerDegreeOfPolymerisation[] | undefined {
       return this.degreeOfPolymerisation;
@@ -210,6 +231,13 @@ export class SubstancePolymerRepeatUnit {
     }
     this.structuralRepresentation.push(newValue);
   }
+  public deleteStructuralRepresentationAll() {
+    if (typeof(this.structuralRepresentation) !== 'undefined') {
+       delete this.structuralRepresentation;
+    }
+    return;
+  }
+  
 
   public getStructuralRepresentation(): SubstancePolymerStructuralRepresentation[] | undefined {
       return this.structuralRepresentation;

@@ -444,6 +444,13 @@ export class Group {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -462,6 +469,13 @@ export class Group {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -480,6 +494,13 @@ export class Group {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -498,6 +519,13 @@ export class Group {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -573,6 +601,13 @@ export class Group {
     }
     this.characteristic.push(newValue);
   }
+  public deleteCharacteristicAll() {
+    if (typeof(this.characteristic) !== 'undefined') {
+       delete this.characteristic;
+    }
+    return;
+  }
+  
 
   public getCharacteristic(): GroupCharacteristic[] | undefined {
       return this.characteristic;
@@ -591,6 +626,13 @@ export class Group {
     }
     this.member.push(newValue);
   }
+  public deleteMemberAll() {
+    if (typeof(this.member) !== 'undefined') {
+       delete this.member;
+    }
+    return;
+  }
+  
 
   public getMember(): GroupMember[] | undefined {
       return this.member;

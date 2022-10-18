@@ -265,6 +265,13 @@ export class ClaimResponseAddItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -283,6 +290,13 @@ export class ClaimResponseAddItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -301,6 +315,13 @@ export class ClaimResponseAddItem {
     }
     this.itemSequence.push(newValue);
   }
+  public deleteItemSequenceAll() {
+    if (typeof(this.itemSequence) !== 'undefined') {
+       delete this.itemSequence;
+    }
+    return;
+  }
+  
 
   public getItemSequence(): number[] | undefined {
       return this.itemSequence;
@@ -319,6 +340,13 @@ export class ClaimResponseAddItem {
     }
     this._itemSequence.push(newValue);
   }
+  public delete_itemSequenceAll() {
+    if (typeof(this._itemSequence) !== 'undefined') {
+       delete this._itemSequence;
+    }
+    return;
+  }
+  
 
   public get_itemSequence(): Element[] | undefined {
       return this._itemSequence;
@@ -337,6 +365,13 @@ export class ClaimResponseAddItem {
     }
     this.detailSequence.push(newValue);
   }
+  public deleteDetailSequenceAll() {
+    if (typeof(this.detailSequence) !== 'undefined') {
+       delete this.detailSequence;
+    }
+    return;
+  }
+  
 
   public getDetailSequence(): number[] | undefined {
       return this.detailSequence;
@@ -355,6 +390,13 @@ export class ClaimResponseAddItem {
     }
     this._detailSequence.push(newValue);
   }
+  public delete_detailSequenceAll() {
+    if (typeof(this._detailSequence) !== 'undefined') {
+       delete this._detailSequence;
+    }
+    return;
+  }
+  
 
   public get_detailSequence(): Element[] | undefined {
       return this._detailSequence;
@@ -373,6 +415,13 @@ export class ClaimResponseAddItem {
     }
     this.subdetailSequence.push(newValue);
   }
+  public deleteSubdetailSequenceAll() {
+    if (typeof(this.subdetailSequence) !== 'undefined') {
+       delete this.subdetailSequence;
+    }
+    return;
+  }
+  
 
   public getSubdetailSequence(): number[] | undefined {
       return this.subdetailSequence;
@@ -391,6 +440,13 @@ export class ClaimResponseAddItem {
     }
     this._subdetailSequence.push(newValue);
   }
+  public delete_subdetailSequenceAll() {
+    if (typeof(this._subdetailSequence) !== 'undefined') {
+       delete this._subdetailSequence;
+    }
+    return;
+  }
+  
 
   public get_subdetailSequence(): Element[] | undefined {
       return this._subdetailSequence;
@@ -409,6 +465,13 @@ export class ClaimResponseAddItem {
     }
     this.provider.push(newValue);
   }
+  public deleteProviderAll() {
+    if (typeof(this.provider) !== 'undefined') {
+       delete this.provider;
+    }
+    return;
+  }
+  
 
   public getProvider(): Reference[] | undefined {
       return this.provider;
@@ -427,6 +490,13 @@ export class ClaimResponseAddItem {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
@@ -445,6 +515,13 @@ export class ClaimResponseAddItem {
     }
     this.programCode.push(newValue);
   }
+  public deleteProgramCodeAll() {
+    if (typeof(this.programCode) !== 'undefined') {
+       delete this.programCode;
+    }
+    return;
+  }
+  
 
   public getProgramCode(): CodeableConcept[] | undefined {
       return this.programCode;
@@ -491,6 +568,13 @@ export class ClaimResponseAddItem {
     }
     this.subSite.push(newValue);
   }
+  public deleteSubSiteAll() {
+    if (typeof(this.subSite) !== 'undefined') {
+       delete this.subSite;
+    }
+    return;
+  }
+  
 
   public getSubSite(): CodeableConcept[] | undefined {
       return this.subSite;
@@ -509,6 +593,13 @@ export class ClaimResponseAddItem {
     }
     this.noteNumber.push(newValue);
   }
+  public deleteNoteNumberAll() {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       delete this.noteNumber;
+    }
+    return;
+  }
+  
 
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
@@ -527,6 +618,13 @@ export class ClaimResponseAddItem {
     }
     this._noteNumber.push(newValue);
   }
+  public delete_noteNumberAll() {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       delete this._noteNumber;
+    }
+    return;
+  }
+  
 
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
@@ -545,6 +643,13 @@ export class ClaimResponseAddItem {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ClaimResponseAdjudication[] | undefined {
       return this.adjudication;
@@ -563,6 +668,13 @@ export class ClaimResponseAddItem {
     }
     this.detail.push(newValue);
   }
+  public deleteDetailAll() {
+    if (typeof(this.detail) !== 'undefined') {
+       delete this.detail;
+    }
+    return;
+  }
+  
 
   public getDetail(): ClaimResponseDetail1[] | undefined {
       return this.detail;

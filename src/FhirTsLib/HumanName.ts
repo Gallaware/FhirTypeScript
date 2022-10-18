@@ -154,6 +154,13 @@ export class HumanName {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -257,6 +264,13 @@ export class HumanName {
     }
     this.given.push(newValue);
   }
+  public deleteGivenAll() {
+    if (typeof(this.given) !== 'undefined') {
+       delete this.given;
+    }
+    return;
+  }
+  
 
   public getGiven(): string[] | undefined {
       return this.given;
@@ -275,6 +289,13 @@ export class HumanName {
     }
     this._given.push(newValue);
   }
+  public delete_givenAll() {
+    if (typeof(this._given) !== 'undefined') {
+       delete this._given;
+    }
+    return;
+  }
+  
 
   public get_given(): Element[] | undefined {
       return this._given;
@@ -293,6 +314,13 @@ export class HumanName {
     }
     this.prefix.push(newValue);
   }
+  public deletePrefixAll() {
+    if (typeof(this.prefix) !== 'undefined') {
+       delete this.prefix;
+    }
+    return;
+  }
+  
 
   public getPrefix(): string[] | undefined {
       return this.prefix;
@@ -311,6 +339,13 @@ export class HumanName {
     }
     this._prefix.push(newValue);
   }
+  public delete_prefixAll() {
+    if (typeof(this._prefix) !== 'undefined') {
+       delete this._prefix;
+    }
+    return;
+  }
+  
 
   public get_prefix(): Element[] | undefined {
       return this._prefix;
@@ -329,6 +364,13 @@ export class HumanName {
     }
     this.suffix.push(newValue);
   }
+  public deleteSuffixAll() {
+    if (typeof(this.suffix) !== 'undefined') {
+       delete this.suffix;
+    }
+    return;
+  }
+  
 
   public getSuffix(): string[] | undefined {
       return this.suffix;
@@ -347,6 +389,13 @@ export class HumanName {
     }
     this._suffix.push(newValue);
   }
+  public delete_suffixAll() {
+    if (typeof(this._suffix) !== 'undefined') {
+       delete this._suffix;
+    }
+    return;
+  }
+  
 
   public get_suffix(): Element[] | undefined {
       return this._suffix;

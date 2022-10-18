@@ -447,6 +447,13 @@ export class AuditEvent {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -465,6 +472,13 @@ export class AuditEvent {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -483,6 +497,13 @@ export class AuditEvent {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -501,6 +522,13 @@ export class AuditEvent {
     }
     this.subtype.push(newValue);
   }
+  public deleteSubtypeAll() {
+    if (typeof(this.subtype) !== 'undefined') {
+       delete this.subtype;
+    }
+    return;
+  }
+  
 
   public getSubtype(): Coding[] | undefined {
       return this.subtype;
@@ -633,6 +661,13 @@ export class AuditEvent {
     }
     this.purposeOfEvent.push(newValue);
   }
+  public deletePurposeOfEventAll() {
+    if (typeof(this.purposeOfEvent) !== 'undefined') {
+       delete this.purposeOfEvent;
+    }
+    return;
+  }
+  
 
   public getPurposeOfEvent(): CodeableConcept[] | undefined {
       return this.purposeOfEvent;
@@ -651,6 +686,13 @@ export class AuditEvent {
     }
     this.agent.push(newValue);
   }
+  public deleteAgentAll() {
+    if (typeof(this.agent) !== 'undefined') {
+       delete this.agent;
+    }
+    return;
+  }
+  
 
   public getAgent(): AuditEventAgent[] | undefined {
       return this.agent;
@@ -669,6 +711,13 @@ export class AuditEvent {
     }
     this.entity.push(newValue);
   }
+  public deleteEntityAll() {
+    if (typeof(this.entity) !== 'undefined') {
+       delete this.entity;
+    }
+    return;
+  }
+  
 
   public getEntity(): AuditEventEntity[] | undefined {
       return this.entity;

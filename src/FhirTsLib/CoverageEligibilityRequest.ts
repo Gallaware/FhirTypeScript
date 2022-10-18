@@ -481,6 +481,13 @@ export class CoverageEligibilityRequest {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -499,6 +506,13 @@ export class CoverageEligibilityRequest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -517,6 +531,13 @@ export class CoverageEligibilityRequest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -535,6 +556,13 @@ export class CoverageEligibilityRequest {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -581,6 +609,13 @@ export class CoverageEligibilityRequest {
     }
     this.purpose.push(newValue);
   }
+  public deletePurposeAll() {
+    if (typeof(this.purpose) !== 'undefined') {
+       delete this.purpose;
+    }
+    return;
+  }
+  
 
   public getPurpose(): string[] | undefined {
       return this.purpose;
@@ -599,6 +634,13 @@ export class CoverageEligibilityRequest {
     }
     this._purpose.push(newValue);
   }
+  public delete_purposeAll() {
+    if (typeof(this._purpose) !== 'undefined') {
+       delete this._purpose;
+    }
+    return;
+  }
+  
 
   public get_purpose(): Element[] | undefined {
       return this._purpose;
@@ -673,6 +715,13 @@ export class CoverageEligibilityRequest {
     }
     this.supportingInfo.push(newValue);
   }
+  public deleteSupportingInfoAll() {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       delete this.supportingInfo;
+    }
+    return;
+  }
+  
 
   public getSupportingInfo(): CoverageEligibilityRequestSupportingInfo[] | undefined {
       return this.supportingInfo;
@@ -691,6 +740,13 @@ export class CoverageEligibilityRequest {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): CoverageEligibilityRequestInsurance[] | undefined {
       return this.insurance;
@@ -709,6 +765,13 @@ export class CoverageEligibilityRequest {
     }
     this.item.push(newValue);
   }
+  public deleteItemAll() {
+    if (typeof(this.item) !== 'undefined') {
+       delete this.item;
+    }
+    return;
+  }
+  
 
   public getItem(): CoverageEligibilityRequestItem[] | undefined {
       return this.item;

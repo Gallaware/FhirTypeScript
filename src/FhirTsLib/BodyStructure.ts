@@ -415,6 +415,13 @@ export class BodyStructure {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -433,6 +440,13 @@ export class BodyStructure {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -451,6 +465,13 @@ export class BodyStructure {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -469,6 +490,13 @@ export class BodyStructure {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -487,6 +515,13 @@ export class BodyStructure {
     }
     this.locationQualifier.push(newValue);
   }
+  public deleteLocationQualifierAll() {
+    if (typeof(this.locationQualifier) !== 'undefined') {
+       delete this.locationQualifier;
+    }
+    return;
+  }
+  
 
   public getLocationQualifier(): CodeableConcept[] | undefined {
       return this.locationQualifier;
@@ -533,6 +568,13 @@ export class BodyStructure {
     }
     this.image.push(newValue);
   }
+  public deleteImageAll() {
+    if (typeof(this.image) !== 'undefined') {
+       delete this.image;
+    }
+    return;
+  }
+  
 
   public getImage(): Attachment[] | undefined {
       return this.image;

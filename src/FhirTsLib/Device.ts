@@ -593,6 +593,13 @@ export class Device {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -611,6 +618,13 @@ export class Device {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -629,6 +643,13 @@ export class Device {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -647,6 +668,13 @@ export class Device {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -665,6 +693,13 @@ export class Device {
     }
     this.udiCarrier.push(newValue);
   }
+  public deleteUdiCarrierAll() {
+    if (typeof(this.udiCarrier) !== 'undefined') {
+       delete this.udiCarrier;
+    }
+    return;
+  }
+  
 
   public getUdiCarrier(): DeviceUdiCarrier[] | undefined {
       return this.udiCarrier;
@@ -712,6 +747,13 @@ export class Device {
     }
     this.statusReason.push(newValue);
   }
+  public deleteStatusReasonAll() {
+    if (typeof(this.statusReason) !== 'undefined') {
+       delete this.statusReason;
+    }
+    return;
+  }
+  
 
   public getStatusReason(): CodeableConcept[] | undefined {
       return this.statusReason;
@@ -898,6 +940,13 @@ export class Device {
     }
     this.deviceName.push(newValue);
   }
+  public deleteDeviceNameAll() {
+    if (typeof(this.deviceName) !== 'undefined') {
+       delete this.deviceName;
+    }
+    return;
+  }
+  
 
   public getDeviceName(): DeviceDeviceName[] | undefined {
       return this.deviceName;
@@ -972,6 +1021,13 @@ export class Device {
     }
     this.specialization.push(newValue);
   }
+  public deleteSpecializationAll() {
+    if (typeof(this.specialization) !== 'undefined') {
+       delete this.specialization;
+    }
+    return;
+  }
+  
 
   public getSpecialization(): DeviceSpecialization[] | undefined {
       return this.specialization;
@@ -990,6 +1046,13 @@ export class Device {
     }
     this.version.push(newValue);
   }
+  public deleteVersionAll() {
+    if (typeof(this.version) !== 'undefined') {
+       delete this.version;
+    }
+    return;
+  }
+  
 
   public getVersion(): DeviceVersion[] | undefined {
       return this.version;
@@ -1008,6 +1071,13 @@ export class Device {
     }
     this.property.push(newValue);
   }
+  public deletePropertyAll() {
+    if (typeof(this.property) !== 'undefined') {
+       delete this.property;
+    }
+    return;
+  }
+  
 
   public getProperty(): DeviceProperty[] | undefined {
       return this.property;
@@ -1026,6 +1096,13 @@ export class Device {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactPoint[] | undefined {
       return this.contact;
@@ -1072,6 +1149,13 @@ export class Device {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -1090,6 +1174,13 @@ export class Device {
     }
     this.safety.push(newValue);
   }
+  public deleteSafetyAll() {
+    if (typeof(this.safety) !== 'undefined') {
+       delete this.safety;
+    }
+    return;
+  }
+  
 
   public getSafety(): CodeableConcept[] | undefined {
       return this.safety;

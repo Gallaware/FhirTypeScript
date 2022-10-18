@@ -207,6 +207,13 @@ export class Dosage {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -225,6 +232,13 @@ export class Dosage {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -271,6 +285,13 @@ export class Dosage {
     }
     this.additionalInstruction.push(newValue);
   }
+  public deleteAdditionalInstructionAll() {
+    if (typeof(this.additionalInstruction) !== 'undefined') {
+       delete this.additionalInstruction;
+    }
+    return;
+  }
+  
 
   public getAdditionalInstruction(): CodeableConcept[] | undefined {
       return this.additionalInstruction;
@@ -317,6 +338,13 @@ export class Dosage {
     }
     this.doseAndRate.push(newValue);
   }
+  public deleteDoseAndRateAll() {
+    if (typeof(this.doseAndRate) !== 'undefined') {
+       delete this.doseAndRate;
+    }
+    return;
+  }
+  
 
   public getDoseAndRate(): DosageDoseAndRate[] | undefined {
       return this.doseAndRate;

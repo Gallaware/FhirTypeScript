@@ -483,6 +483,13 @@ export class VerificationResult {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -501,6 +508,13 @@ export class VerificationResult {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -519,6 +533,13 @@ export class VerificationResult {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -537,6 +558,13 @@ export class VerificationResult {
     }
     this.target.push(newValue);
   }
+  public deleteTargetAll() {
+    if (typeof(this.target) !== 'undefined') {
+       delete this.target;
+    }
+    return;
+  }
+  
 
   public getTarget(): Reference[] | undefined {
       return this.target;
@@ -555,6 +583,13 @@ export class VerificationResult {
     }
     this.targetLocation.push(newValue);
   }
+  public deleteTargetLocationAll() {
+    if (typeof(this.targetLocation) !== 'undefined') {
+       delete this.targetLocation;
+    }
+    return;
+  }
+  
 
   public getTargetLocation(): string[] | undefined {
       return this.targetLocation;
@@ -573,6 +608,13 @@ export class VerificationResult {
     }
     this._targetLocation.push(newValue);
   }
+  public delete_targetLocationAll() {
+    if (typeof(this._targetLocation) !== 'undefined') {
+       delete this._targetLocation;
+    }
+    return;
+  }
+  
 
   public get_targetLocation(): Element[] | undefined {
       return this._targetLocation;
@@ -647,6 +689,13 @@ export class VerificationResult {
     }
     this.validationProcess.push(newValue);
   }
+  public deleteValidationProcessAll() {
+    if (typeof(this.validationProcess) !== 'undefined') {
+       delete this.validationProcess;
+    }
+    return;
+  }
+  
 
   public getValidationProcess(): CodeableConcept[] | undefined {
       return this.validationProcess;
@@ -721,6 +770,13 @@ export class VerificationResult {
     }
     this.primarySource.push(newValue);
   }
+  public deletePrimarySourceAll() {
+    if (typeof(this.primarySource) !== 'undefined') {
+       delete this.primarySource;
+    }
+    return;
+  }
+  
 
   public getPrimarySource(): VerificationResultPrimarySource[] | undefined {
       return this.primarySource;
@@ -739,6 +795,13 @@ export class VerificationResult {
     }
     this.validator.push(newValue);
   }
+  public deleteValidatorAll() {
+    if (typeof(this.validator) !== 'undefined') {
+       delete this.validator;
+    }
+    return;
+  }
+  
 
   public getValidator(): VerificationResultValidator[] | undefined {
       return this.validator;

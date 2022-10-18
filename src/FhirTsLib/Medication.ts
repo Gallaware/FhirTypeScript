@@ -412,6 +412,13 @@ export class Medication {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -430,6 +437,13 @@ export class Medication {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -448,6 +462,13 @@ export class Medication {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -466,6 +487,13 @@ export class Medication {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -512,6 +540,13 @@ export class Medication {
     }
     this.ingredient.push(newValue);
   }
+  public deleteIngredientAll() {
+    if (typeof(this.ingredient) !== 'undefined') {
+       delete this.ingredient;
+    }
+    return;
+  }
+  
 
   public getIngredient(): MedicationIngredient[] | undefined {
       return this.ingredient;

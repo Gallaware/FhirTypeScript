@@ -159,6 +159,13 @@ export class AuditEventEntity {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -177,6 +184,13 @@ export class AuditEventEntity {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -195,6 +209,13 @@ export class AuditEventEntity {
     }
     this.securityLabel.push(newValue);
   }
+  public deleteSecurityLabelAll() {
+    if (typeof(this.securityLabel) !== 'undefined') {
+       delete this.securityLabel;
+    }
+    return;
+  }
+  
 
   public getSecurityLabel(): Coding[] | undefined {
       return this.securityLabel;
@@ -269,6 +290,13 @@ export class AuditEventEntity {
     }
     this.detail.push(newValue);
   }
+  public deleteDetailAll() {
+    if (typeof(this.detail) !== 'undefined') {
+       delete this.detail;
+    }
+    return;
+  }
+  
 
   public getDetail(): AuditEventDetail[] | undefined {
       return this.detail;

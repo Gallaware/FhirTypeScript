@@ -125,6 +125,13 @@ export class ImplementationGuideDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -143,6 +150,13 @@ export class ImplementationGuideDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -161,6 +175,13 @@ export class ImplementationGuideDefinition {
     }
     this.grouping.push(newValue);
   }
+  public deleteGroupingAll() {
+    if (typeof(this.grouping) !== 'undefined') {
+       delete this.grouping;
+    }
+    return;
+  }
+  
 
   public getGrouping(): ImplementationGuideGrouping[] | undefined {
       return this.grouping;
@@ -179,6 +200,13 @@ export class ImplementationGuideDefinition {
     }
     this.resource.push(newValue);
   }
+  public deleteResourceAll() {
+    if (typeof(this.resource) !== 'undefined') {
+       delete this.resource;
+    }
+    return;
+  }
+  
 
   public getResource(): ImplementationGuideResource[] | undefined {
       return this.resource;
@@ -197,6 +225,13 @@ export class ImplementationGuideDefinition {
     }
     this.parameter.push(newValue);
   }
+  public deleteParameterAll() {
+    if (typeof(this.parameter) !== 'undefined') {
+       delete this.parameter;
+    }
+    return;
+  }
+  
 
   public getParameter(): ImplementationGuideParameter[] | undefined {
       return this.parameter;
@@ -215,6 +250,13 @@ export class ImplementationGuideDefinition {
     }
     this.template.push(newValue);
   }
+  public deleteTemplateAll() {
+    if (typeof(this.template) !== 'undefined') {
+       delete this.template;
+    }
+    return;
+  }
+  
 
   public getTemplate(): ImplementationGuideTemplate[] | undefined {
       return this.template;

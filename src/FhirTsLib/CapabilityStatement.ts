@@ -628,6 +628,13 @@ export class CapabilityStatement {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -646,6 +653,13 @@ export class CapabilityStatement {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -664,6 +678,13 @@ export class CapabilityStatement {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -879,6 +900,13 @@ export class CapabilityStatement {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -925,6 +953,13 @@ export class CapabilityStatement {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -943,6 +978,13 @@ export class CapabilityStatement {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1046,6 +1088,13 @@ export class CapabilityStatement {
     }
     this.instantiates.push(newValue);
   }
+  public deleteInstantiatesAll() {
+    if (typeof(this.instantiates) !== 'undefined') {
+       delete this.instantiates;
+    }
+    return;
+  }
+  
 
   public getInstantiates(): string[] | undefined {
       return this.instantiates;
@@ -1064,6 +1113,13 @@ export class CapabilityStatement {
     }
     this.imports.push(newValue);
   }
+  public deleteImportsAll() {
+    if (typeof(this.imports) !== 'undefined') {
+       delete this.imports;
+    }
+    return;
+  }
+  
 
   public getImports(): string[] | undefined {
       return this.imports;
@@ -1111,6 +1167,13 @@ export class CapabilityStatement {
     }
     this.format.push(newValue);
   }
+  public deleteFormatAll() {
+    if (typeof(this.format) !== 'undefined') {
+       delete this.format;
+    }
+    return;
+  }
+  
 
   public getFormat(): string[] | undefined {
       return this.format;
@@ -1129,6 +1192,13 @@ export class CapabilityStatement {
     }
     this._format.push(newValue);
   }
+  public delete_formatAll() {
+    if (typeof(this._format) !== 'undefined') {
+       delete this._format;
+    }
+    return;
+  }
+  
 
   public get_format(): Element[] | undefined {
       return this._format;
@@ -1147,6 +1217,13 @@ export class CapabilityStatement {
     }
     this.patchFormat.push(newValue);
   }
+  public deletePatchFormatAll() {
+    if (typeof(this.patchFormat) !== 'undefined') {
+       delete this.patchFormat;
+    }
+    return;
+  }
+  
 
   public getPatchFormat(): string[] | undefined {
       return this.patchFormat;
@@ -1165,6 +1242,13 @@ export class CapabilityStatement {
     }
     this._patchFormat.push(newValue);
   }
+  public delete_patchFormatAll() {
+    if (typeof(this._patchFormat) !== 'undefined') {
+       delete this._patchFormat;
+    }
+    return;
+  }
+  
 
   public get_patchFormat(): Element[] | undefined {
       return this._patchFormat;
@@ -1183,6 +1267,13 @@ export class CapabilityStatement {
     }
     this.implementationGuide.push(newValue);
   }
+  public deleteImplementationGuideAll() {
+    if (typeof(this.implementationGuide) !== 'undefined') {
+       delete this.implementationGuide;
+    }
+    return;
+  }
+  
 
   public getImplementationGuide(): string[] | undefined {
       return this.implementationGuide;
@@ -1201,6 +1292,13 @@ export class CapabilityStatement {
     }
     this.rest.push(newValue);
   }
+  public deleteRestAll() {
+    if (typeof(this.rest) !== 'undefined') {
+       delete this.rest;
+    }
+    return;
+  }
+  
 
   public getRest(): CapabilityStatementRest[] | undefined {
       return this.rest;
@@ -1219,6 +1317,13 @@ export class CapabilityStatement {
     }
     this.messaging.push(newValue);
   }
+  public deleteMessagingAll() {
+    if (typeof(this.messaging) !== 'undefined') {
+       delete this.messaging;
+    }
+    return;
+  }
+  
 
   public getMessaging(): CapabilityStatementMessaging[] | undefined {
       return this.messaging;
@@ -1237,6 +1342,13 @@ export class CapabilityStatement {
     }
     this.document.push(newValue);
   }
+  public deleteDocumentAll() {
+    if (typeof(this.document) !== 'undefined') {
+       delete this.document;
+    }
+    return;
+  }
+  
 
   public getDocument(): CapabilityStatementDocument[] | undefined {
       return this.document;

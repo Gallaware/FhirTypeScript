@@ -486,6 +486,13 @@ export class RiskAssessment {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -504,6 +511,13 @@ export class RiskAssessment {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -522,6 +536,13 @@ export class RiskAssessment {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -540,6 +561,13 @@ export class RiskAssessment {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -614,6 +642,13 @@ export class RiskAssessment {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -632,6 +667,13 @@ export class RiskAssessment {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -650,6 +692,13 @@ export class RiskAssessment {
     }
     this.basis.push(newValue);
   }
+  public deleteBasisAll() {
+    if (typeof(this.basis) !== 'undefined') {
+       delete this.basis;
+    }
+    return;
+  }
+  
 
   public getBasis(): Reference[] | undefined {
       return this.basis;
@@ -668,6 +717,13 @@ export class RiskAssessment {
     }
     this.prediction.push(newValue);
   }
+  public deletePredictionAll() {
+    if (typeof(this.prediction) !== 'undefined') {
+       delete this.prediction;
+    }
+    return;
+  }
+  
 
   public getPrediction(): RiskAssessmentPrediction[] | undefined {
       return this.prediction;
@@ -714,6 +770,13 @@ export class RiskAssessment {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

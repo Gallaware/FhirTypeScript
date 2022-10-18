@@ -543,6 +543,13 @@ export class ResearchStudy {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -561,6 +568,13 @@ export class ResearchStudy {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -579,6 +593,13 @@ export class ResearchStudy {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -597,6 +618,13 @@ export class ResearchStudy {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -643,6 +671,13 @@ export class ResearchStudy {
     }
     this.protocol.push(newValue);
   }
+  public deleteProtocolAll() {
+    if (typeof(this.protocol) !== 'undefined') {
+       delete this.protocol;
+    }
+    return;
+  }
+  
 
   public getProtocol(): Reference[] | undefined {
       return this.protocol;
@@ -661,6 +696,13 @@ export class ResearchStudy {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -708,6 +750,13 @@ export class ResearchStudy {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -726,6 +775,13 @@ export class ResearchStudy {
     }
     this.focus.push(newValue);
   }
+  public deleteFocusAll() {
+    if (typeof(this.focus) !== 'undefined') {
+       delete this.focus;
+    }
+    return;
+  }
+  
 
   public getFocus(): CodeableConcept[] | undefined {
       return this.focus;
@@ -744,6 +800,13 @@ export class ResearchStudy {
     }
     this.condition.push(newValue);
   }
+  public deleteConditionAll() {
+    if (typeof(this.condition) !== 'undefined') {
+       delete this.condition;
+    }
+    return;
+  }
+  
 
   public getCondition(): CodeableConcept[] | undefined {
       return this.condition;
@@ -762,6 +825,13 @@ export class ResearchStudy {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -780,6 +850,13 @@ export class ResearchStudy {
     }
     this.relatedArtifact.push(newValue);
   }
+  public deleteRelatedArtifactAll() {
+    if (typeof(this.relatedArtifact) !== 'undefined') {
+       delete this.relatedArtifact;
+    }
+    return;
+  }
+  
 
   public getRelatedArtifact(): RelatedArtifact[] | undefined {
       return this.relatedArtifact;
@@ -798,6 +875,13 @@ export class ResearchStudy {
     }
     this.keyword.push(newValue);
   }
+  public deleteKeywordAll() {
+    if (typeof(this.keyword) !== 'undefined') {
+       delete this.keyword;
+    }
+    return;
+  }
+  
 
   public getKeyword(): CodeableConcept[] | undefined {
       return this.keyword;
@@ -816,6 +900,13 @@ export class ResearchStudy {
     }
     this.location.push(newValue);
   }
+  public deleteLocationAll() {
+    if (typeof(this.location) !== 'undefined') {
+       delete this.location;
+    }
+    return;
+  }
+  
 
   public getLocation(): CodeableConcept[] | undefined {
       return this.location;
@@ -862,6 +953,13 @@ export class ResearchStudy {
     }
     this.enrollment.push(newValue);
   }
+  public deleteEnrollmentAll() {
+    if (typeof(this.enrollment) !== 'undefined') {
+       delete this.enrollment;
+    }
+    return;
+  }
+  
 
   public getEnrollment(): Reference[] | undefined {
       return this.enrollment;
@@ -880,6 +978,13 @@ export class ResearchStudy {
     }
     this.site.push(newValue);
   }
+  public deleteSiteAll() {
+    if (typeof(this.site) !== 'undefined') {
+       delete this.site;
+    }
+    return;
+  }
+  
 
   public getSite(): Reference[] | undefined {
       return this.site;
@@ -898,6 +1003,13 @@ export class ResearchStudy {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -916,6 +1028,13 @@ export class ResearchStudy {
     }
     this.arm.push(newValue);
   }
+  public deleteArmAll() {
+    if (typeof(this.arm) !== 'undefined') {
+       delete this.arm;
+    }
+    return;
+  }
+  
 
   public getArm(): ResearchStudyArm[] | undefined {
       return this.arm;
@@ -934,6 +1053,13 @@ export class ResearchStudy {
     }
     this.objective.push(newValue);
   }
+  public deleteObjectiveAll() {
+    if (typeof(this.objective) !== 'undefined') {
+       delete this.objective;
+    }
+    return;
+  }
+  
 
   public getObjective(): ResearchStudyObjective[] | undefined {
       return this.objective;

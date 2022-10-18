@@ -163,6 +163,13 @@ export class CoverageEligibilityRequestItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -181,6 +188,13 @@ export class CoverageEligibilityRequestItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -199,6 +213,13 @@ export class CoverageEligibilityRequestItem {
     }
     this.supportingInfoSequence.push(newValue);
   }
+  public deleteSupportingInfoSequenceAll() {
+    if (typeof(this.supportingInfoSequence) !== 'undefined') {
+       delete this.supportingInfoSequence;
+    }
+    return;
+  }
+  
 
   public getSupportingInfoSequence(): number[] | undefined {
       return this.supportingInfoSequence;
@@ -217,6 +238,13 @@ export class CoverageEligibilityRequestItem {
     }
     this._supportingInfoSequence.push(newValue);
   }
+  public delete_supportingInfoSequenceAll() {
+    if (typeof(this._supportingInfoSequence) !== 'undefined') {
+       delete this._supportingInfoSequence;
+    }
+    return;
+  }
+  
 
   public get_supportingInfoSequence(): Element[] | undefined {
       return this._supportingInfoSequence;
@@ -235,6 +263,13 @@ export class CoverageEligibilityRequestItem {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
@@ -253,6 +288,13 @@ export class CoverageEligibilityRequestItem {
     }
     this.diagnosis.push(newValue);
   }
+  public deleteDiagnosisAll() {
+    if (typeof(this.diagnosis) !== 'undefined') {
+       delete this.diagnosis;
+    }
+    return;
+  }
+  
 
   public getDiagnosis(): CoverageEligibilityRequestDiagnosis[] | undefined {
       return this.diagnosis;
@@ -271,6 +313,13 @@ export class CoverageEligibilityRequestItem {
     }
     this.detail.push(newValue);
   }
+  public deleteDetailAll() {
+    if (typeof(this.detail) !== 'undefined') {
+       delete this.detail;
+    }
+    return;
+  }
+  
 
   public getDetail(): Reference[] | undefined {
       return this.detail;

@@ -106,6 +106,13 @@ export class InsurancePlanCoverage {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -124,6 +131,13 @@ export class InsurancePlanCoverage {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -142,6 +156,13 @@ export class InsurancePlanCoverage {
     }
     this.network.push(newValue);
   }
+  public deleteNetworkAll() {
+    if (typeof(this.network) !== 'undefined') {
+       delete this.network;
+    }
+    return;
+  }
+  
 
   public getNetwork(): Reference[] | undefined {
       return this.network;
@@ -160,6 +181,13 @@ export class InsurancePlanCoverage {
     }
     this.benefit.push(newValue);
   }
+  public deleteBenefitAll() {
+    if (typeof(this.benefit) !== 'undefined') {
+       delete this.benefit;
+    }
+    return;
+  }
+  
 
   public getBenefit(): InsurancePlanBenefit[] | undefined {
       return this.benefit;

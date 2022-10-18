@@ -515,6 +515,13 @@ export class DiagnosticReport {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -533,6 +540,13 @@ export class DiagnosticReport {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -551,6 +565,13 @@ export class DiagnosticReport {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -569,6 +590,13 @@ export class DiagnosticReport {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -587,6 +615,13 @@ export class DiagnosticReport {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -634,6 +669,13 @@ export class DiagnosticReport {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -708,6 +750,13 @@ export class DiagnosticReport {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): Reference[] | undefined {
       return this.performer;
@@ -726,6 +775,13 @@ export class DiagnosticReport {
     }
     this.resultsInterpreter.push(newValue);
   }
+  public deleteResultsInterpreterAll() {
+    if (typeof(this.resultsInterpreter) !== 'undefined') {
+       delete this.resultsInterpreter;
+    }
+    return;
+  }
+  
 
   public getResultsInterpreter(): Reference[] | undefined {
       return this.resultsInterpreter;
@@ -744,6 +800,13 @@ export class DiagnosticReport {
     }
     this.specimen.push(newValue);
   }
+  public deleteSpecimenAll() {
+    if (typeof(this.specimen) !== 'undefined') {
+       delete this.specimen;
+    }
+    return;
+  }
+  
 
   public getSpecimen(): Reference[] | undefined {
       return this.specimen;
@@ -762,6 +825,13 @@ export class DiagnosticReport {
     }
     this.result.push(newValue);
   }
+  public deleteResultAll() {
+    if (typeof(this.result) !== 'undefined') {
+       delete this.result;
+    }
+    return;
+  }
+  
 
   public getResult(): Reference[] | undefined {
       return this.result;
@@ -780,6 +850,13 @@ export class DiagnosticReport {
     }
     this.imagingStudy.push(newValue);
   }
+  public deleteImagingStudyAll() {
+    if (typeof(this.imagingStudy) !== 'undefined') {
+       delete this.imagingStudy;
+    }
+    return;
+  }
+  
 
   public getImagingStudy(): Reference[] | undefined {
       return this.imagingStudy;
@@ -798,6 +875,13 @@ export class DiagnosticReport {
     }
     this.media.push(newValue);
   }
+  public deleteMediaAll() {
+    if (typeof(this.media) !== 'undefined') {
+       delete this.media;
+    }
+    return;
+  }
+  
 
   public getMedia(): DiagnosticReportMedia[] | undefined {
       return this.media;
@@ -844,6 +928,13 @@ export class DiagnosticReport {
     }
     this.conclusionCode.push(newValue);
   }
+  public deleteConclusionCodeAll() {
+    if (typeof(this.conclusionCode) !== 'undefined') {
+       delete this.conclusionCode;
+    }
+    return;
+  }
+  
 
   public getConclusionCode(): CodeableConcept[] | undefined {
       return this.conclusionCode;
@@ -862,6 +953,13 @@ export class DiagnosticReport {
     }
     this.presentedForm.push(newValue);
   }
+  public deletePresentedFormAll() {
+    if (typeof(this.presentedForm) !== 'undefined') {
+       delete this.presentedForm;
+    }
+    return;
+  }
+  
 
   public getPresentedForm(): Attachment[] | undefined {
       return this.presentedForm;

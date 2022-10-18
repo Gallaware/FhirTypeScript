@@ -112,6 +112,13 @@ export class StructureMapDependent {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -130,6 +137,13 @@ export class StructureMapDependent {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -176,6 +190,13 @@ export class StructureMapDependent {
     }
     this.variable.push(newValue);
   }
+  public deleteVariableAll() {
+    if (typeof(this.variable) !== 'undefined') {
+       delete this.variable;
+    }
+    return;
+  }
+  
 
   public getVariable(): string[] | undefined {
       return this.variable;
@@ -194,6 +215,13 @@ export class StructureMapDependent {
     }
     this._variable.push(newValue);
   }
+  public delete_variableAll() {
+    if (typeof(this._variable) !== 'undefined') {
+       delete this._variable;
+    }
+    return;
+  }
+  
 
   public get_variable(): Element[] | undefined {
       return this._variable;

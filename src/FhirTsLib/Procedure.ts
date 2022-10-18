@@ -601,6 +601,13 @@ export class Procedure {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -619,6 +626,13 @@ export class Procedure {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -637,6 +651,13 @@ export class Procedure {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -655,6 +676,13 @@ export class Procedure {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -673,6 +701,13 @@ export class Procedure {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -691,6 +726,13 @@ export class Procedure {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -709,6 +751,13 @@ export class Procedure {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -727,6 +776,13 @@ export class Procedure {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -745,6 +801,13 @@ export class Procedure {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -847,6 +910,13 @@ export class Procedure {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): ProcedurePerformer[] | undefined {
       return this.performer;
@@ -865,6 +935,13 @@ export class Procedure {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -883,6 +960,13 @@ export class Procedure {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -901,6 +985,13 @@ export class Procedure {
     }
     this.bodySite.push(newValue);
   }
+  public deleteBodySiteAll() {
+    if (typeof(this.bodySite) !== 'undefined') {
+       delete this.bodySite;
+    }
+    return;
+  }
+  
 
   public getBodySite(): CodeableConcept[] | undefined {
       return this.bodySite;
@@ -919,6 +1010,13 @@ export class Procedure {
     }
     this.report.push(newValue);
   }
+  public deleteReportAll() {
+    if (typeof(this.report) !== 'undefined') {
+       delete this.report;
+    }
+    return;
+  }
+  
 
   public getReport(): Reference[] | undefined {
       return this.report;
@@ -937,6 +1035,13 @@ export class Procedure {
     }
     this.complication.push(newValue);
   }
+  public deleteComplicationAll() {
+    if (typeof(this.complication) !== 'undefined') {
+       delete this.complication;
+    }
+    return;
+  }
+  
 
   public getComplication(): CodeableConcept[] | undefined {
       return this.complication;
@@ -955,6 +1060,13 @@ export class Procedure {
     }
     this.complicationDetail.push(newValue);
   }
+  public deleteComplicationDetailAll() {
+    if (typeof(this.complicationDetail) !== 'undefined') {
+       delete this.complicationDetail;
+    }
+    return;
+  }
+  
 
   public getComplicationDetail(): Reference[] | undefined {
       return this.complicationDetail;
@@ -973,6 +1085,13 @@ export class Procedure {
     }
     this.followUp.push(newValue);
   }
+  public deleteFollowUpAll() {
+    if (typeof(this.followUp) !== 'undefined') {
+       delete this.followUp;
+    }
+    return;
+  }
+  
 
   public getFollowUp(): CodeableConcept[] | undefined {
       return this.followUp;
@@ -991,6 +1110,13 @@ export class Procedure {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -1009,6 +1135,13 @@ export class Procedure {
     }
     this.focalDevice.push(newValue);
   }
+  public deleteFocalDeviceAll() {
+    if (typeof(this.focalDevice) !== 'undefined') {
+       delete this.focalDevice;
+    }
+    return;
+  }
+  
 
   public getFocalDevice(): ProcedureFocalDevice[] | undefined {
       return this.focalDevice;
@@ -1027,6 +1160,13 @@ export class Procedure {
     }
     this.usedReference.push(newValue);
   }
+  public deleteUsedReferenceAll() {
+    if (typeof(this.usedReference) !== 'undefined') {
+       delete this.usedReference;
+    }
+    return;
+  }
+  
 
   public getUsedReference(): Reference[] | undefined {
       return this.usedReference;
@@ -1045,6 +1185,13 @@ export class Procedure {
     }
     this.usedCode.push(newValue);
   }
+  public deleteUsedCodeAll() {
+    if (typeof(this.usedCode) !== 'undefined') {
+       delete this.usedCode;
+    }
+    return;
+  }
+  
 
   public getUsedCode(): CodeableConcept[] | undefined {
       return this.usedCode;

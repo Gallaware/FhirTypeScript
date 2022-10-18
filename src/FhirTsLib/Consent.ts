@@ -468,6 +468,13 @@ export class Consent {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -486,6 +493,13 @@ export class Consent {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -504,6 +518,13 @@ export class Consent {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -522,6 +543,13 @@ export class Consent {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -569,6 +597,13 @@ export class Consent {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -615,6 +650,13 @@ export class Consent {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): Reference[] | undefined {
       return this.performer;
@@ -633,6 +675,13 @@ export class Consent {
     }
     this.organization.push(newValue);
   }
+  public deleteOrganizationAll() {
+    if (typeof(this.organization) !== 'undefined') {
+       delete this.organization;
+    }
+    return;
+  }
+  
 
   public getOrganization(): Reference[] | undefined {
       return this.organization;
@@ -651,6 +700,13 @@ export class Consent {
     }
     this.policy.push(newValue);
   }
+  public deletePolicyAll() {
+    if (typeof(this.policy) !== 'undefined') {
+       delete this.policy;
+    }
+    return;
+  }
+  
 
   public getPolicy(): ConsentPolicy[] | undefined {
       return this.policy;
@@ -669,6 +725,13 @@ export class Consent {
     }
     this.verification.push(newValue);
   }
+  public deleteVerificationAll() {
+    if (typeof(this.verification) !== 'undefined') {
+       delete this.verification;
+    }
+    return;
+  }
+  
 
   public getVerification(): ConsentVerification[] | undefined {
       return this.verification;

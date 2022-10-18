@@ -175,6 +175,13 @@ export class ConsentProvision {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -193,6 +200,13 @@ export class ConsentProvision {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -240,6 +254,13 @@ export class ConsentProvision {
     }
     this.actor.push(newValue);
   }
+  public deleteActorAll() {
+    if (typeof(this.actor) !== 'undefined') {
+       delete this.actor;
+    }
+    return;
+  }
+  
 
   public getActor(): ConsentActor[] | undefined {
       return this.actor;
@@ -258,6 +279,13 @@ export class ConsentProvision {
     }
     this.action.push(newValue);
   }
+  public deleteActionAll() {
+    if (typeof(this.action) !== 'undefined') {
+       delete this.action;
+    }
+    return;
+  }
+  
 
   public getAction(): CodeableConcept[] | undefined {
       return this.action;
@@ -276,6 +304,13 @@ export class ConsentProvision {
     }
     this.securityLabel.push(newValue);
   }
+  public deleteSecurityLabelAll() {
+    if (typeof(this.securityLabel) !== 'undefined') {
+       delete this.securityLabel;
+    }
+    return;
+  }
+  
 
   public getSecurityLabel(): Coding[] | undefined {
       return this.securityLabel;
@@ -294,6 +329,13 @@ export class ConsentProvision {
     }
     this.purpose.push(newValue);
   }
+  public deletePurposeAll() {
+    if (typeof(this.purpose) !== 'undefined') {
+       delete this.purpose;
+    }
+    return;
+  }
+  
 
   public getPurpose(): Coding[] | undefined {
       return this.purpose;
@@ -312,6 +354,13 @@ export class ConsentProvision {
     }
     this.class.push(newValue);
   }
+  public deleteClassAll() {
+    if (typeof(this.class) !== 'undefined') {
+       delete this.class;
+    }
+    return;
+  }
+  
 
   public getClass(): Coding[] | undefined {
       return this.class;
@@ -330,6 +379,13 @@ export class ConsentProvision {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
@@ -348,6 +404,13 @@ export class ConsentProvision {
     }
     this.data.push(newValue);
   }
+  public deleteDataAll() {
+    if (typeof(this.data) !== 'undefined') {
+       delete this.data;
+    }
+    return;
+  }
+  
 
   public getData(): ConsentData[] | undefined {
       return this.data;
@@ -366,6 +429,13 @@ export class ConsentProvision {
     }
     this.provision.push(newValue);
   }
+  public deleteProvisionAll() {
+    if (typeof(this.provision) !== 'undefined') {
+       delete this.provision;
+    }
+    return;
+  }
+  
 
   public getProvision(): ConsentProvision[] | undefined {
       return this.provision;

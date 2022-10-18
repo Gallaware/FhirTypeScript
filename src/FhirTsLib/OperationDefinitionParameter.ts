@@ -208,6 +208,13 @@ export class OperationDefinitionParameter {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -226,6 +233,13 @@ export class OperationDefinitionParameter {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -385,6 +399,13 @@ export class OperationDefinitionParameter {
     }
     this.targetProfile.push(newValue);
   }
+  public deleteTargetProfileAll() {
+    if (typeof(this.targetProfile) !== 'undefined') {
+       delete this.targetProfile;
+    }
+    return;
+  }
+  
 
   public getTargetProfile(): string[] | undefined {
       return this.targetProfile;
@@ -432,6 +453,13 @@ export class OperationDefinitionParameter {
     }
     this.referencedFrom.push(newValue);
   }
+  public deleteReferencedFromAll() {
+    if (typeof(this.referencedFrom) !== 'undefined') {
+       delete this.referencedFrom;
+    }
+    return;
+  }
+  
 
   public getReferencedFrom(): OperationDefinitionReferencedFrom[] | undefined {
       return this.referencedFrom;
@@ -450,6 +478,13 @@ export class OperationDefinitionParameter {
     }
     this.part.push(newValue);
   }
+  public deletePartAll() {
+    if (typeof(this.part) !== 'undefined') {
+       delete this.part;
+    }
+    return;
+  }
+  
 
   public getPart(): OperationDefinitionParameter[] | undefined {
       return this.part;

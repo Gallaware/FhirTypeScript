@@ -143,6 +143,13 @@ export class VerificationResultPrimarySource {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -161,6 +168,13 @@ export class VerificationResultPrimarySource {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -179,6 +193,13 @@ export class VerificationResultPrimarySource {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -197,6 +218,13 @@ export class VerificationResultPrimarySource {
     }
     this.communicationMethod.push(newValue);
   }
+  public deleteCommunicationMethodAll() {
+    if (typeof(this.communicationMethod) !== 'undefined') {
+       delete this.communicationMethod;
+    }
+    return;
+  }
+  
 
   public getCommunicationMethod(): CodeableConcept[] | undefined {
       return this.communicationMethod;
@@ -243,6 +271,13 @@ export class VerificationResultPrimarySource {
     }
     this.pushTypeAvailable.push(newValue);
   }
+  public deletePushTypeAvailableAll() {
+    if (typeof(this.pushTypeAvailable) !== 'undefined') {
+       delete this.pushTypeAvailable;
+    }
+    return;
+  }
+  
 
   public getPushTypeAvailable(): CodeableConcept[] | undefined {
       return this.pushTypeAvailable;

@@ -133,6 +133,13 @@ export class Meta {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -235,6 +242,13 @@ export class Meta {
     }
     this.profile.push(newValue);
   }
+  public deleteProfileAll() {
+    if (typeof(this.profile) !== 'undefined') {
+       delete this.profile;
+    }
+    return;
+  }
+  
 
   public getProfile(): string[] | undefined {
       return this.profile;
@@ -253,6 +267,13 @@ export class Meta {
     }
     this.security.push(newValue);
   }
+  public deleteSecurityAll() {
+    if (typeof(this.security) !== 'undefined') {
+       delete this.security;
+    }
+    return;
+  }
+  
 
   public getSecurity(): Coding[] | undefined {
       return this.security;
@@ -271,6 +292,13 @@ export class Meta {
     }
     this.tag.push(newValue);
   }
+  public deleteTagAll() {
+    if (typeof(this.tag) !== 'undefined') {
+       delete this.tag;
+    }
+    return;
+  }
+  
 
   public getTag(): Coding[] | undefined {
       return this.tag;

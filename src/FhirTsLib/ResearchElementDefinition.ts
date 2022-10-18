@@ -698,6 +698,13 @@ export class ResearchElementDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -716,6 +723,13 @@ export class ResearchElementDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -734,6 +748,13 @@ export class ResearchElementDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -780,6 +801,13 @@ export class ResearchElementDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -1023,6 +1051,13 @@ export class ResearchElementDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -1069,6 +1104,13 @@ export class ResearchElementDefinition {
     }
     this.comment.push(newValue);
   }
+  public deleteCommentAll() {
+    if (typeof(this.comment) !== 'undefined') {
+       delete this.comment;
+    }
+    return;
+  }
+  
 
   public getComment(): string[] | undefined {
       return this.comment;
@@ -1087,6 +1129,13 @@ export class ResearchElementDefinition {
     }
     this._comment.push(newValue);
   }
+  public delete_commentAll() {
+    if (typeof(this._comment) !== 'undefined') {
+       delete this._comment;
+    }
+    return;
+  }
+  
 
   public get_comment(): Element[] | undefined {
       return this._comment;
@@ -1105,6 +1154,13 @@ export class ResearchElementDefinition {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -1123,6 +1179,13 @@ export class ResearchElementDefinition {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1281,6 +1344,13 @@ export class ResearchElementDefinition {
     }
     this.topic.push(newValue);
   }
+  public deleteTopicAll() {
+    if (typeof(this.topic) !== 'undefined') {
+       delete this.topic;
+    }
+    return;
+  }
+  
 
   public getTopic(): CodeableConcept[] | undefined {
       return this.topic;
@@ -1299,6 +1369,13 @@ export class ResearchElementDefinition {
     }
     this.author.push(newValue);
   }
+  public deleteAuthorAll() {
+    if (typeof(this.author) !== 'undefined') {
+       delete this.author;
+    }
+    return;
+  }
+  
 
   public getAuthor(): ContactDetail[] | undefined {
       return this.author;
@@ -1317,6 +1394,13 @@ export class ResearchElementDefinition {
     }
     this.editor.push(newValue);
   }
+  public deleteEditorAll() {
+    if (typeof(this.editor) !== 'undefined') {
+       delete this.editor;
+    }
+    return;
+  }
+  
 
   public getEditor(): ContactDetail[] | undefined {
       return this.editor;
@@ -1335,6 +1419,13 @@ export class ResearchElementDefinition {
     }
     this.reviewer.push(newValue);
   }
+  public deleteReviewerAll() {
+    if (typeof(this.reviewer) !== 'undefined') {
+       delete this.reviewer;
+    }
+    return;
+  }
+  
 
   public getReviewer(): ContactDetail[] | undefined {
       return this.reviewer;
@@ -1353,6 +1444,13 @@ export class ResearchElementDefinition {
     }
     this.endorser.push(newValue);
   }
+  public deleteEndorserAll() {
+    if (typeof(this.endorser) !== 'undefined') {
+       delete this.endorser;
+    }
+    return;
+  }
+  
 
   public getEndorser(): ContactDetail[] | undefined {
       return this.endorser;
@@ -1371,6 +1469,13 @@ export class ResearchElementDefinition {
     }
     this.relatedArtifact.push(newValue);
   }
+  public deleteRelatedArtifactAll() {
+    if (typeof(this.relatedArtifact) !== 'undefined') {
+       delete this.relatedArtifact;
+    }
+    return;
+  }
+  
 
   public getRelatedArtifact(): RelatedArtifact[] | undefined {
       return this.relatedArtifact;
@@ -1389,6 +1494,13 @@ export class ResearchElementDefinition {
     }
     this.library.push(newValue);
   }
+  public deleteLibraryAll() {
+    if (typeof(this.library) !== 'undefined') {
+       delete this.library;
+    }
+    return;
+  }
+  
 
   public getLibrary(): string[] | undefined {
       return this.library;
@@ -1465,6 +1577,13 @@ export class ResearchElementDefinition {
     }
     this.characteristic.push(newValue);
   }
+  public deleteCharacteristicAll() {
+    if (typeof(this.characteristic) !== 'undefined') {
+       delete this.characteristic;
+    }
+    return;
+  }
+  
 
   public getCharacteristic(): ResearchElementDefinitionCharacteristic[] | undefined {
       return this.characteristic;

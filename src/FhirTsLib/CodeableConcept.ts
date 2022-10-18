@@ -89,6 +89,13 @@ export class CodeableConcept {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -107,6 +114,13 @@ export class CodeableConcept {
     }
     this.coding.push(newValue);
   }
+  public deleteCodingAll() {
+    if (typeof(this.coding) !== 'undefined') {
+       delete this.coding;
+    }
+    return;
+  }
+  
 
   public getCoding(): Coding[] | undefined {
       return this.coding;

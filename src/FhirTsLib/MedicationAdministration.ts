@@ -522,6 +522,13 @@ export class MedicationAdministration {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -540,6 +547,13 @@ export class MedicationAdministration {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -558,6 +572,13 @@ export class MedicationAdministration {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -576,6 +597,13 @@ export class MedicationAdministration {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -594,6 +622,13 @@ export class MedicationAdministration {
     }
     this.instantiates.push(newValue);
   }
+  public deleteInstantiatesAll() {
+    if (typeof(this.instantiates) !== 'undefined') {
+       delete this.instantiates;
+    }
+    return;
+  }
+  
 
   public getInstantiates(): string[] | undefined {
       return this.instantiates;
@@ -612,6 +647,13 @@ export class MedicationAdministration {
     }
     this._instantiates.push(newValue);
   }
+  public delete_instantiatesAll() {
+    if (typeof(this._instantiates) !== 'undefined') {
+       delete this._instantiates;
+    }
+    return;
+  }
+  
 
   public get_instantiates(): Element[] | undefined {
       return this._instantiates;
@@ -630,6 +672,13 @@ export class MedicationAdministration {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -676,6 +725,13 @@ export class MedicationAdministration {
     }
     this.statusReason.push(newValue);
   }
+  public deleteStatusReasonAll() {
+    if (typeof(this.statusReason) !== 'undefined') {
+       delete this.statusReason;
+    }
+    return;
+  }
+  
 
   public getStatusReason(): CodeableConcept[] | undefined {
       return this.statusReason;
@@ -694,6 +750,13 @@ export class MedicationAdministration {
     }
     this.supportingInformation.push(newValue);
   }
+  public deleteSupportingInformationAll() {
+    if (typeof(this.supportingInformation) !== 'undefined') {
+       delete this.supportingInformation;
+    }
+    return;
+  }
+  
 
   public getSupportingInformation(): Reference[] | undefined {
       return this.supportingInformation;
@@ -740,6 +803,13 @@ export class MedicationAdministration {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): MedicationAdministrationPerformer[] | undefined {
       return this.performer;
@@ -758,6 +828,13 @@ export class MedicationAdministration {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -776,6 +853,13 @@ export class MedicationAdministration {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -794,6 +878,13 @@ export class MedicationAdministration {
     }
     this.device.push(newValue);
   }
+  public deleteDeviceAll() {
+    if (typeof(this.device) !== 'undefined') {
+       delete this.device;
+    }
+    return;
+  }
+  
 
   public getDevice(): Reference[] | undefined {
       return this.device;
@@ -812,6 +903,13 @@ export class MedicationAdministration {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -830,6 +928,13 @@ export class MedicationAdministration {
     }
     this.eventHistory.push(newValue);
   }
+  public deleteEventHistoryAll() {
+    if (typeof(this.eventHistory) !== 'undefined') {
+       delete this.eventHistory;
+    }
+    return;
+  }
+  
 
   public getEventHistory(): Reference[] | undefined {
       return this.eventHistory;

@@ -114,6 +114,13 @@ export class MedicinalProductIngredientSpecifiedSubstance {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -132,6 +139,13 @@ export class MedicinalProductIngredientSpecifiedSubstance {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -150,6 +164,13 @@ export class MedicinalProductIngredientSpecifiedSubstance {
     }
     this.strength.push(newValue);
   }
+  public deleteStrengthAll() {
+    if (typeof(this.strength) !== 'undefined') {
+       delete this.strength;
+    }
+    return;
+  }
+  
 
   public getStrength(): MedicinalProductIngredientStrength[] | undefined {
       return this.strength;

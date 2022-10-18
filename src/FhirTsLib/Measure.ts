@@ -772,6 +772,13 @@ export class Measure {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -790,6 +797,13 @@ export class Measure {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -808,6 +822,13 @@ export class Measure {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -854,6 +875,13 @@ export class Measure {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -1069,6 +1097,13 @@ export class Measure {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -1115,6 +1150,13 @@ export class Measure {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -1133,6 +1175,13 @@ export class Measure {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1291,6 +1340,13 @@ export class Measure {
     }
     this.topic.push(newValue);
   }
+  public deleteTopicAll() {
+    if (typeof(this.topic) !== 'undefined') {
+       delete this.topic;
+    }
+    return;
+  }
+  
 
   public getTopic(): CodeableConcept[] | undefined {
       return this.topic;
@@ -1309,6 +1365,13 @@ export class Measure {
     }
     this.author.push(newValue);
   }
+  public deleteAuthorAll() {
+    if (typeof(this.author) !== 'undefined') {
+       delete this.author;
+    }
+    return;
+  }
+  
 
   public getAuthor(): ContactDetail[] | undefined {
       return this.author;
@@ -1327,6 +1390,13 @@ export class Measure {
     }
     this.editor.push(newValue);
   }
+  public deleteEditorAll() {
+    if (typeof(this.editor) !== 'undefined') {
+       delete this.editor;
+    }
+    return;
+  }
+  
 
   public getEditor(): ContactDetail[] | undefined {
       return this.editor;
@@ -1345,6 +1415,13 @@ export class Measure {
     }
     this.reviewer.push(newValue);
   }
+  public deleteReviewerAll() {
+    if (typeof(this.reviewer) !== 'undefined') {
+       delete this.reviewer;
+    }
+    return;
+  }
+  
 
   public getReviewer(): ContactDetail[] | undefined {
       return this.reviewer;
@@ -1363,6 +1440,13 @@ export class Measure {
     }
     this.endorser.push(newValue);
   }
+  public deleteEndorserAll() {
+    if (typeof(this.endorser) !== 'undefined') {
+       delete this.endorser;
+    }
+    return;
+  }
+  
 
   public getEndorser(): ContactDetail[] | undefined {
       return this.endorser;
@@ -1381,6 +1465,13 @@ export class Measure {
     }
     this.relatedArtifact.push(newValue);
   }
+  public deleteRelatedArtifactAll() {
+    if (typeof(this.relatedArtifact) !== 'undefined') {
+       delete this.relatedArtifact;
+    }
+    return;
+  }
+  
 
   public getRelatedArtifact(): RelatedArtifact[] | undefined {
       return this.relatedArtifact;
@@ -1399,6 +1490,13 @@ export class Measure {
     }
     this.library.push(newValue);
   }
+  public deleteLibraryAll() {
+    if (typeof(this.library) !== 'undefined') {
+       delete this.library;
+    }
+    return;
+  }
+  
 
   public getLibrary(): string[] | undefined {
       return this.library;
@@ -1445,6 +1543,13 @@ export class Measure {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -1575,6 +1680,13 @@ export class Measure {
     }
     this.definition.push(newValue);
   }
+  public deleteDefinitionAll() {
+    if (typeof(this.definition) !== 'undefined') {
+       delete this.definition;
+    }
+    return;
+  }
+  
 
   public getDefinition(): string[] | undefined {
       return this.definition;
@@ -1593,6 +1705,13 @@ export class Measure {
     }
     this._definition.push(newValue);
   }
+  public delete_definitionAll() {
+    if (typeof(this._definition) !== 'undefined') {
+       delete this._definition;
+    }
+    return;
+  }
+  
 
   public get_definition(): Element[] | undefined {
       return this._definition;
@@ -1639,6 +1758,13 @@ export class Measure {
     }
     this.group.push(newValue);
   }
+  public deleteGroupAll() {
+    if (typeof(this.group) !== 'undefined') {
+       delete this.group;
+    }
+    return;
+  }
+  
 
   public getGroup(): MeasureGroup[] | undefined {
       return this.group;
@@ -1657,6 +1783,13 @@ export class Measure {
     }
     this.supplementalData.push(newValue);
   }
+  public deleteSupplementalDataAll() {
+    if (typeof(this.supplementalData) !== 'undefined') {
+       delete this.supplementalData;
+    }
+    return;
+  }
+  
 
   public getSupplementalData(): MeasureSupplementalData[] | undefined {
       return this.supplementalData;

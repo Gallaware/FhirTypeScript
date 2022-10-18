@@ -139,6 +139,13 @@ export class StructureMapRule {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -157,6 +164,13 @@ export class StructureMapRule {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -203,6 +217,13 @@ export class StructureMapRule {
     }
     this.source.push(newValue);
   }
+  public deleteSourceAll() {
+    if (typeof(this.source) !== 'undefined') {
+       delete this.source;
+    }
+    return;
+  }
+  
 
   public getSource(): StructureMapSource[] | undefined {
       return this.source;
@@ -221,6 +242,13 @@ export class StructureMapRule {
     }
     this.target.push(newValue);
   }
+  public deleteTargetAll() {
+    if (typeof(this.target) !== 'undefined') {
+       delete this.target;
+    }
+    return;
+  }
+  
 
   public getTarget(): StructureMapTarget[] | undefined {
       return this.target;
@@ -239,6 +267,13 @@ export class StructureMapRule {
     }
     this.rule.push(newValue);
   }
+  public deleteRuleAll() {
+    if (typeof(this.rule) !== 'undefined') {
+       delete this.rule;
+    }
+    return;
+  }
+  
 
   public getRule(): StructureMapRule[] | undefined {
       return this.rule;
@@ -257,6 +292,13 @@ export class StructureMapRule {
     }
     this.dependent.push(newValue);
   }
+  public deleteDependentAll() {
+    if (typeof(this.dependent) !== 'undefined') {
+       delete this.dependent;
+    }
+    return;
+  }
+  
 
   public getDependent(): StructureMapDependent[] | undefined {
       return this.dependent;

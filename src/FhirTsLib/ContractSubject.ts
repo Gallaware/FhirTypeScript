@@ -100,6 +100,13 @@ export class ContractSubject {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -118,6 +125,13 @@ export class ContractSubject {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -136,6 +150,13 @@ export class ContractSubject {
     }
     this.reference.push(newValue);
   }
+  public deleteReferenceAll() {
+    if (typeof(this.reference) !== 'undefined') {
+       delete this.reference;
+    }
+    return;
+  }
+  
 
   public getReference(): Reference[] | undefined {
       return this.reference;

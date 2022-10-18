@@ -574,6 +574,13 @@ export class ImplementationGuide {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -592,6 +599,13 @@ export class ImplementationGuide {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -610,6 +624,13 @@ export class ImplementationGuide {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -825,6 +846,13 @@ export class ImplementationGuide {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -871,6 +899,13 @@ export class ImplementationGuide {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -889,6 +924,13 @@ export class ImplementationGuide {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -992,6 +1034,13 @@ export class ImplementationGuide {
     }
     this.fhirVersion.push(newValue);
   }
+  public deleteFhirVersionAll() {
+    if (typeof(this.fhirVersion) !== 'undefined') {
+       delete this.fhirVersion;
+    }
+    return;
+  }
+  
 
   public getFhirVersion(): string[] | undefined {
       return this.fhirVersion;
@@ -1010,6 +1059,13 @@ export class ImplementationGuide {
     }
     this._fhirVersion.push(newValue);
   }
+  public delete_fhirVersionAll() {
+    if (typeof(this._fhirVersion) !== 'undefined') {
+       delete this._fhirVersion;
+    }
+    return;
+  }
+  
 
   public get_fhirVersion(): Element[] | undefined {
       return this._fhirVersion;
@@ -1028,6 +1084,13 @@ export class ImplementationGuide {
     }
     this.dependsOn.push(newValue);
   }
+  public deleteDependsOnAll() {
+    if (typeof(this.dependsOn) !== 'undefined') {
+       delete this.dependsOn;
+    }
+    return;
+  }
+  
 
   public getDependsOn(): ImplementationGuideDependsOn[] | undefined {
       return this.dependsOn;
@@ -1046,6 +1109,13 @@ export class ImplementationGuide {
     }
     this.global.push(newValue);
   }
+  public deleteGlobalAll() {
+    if (typeof(this.global) !== 'undefined') {
+       delete this.global;
+    }
+    return;
+  }
+  
 
   public getGlobal(): ImplementationGuideGlobal[] | undefined {
       return this.global;

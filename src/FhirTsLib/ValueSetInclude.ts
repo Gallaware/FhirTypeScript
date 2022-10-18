@@ -135,6 +135,13 @@ export class ValueSetInclude {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -153,6 +160,13 @@ export class ValueSetInclude {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -227,6 +241,13 @@ export class ValueSetInclude {
     }
     this.concept.push(newValue);
   }
+  public deleteConceptAll() {
+    if (typeof(this.concept) !== 'undefined') {
+       delete this.concept;
+    }
+    return;
+  }
+  
 
   public getConcept(): ValueSetConcept[] | undefined {
       return this.concept;
@@ -245,6 +266,13 @@ export class ValueSetInclude {
     }
     this.filter.push(newValue);
   }
+  public deleteFilterAll() {
+    if (typeof(this.filter) !== 'undefined') {
+       delete this.filter;
+    }
+    return;
+  }
+  
 
   public getFilter(): ValueSetFilter[] | undefined {
       return this.filter;
@@ -263,6 +291,13 @@ export class ValueSetInclude {
     }
     this.valueSet.push(newValue);
   }
+  public deleteValueSetAll() {
+    if (typeof(this.valueSet) !== 'undefined') {
+       delete this.valueSet;
+    }
+    return;
+  }
+  
 
   public getValueSet(): string[] | undefined {
       return this.valueSet;

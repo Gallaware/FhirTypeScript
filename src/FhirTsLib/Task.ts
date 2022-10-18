@@ -607,6 +607,13 @@ export class Task {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -625,6 +632,13 @@ export class Task {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -643,6 +657,13 @@ export class Task {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -661,6 +682,13 @@ export class Task {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -735,6 +763,13 @@ export class Task {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -753,6 +788,13 @@ export class Task {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -941,6 +983,13 @@ export class Task {
     }
     this.performerType.push(newValue);
   }
+  public deletePerformerTypeAll() {
+    if (typeof(this.performerType) !== 'undefined') {
+       delete this.performerType;
+    }
+    return;
+  }
+  
 
   public getPerformerType(): CodeableConcept[] | undefined {
       return this.performerType;
@@ -959,6 +1008,13 @@ export class Task {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): Reference[] | undefined {
       return this.insurance;
@@ -977,6 +1033,13 @@ export class Task {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -995,6 +1058,13 @@ export class Task {
     }
     this.relevantHistory.push(newValue);
   }
+  public deleteRelevantHistoryAll() {
+    if (typeof(this.relevantHistory) !== 'undefined') {
+       delete this.relevantHistory;
+    }
+    return;
+  }
+  
 
   public getRelevantHistory(): Reference[] | undefined {
       return this.relevantHistory;
@@ -1013,6 +1083,13 @@ export class Task {
     }
     this.input.push(newValue);
   }
+  public deleteInputAll() {
+    if (typeof(this.input) !== 'undefined') {
+       delete this.input;
+    }
+    return;
+  }
+  
 
   public getInput(): TaskInput[] | undefined {
       return this.input;
@@ -1031,6 +1108,13 @@ export class Task {
     }
     this.output.push(newValue);
   }
+  public deleteOutputAll() {
+    if (typeof(this.output) !== 'undefined') {
+       delete this.output;
+    }
+    return;
+  }
+  
 
   public getOutput(): TaskOutput[] | undefined {
       return this.output;

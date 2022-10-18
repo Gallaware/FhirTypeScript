@@ -585,6 +585,13 @@ export class ChargeItem {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -603,6 +610,13 @@ export class ChargeItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -621,6 +635,13 @@ export class ChargeItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -639,6 +660,13 @@ export class ChargeItem {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -657,6 +685,13 @@ export class ChargeItem {
     }
     this.definitionUri.push(newValue);
   }
+  public deleteDefinitionUriAll() {
+    if (typeof(this.definitionUri) !== 'undefined') {
+       delete this.definitionUri;
+    }
+    return;
+  }
+  
 
   public getDefinitionUri(): string[] | undefined {
       return this.definitionUri;
@@ -675,6 +710,13 @@ export class ChargeItem {
     }
     this._definitionUri.push(newValue);
   }
+  public delete_definitionUriAll() {
+    if (typeof(this._definitionUri) !== 'undefined') {
+       delete this._definitionUri;
+    }
+    return;
+  }
+  
 
   public get_definitionUri(): Element[] | undefined {
       return this._definitionUri;
@@ -693,6 +735,13 @@ export class ChargeItem {
     }
     this.definitionCanonical.push(newValue);
   }
+  public deleteDefinitionCanonicalAll() {
+    if (typeof(this.definitionCanonical) !== 'undefined') {
+       delete this.definitionCanonical;
+    }
+    return;
+  }
+  
 
   public getDefinitionCanonical(): string[] | undefined {
       return this.definitionCanonical;
@@ -740,6 +789,13 @@ export class ChargeItem {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -786,6 +842,13 @@ export class ChargeItem {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): ChargeItemPerformer[] | undefined {
       return this.performer;
@@ -804,6 +867,13 @@ export class ChargeItem {
     }
     this.bodysite.push(newValue);
   }
+  public deleteBodysiteAll() {
+    if (typeof(this.bodysite) !== 'undefined') {
+       delete this.bodysite;
+    }
+    return;
+  }
+  
 
   public getBodysite(): CodeableConcept[] | undefined {
       return this.bodysite;
@@ -878,6 +948,13 @@ export class ChargeItem {
     }
     this.reason.push(newValue);
   }
+  public deleteReasonAll() {
+    if (typeof(this.reason) !== 'undefined') {
+       delete this.reason;
+    }
+    return;
+  }
+  
 
   public getReason(): CodeableConcept[] | undefined {
       return this.reason;
@@ -896,6 +973,13 @@ export class ChargeItem {
     }
     this.service.push(newValue);
   }
+  public deleteServiceAll() {
+    if (typeof(this.service) !== 'undefined') {
+       delete this.service;
+    }
+    return;
+  }
+  
 
   public getService(): Reference[] | undefined {
       return this.service;
@@ -914,6 +998,13 @@ export class ChargeItem {
     }
     this.account.push(newValue);
   }
+  public deleteAccountAll() {
+    if (typeof(this.account) !== 'undefined') {
+       delete this.account;
+    }
+    return;
+  }
+  
 
   public getAccount(): Reference[] | undefined {
       return this.account;
@@ -932,6 +1023,13 @@ export class ChargeItem {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -950,6 +1048,13 @@ export class ChargeItem {
     }
     this.supportingInformation.push(newValue);
   }
+  public deleteSupportingInformationAll() {
+    if (typeof(this.supportingInformation) !== 'undefined') {
+       delete this.supportingInformation;
+    }
+    return;
+  }
+  
 
   public getSupportingInformation(): Reference[] | undefined {
       return this.supportingInformation;

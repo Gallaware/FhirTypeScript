@@ -107,6 +107,13 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -125,6 +132,13 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -143,6 +157,13 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.rating.push(newValue);
   }
+  public deleteRatingAll() {
+    if (typeof(this.rating) !== 'undefined') {
+       delete this.rating;
+    }
+    return;
+  }
+  
 
   public getRating(): CodeableConcept[] | undefined {
       return this.rating;
@@ -161,6 +182,13 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -179,6 +207,13 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.certaintySubcomponent.push(newValue);
   }
+  public deleteCertaintySubcomponentAll() {
+    if (typeof(this.certaintySubcomponent) !== 'undefined') {
+       delete this.certaintySubcomponent;
+    }
+    return;
+  }
+  
 
   public getCertaintySubcomponent(): RiskEvidenceSynthesisCertaintySubcomponent[] | undefined {
       return this.certaintySubcomponent;

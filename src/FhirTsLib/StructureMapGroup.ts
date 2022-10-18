@@ -153,6 +153,13 @@ export class StructureMapGroup {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -171,6 +178,13 @@ export class StructureMapGroup {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -302,6 +316,13 @@ export class StructureMapGroup {
     }
     this.input.push(newValue);
   }
+  public deleteInputAll() {
+    if (typeof(this.input) !== 'undefined') {
+       delete this.input;
+    }
+    return;
+  }
+  
 
   public getInput(): StructureMapInput[] | undefined {
       return this.input;
@@ -320,6 +341,13 @@ export class StructureMapGroup {
     }
     this.rule.push(newValue);
   }
+  public deleteRuleAll() {
+    if (typeof(this.rule) !== 'undefined') {
+       delete this.rule;
+    }
+    return;
+  }
+  
 
   public getRule(): StructureMapRule[] | undefined {
       return this.rule;

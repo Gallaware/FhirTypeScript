@@ -522,6 +522,13 @@ export class ExampleScenario {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -540,6 +547,13 @@ export class ExampleScenario {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -558,6 +572,13 @@ export class ExampleScenario {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -604,6 +625,13 @@ export class ExampleScenario {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -763,6 +791,13 @@ export class ExampleScenario {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -781,6 +816,13 @@ export class ExampleScenario {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -799,6 +841,13 @@ export class ExampleScenario {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -873,6 +922,13 @@ export class ExampleScenario {
     }
     this.actor.push(newValue);
   }
+  public deleteActorAll() {
+    if (typeof(this.actor) !== 'undefined') {
+       delete this.actor;
+    }
+    return;
+  }
+  
 
   public getActor(): ExampleScenarioActor[] | undefined {
       return this.actor;
@@ -891,6 +947,13 @@ export class ExampleScenario {
     }
     this.instance.push(newValue);
   }
+  public deleteInstanceAll() {
+    if (typeof(this.instance) !== 'undefined') {
+       delete this.instance;
+    }
+    return;
+  }
+  
 
   public getInstance(): ExampleScenarioInstance[] | undefined {
       return this.instance;
@@ -909,6 +972,13 @@ export class ExampleScenario {
     }
     this.process.push(newValue);
   }
+  public deleteProcessAll() {
+    if (typeof(this.process) !== 'undefined') {
+       delete this.process;
+    }
+    return;
+  }
+  
 
   public getProcess(): ExampleScenarioProcess[] | undefined {
       return this.process;
@@ -927,6 +997,13 @@ export class ExampleScenario {
     }
     this.workflow.push(newValue);
   }
+  public deleteWorkflowAll() {
+    if (typeof(this.workflow) !== 'undefined') {
+       delete this.workflow;
+    }
+    return;
+  }
+  
 
   public getWorkflow(): string[] | undefined {
       return this.workflow;

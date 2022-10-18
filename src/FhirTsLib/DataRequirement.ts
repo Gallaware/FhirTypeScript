@@ -158,6 +158,13 @@ export class DataRequirement {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -204,6 +211,13 @@ export class DataRequirement {
     }
     this.profile.push(newValue);
   }
+  public deleteProfileAll() {
+    if (typeof(this.profile) !== 'undefined') {
+       delete this.profile;
+    }
+    return;
+  }
+  
 
   public getProfile(): string[] | undefined {
       return this.profile;
@@ -222,6 +236,13 @@ export class DataRequirement {
     }
     this.mustSupport.push(newValue);
   }
+  public deleteMustSupportAll() {
+    if (typeof(this.mustSupport) !== 'undefined') {
+       delete this.mustSupport;
+    }
+    return;
+  }
+  
 
   public getMustSupport(): string[] | undefined {
       return this.mustSupport;
@@ -240,6 +261,13 @@ export class DataRequirement {
     }
     this._mustSupport.push(newValue);
   }
+  public delete_mustSupportAll() {
+    if (typeof(this._mustSupport) !== 'undefined') {
+       delete this._mustSupport;
+    }
+    return;
+  }
+  
 
   public get_mustSupport(): Element[] | undefined {
       return this._mustSupport;
@@ -258,6 +286,13 @@ export class DataRequirement {
     }
     this.codeFilter.push(newValue);
   }
+  public deleteCodeFilterAll() {
+    if (typeof(this.codeFilter) !== 'undefined') {
+       delete this.codeFilter;
+    }
+    return;
+  }
+  
 
   public getCodeFilter(): DataRequirementCodeFilter[] | undefined {
       return this.codeFilter;
@@ -276,6 +311,13 @@ export class DataRequirement {
     }
     this.dateFilter.push(newValue);
   }
+  public deleteDateFilterAll() {
+    if (typeof(this.dateFilter) !== 'undefined') {
+       delete this.dateFilter;
+    }
+    return;
+  }
+  
 
   public getDateFilter(): DataRequirementDateFilter[] | undefined {
       return this.dateFilter;
@@ -294,6 +336,13 @@ export class DataRequirement {
     }
     this.sort.push(newValue);
   }
+  public deleteSortAll() {
+    if (typeof(this.sort) !== 'undefined') {
+       delete this.sort;
+    }
+    return;
+  }
+  
 
   public getSort(): DataRequirementSort[] | undefined {
       return this.sort;

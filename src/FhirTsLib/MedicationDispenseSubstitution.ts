@@ -120,6 +120,13 @@ export class MedicationDispenseSubstitution {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -138,6 +145,13 @@ export class MedicationDispenseSubstitution {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -156,6 +170,13 @@ export class MedicationDispenseSubstitution {
     }
     this.reason.push(newValue);
   }
+  public deleteReasonAll() {
+    if (typeof(this.reason) !== 'undefined') {
+       delete this.reason;
+    }
+    return;
+  }
+  
 
   public getReason(): CodeableConcept[] | undefined {
       return this.reason;
@@ -174,6 +195,13 @@ export class MedicationDispenseSubstitution {
     }
     this.responsibleParty.push(newValue);
   }
+  public deleteResponsiblePartyAll() {
+    if (typeof(this.responsibleParty) !== 'undefined') {
+       delete this.responsibleParty;
+    }
+    return;
+  }
+  
 
   public getResponsibleParty(): Reference[] | undefined {
       return this.responsibleParty;

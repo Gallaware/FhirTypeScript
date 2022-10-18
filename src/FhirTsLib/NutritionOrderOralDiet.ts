@@ -137,6 +137,13 @@ export class NutritionOrderOralDiet {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -155,6 +162,13 @@ export class NutritionOrderOralDiet {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -173,6 +187,13 @@ export class NutritionOrderOralDiet {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -191,6 +212,13 @@ export class NutritionOrderOralDiet {
     }
     this.schedule.push(newValue);
   }
+  public deleteScheduleAll() {
+    if (typeof(this.schedule) !== 'undefined') {
+       delete this.schedule;
+    }
+    return;
+  }
+  
 
   public getSchedule(): Timing[] | undefined {
       return this.schedule;
@@ -209,6 +237,13 @@ export class NutritionOrderOralDiet {
     }
     this.nutrient.push(newValue);
   }
+  public deleteNutrientAll() {
+    if (typeof(this.nutrient) !== 'undefined') {
+       delete this.nutrient;
+    }
+    return;
+  }
+  
 
   public getNutrient(): NutritionOrderNutrient[] | undefined {
       return this.nutrient;
@@ -227,6 +262,13 @@ export class NutritionOrderOralDiet {
     }
     this.texture.push(newValue);
   }
+  public deleteTextureAll() {
+    if (typeof(this.texture) !== 'undefined') {
+       delete this.texture;
+    }
+    return;
+  }
+  
 
   public getTexture(): NutritionOrderTexture[] | undefined {
       return this.texture;
@@ -245,6 +287,13 @@ export class NutritionOrderOralDiet {
     }
     this.fluidConsistencyType.push(newValue);
   }
+  public deleteFluidConsistencyTypeAll() {
+    if (typeof(this.fluidConsistencyType) !== 'undefined') {
+       delete this.fluidConsistencyType;
+    }
+    return;
+  }
+  
 
   public getFluidConsistencyType(): CodeableConcept[] | undefined {
       return this.fluidConsistencyType;

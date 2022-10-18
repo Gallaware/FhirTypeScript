@@ -396,6 +396,13 @@ export class SpecimenDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -414,6 +421,13 @@ export class SpecimenDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -432,6 +446,13 @@ export class SpecimenDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -450,6 +471,13 @@ export class SpecimenDefinition {
     }
     this.patientPreparation.push(newValue);
   }
+  public deletePatientPreparationAll() {
+    if (typeof(this.patientPreparation) !== 'undefined') {
+       delete this.patientPreparation;
+    }
+    return;
+  }
+  
 
   public getPatientPreparation(): CodeableConcept[] | undefined {
       return this.patientPreparation;
@@ -496,6 +524,13 @@ export class SpecimenDefinition {
     }
     this.collection.push(newValue);
   }
+  public deleteCollectionAll() {
+    if (typeof(this.collection) !== 'undefined') {
+       delete this.collection;
+    }
+    return;
+  }
+  
 
   public getCollection(): CodeableConcept[] | undefined {
       return this.collection;
@@ -514,6 +549,13 @@ export class SpecimenDefinition {
     }
     this.typeTested.push(newValue);
   }
+  public deleteTypeTestedAll() {
+    if (typeof(this.typeTested) !== 'undefined') {
+       delete this.typeTested;
+    }
+    return;
+  }
+  
 
   public getTypeTested(): SpecimenDefinitionTypeTested[] | undefined {
       return this.typeTested;

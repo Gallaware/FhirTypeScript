@@ -401,6 +401,13 @@ export class MedicinalProductContraindication {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -419,6 +426,13 @@ export class MedicinalProductContraindication {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -437,6 +451,13 @@ export class MedicinalProductContraindication {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -455,6 +476,13 @@ export class MedicinalProductContraindication {
     }
     this.subject.push(newValue);
   }
+  public deleteSubjectAll() {
+    if (typeof(this.subject) !== 'undefined') {
+       delete this.subject;
+    }
+    return;
+  }
+  
 
   public getSubject(): Reference[] | undefined {
       return this.subject;
@@ -473,6 +501,13 @@ export class MedicinalProductContraindication {
     }
     this.comorbidity.push(newValue);
   }
+  public deleteComorbidityAll() {
+    if (typeof(this.comorbidity) !== 'undefined') {
+       delete this.comorbidity;
+    }
+    return;
+  }
+  
 
   public getComorbidity(): CodeableConcept[] | undefined {
       return this.comorbidity;
@@ -491,6 +526,13 @@ export class MedicinalProductContraindication {
     }
     this.therapeuticIndication.push(newValue);
   }
+  public deleteTherapeuticIndicationAll() {
+    if (typeof(this.therapeuticIndication) !== 'undefined') {
+       delete this.therapeuticIndication;
+    }
+    return;
+  }
+  
 
   public getTherapeuticIndication(): Reference[] | undefined {
       return this.therapeuticIndication;
@@ -509,6 +551,13 @@ export class MedicinalProductContraindication {
     }
     this.otherTherapy.push(newValue);
   }
+  public deleteOtherTherapyAll() {
+    if (typeof(this.otherTherapy) !== 'undefined') {
+       delete this.otherTherapy;
+    }
+    return;
+  }
+  
 
   public getOtherTherapy(): MedicinalProductContraindicationOtherTherapy[] | undefined {
       return this.otherTherapy;
@@ -527,6 +576,13 @@ export class MedicinalProductContraindication {
     }
     this.population.push(newValue);
   }
+  public deletePopulationAll() {
+    if (typeof(this.population) !== 'undefined') {
+       delete this.population;
+    }
+    return;
+  }
+  
 
   public getPopulation(): Population[] | undefined {
       return this.population;

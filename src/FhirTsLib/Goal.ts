@@ -493,6 +493,13 @@ export class Goal {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -511,6 +518,13 @@ export class Goal {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -529,6 +543,13 @@ export class Goal {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -547,6 +568,13 @@ export class Goal {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -594,6 +622,13 @@ export class Goal {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -640,6 +675,13 @@ export class Goal {
     }
     this.target.push(newValue);
   }
+  public deleteTargetAll() {
+    if (typeof(this.target) !== 'undefined') {
+       delete this.target;
+    }
+    return;
+  }
+  
 
   public getTarget(): GoalTarget[] | undefined {
       return this.target;
@@ -714,6 +756,13 @@ export class Goal {
     }
     this.addresses.push(newValue);
   }
+  public deleteAddressesAll() {
+    if (typeof(this.addresses) !== 'undefined') {
+       delete this.addresses;
+    }
+    return;
+  }
+  
 
   public getAddresses(): Reference[] | undefined {
       return this.addresses;
@@ -732,6 +781,13 @@ export class Goal {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -750,6 +806,13 @@ export class Goal {
     }
     this.outcomeCode.push(newValue);
   }
+  public deleteOutcomeCodeAll() {
+    if (typeof(this.outcomeCode) !== 'undefined') {
+       delete this.outcomeCode;
+    }
+    return;
+  }
+  
 
   public getOutcomeCode(): CodeableConcept[] | undefined {
       return this.outcomeCode;
@@ -768,6 +831,13 @@ export class Goal {
     }
     this.outcomeReference.push(newValue);
   }
+  public deleteOutcomeReferenceAll() {
+    if (typeof(this.outcomeReference) !== 'undefined') {
+       delete this.outcomeReference;
+    }
+    return;
+  }
+  
 
   public getOutcomeReference(): Reference[] | undefined {
       return this.outcomeReference;

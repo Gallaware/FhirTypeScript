@@ -157,6 +157,13 @@ export class ImmunizationProtocolApplied {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -175,6 +182,13 @@ export class ImmunizationProtocolApplied {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -221,6 +235,13 @@ export class ImmunizationProtocolApplied {
     }
     this.targetDisease.push(newValue);
   }
+  public deleteTargetDiseaseAll() {
+    if (typeof(this.targetDisease) !== 'undefined') {
+       delete this.targetDisease;
+    }
+    return;
+  }
+  
 
   public getTargetDisease(): CodeableConcept[] | undefined {
       return this.targetDisease;

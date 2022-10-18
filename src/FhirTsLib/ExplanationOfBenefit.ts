@@ -686,6 +686,13 @@ export class ExplanationOfBenefit {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -704,6 +711,13 @@ export class ExplanationOfBenefit {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -722,6 +736,13 @@ export class ExplanationOfBenefit {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -740,6 +761,13 @@ export class ExplanationOfBenefit {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -843,6 +871,13 @@ export class ExplanationOfBenefit {
     }
     this.related.push(newValue);
   }
+  public deleteRelatedAll() {
+    if (typeof(this.related) !== 'undefined') {
+       delete this.related;
+    }
+    return;
+  }
+  
 
   public getRelated(): ExplanationOfBenefitRelated[] | undefined {
       return this.related;
@@ -917,6 +952,13 @@ export class ExplanationOfBenefit {
     }
     this.preAuthRef.push(newValue);
   }
+  public deletePreAuthRefAll() {
+    if (typeof(this.preAuthRef) !== 'undefined') {
+       delete this.preAuthRef;
+    }
+    return;
+  }
+  
 
   public getPreAuthRef(): string[] | undefined {
       return this.preAuthRef;
@@ -935,6 +977,13 @@ export class ExplanationOfBenefit {
     }
     this._preAuthRef.push(newValue);
   }
+  public delete_preAuthRefAll() {
+    if (typeof(this._preAuthRef) !== 'undefined') {
+       delete this._preAuthRef;
+    }
+    return;
+  }
+  
 
   public get_preAuthRef(): Element[] | undefined {
       return this._preAuthRef;
@@ -953,6 +1002,13 @@ export class ExplanationOfBenefit {
     }
     this.preAuthRefPeriod.push(newValue);
   }
+  public deletePreAuthRefPeriodAll() {
+    if (typeof(this.preAuthRefPeriod) !== 'undefined') {
+       delete this.preAuthRefPeriod;
+    }
+    return;
+  }
+  
 
   public getPreAuthRefPeriod(): Period[] | undefined {
       return this.preAuthRefPeriod;
@@ -971,6 +1027,13 @@ export class ExplanationOfBenefit {
     }
     this.careTeam.push(newValue);
   }
+  public deleteCareTeamAll() {
+    if (typeof(this.careTeam) !== 'undefined') {
+       delete this.careTeam;
+    }
+    return;
+  }
+  
 
   public getCareTeam(): ExplanationOfBenefitCareTeam[] | undefined {
       return this.careTeam;
@@ -989,6 +1052,13 @@ export class ExplanationOfBenefit {
     }
     this.supportingInfo.push(newValue);
   }
+  public deleteSupportingInfoAll() {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       delete this.supportingInfo;
+    }
+    return;
+  }
+  
 
   public getSupportingInfo(): ExplanationOfBenefitSupportingInfo[] | undefined {
       return this.supportingInfo;
@@ -1007,6 +1077,13 @@ export class ExplanationOfBenefit {
     }
     this.diagnosis.push(newValue);
   }
+  public deleteDiagnosisAll() {
+    if (typeof(this.diagnosis) !== 'undefined') {
+       delete this.diagnosis;
+    }
+    return;
+  }
+  
 
   public getDiagnosis(): ExplanationOfBenefitDiagnosis[] | undefined {
       return this.diagnosis;
@@ -1025,6 +1102,13 @@ export class ExplanationOfBenefit {
     }
     this.procedure.push(newValue);
   }
+  public deleteProcedureAll() {
+    if (typeof(this.procedure) !== 'undefined') {
+       delete this.procedure;
+    }
+    return;
+  }
+  
 
   public getProcedure(): ExplanationOfBenefitProcedure[] | undefined {
       return this.procedure;
@@ -1043,6 +1127,13 @@ export class ExplanationOfBenefit {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): ExplanationOfBenefitInsurance[] | undefined {
       return this.insurance;
@@ -1061,6 +1152,13 @@ export class ExplanationOfBenefit {
     }
     this.item.push(newValue);
   }
+  public deleteItemAll() {
+    if (typeof(this.item) !== 'undefined') {
+       delete this.item;
+    }
+    return;
+  }
+  
 
   public getItem(): ExplanationOfBenefitItem[] | undefined {
       return this.item;
@@ -1079,6 +1177,13 @@ export class ExplanationOfBenefit {
     }
     this.addItem.push(newValue);
   }
+  public deleteAddItemAll() {
+    if (typeof(this.addItem) !== 'undefined') {
+       delete this.addItem;
+    }
+    return;
+  }
+  
 
   public getAddItem(): ExplanationOfBenefitAddItem[] | undefined {
       return this.addItem;
@@ -1097,6 +1202,13 @@ export class ExplanationOfBenefit {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ExplanationOfBenefitAdjudication[] | undefined {
       return this.adjudication;
@@ -1115,6 +1227,13 @@ export class ExplanationOfBenefit {
     }
     this.total.push(newValue);
   }
+  public deleteTotalAll() {
+    if (typeof(this.total) !== 'undefined') {
+       delete this.total;
+    }
+    return;
+  }
+  
 
   public getTotal(): ExplanationOfBenefitTotal[] | undefined {
       return this.total;
@@ -1133,6 +1252,13 @@ export class ExplanationOfBenefit {
     }
     this.processNote.push(newValue);
   }
+  public deleteProcessNoteAll() {
+    if (typeof(this.processNote) !== 'undefined') {
+       delete this.processNote;
+    }
+    return;
+  }
+  
 
   public getProcessNote(): ExplanationOfBenefitProcessNote[] | undefined {
       return this.processNote;
@@ -1151,6 +1277,13 @@ export class ExplanationOfBenefit {
     }
     this.benefitBalance.push(newValue);
   }
+  public deleteBenefitBalanceAll() {
+    if (typeof(this.benefitBalance) !== 'undefined') {
+       delete this.benefitBalance;
+    }
+    return;
+  }
+  
 
   public getBenefitBalance(): ExplanationOfBenefitBenefitBalance[] | undefined {
       return this.benefitBalance;

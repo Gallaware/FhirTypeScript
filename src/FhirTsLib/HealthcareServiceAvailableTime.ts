@@ -133,6 +133,13 @@ export class HealthcareServiceAvailableTime {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -151,6 +158,13 @@ export class HealthcareServiceAvailableTime {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -169,6 +183,13 @@ export class HealthcareServiceAvailableTime {
     }
     this.daysOfWeek.push(newValue);
   }
+  public deleteDaysOfWeekAll() {
+    if (typeof(this.daysOfWeek) !== 'undefined') {
+       delete this.daysOfWeek;
+    }
+    return;
+  }
+  
 
   public getDaysOfWeek(): string[] | undefined {
       return this.daysOfWeek;
@@ -187,6 +208,13 @@ export class HealthcareServiceAvailableTime {
     }
     this._daysOfWeek.push(newValue);
   }
+  public delete_daysOfWeekAll() {
+    if (typeof(this._daysOfWeek) !== 'undefined') {
+       delete this._daysOfWeek;
+    }
+    return;
+  }
+  
 
   public get_daysOfWeek(): Element[] | undefined {
       return this._daysOfWeek;

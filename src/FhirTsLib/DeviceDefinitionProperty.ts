@@ -107,6 +107,13 @@ export class DeviceDefinitionProperty {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -125,6 +132,13 @@ export class DeviceDefinitionProperty {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -143,6 +157,13 @@ export class DeviceDefinitionProperty {
     }
     this.valueQuantity.push(newValue);
   }
+  public deleteValueQuantityAll() {
+    if (typeof(this.valueQuantity) !== 'undefined') {
+       delete this.valueQuantity;
+    }
+    return;
+  }
+  
 
   public getValueQuantity(): Quantity[] | undefined {
       return this.valueQuantity;
@@ -161,6 +182,13 @@ export class DeviceDefinitionProperty {
     }
     this.valueCode.push(newValue);
   }
+  public deleteValueCodeAll() {
+    if (typeof(this.valueCode) !== 'undefined') {
+       delete this.valueCode;
+    }
+    return;
+  }
+  
 
   public getValueCode(): CodeableConcept[] | undefined {
       return this.valueCode;

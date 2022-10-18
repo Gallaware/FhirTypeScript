@@ -396,6 +396,13 @@ export class SubstanceNucleicAcid {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -414,6 +421,13 @@ export class SubstanceNucleicAcid {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -432,6 +446,13 @@ export class SubstanceNucleicAcid {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -478,6 +499,13 @@ export class SubstanceNucleicAcid {
     }
     this.subunit.push(newValue);
   }
+  public deleteSubunitAll() {
+    if (typeof(this.subunit) !== 'undefined') {
+       delete this.subunit;
+    }
+    return;
+  }
+  
 
   public getSubunit(): SubstanceNucleicAcidSubunit[] | undefined {
       return this.subunit;

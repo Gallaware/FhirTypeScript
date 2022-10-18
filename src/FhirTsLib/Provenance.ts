@@ -452,6 +452,13 @@ export class Provenance {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -470,6 +477,13 @@ export class Provenance {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -488,6 +502,13 @@ export class Provenance {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -506,6 +527,13 @@ export class Provenance {
     }
     this.target.push(newValue);
   }
+  public deleteTargetAll() {
+    if (typeof(this.target) !== 'undefined') {
+       delete this.target;
+    }
+    return;
+  }
+  
 
   public getTarget(): Reference[] | undefined {
       return this.target;
@@ -580,6 +608,13 @@ export class Provenance {
     }
     this.policy.push(newValue);
   }
+  public deletePolicyAll() {
+    if (typeof(this.policy) !== 'undefined') {
+       delete this.policy;
+    }
+    return;
+  }
+  
 
   public getPolicy(): string[] | undefined {
       return this.policy;
@@ -598,6 +633,13 @@ export class Provenance {
     }
     this._policy.push(newValue);
   }
+  public delete_policyAll() {
+    if (typeof(this._policy) !== 'undefined') {
+       delete this._policy;
+    }
+    return;
+  }
+  
 
   public get_policy(): Element[] | undefined {
       return this._policy;
@@ -616,6 +658,13 @@ export class Provenance {
     }
     this.reason.push(newValue);
   }
+  public deleteReasonAll() {
+    if (typeof(this.reason) !== 'undefined') {
+       delete this.reason;
+    }
+    return;
+  }
+  
 
   public getReason(): CodeableConcept[] | undefined {
       return this.reason;
@@ -634,6 +683,13 @@ export class Provenance {
     }
     this.agent.push(newValue);
   }
+  public deleteAgentAll() {
+    if (typeof(this.agent) !== 'undefined') {
+       delete this.agent;
+    }
+    return;
+  }
+  
 
   public getAgent(): ProvenanceAgent[] | undefined {
       return this.agent;
@@ -652,6 +708,13 @@ export class Provenance {
     }
     this.entity.push(newValue);
   }
+  public deleteEntityAll() {
+    if (typeof(this.entity) !== 'undefined') {
+       delete this.entity;
+    }
+    return;
+  }
+  
 
   public getEntity(): ProvenanceEntity[] | undefined {
       return this.entity;
@@ -670,6 +733,13 @@ export class Provenance {
     }
     this.signature.push(newValue);
   }
+  public deleteSignatureAll() {
+    if (typeof(this.signature) !== 'undefined') {
+       delete this.signature;
+    }
+    return;
+  }
+  
 
   public getSignature(): Signature[] | undefined {
       return this.signature;

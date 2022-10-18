@@ -436,6 +436,13 @@ export class OrganizationAffiliation {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -454,6 +461,13 @@ export class OrganizationAffiliation {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -472,6 +486,13 @@ export class OrganizationAffiliation {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -490,6 +511,13 @@ export class OrganizationAffiliation {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -508,6 +536,13 @@ export class OrganizationAffiliation {
     }
     this.network.push(newValue);
   }
+  public deleteNetworkAll() {
+    if (typeof(this.network) !== 'undefined') {
+       delete this.network;
+    }
+    return;
+  }
+  
 
   public getNetwork(): Reference[] | undefined {
       return this.network;
@@ -526,6 +561,13 @@ export class OrganizationAffiliation {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
@@ -544,6 +586,13 @@ export class OrganizationAffiliation {
     }
     this.specialty.push(newValue);
   }
+  public deleteSpecialtyAll() {
+    if (typeof(this.specialty) !== 'undefined') {
+       delete this.specialty;
+    }
+    return;
+  }
+  
 
   public getSpecialty(): CodeableConcept[] | undefined {
       return this.specialty;
@@ -562,6 +611,13 @@ export class OrganizationAffiliation {
     }
     this.location.push(newValue);
   }
+  public deleteLocationAll() {
+    if (typeof(this.location) !== 'undefined') {
+       delete this.location;
+    }
+    return;
+  }
+  
 
   public getLocation(): Reference[] | undefined {
       return this.location;
@@ -580,6 +636,13 @@ export class OrganizationAffiliation {
     }
     this.healthcareService.push(newValue);
   }
+  public deleteHealthcareServiceAll() {
+    if (typeof(this.healthcareService) !== 'undefined') {
+       delete this.healthcareService;
+    }
+    return;
+  }
+  
 
   public getHealthcareService(): Reference[] | undefined {
       return this.healthcareService;
@@ -598,6 +661,13 @@ export class OrganizationAffiliation {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -616,6 +686,13 @@ export class OrganizationAffiliation {
     }
     this.endpoint.push(newValue);
   }
+  public deleteEndpointAll() {
+    if (typeof(this.endpoint) !== 'undefined') {
+       delete this.endpoint;
+    }
+    return;
+  }
+  
 
   public getEndpoint(): Reference[] | undefined {
       return this.endpoint;

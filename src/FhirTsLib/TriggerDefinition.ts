@@ -151,6 +151,13 @@ export class TriggerDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -282,6 +289,13 @@ export class TriggerDefinition {
     }
     this.data.push(newValue);
   }
+  public deleteDataAll() {
+    if (typeof(this.data) !== 'undefined') {
+       delete this.data;
+    }
+    return;
+  }
+  
 
   public getData(): DataRequirement[] | undefined {
       return this.data;

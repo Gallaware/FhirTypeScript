@@ -454,6 +454,13 @@ export class ObservationDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -472,6 +479,13 @@ export class ObservationDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -490,6 +504,13 @@ export class ObservationDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -508,6 +529,13 @@ export class ObservationDefinition {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -526,6 +554,13 @@ export class ObservationDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -544,6 +579,13 @@ export class ObservationDefinition {
     }
     this.permittedDataType.push(newValue);
   }
+  public deletePermittedDataTypeAll() {
+    if (typeof(this.permittedDataType) !== 'undefined') {
+       delete this.permittedDataType;
+    }
+    return;
+  }
+  
 
   public getPermittedDataType(): string[] | undefined {
       return this.permittedDataType;
@@ -562,6 +604,13 @@ export class ObservationDefinition {
     }
     this._permittedDataType.push(newValue);
   }
+  public delete_permittedDataTypeAll() {
+    if (typeof(this._permittedDataType) !== 'undefined') {
+       delete this._permittedDataType;
+    }
+    return;
+  }
+  
 
   public get_permittedDataType(): Element[] | undefined {
       return this._permittedDataType;
@@ -608,6 +657,13 @@ export class ObservationDefinition {
     }
     this.qualifiedInterval.push(newValue);
   }
+  public deleteQualifiedIntervalAll() {
+    if (typeof(this.qualifiedInterval) !== 'undefined') {
+       delete this.qualifiedInterval;
+    }
+    return;
+  }
+  
 
   public getQualifiedInterval(): ObservationDefinitionQualifiedInterval[] | undefined {
       return this.qualifiedInterval;

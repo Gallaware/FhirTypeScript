@@ -124,6 +124,13 @@ export class ImplementationGuidePage1 {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -142,6 +149,13 @@ export class ImplementationGuidePage1 {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -216,6 +230,13 @@ export class ImplementationGuidePage1 {
     }
     this.anchor.push(newValue);
   }
+  public deleteAnchorAll() {
+    if (typeof(this.anchor) !== 'undefined') {
+       delete this.anchor;
+    }
+    return;
+  }
+  
 
   public getAnchor(): string[] | undefined {
       return this.anchor;
@@ -234,6 +255,13 @@ export class ImplementationGuidePage1 {
     }
     this._anchor.push(newValue);
   }
+  public delete_anchorAll() {
+    if (typeof(this._anchor) !== 'undefined') {
+       delete this._anchor;
+    }
+    return;
+  }
+  
 
   public get_anchor(): Element[] | undefined {
       return this._anchor;

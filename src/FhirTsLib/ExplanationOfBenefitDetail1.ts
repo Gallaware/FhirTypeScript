@@ -158,6 +158,13 @@ export class ExplanationOfBenefitDetail1 {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -176,6 +183,13 @@ export class ExplanationOfBenefitDetail1 {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -194,6 +208,13 @@ export class ExplanationOfBenefitDetail1 {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
@@ -212,6 +233,13 @@ export class ExplanationOfBenefitDetail1 {
     }
     this.noteNumber.push(newValue);
   }
+  public deleteNoteNumberAll() {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       delete this.noteNumber;
+    }
+    return;
+  }
+  
 
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
@@ -230,6 +258,13 @@ export class ExplanationOfBenefitDetail1 {
     }
     this._noteNumber.push(newValue);
   }
+  public delete_noteNumberAll() {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       delete this._noteNumber;
+    }
+    return;
+  }
+  
 
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
@@ -248,6 +283,13 @@ export class ExplanationOfBenefitDetail1 {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ExplanationOfBenefitAdjudication[] | undefined {
       return this.adjudication;
@@ -266,6 +308,13 @@ export class ExplanationOfBenefitDetail1 {
     }
     this.subDetail.push(newValue);
   }
+  public deleteSubDetailAll() {
+    if (typeof(this.subDetail) !== 'undefined') {
+       delete this.subDetail;
+    }
+    return;
+  }
+  
 
   public getSubDetail(): ExplanationOfBenefitSubDetail1[] | undefined {
       return this.subDetail;

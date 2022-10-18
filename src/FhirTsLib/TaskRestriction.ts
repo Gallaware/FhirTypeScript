@@ -110,6 +110,13 @@ export class TaskRestriction {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -128,6 +135,13 @@ export class TaskRestriction {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -146,6 +160,13 @@ export class TaskRestriction {
     }
     this.recipient.push(newValue);
   }
+  public deleteRecipientAll() {
+    if (typeof(this.recipient) !== 'undefined') {
+       delete this.recipient;
+    }
+    return;
+  }
+  
 
   public getRecipient(): Reference[] | undefined {
       return this.recipient;

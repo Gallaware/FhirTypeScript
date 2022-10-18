@@ -170,6 +170,13 @@ export class ImplementationGuideResource {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -188,6 +195,13 @@ export class ImplementationGuideResource {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -206,6 +220,13 @@ export class ImplementationGuideResource {
     }
     this.fhirVersion.push(newValue);
   }
+  public deleteFhirVersionAll() {
+    if (typeof(this.fhirVersion) !== 'undefined') {
+       delete this.fhirVersion;
+    }
+    return;
+  }
+  
 
   public getFhirVersion(): string[] | undefined {
       return this.fhirVersion;
@@ -224,6 +245,13 @@ export class ImplementationGuideResource {
     }
     this._fhirVersion.push(newValue);
   }
+  public delete_fhirVersionAll() {
+    if (typeof(this._fhirVersion) !== 'undefined') {
+       delete this._fhirVersion;
+    }
+    return;
+  }
+  
 
   public get_fhirVersion(): Element[] | undefined {
       return this._fhirVersion;

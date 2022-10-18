@@ -641,6 +641,13 @@ export class EventDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -659,6 +666,13 @@ export class EventDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -677,6 +691,13 @@ export class EventDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -723,6 +744,13 @@ export class EventDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -938,6 +966,13 @@ export class EventDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -984,6 +1019,13 @@ export class EventDefinition {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -1002,6 +1044,13 @@ export class EventDefinition {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1160,6 +1209,13 @@ export class EventDefinition {
     }
     this.topic.push(newValue);
   }
+  public deleteTopicAll() {
+    if (typeof(this.topic) !== 'undefined') {
+       delete this.topic;
+    }
+    return;
+  }
+  
 
   public getTopic(): CodeableConcept[] | undefined {
       return this.topic;
@@ -1178,6 +1234,13 @@ export class EventDefinition {
     }
     this.author.push(newValue);
   }
+  public deleteAuthorAll() {
+    if (typeof(this.author) !== 'undefined') {
+       delete this.author;
+    }
+    return;
+  }
+  
 
   public getAuthor(): ContactDetail[] | undefined {
       return this.author;
@@ -1196,6 +1259,13 @@ export class EventDefinition {
     }
     this.editor.push(newValue);
   }
+  public deleteEditorAll() {
+    if (typeof(this.editor) !== 'undefined') {
+       delete this.editor;
+    }
+    return;
+  }
+  
 
   public getEditor(): ContactDetail[] | undefined {
       return this.editor;
@@ -1214,6 +1284,13 @@ export class EventDefinition {
     }
     this.reviewer.push(newValue);
   }
+  public deleteReviewerAll() {
+    if (typeof(this.reviewer) !== 'undefined') {
+       delete this.reviewer;
+    }
+    return;
+  }
+  
 
   public getReviewer(): ContactDetail[] | undefined {
       return this.reviewer;
@@ -1232,6 +1309,13 @@ export class EventDefinition {
     }
     this.endorser.push(newValue);
   }
+  public deleteEndorserAll() {
+    if (typeof(this.endorser) !== 'undefined') {
+       delete this.endorser;
+    }
+    return;
+  }
+  
 
   public getEndorser(): ContactDetail[] | undefined {
       return this.endorser;
@@ -1250,6 +1334,13 @@ export class EventDefinition {
     }
     this.relatedArtifact.push(newValue);
   }
+  public deleteRelatedArtifactAll() {
+    if (typeof(this.relatedArtifact) !== 'undefined') {
+       delete this.relatedArtifact;
+    }
+    return;
+  }
+  
 
   public getRelatedArtifact(): RelatedArtifact[] | undefined {
       return this.relatedArtifact;
@@ -1268,6 +1359,13 @@ export class EventDefinition {
     }
     this.trigger.push(newValue);
   }
+  public deleteTriggerAll() {
+    if (typeof(this.trigger) !== 'undefined') {
+       delete this.trigger;
+    }
+    return;
+  }
+  
 
   public getTrigger(): TriggerDefinition[] | undefined {
       return this.trigger;

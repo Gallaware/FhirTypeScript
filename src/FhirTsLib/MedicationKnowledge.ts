@@ -526,6 +526,13 @@ export class MedicationKnowledge {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -544,6 +551,13 @@ export class MedicationKnowledge {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -562,6 +576,13 @@ export class MedicationKnowledge {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -608,6 +629,13 @@ export class MedicationKnowledge {
     }
     this.synonym.push(newValue);
   }
+  public deleteSynonymAll() {
+    if (typeof(this.synonym) !== 'undefined') {
+       delete this.synonym;
+    }
+    return;
+  }
+  
 
   public getSynonym(): string[] | undefined {
       return this.synonym;
@@ -626,6 +654,13 @@ export class MedicationKnowledge {
     }
     this._synonym.push(newValue);
   }
+  public delete_synonymAll() {
+    if (typeof(this._synonym) !== 'undefined') {
+       delete this._synonym;
+    }
+    return;
+  }
+  
 
   public get_synonym(): Element[] | undefined {
       return this._synonym;
@@ -644,6 +679,13 @@ export class MedicationKnowledge {
     }
     this.relatedMedicationKnowledge.push(newValue);
   }
+  public deleteRelatedMedicationKnowledgeAll() {
+    if (typeof(this.relatedMedicationKnowledge) !== 'undefined') {
+       delete this.relatedMedicationKnowledge;
+    }
+    return;
+  }
+  
 
   public getRelatedMedicationKnowledge(): MedicationKnowledgeRelatedMedicationKnowledge[] | undefined {
       return this.relatedMedicationKnowledge;
@@ -662,6 +704,13 @@ export class MedicationKnowledge {
     }
     this.associatedMedication.push(newValue);
   }
+  public deleteAssociatedMedicationAll() {
+    if (typeof(this.associatedMedication) !== 'undefined') {
+       delete this.associatedMedication;
+    }
+    return;
+  }
+  
 
   public getAssociatedMedication(): Reference[] | undefined {
       return this.associatedMedication;
@@ -680,6 +729,13 @@ export class MedicationKnowledge {
     }
     this.productType.push(newValue);
   }
+  public deleteProductTypeAll() {
+    if (typeof(this.productType) !== 'undefined') {
+       delete this.productType;
+    }
+    return;
+  }
+  
 
   public getProductType(): CodeableConcept[] | undefined {
       return this.productType;
@@ -698,6 +754,13 @@ export class MedicationKnowledge {
     }
     this.monograph.push(newValue);
   }
+  public deleteMonographAll() {
+    if (typeof(this.monograph) !== 'undefined') {
+       delete this.monograph;
+    }
+    return;
+  }
+  
 
   public getMonograph(): MedicationKnowledgeMonograph[] | undefined {
       return this.monograph;
@@ -716,6 +779,13 @@ export class MedicationKnowledge {
     }
     this.ingredient.push(newValue);
   }
+  public deleteIngredientAll() {
+    if (typeof(this.ingredient) !== 'undefined') {
+       delete this.ingredient;
+    }
+    return;
+  }
+  
 
   public getIngredient(): MedicationKnowledgeIngredient[] | undefined {
       return this.ingredient;
@@ -762,6 +832,13 @@ export class MedicationKnowledge {
     }
     this.intendedRoute.push(newValue);
   }
+  public deleteIntendedRouteAll() {
+    if (typeof(this.intendedRoute) !== 'undefined') {
+       delete this.intendedRoute;
+    }
+    return;
+  }
+  
 
   public getIntendedRoute(): CodeableConcept[] | undefined {
       return this.intendedRoute;
@@ -780,6 +857,13 @@ export class MedicationKnowledge {
     }
     this.cost.push(newValue);
   }
+  public deleteCostAll() {
+    if (typeof(this.cost) !== 'undefined') {
+       delete this.cost;
+    }
+    return;
+  }
+  
 
   public getCost(): MedicationKnowledgeCost[] | undefined {
       return this.cost;
@@ -798,6 +882,13 @@ export class MedicationKnowledge {
     }
     this.monitoringProgram.push(newValue);
   }
+  public deleteMonitoringProgramAll() {
+    if (typeof(this.monitoringProgram) !== 'undefined') {
+       delete this.monitoringProgram;
+    }
+    return;
+  }
+  
 
   public getMonitoringProgram(): MedicationKnowledgeMonitoringProgram[] | undefined {
       return this.monitoringProgram;
@@ -816,6 +907,13 @@ export class MedicationKnowledge {
     }
     this.administrationGuidelines.push(newValue);
   }
+  public deleteAdministrationGuidelinesAll() {
+    if (typeof(this.administrationGuidelines) !== 'undefined') {
+       delete this.administrationGuidelines;
+    }
+    return;
+  }
+  
 
   public getAdministrationGuidelines(): MedicationKnowledgeAdministrationGuidelines[] | undefined {
       return this.administrationGuidelines;
@@ -834,6 +932,13 @@ export class MedicationKnowledge {
     }
     this.medicineClassification.push(newValue);
   }
+  public deleteMedicineClassificationAll() {
+    if (typeof(this.medicineClassification) !== 'undefined') {
+       delete this.medicineClassification;
+    }
+    return;
+  }
+  
 
   public getMedicineClassification(): MedicationKnowledgeMedicineClassification[] | undefined {
       return this.medicineClassification;
@@ -852,6 +957,13 @@ export class MedicationKnowledge {
     }
     this.drugCharacteristic.push(newValue);
   }
+  public deleteDrugCharacteristicAll() {
+    if (typeof(this.drugCharacteristic) !== 'undefined') {
+       delete this.drugCharacteristic;
+    }
+    return;
+  }
+  
 
   public getDrugCharacteristic(): MedicationKnowledgeDrugCharacteristic[] | undefined {
       return this.drugCharacteristic;
@@ -870,6 +982,13 @@ export class MedicationKnowledge {
     }
     this.contraindication.push(newValue);
   }
+  public deleteContraindicationAll() {
+    if (typeof(this.contraindication) !== 'undefined') {
+       delete this.contraindication;
+    }
+    return;
+  }
+  
 
   public getContraindication(): Reference[] | undefined {
       return this.contraindication;
@@ -888,6 +1007,13 @@ export class MedicationKnowledge {
     }
     this.regulatory.push(newValue);
   }
+  public deleteRegulatoryAll() {
+    if (typeof(this.regulatory) !== 'undefined') {
+       delete this.regulatory;
+    }
+    return;
+  }
+  
 
   public getRegulatory(): MedicationKnowledgeRegulatory[] | undefined {
       return this.regulatory;
@@ -906,6 +1032,13 @@ export class MedicationKnowledge {
     }
     this.kinetics.push(newValue);
   }
+  public deleteKineticsAll() {
+    if (typeof(this.kinetics) !== 'undefined') {
+       delete this.kinetics;
+    }
+    return;
+  }
+  
 
   public getKinetics(): MedicationKnowledgeKinetics[] | undefined {
       return this.kinetics;

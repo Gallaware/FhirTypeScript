@@ -510,6 +510,13 @@ export class NutritionOrder {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -528,6 +535,13 @@ export class NutritionOrder {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -546,6 +560,13 @@ export class NutritionOrder {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -564,6 +585,13 @@ export class NutritionOrder {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -582,6 +610,13 @@ export class NutritionOrder {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -600,6 +635,13 @@ export class NutritionOrder {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -618,6 +660,13 @@ export class NutritionOrder {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -636,6 +685,13 @@ export class NutritionOrder {
     }
     this.instantiates.push(newValue);
   }
+  public deleteInstantiatesAll() {
+    if (typeof(this.instantiates) !== 'undefined') {
+       delete this.instantiates;
+    }
+    return;
+  }
+  
 
   public getInstantiates(): string[] | undefined {
       return this.instantiates;
@@ -654,6 +710,13 @@ export class NutritionOrder {
     }
     this._instantiates.push(newValue);
   }
+  public delete_instantiatesAll() {
+    if (typeof(this._instantiates) !== 'undefined') {
+       delete this._instantiates;
+    }
+    return;
+  }
+  
 
   public get_instantiates(): Element[] | undefined {
       return this._instantiates;
@@ -756,6 +819,13 @@ export class NutritionOrder {
     }
     this.allergyIntolerance.push(newValue);
   }
+  public deleteAllergyIntoleranceAll() {
+    if (typeof(this.allergyIntolerance) !== 'undefined') {
+       delete this.allergyIntolerance;
+    }
+    return;
+  }
+  
 
   public getAllergyIntolerance(): Reference[] | undefined {
       return this.allergyIntolerance;
@@ -774,6 +844,13 @@ export class NutritionOrder {
     }
     this.foodPreferenceModifier.push(newValue);
   }
+  public deleteFoodPreferenceModifierAll() {
+    if (typeof(this.foodPreferenceModifier) !== 'undefined') {
+       delete this.foodPreferenceModifier;
+    }
+    return;
+  }
+  
 
   public getFoodPreferenceModifier(): CodeableConcept[] | undefined {
       return this.foodPreferenceModifier;
@@ -792,6 +869,13 @@ export class NutritionOrder {
     }
     this.excludeFoodModifier.push(newValue);
   }
+  public deleteExcludeFoodModifierAll() {
+    if (typeof(this.excludeFoodModifier) !== 'undefined') {
+       delete this.excludeFoodModifier;
+    }
+    return;
+  }
+  
 
   public getExcludeFoodModifier(): CodeableConcept[] | undefined {
       return this.excludeFoodModifier;
@@ -810,6 +894,13 @@ export class NutritionOrder {
     }
     this.supplement.push(newValue);
   }
+  public deleteSupplementAll() {
+    if (typeof(this.supplement) !== 'undefined') {
+       delete this.supplement;
+    }
+    return;
+  }
+  
 
   public getSupplement(): NutritionOrderSupplement[] | undefined {
       return this.supplement;
@@ -828,6 +919,13 @@ export class NutritionOrder {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

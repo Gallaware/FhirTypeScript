@@ -674,6 +674,13 @@ export class Observation {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -692,6 +699,13 @@ export class Observation {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -710,6 +724,13 @@ export class Observation {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -728,6 +749,13 @@ export class Observation {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -746,6 +774,13 @@ export class Observation {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -764,6 +799,13 @@ export class Observation {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -811,6 +853,13 @@ export class Observation {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -829,6 +878,13 @@ export class Observation {
     }
     this.focus.push(newValue);
   }
+  public deleteFocusAll() {
+    if (typeof(this.focus) !== 'undefined') {
+       delete this.focus;
+    }
+    return;
+  }
+  
 
   public getFocus(): Reference[] | undefined {
       return this.focus;
@@ -931,6 +987,13 @@ export class Observation {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): Reference[] | undefined {
       return this.performer;
@@ -1033,6 +1096,13 @@ export class Observation {
     }
     this.interpretation.push(newValue);
   }
+  public deleteInterpretationAll() {
+    if (typeof(this.interpretation) !== 'undefined') {
+       delete this.interpretation;
+    }
+    return;
+  }
+  
 
   public getInterpretation(): CodeableConcept[] | undefined {
       return this.interpretation;
@@ -1051,6 +1121,13 @@ export class Observation {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -1069,6 +1146,13 @@ export class Observation {
     }
     this.referenceRange.push(newValue);
   }
+  public deleteReferenceRangeAll() {
+    if (typeof(this.referenceRange) !== 'undefined') {
+       delete this.referenceRange;
+    }
+    return;
+  }
+  
 
   public getReferenceRange(): ObservationReferenceRange[] | undefined {
       return this.referenceRange;
@@ -1087,6 +1171,13 @@ export class Observation {
     }
     this.hasMember.push(newValue);
   }
+  public deleteHasMemberAll() {
+    if (typeof(this.hasMember) !== 'undefined') {
+       delete this.hasMember;
+    }
+    return;
+  }
+  
 
   public getHasMember(): Reference[] | undefined {
       return this.hasMember;
@@ -1105,6 +1196,13 @@ export class Observation {
     }
     this.derivedFrom.push(newValue);
   }
+  public deleteDerivedFromAll() {
+    if (typeof(this.derivedFrom) !== 'undefined') {
+       delete this.derivedFrom;
+    }
+    return;
+  }
+  
 
   public getDerivedFrom(): Reference[] | undefined {
       return this.derivedFrom;
@@ -1123,6 +1221,13 @@ export class Observation {
     }
     this.component.push(newValue);
   }
+  public deleteComponentAll() {
+    if (typeof(this.component) !== 'undefined') {
+       delete this.component;
+    }
+    return;
+  }
+  
 
   public getComponent(): ObservationComponent[] | undefined {
       return this.component;

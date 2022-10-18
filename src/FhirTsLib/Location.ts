@@ -504,6 +504,13 @@ export class Location {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -522,6 +529,13 @@ export class Location {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -540,6 +554,13 @@ export class Location {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -558,6 +579,13 @@ export class Location {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -633,6 +661,13 @@ export class Location {
     }
     this.alias.push(newValue);
   }
+  public deleteAliasAll() {
+    if (typeof(this.alias) !== 'undefined') {
+       delete this.alias;
+    }
+    return;
+  }
+  
 
   public getAlias(): string[] | undefined {
       return this.alias;
@@ -651,6 +686,13 @@ export class Location {
     }
     this._alias.push(newValue);
   }
+  public delete_aliasAll() {
+    if (typeof(this._alias) !== 'undefined') {
+       delete this._alias;
+    }
+    return;
+  }
+  
 
   public get_alias(): Element[] | undefined {
       return this._alias;
@@ -726,6 +768,13 @@ export class Location {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -744,6 +793,13 @@ export class Location {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -762,6 +818,13 @@ export class Location {
     }
     this.hoursOfOperation.push(newValue);
   }
+  public deleteHoursOfOperationAll() {
+    if (typeof(this.hoursOfOperation) !== 'undefined') {
+       delete this.hoursOfOperation;
+    }
+    return;
+  }
+  
 
   public getHoursOfOperation(): LocationHoursOfOperation[] | undefined {
       return this.hoursOfOperation;
@@ -808,6 +871,13 @@ export class Location {
     }
     this.endpoint.push(newValue);
   }
+  public deleteEndpointAll() {
+    if (typeof(this.endpoint) !== 'undefined') {
+       delete this.endpoint;
+    }
+    return;
+  }
+  
 
   public getEndpoint(): Reference[] | undefined {
       return this.endpoint;

@@ -191,6 +191,13 @@ export class Address {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -295,6 +302,13 @@ export class Address {
     }
     this.line.push(newValue);
   }
+  public deleteLineAll() {
+    if (typeof(this.line) !== 'undefined') {
+       delete this.line;
+    }
+    return;
+  }
+  
 
   public getLine(): string[] | undefined {
       return this.line;
@@ -313,6 +327,13 @@ export class Address {
     }
     this._line.push(newValue);
   }
+  public delete_lineAll() {
+    if (typeof(this._line) !== 'undefined') {
+       delete this._line;
+    }
+    return;
+  }
+  
 
   public get_line(): Element[] | undefined {
       return this._line;

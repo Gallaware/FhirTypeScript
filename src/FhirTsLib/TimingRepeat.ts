@@ -271,6 +271,13 @@ export class TimingRepeat {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -289,6 +296,13 @@ export class TimingRepeat {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -365,6 +379,13 @@ export class TimingRepeat {
     }
     this.dayOfWeek.push(newValue);
   }
+  public deleteDayOfWeekAll() {
+    if (typeof(this.dayOfWeek) !== 'undefined') {
+       delete this.dayOfWeek;
+    }
+    return;
+  }
+  
 
   public getDayOfWeek(): string[] | undefined {
       return this.dayOfWeek;
@@ -383,6 +404,13 @@ export class TimingRepeat {
     }
     this._dayOfWeek.push(newValue);
   }
+  public delete_dayOfWeekAll() {
+    if (typeof(this._dayOfWeek) !== 'undefined') {
+       delete this._dayOfWeek;
+    }
+    return;
+  }
+  
 
   public get_dayOfWeek(): Element[] | undefined {
       return this._dayOfWeek;
@@ -401,6 +429,13 @@ export class TimingRepeat {
     }
     this.timeOfDay.push(newValue);
   }
+  public deleteTimeOfDayAll() {
+    if (typeof(this.timeOfDay) !== 'undefined') {
+       delete this.timeOfDay;
+    }
+    return;
+  }
+  
 
   public getTimeOfDay(): string[] | undefined {
       return this.timeOfDay;
@@ -419,6 +454,13 @@ export class TimingRepeat {
     }
     this._timeOfDay.push(newValue);
   }
+  public delete_timeOfDayAll() {
+    if (typeof(this._timeOfDay) !== 'undefined') {
+       delete this._timeOfDay;
+    }
+    return;
+  }
+  
 
   public get_timeOfDay(): Element[] | undefined {
       return this._timeOfDay;
@@ -437,6 +479,13 @@ export class TimingRepeat {
     }
     this.when.push(newValue);
   }
+  public deleteWhenAll() {
+    if (typeof(this.when) !== 'undefined') {
+       delete this.when;
+    }
+    return;
+  }
+  
 
   public getWhen(): string[] | undefined {
       return this.when;
@@ -455,6 +504,13 @@ export class TimingRepeat {
     }
     this._when.push(newValue);
   }
+  public delete_whenAll() {
+    if (typeof(this._when) !== 'undefined') {
+       delete this._when;
+    }
+    return;
+  }
+  
 
   public get_when(): Element[] | undefined {
       return this._when;
