@@ -593,6 +593,13 @@ export class Immunization {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -611,6 +618,13 @@ export class Immunization {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -629,6 +643,13 @@ export class Immunization {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -647,6 +668,13 @@ export class Immunization {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -833,6 +861,13 @@ export class Immunization {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): ImmunizationPerformer[] | undefined {
       return this.performer;
@@ -851,6 +886,13 @@ export class Immunization {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -869,6 +911,13 @@ export class Immunization {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -887,6 +936,13 @@ export class Immunization {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -905,6 +961,13 @@ export class Immunization {
     }
     this.subpotentReason.push(newValue);
   }
+  public deleteSubpotentReasonAll() {
+    if (typeof(this.subpotentReason) !== 'undefined') {
+       delete this.subpotentReason;
+    }
+    return;
+  }
+  
 
   public getSubpotentReason(): CodeableConcept[] | undefined {
       return this.subpotentReason;
@@ -923,6 +986,13 @@ export class Immunization {
     }
     this.education.push(newValue);
   }
+  public deleteEducationAll() {
+    if (typeof(this.education) !== 'undefined') {
+       delete this.education;
+    }
+    return;
+  }
+  
 
   public getEducation(): ImmunizationEducation[] | undefined {
       return this.education;
@@ -941,6 +1011,13 @@ export class Immunization {
     }
     this.programEligibility.push(newValue);
   }
+  public deleteProgramEligibilityAll() {
+    if (typeof(this.programEligibility) !== 'undefined') {
+       delete this.programEligibility;
+    }
+    return;
+  }
+  
 
   public getProgramEligibility(): CodeableConcept[] | undefined {
       return this.programEligibility;
@@ -959,6 +1036,13 @@ export class Immunization {
     }
     this.reaction.push(newValue);
   }
+  public deleteReactionAll() {
+    if (typeof(this.reaction) !== 'undefined') {
+       delete this.reaction;
+    }
+    return;
+  }
+  
 
   public getReaction(): ImmunizationReaction[] | undefined {
       return this.reaction;
@@ -977,6 +1061,13 @@ export class Immunization {
     }
     this.protocolApplied.push(newValue);
   }
+  public deleteProtocolAppliedAll() {
+    if (typeof(this.protocolApplied) !== 'undefined') {
+       delete this.protocolApplied;
+    }
+    return;
+  }
+  
 
   public getProtocolApplied(): ImmunizationProtocolApplied[] | undefined {
       return this.protocolApplied;

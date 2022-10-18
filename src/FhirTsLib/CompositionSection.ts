@@ -171,6 +171,13 @@ export class CompositionSection {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -189,6 +196,13 @@ export class CompositionSection {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -235,6 +249,13 @@ export class CompositionSection {
     }
     this.author.push(newValue);
   }
+  public deleteAuthorAll() {
+    if (typeof(this.author) !== 'undefined') {
+       delete this.author;
+    }
+    return;
+  }
+  
 
   public getAuthor(): Reference[] | undefined {
       return this.author;
@@ -281,6 +302,13 @@ export class CompositionSection {
     }
     this.entry.push(newValue);
   }
+  public deleteEntryAll() {
+    if (typeof(this.entry) !== 'undefined') {
+       delete this.entry;
+    }
+    return;
+  }
+  
 
   public getEntry(): Reference[] | undefined {
       return this.entry;
@@ -299,6 +327,13 @@ export class CompositionSection {
     }
     this.section.push(newValue);
   }
+  public deleteSectionAll() {
+    if (typeof(this.section) !== 'undefined') {
+       delete this.section;
+    }
+    return;
+  }
+  
 
   public getSection(): CompositionSection[] | undefined {
       return this.section;

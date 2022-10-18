@@ -483,6 +483,13 @@ export class MolecularSequence {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -501,6 +508,13 @@ export class MolecularSequence {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -519,6 +533,13 @@ export class MolecularSequence {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -537,6 +558,13 @@ export class MolecularSequence {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -584,6 +612,13 @@ export class MolecularSequence {
     }
     this.variant.push(newValue);
   }
+  public deleteVariantAll() {
+    if (typeof(this.variant) !== 'undefined') {
+       delete this.variant;
+    }
+    return;
+  }
+  
 
   public getVariant(): MolecularSequenceVariant[] | undefined {
       return this.variant;
@@ -630,6 +665,13 @@ export class MolecularSequence {
     }
     this.quality.push(newValue);
   }
+  public deleteQualityAll() {
+    if (typeof(this.quality) !== 'undefined') {
+       delete this.quality;
+    }
+    return;
+  }
+  
 
   public getQuality(): MolecularSequenceQuality[] | undefined {
       return this.quality;
@@ -648,6 +690,13 @@ export class MolecularSequence {
     }
     this.repository.push(newValue);
   }
+  public deleteRepositoryAll() {
+    if (typeof(this.repository) !== 'undefined') {
+       delete this.repository;
+    }
+    return;
+  }
+  
 
   public getRepository(): MolecularSequenceRepository[] | undefined {
       return this.repository;
@@ -666,6 +715,13 @@ export class MolecularSequence {
     }
     this.pointer.push(newValue);
   }
+  public deletePointerAll() {
+    if (typeof(this.pointer) !== 'undefined') {
+       delete this.pointer;
+    }
+    return;
+  }
+  
 
   public getPointer(): Reference[] | undefined {
       return this.pointer;
@@ -684,6 +740,13 @@ export class MolecularSequence {
     }
     this.structureVariant.push(newValue);
   }
+  public deleteStructureVariantAll() {
+    if (typeof(this.structureVariant) !== 'undefined') {
+       delete this.structureVariant;
+    }
+    return;
+  }
+  
 
   public getStructureVariant(): MolecularSequenceStructureVariant[] | undefined {
       return this.structureVariant;

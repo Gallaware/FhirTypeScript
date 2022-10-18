@@ -117,6 +117,13 @@ export class ExampleScenarioStep {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -135,6 +142,13 @@ export class ExampleScenarioStep {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -153,6 +167,13 @@ export class ExampleScenarioStep {
     }
     this.process.push(newValue);
   }
+  public deleteProcessAll() {
+    if (typeof(this.process) !== 'undefined') {
+       delete this.process;
+    }
+    return;
+  }
+  
 
   public getProcess(): ExampleScenarioProcess[] | undefined {
       return this.process;
@@ -171,6 +192,13 @@ export class ExampleScenarioStep {
     }
     this.alternative.push(newValue);
   }
+  public deleteAlternativeAll() {
+    if (typeof(this.alternative) !== 'undefined') {
+       delete this.alternative;
+    }
+    return;
+  }
+  
 
   public getAlternative(): ExampleScenarioAlternative[] | undefined {
       return this.alternative;

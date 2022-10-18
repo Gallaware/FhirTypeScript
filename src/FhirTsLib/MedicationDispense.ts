@@ -559,6 +559,13 @@ export class MedicationDispense {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -577,6 +584,13 @@ export class MedicationDispense {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -595,6 +609,13 @@ export class MedicationDispense {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -613,6 +634,13 @@ export class MedicationDispense {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -631,6 +659,13 @@ export class MedicationDispense {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -677,6 +712,13 @@ export class MedicationDispense {
     }
     this.supportingInformation.push(newValue);
   }
+  public deleteSupportingInformationAll() {
+    if (typeof(this.supportingInformation) !== 'undefined') {
+       delete this.supportingInformation;
+    }
+    return;
+  }
+  
 
   public getSupportingInformation(): Reference[] | undefined {
       return this.supportingInformation;
@@ -695,6 +737,13 @@ export class MedicationDispense {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): MedicationDispensePerformer[] | undefined {
       return this.performer;
@@ -713,6 +762,13 @@ export class MedicationDispense {
     }
     this.authorizingPrescription.push(newValue);
   }
+  public deleteAuthorizingPrescriptionAll() {
+    if (typeof(this.authorizingPrescription) !== 'undefined') {
+       delete this.authorizingPrescription;
+    }
+    return;
+  }
+  
 
   public getAuthorizingPrescription(): Reference[] | undefined {
       return this.authorizingPrescription;
@@ -787,6 +843,13 @@ export class MedicationDispense {
     }
     this.receiver.push(newValue);
   }
+  public deleteReceiverAll() {
+    if (typeof(this.receiver) !== 'undefined') {
+       delete this.receiver;
+    }
+    return;
+  }
+  
 
   public getReceiver(): Reference[] | undefined {
       return this.receiver;
@@ -805,6 +868,13 @@ export class MedicationDispense {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -823,6 +893,13 @@ export class MedicationDispense {
     }
     this.dosageInstruction.push(newValue);
   }
+  public deleteDosageInstructionAll() {
+    if (typeof(this.dosageInstruction) !== 'undefined') {
+       delete this.dosageInstruction;
+    }
+    return;
+  }
+  
 
   public getDosageInstruction(): Dosage[] | undefined {
       return this.dosageInstruction;
@@ -841,6 +918,13 @@ export class MedicationDispense {
     }
     this.detectedIssue.push(newValue);
   }
+  public deleteDetectedIssueAll() {
+    if (typeof(this.detectedIssue) !== 'undefined') {
+       delete this.detectedIssue;
+    }
+    return;
+  }
+  
 
   public getDetectedIssue(): Reference[] | undefined {
       return this.detectedIssue;
@@ -859,6 +943,13 @@ export class MedicationDispense {
     }
     this.eventHistory.push(newValue);
   }
+  public deleteEventHistoryAll() {
+    if (typeof(this.eventHistory) !== 'undefined') {
+       delete this.eventHistory;
+    }
+    return;
+  }
+  
 
   public getEventHistory(): Reference[] | undefined {
       return this.eventHistory;

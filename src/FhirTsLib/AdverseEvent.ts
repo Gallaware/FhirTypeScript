@@ -524,6 +524,13 @@ export class AdverseEvent {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -542,6 +549,13 @@ export class AdverseEvent {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -560,6 +574,13 @@ export class AdverseEvent {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -607,6 +628,13 @@ export class AdverseEvent {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -709,6 +737,13 @@ export class AdverseEvent {
     }
     this.resultingCondition.push(newValue);
   }
+  public deleteResultingConditionAll() {
+    if (typeof(this.resultingCondition) !== 'undefined') {
+       delete this.resultingCondition;
+    }
+    return;
+  }
+  
 
   public getResultingCondition(): Reference[] | undefined {
       return this.resultingCondition;
@@ -727,6 +762,13 @@ export class AdverseEvent {
     }
     this.contributor.push(newValue);
   }
+  public deleteContributorAll() {
+    if (typeof(this.contributor) !== 'undefined') {
+       delete this.contributor;
+    }
+    return;
+  }
+  
 
   public getContributor(): Reference[] | undefined {
       return this.contributor;
@@ -745,6 +787,13 @@ export class AdverseEvent {
     }
     this.suspectEntity.push(newValue);
   }
+  public deleteSuspectEntityAll() {
+    if (typeof(this.suspectEntity) !== 'undefined') {
+       delete this.suspectEntity;
+    }
+    return;
+  }
+  
 
   public getSuspectEntity(): AdverseEventSuspectEntity[] | undefined {
       return this.suspectEntity;
@@ -763,6 +812,13 @@ export class AdverseEvent {
     }
     this.subjectMedicalHistory.push(newValue);
   }
+  public deleteSubjectMedicalHistoryAll() {
+    if (typeof(this.subjectMedicalHistory) !== 'undefined') {
+       delete this.subjectMedicalHistory;
+    }
+    return;
+  }
+  
 
   public getSubjectMedicalHistory(): Reference[] | undefined {
       return this.subjectMedicalHistory;
@@ -781,6 +837,13 @@ export class AdverseEvent {
     }
     this.referenceDocument.push(newValue);
   }
+  public deleteReferenceDocumentAll() {
+    if (typeof(this.referenceDocument) !== 'undefined') {
+       delete this.referenceDocument;
+    }
+    return;
+  }
+  
 
   public getReferenceDocument(): Reference[] | undefined {
       return this.referenceDocument;
@@ -799,6 +862,13 @@ export class AdverseEvent {
     }
     this.study.push(newValue);
   }
+  public deleteStudyAll() {
+    if (typeof(this.study) !== 'undefined') {
+       delete this.study;
+    }
+    return;
+  }
+  
 
   public getStudy(): Reference[] | undefined {
       return this.study;

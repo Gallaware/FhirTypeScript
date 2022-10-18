@@ -138,6 +138,13 @@ export class DocumentReferenceContext {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -156,6 +163,13 @@ export class DocumentReferenceContext {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -174,6 +188,13 @@ export class DocumentReferenceContext {
     }
     this.encounter.push(newValue);
   }
+  public deleteEncounterAll() {
+    if (typeof(this.encounter) !== 'undefined') {
+       delete this.encounter;
+    }
+    return;
+  }
+  
 
   public getEncounter(): Reference[] | undefined {
       return this.encounter;
@@ -192,6 +213,13 @@ export class DocumentReferenceContext {
     }
     this.event.push(newValue);
   }
+  public deleteEventAll() {
+    if (typeof(this.event) !== 'undefined') {
+       delete this.event;
+    }
+    return;
+  }
+  
 
   public getEvent(): CodeableConcept[] | undefined {
       return this.event;
@@ -210,6 +238,13 @@ export class DocumentReferenceContext {
     }
     this.related.push(newValue);
   }
+  public deleteRelatedAll() {
+    if (typeof(this.related) !== 'undefined') {
+       delete this.related;
+    }
+    return;
+  }
+  
 
   public getRelated(): Reference[] | undefined {
       return this.related;

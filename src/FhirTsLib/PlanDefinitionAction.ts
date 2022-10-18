@@ -405,6 +405,13 @@ export class PlanDefinitionAction {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -423,6 +430,13 @@ export class PlanDefinitionAction {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -581,6 +595,13 @@ export class PlanDefinitionAction {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
@@ -599,6 +620,13 @@ export class PlanDefinitionAction {
     }
     this.reason.push(newValue);
   }
+  public deleteReasonAll() {
+    if (typeof(this.reason) !== 'undefined') {
+       delete this.reason;
+    }
+    return;
+  }
+  
 
   public getReason(): CodeableConcept[] | undefined {
       return this.reason;
@@ -617,6 +645,13 @@ export class PlanDefinitionAction {
     }
     this.documentation.push(newValue);
   }
+  public deleteDocumentationAll() {
+    if (typeof(this.documentation) !== 'undefined') {
+       delete this.documentation;
+    }
+    return;
+  }
+  
 
   public getDocumentation(): RelatedArtifact[] | undefined {
       return this.documentation;
@@ -635,6 +670,13 @@ export class PlanDefinitionAction {
     }
     this.goalId.push(newValue);
   }
+  public deleteGoalIdAll() {
+    if (typeof(this.goalId) !== 'undefined') {
+       delete this.goalId;
+    }
+    return;
+  }
+  
 
   public getGoalId(): string[] | undefined {
       return this.goalId;
@@ -653,6 +695,13 @@ export class PlanDefinitionAction {
     }
     this._goalId.push(newValue);
   }
+  public delete_goalIdAll() {
+    if (typeof(this._goalId) !== 'undefined') {
+       delete this._goalId;
+    }
+    return;
+  }
+  
 
   public get_goalId(): Element[] | undefined {
       return this._goalId;
@@ -671,6 +720,13 @@ export class PlanDefinitionAction {
     }
     this.trigger.push(newValue);
   }
+  public deleteTriggerAll() {
+    if (typeof(this.trigger) !== 'undefined') {
+       delete this.trigger;
+    }
+    return;
+  }
+  
 
   public getTrigger(): TriggerDefinition[] | undefined {
       return this.trigger;
@@ -689,6 +745,13 @@ export class PlanDefinitionAction {
     }
     this.condition.push(newValue);
   }
+  public deleteConditionAll() {
+    if (typeof(this.condition) !== 'undefined') {
+       delete this.condition;
+    }
+    return;
+  }
+  
 
   public getCondition(): PlanDefinitionCondition[] | undefined {
       return this.condition;
@@ -707,6 +770,13 @@ export class PlanDefinitionAction {
     }
     this.input.push(newValue);
   }
+  public deleteInputAll() {
+    if (typeof(this.input) !== 'undefined') {
+       delete this.input;
+    }
+    return;
+  }
+  
 
   public getInput(): DataRequirement[] | undefined {
       return this.input;
@@ -725,6 +795,13 @@ export class PlanDefinitionAction {
     }
     this.output.push(newValue);
   }
+  public deleteOutputAll() {
+    if (typeof(this.output) !== 'undefined') {
+       delete this.output;
+    }
+    return;
+  }
+  
 
   public getOutput(): DataRequirement[] | undefined {
       return this.output;
@@ -743,6 +820,13 @@ export class PlanDefinitionAction {
     }
     this.relatedAction.push(newValue);
   }
+  public deleteRelatedActionAll() {
+    if (typeof(this.relatedAction) !== 'undefined') {
+       delete this.relatedAction;
+    }
+    return;
+  }
+  
 
   public getRelatedAction(): PlanDefinitionRelatedAction[] | undefined {
       return this.relatedAction;
@@ -789,6 +873,13 @@ export class PlanDefinitionAction {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): PlanDefinitionParticipant[] | undefined {
       return this.participant;
@@ -1036,6 +1127,13 @@ export class PlanDefinitionAction {
     }
     this.dynamicValue.push(newValue);
   }
+  public deleteDynamicValueAll() {
+    if (typeof(this.dynamicValue) !== 'undefined') {
+       delete this.dynamicValue;
+    }
+    return;
+  }
+  
 
   public getDynamicValue(): PlanDefinitionDynamicValue[] | undefined {
       return this.dynamicValue;
@@ -1054,6 +1152,13 @@ export class PlanDefinitionAction {
     }
     this.action.push(newValue);
   }
+  public deleteActionAll() {
+    if (typeof(this.action) !== 'undefined') {
+       delete this.action;
+    }
+    return;
+  }
+  
 
   public getAction(): PlanDefinitionAction[] | undefined {
       return this.action;

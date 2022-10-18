@@ -113,6 +113,13 @@ export class TerminologyCapabilitiesFilter {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -131,6 +138,13 @@ export class TerminologyCapabilitiesFilter {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -177,6 +191,13 @@ export class TerminologyCapabilitiesFilter {
     }
     this.op.push(newValue);
   }
+  public deleteOpAll() {
+    if (typeof(this.op) !== 'undefined') {
+       delete this.op;
+    }
+    return;
+  }
+  
 
   public getOp(): string[] | undefined {
       return this.op;
@@ -195,6 +216,13 @@ export class TerminologyCapabilitiesFilter {
     }
     this._op.push(newValue);
   }
+  public delete_opAll() {
+    if (typeof(this._op) !== 'undefined') {
+       delete this._op;
+    }
+    return;
+  }
+  
 
   public get_op(): Element[] | undefined {
       return this._op;

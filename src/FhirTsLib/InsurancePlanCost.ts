@@ -115,6 +115,13 @@ export class InsurancePlanCost {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -133,6 +140,13 @@ export class InsurancePlanCost {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -151,6 +165,13 @@ export class InsurancePlanCost {
     }
     this.qualifiers.push(newValue);
   }
+  public deleteQualifiersAll() {
+    if (typeof(this.qualifiers) !== 'undefined') {
+       delete this.qualifiers;
+    }
+    return;
+  }
+  
 
   public getQualifiers(): CodeableConcept[] | undefined {
       return this.qualifiers;

@@ -117,6 +117,13 @@ export class Timing {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -135,6 +142,13 @@ export class Timing {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -153,6 +167,13 @@ export class Timing {
     }
     this.event.push(newValue);
   }
+  public deleteEventAll() {
+    if (typeof(this.event) !== 'undefined') {
+       delete this.event;
+    }
+    return;
+  }
+  
 
   public getEvent(): string[] | undefined {
       return this.event;
@@ -171,6 +192,13 @@ export class Timing {
     }
     this._event.push(newValue);
   }
+  public delete_eventAll() {
+    if (typeof(this._event) !== 'undefined') {
+       delete this._event;
+    }
+    return;
+  }
+  
 
   public get_event(): Element[] | undefined {
       return this._event;

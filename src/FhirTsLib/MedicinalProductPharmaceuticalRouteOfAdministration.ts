@@ -135,6 +135,13 @@ export class MedicinalProductPharmaceuticalRouteOfAdministration {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -153,6 +160,13 @@ export class MedicinalProductPharmaceuticalRouteOfAdministration {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -171,6 +185,13 @@ export class MedicinalProductPharmaceuticalRouteOfAdministration {
     }
     this.targetSpecies.push(newValue);
   }
+  public deleteTargetSpeciesAll() {
+    if (typeof(this.targetSpecies) !== 'undefined') {
+       delete this.targetSpecies;
+    }
+    return;
+  }
+  
 
   public getTargetSpecies(): MedicinalProductPharmaceuticalTargetSpecies[] | undefined {
       return this.targetSpecies;

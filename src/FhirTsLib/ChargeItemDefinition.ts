@@ -586,6 +586,13 @@ export class ChargeItemDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -604,6 +611,13 @@ export class ChargeItemDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -622,6 +636,13 @@ export class ChargeItemDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -668,6 +689,13 @@ export class ChargeItemDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -742,6 +770,13 @@ export class ChargeItemDefinition {
     }
     this.derivedFromUri.push(newValue);
   }
+  public deleteDerivedFromUriAll() {
+    if (typeof(this.derivedFromUri) !== 'undefined') {
+       delete this.derivedFromUri;
+    }
+    return;
+  }
+  
 
   public getDerivedFromUri(): string[] | undefined {
       return this.derivedFromUri;
@@ -760,6 +795,13 @@ export class ChargeItemDefinition {
     }
     this._derivedFromUri.push(newValue);
   }
+  public delete_derivedFromUriAll() {
+    if (typeof(this._derivedFromUri) !== 'undefined') {
+       delete this._derivedFromUri;
+    }
+    return;
+  }
+  
 
   public get_derivedFromUri(): Element[] | undefined {
       return this._derivedFromUri;
@@ -778,6 +820,13 @@ export class ChargeItemDefinition {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): string[] | undefined {
       return this.partOf;
@@ -796,6 +845,13 @@ export class ChargeItemDefinition {
     }
     this.replaces.push(newValue);
   }
+  public deleteReplacesAll() {
+    if (typeof(this.replaces) !== 'undefined') {
+       delete this.replaces;
+    }
+    return;
+  }
+  
 
   public getReplaces(): string[] | undefined {
       return this.replaces;
@@ -899,6 +955,13 @@ export class ChargeItemDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -945,6 +1008,13 @@ export class ChargeItemDefinition {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -963,6 +1033,13 @@ export class ChargeItemDefinition {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1065,6 +1142,13 @@ export class ChargeItemDefinition {
     }
     this.instance.push(newValue);
   }
+  public deleteInstanceAll() {
+    if (typeof(this.instance) !== 'undefined') {
+       delete this.instance;
+    }
+    return;
+  }
+  
 
   public getInstance(): Reference[] | undefined {
       return this.instance;
@@ -1083,6 +1167,13 @@ export class ChargeItemDefinition {
     }
     this.applicability.push(newValue);
   }
+  public deleteApplicabilityAll() {
+    if (typeof(this.applicability) !== 'undefined') {
+       delete this.applicability;
+    }
+    return;
+  }
+  
 
   public getApplicability(): ChargeItemDefinitionApplicability[] | undefined {
       return this.applicability;
@@ -1101,6 +1192,13 @@ export class ChargeItemDefinition {
     }
     this.propertyGroup.push(newValue);
   }
+  public deletePropertyGroupAll() {
+    if (typeof(this.propertyGroup) !== 'undefined') {
+       delete this.propertyGroup;
+    }
+    return;
+  }
+  
 
   public getPropertyGroup(): ChargeItemDefinitionPropertyGroup[] | undefined {
       return this.propertyGroup;

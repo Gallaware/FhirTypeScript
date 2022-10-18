@@ -112,6 +112,13 @@ export class MedicinalProductName {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -130,6 +137,13 @@ export class MedicinalProductName {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -176,6 +190,13 @@ export class MedicinalProductName {
     }
     this.namePart.push(newValue);
   }
+  public deleteNamePartAll() {
+    if (typeof(this.namePart) !== 'undefined') {
+       delete this.namePart;
+    }
+    return;
+  }
+  
 
   public getNamePart(): MedicinalProductNamePart[] | undefined {
       return this.namePart;
@@ -194,6 +215,13 @@ export class MedicinalProductName {
     }
     this.countryLanguage.push(newValue);
   }
+  public deleteCountryLanguageAll() {
+    if (typeof(this.countryLanguage) !== 'undefined') {
+       delete this.countryLanguage;
+    }
+    return;
+  }
+  
 
   public getCountryLanguage(): MedicinalProductCountryLanguage[] | undefined {
       return this.countryLanguage;

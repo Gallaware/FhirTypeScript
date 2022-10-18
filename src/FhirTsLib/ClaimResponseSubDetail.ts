@@ -116,6 +116,13 @@ export class ClaimResponseSubDetail {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -134,6 +141,13 @@ export class ClaimResponseSubDetail {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -152,6 +166,13 @@ export class ClaimResponseSubDetail {
     }
     this.noteNumber.push(newValue);
   }
+  public deleteNoteNumberAll() {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       delete this.noteNumber;
+    }
+    return;
+  }
+  
 
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
@@ -170,6 +191,13 @@ export class ClaimResponseSubDetail {
     }
     this._noteNumber.push(newValue);
   }
+  public delete_noteNumberAll() {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       delete this._noteNumber;
+    }
+    return;
+  }
+  
 
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
@@ -188,6 +216,13 @@ export class ClaimResponseSubDetail {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ClaimResponseAdjudication[] | undefined {
       return this.adjudication;

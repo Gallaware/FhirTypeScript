@@ -138,6 +138,13 @@ export class PlanDefinitionGoal {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -156,6 +163,13 @@ export class PlanDefinitionGoal {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -174,6 +188,13 @@ export class PlanDefinitionGoal {
     }
     this.addresses.push(newValue);
   }
+  public deleteAddressesAll() {
+    if (typeof(this.addresses) !== 'undefined') {
+       delete this.addresses;
+    }
+    return;
+  }
+  
 
   public getAddresses(): CodeableConcept[] | undefined {
       return this.addresses;
@@ -192,6 +213,13 @@ export class PlanDefinitionGoal {
     }
     this.documentation.push(newValue);
   }
+  public deleteDocumentationAll() {
+    if (typeof(this.documentation) !== 'undefined') {
+       delete this.documentation;
+    }
+    return;
+  }
+  
 
   public getDocumentation(): RelatedArtifact[] | undefined {
       return this.documentation;
@@ -210,6 +238,13 @@ export class PlanDefinitionGoal {
     }
     this.target.push(newValue);
   }
+  public deleteTargetAll() {
+    if (typeof(this.target) !== 'undefined') {
+       delete this.target;
+    }
+    return;
+  }
+  
 
   public getTarget(): PlanDefinitionTarget[] | undefined {
       return this.target;

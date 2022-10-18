@@ -404,6 +404,13 @@ export class MedicinalProductInteraction {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -422,6 +429,13 @@ export class MedicinalProductInteraction {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -440,6 +454,13 @@ export class MedicinalProductInteraction {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -458,6 +479,13 @@ export class MedicinalProductInteraction {
     }
     this.subject.push(newValue);
   }
+  public deleteSubjectAll() {
+    if (typeof(this.subject) !== 'undefined') {
+       delete this.subject;
+    }
+    return;
+  }
+  
 
   public getSubject(): Reference[] | undefined {
       return this.subject;
@@ -504,6 +532,13 @@ export class MedicinalProductInteraction {
     }
     this.interactant.push(newValue);
   }
+  public deleteInteractantAll() {
+    if (typeof(this.interactant) !== 'undefined') {
+       delete this.interactant;
+    }
+    return;
+  }
+  
 
   public getInteractant(): MedicinalProductInteractionInteractant[] | undefined {
       return this.interactant;

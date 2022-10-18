@@ -435,6 +435,13 @@ export class Person {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -453,6 +460,13 @@ export class Person {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -471,6 +485,13 @@ export class Person {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -489,6 +510,13 @@ export class Person {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -507,6 +535,13 @@ export class Person {
     }
     this.name.push(newValue);
   }
+  public deleteNameAll() {
+    if (typeof(this.name) !== 'undefined') {
+       delete this.name;
+    }
+    return;
+  }
+  
 
   public getName(): HumanName[] | undefined {
       return this.name;
@@ -525,6 +560,13 @@ export class Person {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -600,6 +642,13 @@ export class Person {
     }
     this.address.push(newValue);
   }
+  public deleteAddressAll() {
+    if (typeof(this.address) !== 'undefined') {
+       delete this.address;
+    }
+    return;
+  }
+  
 
   public getAddress(): Address[] | undefined {
       return this.address;
@@ -618,6 +667,13 @@ export class Person {
     }
     this.link.push(newValue);
   }
+  public deleteLinkAll() {
+    if (typeof(this.link) !== 'undefined') {
+       delete this.link;
+    }
+    return;
+  }
+  
 
   public getLink(): PersonLink[] | undefined {
       return this.link;

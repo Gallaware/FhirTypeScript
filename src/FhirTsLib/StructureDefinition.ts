@@ -642,6 +642,13 @@ export class StructureDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -660,6 +667,13 @@ export class StructureDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -678,6 +692,13 @@ export class StructureDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -724,6 +745,13 @@ export class StructureDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -911,6 +939,13 @@ export class StructureDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -957,6 +992,13 @@ export class StructureDefinition {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -975,6 +1017,13 @@ export class StructureDefinition {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1049,6 +1098,13 @@ export class StructureDefinition {
     }
     this.keyword.push(newValue);
   }
+  public deleteKeywordAll() {
+    if (typeof(this.keyword) !== 'undefined') {
+       delete this.keyword;
+    }
+    return;
+  }
+  
 
   public getKeyword(): Coding[] | undefined {
       return this.keyword;
@@ -1096,6 +1152,13 @@ export class StructureDefinition {
     }
     this.mapping.push(newValue);
   }
+  public deleteMappingAll() {
+    if (typeof(this.mapping) !== 'undefined') {
+       delete this.mapping;
+    }
+    return;
+  }
+  
 
   public getMapping(): StructureDefinitionMapping[] | undefined {
       return this.mapping;
@@ -1143,6 +1206,13 @@ export class StructureDefinition {
     }
     this.context.push(newValue);
   }
+  public deleteContextAll() {
+    if (typeof(this.context) !== 'undefined') {
+       delete this.context;
+    }
+    return;
+  }
+  
 
   public getContext(): StructureDefinitionContext[] | undefined {
       return this.context;
@@ -1161,6 +1231,13 @@ export class StructureDefinition {
     }
     this.contextInvariant.push(newValue);
   }
+  public deleteContextInvariantAll() {
+    if (typeof(this.contextInvariant) !== 'undefined') {
+       delete this.contextInvariant;
+    }
+    return;
+  }
+  
 
   public getContextInvariant(): string[] | undefined {
       return this.contextInvariant;
@@ -1179,6 +1256,13 @@ export class StructureDefinition {
     }
     this._contextInvariant.push(newValue);
   }
+  public delete_contextInvariantAll() {
+    if (typeof(this._contextInvariant) !== 'undefined') {
+       delete this._contextInvariant;
+    }
+    return;
+  }
+  
 
   public get_contextInvariant(): Element[] | undefined {
       return this._contextInvariant;

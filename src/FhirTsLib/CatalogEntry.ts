@@ -467,6 +467,13 @@ export class CatalogEntry {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -485,6 +492,13 @@ export class CatalogEntry {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -503,6 +517,13 @@ export class CatalogEntry {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -521,6 +542,13 @@ export class CatalogEntry {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -539,6 +567,13 @@ export class CatalogEntry {
     }
     this.additionalIdentifier.push(newValue);
   }
+  public deleteAdditionalIdentifierAll() {
+    if (typeof(this.additionalIdentifier) !== 'undefined') {
+       delete this.additionalIdentifier;
+    }
+    return;
+  }
+  
 
   public getAdditionalIdentifier(): Identifier[] | undefined {
       return this.additionalIdentifier;
@@ -557,6 +592,13 @@ export class CatalogEntry {
     }
     this.classification.push(newValue);
   }
+  public deleteClassificationAll() {
+    if (typeof(this.classification) !== 'undefined') {
+       delete this.classification;
+    }
+    return;
+  }
+  
 
   public getClassification(): CodeableConcept[] | undefined {
       return this.classification;
@@ -660,6 +702,13 @@ export class CatalogEntry {
     }
     this.additionalCharacteristic.push(newValue);
   }
+  public deleteAdditionalCharacteristicAll() {
+    if (typeof(this.additionalCharacteristic) !== 'undefined') {
+       delete this.additionalCharacteristic;
+    }
+    return;
+  }
+  
 
   public getAdditionalCharacteristic(): CodeableConcept[] | undefined {
       return this.additionalCharacteristic;
@@ -678,6 +727,13 @@ export class CatalogEntry {
     }
     this.additionalClassification.push(newValue);
   }
+  public deleteAdditionalClassificationAll() {
+    if (typeof(this.additionalClassification) !== 'undefined') {
+       delete this.additionalClassification;
+    }
+    return;
+  }
+  
 
   public getAdditionalClassification(): CodeableConcept[] | undefined {
       return this.additionalClassification;
@@ -696,6 +752,13 @@ export class CatalogEntry {
     }
     this.relatedEntry.push(newValue);
   }
+  public deleteRelatedEntryAll() {
+    if (typeof(this.relatedEntry) !== 'undefined') {
+       delete this.relatedEntry;
+    }
+    return;
+  }
+  
 
   public getRelatedEntry(): CatalogEntryRelatedEntry[] | undefined {
       return this.relatedEntry;

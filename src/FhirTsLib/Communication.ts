@@ -550,6 +550,13 @@ export class Communication {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -568,6 +575,13 @@ export class Communication {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -586,6 +600,13 @@ export class Communication {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -604,6 +625,13 @@ export class Communication {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -622,6 +650,13 @@ export class Communication {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -640,6 +675,13 @@ export class Communication {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -658,6 +700,13 @@ export class Communication {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -676,6 +725,13 @@ export class Communication {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -694,6 +750,13 @@ export class Communication {
     }
     this.partOf.push(newValue);
   }
+  public deletePartOfAll() {
+    if (typeof(this.partOf) !== 'undefined') {
+       delete this.partOf;
+    }
+    return;
+  }
+  
 
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
@@ -712,6 +775,13 @@ export class Communication {
     }
     this.inResponseTo.push(newValue);
   }
+  public deleteInResponseToAll() {
+    if (typeof(this.inResponseTo) !== 'undefined') {
+       delete this.inResponseTo;
+    }
+    return;
+  }
+  
 
   public getInResponseTo(): Reference[] | undefined {
       return this.inResponseTo;
@@ -758,6 +828,13 @@ export class Communication {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -804,6 +881,13 @@ export class Communication {
     }
     this.medium.push(newValue);
   }
+  public deleteMediumAll() {
+    if (typeof(this.medium) !== 'undefined') {
+       delete this.medium;
+    }
+    return;
+  }
+  
 
   public getMedium(): CodeableConcept[] | undefined {
       return this.medium;
@@ -822,6 +906,13 @@ export class Communication {
     }
     this.about.push(newValue);
   }
+  public deleteAboutAll() {
+    if (typeof(this.about) !== 'undefined') {
+       delete this.about;
+    }
+    return;
+  }
+  
 
   public getAbout(): Reference[] | undefined {
       return this.about;
@@ -896,6 +987,13 @@ export class Communication {
     }
     this.recipient.push(newValue);
   }
+  public deleteRecipientAll() {
+    if (typeof(this.recipient) !== 'undefined') {
+       delete this.recipient;
+    }
+    return;
+  }
+  
 
   public getRecipient(): Reference[] | undefined {
       return this.recipient;
@@ -914,6 +1012,13 @@ export class Communication {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -932,6 +1037,13 @@ export class Communication {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -950,6 +1062,13 @@ export class Communication {
     }
     this.payload.push(newValue);
   }
+  public deletePayloadAll() {
+    if (typeof(this.payload) !== 'undefined') {
+       delete this.payload;
+    }
+    return;
+  }
+  
 
   public getPayload(): CommunicationPayload[] | undefined {
       return this.payload;
@@ -968,6 +1087,13 @@ export class Communication {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

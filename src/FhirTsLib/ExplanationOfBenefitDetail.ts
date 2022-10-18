@@ -197,6 +197,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -215,6 +222,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -233,6 +247,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
@@ -251,6 +272,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.programCode.push(newValue);
   }
+  public deleteProgramCodeAll() {
+    if (typeof(this.programCode) !== 'undefined') {
+       delete this.programCode;
+    }
+    return;
+  }
+  
 
   public getProgramCode(): CodeableConcept[] | undefined {
       return this.programCode;
@@ -269,6 +297,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.udi.push(newValue);
   }
+  public deleteUdiAll() {
+    if (typeof(this.udi) !== 'undefined') {
+       delete this.udi;
+    }
+    return;
+  }
+  
 
   public getUdi(): Reference[] | undefined {
       return this.udi;
@@ -287,6 +322,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.noteNumber.push(newValue);
   }
+  public deleteNoteNumberAll() {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       delete this.noteNumber;
+    }
+    return;
+  }
+  
 
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
@@ -305,6 +347,13 @@ export class ExplanationOfBenefitDetail {
     }
     this._noteNumber.push(newValue);
   }
+  public delete_noteNumberAll() {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       delete this._noteNumber;
+    }
+    return;
+  }
+  
 
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
@@ -323,6 +372,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ExplanationOfBenefitAdjudication[] | undefined {
       return this.adjudication;
@@ -341,6 +397,13 @@ export class ExplanationOfBenefitDetail {
     }
     this.subDetail.push(newValue);
   }
+  public deleteSubDetailAll() {
+    if (typeof(this.subDetail) !== 'undefined') {
+       delete this.subDetail;
+    }
+    return;
+  }
+  
 
   public getSubDetail(): ExplanationOfBenefitSubDetail[] | undefined {
       return this.subDetail;

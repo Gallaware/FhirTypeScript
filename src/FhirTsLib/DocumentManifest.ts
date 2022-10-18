@@ -459,6 +459,13 @@ export class DocumentManifest {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -477,6 +484,13 @@ export class DocumentManifest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -495,6 +509,13 @@ export class DocumentManifest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -513,6 +534,13 @@ export class DocumentManifest {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -588,6 +616,13 @@ export class DocumentManifest {
     }
     this.author.push(newValue);
   }
+  public deleteAuthorAll() {
+    if (typeof(this.author) !== 'undefined') {
+       delete this.author;
+    }
+    return;
+  }
+  
 
   public getAuthor(): Reference[] | undefined {
       return this.author;
@@ -606,6 +641,13 @@ export class DocumentManifest {
     }
     this.recipient.push(newValue);
   }
+  public deleteRecipientAll() {
+    if (typeof(this.recipient) !== 'undefined') {
+       delete this.recipient;
+    }
+    return;
+  }
+  
 
   public getRecipient(): Reference[] | undefined {
       return this.recipient;
@@ -680,6 +722,13 @@ export class DocumentManifest {
     }
     this.content.push(newValue);
   }
+  public deleteContentAll() {
+    if (typeof(this.content) !== 'undefined') {
+       delete this.content;
+    }
+    return;
+  }
+  
 
   public getContent(): Reference[] | undefined {
       return this.content;
@@ -698,6 +747,13 @@ export class DocumentManifest {
     }
     this.related.push(newValue);
   }
+  public deleteRelatedAll() {
+    if (typeof(this.related) !== 'undefined') {
+       delete this.related;
+    }
+    return;
+  }
+  
 
   public getRelated(): DocumentManifestRelated[] | undefined {
       return this.related;

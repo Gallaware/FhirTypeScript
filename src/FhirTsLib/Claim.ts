@@ -557,6 +557,13 @@ export class Claim {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -575,6 +582,13 @@ export class Claim {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -593,6 +607,13 @@ export class Claim {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -611,6 +632,13 @@ export class Claim {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -714,6 +742,13 @@ export class Claim {
     }
     this.related.push(newValue);
   }
+  public deleteRelatedAll() {
+    if (typeof(this.related) !== 'undefined') {
+       delete this.related;
+    }
+    return;
+  }
+  
 
   public getRelated(): ClaimRelated[] | undefined {
       return this.related;
@@ -732,6 +767,13 @@ export class Claim {
     }
     this.careTeam.push(newValue);
   }
+  public deleteCareTeamAll() {
+    if (typeof(this.careTeam) !== 'undefined') {
+       delete this.careTeam;
+    }
+    return;
+  }
+  
 
   public getCareTeam(): ClaimCareTeam[] | undefined {
       return this.careTeam;
@@ -750,6 +792,13 @@ export class Claim {
     }
     this.supportingInfo.push(newValue);
   }
+  public deleteSupportingInfoAll() {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       delete this.supportingInfo;
+    }
+    return;
+  }
+  
 
   public getSupportingInfo(): ClaimSupportingInfo[] | undefined {
       return this.supportingInfo;
@@ -768,6 +817,13 @@ export class Claim {
     }
     this.diagnosis.push(newValue);
   }
+  public deleteDiagnosisAll() {
+    if (typeof(this.diagnosis) !== 'undefined') {
+       delete this.diagnosis;
+    }
+    return;
+  }
+  
 
   public getDiagnosis(): ClaimDiagnosis[] | undefined {
       return this.diagnosis;
@@ -786,6 +842,13 @@ export class Claim {
     }
     this.procedure.push(newValue);
   }
+  public deleteProcedureAll() {
+    if (typeof(this.procedure) !== 'undefined') {
+       delete this.procedure;
+    }
+    return;
+  }
+  
 
   public getProcedure(): ClaimProcedure[] | undefined {
       return this.procedure;
@@ -804,6 +867,13 @@ export class Claim {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): ClaimInsurance[] | undefined {
       return this.insurance;
@@ -822,6 +892,13 @@ export class Claim {
     }
     this.item.push(newValue);
   }
+  public deleteItemAll() {
+    if (typeof(this.item) !== 'undefined') {
+       delete this.item;
+    }
+    return;
+  }
+  
 
   public getItem(): ClaimItem[] | undefined {
       return this.item;

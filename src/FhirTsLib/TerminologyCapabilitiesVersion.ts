@@ -154,6 +154,13 @@ export class TerminologyCapabilitiesVersion {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -172,6 +179,13 @@ export class TerminologyCapabilitiesVersion {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -218,6 +232,13 @@ export class TerminologyCapabilitiesVersion {
     }
     this.language.push(newValue);
   }
+  public deleteLanguageAll() {
+    if (typeof(this.language) !== 'undefined') {
+       delete this.language;
+    }
+    return;
+  }
+  
 
   public getLanguage(): string[] | undefined {
       return this.language;
@@ -236,6 +257,13 @@ export class TerminologyCapabilitiesVersion {
     }
     this._language.push(newValue);
   }
+  public delete_languageAll() {
+    if (typeof(this._language) !== 'undefined') {
+       delete this._language;
+    }
+    return;
+  }
+  
 
   public get_language(): Element[] | undefined {
       return this._language;
@@ -254,6 +282,13 @@ export class TerminologyCapabilitiesVersion {
     }
     this.filter.push(newValue);
   }
+  public deleteFilterAll() {
+    if (typeof(this.filter) !== 'undefined') {
+       delete this.filter;
+    }
+    return;
+  }
+  
 
   public getFilter(): TerminologyCapabilitiesFilter[] | undefined {
       return this.filter;
@@ -272,6 +307,13 @@ export class TerminologyCapabilitiesVersion {
     }
     this.property.push(newValue);
   }
+  public deletePropertyAll() {
+    if (typeof(this.property) !== 'undefined') {
+       delete this.property;
+    }
+    return;
+  }
+  
 
   public getProperty(): string[] | undefined {
       return this.property;
@@ -290,6 +332,13 @@ export class TerminologyCapabilitiesVersion {
     }
     this._property.push(newValue);
   }
+  public delete_propertyAll() {
+    if (typeof(this._property) !== 'undefined') {
+       delete this._property;
+    }
+    return;
+  }
+  
 
   public get_property(): Element[] | undefined {
       return this._property;

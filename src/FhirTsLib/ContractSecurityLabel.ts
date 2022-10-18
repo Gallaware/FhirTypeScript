@@ -121,6 +121,13 @@ export class ContractSecurityLabel {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -139,6 +146,13 @@ export class ContractSecurityLabel {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -157,6 +171,13 @@ export class ContractSecurityLabel {
     }
     this.number.push(newValue);
   }
+  public deleteNumberAll() {
+    if (typeof(this.number) !== 'undefined') {
+       delete this.number;
+    }
+    return;
+  }
+  
 
   public getNumber(): number[] | undefined {
       return this.number;
@@ -175,6 +196,13 @@ export class ContractSecurityLabel {
     }
     this._number.push(newValue);
   }
+  public delete_numberAll() {
+    if (typeof(this._number) !== 'undefined') {
+       delete this._number;
+    }
+    return;
+  }
+  
 
   public get_number(): Element[] | undefined {
       return this._number;
@@ -193,6 +221,13 @@ export class ContractSecurityLabel {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): Coding[] | undefined {
       return this.category;
@@ -211,6 +246,13 @@ export class ContractSecurityLabel {
     }
     this.control.push(newValue);
   }
+  public deleteControlAll() {
+    if (typeof(this.control) !== 'undefined') {
+       delete this.control;
+    }
+    return;
+  }
+  
 
   public getControl(): Coding[] | undefined {
       return this.control;

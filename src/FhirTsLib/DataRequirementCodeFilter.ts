@@ -126,6 +126,13 @@ export class DataRequirementCodeFilter {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -144,6 +151,13 @@ export class DataRequirementCodeFilter {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -246,6 +260,13 @@ export class DataRequirementCodeFilter {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): Coding[] | undefined {
       return this.code;

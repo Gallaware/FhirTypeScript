@@ -125,6 +125,13 @@ export class CapabilityStatementMessaging {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -143,6 +150,13 @@ export class CapabilityStatementMessaging {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -161,6 +175,13 @@ export class CapabilityStatementMessaging {
     }
     this.endpoint.push(newValue);
   }
+  public deleteEndpointAll() {
+    if (typeof(this.endpoint) !== 'undefined') {
+       delete this.endpoint;
+    }
+    return;
+  }
+  
 
   public getEndpoint(): CapabilityStatementEndpoint[] | undefined {
       return this.endpoint;
@@ -207,6 +228,13 @@ export class CapabilityStatementMessaging {
     }
     this.supportedMessage.push(newValue);
   }
+  public deleteSupportedMessageAll() {
+    if (typeof(this.supportedMessage) !== 'undefined') {
+       delete this.supportedMessage;
+    }
+    return;
+  }
+  
 
   public getSupportedMessage(): CapabilityStatementSupportedMessage[] | undefined {
       return this.supportedMessage;

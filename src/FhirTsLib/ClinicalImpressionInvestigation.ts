@@ -104,6 +104,13 @@ export class ClinicalImpressionInvestigation {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -122,6 +129,13 @@ export class ClinicalImpressionInvestigation {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -140,6 +154,13 @@ export class ClinicalImpressionInvestigation {
     }
     this.item.push(newValue);
   }
+  public deleteItemAll() {
+    if (typeof(this.item) !== 'undefined') {
+       delete this.item;
+    }
+    return;
+  }
+  
 
   public getItem(): Reference[] | undefined {
       return this.item;

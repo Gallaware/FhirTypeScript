@@ -206,6 +206,13 @@ export class CoverageEligibilityResponseItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -224,6 +231,13 @@ export class CoverageEligibilityResponseItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -242,6 +256,13 @@ export class CoverageEligibilityResponseItem {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
@@ -316,6 +337,13 @@ export class CoverageEligibilityResponseItem {
     }
     this.benefit.push(newValue);
   }
+  public deleteBenefitAll() {
+    if (typeof(this.benefit) !== 'undefined') {
+       delete this.benefit;
+    }
+    return;
+  }
+  
 
   public getBenefit(): CoverageEligibilityResponseBenefit[] | undefined {
       return this.benefit;
@@ -334,6 +362,13 @@ export class CoverageEligibilityResponseItem {
     }
     this.authorizationSupporting.push(newValue);
   }
+  public deleteAuthorizationSupportingAll() {
+    if (typeof(this.authorizationSupporting) !== 'undefined') {
+       delete this.authorizationSupporting;
+    }
+    return;
+  }
+  
 
   public getAuthorizationSupporting(): CodeableConcept[] | undefined {
       return this.authorizationSupporting;

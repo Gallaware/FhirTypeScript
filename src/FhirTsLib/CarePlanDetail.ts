@@ -265,6 +265,13 @@ export class CarePlanDetail {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -283,6 +290,13 @@ export class CarePlanDetail {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -329,6 +343,13 @@ export class CarePlanDetail {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -347,6 +368,13 @@ export class CarePlanDetail {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -365,6 +393,13 @@ export class CarePlanDetail {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -383,6 +418,13 @@ export class CarePlanDetail {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -401,6 +443,13 @@ export class CarePlanDetail {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -419,6 +468,13 @@ export class CarePlanDetail {
     }
     this.goal.push(newValue);
   }
+  public deleteGoalAll() {
+    if (typeof(this.goal) !== 'undefined') {
+       delete this.goal;
+    }
+    return;
+  }
+  
 
   public getGoal(): Reference[] | undefined {
       return this.goal;
@@ -494,6 +550,13 @@ export class CarePlanDetail {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): Reference[] | undefined {
       return this.performer;

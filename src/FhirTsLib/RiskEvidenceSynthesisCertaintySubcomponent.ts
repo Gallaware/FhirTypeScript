@@ -107,6 +107,13 @@ export class RiskEvidenceSynthesisCertaintySubcomponent {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -125,6 +132,13 @@ export class RiskEvidenceSynthesisCertaintySubcomponent {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -143,6 +157,13 @@ export class RiskEvidenceSynthesisCertaintySubcomponent {
     }
     this.rating.push(newValue);
   }
+  public deleteRatingAll() {
+    if (typeof(this.rating) !== 'undefined') {
+       delete this.rating;
+    }
+    return;
+  }
+  
 
   public getRating(): CodeableConcept[] | undefined {
       return this.rating;
@@ -161,6 +182,13 @@ export class RiskEvidenceSynthesisCertaintySubcomponent {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

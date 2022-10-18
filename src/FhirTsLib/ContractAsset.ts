@@ -213,6 +213,13 @@ export class ContractAsset {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -231,6 +238,13 @@ export class ContractAsset {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -249,6 +263,13 @@ export class ContractAsset {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -267,6 +288,13 @@ export class ContractAsset {
     }
     this.typeReference.push(newValue);
   }
+  public deleteTypeReferenceAll() {
+    if (typeof(this.typeReference) !== 'undefined') {
+       delete this.typeReference;
+    }
+    return;
+  }
+  
 
   public getTypeReference(): Reference[] | undefined {
       return this.typeReference;
@@ -285,6 +313,13 @@ export class ContractAsset {
     }
     this.subtype.push(newValue);
   }
+  public deleteSubtypeAll() {
+    if (typeof(this.subtype) !== 'undefined') {
+       delete this.subtype;
+    }
+    return;
+  }
+  
 
   public getSubtype(): CodeableConcept[] | undefined {
       return this.subtype;
@@ -303,6 +338,13 @@ export class ContractAsset {
     }
     this.context.push(newValue);
   }
+  public deleteContextAll() {
+    if (typeof(this.context) !== 'undefined') {
+       delete this.context;
+    }
+    return;
+  }
+  
 
   public getContext(): ContractContext[] | undefined {
       return this.context;
@@ -349,6 +391,13 @@ export class ContractAsset {
     }
     this.periodType.push(newValue);
   }
+  public deletePeriodTypeAll() {
+    if (typeof(this.periodType) !== 'undefined') {
+       delete this.periodType;
+    }
+    return;
+  }
+  
 
   public getPeriodType(): CodeableConcept[] | undefined {
       return this.periodType;
@@ -367,6 +416,13 @@ export class ContractAsset {
     }
     this.period.push(newValue);
   }
+  public deletePeriodAll() {
+    if (typeof(this.period) !== 'undefined') {
+       delete this.period;
+    }
+    return;
+  }
+  
 
   public getPeriod(): Period[] | undefined {
       return this.period;
@@ -385,6 +441,13 @@ export class ContractAsset {
     }
     this.usePeriod.push(newValue);
   }
+  public deleteUsePeriodAll() {
+    if (typeof(this.usePeriod) !== 'undefined') {
+       delete this.usePeriod;
+    }
+    return;
+  }
+  
 
   public getUsePeriod(): Period[] | undefined {
       return this.usePeriod;
@@ -431,6 +494,13 @@ export class ContractAsset {
     }
     this.linkId.push(newValue);
   }
+  public deleteLinkIdAll() {
+    if (typeof(this.linkId) !== 'undefined') {
+       delete this.linkId;
+    }
+    return;
+  }
+  
 
   public getLinkId(): string[] | undefined {
       return this.linkId;
@@ -449,6 +519,13 @@ export class ContractAsset {
     }
     this._linkId.push(newValue);
   }
+  public delete_linkIdAll() {
+    if (typeof(this._linkId) !== 'undefined') {
+       delete this._linkId;
+    }
+    return;
+  }
+  
 
   public get_linkId(): Element[] | undefined {
       return this._linkId;
@@ -467,6 +544,13 @@ export class ContractAsset {
     }
     this.answer.push(newValue);
   }
+  public deleteAnswerAll() {
+    if (typeof(this.answer) !== 'undefined') {
+       delete this.answer;
+    }
+    return;
+  }
+  
 
   public getAnswer(): ContractAnswer[] | undefined {
       return this.answer;
@@ -485,6 +569,13 @@ export class ContractAsset {
     }
     this.securityLabelNumber.push(newValue);
   }
+  public deleteSecurityLabelNumberAll() {
+    if (typeof(this.securityLabelNumber) !== 'undefined') {
+       delete this.securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public getSecurityLabelNumber(): number[] | undefined {
       return this.securityLabelNumber;
@@ -503,6 +594,13 @@ export class ContractAsset {
     }
     this._securityLabelNumber.push(newValue);
   }
+  public delete_securityLabelNumberAll() {
+    if (typeof(this._securityLabelNumber) !== 'undefined') {
+       delete this._securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public get_securityLabelNumber(): Element[] | undefined {
       return this._securityLabelNumber;
@@ -521,6 +619,13 @@ export class ContractAsset {
     }
     this.valuedItem.push(newValue);
   }
+  public deleteValuedItemAll() {
+    if (typeof(this.valuedItem) !== 'undefined') {
+       delete this.valuedItem;
+    }
+    return;
+  }
+  
 
   public getValuedItem(): ContractValuedItem[] | undefined {
       return this.valuedItem;

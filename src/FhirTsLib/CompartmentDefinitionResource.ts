@@ -125,6 +125,13 @@ export class CompartmentDefinitionResource {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -143,6 +150,13 @@ export class CompartmentDefinitionResource {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -190,6 +204,13 @@ export class CompartmentDefinitionResource {
     }
     this.param.push(newValue);
   }
+  public deleteParamAll() {
+    if (typeof(this.param) !== 'undefined') {
+       delete this.param;
+    }
+    return;
+  }
+  
 
   public getParam(): string[] | undefined {
       return this.param;
@@ -208,6 +229,13 @@ export class CompartmentDefinitionResource {
     }
     this._param.push(newValue);
   }
+  public delete_paramAll() {
+    if (typeof(this._param) !== 'undefined') {
+       delete this._param;
+    }
+    return;
+  }
+  
 
   public get_param(): Element[] | undefined {
       return this._param;

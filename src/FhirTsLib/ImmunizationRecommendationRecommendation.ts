@@ -214,6 +214,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -232,6 +239,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -250,6 +264,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.vaccineCode.push(newValue);
   }
+  public deleteVaccineCodeAll() {
+    if (typeof(this.vaccineCode) !== 'undefined') {
+       delete this.vaccineCode;
+    }
+    return;
+  }
+  
 
   public getVaccineCode(): CodeableConcept[] | undefined {
       return this.vaccineCode;
@@ -268,6 +289,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.contraindicatedVaccineCode.push(newValue);
   }
+  public deleteContraindicatedVaccineCodeAll() {
+    if (typeof(this.contraindicatedVaccineCode) !== 'undefined') {
+       delete this.contraindicatedVaccineCode;
+    }
+    return;
+  }
+  
 
   public getContraindicatedVaccineCode(): CodeableConcept[] | undefined {
       return this.contraindicatedVaccineCode;
@@ -286,6 +314,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.forecastReason.push(newValue);
   }
+  public deleteForecastReasonAll() {
+    if (typeof(this.forecastReason) !== 'undefined') {
+       delete this.forecastReason;
+    }
+    return;
+  }
+  
 
   public getForecastReason(): CodeableConcept[] | undefined {
       return this.forecastReason;
@@ -304,6 +339,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.dateCriterion.push(newValue);
   }
+  public deleteDateCriterionAll() {
+    if (typeof(this.dateCriterion) !== 'undefined') {
+       delete this.dateCriterion;
+    }
+    return;
+  }
+  
 
   public getDateCriterion(): ImmunizationRecommendationDateCriterion[] | undefined {
       return this.dateCriterion;
@@ -434,6 +476,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.supportingImmunization.push(newValue);
   }
+  public deleteSupportingImmunizationAll() {
+    if (typeof(this.supportingImmunization) !== 'undefined') {
+       delete this.supportingImmunization;
+    }
+    return;
+  }
+  
 
   public getSupportingImmunization(): Reference[] | undefined {
       return this.supportingImmunization;
@@ -452,6 +501,13 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.supportingPatientInformation.push(newValue);
   }
+  public deleteSupportingPatientInformationAll() {
+    if (typeof(this.supportingPatientInformation) !== 'undefined') {
+       delete this.supportingPatientInformation;
+    }
+    return;
+  }
+  
 
   public getSupportingPatientInformation(): Reference[] | undefined {
       return this.supportingPatientInformation;

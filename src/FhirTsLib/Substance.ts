@@ -412,6 +412,13 @@ export class Substance {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -430,6 +437,13 @@ export class Substance {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -448,6 +462,13 @@ export class Substance {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -466,6 +487,13 @@ export class Substance {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -513,6 +541,13 @@ export class Substance {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -559,6 +594,13 @@ export class Substance {
     }
     this.instance.push(newValue);
   }
+  public deleteInstanceAll() {
+    if (typeof(this.instance) !== 'undefined') {
+       delete this.instance;
+    }
+    return;
+  }
+  
 
   public getInstance(): SubstanceInstance[] | undefined {
       return this.instance;
@@ -577,6 +619,13 @@ export class Substance {
     }
     this.ingredient.push(newValue);
   }
+  public deleteIngredientAll() {
+    if (typeof(this.ingredient) !== 'undefined') {
+       delete this.ingredient;
+    }
+    return;
+  }
+  
 
   public getIngredient(): SubstanceIngredient[] | undefined {
       return this.ingredient;

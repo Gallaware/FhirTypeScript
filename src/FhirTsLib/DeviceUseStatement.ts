@@ -477,6 +477,13 @@ export class DeviceUseStatement {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -495,6 +502,13 @@ export class DeviceUseStatement {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -513,6 +527,13 @@ export class DeviceUseStatement {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -531,6 +552,13 @@ export class DeviceUseStatement {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -549,6 +577,13 @@ export class DeviceUseStatement {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -596,6 +631,13 @@ export class DeviceUseStatement {
     }
     this.derivedFrom.push(newValue);
   }
+  public deleteDerivedFromAll() {
+    if (typeof(this.derivedFrom) !== 'undefined') {
+       delete this.derivedFrom;
+    }
+    return;
+  }
+  
 
   public getDerivedFrom(): Reference[] | undefined {
       return this.derivedFrom;
@@ -670,6 +712,13 @@ export class DeviceUseStatement {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -688,6 +737,13 @@ export class DeviceUseStatement {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -706,6 +762,13 @@ export class DeviceUseStatement {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

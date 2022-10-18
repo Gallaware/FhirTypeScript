@@ -487,6 +487,13 @@ export class MedicinalProductAuthorization {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -505,6 +512,13 @@ export class MedicinalProductAuthorization {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -523,6 +537,13 @@ export class MedicinalProductAuthorization {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -541,6 +562,13 @@ export class MedicinalProductAuthorization {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -559,6 +587,13 @@ export class MedicinalProductAuthorization {
     }
     this.country.push(newValue);
   }
+  public deleteCountryAll() {
+    if (typeof(this.country) !== 'undefined') {
+       delete this.country;
+    }
+    return;
+  }
+  
 
   public getCountry(): CodeableConcept[] | undefined {
       return this.country;
@@ -577,6 +612,13 @@ export class MedicinalProductAuthorization {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -707,6 +749,13 @@ export class MedicinalProductAuthorization {
     }
     this.jurisdictionalAuthorization.push(newValue);
   }
+  public deleteJurisdictionalAuthorizationAll() {
+    if (typeof(this.jurisdictionalAuthorization) !== 'undefined') {
+       delete this.jurisdictionalAuthorization;
+    }
+    return;
+  }
+  
 
   public getJurisdictionalAuthorization(): MedicinalProductAuthorizationJurisdictionalAuthorization[] | undefined {
       return this.jurisdictionalAuthorization;

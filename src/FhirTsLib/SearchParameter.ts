@@ -652,6 +652,13 @@ export class SearchParameter {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -670,6 +677,13 @@ export class SearchParameter {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -688,6 +702,13 @@ export class SearchParameter {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -903,6 +924,13 @@ export class SearchParameter {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -949,6 +977,13 @@ export class SearchParameter {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -967,6 +1002,13 @@ export class SearchParameter {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -1041,6 +1083,13 @@ export class SearchParameter {
     }
     this.base.push(newValue);
   }
+  public deleteBaseAll() {
+    if (typeof(this.base) !== 'undefined') {
+       delete this.base;
+    }
+    return;
+  }
+  
 
   public getBase(): string[] | undefined {
       return this.base;
@@ -1059,6 +1108,13 @@ export class SearchParameter {
     }
     this._base.push(newValue);
   }
+  public delete_baseAll() {
+    if (typeof(this._base) !== 'undefined') {
+       delete this._base;
+    }
+    return;
+  }
+  
 
   public get_base(): Element[] | undefined {
       return this._base;
@@ -1191,6 +1247,13 @@ export class SearchParameter {
     }
     this.target.push(newValue);
   }
+  public deleteTargetAll() {
+    if (typeof(this.target) !== 'undefined') {
+       delete this.target;
+    }
+    return;
+  }
+  
 
   public getTarget(): string[] | undefined {
       return this.target;
@@ -1209,6 +1272,13 @@ export class SearchParameter {
     }
     this._target.push(newValue);
   }
+  public delete_targetAll() {
+    if (typeof(this._target) !== 'undefined') {
+       delete this._target;
+    }
+    return;
+  }
+  
 
   public get_target(): Element[] | undefined {
       return this._target;
@@ -1227,6 +1297,13 @@ export class SearchParameter {
     }
     this.comparator.push(newValue);
   }
+  public deleteComparatorAll() {
+    if (typeof(this.comparator) !== 'undefined') {
+       delete this.comparator;
+    }
+    return;
+  }
+  
 
   public getComparator(): string[] | undefined {
       return this.comparator;
@@ -1245,6 +1322,13 @@ export class SearchParameter {
     }
     this._comparator.push(newValue);
   }
+  public delete_comparatorAll() {
+    if (typeof(this._comparator) !== 'undefined') {
+       delete this._comparator;
+    }
+    return;
+  }
+  
 
   public get_comparator(): Element[] | undefined {
       return this._comparator;
@@ -1263,6 +1347,13 @@ export class SearchParameter {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): string[] | undefined {
       return this.modifier;
@@ -1281,6 +1372,13 @@ export class SearchParameter {
     }
     this._modifier.push(newValue);
   }
+  public delete_modifierAll() {
+    if (typeof(this._modifier) !== 'undefined') {
+       delete this._modifier;
+    }
+    return;
+  }
+  
 
   public get_modifier(): Element[] | undefined {
       return this._modifier;
@@ -1299,6 +1397,13 @@ export class SearchParameter {
     }
     this.chain.push(newValue);
   }
+  public deleteChainAll() {
+    if (typeof(this.chain) !== 'undefined') {
+       delete this.chain;
+    }
+    return;
+  }
+  
 
   public getChain(): string[] | undefined {
       return this.chain;
@@ -1317,6 +1422,13 @@ export class SearchParameter {
     }
     this._chain.push(newValue);
   }
+  public delete_chainAll() {
+    if (typeof(this._chain) !== 'undefined') {
+       delete this._chain;
+    }
+    return;
+  }
+  
 
   public get_chain(): Element[] | undefined {
       return this._chain;
@@ -1335,6 +1447,13 @@ export class SearchParameter {
     }
     this.component.push(newValue);
   }
+  public deleteComponentAll() {
+    if (typeof(this.component) !== 'undefined') {
+       delete this.component;
+    }
+    return;
+  }
+  
 
   public getComponent(): SearchParameterComponent[] | undefined {
       return this.component;

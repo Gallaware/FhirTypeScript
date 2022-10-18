@@ -513,6 +513,13 @@ export class RequestGroup {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -531,6 +538,13 @@ export class RequestGroup {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -549,6 +563,13 @@ export class RequestGroup {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -567,6 +588,13 @@ export class RequestGroup {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -585,6 +613,13 @@ export class RequestGroup {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -603,6 +638,13 @@ export class RequestGroup {
     }
     this._instantiatesCanonical.push(newValue);
   }
+  public delete_instantiatesCanonicalAll() {
+    if (typeof(this._instantiatesCanonical) !== 'undefined') {
+       delete this._instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public get_instantiatesCanonical(): Element[] | undefined {
       return this._instantiatesCanonical;
@@ -621,6 +663,13 @@ export class RequestGroup {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -639,6 +688,13 @@ export class RequestGroup {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -657,6 +713,13 @@ export class RequestGroup {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -675,6 +738,13 @@ export class RequestGroup {
     }
     this.replaces.push(newValue);
   }
+  public deleteReplacesAll() {
+    if (typeof(this.replaces) !== 'undefined') {
+       delete this.replaces;
+    }
+    return;
+  }
+  
 
   public getReplaces(): Reference[] | undefined {
       return this.replaces;
@@ -805,6 +875,13 @@ export class RequestGroup {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -823,6 +900,13 @@ export class RequestGroup {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -841,6 +925,13 @@ export class RequestGroup {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -859,6 +950,13 @@ export class RequestGroup {
     }
     this.action.push(newValue);
   }
+  public deleteActionAll() {
+    if (typeof(this.action) !== 'undefined') {
+       delete this.action;
+    }
+    return;
+  }
+  
 
   public getAction(): RequestGroupAction[] | undefined {
       return this.action;

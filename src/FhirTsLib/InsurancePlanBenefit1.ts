@@ -99,6 +99,13 @@ export class InsurancePlanBenefit1 {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -117,6 +124,13 @@ export class InsurancePlanBenefit1 {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -135,6 +149,13 @@ export class InsurancePlanBenefit1 {
     }
     this.cost.push(newValue);
   }
+  public deleteCostAll() {
+    if (typeof(this.cost) !== 'undefined') {
+       delete this.cost;
+    }
+    return;
+  }
+  
 
   public getCost(): InsurancePlanCost[] | undefined {
       return this.cost;

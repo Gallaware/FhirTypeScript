@@ -157,6 +157,13 @@ export class ObservationDefinitionQualifiedInterval {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -175,6 +182,13 @@ export class ObservationDefinitionQualifiedInterval {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -222,6 +236,13 @@ export class ObservationDefinitionQualifiedInterval {
     }
     this.appliesTo.push(newValue);
   }
+  public deleteAppliesToAll() {
+    if (typeof(this.appliesTo) !== 'undefined') {
+       delete this.appliesTo;
+    }
+    return;
+  }
+  
 
   public getAppliesTo(): CodeableConcept[] | undefined {
       return this.appliesTo;

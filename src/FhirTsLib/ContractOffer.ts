@@ -172,6 +172,13 @@ export class ContractOffer {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -190,6 +197,13 @@ export class ContractOffer {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -208,6 +222,13 @@ export class ContractOffer {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -226,6 +247,13 @@ export class ContractOffer {
     }
     this.party.push(newValue);
   }
+  public deletePartyAll() {
+    if (typeof(this.party) !== 'undefined') {
+       delete this.party;
+    }
+    return;
+  }
+  
 
   public getParty(): ContractParty[] | undefined {
       return this.party;
@@ -244,6 +272,13 @@ export class ContractOffer {
     }
     this.decisionMode.push(newValue);
   }
+  public deleteDecisionModeAll() {
+    if (typeof(this.decisionMode) !== 'undefined') {
+       delete this.decisionMode;
+    }
+    return;
+  }
+  
 
   public getDecisionMode(): CodeableConcept[] | undefined {
       return this.decisionMode;
@@ -262,6 +297,13 @@ export class ContractOffer {
     }
     this.answer.push(newValue);
   }
+  public deleteAnswerAll() {
+    if (typeof(this.answer) !== 'undefined') {
+       delete this.answer;
+    }
+    return;
+  }
+  
 
   public getAnswer(): ContractAnswer[] | undefined {
       return this.answer;
@@ -308,6 +350,13 @@ export class ContractOffer {
     }
     this.linkId.push(newValue);
   }
+  public deleteLinkIdAll() {
+    if (typeof(this.linkId) !== 'undefined') {
+       delete this.linkId;
+    }
+    return;
+  }
+  
 
   public getLinkId(): string[] | undefined {
       return this.linkId;
@@ -326,6 +375,13 @@ export class ContractOffer {
     }
     this._linkId.push(newValue);
   }
+  public delete_linkIdAll() {
+    if (typeof(this._linkId) !== 'undefined') {
+       delete this._linkId;
+    }
+    return;
+  }
+  
 
   public get_linkId(): Element[] | undefined {
       return this._linkId;
@@ -344,6 +400,13 @@ export class ContractOffer {
     }
     this.securityLabelNumber.push(newValue);
   }
+  public deleteSecurityLabelNumberAll() {
+    if (typeof(this.securityLabelNumber) !== 'undefined') {
+       delete this.securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public getSecurityLabelNumber(): number[] | undefined {
       return this.securityLabelNumber;
@@ -362,6 +425,13 @@ export class ContractOffer {
     }
     this._securityLabelNumber.push(newValue);
   }
+  public delete_securityLabelNumberAll() {
+    if (typeof(this._securityLabelNumber) !== 'undefined') {
+       delete this._securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public get_securityLabelNumber(): Element[] | undefined {
       return this._securityLabelNumber;

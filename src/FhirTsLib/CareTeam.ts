@@ -452,6 +452,13 @@ export class CareTeam {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -470,6 +477,13 @@ export class CareTeam {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -488,6 +502,13 @@ export class CareTeam {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -506,6 +527,13 @@ export class CareTeam {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -553,6 +581,13 @@ export class CareTeam {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -599,6 +634,13 @@ export class CareTeam {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): CareTeamParticipant[] | undefined {
       return this.participant;
@@ -617,6 +659,13 @@ export class CareTeam {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -635,6 +684,13 @@ export class CareTeam {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -653,6 +709,13 @@ export class CareTeam {
     }
     this.managingOrganization.push(newValue);
   }
+  public deleteManagingOrganizationAll() {
+    if (typeof(this.managingOrganization) !== 'undefined') {
+       delete this.managingOrganization;
+    }
+    return;
+  }
+  
 
   public getManagingOrganization(): Reference[] | undefined {
       return this.managingOrganization;
@@ -671,6 +734,13 @@ export class CareTeam {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -689,6 +759,13 @@ export class CareTeam {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

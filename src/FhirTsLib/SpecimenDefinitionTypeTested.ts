@@ -156,6 +156,13 @@ export class SpecimenDefinitionTypeTested {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -174,6 +181,13 @@ export class SpecimenDefinitionTypeTested {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -249,6 +263,13 @@ export class SpecimenDefinitionTypeTested {
     }
     this.rejectionCriterion.push(newValue);
   }
+  public deleteRejectionCriterionAll() {
+    if (typeof(this.rejectionCriterion) !== 'undefined') {
+       delete this.rejectionCriterion;
+    }
+    return;
+  }
+  
 
   public getRejectionCriterion(): CodeableConcept[] | undefined {
       return this.rejectionCriterion;
@@ -267,6 +288,13 @@ export class SpecimenDefinitionTypeTested {
     }
     this.handling.push(newValue);
   }
+  public deleteHandlingAll() {
+    if (typeof(this.handling) !== 'undefined') {
+       delete this.handling;
+    }
+    return;
+  }
+  
 
   public getHandling(): SpecimenDefinitionHandling[] | undefined {
       return this.handling;

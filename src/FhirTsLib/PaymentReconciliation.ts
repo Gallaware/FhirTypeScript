@@ -482,6 +482,13 @@ export class PaymentReconciliation {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -500,6 +507,13 @@ export class PaymentReconciliation {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -518,6 +532,13 @@ export class PaymentReconciliation {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -536,6 +557,13 @@ export class PaymentReconciliation {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -695,6 +723,13 @@ export class PaymentReconciliation {
     }
     this.detail.push(newValue);
   }
+  public deleteDetailAll() {
+    if (typeof(this.detail) !== 'undefined') {
+       delete this.detail;
+    }
+    return;
+  }
+  
 
   public getDetail(): PaymentReconciliationDetail[] | undefined {
       return this.detail;
@@ -713,6 +748,13 @@ export class PaymentReconciliation {
     }
     this.processNote.push(newValue);
   }
+  public deleteProcessNoteAll() {
+    if (typeof(this.processNote) !== 'undefined') {
+       delete this.processNote;
+    }
+    return;
+  }
+  
 
   public getProcessNote(): PaymentReconciliationProcessNote[] | undefined {
       return this.processNote;

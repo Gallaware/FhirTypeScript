@@ -441,6 +441,13 @@ export class MessageHeader {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -459,6 +466,13 @@ export class MessageHeader {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -477,6 +491,13 @@ export class MessageHeader {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -523,6 +544,13 @@ export class MessageHeader {
     }
     this.destination.push(newValue);
   }
+  public deleteDestinationAll() {
+    if (typeof(this.destination) !== 'undefined') {
+       delete this.destination;
+    }
+    return;
+  }
+  
 
   public getDestination(): MessageHeaderDestination[] | undefined {
       return this.destination;
@@ -541,6 +569,13 @@ export class MessageHeader {
     }
     this.focus.push(newValue);
   }
+  public deleteFocusAll() {
+    if (typeof(this.focus) !== 'undefined') {
+       delete this.focus;
+    }
+    return;
+  }
+  
 
   public getFocus(): Reference[] | undefined {
       return this.focus;

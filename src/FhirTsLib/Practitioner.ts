@@ -440,6 +440,13 @@ export class Practitioner {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -458,6 +465,13 @@ export class Practitioner {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -476,6 +490,13 @@ export class Practitioner {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -494,6 +515,13 @@ export class Practitioner {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -512,6 +540,13 @@ export class Practitioner {
     }
     this.name.push(newValue);
   }
+  public deleteNameAll() {
+    if (typeof(this.name) !== 'undefined') {
+       delete this.name;
+    }
+    return;
+  }
+  
 
   public getName(): HumanName[] | undefined {
       return this.name;
@@ -530,6 +565,13 @@ export class Practitioner {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -548,6 +590,13 @@ export class Practitioner {
     }
     this.address.push(newValue);
   }
+  public deleteAddressAll() {
+    if (typeof(this.address) !== 'undefined') {
+       delete this.address;
+    }
+    return;
+  }
+  
 
   public getAddress(): Address[] | undefined {
       return this.address;
@@ -623,6 +672,13 @@ export class Practitioner {
     }
     this.photo.push(newValue);
   }
+  public deletePhotoAll() {
+    if (typeof(this.photo) !== 'undefined') {
+       delete this.photo;
+    }
+    return;
+  }
+  
 
   public getPhoto(): Attachment[] | undefined {
       return this.photo;
@@ -641,6 +697,13 @@ export class Practitioner {
     }
     this.qualification.push(newValue);
   }
+  public deleteQualificationAll() {
+    if (typeof(this.qualification) !== 'undefined') {
+       delete this.qualification;
+    }
+    return;
+  }
+  
 
   public getQualification(): PractitionerQualification[] | undefined {
       return this.qualification;
@@ -659,6 +722,13 @@ export class Practitioner {
     }
     this.communication.push(newValue);
   }
+  public deleteCommunicationAll() {
+    if (typeof(this.communication) !== 'undefined') {
+       delete this.communication;
+    }
+    return;
+  }
+  
 
   public getCommunication(): CodeableConcept[] | undefined {
       return this.communication;

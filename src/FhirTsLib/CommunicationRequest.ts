@@ -539,6 +539,13 @@ export class CommunicationRequest {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -557,6 +564,13 @@ export class CommunicationRequest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -575,6 +589,13 @@ export class CommunicationRequest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -593,6 +614,13 @@ export class CommunicationRequest {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -611,6 +639,13 @@ export class CommunicationRequest {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -629,6 +664,13 @@ export class CommunicationRequest {
     }
     this.replaces.push(newValue);
   }
+  public deleteReplacesAll() {
+    if (typeof(this.replaces) !== 'undefined') {
+       delete this.replaces;
+    }
+    return;
+  }
+  
 
   public getReplaces(): Reference[] | undefined {
       return this.replaces;
@@ -675,6 +717,13 @@ export class CommunicationRequest {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -721,6 +770,13 @@ export class CommunicationRequest {
     }
     this.medium.push(newValue);
   }
+  public deleteMediumAll() {
+    if (typeof(this.medium) !== 'undefined') {
+       delete this.medium;
+    }
+    return;
+  }
+  
 
   public getMedium(): CodeableConcept[] | undefined {
       return this.medium;
@@ -739,6 +795,13 @@ export class CommunicationRequest {
     }
     this.about.push(newValue);
   }
+  public deleteAboutAll() {
+    if (typeof(this.about) !== 'undefined') {
+       delete this.about;
+    }
+    return;
+  }
+  
 
   public getAbout(): Reference[] | undefined {
       return this.about;
@@ -757,6 +820,13 @@ export class CommunicationRequest {
     }
     this.payload.push(newValue);
   }
+  public deletePayloadAll() {
+    if (typeof(this.payload) !== 'undefined') {
+       delete this.payload;
+    }
+    return;
+  }
+  
 
   public getPayload(): CommunicationRequestPayload[] | undefined {
       return this.payload;
@@ -831,6 +901,13 @@ export class CommunicationRequest {
     }
     this.recipient.push(newValue);
   }
+  public deleteRecipientAll() {
+    if (typeof(this.recipient) !== 'undefined') {
+       delete this.recipient;
+    }
+    return;
+  }
+  
 
   public getRecipient(): Reference[] | undefined {
       return this.recipient;
@@ -849,6 +926,13 @@ export class CommunicationRequest {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -867,6 +951,13 @@ export class CommunicationRequest {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -885,6 +976,13 @@ export class CommunicationRequest {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

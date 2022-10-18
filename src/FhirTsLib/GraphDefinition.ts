@@ -514,6 +514,13 @@ export class GraphDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -532,6 +539,13 @@ export class GraphDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -550,6 +564,13 @@ export class GraphDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -737,6 +758,13 @@ export class GraphDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -783,6 +811,13 @@ export class GraphDefinition {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -801,6 +836,13 @@ export class GraphDefinition {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -904,6 +946,13 @@ export class GraphDefinition {
     }
     this.link.push(newValue);
   }
+  public deleteLinkAll() {
+    if (typeof(this.link) !== 'undefined') {
+       delete this.link;
+    }
+    return;
+  }
+  
 
   public getLink(): GraphDefinitionLink[] | undefined {
       return this.link;

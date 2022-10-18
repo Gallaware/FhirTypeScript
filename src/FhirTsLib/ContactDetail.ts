@@ -88,6 +88,13 @@ export class ContactDetail {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -134,6 +141,13 @@ export class ContactDetail {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;

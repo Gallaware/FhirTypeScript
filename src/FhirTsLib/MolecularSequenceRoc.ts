@@ -176,6 +176,13 @@ export class MolecularSequenceRoc {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -194,6 +201,13 @@ export class MolecularSequenceRoc {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -212,6 +226,13 @@ export class MolecularSequenceRoc {
     }
     this.score.push(newValue);
   }
+  public deleteScoreAll() {
+    if (typeof(this.score) !== 'undefined') {
+       delete this.score;
+    }
+    return;
+  }
+  
 
   public getScore(): number[] | undefined {
       return this.score;
@@ -230,6 +251,13 @@ export class MolecularSequenceRoc {
     }
     this._score.push(newValue);
   }
+  public delete_scoreAll() {
+    if (typeof(this._score) !== 'undefined') {
+       delete this._score;
+    }
+    return;
+  }
+  
 
   public get_score(): Element[] | undefined {
       return this._score;
@@ -248,6 +276,13 @@ export class MolecularSequenceRoc {
     }
     this.numTP.push(newValue);
   }
+  public deleteNumTPAll() {
+    if (typeof(this.numTP) !== 'undefined') {
+       delete this.numTP;
+    }
+    return;
+  }
+  
 
   public getNumTP(): number[] | undefined {
       return this.numTP;
@@ -266,6 +301,13 @@ export class MolecularSequenceRoc {
     }
     this._numTP.push(newValue);
   }
+  public delete_numTPAll() {
+    if (typeof(this._numTP) !== 'undefined') {
+       delete this._numTP;
+    }
+    return;
+  }
+  
 
   public get_numTP(): Element[] | undefined {
       return this._numTP;
@@ -284,6 +326,13 @@ export class MolecularSequenceRoc {
     }
     this.numFP.push(newValue);
   }
+  public deleteNumFPAll() {
+    if (typeof(this.numFP) !== 'undefined') {
+       delete this.numFP;
+    }
+    return;
+  }
+  
 
   public getNumFP(): number[] | undefined {
       return this.numFP;
@@ -302,6 +351,13 @@ export class MolecularSequenceRoc {
     }
     this._numFP.push(newValue);
   }
+  public delete_numFPAll() {
+    if (typeof(this._numFP) !== 'undefined') {
+       delete this._numFP;
+    }
+    return;
+  }
+  
 
   public get_numFP(): Element[] | undefined {
       return this._numFP;
@@ -320,6 +376,13 @@ export class MolecularSequenceRoc {
     }
     this.numFN.push(newValue);
   }
+  public deleteNumFNAll() {
+    if (typeof(this.numFN) !== 'undefined') {
+       delete this.numFN;
+    }
+    return;
+  }
+  
 
   public getNumFN(): number[] | undefined {
       return this.numFN;
@@ -338,6 +401,13 @@ export class MolecularSequenceRoc {
     }
     this._numFN.push(newValue);
   }
+  public delete_numFNAll() {
+    if (typeof(this._numFN) !== 'undefined') {
+       delete this._numFN;
+    }
+    return;
+  }
+  
 
   public get_numFN(): Element[] | undefined {
       return this._numFN;
@@ -356,6 +426,13 @@ export class MolecularSequenceRoc {
     }
     this.precision.push(newValue);
   }
+  public deletePrecisionAll() {
+    if (typeof(this.precision) !== 'undefined') {
+       delete this.precision;
+    }
+    return;
+  }
+  
 
   public getPrecision(): number[] | undefined {
       return this.precision;
@@ -374,6 +451,13 @@ export class MolecularSequenceRoc {
     }
     this._precision.push(newValue);
   }
+  public delete_precisionAll() {
+    if (typeof(this._precision) !== 'undefined') {
+       delete this._precision;
+    }
+    return;
+  }
+  
 
   public get_precision(): Element[] | undefined {
       return this._precision;
@@ -392,6 +476,13 @@ export class MolecularSequenceRoc {
     }
     this.sensitivity.push(newValue);
   }
+  public deleteSensitivityAll() {
+    if (typeof(this.sensitivity) !== 'undefined') {
+       delete this.sensitivity;
+    }
+    return;
+  }
+  
 
   public getSensitivity(): number[] | undefined {
       return this.sensitivity;
@@ -410,6 +501,13 @@ export class MolecularSequenceRoc {
     }
     this._sensitivity.push(newValue);
   }
+  public delete_sensitivityAll() {
+    if (typeof(this._sensitivity) !== 'undefined') {
+       delete this._sensitivity;
+    }
+    return;
+  }
+  
 
   public get_sensitivity(): Element[] | undefined {
       return this._sensitivity;
@@ -428,6 +526,13 @@ export class MolecularSequenceRoc {
     }
     this.fMeasure.push(newValue);
   }
+  public deleteFMeasureAll() {
+    if (typeof(this.fMeasure) !== 'undefined') {
+       delete this.fMeasure;
+    }
+    return;
+  }
+  
 
   public getFMeasure(): number[] | undefined {
       return this.fMeasure;
@@ -446,6 +551,13 @@ export class MolecularSequenceRoc {
     }
     this._fMeasure.push(newValue);
   }
+  public delete_fMeasureAll() {
+    if (typeof(this._fMeasure) !== 'undefined') {
+       delete this._fMeasure;
+    }
+    return;
+  }
+  
 
   public get_fMeasure(): Element[] | undefined {
       return this._fMeasure;

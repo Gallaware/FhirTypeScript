@@ -356,6 +356,13 @@ export class OperationOutcome {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -374,6 +381,13 @@ export class OperationOutcome {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -392,6 +406,13 @@ export class OperationOutcome {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -410,6 +431,13 @@ export class OperationOutcome {
     }
     this.issue.push(newValue);
   }
+  public deleteIssueAll() {
+    if (typeof(this.issue) !== 'undefined') {
+       delete this.issue;
+    }
+    return;
+  }
+  
 
   public getIssue(): OperationOutcomeIssue[] | undefined {
       return this.issue;

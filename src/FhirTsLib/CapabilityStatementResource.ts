@@ -278,6 +278,13 @@ export class CapabilityStatementResource {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -296,6 +303,13 @@ export class CapabilityStatementResource {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -371,6 +385,13 @@ export class CapabilityStatementResource {
     }
     this.supportedProfile.push(newValue);
   }
+  public deleteSupportedProfileAll() {
+    if (typeof(this.supportedProfile) !== 'undefined') {
+       delete this.supportedProfile;
+    }
+    return;
+  }
+  
 
   public getSupportedProfile(): string[] | undefined {
       return this.supportedProfile;
@@ -417,6 +438,13 @@ export class CapabilityStatementResource {
     }
     this.interaction.push(newValue);
   }
+  public deleteInteractionAll() {
+    if (typeof(this.interaction) !== 'undefined') {
+       delete this.interaction;
+    }
+    return;
+  }
+  
 
   public getInteraction(): CapabilityStatementInteraction[] | undefined {
       return this.interaction;
@@ -522,6 +550,13 @@ export class CapabilityStatementResource {
     }
     this.referencePolicy.push(newValue);
   }
+  public deleteReferencePolicyAll() {
+    if (typeof(this.referencePolicy) !== 'undefined') {
+       delete this.referencePolicy;
+    }
+    return;
+  }
+  
 
   public getReferencePolicy(): string[] | undefined {
       return this.referencePolicy;
@@ -540,6 +575,13 @@ export class CapabilityStatementResource {
     }
     this._referencePolicy.push(newValue);
   }
+  public delete_referencePolicyAll() {
+    if (typeof(this._referencePolicy) !== 'undefined') {
+       delete this._referencePolicy;
+    }
+    return;
+  }
+  
 
   public get_referencePolicy(): Element[] | undefined {
       return this._referencePolicy;
@@ -558,6 +600,13 @@ export class CapabilityStatementResource {
     }
     this.searchInclude.push(newValue);
   }
+  public deleteSearchIncludeAll() {
+    if (typeof(this.searchInclude) !== 'undefined') {
+       delete this.searchInclude;
+    }
+    return;
+  }
+  
 
   public getSearchInclude(): string[] | undefined {
       return this.searchInclude;
@@ -576,6 +625,13 @@ export class CapabilityStatementResource {
     }
     this._searchInclude.push(newValue);
   }
+  public delete_searchIncludeAll() {
+    if (typeof(this._searchInclude) !== 'undefined') {
+       delete this._searchInclude;
+    }
+    return;
+  }
+  
 
   public get_searchInclude(): Element[] | undefined {
       return this._searchInclude;
@@ -594,6 +650,13 @@ export class CapabilityStatementResource {
     }
     this.searchRevInclude.push(newValue);
   }
+  public deleteSearchRevIncludeAll() {
+    if (typeof(this.searchRevInclude) !== 'undefined') {
+       delete this.searchRevInclude;
+    }
+    return;
+  }
+  
 
   public getSearchRevInclude(): string[] | undefined {
       return this.searchRevInclude;
@@ -612,6 +675,13 @@ export class CapabilityStatementResource {
     }
     this._searchRevInclude.push(newValue);
   }
+  public delete_searchRevIncludeAll() {
+    if (typeof(this._searchRevInclude) !== 'undefined') {
+       delete this._searchRevInclude;
+    }
+    return;
+  }
+  
 
   public get_searchRevInclude(): Element[] | undefined {
       return this._searchRevInclude;
@@ -630,6 +700,13 @@ export class CapabilityStatementResource {
     }
     this.searchParam.push(newValue);
   }
+  public deleteSearchParamAll() {
+    if (typeof(this.searchParam) !== 'undefined') {
+       delete this.searchParam;
+    }
+    return;
+  }
+  
 
   public getSearchParam(): CapabilityStatementSearchParam[] | undefined {
       return this.searchParam;
@@ -648,6 +725,13 @@ export class CapabilityStatementResource {
     }
     this.operation.push(newValue);
   }
+  public deleteOperationAll() {
+    if (typeof(this.operation) !== 'undefined') {
+       delete this.operation;
+    }
+    return;
+  }
+  
 
   public getOperation(): CapabilityStatementOperation[] | undefined {
       return this.operation;

@@ -117,6 +117,13 @@ export class MeasureReportGroup {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -135,6 +142,13 @@ export class MeasureReportGroup {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -153,6 +167,13 @@ export class MeasureReportGroup {
     }
     this.population.push(newValue);
   }
+  public deletePopulationAll() {
+    if (typeof(this.population) !== 'undefined') {
+       delete this.population;
+    }
+    return;
+  }
+  
 
   public getPopulation(): MeasureReportPopulation[] | undefined {
       return this.population;
@@ -171,6 +192,13 @@ export class MeasureReportGroup {
     }
     this.stratifier.push(newValue);
   }
+  public deleteStratifierAll() {
+    if (typeof(this.stratifier) !== 'undefined') {
+       delete this.stratifier;
+    }
+    return;
+  }
+  
 
   public getStratifier(): MeasureReportStratifier[] | undefined {
       return this.stratifier;

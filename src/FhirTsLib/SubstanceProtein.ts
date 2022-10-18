@@ -401,6 +401,13 @@ export class SubstanceProtein {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -419,6 +426,13 @@ export class SubstanceProtein {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -437,6 +451,13 @@ export class SubstanceProtein {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -455,6 +476,13 @@ export class SubstanceProtein {
     }
     this.disulfideLinkage.push(newValue);
   }
+  public deleteDisulfideLinkageAll() {
+    if (typeof(this.disulfideLinkage) !== 'undefined') {
+       delete this.disulfideLinkage;
+    }
+    return;
+  }
+  
 
   public getDisulfideLinkage(): string[] | undefined {
       return this.disulfideLinkage;
@@ -473,6 +501,13 @@ export class SubstanceProtein {
     }
     this._disulfideLinkage.push(newValue);
   }
+  public delete_disulfideLinkageAll() {
+    if (typeof(this._disulfideLinkage) !== 'undefined') {
+       delete this._disulfideLinkage;
+    }
+    return;
+  }
+  
 
   public get_disulfideLinkage(): Element[] | undefined {
       return this._disulfideLinkage;
@@ -491,6 +526,13 @@ export class SubstanceProtein {
     }
     this.subunit.push(newValue);
   }
+  public deleteSubunitAll() {
+    if (typeof(this.subunit) !== 'undefined') {
+       delete this.subunit;
+    }
+    return;
+  }
+  
 
   public getSubunit(): SubstanceProteinSubunit[] | undefined {
       return this.subunit;

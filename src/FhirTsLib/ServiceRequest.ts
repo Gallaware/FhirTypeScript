@@ -681,6 +681,13 @@ export class ServiceRequest {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -699,6 +706,13 @@ export class ServiceRequest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -717,6 +731,13 @@ export class ServiceRequest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -735,6 +756,13 @@ export class ServiceRequest {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -753,6 +781,13 @@ export class ServiceRequest {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -771,6 +806,13 @@ export class ServiceRequest {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -789,6 +831,13 @@ export class ServiceRequest {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -807,6 +856,13 @@ export class ServiceRequest {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -825,6 +881,13 @@ export class ServiceRequest {
     }
     this.replaces.push(newValue);
   }
+  public deleteReplacesAll() {
+    if (typeof(this.replaces) !== 'undefined') {
+       delete this.replaces;
+    }
+    return;
+  }
+  
 
   public getReplaces(): Reference[] | undefined {
       return this.replaces;
@@ -899,6 +962,13 @@ export class ServiceRequest {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -945,6 +1015,13 @@ export class ServiceRequest {
     }
     this.orderDetail.push(newValue);
   }
+  public deleteOrderDetailAll() {
+    if (typeof(this.orderDetail) !== 'undefined') {
+       delete this.orderDetail;
+    }
+    return;
+  }
+  
 
   public getOrderDetail(): CodeableConcept[] | undefined {
       return this.orderDetail;
@@ -1019,6 +1096,13 @@ export class ServiceRequest {
     }
     this.performer.push(newValue);
   }
+  public deletePerformerAll() {
+    if (typeof(this.performer) !== 'undefined') {
+       delete this.performer;
+    }
+    return;
+  }
+  
 
   public getPerformer(): Reference[] | undefined {
       return this.performer;
@@ -1037,6 +1121,13 @@ export class ServiceRequest {
     }
     this.locationCode.push(newValue);
   }
+  public deleteLocationCodeAll() {
+    if (typeof(this.locationCode) !== 'undefined') {
+       delete this.locationCode;
+    }
+    return;
+  }
+  
 
   public getLocationCode(): CodeableConcept[] | undefined {
       return this.locationCode;
@@ -1055,6 +1146,13 @@ export class ServiceRequest {
     }
     this.locationReference.push(newValue);
   }
+  public deleteLocationReferenceAll() {
+    if (typeof(this.locationReference) !== 'undefined') {
+       delete this.locationReference;
+    }
+    return;
+  }
+  
 
   public getLocationReference(): Reference[] | undefined {
       return this.locationReference;
@@ -1073,6 +1171,13 @@ export class ServiceRequest {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -1091,6 +1196,13 @@ export class ServiceRequest {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -1109,6 +1221,13 @@ export class ServiceRequest {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): Reference[] | undefined {
       return this.insurance;
@@ -1127,6 +1246,13 @@ export class ServiceRequest {
     }
     this.supportingInfo.push(newValue);
   }
+  public deleteSupportingInfoAll() {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       delete this.supportingInfo;
+    }
+    return;
+  }
+  
 
   public getSupportingInfo(): Reference[] | undefined {
       return this.supportingInfo;
@@ -1145,6 +1271,13 @@ export class ServiceRequest {
     }
     this.specimen.push(newValue);
   }
+  public deleteSpecimenAll() {
+    if (typeof(this.specimen) !== 'undefined') {
+       delete this.specimen;
+    }
+    return;
+  }
+  
 
   public getSpecimen(): Reference[] | undefined {
       return this.specimen;
@@ -1163,6 +1296,13 @@ export class ServiceRequest {
     }
     this.bodySite.push(newValue);
   }
+  public deleteBodySiteAll() {
+    if (typeof(this.bodySite) !== 'undefined') {
+       delete this.bodySite;
+    }
+    return;
+  }
+  
 
   public getBodySite(): CodeableConcept[] | undefined {
       return this.bodySite;
@@ -1181,6 +1321,13 @@ export class ServiceRequest {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -1227,6 +1374,13 @@ export class ServiceRequest {
     }
     this.relevantHistory.push(newValue);
   }
+  public deleteRelevantHistoryAll() {
+    if (typeof(this.relevantHistory) !== 'undefined') {
+       delete this.relevantHistory;
+    }
+    return;
+  }
+  
 
   public getRelevantHistory(): Reference[] | undefined {
       return this.relevantHistory;

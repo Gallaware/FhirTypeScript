@@ -142,6 +142,13 @@ export class Signature {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -160,6 +167,13 @@ export class Signature {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): Coding[] | undefined {
       return this.type;

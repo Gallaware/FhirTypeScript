@@ -142,6 +142,13 @@ export class ImplementationGuideManifest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -160,6 +167,13 @@ export class ImplementationGuideManifest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -206,6 +220,13 @@ export class ImplementationGuideManifest {
     }
     this.resource.push(newValue);
   }
+  public deleteResourceAll() {
+    if (typeof(this.resource) !== 'undefined') {
+       delete this.resource;
+    }
+    return;
+  }
+  
 
   public getResource(): ImplementationGuideResource1[] | undefined {
       return this.resource;
@@ -224,6 +245,13 @@ export class ImplementationGuideManifest {
     }
     this.page.push(newValue);
   }
+  public deletePageAll() {
+    if (typeof(this.page) !== 'undefined') {
+       delete this.page;
+    }
+    return;
+  }
+  
 
   public getPage(): ImplementationGuidePage1[] | undefined {
       return this.page;
@@ -242,6 +270,13 @@ export class ImplementationGuideManifest {
     }
     this.image.push(newValue);
   }
+  public deleteImageAll() {
+    if (typeof(this.image) !== 'undefined') {
+       delete this.image;
+    }
+    return;
+  }
+  
 
   public getImage(): string[] | undefined {
       return this.image;
@@ -260,6 +295,13 @@ export class ImplementationGuideManifest {
     }
     this._image.push(newValue);
   }
+  public delete_imageAll() {
+    if (typeof(this._image) !== 'undefined') {
+       delete this._image;
+    }
+    return;
+  }
+  
 
   public get_image(): Element[] | undefined {
       return this._image;
@@ -278,6 +320,13 @@ export class ImplementationGuideManifest {
     }
     this.other.push(newValue);
   }
+  public deleteOtherAll() {
+    if (typeof(this.other) !== 'undefined') {
+       delete this.other;
+    }
+    return;
+  }
+  
 
   public getOther(): string[] | undefined {
       return this.other;
@@ -296,6 +345,13 @@ export class ImplementationGuideManifest {
     }
     this._other.push(newValue);
   }
+  public delete_otherAll() {
+    if (typeof(this._other) !== 'undefined') {
+       delete this._other;
+    }
+    return;
+  }
+  
 
   public get_other(): Element[] | undefined {
       return this._other;

@@ -113,6 +113,13 @@ export class SubstanceReferenceInformationClassification {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -131,6 +138,13 @@ export class SubstanceReferenceInformationClassification {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -149,6 +163,13 @@ export class SubstanceReferenceInformationClassification {
     }
     this.subtype.push(newValue);
   }
+  public deleteSubtypeAll() {
+    if (typeof(this.subtype) !== 'undefined') {
+       delete this.subtype;
+    }
+    return;
+  }
+  
 
   public getSubtype(): CodeableConcept[] | undefined {
       return this.subtype;
@@ -167,6 +188,13 @@ export class SubstanceReferenceInformationClassification {
     }
     this.source.push(newValue);
   }
+  public deleteSourceAll() {
+    if (typeof(this.source) !== 'undefined') {
+       delete this.source;
+    }
+    return;
+  }
+  
 
   public getSource(): Reference[] | undefined {
       return this.source;

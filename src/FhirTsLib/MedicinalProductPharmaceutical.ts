@@ -398,6 +398,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -416,6 +423,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -434,6 +448,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -452,6 +473,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -470,6 +498,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.ingredient.push(newValue);
   }
+  public deleteIngredientAll() {
+    if (typeof(this.ingredient) !== 'undefined') {
+       delete this.ingredient;
+    }
+    return;
+  }
+  
 
   public getIngredient(): Reference[] | undefined {
       return this.ingredient;
@@ -488,6 +523,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.device.push(newValue);
   }
+  public deleteDeviceAll() {
+    if (typeof(this.device) !== 'undefined') {
+       delete this.device;
+    }
+    return;
+  }
+  
 
   public getDevice(): Reference[] | undefined {
       return this.device;
@@ -506,6 +548,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.characteristics.push(newValue);
   }
+  public deleteCharacteristicsAll() {
+    if (typeof(this.characteristics) !== 'undefined') {
+       delete this.characteristics;
+    }
+    return;
+  }
+  
 
   public getCharacteristics(): MedicinalProductPharmaceuticalCharacteristics[] | undefined {
       return this.characteristics;
@@ -524,6 +573,13 @@ export class MedicinalProductPharmaceutical {
     }
     this.routeOfAdministration.push(newValue);
   }
+  public deleteRouteOfAdministrationAll() {
+    if (typeof(this.routeOfAdministration) !== 'undefined') {
+       delete this.routeOfAdministration;
+    }
+    return;
+  }
+  
 
   public getRouteOfAdministration(): MedicinalProductPharmaceuticalRouteOfAdministration[] | undefined {
       return this.routeOfAdministration;

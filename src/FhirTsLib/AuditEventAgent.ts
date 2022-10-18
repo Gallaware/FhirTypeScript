@@ -183,6 +183,13 @@ export class AuditEventAgent {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -201,6 +208,13 @@ export class AuditEventAgent {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -219,6 +233,13 @@ export class AuditEventAgent {
     }
     this.role.push(newValue);
   }
+  public deleteRoleAll() {
+    if (typeof(this.role) !== 'undefined') {
+       delete this.role;
+    }
+    return;
+  }
+  
 
   public getRole(): CodeableConcept[] | undefined {
       return this.role;
@@ -293,6 +314,13 @@ export class AuditEventAgent {
     }
     this.policy.push(newValue);
   }
+  public deletePolicyAll() {
+    if (typeof(this.policy) !== 'undefined') {
+       delete this.policy;
+    }
+    return;
+  }
+  
 
   public getPolicy(): string[] | undefined {
       return this.policy;
@@ -311,6 +339,13 @@ export class AuditEventAgent {
     }
     this._policy.push(newValue);
   }
+  public delete_policyAll() {
+    if (typeof(this._policy) !== 'undefined') {
+       delete this._policy;
+    }
+    return;
+  }
+  
 
   public get_policy(): Element[] | undefined {
       return this._policy;
@@ -329,6 +364,13 @@ export class AuditEventAgent {
     }
     this.purposeOfUse.push(newValue);
   }
+  public deletePurposeOfUseAll() {
+    if (typeof(this.purposeOfUse) !== 'undefined') {
+       delete this.purposeOfUse;
+    }
+    return;
+  }
+  
 
   public getPurposeOfUse(): CodeableConcept[] | undefined {
       return this.purposeOfUse;

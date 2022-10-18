@@ -105,6 +105,13 @@ export class EncounterParticipant {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -123,6 +130,13 @@ export class EncounterParticipant {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -141,6 +155,13 @@ export class EncounterParticipant {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;

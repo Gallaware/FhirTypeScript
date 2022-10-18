@@ -126,6 +126,13 @@ export class CarePlanActivity {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -144,6 +151,13 @@ export class CarePlanActivity {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -162,6 +176,13 @@ export class CarePlanActivity {
     }
     this.outcomeCodeableConcept.push(newValue);
   }
+  public deleteOutcomeCodeableConceptAll() {
+    if (typeof(this.outcomeCodeableConcept) !== 'undefined') {
+       delete this.outcomeCodeableConcept;
+    }
+    return;
+  }
+  
 
   public getOutcomeCodeableConcept(): CodeableConcept[] | undefined {
       return this.outcomeCodeableConcept;
@@ -180,6 +201,13 @@ export class CarePlanActivity {
     }
     this.outcomeReference.push(newValue);
   }
+  public deleteOutcomeReferenceAll() {
+    if (typeof(this.outcomeReference) !== 'undefined') {
+       delete this.outcomeReference;
+    }
+    return;
+  }
+  
 
   public getOutcomeReference(): Reference[] | undefined {
       return this.outcomeReference;
@@ -198,6 +226,13 @@ export class CarePlanActivity {
     }
     this.progress.push(newValue);
   }
+  public deleteProgressAll() {
+    if (typeof(this.progress) !== 'undefined') {
+       delete this.progress;
+    }
+    return;
+  }
+  
 
   public getProgress(): Annotation[] | undefined {
       return this.progress;

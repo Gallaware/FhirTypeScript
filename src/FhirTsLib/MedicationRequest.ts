@@ -644,6 +644,13 @@ export class MedicationRequest {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -662,6 +669,13 @@ export class MedicationRequest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -680,6 +694,13 @@ export class MedicationRequest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -698,6 +719,13 @@ export class MedicationRequest {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -772,6 +800,13 @@ export class MedicationRequest {
     }
     this.category.push(newValue);
   }
+  public deleteCategoryAll() {
+    if (typeof(this.category) !== 'undefined') {
+       delete this.category;
+    }
+    return;
+  }
+  
 
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
@@ -818,6 +853,13 @@ export class MedicationRequest {
     }
     this.supportingInformation.push(newValue);
   }
+  public deleteSupportingInformationAll() {
+    if (typeof(this.supportingInformation) !== 'undefined') {
+       delete this.supportingInformation;
+    }
+    return;
+  }
+  
 
   public getSupportingInformation(): Reference[] | undefined {
       return this.supportingInformation;
@@ -864,6 +906,13 @@ export class MedicationRequest {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -882,6 +931,13 @@ export class MedicationRequest {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -900,6 +956,13 @@ export class MedicationRequest {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -918,6 +981,13 @@ export class MedicationRequest {
     }
     this._instantiatesCanonical.push(newValue);
   }
+  public delete_instantiatesCanonicalAll() {
+    if (typeof(this._instantiatesCanonical) !== 'undefined') {
+       delete this._instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public get_instantiatesCanonical(): Element[] | undefined {
       return this._instantiatesCanonical;
@@ -936,6 +1006,13 @@ export class MedicationRequest {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -954,6 +1031,13 @@ export class MedicationRequest {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -972,6 +1056,13 @@ export class MedicationRequest {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -990,6 +1081,13 @@ export class MedicationRequest {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): Reference[] | undefined {
       return this.insurance;
@@ -1008,6 +1106,13 @@ export class MedicationRequest {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -1026,6 +1131,13 @@ export class MedicationRequest {
     }
     this.dosageInstruction.push(newValue);
   }
+  public deleteDosageInstructionAll() {
+    if (typeof(this.dosageInstruction) !== 'undefined') {
+       delete this.dosageInstruction;
+    }
+    return;
+  }
+  
 
   public getDosageInstruction(): Dosage[] | undefined {
       return this.dosageInstruction;
@@ -1044,6 +1156,13 @@ export class MedicationRequest {
     }
     this.detectedIssue.push(newValue);
   }
+  public deleteDetectedIssueAll() {
+    if (typeof(this.detectedIssue) !== 'undefined') {
+       delete this.detectedIssue;
+    }
+    return;
+  }
+  
 
   public getDetectedIssue(): Reference[] | undefined {
       return this.detectedIssue;
@@ -1062,6 +1181,13 @@ export class MedicationRequest {
     }
     this.eventHistory.push(newValue);
   }
+  public deleteEventHistoryAll() {
+    if (typeof(this.eventHistory) !== 'undefined') {
+       delete this.eventHistory;
+    }
+    return;
+  }
+  
 
   public getEventHistory(): Reference[] | undefined {
       return this.eventHistory;

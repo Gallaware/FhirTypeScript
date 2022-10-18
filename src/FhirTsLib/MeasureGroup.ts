@@ -119,6 +119,13 @@ export class MeasureGroup {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -137,6 +144,13 @@ export class MeasureGroup {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -183,6 +197,13 @@ export class MeasureGroup {
     }
     this.population.push(newValue);
   }
+  public deletePopulationAll() {
+    if (typeof(this.population) !== 'undefined') {
+       delete this.population;
+    }
+    return;
+  }
+  
 
   public getPopulation(): MeasurePopulation[] | undefined {
       return this.population;
@@ -201,6 +222,13 @@ export class MeasureGroup {
     }
     this.stratifier.push(newValue);
   }
+  public deleteStratifierAll() {
+    if (typeof(this.stratifier) !== 'undefined') {
+       delete this.stratifier;
+    }
+    return;
+  }
+  
 
   public getStratifier(): MeasureStratifier[] | undefined {
       return this.stratifier;

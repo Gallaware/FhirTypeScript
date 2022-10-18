@@ -170,6 +170,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -188,6 +195,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -206,6 +220,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -224,6 +245,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.material.push(newValue);
   }
+  public deleteMaterialAll() {
+    if (typeof(this.material) !== 'undefined') {
+       delete this.material;
+    }
+    return;
+  }
+  
 
   public getMaterial(): CodeableConcept[] | undefined {
       return this.material;
@@ -242,6 +270,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.alternateMaterial.push(newValue);
   }
+  public deleteAlternateMaterialAll() {
+    if (typeof(this.alternateMaterial) !== 'undefined') {
+       delete this.alternateMaterial;
+    }
+    return;
+  }
+  
 
   public getAlternateMaterial(): CodeableConcept[] | undefined {
       return this.alternateMaterial;
@@ -260,6 +295,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.device.push(newValue);
   }
+  public deleteDeviceAll() {
+    if (typeof(this.device) !== 'undefined') {
+       delete this.device;
+    }
+    return;
+  }
+  
 
   public getDevice(): Reference[] | undefined {
       return this.device;
@@ -278,6 +320,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.manufacturedItem.push(newValue);
   }
+  public deleteManufacturedItemAll() {
+    if (typeof(this.manufacturedItem) !== 'undefined') {
+       delete this.manufacturedItem;
+    }
+    return;
+  }
+  
 
   public getManufacturedItem(): Reference[] | undefined {
       return this.manufacturedItem;
@@ -296,6 +345,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.packageItem.push(newValue);
   }
+  public deletePackageItemAll() {
+    if (typeof(this.packageItem) !== 'undefined') {
+       delete this.packageItem;
+    }
+    return;
+  }
+  
 
   public getPackageItem(): MedicinalProductPackagedPackageItem[] | undefined {
       return this.packageItem;
@@ -314,6 +370,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.otherCharacteristics.push(newValue);
   }
+  public deleteOtherCharacteristicsAll() {
+    if (typeof(this.otherCharacteristics) !== 'undefined') {
+       delete this.otherCharacteristics;
+    }
+    return;
+  }
+  
 
   public getOtherCharacteristics(): CodeableConcept[] | undefined {
       return this.otherCharacteristics;
@@ -332,6 +395,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.shelfLifeStorage.push(newValue);
   }
+  public deleteShelfLifeStorageAll() {
+    if (typeof(this.shelfLifeStorage) !== 'undefined') {
+       delete this.shelfLifeStorage;
+    }
+    return;
+  }
+  
 
   public getShelfLifeStorage(): ProductShelfLife[] | undefined {
       return this.shelfLifeStorage;
@@ -350,6 +420,13 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.manufacturer.push(newValue);
   }
+  public deleteManufacturerAll() {
+    if (typeof(this.manufacturer) !== 'undefined') {
+       delete this.manufacturer;
+    }
+    return;
+  }
+  
 
   public getManufacturer(): Reference[] | undefined {
       return this.manufacturer;

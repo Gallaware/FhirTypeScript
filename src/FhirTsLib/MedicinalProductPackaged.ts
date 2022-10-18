@@ -416,6 +416,13 @@ export class MedicinalProductPackaged {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -434,6 +441,13 @@ export class MedicinalProductPackaged {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -452,6 +466,13 @@ export class MedicinalProductPackaged {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -470,6 +491,13 @@ export class MedicinalProductPackaged {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -488,6 +516,13 @@ export class MedicinalProductPackaged {
     }
     this.subject.push(newValue);
   }
+  public deleteSubjectAll() {
+    if (typeof(this.subject) !== 'undefined') {
+       delete this.subject;
+    }
+    return;
+  }
+  
 
   public getSubject(): Reference[] | undefined {
       return this.subject;
@@ -534,6 +569,13 @@ export class MedicinalProductPackaged {
     }
     this.marketingStatus.push(newValue);
   }
+  public deleteMarketingStatusAll() {
+    if (typeof(this.marketingStatus) !== 'undefined') {
+       delete this.marketingStatus;
+    }
+    return;
+  }
+  
 
   public getMarketingStatus(): MarketingStatus[] | undefined {
       return this.marketingStatus;
@@ -552,6 +594,13 @@ export class MedicinalProductPackaged {
     }
     this.manufacturer.push(newValue);
   }
+  public deleteManufacturerAll() {
+    if (typeof(this.manufacturer) !== 'undefined') {
+       delete this.manufacturer;
+    }
+    return;
+  }
+  
 
   public getManufacturer(): Reference[] | undefined {
       return this.manufacturer;
@@ -570,6 +619,13 @@ export class MedicinalProductPackaged {
     }
     this.batchIdentifier.push(newValue);
   }
+  public deleteBatchIdentifierAll() {
+    if (typeof(this.batchIdentifier) !== 'undefined') {
+       delete this.batchIdentifier;
+    }
+    return;
+  }
+  
 
   public getBatchIdentifier(): MedicinalProductPackagedBatchIdentifier[] | undefined {
       return this.batchIdentifier;
@@ -588,6 +644,13 @@ export class MedicinalProductPackaged {
     }
     this.packageItem.push(newValue);
   }
+  public deletePackageItemAll() {
+    if (typeof(this.packageItem) !== 'undefined') {
+       delete this.packageItem;
+    }
+    return;
+  }
+  
 
   public getPackageItem(): MedicinalProductPackagedPackageItem[] | undefined {
       return this.packageItem;

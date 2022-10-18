@@ -100,6 +100,13 @@ export class ConditionEvidence {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -118,6 +125,13 @@ export class ConditionEvidence {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -136,6 +150,13 @@ export class ConditionEvidence {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
@@ -154,6 +175,13 @@ export class ConditionEvidence {
     }
     this.detail.push(newValue);
   }
+  public deleteDetailAll() {
+    if (typeof(this.detail) !== 'undefined') {
+       delete this.detail;
+    }
+    return;
+  }
+  
 
   public getDetail(): Reference[] | undefined {
       return this.detail;

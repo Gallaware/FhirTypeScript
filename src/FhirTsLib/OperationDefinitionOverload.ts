@@ -111,6 +111,13 @@ export class OperationDefinitionOverload {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -129,6 +136,13 @@ export class OperationDefinitionOverload {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -147,6 +161,13 @@ export class OperationDefinitionOverload {
     }
     this.parameterName.push(newValue);
   }
+  public deleteParameterNameAll() {
+    if (typeof(this.parameterName) !== 'undefined') {
+       delete this.parameterName;
+    }
+    return;
+  }
+  
 
   public getParameterName(): string[] | undefined {
       return this.parameterName;
@@ -165,6 +186,13 @@ export class OperationDefinitionOverload {
     }
     this._parameterName.push(newValue);
   }
+  public delete_parameterNameAll() {
+    if (typeof(this._parameterName) !== 'undefined') {
+       delete this._parameterName;
+    }
+    return;
+  }
+  
 
   public get_parameterName(): Element[] | undefined {
       return this._parameterName;

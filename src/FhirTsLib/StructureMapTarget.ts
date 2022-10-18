@@ -185,6 +185,13 @@ export class StructureMapTarget {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -203,6 +210,13 @@ export class StructureMapTarget {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -334,6 +348,13 @@ export class StructureMapTarget {
     }
     this.listMode.push(newValue);
   }
+  public deleteListModeAll() {
+    if (typeof(this.listMode) !== 'undefined') {
+       delete this.listMode;
+    }
+    return;
+  }
+  
 
   public getListMode(): string[] | undefined {
       return this.listMode;
@@ -352,6 +373,13 @@ export class StructureMapTarget {
     }
     this._listMode.push(newValue);
   }
+  public delete_listModeAll() {
+    if (typeof(this._listMode) !== 'undefined') {
+       delete this._listMode;
+    }
+    return;
+  }
+  
 
   public get_listMode(): Element[] | undefined {
       return this._listMode;
@@ -427,6 +455,13 @@ export class StructureMapTarget {
     }
     this.parameter.push(newValue);
   }
+  public deleteParameterAll() {
+    if (typeof(this.parameter) !== 'undefined') {
+       delete this.parameter;
+    }
+    return;
+  }
+  
 
   public getParameter(): StructureMapParameter[] | undefined {
       return this.parameter;

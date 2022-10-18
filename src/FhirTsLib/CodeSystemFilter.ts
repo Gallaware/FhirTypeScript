@@ -136,6 +136,13 @@ export class CodeSystemFilter {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -154,6 +161,13 @@ export class CodeSystemFilter {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -228,6 +242,13 @@ export class CodeSystemFilter {
     }
     this.operator.push(newValue);
   }
+  public deleteOperatorAll() {
+    if (typeof(this.operator) !== 'undefined') {
+       delete this.operator;
+    }
+    return;
+  }
+  
 
   public getOperator(): string[] | undefined {
       return this.operator;
@@ -246,6 +267,13 @@ export class CodeSystemFilter {
     }
     this._operator.push(newValue);
   }
+  public delete_operatorAll() {
+    if (typeof(this._operator) !== 'undefined') {
+       delete this._operator;
+    }
+    return;
+  }
+  
 
   public get_operator(): Element[] | undefined {
       return this._operator;

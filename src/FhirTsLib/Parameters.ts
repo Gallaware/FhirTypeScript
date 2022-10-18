@@ -164,6 +164,13 @@ export class Parameters {
     }
     this.parameter.push(newValue);
   }
+  public deleteParameterAll() {
+    if (typeof(this.parameter) !== 'undefined') {
+       delete this.parameter;
+    }
+    return;
+  }
+  
 
   public getParameter(): ParametersParameter[] | undefined {
       return this.parameter;

@@ -541,6 +541,13 @@ export class DeviceDefinition {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -559,6 +566,13 @@ export class DeviceDefinition {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -577,6 +591,13 @@ export class DeviceDefinition {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -595,6 +616,13 @@ export class DeviceDefinition {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -613,6 +641,13 @@ export class DeviceDefinition {
     }
     this.udiDeviceIdentifier.push(newValue);
   }
+  public deleteUdiDeviceIdentifierAll() {
+    if (typeof(this.udiDeviceIdentifier) !== 'undefined') {
+       delete this.udiDeviceIdentifier;
+    }
+    return;
+  }
+  
 
   public getUdiDeviceIdentifier(): DeviceDefinitionUdiDeviceIdentifier[] | undefined {
       return this.udiDeviceIdentifier;
@@ -659,6 +694,13 @@ export class DeviceDefinition {
     }
     this.deviceName.push(newValue);
   }
+  public deleteDeviceNameAll() {
+    if (typeof(this.deviceName) !== 'undefined') {
+       delete this.deviceName;
+    }
+    return;
+  }
+  
 
   public getDeviceName(): DeviceDefinitionDeviceName[] | undefined {
       return this.deviceName;
@@ -705,6 +747,13 @@ export class DeviceDefinition {
     }
     this.specialization.push(newValue);
   }
+  public deleteSpecializationAll() {
+    if (typeof(this.specialization) !== 'undefined') {
+       delete this.specialization;
+    }
+    return;
+  }
+  
 
   public getSpecialization(): DeviceDefinitionSpecialization[] | undefined {
       return this.specialization;
@@ -723,6 +772,13 @@ export class DeviceDefinition {
     }
     this.version.push(newValue);
   }
+  public deleteVersionAll() {
+    if (typeof(this.version) !== 'undefined') {
+       delete this.version;
+    }
+    return;
+  }
+  
 
   public getVersion(): string[] | undefined {
       return this.version;
@@ -741,6 +797,13 @@ export class DeviceDefinition {
     }
     this._version.push(newValue);
   }
+  public delete_versionAll() {
+    if (typeof(this._version) !== 'undefined') {
+       delete this._version;
+    }
+    return;
+  }
+  
 
   public get_version(): Element[] | undefined {
       return this._version;
@@ -759,6 +822,13 @@ export class DeviceDefinition {
     }
     this.safety.push(newValue);
   }
+  public deleteSafetyAll() {
+    if (typeof(this.safety) !== 'undefined') {
+       delete this.safety;
+    }
+    return;
+  }
+  
 
   public getSafety(): CodeableConcept[] | undefined {
       return this.safety;
@@ -777,6 +847,13 @@ export class DeviceDefinition {
     }
     this.shelfLifeStorage.push(newValue);
   }
+  public deleteShelfLifeStorageAll() {
+    if (typeof(this.shelfLifeStorage) !== 'undefined') {
+       delete this.shelfLifeStorage;
+    }
+    return;
+  }
+  
 
   public getShelfLifeStorage(): ProductShelfLife[] | undefined {
       return this.shelfLifeStorage;
@@ -795,6 +872,13 @@ export class DeviceDefinition {
     }
     this.languageCode.push(newValue);
   }
+  public deleteLanguageCodeAll() {
+    if (typeof(this.languageCode) !== 'undefined') {
+       delete this.languageCode;
+    }
+    return;
+  }
+  
 
   public getLanguageCode(): CodeableConcept[] | undefined {
       return this.languageCode;
@@ -813,6 +897,13 @@ export class DeviceDefinition {
     }
     this.capability.push(newValue);
   }
+  public deleteCapabilityAll() {
+    if (typeof(this.capability) !== 'undefined') {
+       delete this.capability;
+    }
+    return;
+  }
+  
 
   public getCapability(): DeviceDefinitionCapability[] | undefined {
       return this.capability;
@@ -831,6 +922,13 @@ export class DeviceDefinition {
     }
     this.property.push(newValue);
   }
+  public deletePropertyAll() {
+    if (typeof(this.property) !== 'undefined') {
+       delete this.property;
+    }
+    return;
+  }
+  
 
   public getProperty(): DeviceDefinitionProperty[] | undefined {
       return this.property;
@@ -849,6 +947,13 @@ export class DeviceDefinition {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactPoint[] | undefined {
       return this.contact;
@@ -923,6 +1028,13 @@ export class DeviceDefinition {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -941,6 +1053,13 @@ export class DeviceDefinition {
     }
     this.material.push(newValue);
   }
+  public deleteMaterialAll() {
+    if (typeof(this.material) !== 'undefined') {
+       delete this.material;
+    }
+    return;
+  }
+  
 
   public getMaterial(): DeviceDefinitionMaterial[] | undefined {
       return this.material;

@@ -165,6 +165,13 @@ export class OperationOutcomeIssue {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -183,6 +190,13 @@ export class OperationOutcomeIssue {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -287,6 +301,13 @@ export class OperationOutcomeIssue {
     }
     this.location.push(newValue);
   }
+  public deleteLocationAll() {
+    if (typeof(this.location) !== 'undefined') {
+       delete this.location;
+    }
+    return;
+  }
+  
 
   public getLocation(): string[] | undefined {
       return this.location;
@@ -305,6 +326,13 @@ export class OperationOutcomeIssue {
     }
     this._location.push(newValue);
   }
+  public delete_locationAll() {
+    if (typeof(this._location) !== 'undefined') {
+       delete this._location;
+    }
+    return;
+  }
+  
 
   public get_location(): Element[] | undefined {
       return this._location;
@@ -323,6 +351,13 @@ export class OperationOutcomeIssue {
     }
     this.expression.push(newValue);
   }
+  public deleteExpressionAll() {
+    if (typeof(this.expression) !== 'undefined') {
+       delete this.expression;
+    }
+    return;
+  }
+  
 
   public getExpression(): string[] | undefined {
       return this.expression;
@@ -341,6 +376,13 @@ export class OperationOutcomeIssue {
     }
     this._expression.push(newValue);
   }
+  public delete_expressionAll() {
+    if (typeof(this._expression) !== 'undefined') {
+       delete this._expression;
+    }
+    return;
+  }
+  
 
   public get_expression(): Element[] | undefined {
       return this._expression;

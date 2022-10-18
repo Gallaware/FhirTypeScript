@@ -500,6 +500,13 @@ export class SupplyRequest {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -518,6 +525,13 @@ export class SupplyRequest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -536,6 +550,13 @@ export class SupplyRequest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -554,6 +575,13 @@ export class SupplyRequest {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -629,6 +657,13 @@ export class SupplyRequest {
     }
     this.parameter.push(newValue);
   }
+  public deleteParameterAll() {
+    if (typeof(this.parameter) !== 'undefined') {
+       delete this.parameter;
+    }
+    return;
+  }
+  
 
   public getParameter(): SupplyRequestParameter[] | undefined {
       return this.parameter;
@@ -703,6 +738,13 @@ export class SupplyRequest {
     }
     this.supplier.push(newValue);
   }
+  public deleteSupplierAll() {
+    if (typeof(this.supplier) !== 'undefined') {
+       delete this.supplier;
+    }
+    return;
+  }
+  
 
   public getSupplier(): Reference[] | undefined {
       return this.supplier;
@@ -721,6 +763,13 @@ export class SupplyRequest {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -739,6 +788,13 @@ export class SupplyRequest {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;

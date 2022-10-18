@@ -566,6 +566,13 @@ export class Appointment {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -584,6 +591,13 @@ export class Appointment {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -602,6 +616,13 @@ export class Appointment {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -620,6 +641,13 @@ export class Appointment {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -667,6 +695,13 @@ export class Appointment {
     }
     this.serviceCategory.push(newValue);
   }
+  public deleteServiceCategoryAll() {
+    if (typeof(this.serviceCategory) !== 'undefined') {
+       delete this.serviceCategory;
+    }
+    return;
+  }
+  
 
   public getServiceCategory(): CodeableConcept[] | undefined {
       return this.serviceCategory;
@@ -685,6 +720,13 @@ export class Appointment {
     }
     this.serviceType.push(newValue);
   }
+  public deleteServiceTypeAll() {
+    if (typeof(this.serviceType) !== 'undefined') {
+       delete this.serviceType;
+    }
+    return;
+  }
+  
 
   public getServiceType(): CodeableConcept[] | undefined {
       return this.serviceType;
@@ -703,6 +745,13 @@ export class Appointment {
     }
     this.specialty.push(newValue);
   }
+  public deleteSpecialtyAll() {
+    if (typeof(this.specialty) !== 'undefined') {
+       delete this.specialty;
+    }
+    return;
+  }
+  
 
   public getSpecialty(): CodeableConcept[] | undefined {
       return this.specialty;
@@ -721,6 +770,13 @@ export class Appointment {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -739,6 +795,13 @@ export class Appointment {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -785,6 +848,13 @@ export class Appointment {
     }
     this.supportingInformation.push(newValue);
   }
+  public deleteSupportingInformationAll() {
+    if (typeof(this.supportingInformation) !== 'undefined') {
+       delete this.supportingInformation;
+    }
+    return;
+  }
+  
 
   public getSupportingInformation(): Reference[] | undefined {
       return this.supportingInformation;
@@ -859,6 +929,13 @@ export class Appointment {
     }
     this.slot.push(newValue);
   }
+  public deleteSlotAll() {
+    if (typeof(this.slot) !== 'undefined') {
+       delete this.slot;
+    }
+    return;
+  }
+  
 
   public getSlot(): Reference[] | undefined {
       return this.slot;
@@ -961,6 +1038,13 @@ export class Appointment {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -979,6 +1063,13 @@ export class Appointment {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): AppointmentParticipant[] | undefined {
       return this.participant;
@@ -997,6 +1088,13 @@ export class Appointment {
     }
     this.requestedPeriod.push(newValue);
   }
+  public deleteRequestedPeriodAll() {
+    if (typeof(this.requestedPeriod) !== 'undefined') {
+       delete this.requestedPeriod;
+    }
+    return;
+  }
+  
 
   public getRequestedPeriod(): Period[] | undefined {
       return this.requestedPeriod;

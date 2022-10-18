@@ -137,6 +137,13 @@ export class EffectEvidenceSynthesisEffectEstimate {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -155,6 +162,13 @@ export class EffectEvidenceSynthesisEffectEstimate {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -201,6 +215,13 @@ export class EffectEvidenceSynthesisEffectEstimate {
     }
     this.precisionEstimate.push(newValue);
   }
+  public deletePrecisionEstimateAll() {
+    if (typeof(this.precisionEstimate) !== 'undefined') {
+       delete this.precisionEstimate;
+    }
+    return;
+  }
+  
 
   public getPrecisionEstimate(): EffectEvidenceSynthesisPrecisionEstimate[] | undefined {
       return this.precisionEstimate;

@@ -394,6 +394,13 @@ export class MedicinalProductIngredient {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -412,6 +419,13 @@ export class MedicinalProductIngredient {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -430,6 +444,13 @@ export class MedicinalProductIngredient {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -448,6 +469,13 @@ export class MedicinalProductIngredient {
     }
     this.manufacturer.push(newValue);
   }
+  public deleteManufacturerAll() {
+    if (typeof(this.manufacturer) !== 'undefined') {
+       delete this.manufacturer;
+    }
+    return;
+  }
+  
 
   public getManufacturer(): Reference[] | undefined {
       return this.manufacturer;
@@ -466,6 +494,13 @@ export class MedicinalProductIngredient {
     }
     this.specifiedSubstance.push(newValue);
   }
+  public deleteSpecifiedSubstanceAll() {
+    if (typeof(this.specifiedSubstance) !== 'undefined') {
+       delete this.specifiedSubstance;
+    }
+    return;
+  }
+  
 
   public getSpecifiedSubstance(): MedicinalProductIngredientSpecifiedSubstance[] | undefined {
       return this.specifiedSubstance;

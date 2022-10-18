@@ -123,6 +123,13 @@ export class BundleEntry {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -141,6 +148,13 @@ export class BundleEntry {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -159,6 +173,13 @@ export class BundleEntry {
     }
     this.link.push(newValue);
   }
+  public deleteLinkAll() {
+    if (typeof(this.link) !== 'undefined') {
+       delete this.link;
+    }
+    return;
+  }
+  
 
   public getLink(): BundleLink[] | undefined {
       return this.link;

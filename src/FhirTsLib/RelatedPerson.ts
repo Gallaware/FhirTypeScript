@@ -450,6 +450,13 @@ export class RelatedPerson {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -468,6 +475,13 @@ export class RelatedPerson {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -486,6 +500,13 @@ export class RelatedPerson {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -504,6 +525,13 @@ export class RelatedPerson {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -522,6 +550,13 @@ export class RelatedPerson {
     }
     this.relationship.push(newValue);
   }
+  public deleteRelationshipAll() {
+    if (typeof(this.relationship) !== 'undefined') {
+       delete this.relationship;
+    }
+    return;
+  }
+  
 
   public getRelationship(): CodeableConcept[] | undefined {
       return this.relationship;
@@ -540,6 +575,13 @@ export class RelatedPerson {
     }
     this.name.push(newValue);
   }
+  public deleteNameAll() {
+    if (typeof(this.name) !== 'undefined') {
+       delete this.name;
+    }
+    return;
+  }
+  
 
   public getName(): HumanName[] | undefined {
       return this.name;
@@ -558,6 +600,13 @@ export class RelatedPerson {
     }
     this.telecom.push(newValue);
   }
+  public deleteTelecomAll() {
+    if (typeof(this.telecom) !== 'undefined') {
+       delete this.telecom;
+    }
+    return;
+  }
+  
 
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
@@ -633,6 +682,13 @@ export class RelatedPerson {
     }
     this.address.push(newValue);
   }
+  public deleteAddressAll() {
+    if (typeof(this.address) !== 'undefined') {
+       delete this.address;
+    }
+    return;
+  }
+  
 
   public getAddress(): Address[] | undefined {
       return this.address;
@@ -651,6 +707,13 @@ export class RelatedPerson {
     }
     this.photo.push(newValue);
   }
+  public deletePhotoAll() {
+    if (typeof(this.photo) !== 'undefined') {
+       delete this.photo;
+    }
+    return;
+  }
+  
 
   public getPhoto(): Attachment[] | undefined {
       return this.photo;
@@ -669,6 +732,13 @@ export class RelatedPerson {
     }
     this.communication.push(newValue);
   }
+  public deleteCommunicationAll() {
+    if (typeof(this.communication) !== 'undefined') {
+       delete this.communication;
+    }
+    return;
+  }
+  
 
   public getCommunication(): RelatedPersonCommunication[] | undefined {
       return this.communication;

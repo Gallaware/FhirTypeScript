@@ -526,6 +526,13 @@ export class Encounter {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -544,6 +551,13 @@ export class Encounter {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -562,6 +576,13 @@ export class Encounter {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -580,6 +601,13 @@ export class Encounter {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -627,6 +655,13 @@ export class Encounter {
     }
     this.statusHistory.push(newValue);
   }
+  public deleteStatusHistoryAll() {
+    if (typeof(this.statusHistory) !== 'undefined') {
+       delete this.statusHistory;
+    }
+    return;
+  }
+  
 
   public getStatusHistory(): EncounterStatusHistory[] | undefined {
       return this.statusHistory;
@@ -645,6 +680,13 @@ export class Encounter {
     }
     this.classHistory.push(newValue);
   }
+  public deleteClassHistoryAll() {
+    if (typeof(this.classHistory) !== 'undefined') {
+       delete this.classHistory;
+    }
+    return;
+  }
+  
 
   public getClassHistory(): EncounterClassHistory[] | undefined {
       return this.classHistory;
@@ -663,6 +705,13 @@ export class Encounter {
     }
     this.type.push(newValue);
   }
+  public deleteTypeAll() {
+    if (typeof(this.type) !== 'undefined') {
+       delete this.type;
+    }
+    return;
+  }
+  
 
   public getType(): CodeableConcept[] | undefined {
       return this.type;
@@ -681,6 +730,13 @@ export class Encounter {
     }
     this.episodeOfCare.push(newValue);
   }
+  public deleteEpisodeOfCareAll() {
+    if (typeof(this.episodeOfCare) !== 'undefined') {
+       delete this.episodeOfCare;
+    }
+    return;
+  }
+  
 
   public getEpisodeOfCare(): Reference[] | undefined {
       return this.episodeOfCare;
@@ -699,6 +755,13 @@ export class Encounter {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -717,6 +780,13 @@ export class Encounter {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): EncounterParticipant[] | undefined {
       return this.participant;
@@ -735,6 +805,13 @@ export class Encounter {
     }
     this.appointment.push(newValue);
   }
+  public deleteAppointmentAll() {
+    if (typeof(this.appointment) !== 'undefined') {
+       delete this.appointment;
+    }
+    return;
+  }
+  
 
   public getAppointment(): Reference[] | undefined {
       return this.appointment;
@@ -753,6 +830,13 @@ export class Encounter {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -771,6 +855,13 @@ export class Encounter {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -789,6 +880,13 @@ export class Encounter {
     }
     this.diagnosis.push(newValue);
   }
+  public deleteDiagnosisAll() {
+    if (typeof(this.diagnosis) !== 'undefined') {
+       delete this.diagnosis;
+    }
+    return;
+  }
+  
 
   public getDiagnosis(): EncounterDiagnosis[] | undefined {
       return this.diagnosis;
@@ -807,6 +905,13 @@ export class Encounter {
     }
     this.account.push(newValue);
   }
+  public deleteAccountAll() {
+    if (typeof(this.account) !== 'undefined') {
+       delete this.account;
+    }
+    return;
+  }
+  
 
   public getAccount(): Reference[] | undefined {
       return this.account;
@@ -825,6 +930,13 @@ export class Encounter {
     }
     this.location.push(newValue);
   }
+  public deleteLocationAll() {
+    if (typeof(this.location) !== 'undefined') {
+       delete this.location;
+    }
+    return;
+  }
+  
 
   public getLocation(): EncounterLocation[] | undefined {
       return this.location;

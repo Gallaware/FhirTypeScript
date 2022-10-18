@@ -105,6 +105,13 @@ export class MedicationKnowledgeKinetics {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -123,6 +130,13 @@ export class MedicationKnowledgeKinetics {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -141,6 +155,13 @@ export class MedicationKnowledgeKinetics {
     }
     this.areaUnderCurve.push(newValue);
   }
+  public deleteAreaUnderCurveAll() {
+    if (typeof(this.areaUnderCurve) !== 'undefined') {
+       delete this.areaUnderCurve;
+    }
+    return;
+  }
+  
 
   public getAreaUnderCurve(): Quantity[] | undefined {
       return this.areaUnderCurve;
@@ -159,6 +180,13 @@ export class MedicationKnowledgeKinetics {
     }
     this.lethalDose50.push(newValue);
   }
+  public deleteLethalDose50All() {
+    if (typeof(this.lethalDose50) !== 'undefined') {
+       delete this.lethalDose50;
+    }
+    return;
+  }
+  
 
   public getLethalDose50(): Quantity[] | undefined {
       return this.lethalDose50;

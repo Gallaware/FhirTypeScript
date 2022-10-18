@@ -150,6 +150,13 @@ export class ExampleScenarioInstance {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -168,6 +175,13 @@ export class ExampleScenarioInstance {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -299,6 +313,13 @@ export class ExampleScenarioInstance {
     }
     this.version.push(newValue);
   }
+  public deleteVersionAll() {
+    if (typeof(this.version) !== 'undefined') {
+       delete this.version;
+    }
+    return;
+  }
+  
 
   public getVersion(): ExampleScenarioVersion[] | undefined {
       return this.version;
@@ -317,6 +338,13 @@ export class ExampleScenarioInstance {
     }
     this.containedInstance.push(newValue);
   }
+  public deleteContainedInstanceAll() {
+    if (typeof(this.containedInstance) !== 'undefined') {
+       delete this.containedInstance;
+    }
+    return;
+  }
+  
 
   public getContainedInstance(): ExampleScenarioContainedInstance[] | undefined {
       return this.containedInstance;

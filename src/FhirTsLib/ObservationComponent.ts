@@ -216,6 +216,13 @@ export class ObservationComponent {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -234,6 +241,13 @@ export class ObservationComponent {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -336,6 +350,13 @@ export class ObservationComponent {
     }
     this.interpretation.push(newValue);
   }
+  public deleteInterpretationAll() {
+    if (typeof(this.interpretation) !== 'undefined') {
+       delete this.interpretation;
+    }
+    return;
+  }
+  
 
   public getInterpretation(): CodeableConcept[] | undefined {
       return this.interpretation;
@@ -354,6 +375,13 @@ export class ObservationComponent {
     }
     this.referenceRange.push(newValue);
   }
+  public deleteReferenceRangeAll() {
+    if (typeof(this.referenceRange) !== 'undefined') {
+       delete this.referenceRange;
+    }
+    return;
+  }
+  
 
   public getReferenceRange(): ObservationReferenceRange[] | undefined {
       return this.referenceRange;

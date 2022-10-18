@@ -486,6 +486,13 @@ export class Invoice {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -504,6 +511,13 @@ export class Invoice {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -522,6 +536,13 @@ export class Invoice {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -540,6 +561,13 @@ export class Invoice {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -643,6 +671,13 @@ export class Invoice {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): InvoiceParticipant[] | undefined {
       return this.participant;
@@ -661,6 +696,13 @@ export class Invoice {
     }
     this.lineItem.push(newValue);
   }
+  public deleteLineItemAll() {
+    if (typeof(this.lineItem) !== 'undefined') {
+       delete this.lineItem;
+    }
+    return;
+  }
+  
 
   public getLineItem(): InvoiceLineItem[] | undefined {
       return this.lineItem;
@@ -679,6 +721,13 @@ export class Invoice {
     }
     this.totalPriceComponent.push(newValue);
   }
+  public deleteTotalPriceComponentAll() {
+    if (typeof(this.totalPriceComponent) !== 'undefined') {
+       delete this.totalPriceComponent;
+    }
+    return;
+  }
+  
 
   public getTotalPriceComponent(): InvoicePriceComponent[] | undefined {
       return this.totalPriceComponent;
@@ -725,6 +774,13 @@ export class Invoice {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

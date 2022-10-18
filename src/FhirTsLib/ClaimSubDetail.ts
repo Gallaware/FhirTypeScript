@@ -170,6 +170,13 @@ export class ClaimSubDetail {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -188,6 +195,13 @@ export class ClaimSubDetail {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -206,6 +220,13 @@ export class ClaimSubDetail {
     }
     this.modifier.push(newValue);
   }
+  public deleteModifierAll() {
+    if (typeof(this.modifier) !== 'undefined') {
+       delete this.modifier;
+    }
+    return;
+  }
+  
 
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
@@ -224,6 +245,13 @@ export class ClaimSubDetail {
     }
     this.programCode.push(newValue);
   }
+  public deleteProgramCodeAll() {
+    if (typeof(this.programCode) !== 'undefined') {
+       delete this.programCode;
+    }
+    return;
+  }
+  
 
   public getProgramCode(): CodeableConcept[] | undefined {
       return this.programCode;
@@ -242,6 +270,13 @@ export class ClaimSubDetail {
     }
     this.udi.push(newValue);
   }
+  public deleteUdiAll() {
+    if (typeof(this.udi) !== 'undefined') {
+       delete this.udi;
+    }
+    return;
+  }
+  
 
   public getUdi(): Reference[] | undefined {
       return this.udi;

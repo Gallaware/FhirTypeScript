@@ -314,6 +314,13 @@ export class RequestGroupAction {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -332,6 +339,13 @@ export class RequestGroupAction {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -490,6 +504,13 @@ export class RequestGroupAction {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
@@ -508,6 +529,13 @@ export class RequestGroupAction {
     }
     this.documentation.push(newValue);
   }
+  public deleteDocumentationAll() {
+    if (typeof(this.documentation) !== 'undefined') {
+       delete this.documentation;
+    }
+    return;
+  }
+  
 
   public getDocumentation(): RelatedArtifact[] | undefined {
       return this.documentation;
@@ -526,6 +554,13 @@ export class RequestGroupAction {
     }
     this.condition.push(newValue);
   }
+  public deleteConditionAll() {
+    if (typeof(this.condition) !== 'undefined') {
+       delete this.condition;
+    }
+    return;
+  }
+  
 
   public getCondition(): RequestGroupCondition[] | undefined {
       return this.condition;
@@ -544,6 +579,13 @@ export class RequestGroupAction {
     }
     this.relatedAction.push(newValue);
   }
+  public deleteRelatedActionAll() {
+    if (typeof(this.relatedAction) !== 'undefined') {
+       delete this.relatedAction;
+    }
+    return;
+  }
+  
 
   public getRelatedAction(): RequestGroupRelatedAction[] | undefined {
       return this.relatedAction;
@@ -590,6 +632,13 @@ export class RequestGroupAction {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): Reference[] | undefined {
       return this.participant;
@@ -748,6 +797,13 @@ export class RequestGroupAction {
     }
     this.action.push(newValue);
   }
+  public deleteActionAll() {
+    if (typeof(this.action) !== 'undefined') {
+       delete this.action;
+    }
+    return;
+  }
+  
 
   public getAction(): RequestGroupAction[] | undefined {
       return this.action;

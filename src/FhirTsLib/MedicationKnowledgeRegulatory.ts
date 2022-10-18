@@ -111,6 +111,13 @@ export class MedicationKnowledgeRegulatory {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -129,6 +136,13 @@ export class MedicationKnowledgeRegulatory {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -147,6 +161,13 @@ export class MedicationKnowledgeRegulatory {
     }
     this.substitution.push(newValue);
   }
+  public deleteSubstitutionAll() {
+    if (typeof(this.substitution) !== 'undefined') {
+       delete this.substitution;
+    }
+    return;
+  }
+  
 
   public getSubstitution(): MedicationKnowledgeSubstitution[] | undefined {
       return this.substitution;
@@ -165,6 +186,13 @@ export class MedicationKnowledgeRegulatory {
     }
     this.schedule.push(newValue);
   }
+  public deleteScheduleAll() {
+    if (typeof(this.schedule) !== 'undefined') {
+       delete this.schedule;
+    }
+    return;
+  }
+  
 
   public getSchedule(): MedicationKnowledgeSchedule[] | undefined {
       return this.schedule;

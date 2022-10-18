@@ -464,6 +464,13 @@ export class TestReport {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -482,6 +489,13 @@ export class TestReport {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -500,6 +514,13 @@ export class TestReport {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -660,6 +681,13 @@ export class TestReport {
     }
     this.participant.push(newValue);
   }
+  public deleteParticipantAll() {
+    if (typeof(this.participant) !== 'undefined') {
+       delete this.participant;
+    }
+    return;
+  }
+  
 
   public getParticipant(): TestReportParticipant[] | undefined {
       return this.participant;
@@ -678,6 +706,13 @@ export class TestReport {
     }
     this.test.push(newValue);
   }
+  public deleteTestAll() {
+    if (typeof(this.test) !== 'undefined') {
+       delete this.test;
+    }
+    return;
+  }
+  
 
   public getTest(): TestReportTest[] | undefined {
       return this.test;

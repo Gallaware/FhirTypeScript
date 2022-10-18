@@ -502,6 +502,13 @@ export class GuidanceResponse {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -520,6 +527,13 @@ export class GuidanceResponse {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -538,6 +552,13 @@ export class GuidanceResponse {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -556,6 +577,13 @@ export class GuidanceResponse {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -687,6 +715,13 @@ export class GuidanceResponse {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -705,6 +740,13 @@ export class GuidanceResponse {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -723,6 +765,13 @@ export class GuidanceResponse {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -741,6 +790,13 @@ export class GuidanceResponse {
     }
     this.evaluationMessage.push(newValue);
   }
+  public deleteEvaluationMessageAll() {
+    if (typeof(this.evaluationMessage) !== 'undefined') {
+       delete this.evaluationMessage;
+    }
+    return;
+  }
+  
 
   public getEvaluationMessage(): Reference[] | undefined {
       return this.evaluationMessage;
@@ -759,6 +815,13 @@ export class GuidanceResponse {
     }
     this.dataRequirement.push(newValue);
   }
+  public deleteDataRequirementAll() {
+    if (typeof(this.dataRequirement) !== 'undefined') {
+       delete this.dataRequirement;
+    }
+    return;
+  }
+  
 
   public getDataRequirement(): DataRequirement[] | undefined {
       return this.dataRequirement;

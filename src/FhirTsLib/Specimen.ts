@@ -456,6 +456,13 @@ export class Specimen {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -474,6 +481,13 @@ export class Specimen {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -492,6 +506,13 @@ export class Specimen {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -510,6 +531,13 @@ export class Specimen {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -585,6 +613,13 @@ export class Specimen {
     }
     this.parent.push(newValue);
   }
+  public deleteParentAll() {
+    if (typeof(this.parent) !== 'undefined') {
+       delete this.parent;
+    }
+    return;
+  }
+  
 
   public getParent(): Reference[] | undefined {
       return this.parent;
@@ -603,6 +638,13 @@ export class Specimen {
     }
     this.request.push(newValue);
   }
+  public deleteRequestAll() {
+    if (typeof(this.request) !== 'undefined') {
+       delete this.request;
+    }
+    return;
+  }
+  
 
   public getRequest(): Reference[] | undefined {
       return this.request;
@@ -621,6 +663,13 @@ export class Specimen {
     }
     this.processing.push(newValue);
   }
+  public deleteProcessingAll() {
+    if (typeof(this.processing) !== 'undefined') {
+       delete this.processing;
+    }
+    return;
+  }
+  
 
   public getProcessing(): SpecimenProcessing[] | undefined {
       return this.processing;
@@ -639,6 +688,13 @@ export class Specimen {
     }
     this.container.push(newValue);
   }
+  public deleteContainerAll() {
+    if (typeof(this.container) !== 'undefined') {
+       delete this.container;
+    }
+    return;
+  }
+  
 
   public getContainer(): SpecimenContainer[] | undefined {
       return this.container;
@@ -657,6 +713,13 @@ export class Specimen {
     }
     this.condition.push(newValue);
   }
+  public deleteConditionAll() {
+    if (typeof(this.condition) !== 'undefined') {
+       delete this.condition;
+    }
+    return;
+  }
+  
 
   public getCondition(): CodeableConcept[] | undefined {
       return this.condition;
@@ -675,6 +738,13 @@ export class Specimen {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;

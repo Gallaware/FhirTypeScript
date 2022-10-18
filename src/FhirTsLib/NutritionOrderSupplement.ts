@@ -133,6 +133,13 @@ export class NutritionOrderSupplement {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -151,6 +158,13 @@ export class NutritionOrderSupplement {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -197,6 +211,13 @@ export class NutritionOrderSupplement {
     }
     this.schedule.push(newValue);
   }
+  public deleteScheduleAll() {
+    if (typeof(this.schedule) !== 'undefined') {
+       delete this.schedule;
+    }
+    return;
+  }
+  
 
   public getSchedule(): Timing[] | undefined {
       return this.schedule;

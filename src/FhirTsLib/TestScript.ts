@@ -585,6 +585,13 @@ export class TestScript {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -603,6 +610,13 @@ export class TestScript {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -621,6 +635,13 @@ export class TestScript {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -836,6 +857,13 @@ export class TestScript {
     }
     this.contact.push(newValue);
   }
+  public deleteContactAll() {
+    if (typeof(this.contact) !== 'undefined') {
+       delete this.contact;
+    }
+    return;
+  }
+  
 
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
@@ -882,6 +910,13 @@ export class TestScript {
     }
     this.useContext.push(newValue);
   }
+  public deleteUseContextAll() {
+    if (typeof(this.useContext) !== 'undefined') {
+       delete this.useContext;
+    }
+    return;
+  }
+  
 
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
@@ -900,6 +935,13 @@ export class TestScript {
     }
     this.jurisdiction.push(newValue);
   }
+  public deleteJurisdictionAll() {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       delete this.jurisdiction;
+    }
+    return;
+  }
+  
 
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
@@ -974,6 +1016,13 @@ export class TestScript {
     }
     this.origin.push(newValue);
   }
+  public deleteOriginAll() {
+    if (typeof(this.origin) !== 'undefined') {
+       delete this.origin;
+    }
+    return;
+  }
+  
 
   public getOrigin(): TestScriptOrigin[] | undefined {
       return this.origin;
@@ -992,6 +1041,13 @@ export class TestScript {
     }
     this.destination.push(newValue);
   }
+  public deleteDestinationAll() {
+    if (typeof(this.destination) !== 'undefined') {
+       delete this.destination;
+    }
+    return;
+  }
+  
 
   public getDestination(): TestScriptDestination[] | undefined {
       return this.destination;
@@ -1010,6 +1066,13 @@ export class TestScript {
     }
     this.fixture.push(newValue);
   }
+  public deleteFixtureAll() {
+    if (typeof(this.fixture) !== 'undefined') {
+       delete this.fixture;
+    }
+    return;
+  }
+  
 
   public getFixture(): TestScriptFixture[] | undefined {
       return this.fixture;
@@ -1028,6 +1091,13 @@ export class TestScript {
     }
     this.profile.push(newValue);
   }
+  public deleteProfileAll() {
+    if (typeof(this.profile) !== 'undefined') {
+       delete this.profile;
+    }
+    return;
+  }
+  
 
   public getProfile(): Reference[] | undefined {
       return this.profile;
@@ -1046,6 +1116,13 @@ export class TestScript {
     }
     this.variable.push(newValue);
   }
+  public deleteVariableAll() {
+    if (typeof(this.variable) !== 'undefined') {
+       delete this.variable;
+    }
+    return;
+  }
+  
 
   public getVariable(): TestScriptVariable[] | undefined {
       return this.variable;
@@ -1064,6 +1141,13 @@ export class TestScript {
     }
     this.test.push(newValue);
   }
+  public deleteTestAll() {
+    if (typeof(this.test) !== 'undefined') {
+       delete this.test;
+    }
+    return;
+  }
+  
 
   public getTest(): TestScriptTest[] | undefined {
       return this.test;

@@ -116,6 +116,13 @@ export class ProductShelfLife {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -134,6 +141,13 @@ export class ProductShelfLife {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -152,6 +166,13 @@ export class ProductShelfLife {
     }
     this.specialPrecautionsForStorage.push(newValue);
   }
+  public deleteSpecialPrecautionsForStorageAll() {
+    if (typeof(this.specialPrecautionsForStorage) !== 'undefined') {
+       delete this.specialPrecautionsForStorage;
+    }
+    return;
+  }
+  
 
   public getSpecialPrecautionsForStorage(): CodeableConcept[] | undefined {
       return this.specialPrecautionsForStorage;

@@ -130,6 +130,13 @@ export class SpecimenProcessing {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -148,6 +155,13 @@ export class SpecimenProcessing {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -194,6 +208,13 @@ export class SpecimenProcessing {
     }
     this.additive.push(newValue);
   }
+  public deleteAdditiveAll() {
+    if (typeof(this.additive) !== 'undefined') {
+       delete this.additive;
+    }
+    return;
+  }
+  
 
   public getAdditive(): Reference[] | undefined {
       return this.additive;

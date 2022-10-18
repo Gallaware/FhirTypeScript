@@ -655,6 +655,13 @@ export class Contract {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -673,6 +680,13 @@ export class Contract {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -691,6 +705,13 @@ export class Contract {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -709,6 +730,13 @@ export class Contract {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -867,6 +895,13 @@ export class Contract {
     }
     this.subject.push(newValue);
   }
+  public deleteSubjectAll() {
+    if (typeof(this.subject) !== 'undefined') {
+       delete this.subject;
+    }
+    return;
+  }
+  
 
   public getSubject(): Reference[] | undefined {
       return this.subject;
@@ -885,6 +920,13 @@ export class Contract {
     }
     this.authority.push(newValue);
   }
+  public deleteAuthorityAll() {
+    if (typeof(this.authority) !== 'undefined') {
+       delete this.authority;
+    }
+    return;
+  }
+  
 
   public getAuthority(): Reference[] | undefined {
       return this.authority;
@@ -903,6 +945,13 @@ export class Contract {
     }
     this.domain.push(newValue);
   }
+  public deleteDomainAll() {
+    if (typeof(this.domain) !== 'undefined') {
+       delete this.domain;
+    }
+    return;
+  }
+  
 
   public getDomain(): Reference[] | undefined {
       return this.domain;
@@ -921,6 +970,13 @@ export class Contract {
     }
     this.site.push(newValue);
   }
+  public deleteSiteAll() {
+    if (typeof(this.site) !== 'undefined') {
+       delete this.site;
+    }
+    return;
+  }
+  
 
   public getSite(): Reference[] | undefined {
       return this.site;
@@ -1023,6 +1079,13 @@ export class Contract {
     }
     this.alias.push(newValue);
   }
+  public deleteAliasAll() {
+    if (typeof(this.alias) !== 'undefined') {
+       delete this.alias;
+    }
+    return;
+  }
+  
 
   public getAlias(): string[] | undefined {
       return this.alias;
@@ -1041,6 +1104,13 @@ export class Contract {
     }
     this._alias.push(newValue);
   }
+  public delete_aliasAll() {
+    if (typeof(this._alias) !== 'undefined') {
+       delete this._alias;
+    }
+    return;
+  }
+  
 
   public get_alias(): Element[] | undefined {
       return this._alias;
@@ -1059,6 +1129,13 @@ export class Contract {
     }
     this.subType.push(newValue);
   }
+  public deleteSubTypeAll() {
+    if (typeof(this.subType) !== 'undefined') {
+       delete this.subType;
+    }
+    return;
+  }
+  
 
   public getSubType(): CodeableConcept[] | undefined {
       return this.subType;
@@ -1077,6 +1154,13 @@ export class Contract {
     }
     this.term.push(newValue);
   }
+  public deleteTermAll() {
+    if (typeof(this.term) !== 'undefined') {
+       delete this.term;
+    }
+    return;
+  }
+  
 
   public getTerm(): ContractTerm[] | undefined {
       return this.term;
@@ -1095,6 +1179,13 @@ export class Contract {
     }
     this.supportingInfo.push(newValue);
   }
+  public deleteSupportingInfoAll() {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       delete this.supportingInfo;
+    }
+    return;
+  }
+  
 
   public getSupportingInfo(): Reference[] | undefined {
       return this.supportingInfo;
@@ -1113,6 +1204,13 @@ export class Contract {
     }
     this.relevantHistory.push(newValue);
   }
+  public deleteRelevantHistoryAll() {
+    if (typeof(this.relevantHistory) !== 'undefined') {
+       delete this.relevantHistory;
+    }
+    return;
+  }
+  
 
   public getRelevantHistory(): Reference[] | undefined {
       return this.relevantHistory;
@@ -1131,6 +1229,13 @@ export class Contract {
     }
     this.signer.push(newValue);
   }
+  public deleteSignerAll() {
+    if (typeof(this.signer) !== 'undefined') {
+       delete this.signer;
+    }
+    return;
+  }
+  
 
   public getSigner(): ContractSigner[] | undefined {
       return this.signer;
@@ -1149,6 +1254,13 @@ export class Contract {
     }
     this.friendly.push(newValue);
   }
+  public deleteFriendlyAll() {
+    if (typeof(this.friendly) !== 'undefined') {
+       delete this.friendly;
+    }
+    return;
+  }
+  
 
   public getFriendly(): ContractFriendly[] | undefined {
       return this.friendly;
@@ -1167,6 +1279,13 @@ export class Contract {
     }
     this.legal.push(newValue);
   }
+  public deleteLegalAll() {
+    if (typeof(this.legal) !== 'undefined') {
+       delete this.legal;
+    }
+    return;
+  }
+  
 
   public getLegal(): ContractLegal[] | undefined {
       return this.legal;
@@ -1185,6 +1304,13 @@ export class Contract {
     }
     this.rule.push(newValue);
   }
+  public deleteRuleAll() {
+    if (typeof(this.rule) !== 'undefined') {
+       delete this.rule;
+    }
+    return;
+  }
+  
 
   public getRule(): ContractRule[] | undefined {
       return this.rule;

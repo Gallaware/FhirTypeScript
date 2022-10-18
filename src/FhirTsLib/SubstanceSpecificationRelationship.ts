@@ -169,6 +169,13 @@ export class SubstanceSpecificationRelationship {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -187,6 +194,13 @@ export class SubstanceSpecificationRelationship {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -233,6 +247,13 @@ export class SubstanceSpecificationRelationship {
     }
     this.source.push(newValue);
   }
+  public deleteSourceAll() {
+    if (typeof(this.source) !== 'undefined') {
+       delete this.source;
+    }
+    return;
+  }
+  
 
   public getSource(): Reference[] | undefined {
       return this.source;

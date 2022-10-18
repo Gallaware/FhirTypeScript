@@ -580,6 +580,13 @@ export class DeviceRequest {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -598,6 +605,13 @@ export class DeviceRequest {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -616,6 +630,13 @@ export class DeviceRequest {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -634,6 +655,13 @@ export class DeviceRequest {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -652,6 +680,13 @@ export class DeviceRequest {
     }
     this.instantiatesCanonical.push(newValue);
   }
+  public deleteInstantiatesCanonicalAll() {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       delete this.instantiatesCanonical;
+    }
+    return;
+  }
+  
 
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
@@ -670,6 +705,13 @@ export class DeviceRequest {
     }
     this.instantiatesUri.push(newValue);
   }
+  public deleteInstantiatesUriAll() {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       delete this.instantiatesUri;
+    }
+    return;
+  }
+  
 
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
@@ -688,6 +730,13 @@ export class DeviceRequest {
     }
     this._instantiatesUri.push(newValue);
   }
+  public delete_instantiatesUriAll() {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       delete this._instantiatesUri;
+    }
+    return;
+  }
+  
 
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
@@ -706,6 +755,13 @@ export class DeviceRequest {
     }
     this.basedOn.push(newValue);
   }
+  public deleteBasedOnAll() {
+    if (typeof(this.basedOn) !== 'undefined') {
+       delete this.basedOn;
+    }
+    return;
+  }
+  
 
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
@@ -724,6 +780,13 @@ export class DeviceRequest {
     }
     this.priorRequest.push(newValue);
   }
+  public deletePriorRequestAll() {
+    if (typeof(this.priorRequest) !== 'undefined') {
+       delete this.priorRequest;
+    }
+    return;
+  }
+  
 
   public getPriorRequest(): Reference[] | undefined {
       return this.priorRequest;
@@ -826,6 +889,13 @@ export class DeviceRequest {
     }
     this.parameter.push(newValue);
   }
+  public deleteParameterAll() {
+    if (typeof(this.parameter) !== 'undefined') {
+       delete this.parameter;
+    }
+    return;
+  }
+  
 
   public getParameter(): DeviceRequestParameter[] | undefined {
       return this.parameter;
@@ -900,6 +970,13 @@ export class DeviceRequest {
     }
     this.reasonCode.push(newValue);
   }
+  public deleteReasonCodeAll() {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       delete this.reasonCode;
+    }
+    return;
+  }
+  
 
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
@@ -918,6 +995,13 @@ export class DeviceRequest {
     }
     this.reasonReference.push(newValue);
   }
+  public deleteReasonReferenceAll() {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       delete this.reasonReference;
+    }
+    return;
+  }
+  
 
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
@@ -936,6 +1020,13 @@ export class DeviceRequest {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): Reference[] | undefined {
       return this.insurance;
@@ -954,6 +1045,13 @@ export class DeviceRequest {
     }
     this.supportingInfo.push(newValue);
   }
+  public deleteSupportingInfoAll() {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       delete this.supportingInfo;
+    }
+    return;
+  }
+  
 
   public getSupportingInfo(): Reference[] | undefined {
       return this.supportingInfo;
@@ -972,6 +1070,13 @@ export class DeviceRequest {
     }
     this.note.push(newValue);
   }
+  public deleteNoteAll() {
+    if (typeof(this.note) !== 'undefined') {
+       delete this.note;
+    }
+    return;
+  }
+  
 
   public getNote(): Annotation[] | undefined {
       return this.note;
@@ -990,6 +1095,13 @@ export class DeviceRequest {
     }
     this.relevantHistory.push(newValue);
   }
+  public deleteRelevantHistoryAll() {
+    if (typeof(this.relevantHistory) !== 'undefined') {
+       delete this.relevantHistory;
+    }
+    return;
+  }
+  
 
   public getRelevantHistory(): Reference[] | undefined {
       return this.relevantHistory;

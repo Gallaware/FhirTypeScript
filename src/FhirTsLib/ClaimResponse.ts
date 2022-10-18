@@ -570,6 +570,13 @@ export class ClaimResponse {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -588,6 +595,13 @@ export class ClaimResponse {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -606,6 +620,13 @@ export class ClaimResponse {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -624,6 +645,13 @@ export class ClaimResponse {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -810,6 +838,13 @@ export class ClaimResponse {
     }
     this.item.push(newValue);
   }
+  public deleteItemAll() {
+    if (typeof(this.item) !== 'undefined') {
+       delete this.item;
+    }
+    return;
+  }
+  
 
   public getItem(): ClaimResponseItem[] | undefined {
       return this.item;
@@ -828,6 +863,13 @@ export class ClaimResponse {
     }
     this.addItem.push(newValue);
   }
+  public deleteAddItemAll() {
+    if (typeof(this.addItem) !== 'undefined') {
+       delete this.addItem;
+    }
+    return;
+  }
+  
 
   public getAddItem(): ClaimResponseAddItem[] | undefined {
       return this.addItem;
@@ -846,6 +888,13 @@ export class ClaimResponse {
     }
     this.adjudication.push(newValue);
   }
+  public deleteAdjudicationAll() {
+    if (typeof(this.adjudication) !== 'undefined') {
+       delete this.adjudication;
+    }
+    return;
+  }
+  
 
   public getAdjudication(): ClaimResponseAdjudication[] | undefined {
       return this.adjudication;
@@ -864,6 +913,13 @@ export class ClaimResponse {
     }
     this.total.push(newValue);
   }
+  public deleteTotalAll() {
+    if (typeof(this.total) !== 'undefined') {
+       delete this.total;
+    }
+    return;
+  }
+  
 
   public getTotal(): ClaimResponseTotal[] | undefined {
       return this.total;
@@ -882,6 +938,13 @@ export class ClaimResponse {
     }
     this.processNote.push(newValue);
   }
+  public deleteProcessNoteAll() {
+    if (typeof(this.processNote) !== 'undefined') {
+       delete this.processNote;
+    }
+    return;
+  }
+  
 
   public getProcessNote(): ClaimResponseProcessNote[] | undefined {
       return this.processNote;
@@ -900,6 +963,13 @@ export class ClaimResponse {
     }
     this.communicationRequest.push(newValue);
   }
+  public deleteCommunicationRequestAll() {
+    if (typeof(this.communicationRequest) !== 'undefined') {
+       delete this.communicationRequest;
+    }
+    return;
+  }
+  
 
   public getCommunicationRequest(): Reference[] | undefined {
       return this.communicationRequest;
@@ -918,6 +988,13 @@ export class ClaimResponse {
     }
     this.insurance.push(newValue);
   }
+  public deleteInsuranceAll() {
+    if (typeof(this.insurance) !== 'undefined') {
+       delete this.insurance;
+    }
+    return;
+  }
+  
 
   public getInsurance(): ClaimResponseInsurance[] | undefined {
       return this.insurance;
@@ -936,6 +1013,13 @@ export class ClaimResponse {
     }
     this.error.push(newValue);
   }
+  public deleteErrorAll() {
+    if (typeof(this.error) !== 'undefined') {
+       delete this.error;
+    }
+    return;
+  }
+  
 
   public getError(): ClaimResponseError[] | undefined {
       return this.error;

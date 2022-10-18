@@ -164,6 +164,13 @@ export class TestScriptCapability {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -182,6 +189,13 @@ export class TestScriptCapability {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -228,6 +242,13 @@ export class TestScriptCapability {
     }
     this.origin.push(newValue);
   }
+  public deleteOriginAll() {
+    if (typeof(this.origin) !== 'undefined') {
+       delete this.origin;
+    }
+    return;
+  }
+  
 
   public getOrigin(): number[] | undefined {
       return this.origin;
@@ -246,6 +267,13 @@ export class TestScriptCapability {
     }
     this._origin.push(newValue);
   }
+  public delete_originAll() {
+    if (typeof(this._origin) !== 'undefined') {
+       delete this._origin;
+    }
+    return;
+  }
+  
 
   public get_origin(): Element[] | undefined {
       return this._origin;
@@ -264,6 +292,13 @@ export class TestScriptCapability {
     }
     this.link.push(newValue);
   }
+  public deleteLinkAll() {
+    if (typeof(this.link) !== 'undefined') {
+       delete this.link;
+    }
+    return;
+  }
+  
 
   public getLink(): string[] | undefined {
       return this.link;
@@ -282,6 +317,13 @@ export class TestScriptCapability {
     }
     this._link.push(newValue);
   }
+  public delete_linkAll() {
+    if (typeof(this._link) !== 'undefined') {
+       delete this._link;
+    }
+    return;
+  }
+  
 
   public get_link(): Element[] | undefined {
       return this._link;

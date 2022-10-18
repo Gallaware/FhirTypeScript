@@ -125,6 +125,13 @@ export class ValueSetCompose {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -143,6 +150,13 @@ export class ValueSetCompose {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -189,6 +203,13 @@ export class ValueSetCompose {
     }
     this.include.push(newValue);
   }
+  public deleteIncludeAll() {
+    if (typeof(this.include) !== 'undefined') {
+       delete this.include;
+    }
+    return;
+  }
+  
 
   public getInclude(): ValueSetInclude[] | undefined {
       return this.include;
@@ -207,6 +228,13 @@ export class ValueSetCompose {
     }
     this.exclude.push(newValue);
   }
+  public deleteExcludeAll() {
+    if (typeof(this.exclude) !== 'undefined') {
+       delete this.exclude;
+    }
+    return;
+  }
+  
 
   public getExclude(): ValueSetInclude[] | undefined {
       return this.exclude;

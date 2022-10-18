@@ -486,6 +486,13 @@ export class SubstanceSpecification {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -504,6 +511,13 @@ export class SubstanceSpecification {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -522,6 +536,13 @@ export class SubstanceSpecification {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -568,6 +589,13 @@ export class SubstanceSpecification {
     }
     this.source.push(newValue);
   }
+  public deleteSourceAll() {
+    if (typeof(this.source) !== 'undefined') {
+       delete this.source;
+    }
+    return;
+  }
+  
 
   public getSource(): Reference[] | undefined {
       return this.source;
@@ -614,6 +642,13 @@ export class SubstanceSpecification {
     }
     this.moiety.push(newValue);
   }
+  public deleteMoietyAll() {
+    if (typeof(this.moiety) !== 'undefined') {
+       delete this.moiety;
+    }
+    return;
+  }
+  
 
   public getMoiety(): SubstanceSpecificationMoiety[] | undefined {
       return this.moiety;
@@ -632,6 +667,13 @@ export class SubstanceSpecification {
     }
     this.property.push(newValue);
   }
+  public deletePropertyAll() {
+    if (typeof(this.property) !== 'undefined') {
+       delete this.property;
+    }
+    return;
+  }
+  
 
   public getProperty(): SubstanceSpecificationProperty[] | undefined {
       return this.property;
@@ -650,6 +692,13 @@ export class SubstanceSpecification {
     }
     this.code.push(newValue);
   }
+  public deleteCodeAll() {
+    if (typeof(this.code) !== 'undefined') {
+       delete this.code;
+    }
+    return;
+  }
+  
 
   public getCode(): SubstanceSpecificationCode[] | undefined {
       return this.code;
@@ -668,6 +717,13 @@ export class SubstanceSpecification {
     }
     this.name.push(newValue);
   }
+  public deleteNameAll() {
+    if (typeof(this.name) !== 'undefined') {
+       delete this.name;
+    }
+    return;
+  }
+  
 
   public getName(): SubstanceSpecificationName[] | undefined {
       return this.name;
@@ -686,6 +742,13 @@ export class SubstanceSpecification {
     }
     this.molecularWeight.push(newValue);
   }
+  public deleteMolecularWeightAll() {
+    if (typeof(this.molecularWeight) !== 'undefined') {
+       delete this.molecularWeight;
+    }
+    return;
+  }
+  
 
   public getMolecularWeight(): SubstanceSpecificationMolecularWeight[] | undefined {
       return this.molecularWeight;
@@ -704,6 +767,13 @@ export class SubstanceSpecification {
     }
     this.relationship.push(newValue);
   }
+  public deleteRelationshipAll() {
+    if (typeof(this.relationship) !== 'undefined') {
+       delete this.relationship;
+    }
+    return;
+  }
+  
 
   public getRelationship(): SubstanceSpecificationRelationship[] | undefined {
       return this.relationship;

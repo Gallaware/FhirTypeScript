@@ -128,6 +128,13 @@ export class InsurancePlanPlan {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -146,6 +153,13 @@ export class InsurancePlanPlan {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -164,6 +178,13 @@ export class InsurancePlanPlan {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -182,6 +203,13 @@ export class InsurancePlanPlan {
     }
     this.coverageArea.push(newValue);
   }
+  public deleteCoverageAreaAll() {
+    if (typeof(this.coverageArea) !== 'undefined') {
+       delete this.coverageArea;
+    }
+    return;
+  }
+  
 
   public getCoverageArea(): Reference[] | undefined {
       return this.coverageArea;
@@ -200,6 +228,13 @@ export class InsurancePlanPlan {
     }
     this.network.push(newValue);
   }
+  public deleteNetworkAll() {
+    if (typeof(this.network) !== 'undefined') {
+       delete this.network;
+    }
+    return;
+  }
+  
 
   public getNetwork(): Reference[] | undefined {
       return this.network;
@@ -218,6 +253,13 @@ export class InsurancePlanPlan {
     }
     this.generalCost.push(newValue);
   }
+  public deleteGeneralCostAll() {
+    if (typeof(this.generalCost) !== 'undefined') {
+       delete this.generalCost;
+    }
+    return;
+  }
+  
 
   public getGeneralCost(): InsurancePlanGeneralCost[] | undefined {
       return this.generalCost;
@@ -236,6 +278,13 @@ export class InsurancePlanPlan {
     }
     this.specificCost.push(newValue);
   }
+  public deleteSpecificCostAll() {
+    if (typeof(this.specificCost) !== 'undefined') {
+       delete this.specificCost;
+    }
+    return;
+  }
+  
 
   public getSpecificCost(): InsurancePlanSpecificCost[] | undefined {
       return this.specificCost;

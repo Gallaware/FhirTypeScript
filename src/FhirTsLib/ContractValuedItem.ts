@@ -229,6 +229,13 @@ export class ContractValuedItem {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -247,6 +254,13 @@ export class ContractValuedItem {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -349,6 +363,13 @@ export class ContractValuedItem {
     }
     this.linkId.push(newValue);
   }
+  public deleteLinkIdAll() {
+    if (typeof(this.linkId) !== 'undefined') {
+       delete this.linkId;
+    }
+    return;
+  }
+  
 
   public getLinkId(): string[] | undefined {
       return this.linkId;
@@ -367,6 +388,13 @@ export class ContractValuedItem {
     }
     this._linkId.push(newValue);
   }
+  public delete_linkIdAll() {
+    if (typeof(this._linkId) !== 'undefined') {
+       delete this._linkId;
+    }
+    return;
+  }
+  
 
   public get_linkId(): Element[] | undefined {
       return this._linkId;
@@ -385,6 +413,13 @@ export class ContractValuedItem {
     }
     this.securityLabelNumber.push(newValue);
   }
+  public deleteSecurityLabelNumberAll() {
+    if (typeof(this.securityLabelNumber) !== 'undefined') {
+       delete this.securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public getSecurityLabelNumber(): number[] | undefined {
       return this.securityLabelNumber;
@@ -403,6 +438,13 @@ export class ContractValuedItem {
     }
     this._securityLabelNumber.push(newValue);
   }
+  public delete_securityLabelNumberAll() {
+    if (typeof(this._securityLabelNumber) !== 'undefined') {
+       delete this._securityLabelNumber;
+    }
+    return;
+  }
+  
 
   public get_securityLabelNumber(): Element[] | undefined {
       return this._securityLabelNumber;

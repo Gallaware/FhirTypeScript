@@ -123,6 +123,13 @@ export class MedicinalProductIngredientReferenceStrength {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -141,6 +148,13 @@ export class MedicinalProductIngredientReferenceStrength {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -187,6 +201,13 @@ export class MedicinalProductIngredientReferenceStrength {
     }
     this.country.push(newValue);
   }
+  public deleteCountryAll() {
+    if (typeof(this.country) !== 'undefined') {
+       delete this.country;
+    }
+    return;
+  }
+  
 
   public getCountry(): CodeableConcept[] | undefined {
       return this.country;

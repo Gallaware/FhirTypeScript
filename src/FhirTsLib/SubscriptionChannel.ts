@@ -140,6 +140,13 @@ export class SubscriptionChannel {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -158,6 +165,13 @@ export class SubscriptionChannel {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -261,6 +275,13 @@ export class SubscriptionChannel {
     }
     this.header.push(newValue);
   }
+  public deleteHeaderAll() {
+    if (typeof(this.header) !== 'undefined') {
+       delete this.header;
+    }
+    return;
+  }
+  
 
   public getHeader(): string[] | undefined {
       return this.header;
@@ -279,6 +300,13 @@ export class SubscriptionChannel {
     }
     this._header.push(newValue);
   }
+  public delete_headerAll() {
+    if (typeof(this._header) !== 'undefined') {
+       delete this._header;
+    }
+    return;
+  }
+  
 
   public get_header(): Element[] | undefined {
       return this._header;

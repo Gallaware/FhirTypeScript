@@ -106,6 +106,13 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -124,6 +131,13 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -142,6 +156,13 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.applicability.push(newValue);
   }
+  public deleteApplicabilityAll() {
+    if (typeof(this.applicability) !== 'undefined') {
+       delete this.applicability;
+    }
+    return;
+  }
+  
 
   public getApplicability(): ChargeItemDefinitionApplicability[] | undefined {
       return this.applicability;
@@ -160,6 +181,13 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.priceComponent.push(newValue);
   }
+  public deletePriceComponentAll() {
+    if (typeof(this.priceComponent) !== 'undefined') {
+       delete this.priceComponent;
+    }
+    return;
+  }
+  
 
   public getPriceComponent(): ChargeItemDefinitionPriceComponent[] | undefined {
       return this.priceComponent;

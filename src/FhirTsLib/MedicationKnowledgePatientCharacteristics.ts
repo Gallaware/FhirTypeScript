@@ -113,6 +113,13 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -131,6 +138,13 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -149,6 +163,13 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this.value.push(newValue);
   }
+  public deleteValueAll() {
+    if (typeof(this.value) !== 'undefined') {
+       delete this.value;
+    }
+    return;
+  }
+  
 
   public getValue(): string[] | undefined {
       return this.value;
@@ -167,6 +188,13 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this._value.push(newValue);
   }
+  public delete_valueAll() {
+    if (typeof(this._value) !== 'undefined') {
+       delete this._value;
+    }
+    return;
+  }
+  
 
   public get_value(): Element[] | undefined {
       return this._value;

@@ -425,6 +425,13 @@ export class VisionPrescription {
     }
     this.contained.push(newValue);
   }
+  public deleteContainedAll() {
+    if (typeof(this.contained) !== 'undefined') {
+       delete this.contained;
+    }
+    return;
+  }
+  
 
   public getContained(): ResourceList[] | undefined {
       return this.contained;
@@ -443,6 +450,13 @@ export class VisionPrescription {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -461,6 +475,13 @@ export class VisionPrescription {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -479,6 +500,13 @@ export class VisionPrescription {
     }
     this.identifier.push(newValue);
   }
+  public deleteIdentifierAll() {
+    if (typeof(this.identifier) !== 'undefined') {
+       delete this.identifier;
+    }
+    return;
+  }
+  
 
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
@@ -581,6 +609,13 @@ export class VisionPrescription {
     }
     this.lensSpecification.push(newValue);
   }
+  public deleteLensSpecificationAll() {
+    if (typeof(this.lensSpecification) !== 'undefined') {
+       delete this.lensSpecification;
+    }
+    return;
+  }
+  
 
   public getLensSpecification(): VisionPrescriptionLensSpecification[] | undefined {
       return this.lensSpecification;

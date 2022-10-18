@@ -156,6 +156,13 @@ export class ExplanationOfBenefitBenefitBalance {
     }
     this.extension.push(newValue);
   }
+  public deleteExtensionAll() {
+    if (typeof(this.extension) !== 'undefined') {
+       delete this.extension;
+    }
+    return;
+  }
+  
 
   public getExtension(): Extension[] | undefined {
       return this.extension;
@@ -174,6 +181,13 @@ export class ExplanationOfBenefitBenefitBalance {
     }
     this.modifierExtension.push(newValue);
   }
+  public deleteModifierExtensionAll() {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       delete this.modifierExtension;
+    }
+    return;
+  }
+  
 
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
@@ -248,6 +262,13 @@ export class ExplanationOfBenefitBenefitBalance {
     }
     this.financial.push(newValue);
   }
+  public deleteFinancialAll() {
+    if (typeof(this.financial) !== 'undefined') {
+       delete this.financial;
+    }
+    return;
+  }
+  
 
   public getFinancial(): ExplanationOfBenefitFinancial[] | undefined {
       return this.financial;
