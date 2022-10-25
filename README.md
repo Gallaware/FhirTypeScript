@@ -15,7 +15,7 @@ To provide in/out JSON conversion, this library uses ["class-transformer"](https
 
 ## Example Code
 
-You can look at the test cases for example, or take a look at How to create a Patient, in the ExampleCreatePatient.md. This shows not only how to 
+You can look at the test cases for example, or take a look at How to create a Patient, in the [ExampleCreatePatient.md](ExampleCreatePatient.md). This shows not only how to 
 create a FHIR patient with data, but also how to send it across the wire or get it back from a server and how that conversion from a real
 object to/from JSON works.
 
