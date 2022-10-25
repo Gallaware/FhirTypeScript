@@ -496,7 +496,10 @@ export class ClaimResponse {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -524,7 +527,10 @@ export class ClaimResponse {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -552,7 +558,10 @@ export class ClaimResponse {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -570,14 +579,37 @@ export class ClaimResponse {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -595,14 +627,37 @@ export class ClaimResponse {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -620,14 +675,37 @@ export class ClaimResponse {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -645,14 +723,37 @@ export class ClaimResponse {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -680,7 +781,10 @@ export class ClaimResponse {
     return REGEX_STATUS_000.source;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -708,7 +812,10 @@ export class ClaimResponse {
     return REGEX_USE.source;
   }
   
-
+  /**
+  * Gets the current value of field use.
+  * @returns the value  or undefined
+  */
   public getUse(): string | undefined {
       return this.use;
   }
@@ -736,7 +843,10 @@ export class ClaimResponse {
     return REGEX_CREATED.source;
   }
   
-
+  /**
+  * Gets the current value of field created.
+  * @returns the value  or undefined
+  */
   public getCreated(): string | undefined {
       return this.created;
   }
@@ -764,7 +874,10 @@ export class ClaimResponse {
     return REGEX_OUTCOME.source;
   }
   
-
+  /**
+  * Gets the current value of field outcome.
+  * @returns the value  or undefined
+  */
   public getOutcome(): string | undefined {
       return this.outcome;
   }
@@ -792,7 +905,10 @@ export class ClaimResponse {
     return REGEX_DISPOSITION.source;
   }
   
-
+  /**
+  * Gets the current value of field disposition.
+  * @returns the value  or undefined
+  */
   public getDisposition(): string | undefined {
       return this.disposition;
   }
@@ -820,7 +936,10 @@ export class ClaimResponse {
     return REGEX_PREAUTHREF.source;
   }
   
-
+  /**
+  * Gets the current value of field preAuthRef.
+  * @returns the value  or undefined
+  */
   public getPreAuthRef(): string | undefined {
       return this.preAuthRef;
   }
@@ -838,14 +957,37 @@ export class ClaimResponse {
     }
     this.item.push(newValue);
   }
-  public deleteItemAll() {
+  /**
+  * Removes all elements from the array item, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteItemAll(): ClaimResponseItem[] {
     if (typeof(this.item) !== 'undefined') {
+       const oldArray = this.item;
        delete this.item;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array item, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteItemBySplice(start: number, deleteCount?: number): ClaimResponseItem[] {
+    if (typeof(this.item) !== 'undefined') {
+       return this.item.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field item.
+  * @returns the value  or undefined
+  */
   public getItem(): ClaimResponseItem[] | undefined {
       return this.item;
   }
@@ -863,14 +1005,37 @@ export class ClaimResponse {
     }
     this.addItem.push(newValue);
   }
-  public deleteAddItemAll() {
+  /**
+  * Removes all elements from the array addItem, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAddItemAll(): ClaimResponseAddItem[] {
     if (typeof(this.addItem) !== 'undefined') {
+       const oldArray = this.addItem;
        delete this.addItem;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array addItem, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAddItemBySplice(start: number, deleteCount?: number): ClaimResponseAddItem[] {
+    if (typeof(this.addItem) !== 'undefined') {
+       return this.addItem.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field addItem.
+  * @returns the value  or undefined
+  */
   public getAddItem(): ClaimResponseAddItem[] | undefined {
       return this.addItem;
   }
@@ -888,14 +1053,37 @@ export class ClaimResponse {
     }
     this.adjudication.push(newValue);
   }
-  public deleteAdjudicationAll() {
+  /**
+  * Removes all elements from the array adjudication, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAdjudicationAll(): ClaimResponseAdjudication[] {
     if (typeof(this.adjudication) !== 'undefined') {
+       const oldArray = this.adjudication;
        delete this.adjudication;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array adjudication, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAdjudicationBySplice(start: number, deleteCount?: number): ClaimResponseAdjudication[] {
+    if (typeof(this.adjudication) !== 'undefined') {
+       return this.adjudication.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field adjudication.
+  * @returns the value  or undefined
+  */
   public getAdjudication(): ClaimResponseAdjudication[] | undefined {
       return this.adjudication;
   }
@@ -913,14 +1101,37 @@ export class ClaimResponse {
     }
     this.total.push(newValue);
   }
-  public deleteTotalAll() {
+  /**
+  * Removes all elements from the array total, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTotalAll(): ClaimResponseTotal[] {
     if (typeof(this.total) !== 'undefined') {
+       const oldArray = this.total;
        delete this.total;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array total, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTotalBySplice(start: number, deleteCount?: number): ClaimResponseTotal[] {
+    if (typeof(this.total) !== 'undefined') {
+       return this.total.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field total.
+  * @returns the value  or undefined
+  */
   public getTotal(): ClaimResponseTotal[] | undefined {
       return this.total;
   }
@@ -938,14 +1149,37 @@ export class ClaimResponse {
     }
     this.processNote.push(newValue);
   }
-  public deleteProcessNoteAll() {
+  /**
+  * Removes all elements from the array processNote, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProcessNoteAll(): ClaimResponseProcessNote[] {
     if (typeof(this.processNote) !== 'undefined') {
+       const oldArray = this.processNote;
        delete this.processNote;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array processNote, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProcessNoteBySplice(start: number, deleteCount?: number): ClaimResponseProcessNote[] {
+    if (typeof(this.processNote) !== 'undefined') {
+       return this.processNote.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field processNote.
+  * @returns the value  or undefined
+  */
   public getProcessNote(): ClaimResponseProcessNote[] | undefined {
       return this.processNote;
   }
@@ -963,14 +1197,37 @@ export class ClaimResponse {
     }
     this.communicationRequest.push(newValue);
   }
-  public deleteCommunicationRequestAll() {
+  /**
+  * Removes all elements from the array communicationRequest, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCommunicationRequestAll(): Reference[] {
     if (typeof(this.communicationRequest) !== 'undefined') {
+       const oldArray = this.communicationRequest;
        delete this.communicationRequest;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array communicationRequest, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCommunicationRequestBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.communicationRequest) !== 'undefined') {
+       return this.communicationRequest.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field communicationRequest.
+  * @returns the value  or undefined
+  */
   public getCommunicationRequest(): Reference[] | undefined {
       return this.communicationRequest;
   }
@@ -988,14 +1245,37 @@ export class ClaimResponse {
     }
     this.insurance.push(newValue);
   }
-  public deleteInsuranceAll() {
+  /**
+  * Removes all elements from the array insurance, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInsuranceAll(): ClaimResponseInsurance[] {
     if (typeof(this.insurance) !== 'undefined') {
+       const oldArray = this.insurance;
        delete this.insurance;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array insurance, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInsuranceBySplice(start: number, deleteCount?: number): ClaimResponseInsurance[] {
+    if (typeof(this.insurance) !== 'undefined') {
+       return this.insurance.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field insurance.
+  * @returns the value  or undefined
+  */
   public getInsurance(): ClaimResponseInsurance[] | undefined {
       return this.insurance;
   }
@@ -1013,14 +1293,37 @@ export class ClaimResponse {
     }
     this.error.push(newValue);
   }
-  public deleteErrorAll() {
+  /**
+  * Removes all elements from the array error, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteErrorAll(): ClaimResponseError[] {
     if (typeof(this.error) !== 'undefined') {
+       const oldArray = this.error;
        delete this.error;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array error, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteErrorBySplice(start: number, deleteCount?: number): ClaimResponseError[] {
+    if (typeof(this.error) !== 'undefined') {
+       return this.error.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field error.
+  * @returns the value  or undefined
+  */
   public getError(): ClaimResponseError[] | undefined {
       return this.error;
   }

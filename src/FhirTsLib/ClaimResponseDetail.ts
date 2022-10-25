@@ -105,7 +105,10 @@ export class ClaimResponseDetail {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -123,14 +126,37 @@ export class ClaimResponseDetail {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -148,14 +174,37 @@ export class ClaimResponseDetail {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -173,14 +222,37 @@ export class ClaimResponseDetail {
     }
     this.noteNumber.push(newValue);
   }
-  public deleteNoteNumberAll() {
+  /**
+  * Removes all elements from the array noteNumber, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteNumberAll(): number[] {
     if (typeof(this.noteNumber) !== 'undefined') {
+       const oldArray = this.noteNumber;
        delete this.noteNumber;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array noteNumber, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteNumberBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       return this.noteNumber.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field noteNumber.
+  * @returns the value  or undefined
+  */
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
   }
@@ -198,14 +270,37 @@ export class ClaimResponseDetail {
     }
     this._noteNumber.push(newValue);
   }
-  public delete_noteNumberAll() {
+  /**
+  * Removes all elements from the array _noteNumber, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_noteNumberAll(): Element[] {
     if (typeof(this._noteNumber) !== 'undefined') {
+       const oldArray = this._noteNumber;
        delete this._noteNumber;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _noteNumber, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_noteNumberBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       return this._noteNumber.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _noteNumber.
+  * @returns the value  or undefined
+  */
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
   }
@@ -223,14 +318,37 @@ export class ClaimResponseDetail {
     }
     this.adjudication.push(newValue);
   }
-  public deleteAdjudicationAll() {
+  /**
+  * Removes all elements from the array adjudication, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAdjudicationAll(): ClaimResponseAdjudication[] {
     if (typeof(this.adjudication) !== 'undefined') {
+       const oldArray = this.adjudication;
        delete this.adjudication;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array adjudication, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAdjudicationBySplice(start: number, deleteCount?: number): ClaimResponseAdjudication[] {
+    if (typeof(this.adjudication) !== 'undefined') {
+       return this.adjudication.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field adjudication.
+  * @returns the value  or undefined
+  */
   public getAdjudication(): ClaimResponseAdjudication[] | undefined {
       return this.adjudication;
   }
@@ -248,14 +366,37 @@ export class ClaimResponseDetail {
     }
     this.subDetail.push(newValue);
   }
-  public deleteSubDetailAll() {
+  /**
+  * Removes all elements from the array subDetail, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSubDetailAll(): ClaimResponseSubDetail[] {
     if (typeof(this.subDetail) !== 'undefined') {
+       const oldArray = this.subDetail;
        delete this.subDetail;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array subDetail, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSubDetailBySplice(start: number, deleteCount?: number): ClaimResponseSubDetail[] {
+    if (typeof(this.subDetail) !== 'undefined') {
+       return this.subDetail.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field subDetail.
+  * @returns the value  or undefined
+  */
   public getSubDetail(): ClaimResponseSubDetail[] | undefined {
       return this.subDetail;
   }

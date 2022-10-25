@@ -165,7 +165,10 @@ export class AuditEventAgent {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -183,14 +186,37 @@ export class AuditEventAgent {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -208,14 +234,37 @@ export class AuditEventAgent {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -233,14 +282,37 @@ export class AuditEventAgent {
     }
     this.role.push(newValue);
   }
-  public deleteRoleAll() {
+  /**
+  * Removes all elements from the array role, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRoleAll(): CodeableConcept[] {
     if (typeof(this.role) !== 'undefined') {
+       const oldArray = this.role;
        delete this.role;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array role, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRoleBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.role) !== 'undefined') {
+       return this.role.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field role.
+  * @returns the value  or undefined
+  */
   public getRole(): CodeableConcept[] | undefined {
       return this.role;
   }
@@ -268,7 +340,10 @@ export class AuditEventAgent {
     return REGEX_ALTID.source;
   }
   
-
+  /**
+  * Gets the current value of field altId.
+  * @returns the value  or undefined
+  */
   public getAltId(): string | undefined {
       return this.altId;
   }
@@ -296,7 +371,10 @@ export class AuditEventAgent {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -314,14 +392,37 @@ export class AuditEventAgent {
     }
     this.policy.push(newValue);
   }
-  public deletePolicyAll() {
+  /**
+  * Removes all elements from the array policy, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePolicyAll(): string[] {
     if (typeof(this.policy) !== 'undefined') {
+       const oldArray = this.policy;
        delete this.policy;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array policy, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePolicyBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.policy) !== 'undefined') {
+       return this.policy.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field policy.
+  * @returns the value  or undefined
+  */
   public getPolicy(): string[] | undefined {
       return this.policy;
   }
@@ -339,14 +440,37 @@ export class AuditEventAgent {
     }
     this._policy.push(newValue);
   }
-  public delete_policyAll() {
+  /**
+  * Removes all elements from the array _policy, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_policyAll(): Element[] {
     if (typeof(this._policy) !== 'undefined') {
+       const oldArray = this._policy;
        delete this._policy;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _policy, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_policyBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._policy) !== 'undefined') {
+       return this._policy.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _policy.
+  * @returns the value  or undefined
+  */
   public get_policy(): Element[] | undefined {
       return this._policy;
   }
@@ -364,14 +488,37 @@ export class AuditEventAgent {
     }
     this.purposeOfUse.push(newValue);
   }
-  public deletePurposeOfUseAll() {
+  /**
+  * Removes all elements from the array purposeOfUse, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePurposeOfUseAll(): CodeableConcept[] {
     if (typeof(this.purposeOfUse) !== 'undefined') {
+       const oldArray = this.purposeOfUse;
        delete this.purposeOfUse;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array purposeOfUse, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePurposeOfUseBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.purposeOfUse) !== 'undefined') {
+       return this.purposeOfUse.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field purposeOfUse.
+  * @returns the value  or undefined
+  */
   public getPurposeOfUse(): CodeableConcept[] | undefined {
       return this.purposeOfUse;
   }

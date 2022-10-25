@@ -115,7 +115,10 @@ export class GraphDefinitionTarget {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -133,14 +136,37 @@ export class GraphDefinitionTarget {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -158,14 +184,37 @@ export class GraphDefinitionTarget {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -194,7 +243,10 @@ export class GraphDefinitionTarget {
     return ResourceType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -222,7 +274,10 @@ export class GraphDefinitionTarget {
     return REGEX_PARAMS.source;
   }
   
-
+  /**
+  * Gets the current value of field params.
+  * @returns the value  or undefined
+  */
   public getParams(): string | undefined {
       return this.params;
   }
@@ -250,7 +305,10 @@ export class GraphDefinitionTarget {
     return REGEX_PROFILE.source;
   }
   
-
+  /**
+  * Gets the current value of field profile.
+  * @returns the value  or undefined
+  */
   public getProfile(): string | undefined {
       return this.profile;
   }
@@ -268,14 +326,37 @@ export class GraphDefinitionTarget {
     }
     this.compartment.push(newValue);
   }
-  public deleteCompartmentAll() {
+  /**
+  * Removes all elements from the array compartment, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCompartmentAll(): GraphDefinitionCompartment[] {
     if (typeof(this.compartment) !== 'undefined') {
+       const oldArray = this.compartment;
        delete this.compartment;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array compartment, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCompartmentBySplice(start: number, deleteCount?: number): GraphDefinitionCompartment[] {
+    if (typeof(this.compartment) !== 'undefined') {
+       return this.compartment.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field compartment.
+  * @returns the value  or undefined
+  */
   public getCompartment(): GraphDefinitionCompartment[] | undefined {
       return this.compartment;
   }
@@ -293,14 +374,37 @@ export class GraphDefinitionTarget {
     }
     this.link.push(newValue);
   }
-  public deleteLinkAll() {
+  /**
+  * Removes all elements from the array link, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLinkAll(): GraphDefinitionLink[] {
     if (typeof(this.link) !== 'undefined') {
+       const oldArray = this.link;
        delete this.link;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array link, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLinkBySplice(start: number, deleteCount?: number): GraphDefinitionLink[] {
+    if (typeof(this.link) !== 'undefined') {
+       return this.link.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field link.
+  * @returns the value  or undefined
+  */
   public getLink(): GraphDefinitionLink[] | undefined {
       return this.link;
   }

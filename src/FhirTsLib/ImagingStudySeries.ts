@@ -181,7 +181,10 @@ export class ImagingStudySeries {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -199,14 +202,37 @@ export class ImagingStudySeries {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -224,14 +250,37 @@ export class ImagingStudySeries {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -259,7 +308,10 @@ export class ImagingStudySeries {
     return REGEX_UID.source;
   }
   
-
+  /**
+  * Gets the current value of field uid.
+  * @returns the value  or undefined
+  */
   public getUid(): string | undefined {
       return this.uid;
   }
@@ -287,7 +339,10 @@ export class ImagingStudySeries {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -305,14 +360,37 @@ export class ImagingStudySeries {
     }
     this.endpoint.push(newValue);
   }
-  public deleteEndpointAll() {
+  /**
+  * Removes all elements from the array endpoint, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEndpointAll(): Reference[] {
     if (typeof(this.endpoint) !== 'undefined') {
+       const oldArray = this.endpoint;
        delete this.endpoint;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array endpoint, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEndpointBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.endpoint) !== 'undefined') {
+       return this.endpoint.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field endpoint.
+  * @returns the value  or undefined
+  */
   public getEndpoint(): Reference[] | undefined {
       return this.endpoint;
   }
@@ -330,14 +408,37 @@ export class ImagingStudySeries {
     }
     this.specimen.push(newValue);
   }
-  public deleteSpecimenAll() {
+  /**
+  * Removes all elements from the array specimen, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSpecimenAll(): Reference[] {
     if (typeof(this.specimen) !== 'undefined') {
+       const oldArray = this.specimen;
        delete this.specimen;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array specimen, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSpecimenBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.specimen) !== 'undefined') {
+       return this.specimen.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field specimen.
+  * @returns the value  or undefined
+  */
   public getSpecimen(): Reference[] | undefined {
       return this.specimen;
   }
@@ -365,7 +466,10 @@ export class ImagingStudySeries {
     return REGEX_STARTED.source;
   }
   
-
+  /**
+  * Gets the current value of field started.
+  * @returns the value  or undefined
+  */
   public getStarted(): string | undefined {
       return this.started;
   }
@@ -383,14 +487,37 @@ export class ImagingStudySeries {
     }
     this.performer.push(newValue);
   }
-  public deletePerformerAll() {
+  /**
+  * Removes all elements from the array performer, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePerformerAll(): ImagingStudyPerformer[] {
     if (typeof(this.performer) !== 'undefined') {
+       const oldArray = this.performer;
        delete this.performer;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array performer, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePerformerBySplice(start: number, deleteCount?: number): ImagingStudyPerformer[] {
+    if (typeof(this.performer) !== 'undefined') {
+       return this.performer.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field performer.
+  * @returns the value  or undefined
+  */
   public getPerformer(): ImagingStudyPerformer[] | undefined {
       return this.performer;
   }
@@ -408,14 +535,37 @@ export class ImagingStudySeries {
     }
     this.instance.push(newValue);
   }
-  public deleteInstanceAll() {
+  /**
+  * Removes all elements from the array instance, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstanceAll(): ImagingStudyInstance[] {
     if (typeof(this.instance) !== 'undefined') {
+       const oldArray = this.instance;
        delete this.instance;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instance, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstanceBySplice(start: number, deleteCount?: number): ImagingStudyInstance[] {
+    if (typeof(this.instance) !== 'undefined') {
+       return this.instance.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instance.
+  * @returns the value  or undefined
+  */
   public getInstance(): ImagingStudyInstance[] | undefined {
       return this.instance;
   }

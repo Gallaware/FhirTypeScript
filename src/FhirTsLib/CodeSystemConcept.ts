@@ -128,7 +128,10 @@ export class CodeSystemConcept {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -146,14 +149,37 @@ export class CodeSystemConcept {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -171,14 +197,37 @@ export class CodeSystemConcept {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -206,7 +255,10 @@ export class CodeSystemConcept {
     return REGEX_CODE.source;
   }
   
-
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): string | undefined {
       return this.code;
   }
@@ -234,7 +286,10 @@ export class CodeSystemConcept {
     return REGEX_DISPLAY.source;
   }
   
-
+  /**
+  * Gets the current value of field display.
+  * @returns the value  or undefined
+  */
   public getDisplay(): string | undefined {
       return this.display;
   }
@@ -262,7 +317,10 @@ export class CodeSystemConcept {
     return REGEX_DEFINITION.source;
   }
   
-
+  /**
+  * Gets the current value of field definition.
+  * @returns the value  or undefined
+  */
   public getDefinition(): string | undefined {
       return this.definition;
   }
@@ -280,14 +338,37 @@ export class CodeSystemConcept {
     }
     this.designation.push(newValue);
   }
-  public deleteDesignationAll() {
+  /**
+  * Removes all elements from the array designation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDesignationAll(): CodeSystemDesignation[] {
     if (typeof(this.designation) !== 'undefined') {
+       const oldArray = this.designation;
        delete this.designation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array designation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDesignationBySplice(start: number, deleteCount?: number): CodeSystemDesignation[] {
+    if (typeof(this.designation) !== 'undefined') {
+       return this.designation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field designation.
+  * @returns the value  or undefined
+  */
   public getDesignation(): CodeSystemDesignation[] | undefined {
       return this.designation;
   }
@@ -305,14 +386,37 @@ export class CodeSystemConcept {
     }
     this.property.push(newValue);
   }
-  public deletePropertyAll() {
+  /**
+  * Removes all elements from the array property, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePropertyAll(): CodeSystemProperty1[] {
     if (typeof(this.property) !== 'undefined') {
+       const oldArray = this.property;
        delete this.property;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array property, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePropertyBySplice(start: number, deleteCount?: number): CodeSystemProperty1[] {
+    if (typeof(this.property) !== 'undefined') {
+       return this.property.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field property.
+  * @returns the value  or undefined
+  */
   public getProperty(): CodeSystemProperty1[] | undefined {
       return this.property;
   }
@@ -330,14 +434,37 @@ export class CodeSystemConcept {
     }
     this.concept.push(newValue);
   }
-  public deleteConceptAll() {
+  /**
+  * Removes all elements from the array concept, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteConceptAll(): CodeSystemConcept[] {
     if (typeof(this.concept) !== 'undefined') {
+       const oldArray = this.concept;
        delete this.concept;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array concept, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteConceptBySplice(start: number, deleteCount?: number): CodeSystemConcept[] {
+    if (typeof(this.concept) !== 'undefined') {
+       return this.concept.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field concept.
+  * @returns the value  or undefined
+  */
   public getConcept(): CodeSystemConcept[] | undefined {
       return this.concept;
   }

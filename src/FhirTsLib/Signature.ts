@@ -124,7 +124,10 @@ export class Signature {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -142,14 +145,37 @@ export class Signature {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -167,14 +193,37 @@ export class Signature {
     }
     this.type.push(newValue);
   }
-  public deleteTypeAll() {
+  /**
+  * Removes all elements from the array type, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTypeAll(): Coding[] {
     if (typeof(this.type) !== 'undefined') {
+       const oldArray = this.type;
        delete this.type;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array type, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTypeBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.type) !== 'undefined') {
+       return this.type.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): Coding[] | undefined {
       return this.type;
   }
@@ -202,7 +251,10 @@ export class Signature {
     return REGEX_WHEN.source;
   }
   
-
+  /**
+  * Gets the current value of field when.
+  * @returns the value  or undefined
+  */
   public getWhen(): string | undefined {
       return this.when;
   }
@@ -230,7 +282,10 @@ export class Signature {
     return REGEX_TARGETFORMAT.source;
   }
   
-
+  /**
+  * Gets the current value of field targetFormat.
+  * @returns the value  or undefined
+  */
   public getTargetFormat(): string | undefined {
       return this.targetFormat;
   }
@@ -258,7 +313,10 @@ export class Signature {
     return REGEX_SIGFORMAT.source;
   }
   
-
+  /**
+  * Gets the current value of field sigFormat.
+  * @returns the value  or undefined
+  */
   public getSigFormat(): string | undefined {
       return this.sigFormat;
   }

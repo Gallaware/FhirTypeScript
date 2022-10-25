@@ -507,7 +507,10 @@ export class ConceptMap {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -535,7 +538,10 @@ export class ConceptMap {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -563,7 +569,10 @@ export class ConceptMap {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -581,14 +590,37 @@ export class ConceptMap {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -606,14 +638,37 @@ export class ConceptMap {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -631,14 +686,37 @@ export class ConceptMap {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -666,7 +744,10 @@ export class ConceptMap {
     return REGEX_URL.source;
   }
   
-
+  /**
+  * Gets the current value of field url.
+  * @returns the value  or undefined
+  */
   public getUrl(): string | undefined {
       return this.url;
   }
@@ -694,7 +775,10 @@ export class ConceptMap {
     return REGEX_VERSION.source;
   }
   
-
+  /**
+  * Gets the current value of field version.
+  * @returns the value  or undefined
+  */
   public getVersion(): string | undefined {
       return this.version;
   }
@@ -722,7 +806,10 @@ export class ConceptMap {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -750,7 +837,10 @@ export class ConceptMap {
     return REGEX_TITLE.source;
   }
   
-
+  /**
+  * Gets the current value of field title.
+  * @returns the value  or undefined
+  */
   public getTitle(): string | undefined {
       return this.title;
   }
@@ -779,7 +869,10 @@ export class ConceptMap {
     return ConceptMapStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -807,7 +900,10 @@ export class ConceptMap {
     return REGEX_DATE.source;
   }
   
-
+  /**
+  * Gets the current value of field date.
+  * @returns the value  or undefined
+  */
   public getDate(): string | undefined {
       return this.date;
   }
@@ -835,7 +931,10 @@ export class ConceptMap {
     return REGEX_PUBLISHER.source;
   }
   
-
+  /**
+  * Gets the current value of field publisher.
+  * @returns the value  or undefined
+  */
   public getPublisher(): string | undefined {
       return this.publisher;
   }
@@ -853,14 +952,37 @@ export class ConceptMap {
     }
     this.contact.push(newValue);
   }
-  public deleteContactAll() {
+  /**
+  * Removes all elements from the array contact, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContactAll(): ContactDetail[] {
     if (typeof(this.contact) !== 'undefined') {
+       const oldArray = this.contact;
        delete this.contact;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contact, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContactBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.contact) !== 'undefined') {
+       return this.contact.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contact.
+  * @returns the value  or undefined
+  */
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
   }
@@ -888,7 +1010,10 @@ export class ConceptMap {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -906,14 +1031,37 @@ export class ConceptMap {
     }
     this.useContext.push(newValue);
   }
-  public deleteUseContextAll() {
+  /**
+  * Removes all elements from the array useContext, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUseContextAll(): UsageContext[] {
     if (typeof(this.useContext) !== 'undefined') {
+       const oldArray = this.useContext;
        delete this.useContext;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array useContext, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUseContextBySplice(start: number, deleteCount?: number): UsageContext[] {
+    if (typeof(this.useContext) !== 'undefined') {
+       return this.useContext.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field useContext.
+  * @returns the value  or undefined
+  */
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
   }
@@ -931,14 +1079,37 @@ export class ConceptMap {
     }
     this.jurisdiction.push(newValue);
   }
-  public deleteJurisdictionAll() {
+  /**
+  * Removes all elements from the array jurisdiction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteJurisdictionAll(): CodeableConcept[] {
     if (typeof(this.jurisdiction) !== 'undefined') {
+       const oldArray = this.jurisdiction;
        delete this.jurisdiction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array jurisdiction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteJurisdictionBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       return this.jurisdiction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field jurisdiction.
+  * @returns the value  or undefined
+  */
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
   }
@@ -966,7 +1137,10 @@ export class ConceptMap {
     return REGEX_PURPOSE.source;
   }
   
-
+  /**
+  * Gets the current value of field purpose.
+  * @returns the value  or undefined
+  */
   public getPurpose(): string | undefined {
       return this.purpose;
   }
@@ -994,7 +1168,10 @@ export class ConceptMap {
     return REGEX_COPYRIGHT.source;
   }
   
-
+  /**
+  * Gets the current value of field copyright.
+  * @returns the value  or undefined
+  */
   public getCopyright(): string | undefined {
       return this.copyright;
   }
@@ -1022,7 +1199,10 @@ export class ConceptMap {
     return REGEX_SOURCEURI.source;
   }
   
-
+  /**
+  * Gets the current value of field sourceUri.
+  * @returns the value  or undefined
+  */
   public getSourceUri(): string | undefined {
       return this.sourceUri;
   }
@@ -1050,7 +1230,10 @@ export class ConceptMap {
     return REGEX_SOURCECANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field sourceCanonical.
+  * @returns the value  or undefined
+  */
   public getSourceCanonical(): string | undefined {
       return this.sourceCanonical;
   }
@@ -1078,7 +1261,10 @@ export class ConceptMap {
     return REGEX_TARGETURI.source;
   }
   
-
+  /**
+  * Gets the current value of field targetUri.
+  * @returns the value  or undefined
+  */
   public getTargetUri(): string | undefined {
       return this.targetUri;
   }
@@ -1106,7 +1292,10 @@ export class ConceptMap {
     return REGEX_TARGETCANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field targetCanonical.
+  * @returns the value  or undefined
+  */
   public getTargetCanonical(): string | undefined {
       return this.targetCanonical;
   }
@@ -1124,14 +1313,37 @@ export class ConceptMap {
     }
     this.group.push(newValue);
   }
-  public deleteGroupAll() {
+  /**
+  * Removes all elements from the array group, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGroupAll(): ConceptMapGroup[] {
     if (typeof(this.group) !== 'undefined') {
+       const oldArray = this.group;
        delete this.group;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array group, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGroupBySplice(start: number, deleteCount?: number): ConceptMapGroup[] {
+    if (typeof(this.group) !== 'undefined') {
+       return this.group.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field group.
+  * @returns the value  or undefined
+  */
   public getGroup(): ConceptMapGroup[] | undefined {
       return this.group;
   }

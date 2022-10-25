@@ -211,7 +211,10 @@ export class VisionPrescriptionLensSpecification {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -229,14 +232,37 @@ export class VisionPrescriptionLensSpecification {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -254,14 +280,37 @@ export class VisionPrescriptionLensSpecification {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -290,7 +339,10 @@ export class VisionPrescriptionLensSpecification {
     return VisionPrescriptionLensSpecificationEye_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field eye.
+  * @returns the value  or undefined
+  */
   public getEye(): string | undefined {
       return this.eye;
   }
@@ -308,14 +360,37 @@ export class VisionPrescriptionLensSpecification {
     }
     this.prism.push(newValue);
   }
-  public deletePrismAll() {
+  /**
+  * Removes all elements from the array prism, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePrismAll(): VisionPrescriptionPrism[] {
     if (typeof(this.prism) !== 'undefined') {
+       const oldArray = this.prism;
        delete this.prism;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array prism, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePrismBySplice(start: number, deleteCount?: number): VisionPrescriptionPrism[] {
+    if (typeof(this.prism) !== 'undefined') {
+       return this.prism.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field prism.
+  * @returns the value  or undefined
+  */
   public getPrism(): VisionPrescriptionPrism[] | undefined {
       return this.prism;
   }
@@ -343,7 +418,10 @@ export class VisionPrescriptionLensSpecification {
     return REGEX_COLOR.source;
   }
   
-
+  /**
+  * Gets the current value of field color.
+  * @returns the value  or undefined
+  */
   public getColor(): string | undefined {
       return this.color;
   }
@@ -371,7 +449,10 @@ export class VisionPrescriptionLensSpecification {
     return REGEX_BRAND.source;
   }
   
-
+  /**
+  * Gets the current value of field brand.
+  * @returns the value  or undefined
+  */
   public getBrand(): string | undefined {
       return this.brand;
   }
@@ -389,14 +470,37 @@ export class VisionPrescriptionLensSpecification {
     }
     this.note.push(newValue);
   }
-  public deleteNoteAll() {
+  /**
+  * Removes all elements from the array note, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteAll(): Annotation[] {
     if (typeof(this.note) !== 'undefined') {
+       const oldArray = this.note;
        delete this.note;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array note, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.note) !== 'undefined') {
+       return this.note.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field note.
+  * @returns the value  or undefined
+  */
   public getNote(): Annotation[] | undefined {
       return this.note;
   }

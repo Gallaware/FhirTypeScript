@@ -146,7 +146,10 @@ export class TestScriptCapability {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -164,14 +167,37 @@ export class TestScriptCapability {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -189,14 +215,37 @@ export class TestScriptCapability {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -224,7 +273,10 @@ export class TestScriptCapability {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -242,14 +294,37 @@ export class TestScriptCapability {
     }
     this.origin.push(newValue);
   }
-  public deleteOriginAll() {
+  /**
+  * Removes all elements from the array origin, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOriginAll(): number[] {
     if (typeof(this.origin) !== 'undefined') {
+       const oldArray = this.origin;
        delete this.origin;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array origin, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOriginBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.origin) !== 'undefined') {
+       return this.origin.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field origin.
+  * @returns the value  or undefined
+  */
   public getOrigin(): number[] | undefined {
       return this.origin;
   }
@@ -267,14 +342,37 @@ export class TestScriptCapability {
     }
     this._origin.push(newValue);
   }
-  public delete_originAll() {
+  /**
+  * Removes all elements from the array _origin, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_originAll(): Element[] {
     if (typeof(this._origin) !== 'undefined') {
+       const oldArray = this._origin;
        delete this._origin;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _origin, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_originBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._origin) !== 'undefined') {
+       return this._origin.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _origin.
+  * @returns the value  or undefined
+  */
   public get_origin(): Element[] | undefined {
       return this._origin;
   }
@@ -292,14 +390,37 @@ export class TestScriptCapability {
     }
     this.link.push(newValue);
   }
-  public deleteLinkAll() {
+  /**
+  * Removes all elements from the array link, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLinkAll(): string[] {
     if (typeof(this.link) !== 'undefined') {
+       const oldArray = this.link;
        delete this.link;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array link, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLinkBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.link) !== 'undefined') {
+       return this.link.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field link.
+  * @returns the value  or undefined
+  */
   public getLink(): string[] | undefined {
       return this.link;
   }
@@ -317,14 +438,37 @@ export class TestScriptCapability {
     }
     this._link.push(newValue);
   }
-  public delete_linkAll() {
+  /**
+  * Removes all elements from the array _link, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_linkAll(): Element[] {
     if (typeof(this._link) !== 'undefined') {
+       const oldArray = this._link;
        delete this._link;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _link, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_linkBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._link) !== 'undefined') {
+       return this._link.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _link.
+  * @returns the value  or undefined
+  */
   public get_link(): Element[] | undefined {
       return this._link;
   }
@@ -352,7 +496,10 @@ export class TestScriptCapability {
     return REGEX_CAPABILITIES.source;
   }
   
-
+  /**
+  * Gets the current value of field capabilities.
+  * @returns the value  or undefined
+  */
   public getCapabilities(): string | undefined {
       return this.capabilities;
   }

@@ -412,7 +412,10 @@ export class Composition {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -440,7 +443,10 @@ export class Composition {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -468,7 +474,10 @@ export class Composition {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -486,14 +495,37 @@ export class Composition {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -511,14 +543,37 @@ export class Composition {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -536,14 +591,37 @@ export class Composition {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -572,7 +650,10 @@ export class Composition {
     return CompositionStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -590,14 +671,37 @@ export class Composition {
     }
     this.category.push(newValue);
   }
-  public deleteCategoryAll() {
+  /**
+  * Removes all elements from the array category, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCategoryAll(): CodeableConcept[] {
     if (typeof(this.category) !== 'undefined') {
+       const oldArray = this.category;
        delete this.category;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array category, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCategoryBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.category) !== 'undefined') {
+       return this.category.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field category.
+  * @returns the value  or undefined
+  */
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
   }
@@ -625,7 +729,10 @@ export class Composition {
     return REGEX_DATE.source;
   }
   
-
+  /**
+  * Gets the current value of field date.
+  * @returns the value  or undefined
+  */
   public getDate(): string | undefined {
       return this.date;
   }
@@ -643,14 +750,37 @@ export class Composition {
     }
     this.author.push(newValue);
   }
-  public deleteAuthorAll() {
+  /**
+  * Removes all elements from the array author, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAuthorAll(): Reference[] {
     if (typeof(this.author) !== 'undefined') {
+       const oldArray = this.author;
        delete this.author;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array author, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAuthorBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.author) !== 'undefined') {
+       return this.author.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field author.
+  * @returns the value  or undefined
+  */
   public getAuthor(): Reference[] | undefined {
       return this.author;
   }
@@ -678,7 +808,10 @@ export class Composition {
     return REGEX_TITLE.source;
   }
   
-
+  /**
+  * Gets the current value of field title.
+  * @returns the value  or undefined
+  */
   public getTitle(): string | undefined {
       return this.title;
   }
@@ -706,7 +839,10 @@ export class Composition {
     return REGEX_CONFIDENTIALITY.source;
   }
   
-
+  /**
+  * Gets the current value of field confidentiality.
+  * @returns the value  or undefined
+  */
   public getConfidentiality(): string | undefined {
       return this.confidentiality;
   }
@@ -724,14 +860,37 @@ export class Composition {
     }
     this.attester.push(newValue);
   }
-  public deleteAttesterAll() {
+  /**
+  * Removes all elements from the array attester, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAttesterAll(): CompositionAttester[] {
     if (typeof(this.attester) !== 'undefined') {
+       const oldArray = this.attester;
        delete this.attester;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array attester, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAttesterBySplice(start: number, deleteCount?: number): CompositionAttester[] {
+    if (typeof(this.attester) !== 'undefined') {
+       return this.attester.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field attester.
+  * @returns the value  or undefined
+  */
   public getAttester(): CompositionAttester[] | undefined {
       return this.attester;
   }
@@ -749,14 +908,37 @@ export class Composition {
     }
     this.relatesTo.push(newValue);
   }
-  public deleteRelatesToAll() {
+  /**
+  * Removes all elements from the array relatesTo, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRelatesToAll(): CompositionRelatesTo[] {
     if (typeof(this.relatesTo) !== 'undefined') {
+       const oldArray = this.relatesTo;
        delete this.relatesTo;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array relatesTo, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRelatesToBySplice(start: number, deleteCount?: number): CompositionRelatesTo[] {
+    if (typeof(this.relatesTo) !== 'undefined') {
+       return this.relatesTo.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field relatesTo.
+  * @returns the value  or undefined
+  */
   public getRelatesTo(): CompositionRelatesTo[] | undefined {
       return this.relatesTo;
   }
@@ -774,14 +956,37 @@ export class Composition {
     }
     this.event.push(newValue);
   }
-  public deleteEventAll() {
+  /**
+  * Removes all elements from the array event, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEventAll(): CompositionEvent[] {
     if (typeof(this.event) !== 'undefined') {
+       const oldArray = this.event;
        delete this.event;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array event, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEventBySplice(start: number, deleteCount?: number): CompositionEvent[] {
+    if (typeof(this.event) !== 'undefined') {
+       return this.event.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field event.
+  * @returns the value  or undefined
+  */
   public getEvent(): CompositionEvent[] | undefined {
       return this.event;
   }
@@ -799,14 +1004,37 @@ export class Composition {
     }
     this.section.push(newValue);
   }
-  public deleteSectionAll() {
+  /**
+  * Removes all elements from the array section, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSectionAll(): CompositionSection[] {
     if (typeof(this.section) !== 'undefined') {
+       const oldArray = this.section;
        delete this.section;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array section, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSectionBySplice(start: number, deleteCount?: number): CompositionSection[] {
+    if (typeof(this.section) !== 'undefined') {
+       return this.section.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field section.
+  * @returns the value  or undefined
+  */
   public getSection(): CompositionSection[] | undefined {
       return this.section;
   }

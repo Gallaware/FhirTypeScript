@@ -103,7 +103,10 @@ export class ContractSecurityLabel {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -121,14 +124,37 @@ export class ContractSecurityLabel {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -146,14 +172,37 @@ export class ContractSecurityLabel {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -171,14 +220,37 @@ export class ContractSecurityLabel {
     }
     this.number.push(newValue);
   }
-  public deleteNumberAll() {
+  /**
+  * Removes all elements from the array number, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNumberAll(): number[] {
     if (typeof(this.number) !== 'undefined') {
+       const oldArray = this.number;
        delete this.number;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array number, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNumberBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.number) !== 'undefined') {
+       return this.number.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field number.
+  * @returns the value  or undefined
+  */
   public getNumber(): number[] | undefined {
       return this.number;
   }
@@ -196,14 +268,37 @@ export class ContractSecurityLabel {
     }
     this._number.push(newValue);
   }
-  public delete_numberAll() {
+  /**
+  * Removes all elements from the array _number, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_numberAll(): Element[] {
     if (typeof(this._number) !== 'undefined') {
+       const oldArray = this._number;
        delete this._number;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _number, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_numberBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._number) !== 'undefined') {
+       return this._number.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _number.
+  * @returns the value  or undefined
+  */
   public get_number(): Element[] | undefined {
       return this._number;
   }
@@ -221,14 +316,37 @@ export class ContractSecurityLabel {
     }
     this.category.push(newValue);
   }
-  public deleteCategoryAll() {
+  /**
+  * Removes all elements from the array category, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCategoryAll(): Coding[] {
     if (typeof(this.category) !== 'undefined') {
+       const oldArray = this.category;
        delete this.category;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array category, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCategoryBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.category) !== 'undefined') {
+       return this.category.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field category.
+  * @returns the value  or undefined
+  */
   public getCategory(): Coding[] | undefined {
       return this.category;
   }
@@ -246,14 +364,37 @@ export class ContractSecurityLabel {
     }
     this.control.push(newValue);
   }
-  public deleteControlAll() {
+  /**
+  * Removes all elements from the array control, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteControlAll(): Coding[] {
     if (typeof(this.control) !== 'undefined') {
+       const oldArray = this.control;
        delete this.control;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array control, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteControlBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.control) !== 'undefined') {
+       return this.control.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field control.
+  * @returns the value  or undefined
+  */
   public getControl(): Coding[] | undefined {
       return this.control;
   }

@@ -110,7 +110,10 @@ export class SubstancePolymerRepeatUnit {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -128,14 +131,37 @@ export class SubstancePolymerRepeatUnit {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -153,14 +179,37 @@ export class SubstancePolymerRepeatUnit {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -188,7 +237,10 @@ export class SubstancePolymerRepeatUnit {
     return REGEX_REPEATUNIT.source;
   }
   
-
+  /**
+  * Gets the current value of field repeatUnit.
+  * @returns the value  or undefined
+  */
   public getRepeatUnit(): string | undefined {
       return this.repeatUnit;
   }
@@ -206,14 +258,37 @@ export class SubstancePolymerRepeatUnit {
     }
     this.degreeOfPolymerisation.push(newValue);
   }
-  public deleteDegreeOfPolymerisationAll() {
+  /**
+  * Removes all elements from the array degreeOfPolymerisation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDegreeOfPolymerisationAll(): SubstancePolymerDegreeOfPolymerisation[] {
     if (typeof(this.degreeOfPolymerisation) !== 'undefined') {
+       const oldArray = this.degreeOfPolymerisation;
        delete this.degreeOfPolymerisation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array degreeOfPolymerisation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDegreeOfPolymerisationBySplice(start: number, deleteCount?: number): SubstancePolymerDegreeOfPolymerisation[] {
+    if (typeof(this.degreeOfPolymerisation) !== 'undefined') {
+       return this.degreeOfPolymerisation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field degreeOfPolymerisation.
+  * @returns the value  or undefined
+  */
   public getDegreeOfPolymerisation(): SubstancePolymerDegreeOfPolymerisation[] | undefined {
       return this.degreeOfPolymerisation;
   }
@@ -231,14 +306,37 @@ export class SubstancePolymerRepeatUnit {
     }
     this.structuralRepresentation.push(newValue);
   }
-  public deleteStructuralRepresentationAll() {
+  /**
+  * Removes all elements from the array structuralRepresentation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteStructuralRepresentationAll(): SubstancePolymerStructuralRepresentation[] {
     if (typeof(this.structuralRepresentation) !== 'undefined') {
+       const oldArray = this.structuralRepresentation;
        delete this.structuralRepresentation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array structuralRepresentation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteStructuralRepresentationBySplice(start: number, deleteCount?: number): SubstancePolymerStructuralRepresentation[] {
+    if (typeof(this.structuralRepresentation) !== 'undefined') {
+       return this.structuralRepresentation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field structuralRepresentation.
+  * @returns the value  or undefined
+  */
   public getStructuralRepresentation(): SubstancePolymerStructuralRepresentation[] | undefined {
       return this.structuralRepresentation;
   }

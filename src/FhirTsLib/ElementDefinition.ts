@@ -2246,7 +2246,10 @@ export class ElementDefinition {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -2264,14 +2267,37 @@ export class ElementDefinition {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -2289,14 +2315,37 @@ export class ElementDefinition {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -2324,7 +2373,10 @@ export class ElementDefinition {
     return REGEX_PATH.source;
   }
   
-
+  /**
+  * Gets the current value of field path.
+  * @returns the value  or undefined
+  */
   public getPath(): string | undefined {
       return this.path;
   }
@@ -2342,14 +2394,37 @@ export class ElementDefinition {
     }
     this.representation.push(newValue);
   }
-  public deleteRepresentationAll() {
+  /**
+  * Removes all elements from the array representation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRepresentationAll(): string[] {
     if (typeof(this.representation) !== 'undefined') {
+       const oldArray = this.representation;
        delete this.representation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array representation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRepresentationBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.representation) !== 'undefined') {
+       return this.representation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field representation.
+  * @returns the value  or undefined
+  */
   public getRepresentation(): string[] | undefined {
       return this.representation;
   }
@@ -2367,14 +2442,37 @@ export class ElementDefinition {
     }
     this._representation.push(newValue);
   }
-  public delete_representationAll() {
+  /**
+  * Removes all elements from the array _representation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_representationAll(): Element[] {
     if (typeof(this._representation) !== 'undefined') {
+       const oldArray = this._representation;
        delete this._representation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _representation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_representationBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._representation) !== 'undefined') {
+       return this._representation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _representation.
+  * @returns the value  or undefined
+  */
   public get_representation(): Element[] | undefined {
       return this._representation;
   }
@@ -2402,7 +2500,10 @@ export class ElementDefinition {
     return REGEX_SLICENAME.source;
   }
   
-
+  /**
+  * Gets the current value of field sliceName.
+  * @returns the value  or undefined
+  */
   public getSliceName(): string | undefined {
       return this.sliceName;
   }
@@ -2430,7 +2531,10 @@ export class ElementDefinition {
     return REGEX_LABEL.source;
   }
   
-
+  /**
+  * Gets the current value of field label.
+  * @returns the value  or undefined
+  */
   public getLabel(): string | undefined {
       return this.label;
   }
@@ -2448,14 +2552,37 @@ export class ElementDefinition {
     }
     this.code.push(newValue);
   }
-  public deleteCodeAll() {
+  /**
+  * Removes all elements from the array code, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodeAll(): Coding[] {
     if (typeof(this.code) !== 'undefined') {
+       const oldArray = this.code;
        delete this.code;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array code, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodeBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.code) !== 'undefined') {
+       return this.code.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): Coding[] | undefined {
       return this.code;
   }
@@ -2483,7 +2610,10 @@ export class ElementDefinition {
     return REGEX_SHORT.source;
   }
   
-
+  /**
+  * Gets the current value of field short.
+  * @returns the value  or undefined
+  */
   public getShort(): string | undefined {
       return this.short;
   }
@@ -2511,7 +2641,10 @@ export class ElementDefinition {
     return REGEX_DEFINITION.source;
   }
   
-
+  /**
+  * Gets the current value of field definition.
+  * @returns the value  or undefined
+  */
   public getDefinition(): string | undefined {
       return this.definition;
   }
@@ -2539,7 +2672,10 @@ export class ElementDefinition {
     return REGEX_COMMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field comment.
+  * @returns the value  or undefined
+  */
   public getComment(): string | undefined {
       return this.comment;
   }
@@ -2567,7 +2703,10 @@ export class ElementDefinition {
     return REGEX_REQUIREMENTS.source;
   }
   
-
+  /**
+  * Gets the current value of field requirements.
+  * @returns the value  or undefined
+  */
   public getRequirements(): string | undefined {
       return this.requirements;
   }
@@ -2585,14 +2724,37 @@ export class ElementDefinition {
     }
     this.alias.push(newValue);
   }
-  public deleteAliasAll() {
+  /**
+  * Removes all elements from the array alias, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAliasAll(): string[] {
     if (typeof(this.alias) !== 'undefined') {
+       const oldArray = this.alias;
        delete this.alias;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array alias, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAliasBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.alias) !== 'undefined') {
+       return this.alias.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field alias.
+  * @returns the value  or undefined
+  */
   public getAlias(): string[] | undefined {
       return this.alias;
   }
@@ -2610,14 +2772,37 @@ export class ElementDefinition {
     }
     this._alias.push(newValue);
   }
-  public delete_aliasAll() {
+  /**
+  * Removes all elements from the array _alias, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_aliasAll(): Element[] {
     if (typeof(this._alias) !== 'undefined') {
+       const oldArray = this._alias;
        delete this._alias;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _alias, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_aliasBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._alias) !== 'undefined') {
+       return this._alias.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _alias.
+  * @returns the value  or undefined
+  */
   public get_alias(): Element[] | undefined {
       return this._alias;
   }
@@ -2645,7 +2830,10 @@ export class ElementDefinition {
     return REGEX_MAX.source;
   }
   
-
+  /**
+  * Gets the current value of field max.
+  * @returns the value  or undefined
+  */
   public getMax(): string | undefined {
       return this.max;
   }
@@ -2673,7 +2861,10 @@ export class ElementDefinition {
     return REGEX_CONTENTREFERENCE.source;
   }
   
-
+  /**
+  * Gets the current value of field contentReference.
+  * @returns the value  or undefined
+  */
   public getContentReference(): string | undefined {
       return this.contentReference;
   }
@@ -2691,14 +2882,37 @@ export class ElementDefinition {
     }
     this.type.push(newValue);
   }
-  public deleteTypeAll() {
+  /**
+  * Removes all elements from the array type, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTypeAll(): ElementDefinitionType[] {
     if (typeof(this.type) !== 'undefined') {
+       const oldArray = this.type;
        delete this.type;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array type, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTypeBySplice(start: number, deleteCount?: number): ElementDefinitionType[] {
+    if (typeof(this.type) !== 'undefined') {
+       return this.type.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): ElementDefinitionType[] | undefined {
       return this.type;
   }
@@ -2726,7 +2940,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEBASE64BINARY.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueBase64Binary.
+  * @returns the value  or undefined
+  */
   public getDefaultValueBase64Binary(): string | undefined {
       return this.defaultValueBase64Binary;
   }
@@ -2754,7 +2971,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUECANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueCanonical.
+  * @returns the value  or undefined
+  */
   public getDefaultValueCanonical(): string | undefined {
       return this.defaultValueCanonical;
   }
@@ -2782,7 +3002,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUECODE.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueCode.
+  * @returns the value  or undefined
+  */
   public getDefaultValueCode(): string | undefined {
       return this.defaultValueCode;
   }
@@ -2810,7 +3033,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueDate.
+  * @returns the value  or undefined
+  */
   public getDefaultValueDate(): string | undefined {
       return this.defaultValueDate;
   }
@@ -2838,7 +3064,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueDateTime.
+  * @returns the value  or undefined
+  */
   public getDefaultValueDateTime(): string | undefined {
       return this.defaultValueDateTime;
   }
@@ -2866,7 +3095,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEID.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueId.
+  * @returns the value  or undefined
+  */
   public getDefaultValueId(): string | undefined {
       return this.defaultValueId;
   }
@@ -2894,7 +3126,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueInstant.
+  * @returns the value  or undefined
+  */
   public getDefaultValueInstant(): string | undefined {
       return this.defaultValueInstant;
   }
@@ -2922,7 +3157,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEMARKDOWN.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueMarkdown.
+  * @returns the value  or undefined
+  */
   public getDefaultValueMarkdown(): string | undefined {
       return this.defaultValueMarkdown;
   }
@@ -2950,7 +3188,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEOID.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueOid.
+  * @returns the value  or undefined
+  */
   public getDefaultValueOid(): string | undefined {
       return this.defaultValueOid;
   }
@@ -2978,7 +3219,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUESTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueString.
+  * @returns the value  or undefined
+  */
   public getDefaultValueString(): string | undefined {
       return this.defaultValueString;
   }
@@ -3006,7 +3250,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueTime.
+  * @returns the value  or undefined
+  */
   public getDefaultValueTime(): string | undefined {
       return this.defaultValueTime;
   }
@@ -3034,7 +3281,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEURI.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueUri.
+  * @returns the value  or undefined
+  */
   public getDefaultValueUri(): string | undefined {
       return this.defaultValueUri;
   }
@@ -3062,7 +3312,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEURL.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueUrl.
+  * @returns the value  or undefined
+  */
   public getDefaultValueUrl(): string | undefined {
       return this.defaultValueUrl;
   }
@@ -3090,7 +3343,10 @@ export class ElementDefinition {
     return REGEX_DEFAULTVALUEUUID.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueUuid.
+  * @returns the value  or undefined
+  */
   public getDefaultValueUuid(): string | undefined {
       return this.defaultValueUuid;
   }
@@ -3118,7 +3374,10 @@ export class ElementDefinition {
     return REGEX_MEANINGWHENMISSING.source;
   }
   
-
+  /**
+  * Gets the current value of field meaningWhenMissing.
+  * @returns the value  or undefined
+  */
   public getMeaningWhenMissing(): string | undefined {
       return this.meaningWhenMissing;
   }
@@ -3146,7 +3405,10 @@ export class ElementDefinition {
     return REGEX_ORDERMEANING.source;
   }
   
-
+  /**
+  * Gets the current value of field orderMeaning.
+  * @returns the value  or undefined
+  */
   public getOrderMeaning(): string | undefined {
       return this.orderMeaning;
   }
@@ -3174,7 +3436,10 @@ export class ElementDefinition {
     return REGEX_FIXEDBASE64BINARY.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedBase64Binary.
+  * @returns the value  or undefined
+  */
   public getFixedBase64Binary(): string | undefined {
       return this.fixedBase64Binary;
   }
@@ -3202,7 +3467,10 @@ export class ElementDefinition {
     return REGEX_FIXEDCANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedCanonical.
+  * @returns the value  or undefined
+  */
   public getFixedCanonical(): string | undefined {
       return this.fixedCanonical;
   }
@@ -3230,7 +3498,10 @@ export class ElementDefinition {
     return REGEX_FIXEDCODE.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedCode.
+  * @returns the value  or undefined
+  */
   public getFixedCode(): string | undefined {
       return this.fixedCode;
   }
@@ -3258,7 +3529,10 @@ export class ElementDefinition {
     return REGEX_FIXEDDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedDate.
+  * @returns the value  or undefined
+  */
   public getFixedDate(): string | undefined {
       return this.fixedDate;
   }
@@ -3286,7 +3560,10 @@ export class ElementDefinition {
     return REGEX_FIXEDDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedDateTime.
+  * @returns the value  or undefined
+  */
   public getFixedDateTime(): string | undefined {
       return this.fixedDateTime;
   }
@@ -3314,7 +3591,10 @@ export class ElementDefinition {
     return REGEX_FIXEDID.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedId.
+  * @returns the value  or undefined
+  */
   public getFixedId(): string | undefined {
       return this.fixedId;
   }
@@ -3342,7 +3622,10 @@ export class ElementDefinition {
     return REGEX_FIXEDINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedInstant.
+  * @returns the value  or undefined
+  */
   public getFixedInstant(): string | undefined {
       return this.fixedInstant;
   }
@@ -3370,7 +3653,10 @@ export class ElementDefinition {
     return REGEX_FIXEDMARKDOWN.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedMarkdown.
+  * @returns the value  or undefined
+  */
   public getFixedMarkdown(): string | undefined {
       return this.fixedMarkdown;
   }
@@ -3398,7 +3684,10 @@ export class ElementDefinition {
     return REGEX_FIXEDOID.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedOid.
+  * @returns the value  or undefined
+  */
   public getFixedOid(): string | undefined {
       return this.fixedOid;
   }
@@ -3426,7 +3715,10 @@ export class ElementDefinition {
     return REGEX_FIXEDSTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedString.
+  * @returns the value  or undefined
+  */
   public getFixedString(): string | undefined {
       return this.fixedString;
   }
@@ -3454,7 +3746,10 @@ export class ElementDefinition {
     return REGEX_FIXEDTIME.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedTime.
+  * @returns the value  or undefined
+  */
   public getFixedTime(): string | undefined {
       return this.fixedTime;
   }
@@ -3482,7 +3777,10 @@ export class ElementDefinition {
     return REGEX_FIXEDURI.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedUri.
+  * @returns the value  or undefined
+  */
   public getFixedUri(): string | undefined {
       return this.fixedUri;
   }
@@ -3510,7 +3808,10 @@ export class ElementDefinition {
     return REGEX_FIXEDURL.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedUrl.
+  * @returns the value  or undefined
+  */
   public getFixedUrl(): string | undefined {
       return this.fixedUrl;
   }
@@ -3538,7 +3839,10 @@ export class ElementDefinition {
     return REGEX_FIXEDUUID.source;
   }
   
-
+  /**
+  * Gets the current value of field fixedUuid.
+  * @returns the value  or undefined
+  */
   public getFixedUuid(): string | undefined {
       return this.fixedUuid;
   }
@@ -3566,7 +3870,10 @@ export class ElementDefinition {
     return REGEX_PATTERNBASE64BINARY.source;
   }
   
-
+  /**
+  * Gets the current value of field patternBase64Binary.
+  * @returns the value  or undefined
+  */
   public getPatternBase64Binary(): string | undefined {
       return this.patternBase64Binary;
   }
@@ -3594,7 +3901,10 @@ export class ElementDefinition {
     return REGEX_PATTERNCANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field patternCanonical.
+  * @returns the value  or undefined
+  */
   public getPatternCanonical(): string | undefined {
       return this.patternCanonical;
   }
@@ -3622,7 +3932,10 @@ export class ElementDefinition {
     return REGEX_PATTERNCODE.source;
   }
   
-
+  /**
+  * Gets the current value of field patternCode.
+  * @returns the value  or undefined
+  */
   public getPatternCode(): string | undefined {
       return this.patternCode;
   }
@@ -3650,7 +3963,10 @@ export class ElementDefinition {
     return REGEX_PATTERNDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field patternDate.
+  * @returns the value  or undefined
+  */
   public getPatternDate(): string | undefined {
       return this.patternDate;
   }
@@ -3678,7 +3994,10 @@ export class ElementDefinition {
     return REGEX_PATTERNDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field patternDateTime.
+  * @returns the value  or undefined
+  */
   public getPatternDateTime(): string | undefined {
       return this.patternDateTime;
   }
@@ -3706,7 +4025,10 @@ export class ElementDefinition {
     return REGEX_PATTERNID.source;
   }
   
-
+  /**
+  * Gets the current value of field patternId.
+  * @returns the value  or undefined
+  */
   public getPatternId(): string | undefined {
       return this.patternId;
   }
@@ -3734,7 +4056,10 @@ export class ElementDefinition {
     return REGEX_PATTERNINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field patternInstant.
+  * @returns the value  or undefined
+  */
   public getPatternInstant(): string | undefined {
       return this.patternInstant;
   }
@@ -3762,7 +4087,10 @@ export class ElementDefinition {
     return REGEX_PATTERNMARKDOWN.source;
   }
   
-
+  /**
+  * Gets the current value of field patternMarkdown.
+  * @returns the value  or undefined
+  */
   public getPatternMarkdown(): string | undefined {
       return this.patternMarkdown;
   }
@@ -3790,7 +4118,10 @@ export class ElementDefinition {
     return REGEX_PATTERNOID.source;
   }
   
-
+  /**
+  * Gets the current value of field patternOid.
+  * @returns the value  or undefined
+  */
   public getPatternOid(): string | undefined {
       return this.patternOid;
   }
@@ -3818,7 +4149,10 @@ export class ElementDefinition {
     return REGEX_PATTERNSTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field patternString.
+  * @returns the value  or undefined
+  */
   public getPatternString(): string | undefined {
       return this.patternString;
   }
@@ -3846,7 +4180,10 @@ export class ElementDefinition {
     return REGEX_PATTERNTIME.source;
   }
   
-
+  /**
+  * Gets the current value of field patternTime.
+  * @returns the value  or undefined
+  */
   public getPatternTime(): string | undefined {
       return this.patternTime;
   }
@@ -3874,7 +4211,10 @@ export class ElementDefinition {
     return REGEX_PATTERNURI.source;
   }
   
-
+  /**
+  * Gets the current value of field patternUri.
+  * @returns the value  or undefined
+  */
   public getPatternUri(): string | undefined {
       return this.patternUri;
   }
@@ -3902,7 +4242,10 @@ export class ElementDefinition {
     return REGEX_PATTERNURL.source;
   }
   
-
+  /**
+  * Gets the current value of field patternUrl.
+  * @returns the value  or undefined
+  */
   public getPatternUrl(): string | undefined {
       return this.patternUrl;
   }
@@ -3930,7 +4273,10 @@ export class ElementDefinition {
     return REGEX_PATTERNUUID.source;
   }
   
-
+  /**
+  * Gets the current value of field patternUuid.
+  * @returns the value  or undefined
+  */
   public getPatternUuid(): string | undefined {
       return this.patternUuid;
   }
@@ -3948,14 +4294,37 @@ export class ElementDefinition {
     }
     this.example.push(newValue);
   }
-  public deleteExampleAll() {
+  /**
+  * Removes all elements from the array example, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExampleAll(): ElementDefinitionExample[] {
     if (typeof(this.example) !== 'undefined') {
+       const oldArray = this.example;
        delete this.example;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array example, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExampleBySplice(start: number, deleteCount?: number): ElementDefinitionExample[] {
+    if (typeof(this.example) !== 'undefined') {
+       return this.example.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field example.
+  * @returns the value  or undefined
+  */
   public getExample(): ElementDefinitionExample[] | undefined {
       return this.example;
   }
@@ -3983,7 +4352,10 @@ export class ElementDefinition {
     return REGEX_MINVALUEDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field minValueDate.
+  * @returns the value  or undefined
+  */
   public getMinValueDate(): string | undefined {
       return this.minValueDate;
   }
@@ -4011,7 +4383,10 @@ export class ElementDefinition {
     return REGEX_MINVALUEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field minValueDateTime.
+  * @returns the value  or undefined
+  */
   public getMinValueDateTime(): string | undefined {
       return this.minValueDateTime;
   }
@@ -4039,7 +4414,10 @@ export class ElementDefinition {
     return REGEX_MINVALUEINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field minValueInstant.
+  * @returns the value  or undefined
+  */
   public getMinValueInstant(): string | undefined {
       return this.minValueInstant;
   }
@@ -4067,7 +4445,10 @@ export class ElementDefinition {
     return REGEX_MINVALUETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field minValueTime.
+  * @returns the value  or undefined
+  */
   public getMinValueTime(): string | undefined {
       return this.minValueTime;
   }
@@ -4095,7 +4476,10 @@ export class ElementDefinition {
     return REGEX_MAXVALUEDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field maxValueDate.
+  * @returns the value  or undefined
+  */
   public getMaxValueDate(): string | undefined {
       return this.maxValueDate;
   }
@@ -4123,7 +4507,10 @@ export class ElementDefinition {
     return REGEX_MAXVALUEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field maxValueDateTime.
+  * @returns the value  or undefined
+  */
   public getMaxValueDateTime(): string | undefined {
       return this.maxValueDateTime;
   }
@@ -4151,7 +4538,10 @@ export class ElementDefinition {
     return REGEX_MAXVALUEINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field maxValueInstant.
+  * @returns the value  or undefined
+  */
   public getMaxValueInstant(): string | undefined {
       return this.maxValueInstant;
   }
@@ -4179,7 +4569,10 @@ export class ElementDefinition {
     return REGEX_MAXVALUETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field maxValueTime.
+  * @returns the value  or undefined
+  */
   public getMaxValueTime(): string | undefined {
       return this.maxValueTime;
   }
@@ -4197,14 +4590,37 @@ export class ElementDefinition {
     }
     this.condition.push(newValue);
   }
-  public deleteConditionAll() {
+  /**
+  * Removes all elements from the array condition, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteConditionAll(): string[] {
     if (typeof(this.condition) !== 'undefined') {
+       const oldArray = this.condition;
        delete this.condition;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array condition, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteConditionBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.condition) !== 'undefined') {
+       return this.condition.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field condition.
+  * @returns the value  or undefined
+  */
   public getCondition(): string[] | undefined {
       return this.condition;
   }
@@ -4222,14 +4638,37 @@ export class ElementDefinition {
     }
     this._condition.push(newValue);
   }
-  public delete_conditionAll() {
+  /**
+  * Removes all elements from the array _condition, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_conditionAll(): Element[] {
     if (typeof(this._condition) !== 'undefined') {
+       const oldArray = this._condition;
        delete this._condition;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _condition, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_conditionBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._condition) !== 'undefined') {
+       return this._condition.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _condition.
+  * @returns the value  or undefined
+  */
   public get_condition(): Element[] | undefined {
       return this._condition;
   }
@@ -4247,14 +4686,37 @@ export class ElementDefinition {
     }
     this.constraint.push(newValue);
   }
-  public deleteConstraintAll() {
+  /**
+  * Removes all elements from the array constraint, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteConstraintAll(): ElementDefinitionConstraint[] {
     if (typeof(this.constraint) !== 'undefined') {
+       const oldArray = this.constraint;
        delete this.constraint;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array constraint, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteConstraintBySplice(start: number, deleteCount?: number): ElementDefinitionConstraint[] {
+    if (typeof(this.constraint) !== 'undefined') {
+       return this.constraint.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field constraint.
+  * @returns the value  or undefined
+  */
   public getConstraint(): ElementDefinitionConstraint[] | undefined {
       return this.constraint;
   }
@@ -4282,7 +4744,10 @@ export class ElementDefinition {
     return REGEX_ISMODIFIERREASON.source;
   }
   
-
+  /**
+  * Gets the current value of field isModifierReason.
+  * @returns the value  or undefined
+  */
   public getIsModifierReason(): string | undefined {
       return this.isModifierReason;
   }
@@ -4300,14 +4765,37 @@ export class ElementDefinition {
     }
     this.mapping.push(newValue);
   }
-  public deleteMappingAll() {
+  /**
+  * Removes all elements from the array mapping, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteMappingAll(): ElementDefinitionMapping[] {
     if (typeof(this.mapping) !== 'undefined') {
+       const oldArray = this.mapping;
        delete this.mapping;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array mapping, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteMappingBySplice(start: number, deleteCount?: number): ElementDefinitionMapping[] {
+    if (typeof(this.mapping) !== 'undefined') {
+       return this.mapping.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field mapping.
+  * @returns the value  or undefined
+  */
   public getMapping(): ElementDefinitionMapping[] | undefined {
       return this.mapping;
   }

@@ -629,7 +629,10 @@ export class StructureMapSource {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -647,14 +650,37 @@ export class StructureMapSource {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -672,14 +698,37 @@ export class StructureMapSource {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -707,7 +756,10 @@ export class StructureMapSource {
     return REGEX_CONTEXT.source;
   }
   
-
+  /**
+  * Gets the current value of field context.
+  * @returns the value  or undefined
+  */
   public getContext(): string | undefined {
       return this.context;
   }
@@ -735,7 +787,10 @@ export class StructureMapSource {
     return REGEX_MAX.source;
   }
   
-
+  /**
+  * Gets the current value of field max.
+  * @returns the value  or undefined
+  */
   public getMax(): string | undefined {
       return this.max;
   }
@@ -763,7 +818,10 @@ export class StructureMapSource {
     return REGEX_TYPE_000.source;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -791,7 +849,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEBASE64BINARY.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueBase64Binary.
+  * @returns the value  or undefined
+  */
   public getDefaultValueBase64Binary(): string | undefined {
       return this.defaultValueBase64Binary;
   }
@@ -819,7 +880,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUECANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueCanonical.
+  * @returns the value  or undefined
+  */
   public getDefaultValueCanonical(): string | undefined {
       return this.defaultValueCanonical;
   }
@@ -847,7 +911,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUECODE.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueCode.
+  * @returns the value  or undefined
+  */
   public getDefaultValueCode(): string | undefined {
       return this.defaultValueCode;
   }
@@ -875,7 +942,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueDate.
+  * @returns the value  or undefined
+  */
   public getDefaultValueDate(): string | undefined {
       return this.defaultValueDate;
   }
@@ -903,7 +973,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueDateTime.
+  * @returns the value  or undefined
+  */
   public getDefaultValueDateTime(): string | undefined {
       return this.defaultValueDateTime;
   }
@@ -931,7 +1004,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEID.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueId.
+  * @returns the value  or undefined
+  */
   public getDefaultValueId(): string | undefined {
       return this.defaultValueId;
   }
@@ -959,7 +1035,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueInstant.
+  * @returns the value  or undefined
+  */
   public getDefaultValueInstant(): string | undefined {
       return this.defaultValueInstant;
   }
@@ -987,7 +1066,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEMARKDOWN.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueMarkdown.
+  * @returns the value  or undefined
+  */
   public getDefaultValueMarkdown(): string | undefined {
       return this.defaultValueMarkdown;
   }
@@ -1015,7 +1097,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEOID.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueOid.
+  * @returns the value  or undefined
+  */
   public getDefaultValueOid(): string | undefined {
       return this.defaultValueOid;
   }
@@ -1043,7 +1128,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUESTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueString.
+  * @returns the value  or undefined
+  */
   public getDefaultValueString(): string | undefined {
       return this.defaultValueString;
   }
@@ -1071,7 +1159,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueTime.
+  * @returns the value  or undefined
+  */
   public getDefaultValueTime(): string | undefined {
       return this.defaultValueTime;
   }
@@ -1099,7 +1190,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEURI.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueUri.
+  * @returns the value  or undefined
+  */
   public getDefaultValueUri(): string | undefined {
       return this.defaultValueUri;
   }
@@ -1127,7 +1221,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEURL.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueUrl.
+  * @returns the value  or undefined
+  */
   public getDefaultValueUrl(): string | undefined {
       return this.defaultValueUrl;
   }
@@ -1155,7 +1252,10 @@ export class StructureMapSource {
     return REGEX_DEFAULTVALUEUUID.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValueUuid.
+  * @returns the value  or undefined
+  */
   public getDefaultValueUuid(): string | undefined {
       return this.defaultValueUuid;
   }
@@ -1183,7 +1283,10 @@ export class StructureMapSource {
     return REGEX_ELEMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field element.
+  * @returns the value  or undefined
+  */
   public getElement(): string | undefined {
       return this.element;
   }
@@ -1212,7 +1315,10 @@ export class StructureMapSource {
     return StructureMapSourceListMode_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field listMode.
+  * @returns the value  or undefined
+  */
   public getListMode(): string | undefined {
       return this.listMode;
   }
@@ -1240,7 +1346,10 @@ export class StructureMapSource {
     return REGEX_VARIABLE.source;
   }
   
-
+  /**
+  * Gets the current value of field variable.
+  * @returns the value  or undefined
+  */
   public getVariable(): string | undefined {
       return this.variable;
   }
@@ -1268,7 +1377,10 @@ export class StructureMapSource {
     return REGEX_CONDITION.source;
   }
   
-
+  /**
+  * Gets the current value of field condition.
+  * @returns the value  or undefined
+  */
   public getCondition(): string | undefined {
       return this.condition;
   }
@@ -1296,7 +1408,10 @@ export class StructureMapSource {
     return REGEX_CHECK.source;
   }
   
-
+  /**
+  * Gets the current value of field check.
+  * @returns the value  or undefined
+  */
   public getCheck(): string | undefined {
       return this.check;
   }
@@ -1324,7 +1439,10 @@ export class StructureMapSource {
     return REGEX_LOGMESSAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field logMessage.
+  * @returns the value  or undefined
+  */
   public getLogMessage(): string | undefined {
       return this.logMessage;
   }

@@ -122,7 +122,10 @@ export class SubscriptionChannel {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -140,14 +143,37 @@ export class SubscriptionChannel {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -165,14 +191,37 @@ export class SubscriptionChannel {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -201,7 +250,10 @@ export class SubscriptionChannel {
     return SubscriptionChannelType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -229,7 +281,10 @@ export class SubscriptionChannel {
     return REGEX_ENDPOINT.source;
   }
   
-
+  /**
+  * Gets the current value of field endpoint.
+  * @returns the value  or undefined
+  */
   public getEndpoint(): string | undefined {
       return this.endpoint;
   }
@@ -257,7 +312,10 @@ export class SubscriptionChannel {
     return REGEX_PAYLOAD.source;
   }
   
-
+  /**
+  * Gets the current value of field payload.
+  * @returns the value  or undefined
+  */
   public getPayload(): string | undefined {
       return this.payload;
   }
@@ -275,14 +333,37 @@ export class SubscriptionChannel {
     }
     this.header.push(newValue);
   }
-  public deleteHeaderAll() {
+  /**
+  * Removes all elements from the array header, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteHeaderAll(): string[] {
     if (typeof(this.header) !== 'undefined') {
+       const oldArray = this.header;
        delete this.header;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array header, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteHeaderBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.header) !== 'undefined') {
+       return this.header.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field header.
+  * @returns the value  or undefined
+  */
   public getHeader(): string[] | undefined {
       return this.header;
   }
@@ -300,14 +381,37 @@ export class SubscriptionChannel {
     }
     this._header.push(newValue);
   }
-  public delete_headerAll() {
+  /**
+  * Removes all elements from the array _header, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_headerAll(): Element[] {
     if (typeof(this._header) !== 'undefined') {
+       const oldArray = this._header;
        delete this._header;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _header, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_headerBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._header) !== 'undefined') {
+       return this._header.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _header.
+  * @returns the value  or undefined
+  */
   public get_header(): Element[] | undefined {
       return this._header;
   }

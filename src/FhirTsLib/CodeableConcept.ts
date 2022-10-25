@@ -71,7 +71,10 @@ export class CodeableConcept {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -89,14 +92,37 @@ export class CodeableConcept {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -114,14 +140,37 @@ export class CodeableConcept {
     }
     this.coding.push(newValue);
   }
-  public deleteCodingAll() {
+  /**
+  * Removes all elements from the array coding, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodingAll(): Coding[] {
     if (typeof(this.coding) !== 'undefined') {
+       const oldArray = this.coding;
        delete this.coding;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array coding, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodingBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.coding) !== 'undefined') {
+       return this.coding.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field coding.
+  * @returns the value  or undefined
+  */
   public getCoding(): Coding[] | undefined {
       return this.coding;
   }
@@ -149,7 +198,10 @@ export class CodeableConcept {
     return REGEX_TEXT.source;
   }
   
-
+  /**
+  * Gets the current value of field text.
+  * @returns the value  or undefined
+  */
   public getText(): string | undefined {
       return this.text;
   }

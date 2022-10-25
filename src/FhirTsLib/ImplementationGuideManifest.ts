@@ -124,7 +124,10 @@ export class ImplementationGuideManifest {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -142,14 +145,37 @@ export class ImplementationGuideManifest {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -167,14 +193,37 @@ export class ImplementationGuideManifest {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -202,7 +251,10 @@ export class ImplementationGuideManifest {
     return REGEX_RENDERING.source;
   }
   
-
+  /**
+  * Gets the current value of field rendering.
+  * @returns the value  or undefined
+  */
   public getRendering(): string | undefined {
       return this.rendering;
   }
@@ -220,14 +272,37 @@ export class ImplementationGuideManifest {
     }
     this.resource.push(newValue);
   }
-  public deleteResourceAll() {
+  /**
+  * Removes all elements from the array resource, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteResourceAll(): ImplementationGuideResource1[] {
     if (typeof(this.resource) !== 'undefined') {
+       const oldArray = this.resource;
        delete this.resource;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array resource, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteResourceBySplice(start: number, deleteCount?: number): ImplementationGuideResource1[] {
+    if (typeof(this.resource) !== 'undefined') {
+       return this.resource.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field resource.
+  * @returns the value  or undefined
+  */
   public getResource(): ImplementationGuideResource1[] | undefined {
       return this.resource;
   }
@@ -245,14 +320,37 @@ export class ImplementationGuideManifest {
     }
     this.page.push(newValue);
   }
-  public deletePageAll() {
+  /**
+  * Removes all elements from the array page, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePageAll(): ImplementationGuidePage1[] {
     if (typeof(this.page) !== 'undefined') {
+       const oldArray = this.page;
        delete this.page;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array page, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePageBySplice(start: number, deleteCount?: number): ImplementationGuidePage1[] {
+    if (typeof(this.page) !== 'undefined') {
+       return this.page.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field page.
+  * @returns the value  or undefined
+  */
   public getPage(): ImplementationGuidePage1[] | undefined {
       return this.page;
   }
@@ -270,14 +368,37 @@ export class ImplementationGuideManifest {
     }
     this.image.push(newValue);
   }
-  public deleteImageAll() {
+  /**
+  * Removes all elements from the array image, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteImageAll(): string[] {
     if (typeof(this.image) !== 'undefined') {
+       const oldArray = this.image;
        delete this.image;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array image, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteImageBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.image) !== 'undefined') {
+       return this.image.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field image.
+  * @returns the value  or undefined
+  */
   public getImage(): string[] | undefined {
       return this.image;
   }
@@ -295,14 +416,37 @@ export class ImplementationGuideManifest {
     }
     this._image.push(newValue);
   }
-  public delete_imageAll() {
+  /**
+  * Removes all elements from the array _image, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_imageAll(): Element[] {
     if (typeof(this._image) !== 'undefined') {
+       const oldArray = this._image;
        delete this._image;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _image, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_imageBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._image) !== 'undefined') {
+       return this._image.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _image.
+  * @returns the value  or undefined
+  */
   public get_image(): Element[] | undefined {
       return this._image;
   }
@@ -320,14 +464,37 @@ export class ImplementationGuideManifest {
     }
     this.other.push(newValue);
   }
-  public deleteOtherAll() {
+  /**
+  * Removes all elements from the array other, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOtherAll(): string[] {
     if (typeof(this.other) !== 'undefined') {
+       const oldArray = this.other;
        delete this.other;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array other, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOtherBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.other) !== 'undefined') {
+       return this.other.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field other.
+  * @returns the value  or undefined
+  */
   public getOther(): string[] | undefined {
       return this.other;
   }
@@ -345,14 +512,37 @@ export class ImplementationGuideManifest {
     }
     this._other.push(newValue);
   }
-  public delete_otherAll() {
+  /**
+  * Removes all elements from the array _other, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_otherAll(): Element[] {
     if (typeof(this._other) !== 'undefined') {
+       const oldArray = this._other;
        delete this._other;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _other, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_otherBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._other) !== 'undefined') {
+       return this._other.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _other.
+  * @returns the value  or undefined
+  */
   public get_other(): Element[] | undefined {
       return this._other;
   }

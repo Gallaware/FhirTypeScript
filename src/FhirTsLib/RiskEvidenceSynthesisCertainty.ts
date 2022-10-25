@@ -89,7 +89,10 @@ export class RiskEvidenceSynthesisCertainty {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -107,14 +110,37 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -132,14 +158,37 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -157,14 +206,37 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.rating.push(newValue);
   }
-  public deleteRatingAll() {
+  /**
+  * Removes all elements from the array rating, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRatingAll(): CodeableConcept[] {
     if (typeof(this.rating) !== 'undefined') {
+       const oldArray = this.rating;
        delete this.rating;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array rating, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRatingBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.rating) !== 'undefined') {
+       return this.rating.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field rating.
+  * @returns the value  or undefined
+  */
   public getRating(): CodeableConcept[] | undefined {
       return this.rating;
   }
@@ -182,14 +254,37 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.note.push(newValue);
   }
-  public deleteNoteAll() {
+  /**
+  * Removes all elements from the array note, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteAll(): Annotation[] {
     if (typeof(this.note) !== 'undefined') {
+       const oldArray = this.note;
        delete this.note;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array note, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.note) !== 'undefined') {
+       return this.note.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field note.
+  * @returns the value  or undefined
+  */
   public getNote(): Annotation[] | undefined {
       return this.note;
   }
@@ -207,14 +302,37 @@ export class RiskEvidenceSynthesisCertainty {
     }
     this.certaintySubcomponent.push(newValue);
   }
-  public deleteCertaintySubcomponentAll() {
+  /**
+  * Removes all elements from the array certaintySubcomponent, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCertaintySubcomponentAll(): RiskEvidenceSynthesisCertaintySubcomponent[] {
     if (typeof(this.certaintySubcomponent) !== 'undefined') {
+       const oldArray = this.certaintySubcomponent;
        delete this.certaintySubcomponent;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array certaintySubcomponent, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCertaintySubcomponentBySplice(start: number, deleteCount?: number): RiskEvidenceSynthesisCertaintySubcomponent[] {
+    if (typeof(this.certaintySubcomponent) !== 'undefined') {
+       return this.certaintySubcomponent.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field certaintySubcomponent.
+  * @returns the value  or undefined
+  */
   public getCertaintySubcomponent(): RiskEvidenceSynthesisCertaintySubcomponent[] | undefined {
       return this.certaintySubcomponent;
   }

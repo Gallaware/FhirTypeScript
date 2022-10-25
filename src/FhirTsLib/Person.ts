@@ -361,7 +361,10 @@ export class Person {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -389,7 +392,10 @@ export class Person {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -417,7 +423,10 @@ export class Person {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -435,14 +444,37 @@ export class Person {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -460,14 +492,37 @@ export class Person {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -485,14 +540,37 @@ export class Person {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -510,14 +588,37 @@ export class Person {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -535,14 +636,37 @@ export class Person {
     }
     this.name.push(newValue);
   }
-  public deleteNameAll() {
+  /**
+  * Removes all elements from the array name, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNameAll(): HumanName[] {
     if (typeof(this.name) !== 'undefined') {
+       const oldArray = this.name;
        delete this.name;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array name, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNameBySplice(start: number, deleteCount?: number): HumanName[] {
+    if (typeof(this.name) !== 'undefined') {
+       return this.name.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): HumanName[] | undefined {
       return this.name;
   }
@@ -560,14 +684,37 @@ export class Person {
     }
     this.telecom.push(newValue);
   }
-  public deleteTelecomAll() {
+  /**
+  * Removes all elements from the array telecom, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTelecomAll(): ContactPoint[] {
     if (typeof(this.telecom) !== 'undefined') {
+       const oldArray = this.telecom;
        delete this.telecom;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array telecom, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTelecomBySplice(start: number, deleteCount?: number): ContactPoint[] {
+    if (typeof(this.telecom) !== 'undefined') {
+       return this.telecom.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field telecom.
+  * @returns the value  or undefined
+  */
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
   }
@@ -596,7 +743,10 @@ export class Person {
     return PersonGender_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field gender.
+  * @returns the value  or undefined
+  */
   public getGender(): string | undefined {
       return this.gender;
   }
@@ -624,7 +774,10 @@ export class Person {
     return REGEX_BIRTHDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field birthDate.
+  * @returns the value  or undefined
+  */
   public getBirthDate(): string | undefined {
       return this.birthDate;
   }
@@ -642,14 +795,37 @@ export class Person {
     }
     this.address.push(newValue);
   }
-  public deleteAddressAll() {
+  /**
+  * Removes all elements from the array address, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAddressAll(): Address[] {
     if (typeof(this.address) !== 'undefined') {
+       const oldArray = this.address;
        delete this.address;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array address, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAddressBySplice(start: number, deleteCount?: number): Address[] {
+    if (typeof(this.address) !== 'undefined') {
+       return this.address.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field address.
+  * @returns the value  or undefined
+  */
   public getAddress(): Address[] | undefined {
       return this.address;
   }
@@ -667,14 +843,37 @@ export class Person {
     }
     this.link.push(newValue);
   }
-  public deleteLinkAll() {
+  /**
+  * Removes all elements from the array link, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLinkAll(): PersonLink[] {
     if (typeof(this.link) !== 'undefined') {
+       const oldArray = this.link;
        delete this.link;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array link, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLinkBySplice(start: number, deleteCount?: number): PersonLink[] {
+    if (typeof(this.link) !== 'undefined') {
+       return this.link.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field link.
+  * @returns the value  or undefined
+  */
   public getLink(): PersonLink[] | undefined {
       return this.link;
   }

@@ -133,7 +133,10 @@ export class TriggerDefinition {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -151,14 +154,37 @@ export class TriggerDefinition {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -187,7 +213,10 @@ export class TriggerDefinition {
     return TriggerDefinitionType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -215,7 +244,10 @@ export class TriggerDefinition {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -243,7 +275,10 @@ export class TriggerDefinition {
     return REGEX_TIMINGDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field timingDate.
+  * @returns the value  or undefined
+  */
   public getTimingDate(): string | undefined {
       return this.timingDate;
   }
@@ -271,7 +306,10 @@ export class TriggerDefinition {
     return REGEX_TIMINGDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field timingDateTime.
+  * @returns the value  or undefined
+  */
   public getTimingDateTime(): string | undefined {
       return this.timingDateTime;
   }
@@ -289,14 +327,37 @@ export class TriggerDefinition {
     }
     this.data.push(newValue);
   }
-  public deleteDataAll() {
+  /**
+  * Removes all elements from the array data, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDataAll(): DataRequirement[] {
     if (typeof(this.data) !== 'undefined') {
+       const oldArray = this.data;
        delete this.data;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array data, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDataBySplice(start: number, deleteCount?: number): DataRequirement[] {
+    if (typeof(this.data) !== 'undefined') {
+       return this.data.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field data.
+  * @returns the value  or undefined
+  */
   public getData(): DataRequirement[] | undefined {
       return this.data;
   }

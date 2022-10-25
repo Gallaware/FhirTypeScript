@@ -108,7 +108,10 @@ export class CarePlanActivity {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -126,14 +129,37 @@ export class CarePlanActivity {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -151,14 +177,37 @@ export class CarePlanActivity {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -176,14 +225,37 @@ export class CarePlanActivity {
     }
     this.outcomeCodeableConcept.push(newValue);
   }
-  public deleteOutcomeCodeableConceptAll() {
+  /**
+  * Removes all elements from the array outcomeCodeableConcept, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOutcomeCodeableConceptAll(): CodeableConcept[] {
     if (typeof(this.outcomeCodeableConcept) !== 'undefined') {
+       const oldArray = this.outcomeCodeableConcept;
        delete this.outcomeCodeableConcept;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array outcomeCodeableConcept, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOutcomeCodeableConceptBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.outcomeCodeableConcept) !== 'undefined') {
+       return this.outcomeCodeableConcept.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field outcomeCodeableConcept.
+  * @returns the value  or undefined
+  */
   public getOutcomeCodeableConcept(): CodeableConcept[] | undefined {
       return this.outcomeCodeableConcept;
   }
@@ -201,14 +273,37 @@ export class CarePlanActivity {
     }
     this.outcomeReference.push(newValue);
   }
-  public deleteOutcomeReferenceAll() {
+  /**
+  * Removes all elements from the array outcomeReference, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOutcomeReferenceAll(): Reference[] {
     if (typeof(this.outcomeReference) !== 'undefined') {
+       const oldArray = this.outcomeReference;
        delete this.outcomeReference;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array outcomeReference, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOutcomeReferenceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.outcomeReference) !== 'undefined') {
+       return this.outcomeReference.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field outcomeReference.
+  * @returns the value  or undefined
+  */
   public getOutcomeReference(): Reference[] | undefined {
       return this.outcomeReference;
   }
@@ -226,14 +321,37 @@ export class CarePlanActivity {
     }
     this.progress.push(newValue);
   }
-  public deleteProgressAll() {
+  /**
+  * Removes all elements from the array progress, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProgressAll(): Annotation[] {
     if (typeof(this.progress) !== 'undefined') {
+       const oldArray = this.progress;
        delete this.progress;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array progress, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProgressBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.progress) !== 'undefined') {
+       return this.progress.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field progress.
+  * @returns the value  or undefined
+  */
   public getProgress(): Annotation[] | undefined {
       return this.progress;
   }

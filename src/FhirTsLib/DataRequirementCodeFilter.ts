@@ -108,7 +108,10 @@ export class DataRequirementCodeFilter {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -126,14 +129,37 @@ export class DataRequirementCodeFilter {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -151,14 +177,37 @@ export class DataRequirementCodeFilter {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -186,7 +235,10 @@ export class DataRequirementCodeFilter {
     return REGEX_PATH.source;
   }
   
-
+  /**
+  * Gets the current value of field path.
+  * @returns the value  or undefined
+  */
   public getPath(): string | undefined {
       return this.path;
   }
@@ -214,7 +266,10 @@ export class DataRequirementCodeFilter {
     return REGEX_SEARCHPARAM.source;
   }
   
-
+  /**
+  * Gets the current value of field searchParam.
+  * @returns the value  or undefined
+  */
   public getSearchParam(): string | undefined {
       return this.searchParam;
   }
@@ -242,7 +297,10 @@ export class DataRequirementCodeFilter {
     return REGEX_VALUESET.source;
   }
   
-
+  /**
+  * Gets the current value of field valueSet.
+  * @returns the value  or undefined
+  */
   public getValueSet(): string | undefined {
       return this.valueSet;
   }
@@ -260,14 +318,37 @@ export class DataRequirementCodeFilter {
     }
     this.code.push(newValue);
   }
-  public deleteCodeAll() {
+  /**
+  * Removes all elements from the array code, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodeAll(): Coding[] {
     if (typeof(this.code) !== 'undefined') {
+       const oldArray = this.code;
        delete this.code;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array code, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodeBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.code) !== 'undefined') {
+       return this.code.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): Coding[] | undefined {
       return this.code;
   }

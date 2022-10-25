@@ -135,7 +135,10 @@ export class ClaimInsurance {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -153,14 +156,37 @@ export class ClaimInsurance {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -178,14 +204,37 @@ export class ClaimInsurance {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -213,7 +262,10 @@ export class ClaimInsurance {
     return REGEX_BUSINESSARRANGEMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field businessArrangement.
+  * @returns the value  or undefined
+  */
   public getBusinessArrangement(): string | undefined {
       return this.businessArrangement;
   }
@@ -231,14 +283,37 @@ export class ClaimInsurance {
     }
     this.preAuthRef.push(newValue);
   }
-  public deletePreAuthRefAll() {
+  /**
+  * Removes all elements from the array preAuthRef, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePreAuthRefAll(): string[] {
     if (typeof(this.preAuthRef) !== 'undefined') {
+       const oldArray = this.preAuthRef;
        delete this.preAuthRef;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array preAuthRef, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePreAuthRefBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.preAuthRef) !== 'undefined') {
+       return this.preAuthRef.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field preAuthRef.
+  * @returns the value  or undefined
+  */
   public getPreAuthRef(): string[] | undefined {
       return this.preAuthRef;
   }
@@ -256,14 +331,37 @@ export class ClaimInsurance {
     }
     this._preAuthRef.push(newValue);
   }
-  public delete_preAuthRefAll() {
+  /**
+  * Removes all elements from the array _preAuthRef, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_preAuthRefAll(): Element[] {
     if (typeof(this._preAuthRef) !== 'undefined') {
+       const oldArray = this._preAuthRef;
        delete this._preAuthRef;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _preAuthRef, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_preAuthRefBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._preAuthRef) !== 'undefined') {
+       return this._preAuthRef.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _preAuthRef.
+  * @returns the value  or undefined
+  */
   public get_preAuthRef(): Element[] | undefined {
       return this._preAuthRef;
   }

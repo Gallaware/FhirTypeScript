@@ -413,7 +413,10 @@ export class SubstanceSourceMaterial {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -441,7 +444,10 @@ export class SubstanceSourceMaterial {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -469,7 +475,10 @@ export class SubstanceSourceMaterial {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -487,14 +496,37 @@ export class SubstanceSourceMaterial {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -512,14 +544,37 @@ export class SubstanceSourceMaterial {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -537,14 +592,37 @@ export class SubstanceSourceMaterial {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -572,7 +650,10 @@ export class SubstanceSourceMaterial {
     return REGEX_ORGANISMNAME.source;
   }
   
-
+  /**
+  * Gets the current value of field organismName.
+  * @returns the value  or undefined
+  */
   public getOrganismName(): string | undefined {
       return this.organismName;
   }
@@ -590,14 +671,37 @@ export class SubstanceSourceMaterial {
     }
     this.parentSubstanceId.push(newValue);
   }
-  public deleteParentSubstanceIdAll() {
+  /**
+  * Removes all elements from the array parentSubstanceId, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteParentSubstanceIdAll(): Identifier[] {
     if (typeof(this.parentSubstanceId) !== 'undefined') {
+       const oldArray = this.parentSubstanceId;
        delete this.parentSubstanceId;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array parentSubstanceId, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteParentSubstanceIdBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.parentSubstanceId) !== 'undefined') {
+       return this.parentSubstanceId.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field parentSubstanceId.
+  * @returns the value  or undefined
+  */
   public getParentSubstanceId(): Identifier[] | undefined {
       return this.parentSubstanceId;
   }
@@ -615,14 +719,37 @@ export class SubstanceSourceMaterial {
     }
     this.parentSubstanceName.push(newValue);
   }
-  public deleteParentSubstanceNameAll() {
+  /**
+  * Removes all elements from the array parentSubstanceName, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteParentSubstanceNameAll(): string[] {
     if (typeof(this.parentSubstanceName) !== 'undefined') {
+       const oldArray = this.parentSubstanceName;
        delete this.parentSubstanceName;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array parentSubstanceName, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteParentSubstanceNameBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.parentSubstanceName) !== 'undefined') {
+       return this.parentSubstanceName.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field parentSubstanceName.
+  * @returns the value  or undefined
+  */
   public getParentSubstanceName(): string[] | undefined {
       return this.parentSubstanceName;
   }
@@ -640,14 +767,37 @@ export class SubstanceSourceMaterial {
     }
     this._parentSubstanceName.push(newValue);
   }
-  public delete_parentSubstanceNameAll() {
+  /**
+  * Removes all elements from the array _parentSubstanceName, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_parentSubstanceNameAll(): Element[] {
     if (typeof(this._parentSubstanceName) !== 'undefined') {
+       const oldArray = this._parentSubstanceName;
        delete this._parentSubstanceName;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _parentSubstanceName, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_parentSubstanceNameBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._parentSubstanceName) !== 'undefined') {
+       return this._parentSubstanceName.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _parentSubstanceName.
+  * @returns the value  or undefined
+  */
   public get_parentSubstanceName(): Element[] | undefined {
       return this._parentSubstanceName;
   }
@@ -665,14 +815,37 @@ export class SubstanceSourceMaterial {
     }
     this.countryOfOrigin.push(newValue);
   }
-  public deleteCountryOfOriginAll() {
+  /**
+  * Removes all elements from the array countryOfOrigin, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCountryOfOriginAll(): CodeableConcept[] {
     if (typeof(this.countryOfOrigin) !== 'undefined') {
+       const oldArray = this.countryOfOrigin;
        delete this.countryOfOrigin;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array countryOfOrigin, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCountryOfOriginBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.countryOfOrigin) !== 'undefined') {
+       return this.countryOfOrigin.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field countryOfOrigin.
+  * @returns the value  or undefined
+  */
   public getCountryOfOrigin(): CodeableConcept[] | undefined {
       return this.countryOfOrigin;
   }
@@ -690,14 +863,37 @@ export class SubstanceSourceMaterial {
     }
     this.geographicalLocation.push(newValue);
   }
-  public deleteGeographicalLocationAll() {
+  /**
+  * Removes all elements from the array geographicalLocation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGeographicalLocationAll(): string[] {
     if (typeof(this.geographicalLocation) !== 'undefined') {
+       const oldArray = this.geographicalLocation;
        delete this.geographicalLocation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array geographicalLocation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGeographicalLocationBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.geographicalLocation) !== 'undefined') {
+       return this.geographicalLocation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field geographicalLocation.
+  * @returns the value  or undefined
+  */
   public getGeographicalLocation(): string[] | undefined {
       return this.geographicalLocation;
   }
@@ -715,14 +911,37 @@ export class SubstanceSourceMaterial {
     }
     this._geographicalLocation.push(newValue);
   }
-  public delete_geographicalLocationAll() {
+  /**
+  * Removes all elements from the array _geographicalLocation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_geographicalLocationAll(): Element[] {
     if (typeof(this._geographicalLocation) !== 'undefined') {
+       const oldArray = this._geographicalLocation;
        delete this._geographicalLocation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _geographicalLocation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_geographicalLocationBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._geographicalLocation) !== 'undefined') {
+       return this._geographicalLocation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _geographicalLocation.
+  * @returns the value  or undefined
+  */
   public get_geographicalLocation(): Element[] | undefined {
       return this._geographicalLocation;
   }
@@ -740,14 +959,37 @@ export class SubstanceSourceMaterial {
     }
     this.fractionDescription.push(newValue);
   }
-  public deleteFractionDescriptionAll() {
+  /**
+  * Removes all elements from the array fractionDescription, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFractionDescriptionAll(): SubstanceSourceMaterialFractionDescription[] {
     if (typeof(this.fractionDescription) !== 'undefined') {
+       const oldArray = this.fractionDescription;
        delete this.fractionDescription;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array fractionDescription, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFractionDescriptionBySplice(start: number, deleteCount?: number): SubstanceSourceMaterialFractionDescription[] {
+    if (typeof(this.fractionDescription) !== 'undefined') {
+       return this.fractionDescription.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field fractionDescription.
+  * @returns the value  or undefined
+  */
   public getFractionDescription(): SubstanceSourceMaterialFractionDescription[] | undefined {
       return this.fractionDescription;
   }
@@ -765,14 +1007,37 @@ export class SubstanceSourceMaterial {
     }
     this.partDescription.push(newValue);
   }
-  public deletePartDescriptionAll() {
+  /**
+  * Removes all elements from the array partDescription, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePartDescriptionAll(): SubstanceSourceMaterialPartDescription[] {
     if (typeof(this.partDescription) !== 'undefined') {
+       const oldArray = this.partDescription;
        delete this.partDescription;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array partDescription, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePartDescriptionBySplice(start: number, deleteCount?: number): SubstanceSourceMaterialPartDescription[] {
+    if (typeof(this.partDescription) !== 'undefined') {
+       return this.partDescription.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field partDescription.
+  * @returns the value  or undefined
+  */
   public getPartDescription(): SubstanceSourceMaterialPartDescription[] | undefined {
       return this.partDescription;
   }

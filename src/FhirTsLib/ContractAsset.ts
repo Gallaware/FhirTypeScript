@@ -195,7 +195,10 @@ export class ContractAsset {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -213,14 +216,37 @@ export class ContractAsset {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -238,14 +264,37 @@ export class ContractAsset {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -263,14 +312,37 @@ export class ContractAsset {
     }
     this.type.push(newValue);
   }
-  public deleteTypeAll() {
+  /**
+  * Removes all elements from the array type, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTypeAll(): CodeableConcept[] {
     if (typeof(this.type) !== 'undefined') {
+       const oldArray = this.type;
        delete this.type;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array type, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTypeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.type) !== 'undefined') {
+       return this.type.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): CodeableConcept[] | undefined {
       return this.type;
   }
@@ -288,14 +360,37 @@ export class ContractAsset {
     }
     this.typeReference.push(newValue);
   }
-  public deleteTypeReferenceAll() {
+  /**
+  * Removes all elements from the array typeReference, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTypeReferenceAll(): Reference[] {
     if (typeof(this.typeReference) !== 'undefined') {
+       const oldArray = this.typeReference;
        delete this.typeReference;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array typeReference, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTypeReferenceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.typeReference) !== 'undefined') {
+       return this.typeReference.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field typeReference.
+  * @returns the value  or undefined
+  */
   public getTypeReference(): Reference[] | undefined {
       return this.typeReference;
   }
@@ -313,14 +408,37 @@ export class ContractAsset {
     }
     this.subtype.push(newValue);
   }
-  public deleteSubtypeAll() {
+  /**
+  * Removes all elements from the array subtype, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSubtypeAll(): CodeableConcept[] {
     if (typeof(this.subtype) !== 'undefined') {
+       const oldArray = this.subtype;
        delete this.subtype;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array subtype, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSubtypeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.subtype) !== 'undefined') {
+       return this.subtype.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field subtype.
+  * @returns the value  or undefined
+  */
   public getSubtype(): CodeableConcept[] | undefined {
       return this.subtype;
   }
@@ -338,14 +456,37 @@ export class ContractAsset {
     }
     this.context.push(newValue);
   }
-  public deleteContextAll() {
+  /**
+  * Removes all elements from the array context, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContextAll(): ContractContext[] {
     if (typeof(this.context) !== 'undefined') {
+       const oldArray = this.context;
        delete this.context;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array context, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContextBySplice(start: number, deleteCount?: number): ContractContext[] {
+    if (typeof(this.context) !== 'undefined') {
+       return this.context.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field context.
+  * @returns the value  or undefined
+  */
   public getContext(): ContractContext[] | undefined {
       return this.context;
   }
@@ -373,7 +514,10 @@ export class ContractAsset {
     return REGEX_CONDITION.source;
   }
   
-
+  /**
+  * Gets the current value of field condition.
+  * @returns the value  or undefined
+  */
   public getCondition(): string | undefined {
       return this.condition;
   }
@@ -391,14 +535,37 @@ export class ContractAsset {
     }
     this.periodType.push(newValue);
   }
-  public deletePeriodTypeAll() {
+  /**
+  * Removes all elements from the array periodType, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePeriodTypeAll(): CodeableConcept[] {
     if (typeof(this.periodType) !== 'undefined') {
+       const oldArray = this.periodType;
        delete this.periodType;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array periodType, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePeriodTypeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.periodType) !== 'undefined') {
+       return this.periodType.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field periodType.
+  * @returns the value  or undefined
+  */
   public getPeriodType(): CodeableConcept[] | undefined {
       return this.periodType;
   }
@@ -416,14 +583,37 @@ export class ContractAsset {
     }
     this.period.push(newValue);
   }
-  public deletePeriodAll() {
+  /**
+  * Removes all elements from the array period, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePeriodAll(): Period[] {
     if (typeof(this.period) !== 'undefined') {
+       const oldArray = this.period;
        delete this.period;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array period, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePeriodBySplice(start: number, deleteCount?: number): Period[] {
+    if (typeof(this.period) !== 'undefined') {
+       return this.period.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field period.
+  * @returns the value  or undefined
+  */
   public getPeriod(): Period[] | undefined {
       return this.period;
   }
@@ -441,14 +631,37 @@ export class ContractAsset {
     }
     this.usePeriod.push(newValue);
   }
-  public deleteUsePeriodAll() {
+  /**
+  * Removes all elements from the array usePeriod, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUsePeriodAll(): Period[] {
     if (typeof(this.usePeriod) !== 'undefined') {
+       const oldArray = this.usePeriod;
        delete this.usePeriod;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array usePeriod, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUsePeriodBySplice(start: number, deleteCount?: number): Period[] {
+    if (typeof(this.usePeriod) !== 'undefined') {
+       return this.usePeriod.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field usePeriod.
+  * @returns the value  or undefined
+  */
   public getUsePeriod(): Period[] | undefined {
       return this.usePeriod;
   }
@@ -476,7 +689,10 @@ export class ContractAsset {
     return REGEX_TEXT.source;
   }
   
-
+  /**
+  * Gets the current value of field text.
+  * @returns the value  or undefined
+  */
   public getText(): string | undefined {
       return this.text;
   }
@@ -494,14 +710,37 @@ export class ContractAsset {
     }
     this.linkId.push(newValue);
   }
-  public deleteLinkIdAll() {
+  /**
+  * Removes all elements from the array linkId, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLinkIdAll(): string[] {
     if (typeof(this.linkId) !== 'undefined') {
+       const oldArray = this.linkId;
        delete this.linkId;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array linkId, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLinkIdBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.linkId) !== 'undefined') {
+       return this.linkId.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field linkId.
+  * @returns the value  or undefined
+  */
   public getLinkId(): string[] | undefined {
       return this.linkId;
   }
@@ -519,14 +758,37 @@ export class ContractAsset {
     }
     this._linkId.push(newValue);
   }
-  public delete_linkIdAll() {
+  /**
+  * Removes all elements from the array _linkId, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_linkIdAll(): Element[] {
     if (typeof(this._linkId) !== 'undefined') {
+       const oldArray = this._linkId;
        delete this._linkId;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _linkId, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_linkIdBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._linkId) !== 'undefined') {
+       return this._linkId.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _linkId.
+  * @returns the value  or undefined
+  */
   public get_linkId(): Element[] | undefined {
       return this._linkId;
   }
@@ -544,14 +806,37 @@ export class ContractAsset {
     }
     this.answer.push(newValue);
   }
-  public deleteAnswerAll() {
+  /**
+  * Removes all elements from the array answer, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAnswerAll(): ContractAnswer[] {
     if (typeof(this.answer) !== 'undefined') {
+       const oldArray = this.answer;
        delete this.answer;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array answer, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAnswerBySplice(start: number, deleteCount?: number): ContractAnswer[] {
+    if (typeof(this.answer) !== 'undefined') {
+       return this.answer.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field answer.
+  * @returns the value  or undefined
+  */
   public getAnswer(): ContractAnswer[] | undefined {
       return this.answer;
   }
@@ -569,14 +854,37 @@ export class ContractAsset {
     }
     this.securityLabelNumber.push(newValue);
   }
-  public deleteSecurityLabelNumberAll() {
+  /**
+  * Removes all elements from the array securityLabelNumber, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSecurityLabelNumberAll(): number[] {
     if (typeof(this.securityLabelNumber) !== 'undefined') {
+       const oldArray = this.securityLabelNumber;
        delete this.securityLabelNumber;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array securityLabelNumber, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSecurityLabelNumberBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.securityLabelNumber) !== 'undefined') {
+       return this.securityLabelNumber.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field securityLabelNumber.
+  * @returns the value  or undefined
+  */
   public getSecurityLabelNumber(): number[] | undefined {
       return this.securityLabelNumber;
   }
@@ -594,14 +902,37 @@ export class ContractAsset {
     }
     this._securityLabelNumber.push(newValue);
   }
-  public delete_securityLabelNumberAll() {
+  /**
+  * Removes all elements from the array _securityLabelNumber, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_securityLabelNumberAll(): Element[] {
     if (typeof(this._securityLabelNumber) !== 'undefined') {
+       const oldArray = this._securityLabelNumber;
        delete this._securityLabelNumber;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _securityLabelNumber, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_securityLabelNumberBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._securityLabelNumber) !== 'undefined') {
+       return this._securityLabelNumber.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _securityLabelNumber.
+  * @returns the value  or undefined
+  */
   public get_securityLabelNumber(): Element[] | undefined {
       return this._securityLabelNumber;
   }
@@ -619,14 +950,37 @@ export class ContractAsset {
     }
     this.valuedItem.push(newValue);
   }
-  public deleteValuedItemAll() {
+  /**
+  * Removes all elements from the array valuedItem, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteValuedItemAll(): ContractValuedItem[] {
     if (typeof(this.valuedItem) !== 'undefined') {
+       const oldArray = this.valuedItem;
        delete this.valuedItem;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array valuedItem, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteValuedItemBySplice(start: number, deleteCount?: number): ContractValuedItem[] {
+    if (typeof(this.valuedItem) !== 'undefined') {
+       return this.valuedItem.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field valuedItem.
+  * @returns the value  or undefined
+  */
   public getValuedItem(): ContractValuedItem[] | undefined {
       return this.valuedItem;
   }

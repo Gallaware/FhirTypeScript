@@ -1,6 +1,6 @@
 {
   "name": "fhirtypescript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Implementation of FHIR JSON protocol using TypeScript. Includes valid values and multi-language oriented display labels.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -413,7 +413,10 @@ export class MedicinalProductAuthorization {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -441,7 +444,10 @@ export class MedicinalProductAuthorization {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -469,7 +475,10 @@ export class MedicinalProductAuthorization {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -487,14 +496,37 @@ export class MedicinalProductAuthorization {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -512,14 +544,37 @@ export class MedicinalProductAuthorization {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -537,14 +592,37 @@ export class MedicinalProductAuthorization {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -562,14 +640,37 @@ export class MedicinalProductAuthorization {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -587,14 +688,37 @@ export class MedicinalProductAuthorization {
     }
     this.country.push(newValue);
   }
-  public deleteCountryAll() {
+  /**
+  * Removes all elements from the array country, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCountryAll(): CodeableConcept[] {
     if (typeof(this.country) !== 'undefined') {
+       const oldArray = this.country;
        delete this.country;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array country, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCountryBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.country) !== 'undefined') {
+       return this.country.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field country.
+  * @returns the value  or undefined
+  */
   public getCountry(): CodeableConcept[] | undefined {
       return this.country;
   }
@@ -612,14 +736,37 @@ export class MedicinalProductAuthorization {
     }
     this.jurisdiction.push(newValue);
   }
-  public deleteJurisdictionAll() {
+  /**
+  * Removes all elements from the array jurisdiction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteJurisdictionAll(): CodeableConcept[] {
     if (typeof(this.jurisdiction) !== 'undefined') {
+       const oldArray = this.jurisdiction;
        delete this.jurisdiction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array jurisdiction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteJurisdictionBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       return this.jurisdiction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field jurisdiction.
+  * @returns the value  or undefined
+  */
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
   }
@@ -647,7 +794,10 @@ export class MedicinalProductAuthorization {
     return REGEX_STATUSDATE_000.source;
   }
   
-
+  /**
+  * Gets the current value of field statusDate.
+  * @returns the value  or undefined
+  */
   public getStatusDate(): string | undefined {
       return this.statusDate;
   }
@@ -675,7 +825,10 @@ export class MedicinalProductAuthorization {
     return REGEX_RESTOREDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field restoreDate.
+  * @returns the value  or undefined
+  */
   public getRestoreDate(): string | undefined {
       return this.restoreDate;
   }
@@ -703,7 +856,10 @@ export class MedicinalProductAuthorization {
     return REGEX_DATEOFFIRSTAUTHORIZATION.source;
   }
   
-
+  /**
+  * Gets the current value of field dateOfFirstAuthorization.
+  * @returns the value  or undefined
+  */
   public getDateOfFirstAuthorization(): string | undefined {
       return this.dateOfFirstAuthorization;
   }
@@ -731,7 +887,10 @@ export class MedicinalProductAuthorization {
     return REGEX_INTERNATIONALBIRTHDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field internationalBirthDate.
+  * @returns the value  or undefined
+  */
   public getInternationalBirthDate(): string | undefined {
       return this.internationalBirthDate;
   }
@@ -749,14 +908,37 @@ export class MedicinalProductAuthorization {
     }
     this.jurisdictionalAuthorization.push(newValue);
   }
-  public deleteJurisdictionalAuthorizationAll() {
+  /**
+  * Removes all elements from the array jurisdictionalAuthorization, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteJurisdictionalAuthorizationAll(): MedicinalProductAuthorizationJurisdictionalAuthorization[] {
     if (typeof(this.jurisdictionalAuthorization) !== 'undefined') {
+       const oldArray = this.jurisdictionalAuthorization;
        delete this.jurisdictionalAuthorization;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array jurisdictionalAuthorization, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteJurisdictionalAuthorizationBySplice(start: number, deleteCount?: number): MedicinalProductAuthorizationJurisdictionalAuthorization[] {
+    if (typeof(this.jurisdictionalAuthorization) !== 'undefined') {
+       return this.jurisdictionalAuthorization.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field jurisdictionalAuthorization.
+  * @returns the value  or undefined
+  */
   public getJurisdictionalAuthorization(): MedicinalProductAuthorizationJurisdictionalAuthorization[] | undefined {
       return this.jurisdictionalAuthorization;
   }

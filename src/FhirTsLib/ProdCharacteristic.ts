@@ -170,7 +170,10 @@ export class ProdCharacteristic {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -188,14 +191,37 @@ export class ProdCharacteristic {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -213,14 +239,37 @@ export class ProdCharacteristic {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -248,7 +297,10 @@ export class ProdCharacteristic {
     return REGEX_SHAPE.source;
   }
   
-
+  /**
+  * Gets the current value of field shape.
+  * @returns the value  or undefined
+  */
   public getShape(): string | undefined {
       return this.shape;
   }
@@ -266,14 +318,37 @@ export class ProdCharacteristic {
     }
     this.color.push(newValue);
   }
-  public deleteColorAll() {
+  /**
+  * Removes all elements from the array color, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteColorAll(): string[] {
     if (typeof(this.color) !== 'undefined') {
+       const oldArray = this.color;
        delete this.color;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array color, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteColorBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.color) !== 'undefined') {
+       return this.color.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field color.
+  * @returns the value  or undefined
+  */
   public getColor(): string[] | undefined {
       return this.color;
   }
@@ -291,14 +366,37 @@ export class ProdCharacteristic {
     }
     this._color.push(newValue);
   }
-  public delete_colorAll() {
+  /**
+  * Removes all elements from the array _color, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_colorAll(): Element[] {
     if (typeof(this._color) !== 'undefined') {
+       const oldArray = this._color;
        delete this._color;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _color, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_colorBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._color) !== 'undefined') {
+       return this._color.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _color.
+  * @returns the value  or undefined
+  */
   public get_color(): Element[] | undefined {
       return this._color;
   }
@@ -316,14 +414,37 @@ export class ProdCharacteristic {
     }
     this.imprint.push(newValue);
   }
-  public deleteImprintAll() {
+  /**
+  * Removes all elements from the array imprint, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteImprintAll(): string[] {
     if (typeof(this.imprint) !== 'undefined') {
+       const oldArray = this.imprint;
        delete this.imprint;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array imprint, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteImprintBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.imprint) !== 'undefined') {
+       return this.imprint.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field imprint.
+  * @returns the value  or undefined
+  */
   public getImprint(): string[] | undefined {
       return this.imprint;
   }
@@ -341,14 +462,37 @@ export class ProdCharacteristic {
     }
     this._imprint.push(newValue);
   }
-  public delete_imprintAll() {
+  /**
+  * Removes all elements from the array _imprint, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_imprintAll(): Element[] {
     if (typeof(this._imprint) !== 'undefined') {
+       const oldArray = this._imprint;
        delete this._imprint;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _imprint, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_imprintBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._imprint) !== 'undefined') {
+       return this._imprint.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _imprint.
+  * @returns the value  or undefined
+  */
   public get_imprint(): Element[] | undefined {
       return this._imprint;
   }
@@ -366,14 +510,37 @@ export class ProdCharacteristic {
     }
     this.image.push(newValue);
   }
-  public deleteImageAll() {
+  /**
+  * Removes all elements from the array image, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteImageAll(): Attachment[] {
     if (typeof(this.image) !== 'undefined') {
+       const oldArray = this.image;
        delete this.image;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array image, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteImageBySplice(start: number, deleteCount?: number): Attachment[] {
+    if (typeof(this.image) !== 'undefined') {
+       return this.image.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field image.
+  * @returns the value  or undefined
+  */
   public getImage(): Attachment[] | undefined {
       return this.image;
   }

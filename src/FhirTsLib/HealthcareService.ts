@@ -475,7 +475,10 @@ export class HealthcareService {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -503,7 +506,10 @@ export class HealthcareService {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -531,7 +537,10 @@ export class HealthcareService {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -549,14 +558,37 @@ export class HealthcareService {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -574,14 +606,37 @@ export class HealthcareService {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -599,14 +654,37 @@ export class HealthcareService {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -624,14 +702,37 @@ export class HealthcareService {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -649,14 +750,37 @@ export class HealthcareService {
     }
     this.category.push(newValue);
   }
-  public deleteCategoryAll() {
+  /**
+  * Removes all elements from the array category, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCategoryAll(): CodeableConcept[] {
     if (typeof(this.category) !== 'undefined') {
+       const oldArray = this.category;
        delete this.category;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array category, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCategoryBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.category) !== 'undefined') {
+       return this.category.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field category.
+  * @returns the value  or undefined
+  */
   public getCategory(): CodeableConcept[] | undefined {
       return this.category;
   }
@@ -674,14 +798,37 @@ export class HealthcareService {
     }
     this.type.push(newValue);
   }
-  public deleteTypeAll() {
+  /**
+  * Removes all elements from the array type, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTypeAll(): CodeableConcept[] {
     if (typeof(this.type) !== 'undefined') {
+       const oldArray = this.type;
        delete this.type;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array type, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTypeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.type) !== 'undefined') {
+       return this.type.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): CodeableConcept[] | undefined {
       return this.type;
   }
@@ -699,14 +846,37 @@ export class HealthcareService {
     }
     this.specialty.push(newValue);
   }
-  public deleteSpecialtyAll() {
+  /**
+  * Removes all elements from the array specialty, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSpecialtyAll(): CodeableConcept[] {
     if (typeof(this.specialty) !== 'undefined') {
+       const oldArray = this.specialty;
        delete this.specialty;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array specialty, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSpecialtyBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.specialty) !== 'undefined') {
+       return this.specialty.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field specialty.
+  * @returns the value  or undefined
+  */
   public getSpecialty(): CodeableConcept[] | undefined {
       return this.specialty;
   }
@@ -724,14 +894,37 @@ export class HealthcareService {
     }
     this.location.push(newValue);
   }
-  public deleteLocationAll() {
+  /**
+  * Removes all elements from the array location, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLocationAll(): Reference[] {
     if (typeof(this.location) !== 'undefined') {
+       const oldArray = this.location;
        delete this.location;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array location, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLocationBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.location) !== 'undefined') {
+       return this.location.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field location.
+  * @returns the value  or undefined
+  */
   public getLocation(): Reference[] | undefined {
       return this.location;
   }
@@ -759,7 +952,10 @@ export class HealthcareService {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -787,7 +983,10 @@ export class HealthcareService {
     return REGEX_COMMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field comment.
+  * @returns the value  or undefined
+  */
   public getComment(): string | undefined {
       return this.comment;
   }
@@ -815,7 +1014,10 @@ export class HealthcareService {
     return REGEX_EXTRADETAILS.source;
   }
   
-
+  /**
+  * Gets the current value of field extraDetails.
+  * @returns the value  or undefined
+  */
   public getExtraDetails(): string | undefined {
       return this.extraDetails;
   }
@@ -833,14 +1035,37 @@ export class HealthcareService {
     }
     this.telecom.push(newValue);
   }
-  public deleteTelecomAll() {
+  /**
+  * Removes all elements from the array telecom, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTelecomAll(): ContactPoint[] {
     if (typeof(this.telecom) !== 'undefined') {
+       const oldArray = this.telecom;
        delete this.telecom;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array telecom, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTelecomBySplice(start: number, deleteCount?: number): ContactPoint[] {
+    if (typeof(this.telecom) !== 'undefined') {
+       return this.telecom.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field telecom.
+  * @returns the value  or undefined
+  */
   public getTelecom(): ContactPoint[] | undefined {
       return this.telecom;
   }
@@ -858,14 +1083,37 @@ export class HealthcareService {
     }
     this.coverageArea.push(newValue);
   }
-  public deleteCoverageAreaAll() {
+  /**
+  * Removes all elements from the array coverageArea, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCoverageAreaAll(): Reference[] {
     if (typeof(this.coverageArea) !== 'undefined') {
+       const oldArray = this.coverageArea;
        delete this.coverageArea;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array coverageArea, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCoverageAreaBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.coverageArea) !== 'undefined') {
+       return this.coverageArea.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field coverageArea.
+  * @returns the value  or undefined
+  */
   public getCoverageArea(): Reference[] | undefined {
       return this.coverageArea;
   }
@@ -883,14 +1131,37 @@ export class HealthcareService {
     }
     this.serviceProvisionCode.push(newValue);
   }
-  public deleteServiceProvisionCodeAll() {
+  /**
+  * Removes all elements from the array serviceProvisionCode, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteServiceProvisionCodeAll(): CodeableConcept[] {
     if (typeof(this.serviceProvisionCode) !== 'undefined') {
+       const oldArray = this.serviceProvisionCode;
        delete this.serviceProvisionCode;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array serviceProvisionCode, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteServiceProvisionCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.serviceProvisionCode) !== 'undefined') {
+       return this.serviceProvisionCode.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field serviceProvisionCode.
+  * @returns the value  or undefined
+  */
   public getServiceProvisionCode(): CodeableConcept[] | undefined {
       return this.serviceProvisionCode;
   }
@@ -908,14 +1179,37 @@ export class HealthcareService {
     }
     this.eligibility.push(newValue);
   }
-  public deleteEligibilityAll() {
+  /**
+  * Removes all elements from the array eligibility, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEligibilityAll(): HealthcareServiceEligibility[] {
     if (typeof(this.eligibility) !== 'undefined') {
+       const oldArray = this.eligibility;
        delete this.eligibility;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array eligibility, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEligibilityBySplice(start: number, deleteCount?: number): HealthcareServiceEligibility[] {
+    if (typeof(this.eligibility) !== 'undefined') {
+       return this.eligibility.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field eligibility.
+  * @returns the value  or undefined
+  */
   public getEligibility(): HealthcareServiceEligibility[] | undefined {
       return this.eligibility;
   }
@@ -933,14 +1227,37 @@ export class HealthcareService {
     }
     this.program.push(newValue);
   }
-  public deleteProgramAll() {
+  /**
+  * Removes all elements from the array program, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProgramAll(): CodeableConcept[] {
     if (typeof(this.program) !== 'undefined') {
+       const oldArray = this.program;
        delete this.program;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array program, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProgramBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.program) !== 'undefined') {
+       return this.program.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field program.
+  * @returns the value  or undefined
+  */
   public getProgram(): CodeableConcept[] | undefined {
       return this.program;
   }
@@ -958,14 +1275,37 @@ export class HealthcareService {
     }
     this.characteristic.push(newValue);
   }
-  public deleteCharacteristicAll() {
+  /**
+  * Removes all elements from the array characteristic, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCharacteristicAll(): CodeableConcept[] {
     if (typeof(this.characteristic) !== 'undefined') {
+       const oldArray = this.characteristic;
        delete this.characteristic;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array characteristic, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCharacteristicBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.characteristic) !== 'undefined') {
+       return this.characteristic.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field characteristic.
+  * @returns the value  or undefined
+  */
   public getCharacteristic(): CodeableConcept[] | undefined {
       return this.characteristic;
   }
@@ -983,14 +1323,37 @@ export class HealthcareService {
     }
     this.communication.push(newValue);
   }
-  public deleteCommunicationAll() {
+  /**
+  * Removes all elements from the array communication, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCommunicationAll(): CodeableConcept[] {
     if (typeof(this.communication) !== 'undefined') {
+       const oldArray = this.communication;
        delete this.communication;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array communication, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCommunicationBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.communication) !== 'undefined') {
+       return this.communication.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field communication.
+  * @returns the value  or undefined
+  */
   public getCommunication(): CodeableConcept[] | undefined {
       return this.communication;
   }
@@ -1008,14 +1371,37 @@ export class HealthcareService {
     }
     this.referralMethod.push(newValue);
   }
-  public deleteReferralMethodAll() {
+  /**
+  * Removes all elements from the array referralMethod, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReferralMethodAll(): CodeableConcept[] {
     if (typeof(this.referralMethod) !== 'undefined') {
+       const oldArray = this.referralMethod;
        delete this.referralMethod;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array referralMethod, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReferralMethodBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.referralMethod) !== 'undefined') {
+       return this.referralMethod.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field referralMethod.
+  * @returns the value  or undefined
+  */
   public getReferralMethod(): CodeableConcept[] | undefined {
       return this.referralMethod;
   }
@@ -1033,14 +1419,37 @@ export class HealthcareService {
     }
     this.availableTime.push(newValue);
   }
-  public deleteAvailableTimeAll() {
+  /**
+  * Removes all elements from the array availableTime, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAvailableTimeAll(): HealthcareServiceAvailableTime[] {
     if (typeof(this.availableTime) !== 'undefined') {
+       const oldArray = this.availableTime;
        delete this.availableTime;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array availableTime, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAvailableTimeBySplice(start: number, deleteCount?: number): HealthcareServiceAvailableTime[] {
+    if (typeof(this.availableTime) !== 'undefined') {
+       return this.availableTime.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field availableTime.
+  * @returns the value  or undefined
+  */
   public getAvailableTime(): HealthcareServiceAvailableTime[] | undefined {
       return this.availableTime;
   }
@@ -1058,14 +1467,37 @@ export class HealthcareService {
     }
     this.notAvailable.push(newValue);
   }
-  public deleteNotAvailableAll() {
+  /**
+  * Removes all elements from the array notAvailable, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNotAvailableAll(): HealthcareServiceNotAvailable[] {
     if (typeof(this.notAvailable) !== 'undefined') {
+       const oldArray = this.notAvailable;
        delete this.notAvailable;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array notAvailable, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNotAvailableBySplice(start: number, deleteCount?: number): HealthcareServiceNotAvailable[] {
+    if (typeof(this.notAvailable) !== 'undefined') {
+       return this.notAvailable.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field notAvailable.
+  * @returns the value  or undefined
+  */
   public getNotAvailable(): HealthcareServiceNotAvailable[] | undefined {
       return this.notAvailable;
   }
@@ -1093,7 +1525,10 @@ export class HealthcareService {
     return REGEX_AVAILABILITYEXCEPTIONS.source;
   }
   
-
+  /**
+  * Gets the current value of field availabilityExceptions.
+  * @returns the value  or undefined
+  */
   public getAvailabilityExceptions(): string | undefined {
       return this.availabilityExceptions;
   }
@@ -1111,14 +1546,37 @@ export class HealthcareService {
     }
     this.endpoint.push(newValue);
   }
-  public deleteEndpointAll() {
+  /**
+  * Removes all elements from the array endpoint, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEndpointAll(): Reference[] {
     if (typeof(this.endpoint) !== 'undefined') {
+       const oldArray = this.endpoint;
        delete this.endpoint;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array endpoint, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEndpointBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.endpoint) !== 'undefined') {
+       return this.endpoint.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field endpoint.
+  * @returns the value  or undefined
+  */
   public getEndpoint(): Reference[] | undefined {
       return this.endpoint;
   }

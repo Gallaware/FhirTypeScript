@@ -130,7 +130,10 @@ export class EncounterHospitalization {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -148,14 +151,37 @@ export class EncounterHospitalization {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -173,14 +199,37 @@ export class EncounterHospitalization {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -198,14 +247,37 @@ export class EncounterHospitalization {
     }
     this.dietPreference.push(newValue);
   }
-  public deleteDietPreferenceAll() {
+  /**
+  * Removes all elements from the array dietPreference, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDietPreferenceAll(): CodeableConcept[] {
     if (typeof(this.dietPreference) !== 'undefined') {
+       const oldArray = this.dietPreference;
        delete this.dietPreference;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array dietPreference, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDietPreferenceBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.dietPreference) !== 'undefined') {
+       return this.dietPreference.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field dietPreference.
+  * @returns the value  or undefined
+  */
   public getDietPreference(): CodeableConcept[] | undefined {
       return this.dietPreference;
   }
@@ -223,14 +295,37 @@ export class EncounterHospitalization {
     }
     this.specialCourtesy.push(newValue);
   }
-  public deleteSpecialCourtesyAll() {
+  /**
+  * Removes all elements from the array specialCourtesy, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSpecialCourtesyAll(): CodeableConcept[] {
     if (typeof(this.specialCourtesy) !== 'undefined') {
+       const oldArray = this.specialCourtesy;
        delete this.specialCourtesy;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array specialCourtesy, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSpecialCourtesyBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.specialCourtesy) !== 'undefined') {
+       return this.specialCourtesy.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field specialCourtesy.
+  * @returns the value  or undefined
+  */
   public getSpecialCourtesy(): CodeableConcept[] | undefined {
       return this.specialCourtesy;
   }
@@ -248,14 +343,37 @@ export class EncounterHospitalization {
     }
     this.specialArrangement.push(newValue);
   }
-  public deleteSpecialArrangementAll() {
+  /**
+  * Removes all elements from the array specialArrangement, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSpecialArrangementAll(): CodeableConcept[] {
     if (typeof(this.specialArrangement) !== 'undefined') {
+       const oldArray = this.specialArrangement;
        delete this.specialArrangement;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array specialArrangement, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSpecialArrangementBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.specialArrangement) !== 'undefined') {
+       return this.specialArrangement.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field specialArrangement.
+  * @returns the value  or undefined
+  */
   public getSpecialArrangement(): CodeableConcept[] | undefined {
       return this.specialArrangement;
   }

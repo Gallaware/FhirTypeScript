@@ -554,7 +554,10 @@ export class CapabilityStatement {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -582,7 +585,10 @@ export class CapabilityStatement {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -610,7 +616,10 @@ export class CapabilityStatement {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -628,14 +637,37 @@ export class CapabilityStatement {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -653,14 +685,37 @@ export class CapabilityStatement {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -678,14 +733,37 @@ export class CapabilityStatement {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -713,7 +791,10 @@ export class CapabilityStatement {
     return REGEX_URL.source;
   }
   
-
+  /**
+  * Gets the current value of field url.
+  * @returns the value  or undefined
+  */
   public getUrl(): string | undefined {
       return this.url;
   }
@@ -741,7 +822,10 @@ export class CapabilityStatement {
     return REGEX_VERSION.source;
   }
   
-
+  /**
+  * Gets the current value of field version.
+  * @returns the value  or undefined
+  */
   public getVersion(): string | undefined {
       return this.version;
   }
@@ -769,7 +853,10 @@ export class CapabilityStatement {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -797,7 +884,10 @@ export class CapabilityStatement {
     return REGEX_TITLE.source;
   }
   
-
+  /**
+  * Gets the current value of field title.
+  * @returns the value  or undefined
+  */
   public getTitle(): string | undefined {
       return this.title;
   }
@@ -826,7 +916,10 @@ export class CapabilityStatement {
     return CapabilityStatementStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -854,7 +947,10 @@ export class CapabilityStatement {
     return REGEX_DATE.source;
   }
   
-
+  /**
+  * Gets the current value of field date.
+  * @returns the value  or undefined
+  */
   public getDate(): string | undefined {
       return this.date;
   }
@@ -882,7 +978,10 @@ export class CapabilityStatement {
     return REGEX_PUBLISHER.source;
   }
   
-
+  /**
+  * Gets the current value of field publisher.
+  * @returns the value  or undefined
+  */
   public getPublisher(): string | undefined {
       return this.publisher;
   }
@@ -900,14 +999,37 @@ export class CapabilityStatement {
     }
     this.contact.push(newValue);
   }
-  public deleteContactAll() {
+  /**
+  * Removes all elements from the array contact, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContactAll(): ContactDetail[] {
     if (typeof(this.contact) !== 'undefined') {
+       const oldArray = this.contact;
        delete this.contact;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contact, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContactBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.contact) !== 'undefined') {
+       return this.contact.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contact.
+  * @returns the value  or undefined
+  */
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
   }
@@ -935,7 +1057,10 @@ export class CapabilityStatement {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -953,14 +1078,37 @@ export class CapabilityStatement {
     }
     this.useContext.push(newValue);
   }
-  public deleteUseContextAll() {
+  /**
+  * Removes all elements from the array useContext, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUseContextAll(): UsageContext[] {
     if (typeof(this.useContext) !== 'undefined') {
+       const oldArray = this.useContext;
        delete this.useContext;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array useContext, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUseContextBySplice(start: number, deleteCount?: number): UsageContext[] {
+    if (typeof(this.useContext) !== 'undefined') {
+       return this.useContext.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field useContext.
+  * @returns the value  or undefined
+  */
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
   }
@@ -978,14 +1126,37 @@ export class CapabilityStatement {
     }
     this.jurisdiction.push(newValue);
   }
-  public deleteJurisdictionAll() {
+  /**
+  * Removes all elements from the array jurisdiction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteJurisdictionAll(): CodeableConcept[] {
     if (typeof(this.jurisdiction) !== 'undefined') {
+       const oldArray = this.jurisdiction;
        delete this.jurisdiction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array jurisdiction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteJurisdictionBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       return this.jurisdiction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field jurisdiction.
+  * @returns the value  or undefined
+  */
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
   }
@@ -1013,7 +1184,10 @@ export class CapabilityStatement {
     return REGEX_PURPOSE.source;
   }
   
-
+  /**
+  * Gets the current value of field purpose.
+  * @returns the value  or undefined
+  */
   public getPurpose(): string | undefined {
       return this.purpose;
   }
@@ -1041,7 +1215,10 @@ export class CapabilityStatement {
     return REGEX_COPYRIGHT.source;
   }
   
-
+  /**
+  * Gets the current value of field copyright.
+  * @returns the value  or undefined
+  */
   public getCopyright(): string | undefined {
       return this.copyright;
   }
@@ -1070,7 +1247,10 @@ export class CapabilityStatement {
     return CapabilityStatementKind_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field kind.
+  * @returns the value  or undefined
+  */
   public getKind(): string | undefined {
       return this.kind;
   }
@@ -1088,14 +1268,37 @@ export class CapabilityStatement {
     }
     this.instantiates.push(newValue);
   }
-  public deleteInstantiatesAll() {
+  /**
+  * Removes all elements from the array instantiates, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstantiatesAll(): string[] {
     if (typeof(this.instantiates) !== 'undefined') {
+       const oldArray = this.instantiates;
        delete this.instantiates;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instantiates, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstantiatesBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.instantiates) !== 'undefined') {
+       return this.instantiates.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instantiates.
+  * @returns the value  or undefined
+  */
   public getInstantiates(): string[] | undefined {
       return this.instantiates;
   }
@@ -1113,14 +1316,37 @@ export class CapabilityStatement {
     }
     this.imports.push(newValue);
   }
-  public deleteImportsAll() {
+  /**
+  * Removes all elements from the array imports, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteImportsAll(): string[] {
     if (typeof(this.imports) !== 'undefined') {
+       const oldArray = this.imports;
        delete this.imports;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array imports, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteImportsBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.imports) !== 'undefined') {
+       return this.imports.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field imports.
+  * @returns the value  or undefined
+  */
   public getImports(): string[] | undefined {
       return this.imports;
   }
@@ -1149,7 +1375,10 @@ export class CapabilityStatement {
     return CapabilityStatementFhirVersion_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field fhirVersion.
+  * @returns the value  or undefined
+  */
   public getFhirVersion(): string | undefined {
       return this.fhirVersion;
   }
@@ -1167,14 +1396,37 @@ export class CapabilityStatement {
     }
     this.format.push(newValue);
   }
-  public deleteFormatAll() {
+  /**
+  * Removes all elements from the array format, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFormatAll(): string[] {
     if (typeof(this.format) !== 'undefined') {
+       const oldArray = this.format;
        delete this.format;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array format, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFormatBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.format) !== 'undefined') {
+       return this.format.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field format.
+  * @returns the value  or undefined
+  */
   public getFormat(): string[] | undefined {
       return this.format;
   }
@@ -1192,14 +1444,37 @@ export class CapabilityStatement {
     }
     this._format.push(newValue);
   }
-  public delete_formatAll() {
+  /**
+  * Removes all elements from the array _format, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_formatAll(): Element[] {
     if (typeof(this._format) !== 'undefined') {
+       const oldArray = this._format;
        delete this._format;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _format, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_formatBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._format) !== 'undefined') {
+       return this._format.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _format.
+  * @returns the value  or undefined
+  */
   public get_format(): Element[] | undefined {
       return this._format;
   }
@@ -1217,14 +1492,37 @@ export class CapabilityStatement {
     }
     this.patchFormat.push(newValue);
   }
-  public deletePatchFormatAll() {
+  /**
+  * Removes all elements from the array patchFormat, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePatchFormatAll(): string[] {
     if (typeof(this.patchFormat) !== 'undefined') {
+       const oldArray = this.patchFormat;
        delete this.patchFormat;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array patchFormat, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePatchFormatBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.patchFormat) !== 'undefined') {
+       return this.patchFormat.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field patchFormat.
+  * @returns the value  or undefined
+  */
   public getPatchFormat(): string[] | undefined {
       return this.patchFormat;
   }
@@ -1242,14 +1540,37 @@ export class CapabilityStatement {
     }
     this._patchFormat.push(newValue);
   }
-  public delete_patchFormatAll() {
+  /**
+  * Removes all elements from the array _patchFormat, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_patchFormatAll(): Element[] {
     if (typeof(this._patchFormat) !== 'undefined') {
+       const oldArray = this._patchFormat;
        delete this._patchFormat;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _patchFormat, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_patchFormatBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._patchFormat) !== 'undefined') {
+       return this._patchFormat.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _patchFormat.
+  * @returns the value  or undefined
+  */
   public get_patchFormat(): Element[] | undefined {
       return this._patchFormat;
   }
@@ -1267,14 +1588,37 @@ export class CapabilityStatement {
     }
     this.implementationGuide.push(newValue);
   }
-  public deleteImplementationGuideAll() {
+  /**
+  * Removes all elements from the array implementationGuide, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteImplementationGuideAll(): string[] {
     if (typeof(this.implementationGuide) !== 'undefined') {
+       const oldArray = this.implementationGuide;
        delete this.implementationGuide;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array implementationGuide, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteImplementationGuideBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.implementationGuide) !== 'undefined') {
+       return this.implementationGuide.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field implementationGuide.
+  * @returns the value  or undefined
+  */
   public getImplementationGuide(): string[] | undefined {
       return this.implementationGuide;
   }
@@ -1292,14 +1636,37 @@ export class CapabilityStatement {
     }
     this.rest.push(newValue);
   }
-  public deleteRestAll() {
+  /**
+  * Removes all elements from the array rest, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRestAll(): CapabilityStatementRest[] {
     if (typeof(this.rest) !== 'undefined') {
+       const oldArray = this.rest;
        delete this.rest;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array rest, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRestBySplice(start: number, deleteCount?: number): CapabilityStatementRest[] {
+    if (typeof(this.rest) !== 'undefined') {
+       return this.rest.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field rest.
+  * @returns the value  or undefined
+  */
   public getRest(): CapabilityStatementRest[] | undefined {
       return this.rest;
   }
@@ -1317,14 +1684,37 @@ export class CapabilityStatement {
     }
     this.messaging.push(newValue);
   }
-  public deleteMessagingAll() {
+  /**
+  * Removes all elements from the array messaging, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteMessagingAll(): CapabilityStatementMessaging[] {
     if (typeof(this.messaging) !== 'undefined') {
+       const oldArray = this.messaging;
        delete this.messaging;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array messaging, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteMessagingBySplice(start: number, deleteCount?: number): CapabilityStatementMessaging[] {
+    if (typeof(this.messaging) !== 'undefined') {
+       return this.messaging.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field messaging.
+  * @returns the value  or undefined
+  */
   public getMessaging(): CapabilityStatementMessaging[] | undefined {
       return this.messaging;
   }
@@ -1342,14 +1732,37 @@ export class CapabilityStatement {
     }
     this.document.push(newValue);
   }
-  public deleteDocumentAll() {
+  /**
+  * Removes all elements from the array document, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDocumentAll(): CapabilityStatementDocument[] {
     if (typeof(this.document) !== 'undefined') {
+       const oldArray = this.document;
        delete this.document;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array document, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDocumentBySplice(start: number, deleteCount?: number): CapabilityStatementDocument[] {
+    if (typeof(this.document) !== 'undefined') {
+       return this.document.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field document.
+  * @returns the value  or undefined
+  */
   public getDocument(): CapabilityStatementDocument[] | undefined {
       return this.document;
   }

@@ -95,7 +95,10 @@ export class MedicationKnowledgePatientCharacteristics {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -113,14 +116,37 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -138,14 +164,37 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -163,14 +212,37 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this.value.push(newValue);
   }
-  public deleteValueAll() {
+  /**
+  * Removes all elements from the array value, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteValueAll(): string[] {
     if (typeof(this.value) !== 'undefined') {
+       const oldArray = this.value;
        delete this.value;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array value, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteValueBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.value) !== 'undefined') {
+       return this.value.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field value.
+  * @returns the value  or undefined
+  */
   public getValue(): string[] | undefined {
       return this.value;
   }
@@ -188,14 +260,37 @@ export class MedicationKnowledgePatientCharacteristics {
     }
     this._value.push(newValue);
   }
-  public delete_valueAll() {
+  /**
+  * Removes all elements from the array _value, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_valueAll(): Element[] {
     if (typeof(this._value) !== 'undefined') {
+       const oldArray = this._value;
        delete this._value;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _value, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_valueBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._value) !== 'undefined') {
+       return this._value.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _value.
+  * @returns the value  or undefined
+  */
   public get_value(): Element[] | undefined {
       return this._value;
   }

@@ -88,7 +88,10 @@ export class ChargeItemDefinitionPropertyGroup {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -106,14 +109,37 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -131,14 +157,37 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -156,14 +205,37 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.applicability.push(newValue);
   }
-  public deleteApplicabilityAll() {
+  /**
+  * Removes all elements from the array applicability, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteApplicabilityAll(): ChargeItemDefinitionApplicability[] {
     if (typeof(this.applicability) !== 'undefined') {
+       const oldArray = this.applicability;
        delete this.applicability;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array applicability, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteApplicabilityBySplice(start: number, deleteCount?: number): ChargeItemDefinitionApplicability[] {
+    if (typeof(this.applicability) !== 'undefined') {
+       return this.applicability.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field applicability.
+  * @returns the value  or undefined
+  */
   public getApplicability(): ChargeItemDefinitionApplicability[] | undefined {
       return this.applicability;
   }
@@ -181,14 +253,37 @@ export class ChargeItemDefinitionPropertyGroup {
     }
     this.priceComponent.push(newValue);
   }
-  public deletePriceComponentAll() {
+  /**
+  * Removes all elements from the array priceComponent, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePriceComponentAll(): ChargeItemDefinitionPriceComponent[] {
     if (typeof(this.priceComponent) !== 'undefined') {
+       const oldArray = this.priceComponent;
        delete this.priceComponent;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array priceComponent, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePriceComponentBySplice(start: number, deleteCount?: number): ChargeItemDefinitionPriceComponent[] {
+    if (typeof(this.priceComponent) !== 'undefined') {
+       return this.priceComponent.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field priceComponent.
+  * @returns the value  or undefined
+  */
   public getPriceComponent(): ChargeItemDefinitionPriceComponent[] | undefined {
       return this.priceComponent;
   }

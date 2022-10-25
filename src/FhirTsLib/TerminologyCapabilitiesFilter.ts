@@ -95,7 +95,10 @@ export class TerminologyCapabilitiesFilter {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -113,14 +116,37 @@ export class TerminologyCapabilitiesFilter {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -138,14 +164,37 @@ export class TerminologyCapabilitiesFilter {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -173,7 +222,10 @@ export class TerminologyCapabilitiesFilter {
     return REGEX_CODE.source;
   }
   
-
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): string | undefined {
       return this.code;
   }
@@ -191,14 +243,37 @@ export class TerminologyCapabilitiesFilter {
     }
     this.op.push(newValue);
   }
-  public deleteOpAll() {
+  /**
+  * Removes all elements from the array op, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOpAll(): string[] {
     if (typeof(this.op) !== 'undefined') {
+       const oldArray = this.op;
        delete this.op;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array op, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOpBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.op) !== 'undefined') {
+       return this.op.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field op.
+  * @returns the value  or undefined
+  */
   public getOp(): string[] | undefined {
       return this.op;
   }
@@ -216,14 +291,37 @@ export class TerminologyCapabilitiesFilter {
     }
     this._op.push(newValue);
   }
-  public delete_opAll() {
+  /**
+  * Removes all elements from the array _op, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_opAll(): Element[] {
     if (typeof(this._op) !== 'undefined') {
+       const oldArray = this._op;
        delete this._op;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _op, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_opBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._op) !== 'undefined') {
+       return this._op.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _op.
+  * @returns the value  or undefined
+  */
   public get_op(): Element[] | undefined {
       return this._op;
   }

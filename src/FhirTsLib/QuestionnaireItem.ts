@@ -232,7 +232,10 @@ export class QuestionnaireItem {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -250,14 +253,37 @@ export class QuestionnaireItem {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -275,14 +301,37 @@ export class QuestionnaireItem {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -310,7 +359,10 @@ export class QuestionnaireItem {
     return REGEX_LINKID.source;
   }
   
-
+  /**
+  * Gets the current value of field linkId.
+  * @returns the value  or undefined
+  */
   public getLinkId(): string | undefined {
       return this.linkId;
   }
@@ -338,7 +390,10 @@ export class QuestionnaireItem {
     return REGEX_DEFINITION_000.source;
   }
   
-
+  /**
+  * Gets the current value of field definition.
+  * @returns the value  or undefined
+  */
   public getDefinition(): string | undefined {
       return this.definition;
   }
@@ -356,14 +411,37 @@ export class QuestionnaireItem {
     }
     this.code.push(newValue);
   }
-  public deleteCodeAll() {
+  /**
+  * Removes all elements from the array code, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodeAll(): Coding[] {
     if (typeof(this.code) !== 'undefined') {
+       const oldArray = this.code;
        delete this.code;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array code, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodeBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.code) !== 'undefined') {
+       return this.code.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): Coding[] | undefined {
       return this.code;
   }
@@ -391,7 +469,10 @@ export class QuestionnaireItem {
     return REGEX_PREFIX.source;
   }
   
-
+  /**
+  * Gets the current value of field prefix.
+  * @returns the value  or undefined
+  */
   public getPrefix(): string | undefined {
       return this.prefix;
   }
@@ -419,7 +500,10 @@ export class QuestionnaireItem {
     return REGEX_TEXT.source;
   }
   
-
+  /**
+  * Gets the current value of field text.
+  * @returns the value  or undefined
+  */
   public getText(): string | undefined {
       return this.text;
   }
@@ -448,7 +532,10 @@ export class QuestionnaireItem {
     return QuestionnaireItemType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -466,14 +553,37 @@ export class QuestionnaireItem {
     }
     this.enableWhen.push(newValue);
   }
-  public deleteEnableWhenAll() {
+  /**
+  * Removes all elements from the array enableWhen, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEnableWhenAll(): QuestionnaireEnableWhen[] {
     if (typeof(this.enableWhen) !== 'undefined') {
+       const oldArray = this.enableWhen;
        delete this.enableWhen;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array enableWhen, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEnableWhenBySplice(start: number, deleteCount?: number): QuestionnaireEnableWhen[] {
+    if (typeof(this.enableWhen) !== 'undefined') {
+       return this.enableWhen.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field enableWhen.
+  * @returns the value  or undefined
+  */
   public getEnableWhen(): QuestionnaireEnableWhen[] | undefined {
       return this.enableWhen;
   }
@@ -502,7 +612,10 @@ export class QuestionnaireItem {
     return QuestionnaireItemEnableBehavior_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field enableBehavior.
+  * @returns the value  or undefined
+  */
   public getEnableBehavior(): string | undefined {
       return this.enableBehavior;
   }
@@ -530,7 +643,10 @@ export class QuestionnaireItem {
     return REGEX_ANSWERVALUESET.source;
   }
   
-
+  /**
+  * Gets the current value of field answerValueSet.
+  * @returns the value  or undefined
+  */
   public getAnswerValueSet(): string | undefined {
       return this.answerValueSet;
   }
@@ -548,14 +664,37 @@ export class QuestionnaireItem {
     }
     this.answerOption.push(newValue);
   }
-  public deleteAnswerOptionAll() {
+  /**
+  * Removes all elements from the array answerOption, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAnswerOptionAll(): QuestionnaireAnswerOption[] {
     if (typeof(this.answerOption) !== 'undefined') {
+       const oldArray = this.answerOption;
        delete this.answerOption;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array answerOption, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAnswerOptionBySplice(start: number, deleteCount?: number): QuestionnaireAnswerOption[] {
+    if (typeof(this.answerOption) !== 'undefined') {
+       return this.answerOption.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field answerOption.
+  * @returns the value  or undefined
+  */
   public getAnswerOption(): QuestionnaireAnswerOption[] | undefined {
       return this.answerOption;
   }
@@ -573,14 +712,37 @@ export class QuestionnaireItem {
     }
     this.initial.push(newValue);
   }
-  public deleteInitialAll() {
+  /**
+  * Removes all elements from the array initial, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInitialAll(): QuestionnaireInitial[] {
     if (typeof(this.initial) !== 'undefined') {
+       const oldArray = this.initial;
        delete this.initial;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array initial, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInitialBySplice(start: number, deleteCount?: number): QuestionnaireInitial[] {
+    if (typeof(this.initial) !== 'undefined') {
+       return this.initial.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field initial.
+  * @returns the value  or undefined
+  */
   public getInitial(): QuestionnaireInitial[] | undefined {
       return this.initial;
   }
@@ -598,14 +760,37 @@ export class QuestionnaireItem {
     }
     this.item.push(newValue);
   }
-  public deleteItemAll() {
+  /**
+  * Removes all elements from the array item, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteItemAll(): QuestionnaireItem[] {
     if (typeof(this.item) !== 'undefined') {
+       const oldArray = this.item;
        delete this.item;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array item, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteItemBySplice(start: number, deleteCount?: number): QuestionnaireItem[] {
+    if (typeof(this.item) !== 'undefined') {
+       return this.item.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field item.
+  * @returns the value  or undefined
+  */
   public getItem(): QuestionnaireItem[] | undefined {
       return this.item;
   }

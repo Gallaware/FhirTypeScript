@@ -519,7 +519,10 @@ export class Device {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -547,7 +550,10 @@ export class Device {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -575,7 +581,10 @@ export class Device {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -593,14 +602,37 @@ export class Device {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -618,14 +650,37 @@ export class Device {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -643,14 +698,37 @@ export class Device {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -668,14 +746,37 @@ export class Device {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -693,14 +794,37 @@ export class Device {
     }
     this.udiCarrier.push(newValue);
   }
-  public deleteUdiCarrierAll() {
+  /**
+  * Removes all elements from the array udiCarrier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUdiCarrierAll(): DeviceUdiCarrier[] {
     if (typeof(this.udiCarrier) !== 'undefined') {
+       const oldArray = this.udiCarrier;
        delete this.udiCarrier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array udiCarrier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUdiCarrierBySplice(start: number, deleteCount?: number): DeviceUdiCarrier[] {
+    if (typeof(this.udiCarrier) !== 'undefined') {
+       return this.udiCarrier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field udiCarrier.
+  * @returns the value  or undefined
+  */
   public getUdiCarrier(): DeviceUdiCarrier[] | undefined {
       return this.udiCarrier;
   }
@@ -729,7 +853,10 @@ export class Device {
     return DeviceStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -747,14 +874,37 @@ export class Device {
     }
     this.statusReason.push(newValue);
   }
-  public deleteStatusReasonAll() {
+  /**
+  * Removes all elements from the array statusReason, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteStatusReasonAll(): CodeableConcept[] {
     if (typeof(this.statusReason) !== 'undefined') {
+       const oldArray = this.statusReason;
        delete this.statusReason;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array statusReason, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteStatusReasonBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.statusReason) !== 'undefined') {
+       return this.statusReason.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field statusReason.
+  * @returns the value  or undefined
+  */
   public getStatusReason(): CodeableConcept[] | undefined {
       return this.statusReason;
   }
@@ -782,7 +932,10 @@ export class Device {
     return REGEX_DISTINCTIDENTIFIER.source;
   }
   
-
+  /**
+  * Gets the current value of field distinctIdentifier.
+  * @returns the value  or undefined
+  */
   public getDistinctIdentifier(): string | undefined {
       return this.distinctIdentifier;
   }
@@ -810,7 +963,10 @@ export class Device {
     return REGEX_MANUFACTURER.source;
   }
   
-
+  /**
+  * Gets the current value of field manufacturer.
+  * @returns the value  or undefined
+  */
   public getManufacturer(): string | undefined {
       return this.manufacturer;
   }
@@ -838,7 +994,10 @@ export class Device {
     return REGEX_MANUFACTUREDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field manufactureDate.
+  * @returns the value  or undefined
+  */
   public getManufactureDate(): string | undefined {
       return this.manufactureDate;
   }
@@ -866,7 +1025,10 @@ export class Device {
     return REGEX_EXPIRATIONDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field expirationDate.
+  * @returns the value  or undefined
+  */
   public getExpirationDate(): string | undefined {
       return this.expirationDate;
   }
@@ -894,7 +1056,10 @@ export class Device {
     return REGEX_LOTNUMBER.source;
   }
   
-
+  /**
+  * Gets the current value of field lotNumber.
+  * @returns the value  or undefined
+  */
   public getLotNumber(): string | undefined {
       return this.lotNumber;
   }
@@ -922,7 +1087,10 @@ export class Device {
     return REGEX_SERIALNUMBER.source;
   }
   
-
+  /**
+  * Gets the current value of field serialNumber.
+  * @returns the value  or undefined
+  */
   public getSerialNumber(): string | undefined {
       return this.serialNumber;
   }
@@ -940,14 +1108,37 @@ export class Device {
     }
     this.deviceName.push(newValue);
   }
-  public deleteDeviceNameAll() {
+  /**
+  * Removes all elements from the array deviceName, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDeviceNameAll(): DeviceDeviceName[] {
     if (typeof(this.deviceName) !== 'undefined') {
+       const oldArray = this.deviceName;
        delete this.deviceName;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array deviceName, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDeviceNameBySplice(start: number, deleteCount?: number): DeviceDeviceName[] {
+    if (typeof(this.deviceName) !== 'undefined') {
+       return this.deviceName.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field deviceName.
+  * @returns the value  or undefined
+  */
   public getDeviceName(): DeviceDeviceName[] | undefined {
       return this.deviceName;
   }
@@ -975,7 +1166,10 @@ export class Device {
     return REGEX_MODELNUMBER.source;
   }
   
-
+  /**
+  * Gets the current value of field modelNumber.
+  * @returns the value  or undefined
+  */
   public getModelNumber(): string | undefined {
       return this.modelNumber;
   }
@@ -1003,7 +1197,10 @@ export class Device {
     return REGEX_PARTNUMBER.source;
   }
   
-
+  /**
+  * Gets the current value of field partNumber.
+  * @returns the value  or undefined
+  */
   public getPartNumber(): string | undefined {
       return this.partNumber;
   }
@@ -1021,14 +1218,37 @@ export class Device {
     }
     this.specialization.push(newValue);
   }
-  public deleteSpecializationAll() {
+  /**
+  * Removes all elements from the array specialization, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSpecializationAll(): DeviceSpecialization[] {
     if (typeof(this.specialization) !== 'undefined') {
+       const oldArray = this.specialization;
        delete this.specialization;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array specialization, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSpecializationBySplice(start: number, deleteCount?: number): DeviceSpecialization[] {
+    if (typeof(this.specialization) !== 'undefined') {
+       return this.specialization.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field specialization.
+  * @returns the value  or undefined
+  */
   public getSpecialization(): DeviceSpecialization[] | undefined {
       return this.specialization;
   }
@@ -1046,14 +1266,37 @@ export class Device {
     }
     this.version.push(newValue);
   }
-  public deleteVersionAll() {
+  /**
+  * Removes all elements from the array version, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteVersionAll(): DeviceVersion[] {
     if (typeof(this.version) !== 'undefined') {
+       const oldArray = this.version;
        delete this.version;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array version, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteVersionBySplice(start: number, deleteCount?: number): DeviceVersion[] {
+    if (typeof(this.version) !== 'undefined') {
+       return this.version.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field version.
+  * @returns the value  or undefined
+  */
   public getVersion(): DeviceVersion[] | undefined {
       return this.version;
   }
@@ -1071,14 +1314,37 @@ export class Device {
     }
     this.property.push(newValue);
   }
-  public deletePropertyAll() {
+  /**
+  * Removes all elements from the array property, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePropertyAll(): DeviceProperty[] {
     if (typeof(this.property) !== 'undefined') {
+       const oldArray = this.property;
        delete this.property;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array property, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePropertyBySplice(start: number, deleteCount?: number): DeviceProperty[] {
+    if (typeof(this.property) !== 'undefined') {
+       return this.property.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field property.
+  * @returns the value  or undefined
+  */
   public getProperty(): DeviceProperty[] | undefined {
       return this.property;
   }
@@ -1096,14 +1362,37 @@ export class Device {
     }
     this.contact.push(newValue);
   }
-  public deleteContactAll() {
+  /**
+  * Removes all elements from the array contact, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContactAll(): ContactPoint[] {
     if (typeof(this.contact) !== 'undefined') {
+       const oldArray = this.contact;
        delete this.contact;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contact, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContactBySplice(start: number, deleteCount?: number): ContactPoint[] {
+    if (typeof(this.contact) !== 'undefined') {
+       return this.contact.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contact.
+  * @returns the value  or undefined
+  */
   public getContact(): ContactPoint[] | undefined {
       return this.contact;
   }
@@ -1131,7 +1420,10 @@ export class Device {
     return REGEX_URL.source;
   }
   
-
+  /**
+  * Gets the current value of field url.
+  * @returns the value  or undefined
+  */
   public getUrl(): string | undefined {
       return this.url;
   }
@@ -1149,14 +1441,37 @@ export class Device {
     }
     this.note.push(newValue);
   }
-  public deleteNoteAll() {
+  /**
+  * Removes all elements from the array note, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteAll(): Annotation[] {
     if (typeof(this.note) !== 'undefined') {
+       const oldArray = this.note;
        delete this.note;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array note, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.note) !== 'undefined') {
+       return this.note.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field note.
+  * @returns the value  or undefined
+  */
   public getNote(): Annotation[] | undefined {
       return this.note;
   }
@@ -1174,14 +1489,37 @@ export class Device {
     }
     this.safety.push(newValue);
   }
-  public deleteSafetyAll() {
+  /**
+  * Removes all elements from the array safety, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSafetyAll(): CodeableConcept[] {
     if (typeof(this.safety) !== 'undefined') {
+       const oldArray = this.safety;
        delete this.safety;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array safety, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSafetyBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.safety) !== 'undefined') {
+       return this.safety.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field safety.
+  * @returns the value  or undefined
+  */
   public getSafety(): CodeableConcept[] | undefined {
       return this.safety;
   }

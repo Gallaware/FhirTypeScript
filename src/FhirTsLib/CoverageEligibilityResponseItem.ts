@@ -188,7 +188,10 @@ export class CoverageEligibilityResponseItem {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -206,14 +209,37 @@ export class CoverageEligibilityResponseItem {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -231,14 +257,37 @@ export class CoverageEligibilityResponseItem {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -256,14 +305,37 @@ export class CoverageEligibilityResponseItem {
     }
     this.modifier.push(newValue);
   }
-  public deleteModifierAll() {
+  /**
+  * Removes all elements from the array modifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierAll(): CodeableConcept[] {
     if (typeof(this.modifier) !== 'undefined') {
+       const oldArray = this.modifier;
        delete this.modifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.modifier) !== 'undefined') {
+       return this.modifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifier.
+  * @returns the value  or undefined
+  */
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
   }
@@ -291,7 +363,10 @@ export class CoverageEligibilityResponseItem {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -319,7 +394,10 @@ export class CoverageEligibilityResponseItem {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -337,14 +415,37 @@ export class CoverageEligibilityResponseItem {
     }
     this.benefit.push(newValue);
   }
-  public deleteBenefitAll() {
+  /**
+  * Removes all elements from the array benefit, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteBenefitAll(): CoverageEligibilityResponseBenefit[] {
     if (typeof(this.benefit) !== 'undefined') {
+       const oldArray = this.benefit;
        delete this.benefit;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array benefit, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteBenefitBySplice(start: number, deleteCount?: number): CoverageEligibilityResponseBenefit[] {
+    if (typeof(this.benefit) !== 'undefined') {
+       return this.benefit.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field benefit.
+  * @returns the value  or undefined
+  */
   public getBenefit(): CoverageEligibilityResponseBenefit[] | undefined {
       return this.benefit;
   }
@@ -362,14 +463,37 @@ export class CoverageEligibilityResponseItem {
     }
     this.authorizationSupporting.push(newValue);
   }
-  public deleteAuthorizationSupportingAll() {
+  /**
+  * Removes all elements from the array authorizationSupporting, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAuthorizationSupportingAll(): CodeableConcept[] {
     if (typeof(this.authorizationSupporting) !== 'undefined') {
+       const oldArray = this.authorizationSupporting;
        delete this.authorizationSupporting;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array authorizationSupporting, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAuthorizationSupportingBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.authorizationSupporting) !== 'undefined') {
+       return this.authorizationSupporting.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field authorizationSupporting.
+  * @returns the value  or undefined
+  */
   public getAuthorizationSupporting(): CodeableConcept[] | undefined {
       return this.authorizationSupporting;
   }
@@ -397,7 +521,10 @@ export class CoverageEligibilityResponseItem {
     return REGEX_AUTHORIZATIONURL.source;
   }
   
-
+  /**
+  * Gets the current value of field authorizationUrl.
+  * @returns the value  or undefined
+  */
   public getAuthorizationUrl(): string | undefined {
       return this.authorizationUrl;
   }

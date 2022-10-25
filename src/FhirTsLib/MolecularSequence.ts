@@ -409,7 +409,10 @@ export class MolecularSequence {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -437,7 +440,10 @@ export class MolecularSequence {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -465,7 +471,10 @@ export class MolecularSequence {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -483,14 +492,37 @@ export class MolecularSequence {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -508,14 +540,37 @@ export class MolecularSequence {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -533,14 +588,37 @@ export class MolecularSequence {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -558,14 +636,37 @@ export class MolecularSequence {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -594,7 +695,10 @@ export class MolecularSequence {
     return MolecularSequenceType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -612,14 +716,37 @@ export class MolecularSequence {
     }
     this.variant.push(newValue);
   }
-  public deleteVariantAll() {
+  /**
+  * Removes all elements from the array variant, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteVariantAll(): MolecularSequenceVariant[] {
     if (typeof(this.variant) !== 'undefined') {
+       const oldArray = this.variant;
        delete this.variant;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array variant, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteVariantBySplice(start: number, deleteCount?: number): MolecularSequenceVariant[] {
+    if (typeof(this.variant) !== 'undefined') {
+       return this.variant.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field variant.
+  * @returns the value  or undefined
+  */
   public getVariant(): MolecularSequenceVariant[] | undefined {
       return this.variant;
   }
@@ -647,7 +774,10 @@ export class MolecularSequence {
     return REGEX_OBSERVEDSEQ.source;
   }
   
-
+  /**
+  * Gets the current value of field observedSeq.
+  * @returns the value  or undefined
+  */
   public getObservedSeq(): string | undefined {
       return this.observedSeq;
   }
@@ -665,14 +795,37 @@ export class MolecularSequence {
     }
     this.quality.push(newValue);
   }
-  public deleteQualityAll() {
+  /**
+  * Removes all elements from the array quality, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteQualityAll(): MolecularSequenceQuality[] {
     if (typeof(this.quality) !== 'undefined') {
+       const oldArray = this.quality;
        delete this.quality;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array quality, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteQualityBySplice(start: number, deleteCount?: number): MolecularSequenceQuality[] {
+    if (typeof(this.quality) !== 'undefined') {
+       return this.quality.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field quality.
+  * @returns the value  or undefined
+  */
   public getQuality(): MolecularSequenceQuality[] | undefined {
       return this.quality;
   }
@@ -690,14 +843,37 @@ export class MolecularSequence {
     }
     this.repository.push(newValue);
   }
-  public deleteRepositoryAll() {
+  /**
+  * Removes all elements from the array repository, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRepositoryAll(): MolecularSequenceRepository[] {
     if (typeof(this.repository) !== 'undefined') {
+       const oldArray = this.repository;
        delete this.repository;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array repository, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRepositoryBySplice(start: number, deleteCount?: number): MolecularSequenceRepository[] {
+    if (typeof(this.repository) !== 'undefined') {
+       return this.repository.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field repository.
+  * @returns the value  or undefined
+  */
   public getRepository(): MolecularSequenceRepository[] | undefined {
       return this.repository;
   }
@@ -715,14 +891,37 @@ export class MolecularSequence {
     }
     this.pointer.push(newValue);
   }
-  public deletePointerAll() {
+  /**
+  * Removes all elements from the array pointer, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePointerAll(): Reference[] {
     if (typeof(this.pointer) !== 'undefined') {
+       const oldArray = this.pointer;
        delete this.pointer;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array pointer, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePointerBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.pointer) !== 'undefined') {
+       return this.pointer.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field pointer.
+  * @returns the value  or undefined
+  */
   public getPointer(): Reference[] | undefined {
       return this.pointer;
   }
@@ -740,14 +939,37 @@ export class MolecularSequence {
     }
     this.structureVariant.push(newValue);
   }
-  public deleteStructureVariantAll() {
+  /**
+  * Removes all elements from the array structureVariant, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteStructureVariantAll(): MolecularSequenceStructureVariant[] {
     if (typeof(this.structureVariant) !== 'undefined') {
+       const oldArray = this.structureVariant;
        delete this.structureVariant;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array structureVariant, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteStructureVariantBySplice(start: number, deleteCount?: number): MolecularSequenceStructureVariant[] {
+    if (typeof(this.structureVariant) !== 'undefined') {
+       return this.structureVariant.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field structureVariant.
+  * @returns the value  or undefined
+  */
   public getStructureVariant(): MolecularSequenceStructureVariant[] | undefined {
       return this.structureVariant;
   }

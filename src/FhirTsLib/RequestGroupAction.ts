@@ -296,7 +296,10 @@ export class RequestGroupAction {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -314,14 +317,37 @@ export class RequestGroupAction {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -339,14 +365,37 @@ export class RequestGroupAction {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -374,7 +423,10 @@ export class RequestGroupAction {
     return REGEX_PREFIX.source;
   }
   
-
+  /**
+  * Gets the current value of field prefix.
+  * @returns the value  or undefined
+  */
   public getPrefix(): string | undefined {
       return this.prefix;
   }
@@ -402,7 +454,10 @@ export class RequestGroupAction {
     return REGEX_TITLE.source;
   }
   
-
+  /**
+  * Gets the current value of field title.
+  * @returns the value  or undefined
+  */
   public getTitle(): string | undefined {
       return this.title;
   }
@@ -430,7 +485,10 @@ export class RequestGroupAction {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -458,7 +516,10 @@ export class RequestGroupAction {
     return REGEX_TEXTEQUIVALENT.source;
   }
   
-
+  /**
+  * Gets the current value of field textEquivalent.
+  * @returns the value  or undefined
+  */
   public getTextEquivalent(): string | undefined {
       return this.textEquivalent;
   }
@@ -486,7 +547,10 @@ export class RequestGroupAction {
     return REGEX_PRIORITY.source;
   }
   
-
+  /**
+  * Gets the current value of field priority.
+  * @returns the value  or undefined
+  */
   public getPriority(): string | undefined {
       return this.priority;
   }
@@ -504,14 +568,37 @@ export class RequestGroupAction {
     }
     this.code.push(newValue);
   }
-  public deleteCodeAll() {
+  /**
+  * Removes all elements from the array code, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodeAll(): CodeableConcept[] {
     if (typeof(this.code) !== 'undefined') {
+       const oldArray = this.code;
        delete this.code;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array code, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.code) !== 'undefined') {
+       return this.code.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
   }
@@ -529,14 +616,37 @@ export class RequestGroupAction {
     }
     this.documentation.push(newValue);
   }
-  public deleteDocumentationAll() {
+  /**
+  * Removes all elements from the array documentation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDocumentationAll(): RelatedArtifact[] {
     if (typeof(this.documentation) !== 'undefined') {
+       const oldArray = this.documentation;
        delete this.documentation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array documentation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDocumentationBySplice(start: number, deleteCount?: number): RelatedArtifact[] {
+    if (typeof(this.documentation) !== 'undefined') {
+       return this.documentation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field documentation.
+  * @returns the value  or undefined
+  */
   public getDocumentation(): RelatedArtifact[] | undefined {
       return this.documentation;
   }
@@ -554,14 +664,37 @@ export class RequestGroupAction {
     }
     this.condition.push(newValue);
   }
-  public deleteConditionAll() {
+  /**
+  * Removes all elements from the array condition, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteConditionAll(): RequestGroupCondition[] {
     if (typeof(this.condition) !== 'undefined') {
+       const oldArray = this.condition;
        delete this.condition;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array condition, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteConditionBySplice(start: number, deleteCount?: number): RequestGroupCondition[] {
+    if (typeof(this.condition) !== 'undefined') {
+       return this.condition.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field condition.
+  * @returns the value  or undefined
+  */
   public getCondition(): RequestGroupCondition[] | undefined {
       return this.condition;
   }
@@ -579,14 +712,37 @@ export class RequestGroupAction {
     }
     this.relatedAction.push(newValue);
   }
-  public deleteRelatedActionAll() {
+  /**
+  * Removes all elements from the array relatedAction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRelatedActionAll(): RequestGroupRelatedAction[] {
     if (typeof(this.relatedAction) !== 'undefined') {
+       const oldArray = this.relatedAction;
        delete this.relatedAction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array relatedAction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRelatedActionBySplice(start: number, deleteCount?: number): RequestGroupRelatedAction[] {
+    if (typeof(this.relatedAction) !== 'undefined') {
+       return this.relatedAction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field relatedAction.
+  * @returns the value  or undefined
+  */
   public getRelatedAction(): RequestGroupRelatedAction[] | undefined {
       return this.relatedAction;
   }
@@ -614,7 +770,10 @@ export class RequestGroupAction {
     return REGEX_TIMINGDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field timingDateTime.
+  * @returns the value  or undefined
+  */
   public getTimingDateTime(): string | undefined {
       return this.timingDateTime;
   }
@@ -632,14 +791,37 @@ export class RequestGroupAction {
     }
     this.participant.push(newValue);
   }
-  public deleteParticipantAll() {
+  /**
+  * Removes all elements from the array participant, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteParticipantAll(): Reference[] {
     if (typeof(this.participant) !== 'undefined') {
+       const oldArray = this.participant;
        delete this.participant;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array participant, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteParticipantBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.participant) !== 'undefined') {
+       return this.participant.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field participant.
+  * @returns the value  or undefined
+  */
   public getParticipant(): Reference[] | undefined {
       return this.participant;
   }
@@ -667,7 +849,10 @@ export class RequestGroupAction {
     return REGEX_GROUPINGBEHAVIOR.source;
   }
   
-
+  /**
+  * Gets the current value of field groupingBehavior.
+  * @returns the value  or undefined
+  */
   public getGroupingBehavior(): string | undefined {
       return this.groupingBehavior;
   }
@@ -695,7 +880,10 @@ export class RequestGroupAction {
     return REGEX_SELECTIONBEHAVIOR.source;
   }
   
-
+  /**
+  * Gets the current value of field selectionBehavior.
+  * @returns the value  or undefined
+  */
   public getSelectionBehavior(): string | undefined {
       return this.selectionBehavior;
   }
@@ -723,7 +911,10 @@ export class RequestGroupAction {
     return REGEX_REQUIREDBEHAVIOR.source;
   }
   
-
+  /**
+  * Gets the current value of field requiredBehavior.
+  * @returns the value  or undefined
+  */
   public getRequiredBehavior(): string | undefined {
       return this.requiredBehavior;
   }
@@ -751,7 +942,10 @@ export class RequestGroupAction {
     return REGEX_PRECHECKBEHAVIOR.source;
   }
   
-
+  /**
+  * Gets the current value of field precheckBehavior.
+  * @returns the value  or undefined
+  */
   public getPrecheckBehavior(): string | undefined {
       return this.precheckBehavior;
   }
@@ -779,7 +973,10 @@ export class RequestGroupAction {
     return REGEX_CARDINALITYBEHAVIOR.source;
   }
   
-
+  /**
+  * Gets the current value of field cardinalityBehavior.
+  * @returns the value  or undefined
+  */
   public getCardinalityBehavior(): string | undefined {
       return this.cardinalityBehavior;
   }
@@ -797,14 +994,37 @@ export class RequestGroupAction {
     }
     this.action.push(newValue);
   }
-  public deleteActionAll() {
+  /**
+  * Removes all elements from the array action, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteActionAll(): RequestGroupAction[] {
     if (typeof(this.action) !== 'undefined') {
+       const oldArray = this.action;
        delete this.action;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array action, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteActionBySplice(start: number, deleteCount?: number): RequestGroupAction[] {
+    if (typeof(this.action) !== 'undefined') {
+       return this.action.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field action.
+  * @returns the value  or undefined
+  */
   public getAction(): RequestGroupAction[] | undefined {
       return this.action;
   }

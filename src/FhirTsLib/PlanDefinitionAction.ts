@@ -387,7 +387,10 @@ export class PlanDefinitionAction {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -405,14 +408,37 @@ export class PlanDefinitionAction {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -430,14 +456,37 @@ export class PlanDefinitionAction {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -465,7 +514,10 @@ export class PlanDefinitionAction {
     return REGEX_PREFIX.source;
   }
   
-
+  /**
+  * Gets the current value of field prefix.
+  * @returns the value  or undefined
+  */
   public getPrefix(): string | undefined {
       return this.prefix;
   }
@@ -493,7 +545,10 @@ export class PlanDefinitionAction {
     return REGEX_TITLE.source;
   }
   
-
+  /**
+  * Gets the current value of field title.
+  * @returns the value  or undefined
+  */
   public getTitle(): string | undefined {
       return this.title;
   }
@@ -521,7 +576,10 @@ export class PlanDefinitionAction {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -549,7 +607,10 @@ export class PlanDefinitionAction {
     return REGEX_TEXTEQUIVALENT.source;
   }
   
-
+  /**
+  * Gets the current value of field textEquivalent.
+  * @returns the value  or undefined
+  */
   public getTextEquivalent(): string | undefined {
       return this.textEquivalent;
   }
@@ -577,7 +638,10 @@ export class PlanDefinitionAction {
     return REGEX_PRIORITY.source;
   }
   
-
+  /**
+  * Gets the current value of field priority.
+  * @returns the value  or undefined
+  */
   public getPriority(): string | undefined {
       return this.priority;
   }
@@ -595,14 +659,37 @@ export class PlanDefinitionAction {
     }
     this.code.push(newValue);
   }
-  public deleteCodeAll() {
+  /**
+  * Removes all elements from the array code, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodeAll(): CodeableConcept[] {
     if (typeof(this.code) !== 'undefined') {
+       const oldArray = this.code;
        delete this.code;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array code, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.code) !== 'undefined') {
+       return this.code.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
   }
@@ -620,14 +707,37 @@ export class PlanDefinitionAction {
     }
     this.reason.push(newValue);
   }
-  public deleteReasonAll() {
+  /**
+  * Removes all elements from the array reason, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReasonAll(): CodeableConcept[] {
     if (typeof(this.reason) !== 'undefined') {
+       const oldArray = this.reason;
        delete this.reason;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array reason, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReasonBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.reason) !== 'undefined') {
+       return this.reason.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field reason.
+  * @returns the value  or undefined
+  */
   public getReason(): CodeableConcept[] | undefined {
       return this.reason;
   }
@@ -645,14 +755,37 @@ export class PlanDefinitionAction {
     }
     this.documentation.push(newValue);
   }
-  public deleteDocumentationAll() {
+  /**
+  * Removes all elements from the array documentation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDocumentationAll(): RelatedArtifact[] {
     if (typeof(this.documentation) !== 'undefined') {
+       const oldArray = this.documentation;
        delete this.documentation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array documentation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDocumentationBySplice(start: number, deleteCount?: number): RelatedArtifact[] {
+    if (typeof(this.documentation) !== 'undefined') {
+       return this.documentation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field documentation.
+  * @returns the value  or undefined
+  */
   public getDocumentation(): RelatedArtifact[] | undefined {
       return this.documentation;
   }
@@ -670,14 +803,37 @@ export class PlanDefinitionAction {
     }
     this.goalId.push(newValue);
   }
-  public deleteGoalIdAll() {
+  /**
+  * Removes all elements from the array goalId, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGoalIdAll(): string[] {
     if (typeof(this.goalId) !== 'undefined') {
+       const oldArray = this.goalId;
        delete this.goalId;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array goalId, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGoalIdBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.goalId) !== 'undefined') {
+       return this.goalId.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field goalId.
+  * @returns the value  or undefined
+  */
   public getGoalId(): string[] | undefined {
       return this.goalId;
   }
@@ -695,14 +851,37 @@ export class PlanDefinitionAction {
     }
     this._goalId.push(newValue);
   }
-  public delete_goalIdAll() {
+  /**
+  * Removes all elements from the array _goalId, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_goalIdAll(): Element[] {
     if (typeof(this._goalId) !== 'undefined') {
+       const oldArray = this._goalId;
        delete this._goalId;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _goalId, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_goalIdBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._goalId) !== 'undefined') {
+       return this._goalId.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _goalId.
+  * @returns the value  or undefined
+  */
   public get_goalId(): Element[] | undefined {
       return this._goalId;
   }
@@ -720,14 +899,37 @@ export class PlanDefinitionAction {
     }
     this.trigger.push(newValue);
   }
-  public deleteTriggerAll() {
+  /**
+  * Removes all elements from the array trigger, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTriggerAll(): TriggerDefinition[] {
     if (typeof(this.trigger) !== 'undefined') {
+       const oldArray = this.trigger;
        delete this.trigger;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array trigger, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTriggerBySplice(start: number, deleteCount?: number): TriggerDefinition[] {
+    if (typeof(this.trigger) !== 'undefined') {
+       return this.trigger.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field trigger.
+  * @returns the value  or undefined
+  */
   public getTrigger(): TriggerDefinition[] | undefined {
       return this.trigger;
   }
@@ -745,14 +947,37 @@ export class PlanDefinitionAction {
     }
     this.condition.push(newValue);
   }
-  public deleteConditionAll() {
+  /**
+  * Removes all elements from the array condition, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteConditionAll(): PlanDefinitionCondition[] {
     if (typeof(this.condition) !== 'undefined') {
+       const oldArray = this.condition;
        delete this.condition;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array condition, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteConditionBySplice(start: number, deleteCount?: number): PlanDefinitionCondition[] {
+    if (typeof(this.condition) !== 'undefined') {
+       return this.condition.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field condition.
+  * @returns the value  or undefined
+  */
   public getCondition(): PlanDefinitionCondition[] | undefined {
       return this.condition;
   }
@@ -770,14 +995,37 @@ export class PlanDefinitionAction {
     }
     this.input.push(newValue);
   }
-  public deleteInputAll() {
+  /**
+  * Removes all elements from the array input, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInputAll(): DataRequirement[] {
     if (typeof(this.input) !== 'undefined') {
+       const oldArray = this.input;
        delete this.input;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array input, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInputBySplice(start: number, deleteCount?: number): DataRequirement[] {
+    if (typeof(this.input) !== 'undefined') {
+       return this.input.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field input.
+  * @returns the value  or undefined
+  */
   public getInput(): DataRequirement[] | undefined {
       return this.input;
   }
@@ -795,14 +1043,37 @@ export class PlanDefinitionAction {
     }
     this.output.push(newValue);
   }
-  public deleteOutputAll() {
+  /**
+  * Removes all elements from the array output, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOutputAll(): DataRequirement[] {
     if (typeof(this.output) !== 'undefined') {
+       const oldArray = this.output;
        delete this.output;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array output, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOutputBySplice(start: number, deleteCount?: number): DataRequirement[] {
+    if (typeof(this.output) !== 'undefined') {
+       return this.output.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field output.
+  * @returns the value  or undefined
+  */
   public getOutput(): DataRequirement[] | undefined {
       return this.output;
   }
@@ -820,14 +1091,37 @@ export class PlanDefinitionAction {
     }
     this.relatedAction.push(newValue);
   }
-  public deleteRelatedActionAll() {
+  /**
+  * Removes all elements from the array relatedAction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRelatedActionAll(): PlanDefinitionRelatedAction[] {
     if (typeof(this.relatedAction) !== 'undefined') {
+       const oldArray = this.relatedAction;
        delete this.relatedAction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array relatedAction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRelatedActionBySplice(start: number, deleteCount?: number): PlanDefinitionRelatedAction[] {
+    if (typeof(this.relatedAction) !== 'undefined') {
+       return this.relatedAction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field relatedAction.
+  * @returns the value  or undefined
+  */
   public getRelatedAction(): PlanDefinitionRelatedAction[] | undefined {
       return this.relatedAction;
   }
@@ -855,7 +1149,10 @@ export class PlanDefinitionAction {
     return REGEX_TIMINGDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field timingDateTime.
+  * @returns the value  or undefined
+  */
   public getTimingDateTime(): string | undefined {
       return this.timingDateTime;
   }
@@ -873,14 +1170,37 @@ export class PlanDefinitionAction {
     }
     this.participant.push(newValue);
   }
-  public deleteParticipantAll() {
+  /**
+  * Removes all elements from the array participant, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteParticipantAll(): PlanDefinitionParticipant[] {
     if (typeof(this.participant) !== 'undefined') {
+       const oldArray = this.participant;
        delete this.participant;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array participant, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteParticipantBySplice(start: number, deleteCount?: number): PlanDefinitionParticipant[] {
+    if (typeof(this.participant) !== 'undefined') {
+       return this.participant.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field participant.
+  * @returns the value  or undefined
+  */
   public getParticipant(): PlanDefinitionParticipant[] | undefined {
       return this.participant;
   }
@@ -909,7 +1229,10 @@ export class PlanDefinitionAction {
     return PlanDefinitionActionGroupingBehavior_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field groupingBehavior.
+  * @returns the value  or undefined
+  */
   public getGroupingBehavior(): string | undefined {
       return this.groupingBehavior;
   }
@@ -938,7 +1261,10 @@ export class PlanDefinitionAction {
     return PlanDefinitionActionSelectionBehavior_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field selectionBehavior.
+  * @returns the value  or undefined
+  */
   public getSelectionBehavior(): string | undefined {
       return this.selectionBehavior;
   }
@@ -967,7 +1293,10 @@ export class PlanDefinitionAction {
     return PlanDefinitionActionRequiredBehavior_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field requiredBehavior.
+  * @returns the value  or undefined
+  */
   public getRequiredBehavior(): string | undefined {
       return this.requiredBehavior;
   }
@@ -996,7 +1325,10 @@ export class PlanDefinitionAction {
     return PlanDefinitionActionPrecheckBehavior_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field precheckBehavior.
+  * @returns the value  or undefined
+  */
   public getPrecheckBehavior(): string | undefined {
       return this.precheckBehavior;
   }
@@ -1025,7 +1357,10 @@ export class PlanDefinitionAction {
     return PlanDefinitionActionCardinalityBehavior_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field cardinalityBehavior.
+  * @returns the value  or undefined
+  */
   public getCardinalityBehavior(): string | undefined {
       return this.cardinalityBehavior;
   }
@@ -1053,7 +1388,10 @@ export class PlanDefinitionAction {
     return REGEX_DEFINITIONCANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field definitionCanonical.
+  * @returns the value  or undefined
+  */
   public getDefinitionCanonical(): string | undefined {
       return this.definitionCanonical;
   }
@@ -1081,7 +1419,10 @@ export class PlanDefinitionAction {
     return REGEX_DEFINITIONURI.source;
   }
   
-
+  /**
+  * Gets the current value of field definitionUri.
+  * @returns the value  or undefined
+  */
   public getDefinitionUri(): string | undefined {
       return this.definitionUri;
   }
@@ -1109,7 +1450,10 @@ export class PlanDefinitionAction {
     return REGEX_TRANSFORM.source;
   }
   
-
+  /**
+  * Gets the current value of field transform.
+  * @returns the value  or undefined
+  */
   public getTransform(): string | undefined {
       return this.transform;
   }
@@ -1127,14 +1471,37 @@ export class PlanDefinitionAction {
     }
     this.dynamicValue.push(newValue);
   }
-  public deleteDynamicValueAll() {
+  /**
+  * Removes all elements from the array dynamicValue, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDynamicValueAll(): PlanDefinitionDynamicValue[] {
     if (typeof(this.dynamicValue) !== 'undefined') {
+       const oldArray = this.dynamicValue;
        delete this.dynamicValue;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array dynamicValue, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDynamicValueBySplice(start: number, deleteCount?: number): PlanDefinitionDynamicValue[] {
+    if (typeof(this.dynamicValue) !== 'undefined') {
+       return this.dynamicValue.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field dynamicValue.
+  * @returns the value  or undefined
+  */
   public getDynamicValue(): PlanDefinitionDynamicValue[] | undefined {
       return this.dynamicValue;
   }
@@ -1152,14 +1519,37 @@ export class PlanDefinitionAction {
     }
     this.action.push(newValue);
   }
-  public deleteActionAll() {
+  /**
+  * Removes all elements from the array action, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteActionAll(): PlanDefinitionAction[] {
     if (typeof(this.action) !== 'undefined') {
+       const oldArray = this.action;
        delete this.action;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array action, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteActionBySplice(start: number, deleteCount?: number): PlanDefinitionAction[] {
+    if (typeof(this.action) !== 'undefined') {
+       return this.action.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field action.
+  * @returns the value  or undefined
+  */
   public getAction(): PlanDefinitionAction[] | undefined {
       return this.action;
   }

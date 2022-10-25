@@ -698,7 +698,10 @@ export class Measure {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -726,7 +729,10 @@ export class Measure {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -754,7 +760,10 @@ export class Measure {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -772,14 +781,37 @@ export class Measure {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -797,14 +829,37 @@ export class Measure {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -822,14 +877,37 @@ export class Measure {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -857,7 +935,10 @@ export class Measure {
     return REGEX_URL.source;
   }
   
-
+  /**
+  * Gets the current value of field url.
+  * @returns the value  or undefined
+  */
   public getUrl(): string | undefined {
       return this.url;
   }
@@ -875,14 +956,37 @@ export class Measure {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -910,7 +1014,10 @@ export class Measure {
     return REGEX_VERSION.source;
   }
   
-
+  /**
+  * Gets the current value of field version.
+  * @returns the value  or undefined
+  */
   public getVersion(): string | undefined {
       return this.version;
   }
@@ -938,7 +1045,10 @@ export class Measure {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -966,7 +1076,10 @@ export class Measure {
     return REGEX_TITLE.source;
   }
   
-
+  /**
+  * Gets the current value of field title.
+  * @returns the value  or undefined
+  */
   public getTitle(): string | undefined {
       return this.title;
   }
@@ -994,7 +1107,10 @@ export class Measure {
     return REGEX_SUBTITLE.source;
   }
   
-
+  /**
+  * Gets the current value of field subtitle.
+  * @returns the value  or undefined
+  */
   public getSubtitle(): string | undefined {
       return this.subtitle;
   }
@@ -1023,7 +1139,10 @@ export class Measure {
     return MeasureStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -1051,7 +1170,10 @@ export class Measure {
     return REGEX_DATE.source;
   }
   
-
+  /**
+  * Gets the current value of field date.
+  * @returns the value  or undefined
+  */
   public getDate(): string | undefined {
       return this.date;
   }
@@ -1079,7 +1201,10 @@ export class Measure {
     return REGEX_PUBLISHER.source;
   }
   
-
+  /**
+  * Gets the current value of field publisher.
+  * @returns the value  or undefined
+  */
   public getPublisher(): string | undefined {
       return this.publisher;
   }
@@ -1097,14 +1222,37 @@ export class Measure {
     }
     this.contact.push(newValue);
   }
-  public deleteContactAll() {
+  /**
+  * Removes all elements from the array contact, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContactAll(): ContactDetail[] {
     if (typeof(this.contact) !== 'undefined') {
+       const oldArray = this.contact;
        delete this.contact;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contact, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContactBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.contact) !== 'undefined') {
+       return this.contact.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contact.
+  * @returns the value  or undefined
+  */
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
   }
@@ -1132,7 +1280,10 @@ export class Measure {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -1150,14 +1301,37 @@ export class Measure {
     }
     this.useContext.push(newValue);
   }
-  public deleteUseContextAll() {
+  /**
+  * Removes all elements from the array useContext, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUseContextAll(): UsageContext[] {
     if (typeof(this.useContext) !== 'undefined') {
+       const oldArray = this.useContext;
        delete this.useContext;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array useContext, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUseContextBySplice(start: number, deleteCount?: number): UsageContext[] {
+    if (typeof(this.useContext) !== 'undefined') {
+       return this.useContext.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field useContext.
+  * @returns the value  or undefined
+  */
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
   }
@@ -1175,14 +1349,37 @@ export class Measure {
     }
     this.jurisdiction.push(newValue);
   }
-  public deleteJurisdictionAll() {
+  /**
+  * Removes all elements from the array jurisdiction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteJurisdictionAll(): CodeableConcept[] {
     if (typeof(this.jurisdiction) !== 'undefined') {
+       const oldArray = this.jurisdiction;
        delete this.jurisdiction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array jurisdiction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteJurisdictionBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       return this.jurisdiction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field jurisdiction.
+  * @returns the value  or undefined
+  */
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
   }
@@ -1210,7 +1407,10 @@ export class Measure {
     return REGEX_PURPOSE.source;
   }
   
-
+  /**
+  * Gets the current value of field purpose.
+  * @returns the value  or undefined
+  */
   public getPurpose(): string | undefined {
       return this.purpose;
   }
@@ -1238,7 +1438,10 @@ export class Measure {
     return REGEX_USAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field usage.
+  * @returns the value  or undefined
+  */
   public getUsage(): string | undefined {
       return this.usage;
   }
@@ -1266,7 +1469,10 @@ export class Measure {
     return REGEX_COPYRIGHT.source;
   }
   
-
+  /**
+  * Gets the current value of field copyright.
+  * @returns the value  or undefined
+  */
   public getCopyright(): string | undefined {
       return this.copyright;
   }
@@ -1294,7 +1500,10 @@ export class Measure {
     return REGEX_APPROVALDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field approvalDate.
+  * @returns the value  or undefined
+  */
   public getApprovalDate(): string | undefined {
       return this.approvalDate;
   }
@@ -1322,7 +1531,10 @@ export class Measure {
     return REGEX_LASTREVIEWDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field lastReviewDate.
+  * @returns the value  or undefined
+  */
   public getLastReviewDate(): string | undefined {
       return this.lastReviewDate;
   }
@@ -1340,14 +1552,37 @@ export class Measure {
     }
     this.topic.push(newValue);
   }
-  public deleteTopicAll() {
+  /**
+  * Removes all elements from the array topic, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTopicAll(): CodeableConcept[] {
     if (typeof(this.topic) !== 'undefined') {
+       const oldArray = this.topic;
        delete this.topic;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array topic, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTopicBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.topic) !== 'undefined') {
+       return this.topic.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field topic.
+  * @returns the value  or undefined
+  */
   public getTopic(): CodeableConcept[] | undefined {
       return this.topic;
   }
@@ -1365,14 +1600,37 @@ export class Measure {
     }
     this.author.push(newValue);
   }
-  public deleteAuthorAll() {
+  /**
+  * Removes all elements from the array author, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAuthorAll(): ContactDetail[] {
     if (typeof(this.author) !== 'undefined') {
+       const oldArray = this.author;
        delete this.author;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array author, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAuthorBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.author) !== 'undefined') {
+       return this.author.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field author.
+  * @returns the value  or undefined
+  */
   public getAuthor(): ContactDetail[] | undefined {
       return this.author;
   }
@@ -1390,14 +1648,37 @@ export class Measure {
     }
     this.editor.push(newValue);
   }
-  public deleteEditorAll() {
+  /**
+  * Removes all elements from the array editor, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEditorAll(): ContactDetail[] {
     if (typeof(this.editor) !== 'undefined') {
+       const oldArray = this.editor;
        delete this.editor;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array editor, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEditorBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.editor) !== 'undefined') {
+       return this.editor.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field editor.
+  * @returns the value  or undefined
+  */
   public getEditor(): ContactDetail[] | undefined {
       return this.editor;
   }
@@ -1415,14 +1696,37 @@ export class Measure {
     }
     this.reviewer.push(newValue);
   }
-  public deleteReviewerAll() {
+  /**
+  * Removes all elements from the array reviewer, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReviewerAll(): ContactDetail[] {
     if (typeof(this.reviewer) !== 'undefined') {
+       const oldArray = this.reviewer;
        delete this.reviewer;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array reviewer, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReviewerBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.reviewer) !== 'undefined') {
+       return this.reviewer.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field reviewer.
+  * @returns the value  or undefined
+  */
   public getReviewer(): ContactDetail[] | undefined {
       return this.reviewer;
   }
@@ -1440,14 +1744,37 @@ export class Measure {
     }
     this.endorser.push(newValue);
   }
-  public deleteEndorserAll() {
+  /**
+  * Removes all elements from the array endorser, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEndorserAll(): ContactDetail[] {
     if (typeof(this.endorser) !== 'undefined') {
+       const oldArray = this.endorser;
        delete this.endorser;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array endorser, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEndorserBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.endorser) !== 'undefined') {
+       return this.endorser.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field endorser.
+  * @returns the value  or undefined
+  */
   public getEndorser(): ContactDetail[] | undefined {
       return this.endorser;
   }
@@ -1465,14 +1792,37 @@ export class Measure {
     }
     this.relatedArtifact.push(newValue);
   }
-  public deleteRelatedArtifactAll() {
+  /**
+  * Removes all elements from the array relatedArtifact, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRelatedArtifactAll(): RelatedArtifact[] {
     if (typeof(this.relatedArtifact) !== 'undefined') {
+       const oldArray = this.relatedArtifact;
        delete this.relatedArtifact;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array relatedArtifact, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRelatedArtifactBySplice(start: number, deleteCount?: number): RelatedArtifact[] {
+    if (typeof(this.relatedArtifact) !== 'undefined') {
+       return this.relatedArtifact.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field relatedArtifact.
+  * @returns the value  or undefined
+  */
   public getRelatedArtifact(): RelatedArtifact[] | undefined {
       return this.relatedArtifact;
   }
@@ -1490,14 +1840,37 @@ export class Measure {
     }
     this.library.push(newValue);
   }
-  public deleteLibraryAll() {
+  /**
+  * Removes all elements from the array library, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLibraryAll(): string[] {
     if (typeof(this.library) !== 'undefined') {
+       const oldArray = this.library;
        delete this.library;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array library, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLibraryBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.library) !== 'undefined') {
+       return this.library.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field library.
+  * @returns the value  or undefined
+  */
   public getLibrary(): string[] | undefined {
       return this.library;
   }
@@ -1525,7 +1898,10 @@ export class Measure {
     return REGEX_DISCLAIMER.source;
   }
   
-
+  /**
+  * Gets the current value of field disclaimer.
+  * @returns the value  or undefined
+  */
   public getDisclaimer(): string | undefined {
       return this.disclaimer;
   }
@@ -1543,14 +1919,37 @@ export class Measure {
     }
     this.type.push(newValue);
   }
-  public deleteTypeAll() {
+  /**
+  * Removes all elements from the array type, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTypeAll(): CodeableConcept[] {
     if (typeof(this.type) !== 'undefined') {
+       const oldArray = this.type;
        delete this.type;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array type, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTypeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.type) !== 'undefined') {
+       return this.type.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): CodeableConcept[] | undefined {
       return this.type;
   }
@@ -1578,7 +1977,10 @@ export class Measure {
     return REGEX_RISKADJUSTMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field riskAdjustment.
+  * @returns the value  or undefined
+  */
   public getRiskAdjustment(): string | undefined {
       return this.riskAdjustment;
   }
@@ -1606,7 +2008,10 @@ export class Measure {
     return REGEX_RATEAGGREGATION.source;
   }
   
-
+  /**
+  * Gets the current value of field rateAggregation.
+  * @returns the value  or undefined
+  */
   public getRateAggregation(): string | undefined {
       return this.rateAggregation;
   }
@@ -1634,7 +2039,10 @@ export class Measure {
     return REGEX_RATIONALE.source;
   }
   
-
+  /**
+  * Gets the current value of field rationale.
+  * @returns the value  or undefined
+  */
   public getRationale(): string | undefined {
       return this.rationale;
   }
@@ -1662,7 +2070,10 @@ export class Measure {
     return REGEX_CLINICALRECOMMENDATIONSTATEMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field clinicalRecommendationStatement.
+  * @returns the value  or undefined
+  */
   public getClinicalRecommendationStatement(): string | undefined {
       return this.clinicalRecommendationStatement;
   }
@@ -1680,14 +2091,37 @@ export class Measure {
     }
     this.definition.push(newValue);
   }
-  public deleteDefinitionAll() {
+  /**
+  * Removes all elements from the array definition, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDefinitionAll(): string[] {
     if (typeof(this.definition) !== 'undefined') {
+       const oldArray = this.definition;
        delete this.definition;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array definition, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDefinitionBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.definition) !== 'undefined') {
+       return this.definition.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field definition.
+  * @returns the value  or undefined
+  */
   public getDefinition(): string[] | undefined {
       return this.definition;
   }
@@ -1705,14 +2139,37 @@ export class Measure {
     }
     this._definition.push(newValue);
   }
-  public delete_definitionAll() {
+  /**
+  * Removes all elements from the array _definition, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_definitionAll(): Element[] {
     if (typeof(this._definition) !== 'undefined') {
+       const oldArray = this._definition;
        delete this._definition;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _definition, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_definitionBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._definition) !== 'undefined') {
+       return this._definition.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _definition.
+  * @returns the value  or undefined
+  */
   public get_definition(): Element[] | undefined {
       return this._definition;
   }
@@ -1740,7 +2197,10 @@ export class Measure {
     return REGEX_GUIDANCE.source;
   }
   
-
+  /**
+  * Gets the current value of field guidance.
+  * @returns the value  or undefined
+  */
   public getGuidance(): string | undefined {
       return this.guidance;
   }
@@ -1758,14 +2218,37 @@ export class Measure {
     }
     this.group.push(newValue);
   }
-  public deleteGroupAll() {
+  /**
+  * Removes all elements from the array group, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGroupAll(): MeasureGroup[] {
     if (typeof(this.group) !== 'undefined') {
+       const oldArray = this.group;
        delete this.group;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array group, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGroupBySplice(start: number, deleteCount?: number): MeasureGroup[] {
+    if (typeof(this.group) !== 'undefined') {
+       return this.group.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field group.
+  * @returns the value  or undefined
+  */
   public getGroup(): MeasureGroup[] | undefined {
       return this.group;
   }
@@ -1783,14 +2266,37 @@ export class Measure {
     }
     this.supplementalData.push(newValue);
   }
-  public deleteSupplementalDataAll() {
+  /**
+  * Removes all elements from the array supplementalData, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSupplementalDataAll(): MeasureSupplementalData[] {
     if (typeof(this.supplementalData) !== 'undefined') {
+       const oldArray = this.supplementalData;
        delete this.supplementalData;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array supplementalData, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSupplementalDataBySplice(start: number, deleteCount?: number): MeasureSupplementalData[] {
+    if (typeof(this.supplementalData) !== 'undefined') {
+       return this.supplementalData.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field supplementalData.
+  * @returns the value  or undefined
+  */
   public getSupplementalData(): MeasureSupplementalData[] | undefined {
       return this.supplementalData;
   }

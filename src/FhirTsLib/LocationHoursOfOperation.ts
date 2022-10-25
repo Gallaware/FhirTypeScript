@@ -116,7 +116,10 @@ export class LocationHoursOfOperation {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -134,14 +137,37 @@ export class LocationHoursOfOperation {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -159,14 +185,37 @@ export class LocationHoursOfOperation {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -184,14 +233,37 @@ export class LocationHoursOfOperation {
     }
     this.daysOfWeek.push(newValue);
   }
-  public deleteDaysOfWeekAll() {
+  /**
+  * Removes all elements from the array daysOfWeek, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDaysOfWeekAll(): string[] {
     if (typeof(this.daysOfWeek) !== 'undefined') {
+       const oldArray = this.daysOfWeek;
        delete this.daysOfWeek;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array daysOfWeek, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDaysOfWeekBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.daysOfWeek) !== 'undefined') {
+       return this.daysOfWeek.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field daysOfWeek.
+  * @returns the value  or undefined
+  */
   public getDaysOfWeek(): string[] | undefined {
       return this.daysOfWeek;
   }
@@ -209,14 +281,37 @@ export class LocationHoursOfOperation {
     }
     this._daysOfWeek.push(newValue);
   }
-  public delete_daysOfWeekAll() {
+  /**
+  * Removes all elements from the array _daysOfWeek, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_daysOfWeekAll(): Element[] {
     if (typeof(this._daysOfWeek) !== 'undefined') {
+       const oldArray = this._daysOfWeek;
        delete this._daysOfWeek;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _daysOfWeek, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_daysOfWeekBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._daysOfWeek) !== 'undefined') {
+       return this._daysOfWeek.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _daysOfWeek.
+  * @returns the value  or undefined
+  */
   public get_daysOfWeek(): Element[] | undefined {
       return this._daysOfWeek;
   }
@@ -244,7 +339,10 @@ export class LocationHoursOfOperation {
     return REGEX_OPENINGTIME.source;
   }
   
-
+  /**
+  * Gets the current value of field openingTime.
+  * @returns the value  or undefined
+  */
   public getOpeningTime(): string | undefined {
       return this.openingTime;
   }
@@ -272,7 +370,10 @@ export class LocationHoursOfOperation {
     return REGEX_CLOSINGTIME.source;
   }
   
-
+  /**
+  * Gets the current value of field closingTime.
+  * @returns the value  or undefined
+  */
   public getClosingTime(): string | undefined {
       return this.closingTime;
   }

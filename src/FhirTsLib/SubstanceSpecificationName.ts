@@ -154,7 +154,10 @@ export class SubstanceSpecificationName {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -172,14 +175,37 @@ export class SubstanceSpecificationName {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -197,14 +223,37 @@ export class SubstanceSpecificationName {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -232,7 +281,10 @@ export class SubstanceSpecificationName {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -250,14 +302,37 @@ export class SubstanceSpecificationName {
     }
     this.language.push(newValue);
   }
-  public deleteLanguageAll() {
+  /**
+  * Removes all elements from the array language, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLanguageAll(): CodeableConcept[] {
     if (typeof(this.language) !== 'undefined') {
+       const oldArray = this.language;
        delete this.language;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array language, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLanguageBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.language) !== 'undefined') {
+       return this.language.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): CodeableConcept[] | undefined {
       return this.language;
   }
@@ -275,14 +350,37 @@ export class SubstanceSpecificationName {
     }
     this.domain.push(newValue);
   }
-  public deleteDomainAll() {
+  /**
+  * Removes all elements from the array domain, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDomainAll(): CodeableConcept[] {
     if (typeof(this.domain) !== 'undefined') {
+       const oldArray = this.domain;
        delete this.domain;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array domain, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDomainBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.domain) !== 'undefined') {
+       return this.domain.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field domain.
+  * @returns the value  or undefined
+  */
   public getDomain(): CodeableConcept[] | undefined {
       return this.domain;
   }
@@ -300,14 +398,37 @@ export class SubstanceSpecificationName {
     }
     this.jurisdiction.push(newValue);
   }
-  public deleteJurisdictionAll() {
+  /**
+  * Removes all elements from the array jurisdiction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteJurisdictionAll(): CodeableConcept[] {
     if (typeof(this.jurisdiction) !== 'undefined') {
+       const oldArray = this.jurisdiction;
        delete this.jurisdiction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array jurisdiction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteJurisdictionBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       return this.jurisdiction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field jurisdiction.
+  * @returns the value  or undefined
+  */
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
   }
@@ -325,14 +446,37 @@ export class SubstanceSpecificationName {
     }
     this.synonym.push(newValue);
   }
-  public deleteSynonymAll() {
+  /**
+  * Removes all elements from the array synonym, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSynonymAll(): SubstanceSpecificationName[] {
     if (typeof(this.synonym) !== 'undefined') {
+       const oldArray = this.synonym;
        delete this.synonym;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array synonym, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSynonymBySplice(start: number, deleteCount?: number): SubstanceSpecificationName[] {
+    if (typeof(this.synonym) !== 'undefined') {
+       return this.synonym.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field synonym.
+  * @returns the value  or undefined
+  */
   public getSynonym(): SubstanceSpecificationName[] | undefined {
       return this.synonym;
   }
@@ -350,14 +494,37 @@ export class SubstanceSpecificationName {
     }
     this.translation.push(newValue);
   }
-  public deleteTranslationAll() {
+  /**
+  * Removes all elements from the array translation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTranslationAll(): SubstanceSpecificationName[] {
     if (typeof(this.translation) !== 'undefined') {
+       const oldArray = this.translation;
        delete this.translation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array translation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTranslationBySplice(start: number, deleteCount?: number): SubstanceSpecificationName[] {
+    if (typeof(this.translation) !== 'undefined') {
+       return this.translation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field translation.
+  * @returns the value  or undefined
+  */
   public getTranslation(): SubstanceSpecificationName[] | undefined {
       return this.translation;
   }
@@ -375,14 +542,37 @@ export class SubstanceSpecificationName {
     }
     this.official.push(newValue);
   }
-  public deleteOfficialAll() {
+  /**
+  * Removes all elements from the array official, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOfficialAll(): SubstanceSpecificationOfficial[] {
     if (typeof(this.official) !== 'undefined') {
+       const oldArray = this.official;
        delete this.official;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array official, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOfficialBySplice(start: number, deleteCount?: number): SubstanceSpecificationOfficial[] {
+    if (typeof(this.official) !== 'undefined') {
+       return this.official.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field official.
+  * @returns the value  or undefined
+  */
   public getOfficial(): SubstanceSpecificationOfficial[] | undefined {
       return this.official;
   }
@@ -400,14 +590,37 @@ export class SubstanceSpecificationName {
     }
     this.source.push(newValue);
   }
-  public deleteSourceAll() {
+  /**
+  * Removes all elements from the array source, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSourceAll(): Reference[] {
     if (typeof(this.source) !== 'undefined') {
+       const oldArray = this.source;
        delete this.source;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array source, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSourceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.source) !== 'undefined') {
+       return this.source.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field source.
+  * @returns the value  or undefined
+  */
   public getSource(): Reference[] | undefined {
       return this.source;
   }

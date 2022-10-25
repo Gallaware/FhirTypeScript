@@ -196,7 +196,10 @@ export class ImmunizationRecommendationRecommendation {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -214,14 +217,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -239,14 +265,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -264,14 +313,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.vaccineCode.push(newValue);
   }
-  public deleteVaccineCodeAll() {
+  /**
+  * Removes all elements from the array vaccineCode, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteVaccineCodeAll(): CodeableConcept[] {
     if (typeof(this.vaccineCode) !== 'undefined') {
+       const oldArray = this.vaccineCode;
        delete this.vaccineCode;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array vaccineCode, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteVaccineCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.vaccineCode) !== 'undefined') {
+       return this.vaccineCode.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field vaccineCode.
+  * @returns the value  or undefined
+  */
   public getVaccineCode(): CodeableConcept[] | undefined {
       return this.vaccineCode;
   }
@@ -289,14 +361,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.contraindicatedVaccineCode.push(newValue);
   }
-  public deleteContraindicatedVaccineCodeAll() {
+  /**
+  * Removes all elements from the array contraindicatedVaccineCode, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContraindicatedVaccineCodeAll(): CodeableConcept[] {
     if (typeof(this.contraindicatedVaccineCode) !== 'undefined') {
+       const oldArray = this.contraindicatedVaccineCode;
        delete this.contraindicatedVaccineCode;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contraindicatedVaccineCode, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContraindicatedVaccineCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.contraindicatedVaccineCode) !== 'undefined') {
+       return this.contraindicatedVaccineCode.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contraindicatedVaccineCode.
+  * @returns the value  or undefined
+  */
   public getContraindicatedVaccineCode(): CodeableConcept[] | undefined {
       return this.contraindicatedVaccineCode;
   }
@@ -314,14 +409,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.forecastReason.push(newValue);
   }
-  public deleteForecastReasonAll() {
+  /**
+  * Removes all elements from the array forecastReason, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteForecastReasonAll(): CodeableConcept[] {
     if (typeof(this.forecastReason) !== 'undefined') {
+       const oldArray = this.forecastReason;
        delete this.forecastReason;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array forecastReason, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteForecastReasonBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.forecastReason) !== 'undefined') {
+       return this.forecastReason.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field forecastReason.
+  * @returns the value  or undefined
+  */
   public getForecastReason(): CodeableConcept[] | undefined {
       return this.forecastReason;
   }
@@ -339,14 +457,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.dateCriterion.push(newValue);
   }
-  public deleteDateCriterionAll() {
+  /**
+  * Removes all elements from the array dateCriterion, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDateCriterionAll(): ImmunizationRecommendationDateCriterion[] {
     if (typeof(this.dateCriterion) !== 'undefined') {
+       const oldArray = this.dateCriterion;
        delete this.dateCriterion;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array dateCriterion, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDateCriterionBySplice(start: number, deleteCount?: number): ImmunizationRecommendationDateCriterion[] {
+    if (typeof(this.dateCriterion) !== 'undefined') {
+       return this.dateCriterion.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field dateCriterion.
+  * @returns the value  or undefined
+  */
   public getDateCriterion(): ImmunizationRecommendationDateCriterion[] | undefined {
       return this.dateCriterion;
   }
@@ -374,7 +515,10 @@ export class ImmunizationRecommendationRecommendation {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -402,7 +546,10 @@ export class ImmunizationRecommendationRecommendation {
     return REGEX_SERIES.source;
   }
   
-
+  /**
+  * Gets the current value of field series.
+  * @returns the value  or undefined
+  */
   public getSeries(): string | undefined {
       return this.series;
   }
@@ -430,7 +577,10 @@ export class ImmunizationRecommendationRecommendation {
     return REGEX_DOSENUMBERSTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field doseNumberString.
+  * @returns the value  or undefined
+  */
   public getDoseNumberString(): string | undefined {
       return this.doseNumberString;
   }
@@ -458,7 +608,10 @@ export class ImmunizationRecommendationRecommendation {
     return REGEX_SERIESDOSESSTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field seriesDosesString.
+  * @returns the value  or undefined
+  */
   public getSeriesDosesString(): string | undefined {
       return this.seriesDosesString;
   }
@@ -476,14 +629,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.supportingImmunization.push(newValue);
   }
-  public deleteSupportingImmunizationAll() {
+  /**
+  * Removes all elements from the array supportingImmunization, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSupportingImmunizationAll(): Reference[] {
     if (typeof(this.supportingImmunization) !== 'undefined') {
+       const oldArray = this.supportingImmunization;
        delete this.supportingImmunization;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array supportingImmunization, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSupportingImmunizationBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.supportingImmunization) !== 'undefined') {
+       return this.supportingImmunization.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field supportingImmunization.
+  * @returns the value  or undefined
+  */
   public getSupportingImmunization(): Reference[] | undefined {
       return this.supportingImmunization;
   }
@@ -501,14 +677,37 @@ export class ImmunizationRecommendationRecommendation {
     }
     this.supportingPatientInformation.push(newValue);
   }
-  public deleteSupportingPatientInformationAll() {
+  /**
+  * Removes all elements from the array supportingPatientInformation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSupportingPatientInformationAll(): Reference[] {
     if (typeof(this.supportingPatientInformation) !== 'undefined') {
+       const oldArray = this.supportingPatientInformation;
        delete this.supportingPatientInformation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array supportingPatientInformation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSupportingPatientInformationBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.supportingPatientInformation) !== 'undefined') {
+       return this.supportingPatientInformation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field supportingPatientInformation.
+  * @returns the value  or undefined
+  */
   public getSupportingPatientInformation(): Reference[] | undefined {
       return this.supportingPatientInformation;
   }

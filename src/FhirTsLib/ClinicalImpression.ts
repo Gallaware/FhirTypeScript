@@ -463,7 +463,10 @@ export class ClinicalImpression {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -491,7 +494,10 @@ export class ClinicalImpression {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -519,7 +525,10 @@ export class ClinicalImpression {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -537,14 +546,37 @@ export class ClinicalImpression {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -562,14 +594,37 @@ export class ClinicalImpression {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -587,14 +642,37 @@ export class ClinicalImpression {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -612,14 +690,37 @@ export class ClinicalImpression {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -647,7 +748,10 @@ export class ClinicalImpression {
     return REGEX_STATUS_000.source;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -675,7 +779,10 @@ export class ClinicalImpression {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -703,7 +810,10 @@ export class ClinicalImpression {
     return REGEX_EFFECTIVEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field effectiveDateTime.
+  * @returns the value  or undefined
+  */
   public getEffectiveDateTime(): string | undefined {
       return this.effectiveDateTime;
   }
@@ -731,7 +841,10 @@ export class ClinicalImpression {
     return REGEX_DATE.source;
   }
   
-
+  /**
+  * Gets the current value of field date.
+  * @returns the value  or undefined
+  */
   public getDate(): string | undefined {
       return this.date;
   }
@@ -749,14 +862,37 @@ export class ClinicalImpression {
     }
     this.problem.push(newValue);
   }
-  public deleteProblemAll() {
+  /**
+  * Removes all elements from the array problem, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProblemAll(): Reference[] {
     if (typeof(this.problem) !== 'undefined') {
+       const oldArray = this.problem;
        delete this.problem;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array problem, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProblemBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.problem) !== 'undefined') {
+       return this.problem.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field problem.
+  * @returns the value  or undefined
+  */
   public getProblem(): Reference[] | undefined {
       return this.problem;
   }
@@ -774,14 +910,37 @@ export class ClinicalImpression {
     }
     this.investigation.push(newValue);
   }
-  public deleteInvestigationAll() {
+  /**
+  * Removes all elements from the array investigation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInvestigationAll(): ClinicalImpressionInvestigation[] {
     if (typeof(this.investigation) !== 'undefined') {
+       const oldArray = this.investigation;
        delete this.investigation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array investigation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInvestigationBySplice(start: number, deleteCount?: number): ClinicalImpressionInvestigation[] {
+    if (typeof(this.investigation) !== 'undefined') {
+       return this.investigation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field investigation.
+  * @returns the value  or undefined
+  */
   public getInvestigation(): ClinicalImpressionInvestigation[] | undefined {
       return this.investigation;
   }
@@ -799,14 +958,37 @@ export class ClinicalImpression {
     }
     this.protocol.push(newValue);
   }
-  public deleteProtocolAll() {
+  /**
+  * Removes all elements from the array protocol, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProtocolAll(): string[] {
     if (typeof(this.protocol) !== 'undefined') {
+       const oldArray = this.protocol;
        delete this.protocol;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array protocol, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProtocolBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.protocol) !== 'undefined') {
+       return this.protocol.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field protocol.
+  * @returns the value  or undefined
+  */
   public getProtocol(): string[] | undefined {
       return this.protocol;
   }
@@ -824,14 +1006,37 @@ export class ClinicalImpression {
     }
     this._protocol.push(newValue);
   }
-  public delete_protocolAll() {
+  /**
+  * Removes all elements from the array _protocol, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_protocolAll(): Element[] {
     if (typeof(this._protocol) !== 'undefined') {
+       const oldArray = this._protocol;
        delete this._protocol;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _protocol, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_protocolBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._protocol) !== 'undefined') {
+       return this._protocol.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _protocol.
+  * @returns the value  or undefined
+  */
   public get_protocol(): Element[] | undefined {
       return this._protocol;
   }
@@ -859,7 +1064,10 @@ export class ClinicalImpression {
     return REGEX_SUMMARY.source;
   }
   
-
+  /**
+  * Gets the current value of field summary.
+  * @returns the value  or undefined
+  */
   public getSummary(): string | undefined {
       return this.summary;
   }
@@ -877,14 +1085,37 @@ export class ClinicalImpression {
     }
     this.finding.push(newValue);
   }
-  public deleteFindingAll() {
+  /**
+  * Removes all elements from the array finding, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFindingAll(): ClinicalImpressionFinding[] {
     if (typeof(this.finding) !== 'undefined') {
+       const oldArray = this.finding;
        delete this.finding;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array finding, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFindingBySplice(start: number, deleteCount?: number): ClinicalImpressionFinding[] {
+    if (typeof(this.finding) !== 'undefined') {
+       return this.finding.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field finding.
+  * @returns the value  or undefined
+  */
   public getFinding(): ClinicalImpressionFinding[] | undefined {
       return this.finding;
   }
@@ -902,14 +1133,37 @@ export class ClinicalImpression {
     }
     this.prognosisCodeableConcept.push(newValue);
   }
-  public deletePrognosisCodeableConceptAll() {
+  /**
+  * Removes all elements from the array prognosisCodeableConcept, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePrognosisCodeableConceptAll(): CodeableConcept[] {
     if (typeof(this.prognosisCodeableConcept) !== 'undefined') {
+       const oldArray = this.prognosisCodeableConcept;
        delete this.prognosisCodeableConcept;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array prognosisCodeableConcept, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePrognosisCodeableConceptBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.prognosisCodeableConcept) !== 'undefined') {
+       return this.prognosisCodeableConcept.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field prognosisCodeableConcept.
+  * @returns the value  or undefined
+  */
   public getPrognosisCodeableConcept(): CodeableConcept[] | undefined {
       return this.prognosisCodeableConcept;
   }
@@ -927,14 +1181,37 @@ export class ClinicalImpression {
     }
     this.prognosisReference.push(newValue);
   }
-  public deletePrognosisReferenceAll() {
+  /**
+  * Removes all elements from the array prognosisReference, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePrognosisReferenceAll(): Reference[] {
     if (typeof(this.prognosisReference) !== 'undefined') {
+       const oldArray = this.prognosisReference;
        delete this.prognosisReference;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array prognosisReference, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePrognosisReferenceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.prognosisReference) !== 'undefined') {
+       return this.prognosisReference.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field prognosisReference.
+  * @returns the value  or undefined
+  */
   public getPrognosisReference(): Reference[] | undefined {
       return this.prognosisReference;
   }
@@ -952,14 +1229,37 @@ export class ClinicalImpression {
     }
     this.supportingInfo.push(newValue);
   }
-  public deleteSupportingInfoAll() {
+  /**
+  * Removes all elements from the array supportingInfo, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSupportingInfoAll(): Reference[] {
     if (typeof(this.supportingInfo) !== 'undefined') {
+       const oldArray = this.supportingInfo;
        delete this.supportingInfo;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array supportingInfo, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSupportingInfoBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.supportingInfo) !== 'undefined') {
+       return this.supportingInfo.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field supportingInfo.
+  * @returns the value  or undefined
+  */
   public getSupportingInfo(): Reference[] | undefined {
       return this.supportingInfo;
   }
@@ -977,14 +1277,37 @@ export class ClinicalImpression {
     }
     this.note.push(newValue);
   }
-  public deleteNoteAll() {
+  /**
+  * Removes all elements from the array note, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteAll(): Annotation[] {
     if (typeof(this.note) !== 'undefined') {
+       const oldArray = this.note;
        delete this.note;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array note, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.note) !== 'undefined') {
+       return this.note.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field note.
+  * @returns the value  or undefined
+  */
   public getNote(): Annotation[] | undefined {
       return this.note;
   }

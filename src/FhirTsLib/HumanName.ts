@@ -136,7 +136,10 @@ export class HumanName {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -154,14 +157,37 @@ export class HumanName {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -190,7 +216,10 @@ export class HumanName {
     return HumanNameUse_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field use.
+  * @returns the value  or undefined
+  */
   public getUse(): string | undefined {
       return this.use;
   }
@@ -218,7 +247,10 @@ export class HumanName {
     return REGEX_TEXT.source;
   }
   
-
+  /**
+  * Gets the current value of field text.
+  * @returns the value  or undefined
+  */
   public getText(): string | undefined {
       return this.text;
   }
@@ -246,7 +278,10 @@ export class HumanName {
     return REGEX_FAMILY.source;
   }
   
-
+  /**
+  * Gets the current value of field family.
+  * @returns the value  or undefined
+  */
   public getFamily(): string | undefined {
       return this.family;
   }
@@ -264,14 +299,37 @@ export class HumanName {
     }
     this.given.push(newValue);
   }
-  public deleteGivenAll() {
+  /**
+  * Removes all elements from the array given, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGivenAll(): string[] {
     if (typeof(this.given) !== 'undefined') {
+       const oldArray = this.given;
        delete this.given;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array given, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGivenBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.given) !== 'undefined') {
+       return this.given.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field given.
+  * @returns the value  or undefined
+  */
   public getGiven(): string[] | undefined {
       return this.given;
   }
@@ -289,14 +347,37 @@ export class HumanName {
     }
     this._given.push(newValue);
   }
-  public delete_givenAll() {
+  /**
+  * Removes all elements from the array _given, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_givenAll(): Element[] {
     if (typeof(this._given) !== 'undefined') {
+       const oldArray = this._given;
        delete this._given;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _given, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_givenBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._given) !== 'undefined') {
+       return this._given.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _given.
+  * @returns the value  or undefined
+  */
   public get_given(): Element[] | undefined {
       return this._given;
   }
@@ -314,14 +395,37 @@ export class HumanName {
     }
     this.prefix.push(newValue);
   }
-  public deletePrefixAll() {
+  /**
+  * Removes all elements from the array prefix, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePrefixAll(): string[] {
     if (typeof(this.prefix) !== 'undefined') {
+       const oldArray = this.prefix;
        delete this.prefix;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array prefix, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePrefixBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.prefix) !== 'undefined') {
+       return this.prefix.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field prefix.
+  * @returns the value  or undefined
+  */
   public getPrefix(): string[] | undefined {
       return this.prefix;
   }
@@ -339,14 +443,37 @@ export class HumanName {
     }
     this._prefix.push(newValue);
   }
-  public delete_prefixAll() {
+  /**
+  * Removes all elements from the array _prefix, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_prefixAll(): Element[] {
     if (typeof(this._prefix) !== 'undefined') {
+       const oldArray = this._prefix;
        delete this._prefix;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _prefix, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_prefixBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._prefix) !== 'undefined') {
+       return this._prefix.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _prefix.
+  * @returns the value  or undefined
+  */
   public get_prefix(): Element[] | undefined {
       return this._prefix;
   }
@@ -364,14 +491,37 @@ export class HumanName {
     }
     this.suffix.push(newValue);
   }
-  public deleteSuffixAll() {
+  /**
+  * Removes all elements from the array suffix, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSuffixAll(): string[] {
     if (typeof(this.suffix) !== 'undefined') {
+       const oldArray = this.suffix;
        delete this.suffix;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array suffix, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSuffixBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.suffix) !== 'undefined') {
+       return this.suffix.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field suffix.
+  * @returns the value  or undefined
+  */
   public getSuffix(): string[] | undefined {
       return this.suffix;
   }
@@ -389,14 +539,37 @@ export class HumanName {
     }
     this._suffix.push(newValue);
   }
-  public delete_suffixAll() {
+  /**
+  * Removes all elements from the array _suffix, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_suffixAll(): Element[] {
     if (typeof(this._suffix) !== 'undefined') {
+       const oldArray = this._suffix;
        delete this._suffix;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _suffix, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_suffixBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._suffix) !== 'undefined') {
+       return this._suffix.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _suffix.
+  * @returns the value  or undefined
+  */
   public get_suffix(): Element[] | undefined {
       return this._suffix;
   }

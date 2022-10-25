@@ -140,7 +140,10 @@ export class DataRequirement {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -158,14 +161,37 @@ export class DataRequirement {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -193,7 +219,10 @@ export class DataRequirement {
     return REGEX_TYPE.source;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -211,14 +240,37 @@ export class DataRequirement {
     }
     this.profile.push(newValue);
   }
-  public deleteProfileAll() {
+  /**
+  * Removes all elements from the array profile, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProfileAll(): string[] {
     if (typeof(this.profile) !== 'undefined') {
+       const oldArray = this.profile;
        delete this.profile;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array profile, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProfileBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.profile) !== 'undefined') {
+       return this.profile.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field profile.
+  * @returns the value  or undefined
+  */
   public getProfile(): string[] | undefined {
       return this.profile;
   }
@@ -236,14 +288,37 @@ export class DataRequirement {
     }
     this.mustSupport.push(newValue);
   }
-  public deleteMustSupportAll() {
+  /**
+  * Removes all elements from the array mustSupport, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteMustSupportAll(): string[] {
     if (typeof(this.mustSupport) !== 'undefined') {
+       const oldArray = this.mustSupport;
        delete this.mustSupport;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array mustSupport, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteMustSupportBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.mustSupport) !== 'undefined') {
+       return this.mustSupport.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field mustSupport.
+  * @returns the value  or undefined
+  */
   public getMustSupport(): string[] | undefined {
       return this.mustSupport;
   }
@@ -261,14 +336,37 @@ export class DataRequirement {
     }
     this._mustSupport.push(newValue);
   }
-  public delete_mustSupportAll() {
+  /**
+  * Removes all elements from the array _mustSupport, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_mustSupportAll(): Element[] {
     if (typeof(this._mustSupport) !== 'undefined') {
+       const oldArray = this._mustSupport;
        delete this._mustSupport;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _mustSupport, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_mustSupportBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._mustSupport) !== 'undefined') {
+       return this._mustSupport.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _mustSupport.
+  * @returns the value  or undefined
+  */
   public get_mustSupport(): Element[] | undefined {
       return this._mustSupport;
   }
@@ -286,14 +384,37 @@ export class DataRequirement {
     }
     this.codeFilter.push(newValue);
   }
-  public deleteCodeFilterAll() {
+  /**
+  * Removes all elements from the array codeFilter, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodeFilterAll(): DataRequirementCodeFilter[] {
     if (typeof(this.codeFilter) !== 'undefined') {
+       const oldArray = this.codeFilter;
        delete this.codeFilter;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array codeFilter, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodeFilterBySplice(start: number, deleteCount?: number): DataRequirementCodeFilter[] {
+    if (typeof(this.codeFilter) !== 'undefined') {
+       return this.codeFilter.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field codeFilter.
+  * @returns the value  or undefined
+  */
   public getCodeFilter(): DataRequirementCodeFilter[] | undefined {
       return this.codeFilter;
   }
@@ -311,14 +432,37 @@ export class DataRequirement {
     }
     this.dateFilter.push(newValue);
   }
-  public deleteDateFilterAll() {
+  /**
+  * Removes all elements from the array dateFilter, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDateFilterAll(): DataRequirementDateFilter[] {
     if (typeof(this.dateFilter) !== 'undefined') {
+       const oldArray = this.dateFilter;
        delete this.dateFilter;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array dateFilter, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDateFilterBySplice(start: number, deleteCount?: number): DataRequirementDateFilter[] {
+    if (typeof(this.dateFilter) !== 'undefined') {
+       return this.dateFilter.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field dateFilter.
+  * @returns the value  or undefined
+  */
   public getDateFilter(): DataRequirementDateFilter[] | undefined {
       return this.dateFilter;
   }
@@ -336,14 +480,37 @@ export class DataRequirement {
     }
     this.sort.push(newValue);
   }
-  public deleteSortAll() {
+  /**
+  * Removes all elements from the array sort, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSortAll(): DataRequirementSort[] {
     if (typeof(this.sort) !== 'undefined') {
+       const oldArray = this.sort;
        delete this.sort;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array sort, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSortBySplice(start: number, deleteCount?: number): DataRequirementSort[] {
+    if (typeof(this.sort) !== 'undefined') {
+       return this.sort.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field sort.
+  * @returns the value  or undefined
+  */
   public getSort(): DataRequirementSort[] | undefined {
       return this.sort;
   }

@@ -130,7 +130,10 @@ export class ElementDefinitionType {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -148,14 +151,37 @@ export class ElementDefinitionType {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -173,14 +199,37 @@ export class ElementDefinitionType {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -208,7 +257,10 @@ export class ElementDefinitionType {
     return REGEX_CODE_000.source;
   }
   
-
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): string | undefined {
       return this.code;
   }
@@ -226,14 +278,37 @@ export class ElementDefinitionType {
     }
     this.profile.push(newValue);
   }
-  public deleteProfileAll() {
+  /**
+  * Removes all elements from the array profile, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProfileAll(): string[] {
     if (typeof(this.profile) !== 'undefined') {
+       const oldArray = this.profile;
        delete this.profile;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array profile, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProfileBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.profile) !== 'undefined') {
+       return this.profile.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field profile.
+  * @returns the value  or undefined
+  */
   public getProfile(): string[] | undefined {
       return this.profile;
   }
@@ -251,14 +326,37 @@ export class ElementDefinitionType {
     }
     this.targetProfile.push(newValue);
   }
-  public deleteTargetProfileAll() {
+  /**
+  * Removes all elements from the array targetProfile, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTargetProfileAll(): string[] {
     if (typeof(this.targetProfile) !== 'undefined') {
+       const oldArray = this.targetProfile;
        delete this.targetProfile;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array targetProfile, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTargetProfileBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.targetProfile) !== 'undefined') {
+       return this.targetProfile.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field targetProfile.
+  * @returns the value  or undefined
+  */
   public getTargetProfile(): string[] | undefined {
       return this.targetProfile;
   }
@@ -276,14 +374,37 @@ export class ElementDefinitionType {
     }
     this.aggregation.push(newValue);
   }
-  public deleteAggregationAll() {
+  /**
+  * Removes all elements from the array aggregation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAggregationAll(): string[] {
     if (typeof(this.aggregation) !== 'undefined') {
+       const oldArray = this.aggregation;
        delete this.aggregation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array aggregation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAggregationBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.aggregation) !== 'undefined') {
+       return this.aggregation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field aggregation.
+  * @returns the value  or undefined
+  */
   public getAggregation(): string[] | undefined {
       return this.aggregation;
   }
@@ -301,14 +422,37 @@ export class ElementDefinitionType {
     }
     this._aggregation.push(newValue);
   }
-  public delete_aggregationAll() {
+  /**
+  * Removes all elements from the array _aggregation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_aggregationAll(): Element[] {
     if (typeof(this._aggregation) !== 'undefined') {
+       const oldArray = this._aggregation;
        delete this._aggregation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _aggregation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_aggregationBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._aggregation) !== 'undefined') {
+       return this._aggregation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _aggregation.
+  * @returns the value  or undefined
+  */
   public get_aggregation(): Element[] | undefined {
       return this._aggregation;
   }
@@ -337,7 +481,10 @@ export class ElementDefinitionType {
     return ElementDefinitionTypeVersioning_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field versioning.
+  * @returns the value  or undefined
+  */
   public getVersioning(): string | undefined {
       return this.versioning;
   }

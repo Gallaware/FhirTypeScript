@@ -315,7 +315,10 @@ export class SubstanceReferenceInformation {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -343,7 +346,10 @@ export class SubstanceReferenceInformation {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -371,7 +377,10 @@ export class SubstanceReferenceInformation {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -389,14 +398,37 @@ export class SubstanceReferenceInformation {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -414,14 +446,37 @@ export class SubstanceReferenceInformation {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -439,14 +494,37 @@ export class SubstanceReferenceInformation {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -474,7 +552,10 @@ export class SubstanceReferenceInformation {
     return REGEX_COMMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field comment.
+  * @returns the value  or undefined
+  */
   public getComment(): string | undefined {
       return this.comment;
   }
@@ -492,14 +573,37 @@ export class SubstanceReferenceInformation {
     }
     this.gene.push(newValue);
   }
-  public deleteGeneAll() {
+  /**
+  * Removes all elements from the array gene, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGeneAll(): SubstanceReferenceInformationGene[] {
     if (typeof(this.gene) !== 'undefined') {
+       const oldArray = this.gene;
        delete this.gene;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array gene, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGeneBySplice(start: number, deleteCount?: number): SubstanceReferenceInformationGene[] {
+    if (typeof(this.gene) !== 'undefined') {
+       return this.gene.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field gene.
+  * @returns the value  or undefined
+  */
   public getGene(): SubstanceReferenceInformationGene[] | undefined {
       return this.gene;
   }
@@ -517,14 +621,37 @@ export class SubstanceReferenceInformation {
     }
     this.geneElement.push(newValue);
   }
-  public deleteGeneElementAll() {
+  /**
+  * Removes all elements from the array geneElement, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGeneElementAll(): SubstanceReferenceInformationGeneElement[] {
     if (typeof(this.geneElement) !== 'undefined') {
+       const oldArray = this.geneElement;
        delete this.geneElement;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array geneElement, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGeneElementBySplice(start: number, deleteCount?: number): SubstanceReferenceInformationGeneElement[] {
+    if (typeof(this.geneElement) !== 'undefined') {
+       return this.geneElement.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field geneElement.
+  * @returns the value  or undefined
+  */
   public getGeneElement(): SubstanceReferenceInformationGeneElement[] | undefined {
       return this.geneElement;
   }
@@ -542,14 +669,37 @@ export class SubstanceReferenceInformation {
     }
     this.classification.push(newValue);
   }
-  public deleteClassificationAll() {
+  /**
+  * Removes all elements from the array classification, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteClassificationAll(): SubstanceReferenceInformationClassification[] {
     if (typeof(this.classification) !== 'undefined') {
+       const oldArray = this.classification;
        delete this.classification;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array classification, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteClassificationBySplice(start: number, deleteCount?: number): SubstanceReferenceInformationClassification[] {
+    if (typeof(this.classification) !== 'undefined') {
+       return this.classification.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field classification.
+  * @returns the value  or undefined
+  */
   public getClassification(): SubstanceReferenceInformationClassification[] | undefined {
       return this.classification;
   }
@@ -567,14 +717,37 @@ export class SubstanceReferenceInformation {
     }
     this.target.push(newValue);
   }
-  public deleteTargetAll() {
+  /**
+  * Removes all elements from the array target, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTargetAll(): SubstanceReferenceInformationTarget[] {
     if (typeof(this.target) !== 'undefined') {
+       const oldArray = this.target;
        delete this.target;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array target, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTargetBySplice(start: number, deleteCount?: number): SubstanceReferenceInformationTarget[] {
+    if (typeof(this.target) !== 'undefined') {
+       return this.target.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field target.
+  * @returns the value  or undefined
+  */
   public getTarget(): SubstanceReferenceInformationTarget[] | undefined {
       return this.target;
   }

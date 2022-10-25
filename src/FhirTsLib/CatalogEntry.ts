@@ -393,7 +393,10 @@ export class CatalogEntry {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -421,7 +424,10 @@ export class CatalogEntry {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -449,7 +455,10 @@ export class CatalogEntry {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -467,14 +476,37 @@ export class CatalogEntry {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -492,14 +524,37 @@ export class CatalogEntry {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -517,14 +572,37 @@ export class CatalogEntry {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -542,14 +620,37 @@ export class CatalogEntry {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -567,14 +668,37 @@ export class CatalogEntry {
     }
     this.additionalIdentifier.push(newValue);
   }
-  public deleteAdditionalIdentifierAll() {
+  /**
+  * Removes all elements from the array additionalIdentifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAdditionalIdentifierAll(): Identifier[] {
     if (typeof(this.additionalIdentifier) !== 'undefined') {
+       const oldArray = this.additionalIdentifier;
        delete this.additionalIdentifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array additionalIdentifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAdditionalIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.additionalIdentifier) !== 'undefined') {
+       return this.additionalIdentifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field additionalIdentifier.
+  * @returns the value  or undefined
+  */
   public getAdditionalIdentifier(): Identifier[] | undefined {
       return this.additionalIdentifier;
   }
@@ -592,14 +716,37 @@ export class CatalogEntry {
     }
     this.classification.push(newValue);
   }
-  public deleteClassificationAll() {
+  /**
+  * Removes all elements from the array classification, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteClassificationAll(): CodeableConcept[] {
     if (typeof(this.classification) !== 'undefined') {
+       const oldArray = this.classification;
        delete this.classification;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array classification, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteClassificationBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.classification) !== 'undefined') {
+       return this.classification.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field classification.
+  * @returns the value  or undefined
+  */
   public getClassification(): CodeableConcept[] | undefined {
       return this.classification;
   }
@@ -628,7 +775,10 @@ export class CatalogEntry {
     return CatalogEntryStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -656,7 +806,10 @@ export class CatalogEntry {
     return REGEX_VALIDTO.source;
   }
   
-
+  /**
+  * Gets the current value of field validTo.
+  * @returns the value  or undefined
+  */
   public getValidTo(): string | undefined {
       return this.validTo;
   }
@@ -684,7 +837,10 @@ export class CatalogEntry {
     return REGEX_LASTUPDATED_000.source;
   }
   
-
+  /**
+  * Gets the current value of field lastUpdated.
+  * @returns the value  or undefined
+  */
   public getLastUpdated(): string | undefined {
       return this.lastUpdated;
   }
@@ -702,14 +858,37 @@ export class CatalogEntry {
     }
     this.additionalCharacteristic.push(newValue);
   }
-  public deleteAdditionalCharacteristicAll() {
+  /**
+  * Removes all elements from the array additionalCharacteristic, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAdditionalCharacteristicAll(): CodeableConcept[] {
     if (typeof(this.additionalCharacteristic) !== 'undefined') {
+       const oldArray = this.additionalCharacteristic;
        delete this.additionalCharacteristic;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array additionalCharacteristic, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAdditionalCharacteristicBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.additionalCharacteristic) !== 'undefined') {
+       return this.additionalCharacteristic.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field additionalCharacteristic.
+  * @returns the value  or undefined
+  */
   public getAdditionalCharacteristic(): CodeableConcept[] | undefined {
       return this.additionalCharacteristic;
   }
@@ -727,14 +906,37 @@ export class CatalogEntry {
     }
     this.additionalClassification.push(newValue);
   }
-  public deleteAdditionalClassificationAll() {
+  /**
+  * Removes all elements from the array additionalClassification, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAdditionalClassificationAll(): CodeableConcept[] {
     if (typeof(this.additionalClassification) !== 'undefined') {
+       const oldArray = this.additionalClassification;
        delete this.additionalClassification;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array additionalClassification, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAdditionalClassificationBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.additionalClassification) !== 'undefined') {
+       return this.additionalClassification.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field additionalClassification.
+  * @returns the value  or undefined
+  */
   public getAdditionalClassification(): CodeableConcept[] | undefined {
       return this.additionalClassification;
   }
@@ -752,14 +954,37 @@ export class CatalogEntry {
     }
     this.relatedEntry.push(newValue);
   }
-  public deleteRelatedEntryAll() {
+  /**
+  * Removes all elements from the array relatedEntry, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRelatedEntryAll(): CatalogEntryRelatedEntry[] {
     if (typeof(this.relatedEntry) !== 'undefined') {
+       const oldArray = this.relatedEntry;
        delete this.relatedEntry;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array relatedEntry, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRelatedEntryBySplice(start: number, deleteCount?: number): CatalogEntryRelatedEntry[] {
+    if (typeof(this.relatedEntry) !== 'undefined') {
+       return this.relatedEntry.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field relatedEntry.
+  * @returns the value  or undefined
+  */
   public getRelatedEntry(): CatalogEntryRelatedEntry[] | undefined {
       return this.relatedEntry;
   }

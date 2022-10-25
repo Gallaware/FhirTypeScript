@@ -107,7 +107,10 @@ export class CompartmentDefinitionResource {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -125,14 +128,37 @@ export class CompartmentDefinitionResource {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -150,14 +176,37 @@ export class CompartmentDefinitionResource {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -186,7 +235,10 @@ export class CompartmentDefinitionResource {
     return ResourceType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): string | undefined {
       return this.code;
   }
@@ -204,14 +256,37 @@ export class CompartmentDefinitionResource {
     }
     this.param.push(newValue);
   }
-  public deleteParamAll() {
+  /**
+  * Removes all elements from the array param, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteParamAll(): string[] {
     if (typeof(this.param) !== 'undefined') {
+       const oldArray = this.param;
        delete this.param;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array param, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteParamBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.param) !== 'undefined') {
+       return this.param.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field param.
+  * @returns the value  or undefined
+  */
   public getParam(): string[] | undefined {
       return this.param;
   }
@@ -229,14 +304,37 @@ export class CompartmentDefinitionResource {
     }
     this._param.push(newValue);
   }
-  public delete_paramAll() {
+  /**
+  * Removes all elements from the array _param, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_paramAll(): Element[] {
     if (typeof(this._param) !== 'undefined') {
+       const oldArray = this._param;
        delete this._param;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _param, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_paramBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._param) !== 'undefined') {
+       return this._param.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _param.
+  * @returns the value  or undefined
+  */
   public get_param(): Element[] | undefined {
       return this._param;
   }
@@ -264,7 +362,10 @@ export class CompartmentDefinitionResource {
     return REGEX_DOCUMENTATION.source;
   }
   
-
+  /**
+  * Gets the current value of field documentation.
+  * @returns the value  or undefined
+  */
   public getDocumentation(): string | undefined {
       return this.documentation;
   }

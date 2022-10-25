@@ -113,7 +113,10 @@ export class Binary {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -141,7 +144,10 @@ export class Binary {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -169,7 +175,10 @@ export class Binary {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -197,7 +206,10 @@ export class Binary {
     return REGEX_CONTENTTYPE.source;
   }
   
-
+  /**
+  * Gets the current value of field contentType.
+  * @returns the value  or undefined
+  */
   public getContentType(): string | undefined {
       return this.contentType;
   }

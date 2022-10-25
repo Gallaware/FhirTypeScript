@@ -137,7 +137,10 @@ export class SubstanceNucleicAcidSubunit {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -155,14 +158,37 @@ export class SubstanceNucleicAcidSubunit {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -180,14 +206,37 @@ export class SubstanceNucleicAcidSubunit {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -215,7 +264,10 @@ export class SubstanceNucleicAcidSubunit {
     return REGEX_SEQUENCE.source;
   }
   
-
+  /**
+  * Gets the current value of field sequence.
+  * @returns the value  or undefined
+  */
   public getSequence(): string | undefined {
       return this.sequence;
   }
@@ -233,14 +285,37 @@ export class SubstanceNucleicAcidSubunit {
     }
     this.linkage.push(newValue);
   }
-  public deleteLinkageAll() {
+  /**
+  * Removes all elements from the array linkage, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLinkageAll(): SubstanceNucleicAcidLinkage[] {
     if (typeof(this.linkage) !== 'undefined') {
+       const oldArray = this.linkage;
        delete this.linkage;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array linkage, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLinkageBySplice(start: number, deleteCount?: number): SubstanceNucleicAcidLinkage[] {
+    if (typeof(this.linkage) !== 'undefined') {
+       return this.linkage.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field linkage.
+  * @returns the value  or undefined
+  */
   public getLinkage(): SubstanceNucleicAcidLinkage[] | undefined {
       return this.linkage;
   }
@@ -258,14 +333,37 @@ export class SubstanceNucleicAcidSubunit {
     }
     this.sugar.push(newValue);
   }
-  public deleteSugarAll() {
+  /**
+  * Removes all elements from the array sugar, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSugarAll(): SubstanceNucleicAcidSugar[] {
     if (typeof(this.sugar) !== 'undefined') {
+       const oldArray = this.sugar;
        delete this.sugar;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array sugar, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSugarBySplice(start: number, deleteCount?: number): SubstanceNucleicAcidSugar[] {
+    if (typeof(this.sugar) !== 'undefined') {
+       return this.sugar.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field sugar.
+  * @returns the value  or undefined
+  */
   public getSugar(): SubstanceNucleicAcidSugar[] | undefined {
       return this.sugar;
   }

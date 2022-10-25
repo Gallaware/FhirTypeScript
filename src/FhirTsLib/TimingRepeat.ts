@@ -253,7 +253,10 @@ export class TimingRepeat {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -271,14 +274,37 @@ export class TimingRepeat {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -296,14 +322,37 @@ export class TimingRepeat {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -332,7 +381,10 @@ export class TimingRepeat {
     return TimingRepeatDurationUnit_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field durationUnit.
+  * @returns the value  or undefined
+  */
   public getDurationUnit(): string | undefined {
       return this.durationUnit;
   }
@@ -361,7 +413,10 @@ export class TimingRepeat {
     return TimingRepeatPeriodUnit_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field periodUnit.
+  * @returns the value  or undefined
+  */
   public getPeriodUnit(): string | undefined {
       return this.periodUnit;
   }
@@ -379,14 +434,37 @@ export class TimingRepeat {
     }
     this.dayOfWeek.push(newValue);
   }
-  public deleteDayOfWeekAll() {
+  /**
+  * Removes all elements from the array dayOfWeek, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDayOfWeekAll(): string[] {
     if (typeof(this.dayOfWeek) !== 'undefined') {
+       const oldArray = this.dayOfWeek;
        delete this.dayOfWeek;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array dayOfWeek, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDayOfWeekBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.dayOfWeek) !== 'undefined') {
+       return this.dayOfWeek.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field dayOfWeek.
+  * @returns the value  or undefined
+  */
   public getDayOfWeek(): string[] | undefined {
       return this.dayOfWeek;
   }
@@ -404,14 +482,37 @@ export class TimingRepeat {
     }
     this._dayOfWeek.push(newValue);
   }
-  public delete_dayOfWeekAll() {
+  /**
+  * Removes all elements from the array _dayOfWeek, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_dayOfWeekAll(): Element[] {
     if (typeof(this._dayOfWeek) !== 'undefined') {
+       const oldArray = this._dayOfWeek;
        delete this._dayOfWeek;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _dayOfWeek, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_dayOfWeekBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._dayOfWeek) !== 'undefined') {
+       return this._dayOfWeek.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _dayOfWeek.
+  * @returns the value  or undefined
+  */
   public get_dayOfWeek(): Element[] | undefined {
       return this._dayOfWeek;
   }
@@ -429,14 +530,37 @@ export class TimingRepeat {
     }
     this.timeOfDay.push(newValue);
   }
-  public deleteTimeOfDayAll() {
+  /**
+  * Removes all elements from the array timeOfDay, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTimeOfDayAll(): string[] {
     if (typeof(this.timeOfDay) !== 'undefined') {
+       const oldArray = this.timeOfDay;
        delete this.timeOfDay;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array timeOfDay, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTimeOfDayBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.timeOfDay) !== 'undefined') {
+       return this.timeOfDay.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field timeOfDay.
+  * @returns the value  or undefined
+  */
   public getTimeOfDay(): string[] | undefined {
       return this.timeOfDay;
   }
@@ -454,14 +578,37 @@ export class TimingRepeat {
     }
     this._timeOfDay.push(newValue);
   }
-  public delete_timeOfDayAll() {
+  /**
+  * Removes all elements from the array _timeOfDay, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_timeOfDayAll(): Element[] {
     if (typeof(this._timeOfDay) !== 'undefined') {
+       const oldArray = this._timeOfDay;
        delete this._timeOfDay;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _timeOfDay, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_timeOfDayBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._timeOfDay) !== 'undefined') {
+       return this._timeOfDay.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _timeOfDay.
+  * @returns the value  or undefined
+  */
   public get_timeOfDay(): Element[] | undefined {
       return this._timeOfDay;
   }
@@ -479,14 +626,37 @@ export class TimingRepeat {
     }
     this.when.push(newValue);
   }
-  public deleteWhenAll() {
+  /**
+  * Removes all elements from the array when, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteWhenAll(): string[] {
     if (typeof(this.when) !== 'undefined') {
+       const oldArray = this.when;
        delete this.when;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array when, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteWhenBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.when) !== 'undefined') {
+       return this.when.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field when.
+  * @returns the value  or undefined
+  */
   public getWhen(): string[] | undefined {
       return this.when;
   }
@@ -504,14 +674,37 @@ export class TimingRepeat {
     }
     this._when.push(newValue);
   }
-  public delete_whenAll() {
+  /**
+  * Removes all elements from the array _when, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_whenAll(): Element[] {
     if (typeof(this._when) !== 'undefined') {
+       const oldArray = this._when;
        delete this._when;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _when, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_whenBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._when) !== 'undefined') {
+       return this._when.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _when.
+  * @returns the value  or undefined
+  */
   public get_when(): Element[] | undefined {
       return this._when;
   }

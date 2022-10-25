@@ -519,7 +519,10 @@ export class Extension {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -537,14 +540,37 @@ export class Extension {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -572,7 +598,10 @@ export class Extension {
     return REGEX_URL.source;
   }
   
-
+  /**
+  * Gets the current value of field url.
+  * @returns the value  or undefined
+  */
   public getUrl(): string | undefined {
       return this.url;
   }
@@ -600,7 +629,10 @@ export class Extension {
     return REGEX_VALUEBASE64BINARY.source;
   }
   
-
+  /**
+  * Gets the current value of field valueBase64Binary.
+  * @returns the value  or undefined
+  */
   public getValueBase64Binary(): string | undefined {
       return this.valueBase64Binary;
   }
@@ -628,7 +660,10 @@ export class Extension {
     return REGEX_VALUECANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field valueCanonical.
+  * @returns the value  or undefined
+  */
   public getValueCanonical(): string | undefined {
       return this.valueCanonical;
   }
@@ -656,7 +691,10 @@ export class Extension {
     return REGEX_VALUECODE.source;
   }
   
-
+  /**
+  * Gets the current value of field valueCode.
+  * @returns the value  or undefined
+  */
   public getValueCode(): string | undefined {
       return this.valueCode;
   }
@@ -684,7 +722,10 @@ export class Extension {
     return REGEX_VALUEDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field valueDate.
+  * @returns the value  or undefined
+  */
   public getValueDate(): string | undefined {
       return this.valueDate;
   }
@@ -712,7 +753,10 @@ export class Extension {
     return REGEX_VALUEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field valueDateTime.
+  * @returns the value  or undefined
+  */
   public getValueDateTime(): string | undefined {
       return this.valueDateTime;
   }
@@ -740,7 +784,10 @@ export class Extension {
     return REGEX_VALUEID.source;
   }
   
-
+  /**
+  * Gets the current value of field valueId.
+  * @returns the value  or undefined
+  */
   public getValueId(): string | undefined {
       return this.valueId;
   }
@@ -768,7 +815,10 @@ export class Extension {
     return REGEX_VALUEINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field valueInstant.
+  * @returns the value  or undefined
+  */
   public getValueInstant(): string | undefined {
       return this.valueInstant;
   }
@@ -796,7 +846,10 @@ export class Extension {
     return REGEX_VALUEMARKDOWN.source;
   }
   
-
+  /**
+  * Gets the current value of field valueMarkdown.
+  * @returns the value  or undefined
+  */
   public getValueMarkdown(): string | undefined {
       return this.valueMarkdown;
   }
@@ -824,7 +877,10 @@ export class Extension {
     return REGEX_VALUEOID.source;
   }
   
-
+  /**
+  * Gets the current value of field valueOid.
+  * @returns the value  or undefined
+  */
   public getValueOid(): string | undefined {
       return this.valueOid;
   }
@@ -852,7 +908,10 @@ export class Extension {
     return REGEX_VALUESTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field valueString.
+  * @returns the value  or undefined
+  */
   public getValueString(): string | undefined {
       return this.valueString;
   }
@@ -880,7 +939,10 @@ export class Extension {
     return REGEX_VALUETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field valueTime.
+  * @returns the value  or undefined
+  */
   public getValueTime(): string | undefined {
       return this.valueTime;
   }
@@ -908,7 +970,10 @@ export class Extension {
     return REGEX_VALUEURI.source;
   }
   
-
+  /**
+  * Gets the current value of field valueUri.
+  * @returns the value  or undefined
+  */
   public getValueUri(): string | undefined {
       return this.valueUri;
   }
@@ -936,7 +1001,10 @@ export class Extension {
     return REGEX_VALUEURL.source;
   }
   
-
+  /**
+  * Gets the current value of field valueUrl.
+  * @returns the value  or undefined
+  */
   public getValueUrl(): string | undefined {
       return this.valueUrl;
   }
@@ -964,7 +1032,10 @@ export class Extension {
     return REGEX_VALUEUUID.source;
   }
   
-
+  /**
+  * Gets the current value of field valueUuid.
+  * @returns the value  or undefined
+  */
   public getValueUuid(): string | undefined {
       return this.valueUuid;
   }
