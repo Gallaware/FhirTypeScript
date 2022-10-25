@@ -81,7 +81,7 @@ and then translate the object to plain JSON.
 or if you need to do something like convert to a JSON object and then to the JSON string after some other manipulation or logging, then
 you can do it in two steps:
 
-````
+```
     let objectJson = instanceToPlain(patient);
 
     // do some logging here
