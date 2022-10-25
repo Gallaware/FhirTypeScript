@@ -93,9 +93,7 @@ you can do it in two steps:
 Then send the JSON object across the wire to the data server.
 
 ```
-    const baseUrl = 'http://mySolidPodServer:8080/api'
-    const http = new HttpClient();
-    const observer = http.post(baseUrl + '/addPatient', patient);
+    const baseUrl = 'http://mySolidPodServer:8080/api';
 
     const response = await fetch(baseUrl + '/addPatient', 
         {
@@ -123,7 +121,9 @@ To get data from the server it would do a similar thing. In this case, you make 
 Patient ID and hopefully the back end has made its service such that this request is a URL
 
 ```
-    const response = await fetch('http://mySolidPodServer:8080/api/patient/PatientsUUID-blah-blah-blah', 
+    const baseUrl = 'http://mySolidPodServer:8080/api';
+
+    const response = await fetch(baseUrl + '/patient/PatientsUUID-blah-blah-blah', 
         {
             method: 'GET',
             headers: {'Accept': 'application/json; charset=UTF-8'} 
