@@ -90,7 +90,10 @@ export class Parameters {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -118,7 +121,10 @@ export class Parameters {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -146,7 +152,10 @@ export class Parameters {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -164,14 +173,37 @@ export class Parameters {
     }
     this.parameter.push(newValue);
   }
-  public deleteParameterAll() {
+  /**
+  * Removes all elements from the array parameter, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteParameterAll(): ParametersParameter[] {
     if (typeof(this.parameter) !== 'undefined') {
+       const oldArray = this.parameter;
        delete this.parameter;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array parameter, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteParameterBySplice(start: number, deleteCount?: number): ParametersParameter[] {
+    if (typeof(this.parameter) !== 'undefined') {
+       return this.parameter.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field parameter.
+  * @returns the value  or undefined
+  */
   public getParameter(): ParametersParameter[] | undefined {
       return this.parameter;
   }

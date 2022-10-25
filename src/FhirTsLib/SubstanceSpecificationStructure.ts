@@ -132,7 +132,10 @@ export class SubstanceSpecificationStructure {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -150,14 +153,37 @@ export class SubstanceSpecificationStructure {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -175,14 +201,37 @@ export class SubstanceSpecificationStructure {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -210,7 +259,10 @@ export class SubstanceSpecificationStructure {
     return REGEX_MOLECULARFORMULA.source;
   }
   
-
+  /**
+  * Gets the current value of field molecularFormula.
+  * @returns the value  or undefined
+  */
   public getMolecularFormula(): string | undefined {
       return this.molecularFormula;
   }
@@ -238,7 +290,10 @@ export class SubstanceSpecificationStructure {
     return REGEX_MOLECULARFORMULABYMOIETY.source;
   }
   
-
+  /**
+  * Gets the current value of field molecularFormulaByMoiety.
+  * @returns the value  or undefined
+  */
   public getMolecularFormulaByMoiety(): string | undefined {
       return this.molecularFormulaByMoiety;
   }
@@ -256,14 +311,37 @@ export class SubstanceSpecificationStructure {
     }
     this.isotope.push(newValue);
   }
-  public deleteIsotopeAll() {
+  /**
+  * Removes all elements from the array isotope, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIsotopeAll(): SubstanceSpecificationIsotope[] {
     if (typeof(this.isotope) !== 'undefined') {
+       const oldArray = this.isotope;
        delete this.isotope;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array isotope, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIsotopeBySplice(start: number, deleteCount?: number): SubstanceSpecificationIsotope[] {
+    if (typeof(this.isotope) !== 'undefined') {
+       return this.isotope.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field isotope.
+  * @returns the value  or undefined
+  */
   public getIsotope(): SubstanceSpecificationIsotope[] | undefined {
       return this.isotope;
   }
@@ -281,14 +359,37 @@ export class SubstanceSpecificationStructure {
     }
     this.source.push(newValue);
   }
-  public deleteSourceAll() {
+  /**
+  * Removes all elements from the array source, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSourceAll(): Reference[] {
     if (typeof(this.source) !== 'undefined') {
+       const oldArray = this.source;
        delete this.source;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array source, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSourceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.source) !== 'undefined') {
+       return this.source.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field source.
+  * @returns the value  or undefined
+  */
   public getSource(): Reference[] | undefined {
       return this.source;
   }
@@ -306,14 +407,37 @@ export class SubstanceSpecificationStructure {
     }
     this.representation.push(newValue);
   }
-  public deleteRepresentationAll() {
+  /**
+  * Removes all elements from the array representation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRepresentationAll(): SubstanceSpecificationRepresentation[] {
     if (typeof(this.representation) !== 'undefined') {
+       const oldArray = this.representation;
        delete this.representation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array representation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRepresentationBySplice(start: number, deleteCount?: number): SubstanceSpecificationRepresentation[] {
+    if (typeof(this.representation) !== 'undefined') {
+       return this.representation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field representation.
+  * @returns the value  or undefined
+  */
   public getRepresentation(): SubstanceSpecificationRepresentation[] | undefined {
       return this.representation;
   }

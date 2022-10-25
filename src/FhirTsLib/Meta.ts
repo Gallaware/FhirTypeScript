@@ -115,7 +115,10 @@ export class Meta {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -133,14 +136,37 @@ export class Meta {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -168,7 +194,10 @@ export class Meta {
     return REGEX_VERSIONID.source;
   }
   
-
+  /**
+  * Gets the current value of field versionId.
+  * @returns the value  or undefined
+  */
   public getVersionId(): string | undefined {
       return this.versionId;
   }
@@ -196,7 +225,10 @@ export class Meta {
     return REGEX_LASTUPDATED.source;
   }
   
-
+  /**
+  * Gets the current value of field lastUpdated.
+  * @returns the value  or undefined
+  */
   public getLastUpdated(): string | undefined {
       return this.lastUpdated;
   }
@@ -224,7 +256,10 @@ export class Meta {
     return REGEX_SOURCE.source;
   }
   
-
+  /**
+  * Gets the current value of field source.
+  * @returns the value  or undefined
+  */
   public getSource(): string | undefined {
       return this.source;
   }
@@ -242,14 +277,37 @@ export class Meta {
     }
     this.profile.push(newValue);
   }
-  public deleteProfileAll() {
+  /**
+  * Removes all elements from the array profile, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProfileAll(): string[] {
     if (typeof(this.profile) !== 'undefined') {
+       const oldArray = this.profile;
        delete this.profile;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array profile, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProfileBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.profile) !== 'undefined') {
+       return this.profile.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field profile.
+  * @returns the value  or undefined
+  */
   public getProfile(): string[] | undefined {
       return this.profile;
   }
@@ -267,14 +325,37 @@ export class Meta {
     }
     this.security.push(newValue);
   }
-  public deleteSecurityAll() {
+  /**
+  * Removes all elements from the array security, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSecurityAll(): Coding[] {
     if (typeof(this.security) !== 'undefined') {
+       const oldArray = this.security;
        delete this.security;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array security, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSecurityBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.security) !== 'undefined') {
+       return this.security.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field security.
+  * @returns the value  or undefined
+  */
   public getSecurity(): Coding[] | undefined {
       return this.security;
   }
@@ -292,14 +373,37 @@ export class Meta {
     }
     this.tag.push(newValue);
   }
-  public deleteTagAll() {
+  /**
+  * Removes all elements from the array tag, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTagAll(): Coding[] {
     if (typeof(this.tag) !== 'undefined') {
+       const oldArray = this.tag;
        delete this.tag;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array tag, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTagBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.tag) !== 'undefined') {
+       return this.tag.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field tag.
+  * @returns the value  or undefined
+  */
   public getTag(): Coding[] | undefined {
       return this.tag;
   }

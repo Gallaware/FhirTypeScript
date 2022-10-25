@@ -526,7 +526,10 @@ export class ParametersParameter {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -544,14 +547,37 @@ export class ParametersParameter {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -569,14 +595,37 @@ export class ParametersParameter {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -604,7 +653,10 @@ export class ParametersParameter {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -632,7 +684,10 @@ export class ParametersParameter {
     return REGEX_VALUEBASE64BINARY.source;
   }
   
-
+  /**
+  * Gets the current value of field valueBase64Binary.
+  * @returns the value  or undefined
+  */
   public getValueBase64Binary(): string | undefined {
       return this.valueBase64Binary;
   }
@@ -660,7 +715,10 @@ export class ParametersParameter {
     return REGEX_VALUECANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field valueCanonical.
+  * @returns the value  or undefined
+  */
   public getValueCanonical(): string | undefined {
       return this.valueCanonical;
   }
@@ -688,7 +746,10 @@ export class ParametersParameter {
     return REGEX_VALUECODE.source;
   }
   
-
+  /**
+  * Gets the current value of field valueCode.
+  * @returns the value  or undefined
+  */
   public getValueCode(): string | undefined {
       return this.valueCode;
   }
@@ -716,7 +777,10 @@ export class ParametersParameter {
     return REGEX_VALUEDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field valueDate.
+  * @returns the value  or undefined
+  */
   public getValueDate(): string | undefined {
       return this.valueDate;
   }
@@ -744,7 +808,10 @@ export class ParametersParameter {
     return REGEX_VALUEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field valueDateTime.
+  * @returns the value  or undefined
+  */
   public getValueDateTime(): string | undefined {
       return this.valueDateTime;
   }
@@ -772,7 +839,10 @@ export class ParametersParameter {
     return REGEX_VALUEID.source;
   }
   
-
+  /**
+  * Gets the current value of field valueId.
+  * @returns the value  or undefined
+  */
   public getValueId(): string | undefined {
       return this.valueId;
   }
@@ -800,7 +870,10 @@ export class ParametersParameter {
     return REGEX_VALUEINSTANT.source;
   }
   
-
+  /**
+  * Gets the current value of field valueInstant.
+  * @returns the value  or undefined
+  */
   public getValueInstant(): string | undefined {
       return this.valueInstant;
   }
@@ -828,7 +901,10 @@ export class ParametersParameter {
     return REGEX_VALUEMARKDOWN.source;
   }
   
-
+  /**
+  * Gets the current value of field valueMarkdown.
+  * @returns the value  or undefined
+  */
   public getValueMarkdown(): string | undefined {
       return this.valueMarkdown;
   }
@@ -856,7 +932,10 @@ export class ParametersParameter {
     return REGEX_VALUEOID.source;
   }
   
-
+  /**
+  * Gets the current value of field valueOid.
+  * @returns the value  or undefined
+  */
   public getValueOid(): string | undefined {
       return this.valueOid;
   }
@@ -884,7 +963,10 @@ export class ParametersParameter {
     return REGEX_VALUESTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field valueString.
+  * @returns the value  or undefined
+  */
   public getValueString(): string | undefined {
       return this.valueString;
   }
@@ -912,7 +994,10 @@ export class ParametersParameter {
     return REGEX_VALUETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field valueTime.
+  * @returns the value  or undefined
+  */
   public getValueTime(): string | undefined {
       return this.valueTime;
   }
@@ -940,7 +1025,10 @@ export class ParametersParameter {
     return REGEX_VALUEURI.source;
   }
   
-
+  /**
+  * Gets the current value of field valueUri.
+  * @returns the value  or undefined
+  */
   public getValueUri(): string | undefined {
       return this.valueUri;
   }
@@ -968,7 +1056,10 @@ export class ParametersParameter {
     return REGEX_VALUEURL.source;
   }
   
-
+  /**
+  * Gets the current value of field valueUrl.
+  * @returns the value  or undefined
+  */
   public getValueUrl(): string | undefined {
       return this.valueUrl;
   }
@@ -996,7 +1087,10 @@ export class ParametersParameter {
     return REGEX_VALUEUUID.source;
   }
   
-
+  /**
+  * Gets the current value of field valueUuid.
+  * @returns the value  or undefined
+  */
   public getValueUuid(): string | undefined {
       return this.valueUuid;
   }
@@ -1014,14 +1108,37 @@ export class ParametersParameter {
     }
     this.part.push(newValue);
   }
-  public deletePartAll() {
+  /**
+  * Removes all elements from the array part, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePartAll(): ParametersParameter[] {
     if (typeof(this.part) !== 'undefined') {
+       const oldArray = this.part;
        delete this.part;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array part, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePartBySplice(start: number, deleteCount?: number): ParametersParameter[] {
+    if (typeof(this.part) !== 'undefined') {
+       return this.part.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field part.
+  * @returns the value  or undefined
+  */
   public getPart(): ParametersParameter[] | undefined {
       return this.part;
   }

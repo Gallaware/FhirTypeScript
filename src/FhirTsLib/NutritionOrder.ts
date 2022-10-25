@@ -436,7 +436,10 @@ export class NutritionOrder {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -464,7 +467,10 @@ export class NutritionOrder {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -492,7 +498,10 @@ export class NutritionOrder {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -510,14 +519,37 @@ export class NutritionOrder {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -535,14 +567,37 @@ export class NutritionOrder {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -560,14 +615,37 @@ export class NutritionOrder {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -585,14 +663,37 @@ export class NutritionOrder {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -610,14 +711,37 @@ export class NutritionOrder {
     }
     this.instantiatesCanonical.push(newValue);
   }
-  public deleteInstantiatesCanonicalAll() {
+  /**
+  * Removes all elements from the array instantiatesCanonical, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstantiatesCanonicalAll(): string[] {
     if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       const oldArray = this.instantiatesCanonical;
        delete this.instantiatesCanonical;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instantiatesCanonical, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstantiatesCanonicalBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       return this.instantiatesCanonical.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instantiatesCanonical.
+  * @returns the value  or undefined
+  */
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
   }
@@ -635,14 +759,37 @@ export class NutritionOrder {
     }
     this.instantiatesUri.push(newValue);
   }
-  public deleteInstantiatesUriAll() {
+  /**
+  * Removes all elements from the array instantiatesUri, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstantiatesUriAll(): string[] {
     if (typeof(this.instantiatesUri) !== 'undefined') {
+       const oldArray = this.instantiatesUri;
        delete this.instantiatesUri;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instantiatesUri, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstantiatesUriBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       return this.instantiatesUri.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instantiatesUri.
+  * @returns the value  or undefined
+  */
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
   }
@@ -660,14 +807,37 @@ export class NutritionOrder {
     }
     this._instantiatesUri.push(newValue);
   }
-  public delete_instantiatesUriAll() {
+  /**
+  * Removes all elements from the array _instantiatesUri, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_instantiatesUriAll(): Element[] {
     if (typeof(this._instantiatesUri) !== 'undefined') {
+       const oldArray = this._instantiatesUri;
        delete this._instantiatesUri;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _instantiatesUri, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_instantiatesUriBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       return this._instantiatesUri.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _instantiatesUri.
+  * @returns the value  or undefined
+  */
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
   }
@@ -685,14 +855,37 @@ export class NutritionOrder {
     }
     this.instantiates.push(newValue);
   }
-  public deleteInstantiatesAll() {
+  /**
+  * Removes all elements from the array instantiates, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstantiatesAll(): string[] {
     if (typeof(this.instantiates) !== 'undefined') {
+       const oldArray = this.instantiates;
        delete this.instantiates;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instantiates, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstantiatesBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.instantiates) !== 'undefined') {
+       return this.instantiates.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instantiates.
+  * @returns the value  or undefined
+  */
   public getInstantiates(): string[] | undefined {
       return this.instantiates;
   }
@@ -710,14 +903,37 @@ export class NutritionOrder {
     }
     this._instantiates.push(newValue);
   }
-  public delete_instantiatesAll() {
+  /**
+  * Removes all elements from the array _instantiates, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_instantiatesAll(): Element[] {
     if (typeof(this._instantiates) !== 'undefined') {
+       const oldArray = this._instantiates;
        delete this._instantiates;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _instantiates, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_instantiatesBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._instantiates) !== 'undefined') {
+       return this._instantiates.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _instantiates.
+  * @returns the value  or undefined
+  */
   public get_instantiates(): Element[] | undefined {
       return this._instantiates;
   }
@@ -745,7 +961,10 @@ export class NutritionOrder {
     return REGEX_STATUS_000.source;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -773,7 +992,10 @@ export class NutritionOrder {
     return REGEX_INTENT.source;
   }
   
-
+  /**
+  * Gets the current value of field intent.
+  * @returns the value  or undefined
+  */
   public getIntent(): string | undefined {
       return this.intent;
   }
@@ -801,7 +1023,10 @@ export class NutritionOrder {
     return REGEX_DATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field dateTime.
+  * @returns the value  or undefined
+  */
   public getDateTime(): string | undefined {
       return this.dateTime;
   }
@@ -819,14 +1044,37 @@ export class NutritionOrder {
     }
     this.allergyIntolerance.push(newValue);
   }
-  public deleteAllergyIntoleranceAll() {
+  /**
+  * Removes all elements from the array allergyIntolerance, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAllergyIntoleranceAll(): Reference[] {
     if (typeof(this.allergyIntolerance) !== 'undefined') {
+       const oldArray = this.allergyIntolerance;
        delete this.allergyIntolerance;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array allergyIntolerance, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAllergyIntoleranceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.allergyIntolerance) !== 'undefined') {
+       return this.allergyIntolerance.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field allergyIntolerance.
+  * @returns the value  or undefined
+  */
   public getAllergyIntolerance(): Reference[] | undefined {
       return this.allergyIntolerance;
   }
@@ -844,14 +1092,37 @@ export class NutritionOrder {
     }
     this.foodPreferenceModifier.push(newValue);
   }
-  public deleteFoodPreferenceModifierAll() {
+  /**
+  * Removes all elements from the array foodPreferenceModifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFoodPreferenceModifierAll(): CodeableConcept[] {
     if (typeof(this.foodPreferenceModifier) !== 'undefined') {
+       const oldArray = this.foodPreferenceModifier;
        delete this.foodPreferenceModifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array foodPreferenceModifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFoodPreferenceModifierBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.foodPreferenceModifier) !== 'undefined') {
+       return this.foodPreferenceModifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field foodPreferenceModifier.
+  * @returns the value  or undefined
+  */
   public getFoodPreferenceModifier(): CodeableConcept[] | undefined {
       return this.foodPreferenceModifier;
   }
@@ -869,14 +1140,37 @@ export class NutritionOrder {
     }
     this.excludeFoodModifier.push(newValue);
   }
-  public deleteExcludeFoodModifierAll() {
+  /**
+  * Removes all elements from the array excludeFoodModifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExcludeFoodModifierAll(): CodeableConcept[] {
     if (typeof(this.excludeFoodModifier) !== 'undefined') {
+       const oldArray = this.excludeFoodModifier;
        delete this.excludeFoodModifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array excludeFoodModifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExcludeFoodModifierBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.excludeFoodModifier) !== 'undefined') {
+       return this.excludeFoodModifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field excludeFoodModifier.
+  * @returns the value  or undefined
+  */
   public getExcludeFoodModifier(): CodeableConcept[] | undefined {
       return this.excludeFoodModifier;
   }
@@ -894,14 +1188,37 @@ export class NutritionOrder {
     }
     this.supplement.push(newValue);
   }
-  public deleteSupplementAll() {
+  /**
+  * Removes all elements from the array supplement, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSupplementAll(): NutritionOrderSupplement[] {
     if (typeof(this.supplement) !== 'undefined') {
+       const oldArray = this.supplement;
        delete this.supplement;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array supplement, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSupplementBySplice(start: number, deleteCount?: number): NutritionOrderSupplement[] {
+    if (typeof(this.supplement) !== 'undefined') {
+       return this.supplement.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field supplement.
+  * @returns the value  or undefined
+  */
   public getSupplement(): NutritionOrderSupplement[] | undefined {
       return this.supplement;
   }
@@ -919,14 +1236,37 @@ export class NutritionOrder {
     }
     this.note.push(newValue);
   }
-  public deleteNoteAll() {
+  /**
+  * Removes all elements from the array note, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteAll(): Annotation[] {
     if (typeof(this.note) !== 'undefined') {
+       const oldArray = this.note;
        delete this.note;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array note, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.note) !== 'undefined') {
+       return this.note.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field note.
+  * @returns the value  or undefined
+  */
   public getNote(): Annotation[] | undefined {
       return this.note;
   }

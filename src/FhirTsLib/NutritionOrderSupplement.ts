@@ -115,7 +115,10 @@ export class NutritionOrderSupplement {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -133,14 +136,37 @@ export class NutritionOrderSupplement {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -158,14 +184,37 @@ export class NutritionOrderSupplement {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -193,7 +242,10 @@ export class NutritionOrderSupplement {
     return REGEX_PRODUCTNAME.source;
   }
   
-
+  /**
+  * Gets the current value of field productName.
+  * @returns the value  or undefined
+  */
   public getProductName(): string | undefined {
       return this.productName;
   }
@@ -211,14 +263,37 @@ export class NutritionOrderSupplement {
     }
     this.schedule.push(newValue);
   }
-  public deleteScheduleAll() {
+  /**
+  * Removes all elements from the array schedule, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteScheduleAll(): Timing[] {
     if (typeof(this.schedule) !== 'undefined') {
+       const oldArray = this.schedule;
        delete this.schedule;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array schedule, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteScheduleBySplice(start: number, deleteCount?: number): Timing[] {
+    if (typeof(this.schedule) !== 'undefined') {
+       return this.schedule.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field schedule.
+  * @returns the value  or undefined
+  */
   public getSchedule(): Timing[] | undefined {
       return this.schedule;
   }
@@ -246,7 +321,10 @@ export class NutritionOrderSupplement {
     return REGEX_INSTRUCTION.source;
   }
   
-
+  /**
+  * Gets the current value of field instruction.
+  * @returns the value  or undefined
+  */
   public getInstruction(): string | undefined {
       return this.instruction;
   }

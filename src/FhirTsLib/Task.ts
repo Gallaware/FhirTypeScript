@@ -533,7 +533,10 @@ export class Task {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -561,7 +564,10 @@ export class Task {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -589,7 +595,10 @@ export class Task {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -607,14 +616,37 @@ export class Task {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -632,14 +664,37 @@ export class Task {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -657,14 +712,37 @@ export class Task {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -682,14 +760,37 @@ export class Task {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -717,7 +818,10 @@ export class Task {
     return REGEX_INSTANTIATESCANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field instantiatesCanonical.
+  * @returns the value  or undefined
+  */
   public getInstantiatesCanonical(): string | undefined {
       return this.instantiatesCanonical;
   }
@@ -745,7 +849,10 @@ export class Task {
     return REGEX_INSTANTIATESURI.source;
   }
   
-
+  /**
+  * Gets the current value of field instantiatesUri.
+  * @returns the value  or undefined
+  */
   public getInstantiatesUri(): string | undefined {
       return this.instantiatesUri;
   }
@@ -763,14 +870,37 @@ export class Task {
     }
     this.basedOn.push(newValue);
   }
-  public deleteBasedOnAll() {
+  /**
+  * Removes all elements from the array basedOn, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteBasedOnAll(): Reference[] {
     if (typeof(this.basedOn) !== 'undefined') {
+       const oldArray = this.basedOn;
        delete this.basedOn;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array basedOn, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteBasedOnBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.basedOn) !== 'undefined') {
+       return this.basedOn.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field basedOn.
+  * @returns the value  or undefined
+  */
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
   }
@@ -788,14 +918,37 @@ export class Task {
     }
     this.partOf.push(newValue);
   }
-  public deletePartOfAll() {
+  /**
+  * Removes all elements from the array partOf, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePartOfAll(): Reference[] {
     if (typeof(this.partOf) !== 'undefined') {
+       const oldArray = this.partOf;
        delete this.partOf;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array partOf, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePartOfBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.partOf) !== 'undefined') {
+       return this.partOf.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field partOf.
+  * @returns the value  or undefined
+  */
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
   }
@@ -824,7 +977,10 @@ export class Task {
     return TaskStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -853,7 +1009,10 @@ export class Task {
     return TaskIntent_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field intent.
+  * @returns the value  or undefined
+  */
   public getIntent(): string | undefined {
       return this.intent;
   }
@@ -881,7 +1040,10 @@ export class Task {
     return REGEX_PRIORITY.source;
   }
   
-
+  /**
+  * Gets the current value of field priority.
+  * @returns the value  or undefined
+  */
   public getPriority(): string | undefined {
       return this.priority;
   }
@@ -909,7 +1071,10 @@ export class Task {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -937,7 +1102,10 @@ export class Task {
     return REGEX_AUTHOREDON.source;
   }
   
-
+  /**
+  * Gets the current value of field authoredOn.
+  * @returns the value  or undefined
+  */
   public getAuthoredOn(): string | undefined {
       return this.authoredOn;
   }
@@ -965,7 +1133,10 @@ export class Task {
     return REGEX_LASTMODIFIED_000.source;
   }
   
-
+  /**
+  * Gets the current value of field lastModified.
+  * @returns the value  or undefined
+  */
   public getLastModified(): string | undefined {
       return this.lastModified;
   }
@@ -983,14 +1154,37 @@ export class Task {
     }
     this.performerType.push(newValue);
   }
-  public deletePerformerTypeAll() {
+  /**
+  * Removes all elements from the array performerType, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePerformerTypeAll(): CodeableConcept[] {
     if (typeof(this.performerType) !== 'undefined') {
+       const oldArray = this.performerType;
        delete this.performerType;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array performerType, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePerformerTypeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.performerType) !== 'undefined') {
+       return this.performerType.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field performerType.
+  * @returns the value  or undefined
+  */
   public getPerformerType(): CodeableConcept[] | undefined {
       return this.performerType;
   }
@@ -1008,14 +1202,37 @@ export class Task {
     }
     this.insurance.push(newValue);
   }
-  public deleteInsuranceAll() {
+  /**
+  * Removes all elements from the array insurance, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInsuranceAll(): Reference[] {
     if (typeof(this.insurance) !== 'undefined') {
+       const oldArray = this.insurance;
        delete this.insurance;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array insurance, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInsuranceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.insurance) !== 'undefined') {
+       return this.insurance.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field insurance.
+  * @returns the value  or undefined
+  */
   public getInsurance(): Reference[] | undefined {
       return this.insurance;
   }
@@ -1033,14 +1250,37 @@ export class Task {
     }
     this.note.push(newValue);
   }
-  public deleteNoteAll() {
+  /**
+  * Removes all elements from the array note, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteAll(): Annotation[] {
     if (typeof(this.note) !== 'undefined') {
+       const oldArray = this.note;
        delete this.note;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array note, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.note) !== 'undefined') {
+       return this.note.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field note.
+  * @returns the value  or undefined
+  */
   public getNote(): Annotation[] | undefined {
       return this.note;
   }
@@ -1058,14 +1298,37 @@ export class Task {
     }
     this.relevantHistory.push(newValue);
   }
-  public deleteRelevantHistoryAll() {
+  /**
+  * Removes all elements from the array relevantHistory, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRelevantHistoryAll(): Reference[] {
     if (typeof(this.relevantHistory) !== 'undefined') {
+       const oldArray = this.relevantHistory;
        delete this.relevantHistory;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array relevantHistory, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRelevantHistoryBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.relevantHistory) !== 'undefined') {
+       return this.relevantHistory.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field relevantHistory.
+  * @returns the value  or undefined
+  */
   public getRelevantHistory(): Reference[] | undefined {
       return this.relevantHistory;
   }
@@ -1083,14 +1346,37 @@ export class Task {
     }
     this.input.push(newValue);
   }
-  public deleteInputAll() {
+  /**
+  * Removes all elements from the array input, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInputAll(): TaskInput[] {
     if (typeof(this.input) !== 'undefined') {
+       const oldArray = this.input;
        delete this.input;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array input, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInputBySplice(start: number, deleteCount?: number): TaskInput[] {
+    if (typeof(this.input) !== 'undefined') {
+       return this.input.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field input.
+  * @returns the value  or undefined
+  */
   public getInput(): TaskInput[] | undefined {
       return this.input;
   }
@@ -1108,14 +1394,37 @@ export class Task {
     }
     this.output.push(newValue);
   }
-  public deleteOutputAll() {
+  /**
+  * Removes all elements from the array output, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOutputAll(): TaskOutput[] {
     if (typeof(this.output) !== 'undefined') {
+       const oldArray = this.output;
        delete this.output;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array output, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOutputBySplice(start: number, deleteCount?: number): TaskOutput[] {
+    if (typeof(this.output) !== 'undefined') {
+       return this.output.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field output.
+  * @returns the value  or undefined
+  */
   public getOutput(): TaskOutput[] | undefined {
       return this.output;
   }

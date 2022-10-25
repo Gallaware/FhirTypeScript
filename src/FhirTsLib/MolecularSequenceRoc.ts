@@ -158,7 +158,10 @@ export class MolecularSequenceRoc {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -176,14 +179,37 @@ export class MolecularSequenceRoc {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -201,14 +227,37 @@ export class MolecularSequenceRoc {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -226,14 +275,37 @@ export class MolecularSequenceRoc {
     }
     this.score.push(newValue);
   }
-  public deleteScoreAll() {
+  /**
+  * Removes all elements from the array score, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteScoreAll(): number[] {
     if (typeof(this.score) !== 'undefined') {
+       const oldArray = this.score;
        delete this.score;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array score, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteScoreBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.score) !== 'undefined') {
+       return this.score.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field score.
+  * @returns the value  or undefined
+  */
   public getScore(): number[] | undefined {
       return this.score;
   }
@@ -251,14 +323,37 @@ export class MolecularSequenceRoc {
     }
     this._score.push(newValue);
   }
-  public delete_scoreAll() {
+  /**
+  * Removes all elements from the array _score, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_scoreAll(): Element[] {
     if (typeof(this._score) !== 'undefined') {
+       const oldArray = this._score;
        delete this._score;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _score, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_scoreBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._score) !== 'undefined') {
+       return this._score.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _score.
+  * @returns the value  or undefined
+  */
   public get_score(): Element[] | undefined {
       return this._score;
   }
@@ -276,14 +371,37 @@ export class MolecularSequenceRoc {
     }
     this.numTP.push(newValue);
   }
-  public deleteNumTPAll() {
+  /**
+  * Removes all elements from the array numTP, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNumTPAll(): number[] {
     if (typeof(this.numTP) !== 'undefined') {
+       const oldArray = this.numTP;
        delete this.numTP;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array numTP, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNumTPBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.numTP) !== 'undefined') {
+       return this.numTP.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field numTP.
+  * @returns the value  or undefined
+  */
   public getNumTP(): number[] | undefined {
       return this.numTP;
   }
@@ -301,14 +419,37 @@ export class MolecularSequenceRoc {
     }
     this._numTP.push(newValue);
   }
-  public delete_numTPAll() {
+  /**
+  * Removes all elements from the array _numTP, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_numTPAll(): Element[] {
     if (typeof(this._numTP) !== 'undefined') {
+       const oldArray = this._numTP;
        delete this._numTP;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _numTP, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_numTPBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._numTP) !== 'undefined') {
+       return this._numTP.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _numTP.
+  * @returns the value  or undefined
+  */
   public get_numTP(): Element[] | undefined {
       return this._numTP;
   }
@@ -326,14 +467,37 @@ export class MolecularSequenceRoc {
     }
     this.numFP.push(newValue);
   }
-  public deleteNumFPAll() {
+  /**
+  * Removes all elements from the array numFP, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNumFPAll(): number[] {
     if (typeof(this.numFP) !== 'undefined') {
+       const oldArray = this.numFP;
        delete this.numFP;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array numFP, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNumFPBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.numFP) !== 'undefined') {
+       return this.numFP.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field numFP.
+  * @returns the value  or undefined
+  */
   public getNumFP(): number[] | undefined {
       return this.numFP;
   }
@@ -351,14 +515,37 @@ export class MolecularSequenceRoc {
     }
     this._numFP.push(newValue);
   }
-  public delete_numFPAll() {
+  /**
+  * Removes all elements from the array _numFP, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_numFPAll(): Element[] {
     if (typeof(this._numFP) !== 'undefined') {
+       const oldArray = this._numFP;
        delete this._numFP;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _numFP, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_numFPBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._numFP) !== 'undefined') {
+       return this._numFP.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _numFP.
+  * @returns the value  or undefined
+  */
   public get_numFP(): Element[] | undefined {
       return this._numFP;
   }
@@ -376,14 +563,37 @@ export class MolecularSequenceRoc {
     }
     this.numFN.push(newValue);
   }
-  public deleteNumFNAll() {
+  /**
+  * Removes all elements from the array numFN, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNumFNAll(): number[] {
     if (typeof(this.numFN) !== 'undefined') {
+       const oldArray = this.numFN;
        delete this.numFN;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array numFN, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNumFNBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.numFN) !== 'undefined') {
+       return this.numFN.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field numFN.
+  * @returns the value  or undefined
+  */
   public getNumFN(): number[] | undefined {
       return this.numFN;
   }
@@ -401,14 +611,37 @@ export class MolecularSequenceRoc {
     }
     this._numFN.push(newValue);
   }
-  public delete_numFNAll() {
+  /**
+  * Removes all elements from the array _numFN, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_numFNAll(): Element[] {
     if (typeof(this._numFN) !== 'undefined') {
+       const oldArray = this._numFN;
        delete this._numFN;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _numFN, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_numFNBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._numFN) !== 'undefined') {
+       return this._numFN.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _numFN.
+  * @returns the value  or undefined
+  */
   public get_numFN(): Element[] | undefined {
       return this._numFN;
   }
@@ -426,14 +659,37 @@ export class MolecularSequenceRoc {
     }
     this.precision.push(newValue);
   }
-  public deletePrecisionAll() {
+  /**
+  * Removes all elements from the array precision, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePrecisionAll(): number[] {
     if (typeof(this.precision) !== 'undefined') {
+       const oldArray = this.precision;
        delete this.precision;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array precision, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePrecisionBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.precision) !== 'undefined') {
+       return this.precision.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field precision.
+  * @returns the value  or undefined
+  */
   public getPrecision(): number[] | undefined {
       return this.precision;
   }
@@ -451,14 +707,37 @@ export class MolecularSequenceRoc {
     }
     this._precision.push(newValue);
   }
-  public delete_precisionAll() {
+  /**
+  * Removes all elements from the array _precision, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_precisionAll(): Element[] {
     if (typeof(this._precision) !== 'undefined') {
+       const oldArray = this._precision;
        delete this._precision;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _precision, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_precisionBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._precision) !== 'undefined') {
+       return this._precision.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _precision.
+  * @returns the value  or undefined
+  */
   public get_precision(): Element[] | undefined {
       return this._precision;
   }
@@ -476,14 +755,37 @@ export class MolecularSequenceRoc {
     }
     this.sensitivity.push(newValue);
   }
-  public deleteSensitivityAll() {
+  /**
+  * Removes all elements from the array sensitivity, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSensitivityAll(): number[] {
     if (typeof(this.sensitivity) !== 'undefined') {
+       const oldArray = this.sensitivity;
        delete this.sensitivity;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array sensitivity, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSensitivityBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.sensitivity) !== 'undefined') {
+       return this.sensitivity.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field sensitivity.
+  * @returns the value  or undefined
+  */
   public getSensitivity(): number[] | undefined {
       return this.sensitivity;
   }
@@ -501,14 +803,37 @@ export class MolecularSequenceRoc {
     }
     this._sensitivity.push(newValue);
   }
-  public delete_sensitivityAll() {
+  /**
+  * Removes all elements from the array _sensitivity, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_sensitivityAll(): Element[] {
     if (typeof(this._sensitivity) !== 'undefined') {
+       const oldArray = this._sensitivity;
        delete this._sensitivity;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _sensitivity, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_sensitivityBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._sensitivity) !== 'undefined') {
+       return this._sensitivity.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _sensitivity.
+  * @returns the value  or undefined
+  */
   public get_sensitivity(): Element[] | undefined {
       return this._sensitivity;
   }
@@ -526,14 +851,37 @@ export class MolecularSequenceRoc {
     }
     this.fMeasure.push(newValue);
   }
-  public deleteFMeasureAll() {
+  /**
+  * Removes all elements from the array fMeasure, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFMeasureAll(): number[] {
     if (typeof(this.fMeasure) !== 'undefined') {
+       const oldArray = this.fMeasure;
        delete this.fMeasure;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array fMeasure, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFMeasureBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.fMeasure) !== 'undefined') {
+       return this.fMeasure.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field fMeasure.
+  * @returns the value  or undefined
+  */
   public getFMeasure(): number[] | undefined {
       return this.fMeasure;
   }
@@ -551,14 +899,37 @@ export class MolecularSequenceRoc {
     }
     this._fMeasure.push(newValue);
   }
-  public delete_fMeasureAll() {
+  /**
+  * Removes all elements from the array _fMeasure, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_fMeasureAll(): Element[] {
     if (typeof(this._fMeasure) !== 'undefined') {
+       const oldArray = this._fMeasure;
        delete this._fMeasure;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _fMeasure, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_fMeasureBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._fMeasure) !== 'undefined') {
+       return this._fMeasure.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _fMeasure.
+  * @returns the value  or undefined
+  */
   public get_fMeasure(): Element[] | undefined {
       return this._fMeasure;
   }

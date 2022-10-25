@@ -248,7 +248,10 @@ export class ExplanationOfBenefitAddItem {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -266,14 +269,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -291,14 +317,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -316,14 +365,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.itemSequence.push(newValue);
   }
-  public deleteItemSequenceAll() {
+  /**
+  * Removes all elements from the array itemSequence, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteItemSequenceAll(): number[] {
     if (typeof(this.itemSequence) !== 'undefined') {
+       const oldArray = this.itemSequence;
        delete this.itemSequence;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array itemSequence, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteItemSequenceBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.itemSequence) !== 'undefined') {
+       return this.itemSequence.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field itemSequence.
+  * @returns the value  or undefined
+  */
   public getItemSequence(): number[] | undefined {
       return this.itemSequence;
   }
@@ -341,14 +413,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this._itemSequence.push(newValue);
   }
-  public delete_itemSequenceAll() {
+  /**
+  * Removes all elements from the array _itemSequence, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_itemSequenceAll(): Element[] {
     if (typeof(this._itemSequence) !== 'undefined') {
+       const oldArray = this._itemSequence;
        delete this._itemSequence;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _itemSequence, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_itemSequenceBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._itemSequence) !== 'undefined') {
+       return this._itemSequence.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _itemSequence.
+  * @returns the value  or undefined
+  */
   public get_itemSequence(): Element[] | undefined {
       return this._itemSequence;
   }
@@ -366,14 +461,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.detailSequence.push(newValue);
   }
-  public deleteDetailSequenceAll() {
+  /**
+  * Removes all elements from the array detailSequence, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDetailSequenceAll(): number[] {
     if (typeof(this.detailSequence) !== 'undefined') {
+       const oldArray = this.detailSequence;
        delete this.detailSequence;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array detailSequence, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDetailSequenceBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.detailSequence) !== 'undefined') {
+       return this.detailSequence.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field detailSequence.
+  * @returns the value  or undefined
+  */
   public getDetailSequence(): number[] | undefined {
       return this.detailSequence;
   }
@@ -391,14 +509,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this._detailSequence.push(newValue);
   }
-  public delete_detailSequenceAll() {
+  /**
+  * Removes all elements from the array _detailSequence, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_detailSequenceAll(): Element[] {
     if (typeof(this._detailSequence) !== 'undefined') {
+       const oldArray = this._detailSequence;
        delete this._detailSequence;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _detailSequence, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_detailSequenceBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._detailSequence) !== 'undefined') {
+       return this._detailSequence.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _detailSequence.
+  * @returns the value  or undefined
+  */
   public get_detailSequence(): Element[] | undefined {
       return this._detailSequence;
   }
@@ -416,14 +557,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.subDetailSequence.push(newValue);
   }
-  public deleteSubDetailSequenceAll() {
+  /**
+  * Removes all elements from the array subDetailSequence, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSubDetailSequenceAll(): number[] {
     if (typeof(this.subDetailSequence) !== 'undefined') {
+       const oldArray = this.subDetailSequence;
        delete this.subDetailSequence;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array subDetailSequence, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSubDetailSequenceBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.subDetailSequence) !== 'undefined') {
+       return this.subDetailSequence.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field subDetailSequence.
+  * @returns the value  or undefined
+  */
   public getSubDetailSequence(): number[] | undefined {
       return this.subDetailSequence;
   }
@@ -441,14 +605,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this._subDetailSequence.push(newValue);
   }
-  public delete_subDetailSequenceAll() {
+  /**
+  * Removes all elements from the array _subDetailSequence, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_subDetailSequenceAll(): Element[] {
     if (typeof(this._subDetailSequence) !== 'undefined') {
+       const oldArray = this._subDetailSequence;
        delete this._subDetailSequence;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _subDetailSequence, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_subDetailSequenceBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._subDetailSequence) !== 'undefined') {
+       return this._subDetailSequence.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _subDetailSequence.
+  * @returns the value  or undefined
+  */
   public get_subDetailSequence(): Element[] | undefined {
       return this._subDetailSequence;
   }
@@ -466,14 +653,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.provider.push(newValue);
   }
-  public deleteProviderAll() {
+  /**
+  * Removes all elements from the array provider, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProviderAll(): Reference[] {
     if (typeof(this.provider) !== 'undefined') {
+       const oldArray = this.provider;
        delete this.provider;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array provider, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProviderBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.provider) !== 'undefined') {
+       return this.provider.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field provider.
+  * @returns the value  or undefined
+  */
   public getProvider(): Reference[] | undefined {
       return this.provider;
   }
@@ -491,14 +701,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.modifier.push(newValue);
   }
-  public deleteModifierAll() {
+  /**
+  * Removes all elements from the array modifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierAll(): CodeableConcept[] {
     if (typeof(this.modifier) !== 'undefined') {
+       const oldArray = this.modifier;
        delete this.modifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.modifier) !== 'undefined') {
+       return this.modifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifier.
+  * @returns the value  or undefined
+  */
   public getModifier(): CodeableConcept[] | undefined {
       return this.modifier;
   }
@@ -516,14 +749,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.programCode.push(newValue);
   }
-  public deleteProgramCodeAll() {
+  /**
+  * Removes all elements from the array programCode, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProgramCodeAll(): CodeableConcept[] {
     if (typeof(this.programCode) !== 'undefined') {
+       const oldArray = this.programCode;
        delete this.programCode;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array programCode, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProgramCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.programCode) !== 'undefined') {
+       return this.programCode.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field programCode.
+  * @returns the value  or undefined
+  */
   public getProgramCode(): CodeableConcept[] | undefined {
       return this.programCode;
   }
@@ -551,7 +807,10 @@ export class ExplanationOfBenefitAddItem {
     return REGEX_SERVICEDDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field servicedDate.
+  * @returns the value  or undefined
+  */
   public getServicedDate(): string | undefined {
       return this.servicedDate;
   }
@@ -569,14 +828,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.subSite.push(newValue);
   }
-  public deleteSubSiteAll() {
+  /**
+  * Removes all elements from the array subSite, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSubSiteAll(): CodeableConcept[] {
     if (typeof(this.subSite) !== 'undefined') {
+       const oldArray = this.subSite;
        delete this.subSite;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array subSite, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSubSiteBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.subSite) !== 'undefined') {
+       return this.subSite.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field subSite.
+  * @returns the value  or undefined
+  */
   public getSubSite(): CodeableConcept[] | undefined {
       return this.subSite;
   }
@@ -594,14 +876,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.noteNumber.push(newValue);
   }
-  public deleteNoteNumberAll() {
+  /**
+  * Removes all elements from the array noteNumber, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteNumberAll(): number[] {
     if (typeof(this.noteNumber) !== 'undefined') {
+       const oldArray = this.noteNumber;
        delete this.noteNumber;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array noteNumber, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteNumberBySplice(start: number, deleteCount?: number): number[] {
+    if (typeof(this.noteNumber) !== 'undefined') {
+       return this.noteNumber.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field noteNumber.
+  * @returns the value  or undefined
+  */
   public getNoteNumber(): number[] | undefined {
       return this.noteNumber;
   }
@@ -619,14 +924,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this._noteNumber.push(newValue);
   }
-  public delete_noteNumberAll() {
+  /**
+  * Removes all elements from the array _noteNumber, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_noteNumberAll(): Element[] {
     if (typeof(this._noteNumber) !== 'undefined') {
+       const oldArray = this._noteNumber;
        delete this._noteNumber;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _noteNumber, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_noteNumberBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._noteNumber) !== 'undefined') {
+       return this._noteNumber.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _noteNumber.
+  * @returns the value  or undefined
+  */
   public get_noteNumber(): Element[] | undefined {
       return this._noteNumber;
   }
@@ -644,14 +972,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.adjudication.push(newValue);
   }
-  public deleteAdjudicationAll() {
+  /**
+  * Removes all elements from the array adjudication, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAdjudicationAll(): ExplanationOfBenefitAdjudication[] {
     if (typeof(this.adjudication) !== 'undefined') {
+       const oldArray = this.adjudication;
        delete this.adjudication;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array adjudication, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAdjudicationBySplice(start: number, deleteCount?: number): ExplanationOfBenefitAdjudication[] {
+    if (typeof(this.adjudication) !== 'undefined') {
+       return this.adjudication.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field adjudication.
+  * @returns the value  or undefined
+  */
   public getAdjudication(): ExplanationOfBenefitAdjudication[] | undefined {
       return this.adjudication;
   }
@@ -669,14 +1020,37 @@ export class ExplanationOfBenefitAddItem {
     }
     this.detail.push(newValue);
   }
-  public deleteDetailAll() {
+  /**
+  * Removes all elements from the array detail, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDetailAll(): ExplanationOfBenefitDetail1[] {
     if (typeof(this.detail) !== 'undefined') {
+       const oldArray = this.detail;
        delete this.detail;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array detail, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDetailBySplice(start: number, deleteCount?: number): ExplanationOfBenefitDetail1[] {
+    if (typeof(this.detail) !== 'undefined') {
+       return this.detail.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field detail.
+  * @returns the value  or undefined
+  */
   public getDetail(): ExplanationOfBenefitDetail1[] | undefined {
       return this.detail;
   }

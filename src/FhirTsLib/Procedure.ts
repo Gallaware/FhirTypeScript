@@ -527,7 +527,10 @@ export class Procedure {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -555,7 +558,10 @@ export class Procedure {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -583,7 +589,10 @@ export class Procedure {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -601,14 +610,37 @@ export class Procedure {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -626,14 +658,37 @@ export class Procedure {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -651,14 +706,37 @@ export class Procedure {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -676,14 +754,37 @@ export class Procedure {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -701,14 +802,37 @@ export class Procedure {
     }
     this.instantiatesCanonical.push(newValue);
   }
-  public deleteInstantiatesCanonicalAll() {
+  /**
+  * Removes all elements from the array instantiatesCanonical, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstantiatesCanonicalAll(): string[] {
     if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       const oldArray = this.instantiatesCanonical;
        delete this.instantiatesCanonical;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instantiatesCanonical, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstantiatesCanonicalBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.instantiatesCanonical) !== 'undefined') {
+       return this.instantiatesCanonical.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instantiatesCanonical.
+  * @returns the value  or undefined
+  */
   public getInstantiatesCanonical(): string[] | undefined {
       return this.instantiatesCanonical;
   }
@@ -726,14 +850,37 @@ export class Procedure {
     }
     this.instantiatesUri.push(newValue);
   }
-  public deleteInstantiatesUriAll() {
+  /**
+  * Removes all elements from the array instantiatesUri, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstantiatesUriAll(): string[] {
     if (typeof(this.instantiatesUri) !== 'undefined') {
+       const oldArray = this.instantiatesUri;
        delete this.instantiatesUri;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instantiatesUri, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstantiatesUriBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.instantiatesUri) !== 'undefined') {
+       return this.instantiatesUri.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instantiatesUri.
+  * @returns the value  or undefined
+  */
   public getInstantiatesUri(): string[] | undefined {
       return this.instantiatesUri;
   }
@@ -751,14 +898,37 @@ export class Procedure {
     }
     this._instantiatesUri.push(newValue);
   }
-  public delete_instantiatesUriAll() {
+  /**
+  * Removes all elements from the array _instantiatesUri, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_instantiatesUriAll(): Element[] {
     if (typeof(this._instantiatesUri) !== 'undefined') {
+       const oldArray = this._instantiatesUri;
        delete this._instantiatesUri;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _instantiatesUri, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_instantiatesUriBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._instantiatesUri) !== 'undefined') {
+       return this._instantiatesUri.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _instantiatesUri.
+  * @returns the value  or undefined
+  */
   public get_instantiatesUri(): Element[] | undefined {
       return this._instantiatesUri;
   }
@@ -776,14 +946,37 @@ export class Procedure {
     }
     this.basedOn.push(newValue);
   }
-  public deleteBasedOnAll() {
+  /**
+  * Removes all elements from the array basedOn, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteBasedOnAll(): Reference[] {
     if (typeof(this.basedOn) !== 'undefined') {
+       const oldArray = this.basedOn;
        delete this.basedOn;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array basedOn, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteBasedOnBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.basedOn) !== 'undefined') {
+       return this.basedOn.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field basedOn.
+  * @returns the value  or undefined
+  */
   public getBasedOn(): Reference[] | undefined {
       return this.basedOn;
   }
@@ -801,14 +994,37 @@ export class Procedure {
     }
     this.partOf.push(newValue);
   }
-  public deletePartOfAll() {
+  /**
+  * Removes all elements from the array partOf, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePartOfAll(): Reference[] {
     if (typeof(this.partOf) !== 'undefined') {
+       const oldArray = this.partOf;
        delete this.partOf;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array partOf, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePartOfBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.partOf) !== 'undefined') {
+       return this.partOf.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field partOf.
+  * @returns the value  or undefined
+  */
   public getPartOf(): Reference[] | undefined {
       return this.partOf;
   }
@@ -836,7 +1052,10 @@ export class Procedure {
     return REGEX_STATUS_000.source;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -864,7 +1083,10 @@ export class Procedure {
     return REGEX_PERFORMEDDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field performedDateTime.
+  * @returns the value  or undefined
+  */
   public getPerformedDateTime(): string | undefined {
       return this.performedDateTime;
   }
@@ -892,7 +1114,10 @@ export class Procedure {
     return REGEX_PERFORMEDSTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field performedString.
+  * @returns the value  or undefined
+  */
   public getPerformedString(): string | undefined {
       return this.performedString;
   }
@@ -910,14 +1135,37 @@ export class Procedure {
     }
     this.performer.push(newValue);
   }
-  public deletePerformerAll() {
+  /**
+  * Removes all elements from the array performer, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePerformerAll(): ProcedurePerformer[] {
     if (typeof(this.performer) !== 'undefined') {
+       const oldArray = this.performer;
        delete this.performer;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array performer, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePerformerBySplice(start: number, deleteCount?: number): ProcedurePerformer[] {
+    if (typeof(this.performer) !== 'undefined') {
+       return this.performer.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field performer.
+  * @returns the value  or undefined
+  */
   public getPerformer(): ProcedurePerformer[] | undefined {
       return this.performer;
   }
@@ -935,14 +1183,37 @@ export class Procedure {
     }
     this.reasonCode.push(newValue);
   }
-  public deleteReasonCodeAll() {
+  /**
+  * Removes all elements from the array reasonCode, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReasonCodeAll(): CodeableConcept[] {
     if (typeof(this.reasonCode) !== 'undefined') {
+       const oldArray = this.reasonCode;
        delete this.reasonCode;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array reasonCode, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReasonCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.reasonCode) !== 'undefined') {
+       return this.reasonCode.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field reasonCode.
+  * @returns the value  or undefined
+  */
   public getReasonCode(): CodeableConcept[] | undefined {
       return this.reasonCode;
   }
@@ -960,14 +1231,37 @@ export class Procedure {
     }
     this.reasonReference.push(newValue);
   }
-  public deleteReasonReferenceAll() {
+  /**
+  * Removes all elements from the array reasonReference, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReasonReferenceAll(): Reference[] {
     if (typeof(this.reasonReference) !== 'undefined') {
+       const oldArray = this.reasonReference;
        delete this.reasonReference;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array reasonReference, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReasonReferenceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.reasonReference) !== 'undefined') {
+       return this.reasonReference.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field reasonReference.
+  * @returns the value  or undefined
+  */
   public getReasonReference(): Reference[] | undefined {
       return this.reasonReference;
   }
@@ -985,14 +1279,37 @@ export class Procedure {
     }
     this.bodySite.push(newValue);
   }
-  public deleteBodySiteAll() {
+  /**
+  * Removes all elements from the array bodySite, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteBodySiteAll(): CodeableConcept[] {
     if (typeof(this.bodySite) !== 'undefined') {
+       const oldArray = this.bodySite;
        delete this.bodySite;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array bodySite, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteBodySiteBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.bodySite) !== 'undefined') {
+       return this.bodySite.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field bodySite.
+  * @returns the value  or undefined
+  */
   public getBodySite(): CodeableConcept[] | undefined {
       return this.bodySite;
   }
@@ -1010,14 +1327,37 @@ export class Procedure {
     }
     this.report.push(newValue);
   }
-  public deleteReportAll() {
+  /**
+  * Removes all elements from the array report, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReportAll(): Reference[] {
     if (typeof(this.report) !== 'undefined') {
+       const oldArray = this.report;
        delete this.report;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array report, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReportBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.report) !== 'undefined') {
+       return this.report.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field report.
+  * @returns the value  or undefined
+  */
   public getReport(): Reference[] | undefined {
       return this.report;
   }
@@ -1035,14 +1375,37 @@ export class Procedure {
     }
     this.complication.push(newValue);
   }
-  public deleteComplicationAll() {
+  /**
+  * Removes all elements from the array complication, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteComplicationAll(): CodeableConcept[] {
     if (typeof(this.complication) !== 'undefined') {
+       const oldArray = this.complication;
        delete this.complication;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array complication, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteComplicationBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.complication) !== 'undefined') {
+       return this.complication.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field complication.
+  * @returns the value  or undefined
+  */
   public getComplication(): CodeableConcept[] | undefined {
       return this.complication;
   }
@@ -1060,14 +1423,37 @@ export class Procedure {
     }
     this.complicationDetail.push(newValue);
   }
-  public deleteComplicationDetailAll() {
+  /**
+  * Removes all elements from the array complicationDetail, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteComplicationDetailAll(): Reference[] {
     if (typeof(this.complicationDetail) !== 'undefined') {
+       const oldArray = this.complicationDetail;
        delete this.complicationDetail;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array complicationDetail, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteComplicationDetailBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.complicationDetail) !== 'undefined') {
+       return this.complicationDetail.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field complicationDetail.
+  * @returns the value  or undefined
+  */
   public getComplicationDetail(): Reference[] | undefined {
       return this.complicationDetail;
   }
@@ -1085,14 +1471,37 @@ export class Procedure {
     }
     this.followUp.push(newValue);
   }
-  public deleteFollowUpAll() {
+  /**
+  * Removes all elements from the array followUp, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFollowUpAll(): CodeableConcept[] {
     if (typeof(this.followUp) !== 'undefined') {
+       const oldArray = this.followUp;
        delete this.followUp;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array followUp, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFollowUpBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.followUp) !== 'undefined') {
+       return this.followUp.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field followUp.
+  * @returns the value  or undefined
+  */
   public getFollowUp(): CodeableConcept[] | undefined {
       return this.followUp;
   }
@@ -1110,14 +1519,37 @@ export class Procedure {
     }
     this.note.push(newValue);
   }
-  public deleteNoteAll() {
+  /**
+  * Removes all elements from the array note, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNoteAll(): Annotation[] {
     if (typeof(this.note) !== 'undefined') {
+       const oldArray = this.note;
        delete this.note;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array note, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNoteBySplice(start: number, deleteCount?: number): Annotation[] {
+    if (typeof(this.note) !== 'undefined') {
+       return this.note.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field note.
+  * @returns the value  or undefined
+  */
   public getNote(): Annotation[] | undefined {
       return this.note;
   }
@@ -1135,14 +1567,37 @@ export class Procedure {
     }
     this.focalDevice.push(newValue);
   }
-  public deleteFocalDeviceAll() {
+  /**
+  * Removes all elements from the array focalDevice, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFocalDeviceAll(): ProcedureFocalDevice[] {
     if (typeof(this.focalDevice) !== 'undefined') {
+       const oldArray = this.focalDevice;
        delete this.focalDevice;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array focalDevice, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFocalDeviceBySplice(start: number, deleteCount?: number): ProcedureFocalDevice[] {
+    if (typeof(this.focalDevice) !== 'undefined') {
+       return this.focalDevice.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field focalDevice.
+  * @returns the value  or undefined
+  */
   public getFocalDevice(): ProcedureFocalDevice[] | undefined {
       return this.focalDevice;
   }
@@ -1160,14 +1615,37 @@ export class Procedure {
     }
     this.usedReference.push(newValue);
   }
-  public deleteUsedReferenceAll() {
+  /**
+  * Removes all elements from the array usedReference, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUsedReferenceAll(): Reference[] {
     if (typeof(this.usedReference) !== 'undefined') {
+       const oldArray = this.usedReference;
        delete this.usedReference;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array usedReference, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUsedReferenceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.usedReference) !== 'undefined') {
+       return this.usedReference.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field usedReference.
+  * @returns the value  or undefined
+  */
   public getUsedReference(): Reference[] | undefined {
       return this.usedReference;
   }
@@ -1185,14 +1663,37 @@ export class Procedure {
     }
     this.usedCode.push(newValue);
   }
-  public deleteUsedCodeAll() {
+  /**
+  * Removes all elements from the array usedCode, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUsedCodeAll(): CodeableConcept[] {
     if (typeof(this.usedCode) !== 'undefined') {
+       const oldArray = this.usedCode;
        delete this.usedCode;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array usedCode, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUsedCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.usedCode) !== 'undefined') {
+       return this.usedCode.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field usedCode.
+  * @returns the value  or undefined
+  */
   public getUsedCode(): CodeableConcept[] | undefined {
       return this.usedCode;
   }

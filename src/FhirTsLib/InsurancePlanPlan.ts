@@ -110,7 +110,10 @@ export class InsurancePlanPlan {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -128,14 +131,37 @@ export class InsurancePlanPlan {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -153,14 +179,37 @@ export class InsurancePlanPlan {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -178,14 +227,37 @@ export class InsurancePlanPlan {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -203,14 +275,37 @@ export class InsurancePlanPlan {
     }
     this.coverageArea.push(newValue);
   }
-  public deleteCoverageAreaAll() {
+  /**
+  * Removes all elements from the array coverageArea, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCoverageAreaAll(): Reference[] {
     if (typeof(this.coverageArea) !== 'undefined') {
+       const oldArray = this.coverageArea;
        delete this.coverageArea;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array coverageArea, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCoverageAreaBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.coverageArea) !== 'undefined') {
+       return this.coverageArea.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field coverageArea.
+  * @returns the value  or undefined
+  */
   public getCoverageArea(): Reference[] | undefined {
       return this.coverageArea;
   }
@@ -228,14 +323,37 @@ export class InsurancePlanPlan {
     }
     this.network.push(newValue);
   }
-  public deleteNetworkAll() {
+  /**
+  * Removes all elements from the array network, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteNetworkAll(): Reference[] {
     if (typeof(this.network) !== 'undefined') {
+       const oldArray = this.network;
        delete this.network;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array network, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteNetworkBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.network) !== 'undefined') {
+       return this.network.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field network.
+  * @returns the value  or undefined
+  */
   public getNetwork(): Reference[] | undefined {
       return this.network;
   }
@@ -253,14 +371,37 @@ export class InsurancePlanPlan {
     }
     this.generalCost.push(newValue);
   }
-  public deleteGeneralCostAll() {
+  /**
+  * Removes all elements from the array generalCost, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteGeneralCostAll(): InsurancePlanGeneralCost[] {
     if (typeof(this.generalCost) !== 'undefined') {
+       const oldArray = this.generalCost;
        delete this.generalCost;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array generalCost, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteGeneralCostBySplice(start: number, deleteCount?: number): InsurancePlanGeneralCost[] {
+    if (typeof(this.generalCost) !== 'undefined') {
+       return this.generalCost.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field generalCost.
+  * @returns the value  or undefined
+  */
   public getGeneralCost(): InsurancePlanGeneralCost[] | undefined {
       return this.generalCost;
   }
@@ -278,14 +419,37 @@ export class InsurancePlanPlan {
     }
     this.specificCost.push(newValue);
   }
-  public deleteSpecificCostAll() {
+  /**
+  * Removes all elements from the array specificCost, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSpecificCostAll(): InsurancePlanSpecificCost[] {
     if (typeof(this.specificCost) !== 'undefined') {
+       const oldArray = this.specificCost;
        delete this.specificCost;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array specificCost, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSpecificCostBySplice(start: number, deleteCount?: number): InsurancePlanSpecificCost[] {
+    if (typeof(this.specificCost) !== 'undefined') {
+       return this.specificCost.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field specificCost.
+  * @returns the value  or undefined
+  */
   public getSpecificCost(): InsurancePlanSpecificCost[] | undefined {
       return this.specificCost;
   }

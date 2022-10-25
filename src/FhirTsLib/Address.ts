@@ -173,7 +173,10 @@ export class Address {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -191,14 +194,37 @@ export class Address {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -227,7 +253,10 @@ export class Address {
     return AddressUse_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field use.
+  * @returns the value  or undefined
+  */
   public getUse(): string | undefined {
       return this.use;
   }
@@ -256,7 +285,10 @@ export class Address {
     return AddressType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -284,7 +316,10 @@ export class Address {
     return REGEX_TEXT.source;
   }
   
-
+  /**
+  * Gets the current value of field text.
+  * @returns the value  or undefined
+  */
   public getText(): string | undefined {
       return this.text;
   }
@@ -302,14 +337,37 @@ export class Address {
     }
     this.line.push(newValue);
   }
-  public deleteLineAll() {
+  /**
+  * Removes all elements from the array line, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLineAll(): string[] {
     if (typeof(this.line) !== 'undefined') {
+       const oldArray = this.line;
        delete this.line;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array line, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLineBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.line) !== 'undefined') {
+       return this.line.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field line.
+  * @returns the value  or undefined
+  */
   public getLine(): string[] | undefined {
       return this.line;
   }
@@ -327,14 +385,37 @@ export class Address {
     }
     this._line.push(newValue);
   }
-  public delete_lineAll() {
+  /**
+  * Removes all elements from the array _line, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_lineAll(): Element[] {
     if (typeof(this._line) !== 'undefined') {
+       const oldArray = this._line;
        delete this._line;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _line, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_lineBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._line) !== 'undefined') {
+       return this._line.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _line.
+  * @returns the value  or undefined
+  */
   public get_line(): Element[] | undefined {
       return this._line;
   }
@@ -362,7 +443,10 @@ export class Address {
     return REGEX_CITY.source;
   }
   
-
+  /**
+  * Gets the current value of field city.
+  * @returns the value  or undefined
+  */
   public getCity(): string | undefined {
       return this.city;
   }
@@ -390,7 +474,10 @@ export class Address {
     return REGEX_DISTRICT.source;
   }
   
-
+  /**
+  * Gets the current value of field district.
+  * @returns the value  or undefined
+  */
   public getDistrict(): string | undefined {
       return this.district;
   }
@@ -418,7 +505,10 @@ export class Address {
     return REGEX_STATE.source;
   }
   
-
+  /**
+  * Gets the current value of field state.
+  * @returns the value  or undefined
+  */
   public getState(): string | undefined {
       return this.state;
   }
@@ -446,7 +536,10 @@ export class Address {
     return REGEX_POSTALCODE.source;
   }
   
-
+  /**
+  * Gets the current value of field postalCode.
+  * @returns the value  or undefined
+  */
   public getPostalCode(): string | undefined {
       return this.postalCode;
   }
@@ -474,7 +567,10 @@ export class Address {
     return REGEX_COUNTRY.source;
   }
   
-
+  /**
+  * Gets the current value of field country.
+  * @returns the value  or undefined
+  */
   public getCountry(): string | undefined {
       return this.country;
   }

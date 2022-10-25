@@ -149,7 +149,10 @@ export class Bundle {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -177,7 +180,10 @@ export class Bundle {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -205,7 +211,10 @@ export class Bundle {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -234,7 +243,10 @@ export class Bundle {
     return BundleType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -262,7 +274,10 @@ export class Bundle {
     return REGEX_TIMESTAMP.source;
   }
   
-
+  /**
+  * Gets the current value of field timestamp.
+  * @returns the value  or undefined
+  */
   public getTimestamp(): string | undefined {
       return this.timestamp;
   }
@@ -280,14 +295,37 @@ export class Bundle {
     }
     this.link.push(newValue);
   }
-  public deleteLinkAll() {
+  /**
+  * Removes all elements from the array link, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLinkAll(): BundleLink[] {
     if (typeof(this.link) !== 'undefined') {
+       const oldArray = this.link;
        delete this.link;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array link, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLinkBySplice(start: number, deleteCount?: number): BundleLink[] {
+    if (typeof(this.link) !== 'undefined') {
+       return this.link.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field link.
+  * @returns the value  or undefined
+  */
   public getLink(): BundleLink[] | undefined {
       return this.link;
   }
@@ -305,14 +343,37 @@ export class Bundle {
     }
     this.entry.push(newValue);
   }
-  public deleteEntryAll() {
+  /**
+  * Removes all elements from the array entry, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEntryAll(): BundleEntry[] {
     if (typeof(this.entry) !== 'undefined') {
+       const oldArray = this.entry;
        delete this.entry;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array entry, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEntryBySplice(start: number, deleteCount?: number): BundleEntry[] {
+    if (typeof(this.entry) !== 'undefined') {
+       return this.entry.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field entry.
+  * @returns the value  or undefined
+  */
   public getEntry(): BundleEntry[] | undefined {
       return this.entry;
   }

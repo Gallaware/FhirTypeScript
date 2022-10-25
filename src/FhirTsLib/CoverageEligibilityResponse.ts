@@ -428,7 +428,10 @@ export class CoverageEligibilityResponse {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -456,7 +459,10 @@ export class CoverageEligibilityResponse {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -484,7 +490,10 @@ export class CoverageEligibilityResponse {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -502,14 +511,37 @@ export class CoverageEligibilityResponse {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -527,14 +559,37 @@ export class CoverageEligibilityResponse {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -552,14 +607,37 @@ export class CoverageEligibilityResponse {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -577,14 +655,37 @@ export class CoverageEligibilityResponse {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -612,7 +713,10 @@ export class CoverageEligibilityResponse {
     return REGEX_STATUS_000.source;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -630,14 +734,37 @@ export class CoverageEligibilityResponse {
     }
     this.purpose.push(newValue);
   }
-  public deletePurposeAll() {
+  /**
+  * Removes all elements from the array purpose, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePurposeAll(): string[] {
     if (typeof(this.purpose) !== 'undefined') {
+       const oldArray = this.purpose;
        delete this.purpose;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array purpose, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePurposeBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.purpose) !== 'undefined') {
+       return this.purpose.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field purpose.
+  * @returns the value  or undefined
+  */
   public getPurpose(): string[] | undefined {
       return this.purpose;
   }
@@ -655,14 +782,37 @@ export class CoverageEligibilityResponse {
     }
     this._purpose.push(newValue);
   }
-  public delete_purposeAll() {
+  /**
+  * Removes all elements from the array _purpose, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_purposeAll(): Element[] {
     if (typeof(this._purpose) !== 'undefined') {
+       const oldArray = this._purpose;
        delete this._purpose;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _purpose, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_purposeBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._purpose) !== 'undefined') {
+       return this._purpose.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _purpose.
+  * @returns the value  or undefined
+  */
   public get_purpose(): Element[] | undefined {
       return this._purpose;
   }
@@ -690,7 +840,10 @@ export class CoverageEligibilityResponse {
     return REGEX_SERVICEDDATE.source;
   }
   
-
+  /**
+  * Gets the current value of field servicedDate.
+  * @returns the value  or undefined
+  */
   public getServicedDate(): string | undefined {
       return this.servicedDate;
   }
@@ -718,7 +871,10 @@ export class CoverageEligibilityResponse {
     return REGEX_CREATED.source;
   }
   
-
+  /**
+  * Gets the current value of field created.
+  * @returns the value  or undefined
+  */
   public getCreated(): string | undefined {
       return this.created;
   }
@@ -747,7 +903,10 @@ export class CoverageEligibilityResponse {
     return CoverageEligibilityResponseOutcome_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field outcome.
+  * @returns the value  or undefined
+  */
   public getOutcome(): string | undefined {
       return this.outcome;
   }
@@ -775,7 +934,10 @@ export class CoverageEligibilityResponse {
     return REGEX_DISPOSITION.source;
   }
   
-
+  /**
+  * Gets the current value of field disposition.
+  * @returns the value  or undefined
+  */
   public getDisposition(): string | undefined {
       return this.disposition;
   }
@@ -793,14 +955,37 @@ export class CoverageEligibilityResponse {
     }
     this.insurance.push(newValue);
   }
-  public deleteInsuranceAll() {
+  /**
+  * Removes all elements from the array insurance, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInsuranceAll(): CoverageEligibilityResponseInsurance[] {
     if (typeof(this.insurance) !== 'undefined') {
+       const oldArray = this.insurance;
        delete this.insurance;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array insurance, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInsuranceBySplice(start: number, deleteCount?: number): CoverageEligibilityResponseInsurance[] {
+    if (typeof(this.insurance) !== 'undefined') {
+       return this.insurance.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field insurance.
+  * @returns the value  or undefined
+  */
   public getInsurance(): CoverageEligibilityResponseInsurance[] | undefined {
       return this.insurance;
   }
@@ -828,7 +1013,10 @@ export class CoverageEligibilityResponse {
     return REGEX_PREAUTHREF.source;
   }
   
-
+  /**
+  * Gets the current value of field preAuthRef.
+  * @returns the value  or undefined
+  */
   public getPreAuthRef(): string | undefined {
       return this.preAuthRef;
   }
@@ -846,14 +1034,37 @@ export class CoverageEligibilityResponse {
     }
     this.error.push(newValue);
   }
-  public deleteErrorAll() {
+  /**
+  * Removes all elements from the array error, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteErrorAll(): CoverageEligibilityResponseError[] {
     if (typeof(this.error) !== 'undefined') {
+       const oldArray = this.error;
        delete this.error;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array error, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteErrorBySplice(start: number, deleteCount?: number): CoverageEligibilityResponseError[] {
+    if (typeof(this.error) !== 'undefined') {
+       return this.error.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field error.
+  * @returns the value  or undefined
+  */
   public getError(): CoverageEligibilityResponseError[] | undefined {
       return this.error;
   }

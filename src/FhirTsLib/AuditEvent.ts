@@ -373,7 +373,10 @@ export class AuditEvent {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -401,7 +404,10 @@ export class AuditEvent {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -429,7 +435,10 @@ export class AuditEvent {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -447,14 +456,37 @@ export class AuditEvent {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -472,14 +504,37 @@ export class AuditEvent {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -497,14 +552,37 @@ export class AuditEvent {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -522,14 +600,37 @@ export class AuditEvent {
     }
     this.subtype.push(newValue);
   }
-  public deleteSubtypeAll() {
+  /**
+  * Removes all elements from the array subtype, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSubtypeAll(): Coding[] {
     if (typeof(this.subtype) !== 'undefined') {
+       const oldArray = this.subtype;
        delete this.subtype;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array subtype, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSubtypeBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.subtype) !== 'undefined') {
+       return this.subtype.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field subtype.
+  * @returns the value  or undefined
+  */
   public getSubtype(): Coding[] | undefined {
       return this.subtype;
   }
@@ -558,7 +659,10 @@ export class AuditEvent {
     return AuditEventAction_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field action.
+  * @returns the value  or undefined
+  */
   public getAction(): string | undefined {
       return this.action;
   }
@@ -586,7 +690,10 @@ export class AuditEvent {
     return REGEX_RECORDED.source;
   }
   
-
+  /**
+  * Gets the current value of field recorded.
+  * @returns the value  or undefined
+  */
   public getRecorded(): string | undefined {
       return this.recorded;
   }
@@ -615,7 +722,10 @@ export class AuditEvent {
     return AuditEventOutcome_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field outcome.
+  * @returns the value  or undefined
+  */
   public getOutcome(): string | undefined {
       return this.outcome;
   }
@@ -643,7 +753,10 @@ export class AuditEvent {
     return REGEX_OUTCOMEDESC.source;
   }
   
-
+  /**
+  * Gets the current value of field outcomeDesc.
+  * @returns the value  or undefined
+  */
   public getOutcomeDesc(): string | undefined {
       return this.outcomeDesc;
   }
@@ -661,14 +774,37 @@ export class AuditEvent {
     }
     this.purposeOfEvent.push(newValue);
   }
-  public deletePurposeOfEventAll() {
+  /**
+  * Removes all elements from the array purposeOfEvent, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePurposeOfEventAll(): CodeableConcept[] {
     if (typeof(this.purposeOfEvent) !== 'undefined') {
+       const oldArray = this.purposeOfEvent;
        delete this.purposeOfEvent;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array purposeOfEvent, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePurposeOfEventBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.purposeOfEvent) !== 'undefined') {
+       return this.purposeOfEvent.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field purposeOfEvent.
+  * @returns the value  or undefined
+  */
   public getPurposeOfEvent(): CodeableConcept[] | undefined {
       return this.purposeOfEvent;
   }
@@ -686,14 +822,37 @@ export class AuditEvent {
     }
     this.agent.push(newValue);
   }
-  public deleteAgentAll() {
+  /**
+  * Removes all elements from the array agent, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAgentAll(): AuditEventAgent[] {
     if (typeof(this.agent) !== 'undefined') {
+       const oldArray = this.agent;
        delete this.agent;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array agent, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAgentBySplice(start: number, deleteCount?: number): AuditEventAgent[] {
+    if (typeof(this.agent) !== 'undefined') {
+       return this.agent.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field agent.
+  * @returns the value  or undefined
+  */
   public getAgent(): AuditEventAgent[] | undefined {
       return this.agent;
   }
@@ -711,14 +870,37 @@ export class AuditEvent {
     }
     this.entity.push(newValue);
   }
-  public deleteEntityAll() {
+  /**
+  * Removes all elements from the array entity, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEntityAll(): AuditEventEntity[] {
     if (typeof(this.entity) !== 'undefined') {
+       const oldArray = this.entity;
        delete this.entity;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array entity, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEntityBySplice(start: number, deleteCount?: number): AuditEventEntity[] {
+    if (typeof(this.entity) !== 'undefined') {
+       return this.entity.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field entity.
+  * @returns the value  or undefined
+  */
   public getEntity(): AuditEventEntity[] | undefined {
       return this.entity;
   }

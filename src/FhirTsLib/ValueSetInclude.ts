@@ -117,7 +117,10 @@ export class ValueSetInclude {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -135,14 +138,37 @@ export class ValueSetInclude {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -160,14 +186,37 @@ export class ValueSetInclude {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -195,7 +244,10 @@ export class ValueSetInclude {
     return REGEX_SYSTEM.source;
   }
   
-
+  /**
+  * Gets the current value of field system.
+  * @returns the value  or undefined
+  */
   public getSystem(): string | undefined {
       return this.system;
   }
@@ -223,7 +275,10 @@ export class ValueSetInclude {
     return REGEX_VERSION.source;
   }
   
-
+  /**
+  * Gets the current value of field version.
+  * @returns the value  or undefined
+  */
   public getVersion(): string | undefined {
       return this.version;
   }
@@ -241,14 +296,37 @@ export class ValueSetInclude {
     }
     this.concept.push(newValue);
   }
-  public deleteConceptAll() {
+  /**
+  * Removes all elements from the array concept, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteConceptAll(): ValueSetConcept[] {
     if (typeof(this.concept) !== 'undefined') {
+       const oldArray = this.concept;
        delete this.concept;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array concept, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteConceptBySplice(start: number, deleteCount?: number): ValueSetConcept[] {
+    if (typeof(this.concept) !== 'undefined') {
+       return this.concept.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field concept.
+  * @returns the value  or undefined
+  */
   public getConcept(): ValueSetConcept[] | undefined {
       return this.concept;
   }
@@ -266,14 +344,37 @@ export class ValueSetInclude {
     }
     this.filter.push(newValue);
   }
-  public deleteFilterAll() {
+  /**
+  * Removes all elements from the array filter, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteFilterAll(): ValueSetFilter[] {
     if (typeof(this.filter) !== 'undefined') {
+       const oldArray = this.filter;
        delete this.filter;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array filter, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteFilterBySplice(start: number, deleteCount?: number): ValueSetFilter[] {
+    if (typeof(this.filter) !== 'undefined') {
+       return this.filter.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field filter.
+  * @returns the value  or undefined
+  */
   public getFilter(): ValueSetFilter[] | undefined {
       return this.filter;
   }
@@ -291,14 +392,37 @@ export class ValueSetInclude {
     }
     this.valueSet.push(newValue);
   }
-  public deleteValueSetAll() {
+  /**
+  * Removes all elements from the array valueSet, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteValueSetAll(): string[] {
     if (typeof(this.valueSet) !== 'undefined') {
+       const oldArray = this.valueSet;
        delete this.valueSet;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array valueSet, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteValueSetBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.valueSet) !== 'undefined') {
+       return this.valueSet.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field valueSet.
+  * @returns the value  or undefined
+  */
   public getValueSet(): string[] | undefined {
       return this.valueSet;
   }

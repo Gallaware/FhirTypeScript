@@ -147,7 +147,10 @@ export class OperationOutcomeIssue {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -165,14 +168,37 @@ export class OperationOutcomeIssue {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -190,14 +216,37 @@ export class OperationOutcomeIssue {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -226,7 +275,10 @@ export class OperationOutcomeIssue {
     return OperationOutcomeIssueSeverity_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field severity.
+  * @returns the value  or undefined
+  */
   public getSeverity(): string | undefined {
       return this.severity;
   }
@@ -255,7 +307,10 @@ export class OperationOutcomeIssue {
     return OperationOutcomeIssueCode_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): string | undefined {
       return this.code;
   }
@@ -283,7 +338,10 @@ export class OperationOutcomeIssue {
     return REGEX_DIAGNOSTICS.source;
   }
   
-
+  /**
+  * Gets the current value of field diagnostics.
+  * @returns the value  or undefined
+  */
   public getDiagnostics(): string | undefined {
       return this.diagnostics;
   }
@@ -301,14 +359,37 @@ export class OperationOutcomeIssue {
     }
     this.location.push(newValue);
   }
-  public deleteLocationAll() {
+  /**
+  * Removes all elements from the array location, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteLocationAll(): string[] {
     if (typeof(this.location) !== 'undefined') {
+       const oldArray = this.location;
        delete this.location;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array location, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteLocationBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.location) !== 'undefined') {
+       return this.location.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field location.
+  * @returns the value  or undefined
+  */
   public getLocation(): string[] | undefined {
       return this.location;
   }
@@ -326,14 +407,37 @@ export class OperationOutcomeIssue {
     }
     this._location.push(newValue);
   }
-  public delete_locationAll() {
+  /**
+  * Removes all elements from the array _location, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_locationAll(): Element[] {
     if (typeof(this._location) !== 'undefined') {
+       const oldArray = this._location;
        delete this._location;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _location, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_locationBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._location) !== 'undefined') {
+       return this._location.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _location.
+  * @returns the value  or undefined
+  */
   public get_location(): Element[] | undefined {
       return this._location;
   }
@@ -351,14 +455,37 @@ export class OperationOutcomeIssue {
     }
     this.expression.push(newValue);
   }
-  public deleteExpressionAll() {
+  /**
+  * Removes all elements from the array expression, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExpressionAll(): string[] {
     if (typeof(this.expression) !== 'undefined') {
+       const oldArray = this.expression;
        delete this.expression;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array expression, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExpressionBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.expression) !== 'undefined') {
+       return this.expression.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field expression.
+  * @returns the value  or undefined
+  */
   public getExpression(): string[] | undefined {
       return this.expression;
   }
@@ -376,14 +503,37 @@ export class OperationOutcomeIssue {
     }
     this._expression.push(newValue);
   }
-  public delete_expressionAll() {
+  /**
+  * Removes all elements from the array _expression, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_expressionAll(): Element[] {
     if (typeof(this._expression) !== 'undefined') {
+       const oldArray = this._expression;
        delete this._expression;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _expression, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_expressionBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._expression) !== 'undefined') {
+       return this._expression.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _expression.
+  * @returns the value  or undefined
+  */
   public get_expression(): Element[] | undefined {
       return this._expression;
   }

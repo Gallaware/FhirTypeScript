@@ -79,8 +79,7 @@ export function createPatient(newId: string, isActive: boolean,
 /*
 *
 */
-export function createHumanName(given: string, family: string, prefix: string | undefined = undefined, 
-    suffix: string | undefined = undefined ) {
+export function createHumanName(given: string, family: string, prefix?: string, suffix?: string ) {
   const name = new HumanName();
   name.addGiven(given);
   name.setFamily(family); 

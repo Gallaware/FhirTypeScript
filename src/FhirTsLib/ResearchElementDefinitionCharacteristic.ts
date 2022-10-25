@@ -257,7 +257,10 @@ export class ResearchElementDefinitionCharacteristic {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -275,14 +278,37 @@ export class ResearchElementDefinitionCharacteristic {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -300,14 +326,37 @@ export class ResearchElementDefinitionCharacteristic {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -335,7 +384,10 @@ export class ResearchElementDefinitionCharacteristic {
     return REGEX_DEFINITIONCANONICAL.source;
   }
   
-
+  /**
+  * Gets the current value of field definitionCanonical.
+  * @returns the value  or undefined
+  */
   public getDefinitionCanonical(): string | undefined {
       return this.definitionCanonical;
   }
@@ -353,14 +405,37 @@ export class ResearchElementDefinitionCharacteristic {
     }
     this.usageContext.push(newValue);
   }
-  public deleteUsageContextAll() {
+  /**
+  * Removes all elements from the array usageContext, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUsageContextAll(): UsageContext[] {
     if (typeof(this.usageContext) !== 'undefined') {
+       const oldArray = this.usageContext;
        delete this.usageContext;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array usageContext, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUsageContextBySplice(start: number, deleteCount?: number): UsageContext[] {
+    if (typeof(this.usageContext) !== 'undefined') {
+       return this.usageContext.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field usageContext.
+  * @returns the value  or undefined
+  */
   public getUsageContext(): UsageContext[] | undefined {
       return this.usageContext;
   }
@@ -388,7 +463,10 @@ export class ResearchElementDefinitionCharacteristic {
     return REGEX_STUDYEFFECTIVEDESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field studyEffectiveDescription.
+  * @returns the value  or undefined
+  */
   public getStudyEffectiveDescription(): string | undefined {
       return this.studyEffectiveDescription;
   }
@@ -416,7 +494,10 @@ export class ResearchElementDefinitionCharacteristic {
     return REGEX_STUDYEFFECTIVEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field studyEffectiveDateTime.
+  * @returns the value  or undefined
+  */
   public getStudyEffectiveDateTime(): string | undefined {
       return this.studyEffectiveDateTime;
   }
@@ -445,7 +526,10 @@ export class ResearchElementDefinitionCharacteristic {
     return ResearchElementDefinitionCharacteristicStudyEffectiveGroupMeasure_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field studyEffectiveGroupMeasure.
+  * @returns the value  or undefined
+  */
   public getStudyEffectiveGroupMeasure(): string | undefined {
       return this.studyEffectiveGroupMeasure;
   }
@@ -473,7 +557,10 @@ export class ResearchElementDefinitionCharacteristic {
     return REGEX_PARTICIPANTEFFECTIVEDESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field participantEffectiveDescription.
+  * @returns the value  or undefined
+  */
   public getParticipantEffectiveDescription(): string | undefined {
       return this.participantEffectiveDescription;
   }
@@ -501,7 +588,10 @@ export class ResearchElementDefinitionCharacteristic {
     return REGEX_PARTICIPANTEFFECTIVEDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field participantEffectiveDateTime.
+  * @returns the value  or undefined
+  */
   public getParticipantEffectiveDateTime(): string | undefined {
       return this.participantEffectiveDateTime;
   }
@@ -530,7 +620,10 @@ export class ResearchElementDefinitionCharacteristic {
     return ResearchElementDefinitionCharacteristicParticipantEffectiveGroupMeasure_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field participantEffectiveGroupMeasure.
+  * @returns the value  or undefined
+  */
   public getParticipantEffectiveGroupMeasure(): string | undefined {
       return this.participantEffectiveGroupMeasure;
   }

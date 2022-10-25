@@ -120,7 +120,10 @@ export class DocumentReferenceContext {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -138,14 +141,37 @@ export class DocumentReferenceContext {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -163,14 +189,37 @@ export class DocumentReferenceContext {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -188,14 +237,37 @@ export class DocumentReferenceContext {
     }
     this.encounter.push(newValue);
   }
-  public deleteEncounterAll() {
+  /**
+  * Removes all elements from the array encounter, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEncounterAll(): Reference[] {
     if (typeof(this.encounter) !== 'undefined') {
+       const oldArray = this.encounter;
        delete this.encounter;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array encounter, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEncounterBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.encounter) !== 'undefined') {
+       return this.encounter.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field encounter.
+  * @returns the value  or undefined
+  */
   public getEncounter(): Reference[] | undefined {
       return this.encounter;
   }
@@ -213,14 +285,37 @@ export class DocumentReferenceContext {
     }
     this.event.push(newValue);
   }
-  public deleteEventAll() {
+  /**
+  * Removes all elements from the array event, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEventAll(): CodeableConcept[] {
     if (typeof(this.event) !== 'undefined') {
+       const oldArray = this.event;
        delete this.event;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array event, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEventBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.event) !== 'undefined') {
+       return this.event.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field event.
+  * @returns the value  or undefined
+  */
   public getEvent(): CodeableConcept[] | undefined {
       return this.event;
   }
@@ -238,14 +333,37 @@ export class DocumentReferenceContext {
     }
     this.related.push(newValue);
   }
-  public deleteRelatedAll() {
+  /**
+  * Removes all elements from the array related, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRelatedAll(): Reference[] {
     if (typeof(this.related) !== 'undefined') {
+       const oldArray = this.related;
        delete this.related;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array related, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRelatedBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.related) !== 'undefined') {
+       return this.related.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field related.
+  * @returns the value  or undefined
+  */
   public getRelated(): Reference[] | undefined {
       return this.related;
   }

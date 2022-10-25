@@ -152,7 +152,10 @@ export class MedicinalProductPackagedPackageItem {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -170,14 +173,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -195,14 +221,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -220,14 +269,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -245,14 +317,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.material.push(newValue);
   }
-  public deleteMaterialAll() {
+  /**
+  * Removes all elements from the array material, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteMaterialAll(): CodeableConcept[] {
     if (typeof(this.material) !== 'undefined') {
+       const oldArray = this.material;
        delete this.material;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array material, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteMaterialBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.material) !== 'undefined') {
+       return this.material.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field material.
+  * @returns the value  or undefined
+  */
   public getMaterial(): CodeableConcept[] | undefined {
       return this.material;
   }
@@ -270,14 +365,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.alternateMaterial.push(newValue);
   }
-  public deleteAlternateMaterialAll() {
+  /**
+  * Removes all elements from the array alternateMaterial, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAlternateMaterialAll(): CodeableConcept[] {
     if (typeof(this.alternateMaterial) !== 'undefined') {
+       const oldArray = this.alternateMaterial;
        delete this.alternateMaterial;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array alternateMaterial, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAlternateMaterialBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.alternateMaterial) !== 'undefined') {
+       return this.alternateMaterial.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field alternateMaterial.
+  * @returns the value  or undefined
+  */
   public getAlternateMaterial(): CodeableConcept[] | undefined {
       return this.alternateMaterial;
   }
@@ -295,14 +413,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.device.push(newValue);
   }
-  public deleteDeviceAll() {
+  /**
+  * Removes all elements from the array device, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDeviceAll(): Reference[] {
     if (typeof(this.device) !== 'undefined') {
+       const oldArray = this.device;
        delete this.device;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array device, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDeviceBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.device) !== 'undefined') {
+       return this.device.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field device.
+  * @returns the value  or undefined
+  */
   public getDevice(): Reference[] | undefined {
       return this.device;
   }
@@ -320,14 +461,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.manufacturedItem.push(newValue);
   }
-  public deleteManufacturedItemAll() {
+  /**
+  * Removes all elements from the array manufacturedItem, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteManufacturedItemAll(): Reference[] {
     if (typeof(this.manufacturedItem) !== 'undefined') {
+       const oldArray = this.manufacturedItem;
        delete this.manufacturedItem;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array manufacturedItem, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteManufacturedItemBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.manufacturedItem) !== 'undefined') {
+       return this.manufacturedItem.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field manufacturedItem.
+  * @returns the value  or undefined
+  */
   public getManufacturedItem(): Reference[] | undefined {
       return this.manufacturedItem;
   }
@@ -345,14 +509,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.packageItem.push(newValue);
   }
-  public deletePackageItemAll() {
+  /**
+  * Removes all elements from the array packageItem, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePackageItemAll(): MedicinalProductPackagedPackageItem[] {
     if (typeof(this.packageItem) !== 'undefined') {
+       const oldArray = this.packageItem;
        delete this.packageItem;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array packageItem, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePackageItemBySplice(start: number, deleteCount?: number): MedicinalProductPackagedPackageItem[] {
+    if (typeof(this.packageItem) !== 'undefined') {
+       return this.packageItem.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field packageItem.
+  * @returns the value  or undefined
+  */
   public getPackageItem(): MedicinalProductPackagedPackageItem[] | undefined {
       return this.packageItem;
   }
@@ -370,14 +557,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.otherCharacteristics.push(newValue);
   }
-  public deleteOtherCharacteristicsAll() {
+  /**
+  * Removes all elements from the array otherCharacteristics, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOtherCharacteristicsAll(): CodeableConcept[] {
     if (typeof(this.otherCharacteristics) !== 'undefined') {
+       const oldArray = this.otherCharacteristics;
        delete this.otherCharacteristics;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array otherCharacteristics, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOtherCharacteristicsBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.otherCharacteristics) !== 'undefined') {
+       return this.otherCharacteristics.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field otherCharacteristics.
+  * @returns the value  or undefined
+  */
   public getOtherCharacteristics(): CodeableConcept[] | undefined {
       return this.otherCharacteristics;
   }
@@ -395,14 +605,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.shelfLifeStorage.push(newValue);
   }
-  public deleteShelfLifeStorageAll() {
+  /**
+  * Removes all elements from the array shelfLifeStorage, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteShelfLifeStorageAll(): ProductShelfLife[] {
     if (typeof(this.shelfLifeStorage) !== 'undefined') {
+       const oldArray = this.shelfLifeStorage;
        delete this.shelfLifeStorage;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array shelfLifeStorage, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteShelfLifeStorageBySplice(start: number, deleteCount?: number): ProductShelfLife[] {
+    if (typeof(this.shelfLifeStorage) !== 'undefined') {
+       return this.shelfLifeStorage.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field shelfLifeStorage.
+  * @returns the value  or undefined
+  */
   public getShelfLifeStorage(): ProductShelfLife[] | undefined {
       return this.shelfLifeStorage;
   }
@@ -420,14 +653,37 @@ export class MedicinalProductPackagedPackageItem {
     }
     this.manufacturer.push(newValue);
   }
-  public deleteManufacturerAll() {
+  /**
+  * Removes all elements from the array manufacturer, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteManufacturerAll(): Reference[] {
     if (typeof(this.manufacturer) !== 'undefined') {
+       const oldArray = this.manufacturer;
        delete this.manufacturer;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array manufacturer, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteManufacturerBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.manufacturer) !== 'undefined') {
+       return this.manufacturer.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field manufacturer.
+  * @returns the value  or undefined
+  */
   public getManufacturer(): Reference[] | undefined {
       return this.manufacturer;
   }

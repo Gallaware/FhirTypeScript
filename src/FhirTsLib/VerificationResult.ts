@@ -409,7 +409,10 @@ export class VerificationResult {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -437,7 +440,10 @@ export class VerificationResult {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -465,7 +471,10 @@ export class VerificationResult {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -483,14 +492,37 @@ export class VerificationResult {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -508,14 +540,37 @@ export class VerificationResult {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -533,14 +588,37 @@ export class VerificationResult {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -558,14 +636,37 @@ export class VerificationResult {
     }
     this.target.push(newValue);
   }
-  public deleteTargetAll() {
+  /**
+  * Removes all elements from the array target, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTargetAll(): Reference[] {
     if (typeof(this.target) !== 'undefined') {
+       const oldArray = this.target;
        delete this.target;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array target, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTargetBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.target) !== 'undefined') {
+       return this.target.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field target.
+  * @returns the value  or undefined
+  */
   public getTarget(): Reference[] | undefined {
       return this.target;
   }
@@ -583,14 +684,37 @@ export class VerificationResult {
     }
     this.targetLocation.push(newValue);
   }
-  public deleteTargetLocationAll() {
+  /**
+  * Removes all elements from the array targetLocation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTargetLocationAll(): string[] {
     if (typeof(this.targetLocation) !== 'undefined') {
+       const oldArray = this.targetLocation;
        delete this.targetLocation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array targetLocation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTargetLocationBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.targetLocation) !== 'undefined') {
+       return this.targetLocation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field targetLocation.
+  * @returns the value  or undefined
+  */
   public getTargetLocation(): string[] | undefined {
       return this.targetLocation;
   }
@@ -608,14 +732,37 @@ export class VerificationResult {
     }
     this._targetLocation.push(newValue);
   }
-  public delete_targetLocationAll() {
+  /**
+  * Removes all elements from the array _targetLocation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_targetLocationAll(): Element[] {
     if (typeof(this._targetLocation) !== 'undefined') {
+       const oldArray = this._targetLocation;
        delete this._targetLocation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _targetLocation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_targetLocationBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._targetLocation) !== 'undefined') {
+       return this._targetLocation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _targetLocation.
+  * @returns the value  or undefined
+  */
   public get_targetLocation(): Element[] | undefined {
       return this._targetLocation;
   }
@@ -643,7 +790,10 @@ export class VerificationResult {
     return REGEX_STATUS_000.source;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -671,7 +821,10 @@ export class VerificationResult {
     return REGEX_STATUSDATE_000.source;
   }
   
-
+  /**
+  * Gets the current value of field statusDate.
+  * @returns the value  or undefined
+  */
   public getStatusDate(): string | undefined {
       return this.statusDate;
   }
@@ -689,14 +842,37 @@ export class VerificationResult {
     }
     this.validationProcess.push(newValue);
   }
-  public deleteValidationProcessAll() {
+  /**
+  * Removes all elements from the array validationProcess, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteValidationProcessAll(): CodeableConcept[] {
     if (typeof(this.validationProcess) !== 'undefined') {
+       const oldArray = this.validationProcess;
        delete this.validationProcess;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array validationProcess, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteValidationProcessBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.validationProcess) !== 'undefined') {
+       return this.validationProcess.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field validationProcess.
+  * @returns the value  or undefined
+  */
   public getValidationProcess(): CodeableConcept[] | undefined {
       return this.validationProcess;
   }
@@ -724,7 +900,10 @@ export class VerificationResult {
     return REGEX_LASTPERFORMED.source;
   }
   
-
+  /**
+  * Gets the current value of field lastPerformed.
+  * @returns the value  or undefined
+  */
   public getLastPerformed(): string | undefined {
       return this.lastPerformed;
   }
@@ -752,7 +931,10 @@ export class VerificationResult {
     return REGEX_NEXTSCHEDULED.source;
   }
   
-
+  /**
+  * Gets the current value of field nextScheduled.
+  * @returns the value  or undefined
+  */
   public getNextScheduled(): string | undefined {
       return this.nextScheduled;
   }
@@ -770,14 +952,37 @@ export class VerificationResult {
     }
     this.primarySource.push(newValue);
   }
-  public deletePrimarySourceAll() {
+  /**
+  * Removes all elements from the array primarySource, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePrimarySourceAll(): VerificationResultPrimarySource[] {
     if (typeof(this.primarySource) !== 'undefined') {
+       const oldArray = this.primarySource;
        delete this.primarySource;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array primarySource, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePrimarySourceBySplice(start: number, deleteCount?: number): VerificationResultPrimarySource[] {
+    if (typeof(this.primarySource) !== 'undefined') {
+       return this.primarySource.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field primarySource.
+  * @returns the value  or undefined
+  */
   public getPrimarySource(): VerificationResultPrimarySource[] | undefined {
       return this.primarySource;
   }
@@ -795,14 +1000,37 @@ export class VerificationResult {
     }
     this.validator.push(newValue);
   }
-  public deleteValidatorAll() {
+  /**
+  * Removes all elements from the array validator, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteValidatorAll(): VerificationResultValidator[] {
     if (typeof(this.validator) !== 'undefined') {
+       const oldArray = this.validator;
        delete this.validator;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array validator, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteValidatorBySplice(start: number, deleteCount?: number): VerificationResultValidator[] {
+    if (typeof(this.validator) !== 'undefined') {
+       return this.validator.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field validator.
+  * @returns the value  or undefined
+  */
   public getValidator(): VerificationResultValidator[] | undefined {
       return this.validator;
   }

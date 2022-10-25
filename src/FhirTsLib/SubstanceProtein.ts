@@ -327,7 +327,10 @@ export class SubstanceProtein {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -355,7 +358,10 @@ export class SubstanceProtein {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -383,7 +389,10 @@ export class SubstanceProtein {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -401,14 +410,37 @@ export class SubstanceProtein {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -426,14 +458,37 @@ export class SubstanceProtein {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -451,14 +506,37 @@ export class SubstanceProtein {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -476,14 +554,37 @@ export class SubstanceProtein {
     }
     this.disulfideLinkage.push(newValue);
   }
-  public deleteDisulfideLinkageAll() {
+  /**
+  * Removes all elements from the array disulfideLinkage, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDisulfideLinkageAll(): string[] {
     if (typeof(this.disulfideLinkage) !== 'undefined') {
+       const oldArray = this.disulfideLinkage;
        delete this.disulfideLinkage;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array disulfideLinkage, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDisulfideLinkageBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.disulfideLinkage) !== 'undefined') {
+       return this.disulfideLinkage.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field disulfideLinkage.
+  * @returns the value  or undefined
+  */
   public getDisulfideLinkage(): string[] | undefined {
       return this.disulfideLinkage;
   }
@@ -501,14 +602,37 @@ export class SubstanceProtein {
     }
     this._disulfideLinkage.push(newValue);
   }
-  public delete_disulfideLinkageAll() {
+  /**
+  * Removes all elements from the array _disulfideLinkage, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_disulfideLinkageAll(): Element[] {
     if (typeof(this._disulfideLinkage) !== 'undefined') {
+       const oldArray = this._disulfideLinkage;
        delete this._disulfideLinkage;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _disulfideLinkage, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_disulfideLinkageBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._disulfideLinkage) !== 'undefined') {
+       return this._disulfideLinkage.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _disulfideLinkage.
+  * @returns the value  or undefined
+  */
   public get_disulfideLinkage(): Element[] | undefined {
       return this._disulfideLinkage;
   }
@@ -526,14 +650,37 @@ export class SubstanceProtein {
     }
     this.subunit.push(newValue);
   }
-  public deleteSubunitAll() {
+  /**
+  * Removes all elements from the array subunit, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSubunitAll(): SubstanceProteinSubunit[] {
     if (typeof(this.subunit) !== 'undefined') {
+       const oldArray = this.subunit;
        delete this.subunit;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array subunit, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSubunitBySplice(start: number, deleteCount?: number): SubstanceProteinSubunit[] {
+    if (typeof(this.subunit) !== 'undefined') {
+       return this.subunit.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field subunit.
+  * @returns the value  or undefined
+  */
   public getSubunit(): SubstanceProteinSubunit[] | undefined {
       return this.subunit;
   }

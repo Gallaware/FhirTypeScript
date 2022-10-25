@@ -378,7 +378,10 @@ export class Provenance {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -406,7 +409,10 @@ export class Provenance {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -434,7 +440,10 @@ export class Provenance {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -452,14 +461,37 @@ export class Provenance {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -477,14 +509,37 @@ export class Provenance {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -502,14 +557,37 @@ export class Provenance {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -527,14 +605,37 @@ export class Provenance {
     }
     this.target.push(newValue);
   }
-  public deleteTargetAll() {
+  /**
+  * Removes all elements from the array target, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTargetAll(): Reference[] {
     if (typeof(this.target) !== 'undefined') {
+       const oldArray = this.target;
        delete this.target;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array target, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTargetBySplice(start: number, deleteCount?: number): Reference[] {
+    if (typeof(this.target) !== 'undefined') {
+       return this.target.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field target.
+  * @returns the value  or undefined
+  */
   public getTarget(): Reference[] | undefined {
       return this.target;
   }
@@ -562,7 +663,10 @@ export class Provenance {
     return REGEX_OCCURREDDATETIME.source;
   }
   
-
+  /**
+  * Gets the current value of field occurredDateTime.
+  * @returns the value  or undefined
+  */
   public getOccurredDateTime(): string | undefined {
       return this.occurredDateTime;
   }
@@ -590,7 +694,10 @@ export class Provenance {
     return REGEX_RECORDED.source;
   }
   
-
+  /**
+  * Gets the current value of field recorded.
+  * @returns the value  or undefined
+  */
   public getRecorded(): string | undefined {
       return this.recorded;
   }
@@ -608,14 +715,37 @@ export class Provenance {
     }
     this.policy.push(newValue);
   }
-  public deletePolicyAll() {
+  /**
+  * Removes all elements from the array policy, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePolicyAll(): string[] {
     if (typeof(this.policy) !== 'undefined') {
+       const oldArray = this.policy;
        delete this.policy;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array policy, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePolicyBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.policy) !== 'undefined') {
+       return this.policy.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field policy.
+  * @returns the value  or undefined
+  */
   public getPolicy(): string[] | undefined {
       return this.policy;
   }
@@ -633,14 +763,37 @@ export class Provenance {
     }
     this._policy.push(newValue);
   }
-  public delete_policyAll() {
+  /**
+  * Removes all elements from the array _policy, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_policyAll(): Element[] {
     if (typeof(this._policy) !== 'undefined') {
+       const oldArray = this._policy;
        delete this._policy;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _policy, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_policyBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._policy) !== 'undefined') {
+       return this._policy.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _policy.
+  * @returns the value  or undefined
+  */
   public get_policy(): Element[] | undefined {
       return this._policy;
   }
@@ -658,14 +811,37 @@ export class Provenance {
     }
     this.reason.push(newValue);
   }
-  public deleteReasonAll() {
+  /**
+  * Removes all elements from the array reason, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReasonAll(): CodeableConcept[] {
     if (typeof(this.reason) !== 'undefined') {
+       const oldArray = this.reason;
        delete this.reason;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array reason, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReasonBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.reason) !== 'undefined') {
+       return this.reason.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field reason.
+  * @returns the value  or undefined
+  */
   public getReason(): CodeableConcept[] | undefined {
       return this.reason;
   }
@@ -683,14 +859,37 @@ export class Provenance {
     }
     this.agent.push(newValue);
   }
-  public deleteAgentAll() {
+  /**
+  * Removes all elements from the array agent, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAgentAll(): ProvenanceAgent[] {
     if (typeof(this.agent) !== 'undefined') {
+       const oldArray = this.agent;
        delete this.agent;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array agent, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAgentBySplice(start: number, deleteCount?: number): ProvenanceAgent[] {
+    if (typeof(this.agent) !== 'undefined') {
+       return this.agent.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field agent.
+  * @returns the value  or undefined
+  */
   public getAgent(): ProvenanceAgent[] | undefined {
       return this.agent;
   }
@@ -708,14 +907,37 @@ export class Provenance {
     }
     this.entity.push(newValue);
   }
-  public deleteEntityAll() {
+  /**
+  * Removes all elements from the array entity, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteEntityAll(): ProvenanceEntity[] {
     if (typeof(this.entity) !== 'undefined') {
+       const oldArray = this.entity;
        delete this.entity;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array entity, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteEntityBySplice(start: number, deleteCount?: number): ProvenanceEntity[] {
+    if (typeof(this.entity) !== 'undefined') {
+       return this.entity.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field entity.
+  * @returns the value  or undefined
+  */
   public getEntity(): ProvenanceEntity[] | undefined {
       return this.entity;
   }
@@ -733,14 +955,37 @@ export class Provenance {
     }
     this.signature.push(newValue);
   }
-  public deleteSignatureAll() {
+  /**
+  * Removes all elements from the array signature, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSignatureAll(): Signature[] {
     if (typeof(this.signature) !== 'undefined') {
+       const oldArray = this.signature;
        delete this.signature;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array signature, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSignatureBySplice(start: number, deleteCount?: number): Signature[] {
+    if (typeof(this.signature) !== 'undefined') {
+       return this.signature.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field signature.
+  * @returns the value  or undefined
+  */
   public getSignature(): Signature[] | undefined {
       return this.signature;
   }

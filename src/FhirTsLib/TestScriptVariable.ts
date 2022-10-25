@@ -166,7 +166,10 @@ export class TestScriptVariable {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -184,14 +187,37 @@ export class TestScriptVariable {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -209,14 +235,37 @@ export class TestScriptVariable {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -244,7 +293,10 @@ export class TestScriptVariable {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -272,7 +324,10 @@ export class TestScriptVariable {
     return REGEX_DEFAULTVALUE.source;
   }
   
-
+  /**
+  * Gets the current value of field defaultValue.
+  * @returns the value  or undefined
+  */
   public getDefaultValue(): string | undefined {
       return this.defaultValue;
   }
@@ -300,7 +355,10 @@ export class TestScriptVariable {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -328,7 +386,10 @@ export class TestScriptVariable {
     return REGEX_EXPRESSION.source;
   }
   
-
+  /**
+  * Gets the current value of field expression.
+  * @returns the value  or undefined
+  */
   public getExpression(): string | undefined {
       return this.expression;
   }
@@ -356,7 +417,10 @@ export class TestScriptVariable {
     return REGEX_HEADERFIELD.source;
   }
   
-
+  /**
+  * Gets the current value of field headerField.
+  * @returns the value  or undefined
+  */
   public getHeaderField(): string | undefined {
       return this.headerField;
   }
@@ -384,7 +448,10 @@ export class TestScriptVariable {
     return REGEX_HINT.source;
   }
   
-
+  /**
+  * Gets the current value of field hint.
+  * @returns the value  or undefined
+  */
   public getHint(): string | undefined {
       return this.hint;
   }
@@ -412,7 +479,10 @@ export class TestScriptVariable {
     return REGEX_PATH.source;
   }
   
-
+  /**
+  * Gets the current value of field path.
+  * @returns the value  or undefined
+  */
   public getPath(): string | undefined {
       return this.path;
   }
@@ -440,7 +510,10 @@ export class TestScriptVariable {
     return REGEX_SOURCEID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field sourceId.
+  * @returns the value  or undefined
+  */
   public getSourceId(): string | undefined {
       return this.sourceId;
   }

@@ -323,7 +323,10 @@ export class SubstancePolymer {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -351,7 +354,10 @@ export class SubstancePolymer {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -379,7 +385,10 @@ export class SubstancePolymer {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -397,14 +406,37 @@ export class SubstancePolymer {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -422,14 +454,37 @@ export class SubstancePolymer {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -447,14 +502,37 @@ export class SubstancePolymer {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -472,14 +550,37 @@ export class SubstancePolymer {
     }
     this.copolymerConnectivity.push(newValue);
   }
-  public deleteCopolymerConnectivityAll() {
+  /**
+  * Removes all elements from the array copolymerConnectivity, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCopolymerConnectivityAll(): CodeableConcept[] {
     if (typeof(this.copolymerConnectivity) !== 'undefined') {
+       const oldArray = this.copolymerConnectivity;
        delete this.copolymerConnectivity;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array copolymerConnectivity, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCopolymerConnectivityBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.copolymerConnectivity) !== 'undefined') {
+       return this.copolymerConnectivity.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field copolymerConnectivity.
+  * @returns the value  or undefined
+  */
   public getCopolymerConnectivity(): CodeableConcept[] | undefined {
       return this.copolymerConnectivity;
   }
@@ -497,14 +598,37 @@ export class SubstancePolymer {
     }
     this.modification.push(newValue);
   }
-  public deleteModificationAll() {
+  /**
+  * Removes all elements from the array modification, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModificationAll(): string[] {
     if (typeof(this.modification) !== 'undefined') {
+       const oldArray = this.modification;
        delete this.modification;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modification, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModificationBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.modification) !== 'undefined') {
+       return this.modification.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modification.
+  * @returns the value  or undefined
+  */
   public getModification(): string[] | undefined {
       return this.modification;
   }
@@ -522,14 +646,37 @@ export class SubstancePolymer {
     }
     this._modification.push(newValue);
   }
-  public delete_modificationAll() {
+  /**
+  * Removes all elements from the array _modification, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_modificationAll(): Element[] {
     if (typeof(this._modification) !== 'undefined') {
+       const oldArray = this._modification;
        delete this._modification;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _modification, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_modificationBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._modification) !== 'undefined') {
+       return this._modification.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _modification.
+  * @returns the value  or undefined
+  */
   public get_modification(): Element[] | undefined {
       return this._modification;
   }
@@ -547,14 +694,37 @@ export class SubstancePolymer {
     }
     this.monomerSet.push(newValue);
   }
-  public deleteMonomerSetAll() {
+  /**
+  * Removes all elements from the array monomerSet, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteMonomerSetAll(): SubstancePolymerMonomerSet[] {
     if (typeof(this.monomerSet) !== 'undefined') {
+       const oldArray = this.monomerSet;
        delete this.monomerSet;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array monomerSet, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteMonomerSetBySplice(start: number, deleteCount?: number): SubstancePolymerMonomerSet[] {
+    if (typeof(this.monomerSet) !== 'undefined') {
+       return this.monomerSet.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field monomerSet.
+  * @returns the value  or undefined
+  */
   public getMonomerSet(): SubstancePolymerMonomerSet[] | undefined {
       return this.monomerSet;
   }
@@ -572,14 +742,37 @@ export class SubstancePolymer {
     }
     this.repeat.push(newValue);
   }
-  public deleteRepeatAll() {
+  /**
+  * Removes all elements from the array repeat, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRepeatAll(): SubstancePolymerRepeat[] {
     if (typeof(this.repeat) !== 'undefined') {
+       const oldArray = this.repeat;
        delete this.repeat;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array repeat, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRepeatBySplice(start: number, deleteCount?: number): SubstancePolymerRepeat[] {
+    if (typeof(this.repeat) !== 'undefined') {
+       return this.repeat.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field repeat.
+  * @returns the value  or undefined
+  */
   public getRepeat(): SubstancePolymerRepeat[] | undefined {
       return this.repeat;
   }

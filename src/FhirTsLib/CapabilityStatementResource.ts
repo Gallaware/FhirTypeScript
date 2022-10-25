@@ -260,7 +260,10 @@ export class CapabilityStatementResource {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -278,14 +281,37 @@ export class CapabilityStatementResource {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -303,14 +329,37 @@ export class CapabilityStatementResource {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -339,7 +388,10 @@ export class CapabilityStatementResource {
     return ResourceType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -367,7 +419,10 @@ export class CapabilityStatementResource {
     return REGEX_PROFILE.source;
   }
   
-
+  /**
+  * Gets the current value of field profile.
+  * @returns the value  or undefined
+  */
   public getProfile(): string | undefined {
       return this.profile;
   }
@@ -385,14 +440,37 @@ export class CapabilityStatementResource {
     }
     this.supportedProfile.push(newValue);
   }
-  public deleteSupportedProfileAll() {
+  /**
+  * Removes all elements from the array supportedProfile, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSupportedProfileAll(): string[] {
     if (typeof(this.supportedProfile) !== 'undefined') {
+       const oldArray = this.supportedProfile;
        delete this.supportedProfile;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array supportedProfile, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSupportedProfileBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.supportedProfile) !== 'undefined') {
+       return this.supportedProfile.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field supportedProfile.
+  * @returns the value  or undefined
+  */
   public getSupportedProfile(): string[] | undefined {
       return this.supportedProfile;
   }
@@ -420,7 +498,10 @@ export class CapabilityStatementResource {
     return REGEX_DOCUMENTATION.source;
   }
   
-
+  /**
+  * Gets the current value of field documentation.
+  * @returns the value  or undefined
+  */
   public getDocumentation(): string | undefined {
       return this.documentation;
   }
@@ -438,14 +519,37 @@ export class CapabilityStatementResource {
     }
     this.interaction.push(newValue);
   }
-  public deleteInteractionAll() {
+  /**
+  * Removes all elements from the array interaction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInteractionAll(): CapabilityStatementInteraction[] {
     if (typeof(this.interaction) !== 'undefined') {
+       const oldArray = this.interaction;
        delete this.interaction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array interaction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInteractionBySplice(start: number, deleteCount?: number): CapabilityStatementInteraction[] {
+    if (typeof(this.interaction) !== 'undefined') {
+       return this.interaction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field interaction.
+  * @returns the value  or undefined
+  */
   public getInteraction(): CapabilityStatementInteraction[] | undefined {
       return this.interaction;
   }
@@ -474,7 +578,10 @@ export class CapabilityStatementResource {
     return CapabilityStatementResourceVersioning_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field versioning.
+  * @returns the value  or undefined
+  */
   public getVersioning(): string | undefined {
       return this.versioning;
   }
@@ -503,7 +610,10 @@ export class CapabilityStatementResource {
     return CapabilityStatementResourceConditionalRead_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field conditionalRead.
+  * @returns the value  or undefined
+  */
   public getConditionalRead(): string | undefined {
       return this.conditionalRead;
   }
@@ -532,7 +642,10 @@ export class CapabilityStatementResource {
     return CapabilityStatementResourceConditionalDelete_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field conditionalDelete.
+  * @returns the value  or undefined
+  */
   public getConditionalDelete(): string | undefined {
       return this.conditionalDelete;
   }
@@ -550,14 +663,37 @@ export class CapabilityStatementResource {
     }
     this.referencePolicy.push(newValue);
   }
-  public deleteReferencePolicyAll() {
+  /**
+  * Removes all elements from the array referencePolicy, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReferencePolicyAll(): string[] {
     if (typeof(this.referencePolicy) !== 'undefined') {
+       const oldArray = this.referencePolicy;
        delete this.referencePolicy;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array referencePolicy, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReferencePolicyBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.referencePolicy) !== 'undefined') {
+       return this.referencePolicy.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field referencePolicy.
+  * @returns the value  or undefined
+  */
   public getReferencePolicy(): string[] | undefined {
       return this.referencePolicy;
   }
@@ -575,14 +711,37 @@ export class CapabilityStatementResource {
     }
     this._referencePolicy.push(newValue);
   }
-  public delete_referencePolicyAll() {
+  /**
+  * Removes all elements from the array _referencePolicy, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_referencePolicyAll(): Element[] {
     if (typeof(this._referencePolicy) !== 'undefined') {
+       const oldArray = this._referencePolicy;
        delete this._referencePolicy;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _referencePolicy, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_referencePolicyBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._referencePolicy) !== 'undefined') {
+       return this._referencePolicy.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _referencePolicy.
+  * @returns the value  or undefined
+  */
   public get_referencePolicy(): Element[] | undefined {
       return this._referencePolicy;
   }
@@ -600,14 +759,37 @@ export class CapabilityStatementResource {
     }
     this.searchInclude.push(newValue);
   }
-  public deleteSearchIncludeAll() {
+  /**
+  * Removes all elements from the array searchInclude, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSearchIncludeAll(): string[] {
     if (typeof(this.searchInclude) !== 'undefined') {
+       const oldArray = this.searchInclude;
        delete this.searchInclude;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array searchInclude, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSearchIncludeBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.searchInclude) !== 'undefined') {
+       return this.searchInclude.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field searchInclude.
+  * @returns the value  or undefined
+  */
   public getSearchInclude(): string[] | undefined {
       return this.searchInclude;
   }
@@ -625,14 +807,37 @@ export class CapabilityStatementResource {
     }
     this._searchInclude.push(newValue);
   }
-  public delete_searchIncludeAll() {
+  /**
+  * Removes all elements from the array _searchInclude, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_searchIncludeAll(): Element[] {
     if (typeof(this._searchInclude) !== 'undefined') {
+       const oldArray = this._searchInclude;
        delete this._searchInclude;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _searchInclude, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_searchIncludeBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._searchInclude) !== 'undefined') {
+       return this._searchInclude.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _searchInclude.
+  * @returns the value  or undefined
+  */
   public get_searchInclude(): Element[] | undefined {
       return this._searchInclude;
   }
@@ -650,14 +855,37 @@ export class CapabilityStatementResource {
     }
     this.searchRevInclude.push(newValue);
   }
-  public deleteSearchRevIncludeAll() {
+  /**
+  * Removes all elements from the array searchRevInclude, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSearchRevIncludeAll(): string[] {
     if (typeof(this.searchRevInclude) !== 'undefined') {
+       const oldArray = this.searchRevInclude;
        delete this.searchRevInclude;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array searchRevInclude, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSearchRevIncludeBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.searchRevInclude) !== 'undefined') {
+       return this.searchRevInclude.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field searchRevInclude.
+  * @returns the value  or undefined
+  */
   public getSearchRevInclude(): string[] | undefined {
       return this.searchRevInclude;
   }
@@ -675,14 +903,37 @@ export class CapabilityStatementResource {
     }
     this._searchRevInclude.push(newValue);
   }
-  public delete_searchRevIncludeAll() {
+  /**
+  * Removes all elements from the array _searchRevInclude, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public delete_searchRevIncludeAll(): Element[] {
     if (typeof(this._searchRevInclude) !== 'undefined') {
+       const oldArray = this._searchRevInclude;
        delete this._searchRevInclude;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array _searchRevInclude, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public delete_searchRevIncludeBySplice(start: number, deleteCount?: number): Element[] {
+    if (typeof(this._searchRevInclude) !== 'undefined') {
+       return this._searchRevInclude.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field _searchRevInclude.
+  * @returns the value  or undefined
+  */
   public get_searchRevInclude(): Element[] | undefined {
       return this._searchRevInclude;
   }
@@ -700,14 +951,37 @@ export class CapabilityStatementResource {
     }
     this.searchParam.push(newValue);
   }
-  public deleteSearchParamAll() {
+  /**
+  * Removes all elements from the array searchParam, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSearchParamAll(): CapabilityStatementSearchParam[] {
     if (typeof(this.searchParam) !== 'undefined') {
+       const oldArray = this.searchParam;
        delete this.searchParam;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array searchParam, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSearchParamBySplice(start: number, deleteCount?: number): CapabilityStatementSearchParam[] {
+    if (typeof(this.searchParam) !== 'undefined') {
+       return this.searchParam.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field searchParam.
+  * @returns the value  or undefined
+  */
   public getSearchParam(): CapabilityStatementSearchParam[] | undefined {
       return this.searchParam;
   }
@@ -725,14 +999,37 @@ export class CapabilityStatementResource {
     }
     this.operation.push(newValue);
   }
-  public deleteOperationAll() {
+  /**
+  * Removes all elements from the array operation, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteOperationAll(): CapabilityStatementOperation[] {
     if (typeof(this.operation) !== 'undefined') {
+       const oldArray = this.operation;
        delete this.operation;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array operation, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteOperationBySplice(start: number, deleteCount?: number): CapabilityStatementOperation[] {
+    if (typeof(this.operation) !== 'undefined') {
+       return this.operation.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field operation.
+  * @returns the value  or undefined
+  */
   public getOperation(): CapabilityStatementOperation[] | undefined {
       return this.operation;
   }

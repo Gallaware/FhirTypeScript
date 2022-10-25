@@ -448,7 +448,10 @@ export class ExampleScenario {
     return REGEX_ID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -476,7 +479,10 @@ export class ExampleScenario {
     return REGEX_IMPLICITRULES.source;
   }
   
-
+  /**
+  * Gets the current value of field implicitRules.
+  * @returns the value  or undefined
+  */
   public getImplicitRules(): string | undefined {
       return this.implicitRules;
   }
@@ -504,7 +510,10 @@ export class ExampleScenario {
     return REGEX_LANGUAGE.source;
   }
   
-
+  /**
+  * Gets the current value of field language.
+  * @returns the value  or undefined
+  */
   public getLanguage(): string | undefined {
       return this.language;
   }
@@ -522,14 +531,37 @@ export class ExampleScenario {
     }
     this.contained.push(newValue);
   }
-  public deleteContainedAll() {
+  /**
+  * Removes all elements from the array contained, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContainedAll(): ResourceList[] {
     if (typeof(this.contained) !== 'undefined') {
+       const oldArray = this.contained;
        delete this.contained;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contained, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContainedBySplice(start: number, deleteCount?: number): ResourceList[] {
+    if (typeof(this.contained) !== 'undefined') {
+       return this.contained.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contained.
+  * @returns the value  or undefined
+  */
   public getContained(): ResourceList[] | undefined {
       return this.contained;
   }
@@ -547,14 +579,37 @@ export class ExampleScenario {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -572,14 +627,37 @@ export class ExampleScenario {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -607,7 +685,10 @@ export class ExampleScenario {
     return REGEX_URL.source;
   }
   
-
+  /**
+  * Gets the current value of field url.
+  * @returns the value  or undefined
+  */
   public getUrl(): string | undefined {
       return this.url;
   }
@@ -625,14 +706,37 @@ export class ExampleScenario {
     }
     this.identifier.push(newValue);
   }
-  public deleteIdentifierAll() {
+  /**
+  * Removes all elements from the array identifier, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteIdentifierAll(): Identifier[] {
     if (typeof(this.identifier) !== 'undefined') {
+       const oldArray = this.identifier;
        delete this.identifier;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array identifier, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteIdentifierBySplice(start: number, deleteCount?: number): Identifier[] {
+    if (typeof(this.identifier) !== 'undefined') {
+       return this.identifier.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field identifier.
+  * @returns the value  or undefined
+  */
   public getIdentifier(): Identifier[] | undefined {
       return this.identifier;
   }
@@ -660,7 +764,10 @@ export class ExampleScenario {
     return REGEX_VERSION.source;
   }
   
-
+  /**
+  * Gets the current value of field version.
+  * @returns the value  or undefined
+  */
   public getVersion(): string | undefined {
       return this.version;
   }
@@ -688,7 +795,10 @@ export class ExampleScenario {
     return REGEX_NAME.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -717,7 +827,10 @@ export class ExampleScenario {
     return ExampleScenarioStatus_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field status.
+  * @returns the value  or undefined
+  */
   public getStatus(): string | undefined {
       return this.status;
   }
@@ -745,7 +858,10 @@ export class ExampleScenario {
     return REGEX_DATE.source;
   }
   
-
+  /**
+  * Gets the current value of field date.
+  * @returns the value  or undefined
+  */
   public getDate(): string | undefined {
       return this.date;
   }
@@ -773,7 +889,10 @@ export class ExampleScenario {
     return REGEX_PUBLISHER.source;
   }
   
-
+  /**
+  * Gets the current value of field publisher.
+  * @returns the value  or undefined
+  */
   public getPublisher(): string | undefined {
       return this.publisher;
   }
@@ -791,14 +910,37 @@ export class ExampleScenario {
     }
     this.contact.push(newValue);
   }
-  public deleteContactAll() {
+  /**
+  * Removes all elements from the array contact, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteContactAll(): ContactDetail[] {
     if (typeof(this.contact) !== 'undefined') {
+       const oldArray = this.contact;
        delete this.contact;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array contact, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteContactBySplice(start: number, deleteCount?: number): ContactDetail[] {
+    if (typeof(this.contact) !== 'undefined') {
+       return this.contact.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field contact.
+  * @returns the value  or undefined
+  */
   public getContact(): ContactDetail[] | undefined {
       return this.contact;
   }
@@ -816,14 +958,37 @@ export class ExampleScenario {
     }
     this.useContext.push(newValue);
   }
-  public deleteUseContextAll() {
+  /**
+  * Removes all elements from the array useContext, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteUseContextAll(): UsageContext[] {
     if (typeof(this.useContext) !== 'undefined') {
+       const oldArray = this.useContext;
        delete this.useContext;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array useContext, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteUseContextBySplice(start: number, deleteCount?: number): UsageContext[] {
+    if (typeof(this.useContext) !== 'undefined') {
+       return this.useContext.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field useContext.
+  * @returns the value  or undefined
+  */
   public getUseContext(): UsageContext[] | undefined {
       return this.useContext;
   }
@@ -841,14 +1006,37 @@ export class ExampleScenario {
     }
     this.jurisdiction.push(newValue);
   }
-  public deleteJurisdictionAll() {
+  /**
+  * Removes all elements from the array jurisdiction, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteJurisdictionAll(): CodeableConcept[] {
     if (typeof(this.jurisdiction) !== 'undefined') {
+       const oldArray = this.jurisdiction;
        delete this.jurisdiction;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array jurisdiction, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteJurisdictionBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.jurisdiction) !== 'undefined') {
+       return this.jurisdiction.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field jurisdiction.
+  * @returns the value  or undefined
+  */
   public getJurisdiction(): CodeableConcept[] | undefined {
       return this.jurisdiction;
   }
@@ -876,7 +1064,10 @@ export class ExampleScenario {
     return REGEX_COPYRIGHT.source;
   }
   
-
+  /**
+  * Gets the current value of field copyright.
+  * @returns the value  or undefined
+  */
   public getCopyright(): string | undefined {
       return this.copyright;
   }
@@ -904,7 +1095,10 @@ export class ExampleScenario {
     return REGEX_PURPOSE.source;
   }
   
-
+  /**
+  * Gets the current value of field purpose.
+  * @returns the value  or undefined
+  */
   public getPurpose(): string | undefined {
       return this.purpose;
   }
@@ -922,14 +1116,37 @@ export class ExampleScenario {
     }
     this.actor.push(newValue);
   }
-  public deleteActorAll() {
+  /**
+  * Removes all elements from the array actor, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteActorAll(): ExampleScenarioActor[] {
     if (typeof(this.actor) !== 'undefined') {
+       const oldArray = this.actor;
        delete this.actor;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array actor, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteActorBySplice(start: number, deleteCount?: number): ExampleScenarioActor[] {
+    if (typeof(this.actor) !== 'undefined') {
+       return this.actor.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field actor.
+  * @returns the value  or undefined
+  */
   public getActor(): ExampleScenarioActor[] | undefined {
       return this.actor;
   }
@@ -947,14 +1164,37 @@ export class ExampleScenario {
     }
     this.instance.push(newValue);
   }
-  public deleteInstanceAll() {
+  /**
+  * Removes all elements from the array instance, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInstanceAll(): ExampleScenarioInstance[] {
     if (typeof(this.instance) !== 'undefined') {
+       const oldArray = this.instance;
        delete this.instance;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array instance, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInstanceBySplice(start: number, deleteCount?: number): ExampleScenarioInstance[] {
+    if (typeof(this.instance) !== 'undefined') {
+       return this.instance.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field instance.
+  * @returns the value  or undefined
+  */
   public getInstance(): ExampleScenarioInstance[] | undefined {
       return this.instance;
   }
@@ -972,14 +1212,37 @@ export class ExampleScenario {
     }
     this.process.push(newValue);
   }
-  public deleteProcessAll() {
+  /**
+  * Removes all elements from the array process, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProcessAll(): ExampleScenarioProcess[] {
     if (typeof(this.process) !== 'undefined') {
+       const oldArray = this.process;
        delete this.process;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array process, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProcessBySplice(start: number, deleteCount?: number): ExampleScenarioProcess[] {
+    if (typeof(this.process) !== 'undefined') {
+       return this.process.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field process.
+  * @returns the value  or undefined
+  */
   public getProcess(): ExampleScenarioProcess[] | undefined {
       return this.process;
   }
@@ -997,14 +1260,37 @@ export class ExampleScenario {
     }
     this.workflow.push(newValue);
   }
-  public deleteWorkflowAll() {
+  /**
+  * Removes all elements from the array workflow, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteWorkflowAll(): string[] {
     if (typeof(this.workflow) !== 'undefined') {
+       const oldArray = this.workflow;
        delete this.workflow;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array workflow, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteWorkflowBySplice(start: number, deleteCount?: number): string[] {
+    if (typeof(this.workflow) !== 'undefined') {
+       return this.workflow.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field workflow.
+  * @returns the value  or undefined
+  */
   public getWorkflow(): string[] | undefined {
       return this.workflow;
   }

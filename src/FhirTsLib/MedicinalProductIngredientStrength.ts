@@ -117,7 +117,10 @@ export class MedicinalProductIngredientStrength {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -135,14 +138,37 @@ export class MedicinalProductIngredientStrength {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -160,14 +186,37 @@ export class MedicinalProductIngredientStrength {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -195,7 +244,10 @@ export class MedicinalProductIngredientStrength {
     return REGEX_MEASUREMENTPOINT.source;
   }
   
-
+  /**
+  * Gets the current value of field measurementPoint.
+  * @returns the value  or undefined
+  */
   public getMeasurementPoint(): string | undefined {
       return this.measurementPoint;
   }
@@ -213,14 +265,37 @@ export class MedicinalProductIngredientStrength {
     }
     this.country.push(newValue);
   }
-  public deleteCountryAll() {
+  /**
+  * Removes all elements from the array country, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCountryAll(): CodeableConcept[] {
     if (typeof(this.country) !== 'undefined') {
+       const oldArray = this.country;
        delete this.country;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array country, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCountryBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.country) !== 'undefined') {
+       return this.country.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field country.
+  * @returns the value  or undefined
+  */
   public getCountry(): CodeableConcept[] | undefined {
       return this.country;
   }
@@ -238,14 +313,37 @@ export class MedicinalProductIngredientStrength {
     }
     this.referenceStrength.push(newValue);
   }
-  public deleteReferenceStrengthAll() {
+  /**
+  * Removes all elements from the array referenceStrength, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteReferenceStrengthAll(): MedicinalProductIngredientReferenceStrength[] {
     if (typeof(this.referenceStrength) !== 'undefined') {
+       const oldArray = this.referenceStrength;
        delete this.referenceStrength;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array referenceStrength, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteReferenceStrengthBySplice(start: number, deleteCount?: number): MedicinalProductIngredientReferenceStrength[] {
+    if (typeof(this.referenceStrength) !== 'undefined') {
+       return this.referenceStrength.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field referenceStrength.
+  * @returns the value  or undefined
+  */
   public getReferenceStrength(): MedicinalProductIngredientReferenceStrength[] | undefined {
       return this.referenceStrength;
   }

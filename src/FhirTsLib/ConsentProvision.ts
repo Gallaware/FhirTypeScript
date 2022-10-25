@@ -157,7 +157,10 @@ export class ConsentProvision {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -175,14 +178,37 @@ export class ConsentProvision {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -200,14 +226,37 @@ export class ConsentProvision {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -236,7 +285,10 @@ export class ConsentProvision {
     return ConsentProvisionType_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field type.
+  * @returns the value  or undefined
+  */
   public getType(): string | undefined {
       return this.type;
   }
@@ -254,14 +306,37 @@ export class ConsentProvision {
     }
     this.actor.push(newValue);
   }
-  public deleteActorAll() {
+  /**
+  * Removes all elements from the array actor, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteActorAll(): ConsentActor[] {
     if (typeof(this.actor) !== 'undefined') {
+       const oldArray = this.actor;
        delete this.actor;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array actor, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteActorBySplice(start: number, deleteCount?: number): ConsentActor[] {
+    if (typeof(this.actor) !== 'undefined') {
+       return this.actor.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field actor.
+  * @returns the value  or undefined
+  */
   public getActor(): ConsentActor[] | undefined {
       return this.actor;
   }
@@ -279,14 +354,37 @@ export class ConsentProvision {
     }
     this.action.push(newValue);
   }
-  public deleteActionAll() {
+  /**
+  * Removes all elements from the array action, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteActionAll(): CodeableConcept[] {
     if (typeof(this.action) !== 'undefined') {
+       const oldArray = this.action;
        delete this.action;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array action, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteActionBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.action) !== 'undefined') {
+       return this.action.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field action.
+  * @returns the value  or undefined
+  */
   public getAction(): CodeableConcept[] | undefined {
       return this.action;
   }
@@ -304,14 +402,37 @@ export class ConsentProvision {
     }
     this.securityLabel.push(newValue);
   }
-  public deleteSecurityLabelAll() {
+  /**
+  * Removes all elements from the array securityLabel, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteSecurityLabelAll(): Coding[] {
     if (typeof(this.securityLabel) !== 'undefined') {
+       const oldArray = this.securityLabel;
        delete this.securityLabel;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array securityLabel, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteSecurityLabelBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.securityLabel) !== 'undefined') {
+       return this.securityLabel.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field securityLabel.
+  * @returns the value  or undefined
+  */
   public getSecurityLabel(): Coding[] | undefined {
       return this.securityLabel;
   }
@@ -329,14 +450,37 @@ export class ConsentProvision {
     }
     this.purpose.push(newValue);
   }
-  public deletePurposeAll() {
+  /**
+  * Removes all elements from the array purpose, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deletePurposeAll(): Coding[] {
     if (typeof(this.purpose) !== 'undefined') {
+       const oldArray = this.purpose;
        delete this.purpose;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array purpose, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deletePurposeBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.purpose) !== 'undefined') {
+       return this.purpose.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field purpose.
+  * @returns the value  or undefined
+  */
   public getPurpose(): Coding[] | undefined {
       return this.purpose;
   }
@@ -354,14 +498,37 @@ export class ConsentProvision {
     }
     this.class.push(newValue);
   }
-  public deleteClassAll() {
+  /**
+  * Removes all elements from the array class, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteClassAll(): Coding[] {
     if (typeof(this.class) !== 'undefined') {
+       const oldArray = this.class;
        delete this.class;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array class, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteClassBySplice(start: number, deleteCount?: number): Coding[] {
+    if (typeof(this.class) !== 'undefined') {
+       return this.class.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field class.
+  * @returns the value  or undefined
+  */
   public getClass(): Coding[] | undefined {
       return this.class;
   }
@@ -379,14 +546,37 @@ export class ConsentProvision {
     }
     this.code.push(newValue);
   }
-  public deleteCodeAll() {
+  /**
+  * Removes all elements from the array code, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteCodeAll(): CodeableConcept[] {
     if (typeof(this.code) !== 'undefined') {
+       const oldArray = this.code;
        delete this.code;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array code, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteCodeBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.code) !== 'undefined') {
+       return this.code.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): CodeableConcept[] | undefined {
       return this.code;
   }
@@ -404,14 +594,37 @@ export class ConsentProvision {
     }
     this.data.push(newValue);
   }
-  public deleteDataAll() {
+  /**
+  * Removes all elements from the array data, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDataAll(): ConsentData[] {
     if (typeof(this.data) !== 'undefined') {
+       const oldArray = this.data;
        delete this.data;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array data, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDataBySplice(start: number, deleteCount?: number): ConsentData[] {
+    if (typeof(this.data) !== 'undefined') {
+       return this.data.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field data.
+  * @returns the value  or undefined
+  */
   public getData(): ConsentData[] | undefined {
       return this.data;
   }
@@ -429,14 +642,37 @@ export class ConsentProvision {
     }
     this.provision.push(newValue);
   }
-  public deleteProvisionAll() {
+  /**
+  * Removes all elements from the array provision, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProvisionAll(): ConsentProvision[] {
     if (typeof(this.provision) !== 'undefined') {
+       const oldArray = this.provision;
        delete this.provision;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array provision, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProvisionBySplice(start: number, deleteCount?: number): ConsentProvision[] {
+    if (typeof(this.provision) !== 'undefined') {
+       return this.provision.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field provision.
+  * @returns the value  or undefined
+  */
   public getProvision(): ConsentProvision[] | undefined {
       return this.provision;
   }

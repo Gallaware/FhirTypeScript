@@ -135,7 +135,10 @@ export class StructureMapGroup {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -153,14 +156,37 @@ export class StructureMapGroup {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -178,14 +204,37 @@ export class StructureMapGroup {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -213,7 +262,10 @@ export class StructureMapGroup {
     return REGEX_NAME_000.source;
   }
   
-
+  /**
+  * Gets the current value of field name.
+  * @returns the value  or undefined
+  */
   public getName(): string | undefined {
       return this.name;
   }
@@ -241,7 +293,10 @@ export class StructureMapGroup {
     return REGEX_EXTENDS.source;
   }
   
-
+  /**
+  * Gets the current value of field extends.
+  * @returns the value  or undefined
+  */
   public getExtends(): string | undefined {
       return this.extends;
   }
@@ -270,7 +325,10 @@ export class StructureMapGroup {
     return StructureMapGroupTypeMode_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field typeMode.
+  * @returns the value  or undefined
+  */
   public getTypeMode(): string | undefined {
       return this.typeMode;
   }
@@ -298,7 +356,10 @@ export class StructureMapGroup {
     return REGEX_DOCUMENTATION.source;
   }
   
-
+  /**
+  * Gets the current value of field documentation.
+  * @returns the value  or undefined
+  */
   public getDocumentation(): string | undefined {
       return this.documentation;
   }
@@ -316,14 +377,37 @@ export class StructureMapGroup {
     }
     this.input.push(newValue);
   }
-  public deleteInputAll() {
+  /**
+  * Removes all elements from the array input, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteInputAll(): StructureMapInput[] {
     if (typeof(this.input) !== 'undefined') {
+       const oldArray = this.input;
        delete this.input;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array input, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteInputBySplice(start: number, deleteCount?: number): StructureMapInput[] {
+    if (typeof(this.input) !== 'undefined') {
+       return this.input.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field input.
+  * @returns the value  or undefined
+  */
   public getInput(): StructureMapInput[] | undefined {
       return this.input;
   }
@@ -341,14 +425,37 @@ export class StructureMapGroup {
     }
     this.rule.push(newValue);
   }
-  public deleteRuleAll() {
+  /**
+  * Removes all elements from the array rule, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteRuleAll(): StructureMapRule[] {
     if (typeof(this.rule) !== 'undefined') {
+       const oldArray = this.rule;
        delete this.rule;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array rule, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteRuleBySplice(start: number, deleteCount?: number): StructureMapRule[] {
+    if (typeof(this.rule) !== 'undefined') {
+       return this.rule.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field rule.
+  * @returns the value  or undefined
+  */
   public getRule(): StructureMapRule[] | undefined {
       return this.rule;
   }

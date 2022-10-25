@@ -341,7 +341,10 @@ export class TestScriptAssert {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -359,14 +362,37 @@ export class TestScriptAssert {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -384,14 +410,37 @@ export class TestScriptAssert {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -419,7 +468,10 @@ export class TestScriptAssert {
     return REGEX_LABEL.source;
   }
   
-
+  /**
+  * Gets the current value of field label.
+  * @returns the value  or undefined
+  */
   public getLabel(): string | undefined {
       return this.label;
   }
@@ -447,7 +499,10 @@ export class TestScriptAssert {
     return REGEX_DESCRIPTION.source;
   }
   
-
+  /**
+  * Gets the current value of field description.
+  * @returns the value  or undefined
+  */
   public getDescription(): string | undefined {
       return this.description;
   }
@@ -476,7 +531,10 @@ export class TestScriptAssert {
     return TestScriptAssertDirection_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field direction.
+  * @returns the value  or undefined
+  */
   public getDirection(): string | undefined {
       return this.direction;
   }
@@ -504,7 +562,10 @@ export class TestScriptAssert {
     return REGEX_COMPARETOSOURCEID.source;
   }
   
-
+  /**
+  * Gets the current value of field compareToSourceId.
+  * @returns the value  or undefined
+  */
   public getCompareToSourceId(): string | undefined {
       return this.compareToSourceId;
   }
@@ -532,7 +593,10 @@ export class TestScriptAssert {
     return REGEX_COMPARETOSOURCEEXPRESSION.source;
   }
   
-
+  /**
+  * Gets the current value of field compareToSourceExpression.
+  * @returns the value  or undefined
+  */
   public getCompareToSourceExpression(): string | undefined {
       return this.compareToSourceExpression;
   }
@@ -560,7 +624,10 @@ export class TestScriptAssert {
     return REGEX_COMPARETOSOURCEPATH.source;
   }
   
-
+  /**
+  * Gets the current value of field compareToSourcePath.
+  * @returns the value  or undefined
+  */
   public getCompareToSourcePath(): string | undefined {
       return this.compareToSourcePath;
   }
@@ -588,7 +655,10 @@ export class TestScriptAssert {
     return REGEX_CONTENTTYPE.source;
   }
   
-
+  /**
+  * Gets the current value of field contentType.
+  * @returns the value  or undefined
+  */
   public getContentType(): string | undefined {
       return this.contentType;
   }
@@ -616,7 +686,10 @@ export class TestScriptAssert {
     return REGEX_EXPRESSION.source;
   }
   
-
+  /**
+  * Gets the current value of field expression.
+  * @returns the value  or undefined
+  */
   public getExpression(): string | undefined {
       return this.expression;
   }
@@ -644,7 +717,10 @@ export class TestScriptAssert {
     return REGEX_HEADERFIELD.source;
   }
   
-
+  /**
+  * Gets the current value of field headerField.
+  * @returns the value  or undefined
+  */
   public getHeaderField(): string | undefined {
       return this.headerField;
   }
@@ -672,7 +748,10 @@ export class TestScriptAssert {
     return REGEX_MINIMUMID.source;
   }
   
-
+  /**
+  * Gets the current value of field minimumId.
+  * @returns the value  or undefined
+  */
   public getMinimumId(): string | undefined {
       return this.minimumId;
   }
@@ -701,7 +780,10 @@ export class TestScriptAssert {
     return TestScriptAssertOperator_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field operator.
+  * @returns the value  or undefined
+  */
   public getOperator(): string | undefined {
       return this.operator;
   }
@@ -729,7 +811,10 @@ export class TestScriptAssert {
     return REGEX_PATH.source;
   }
   
-
+  /**
+  * Gets the current value of field path.
+  * @returns the value  or undefined
+  */
   public getPath(): string | undefined {
       return this.path;
   }
@@ -758,7 +843,10 @@ export class TestScriptAssert {
     return TestScriptAssertRequestMethod_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field requestMethod.
+  * @returns the value  or undefined
+  */
   public getRequestMethod(): string | undefined {
       return this.requestMethod;
   }
@@ -786,7 +874,10 @@ export class TestScriptAssert {
     return REGEX_REQUESTURL.source;
   }
   
-
+  /**
+  * Gets the current value of field requestURL.
+  * @returns the value  or undefined
+  */
   public getRequestURL(): string | undefined {
       return this.requestURL;
   }
@@ -814,7 +905,10 @@ export class TestScriptAssert {
     return REGEX_RESOURCE_000.source;
   }
   
-
+  /**
+  * Gets the current value of field resource.
+  * @returns the value  or undefined
+  */
   public getResource(): string | undefined {
       return this.resource;
   }
@@ -843,7 +937,10 @@ export class TestScriptAssert {
     return TestScriptAssertResponse_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field response.
+  * @returns the value  or undefined
+  */
   public getResponse(): string | undefined {
       return this.response;
   }
@@ -871,7 +968,10 @@ export class TestScriptAssert {
     return REGEX_RESPONSECODE.source;
   }
   
-
+  /**
+  * Gets the current value of field responseCode.
+  * @returns the value  or undefined
+  */
   public getResponseCode(): string | undefined {
       return this.responseCode;
   }
@@ -899,7 +999,10 @@ export class TestScriptAssert {
     return REGEX_SOURCEID_000.source;
   }
   
-
+  /**
+  * Gets the current value of field sourceId.
+  * @returns the value  or undefined
+  */
   public getSourceId(): string | undefined {
       return this.sourceId;
   }
@@ -927,7 +1030,10 @@ export class TestScriptAssert {
     return REGEX_VALIDATEPROFILEID.source;
   }
   
-
+  /**
+  * Gets the current value of field validateProfileId.
+  * @returns the value  or undefined
+  */
   public getValidateProfileId(): string | undefined {
       return this.validateProfileId;
   }
@@ -955,7 +1061,10 @@ export class TestScriptAssert {
     return REGEX_VALUE.source;
   }
   
-
+  /**
+  * Gets the current value of field value.
+  * @returns the value  or undefined
+  */
   public getValue(): string | undefined {
       return this.value;
   }

@@ -139,7 +139,10 @@ export class ConceptMapTarget {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -157,14 +160,37 @@ export class ConceptMapTarget {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -182,14 +208,37 @@ export class ConceptMapTarget {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -217,7 +266,10 @@ export class ConceptMapTarget {
     return REGEX_CODE.source;
   }
   
-
+  /**
+  * Gets the current value of field code.
+  * @returns the value  or undefined
+  */
   public getCode(): string | undefined {
       return this.code;
   }
@@ -245,7 +297,10 @@ export class ConceptMapTarget {
     return REGEX_DISPLAY.source;
   }
   
-
+  /**
+  * Gets the current value of field display.
+  * @returns the value  or undefined
+  */
   public getDisplay(): string | undefined {
       return this.display;
   }
@@ -274,7 +329,10 @@ export class ConceptMapTarget {
     return ConceptMapTargetEquivalence_list_ValidValues;
   }
   
-
+  /**
+  * Gets the current value of field equivalence.
+  * @returns the value  or undefined
+  */
   public getEquivalence(): string | undefined {
       return this.equivalence;
   }
@@ -302,7 +360,10 @@ export class ConceptMapTarget {
     return REGEX_COMMENT.source;
   }
   
-
+  /**
+  * Gets the current value of field comment.
+  * @returns the value  or undefined
+  */
   public getComment(): string | undefined {
       return this.comment;
   }
@@ -320,14 +381,37 @@ export class ConceptMapTarget {
     }
     this.dependsOn.push(newValue);
   }
-  public deleteDependsOnAll() {
+  /**
+  * Removes all elements from the array dependsOn, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteDependsOnAll(): ConceptMapDependsOn[] {
     if (typeof(this.dependsOn) !== 'undefined') {
+       const oldArray = this.dependsOn;
        delete this.dependsOn;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array dependsOn, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteDependsOnBySplice(start: number, deleteCount?: number): ConceptMapDependsOn[] {
+    if (typeof(this.dependsOn) !== 'undefined') {
+       return this.dependsOn.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field dependsOn.
+  * @returns the value  or undefined
+  */
   public getDependsOn(): ConceptMapDependsOn[] | undefined {
       return this.dependsOn;
   }
@@ -345,14 +429,37 @@ export class ConceptMapTarget {
     }
     this.product.push(newValue);
   }
-  public deleteProductAll() {
+  /**
+  * Removes all elements from the array product, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteProductAll(): ConceptMapDependsOn[] {
     if (typeof(this.product) !== 'undefined') {
+       const oldArray = this.product;
        delete this.product;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array product, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteProductBySplice(start: number, deleteCount?: number): ConceptMapDependsOn[] {
+    if (typeof(this.product) !== 'undefined') {
+       return this.product.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field product.
+  * @returns the value  or undefined
+  */
   public getProduct(): ConceptMapDependsOn[] | undefined {
       return this.product;
   }

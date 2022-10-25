@@ -139,7 +139,10 @@ export class ImmunizationProtocolApplied {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -157,14 +160,37 @@ export class ImmunizationProtocolApplied {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -182,14 +208,37 @@ export class ImmunizationProtocolApplied {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -217,7 +266,10 @@ export class ImmunizationProtocolApplied {
     return REGEX_SERIES.source;
   }
   
-
+  /**
+  * Gets the current value of field series.
+  * @returns the value  or undefined
+  */
   public getSeries(): string | undefined {
       return this.series;
   }
@@ -235,14 +287,37 @@ export class ImmunizationProtocolApplied {
     }
     this.targetDisease.push(newValue);
   }
-  public deleteTargetDiseaseAll() {
+  /**
+  * Removes all elements from the array targetDisease, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteTargetDiseaseAll(): CodeableConcept[] {
     if (typeof(this.targetDisease) !== 'undefined') {
+       const oldArray = this.targetDisease;
        delete this.targetDisease;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array targetDisease, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteTargetDiseaseBySplice(start: number, deleteCount?: number): CodeableConcept[] {
+    if (typeof(this.targetDisease) !== 'undefined') {
+       return this.targetDisease.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field targetDisease.
+  * @returns the value  or undefined
+  */
   public getTargetDisease(): CodeableConcept[] | undefined {
       return this.targetDisease;
   }
@@ -270,7 +345,10 @@ export class ImmunizationProtocolApplied {
     return REGEX_DOSENUMBERSTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field doseNumberString.
+  * @returns the value  or undefined
+  */
   public getDoseNumberString(): string | undefined {
       return this.doseNumberString;
   }
@@ -298,7 +376,10 @@ export class ImmunizationProtocolApplied {
     return REGEX_SERIESDOSESSTRING.source;
   }
   
-
+  /**
+  * Gets the current value of field seriesDosesString.
+  * @returns the value  or undefined
+  */
   public getSeriesDosesString(): string | undefined {
       return this.seriesDosesString;
   }

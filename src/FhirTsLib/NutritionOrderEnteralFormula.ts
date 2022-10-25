@@ -150,7 +150,10 @@ export class NutritionOrderEnteralFormula {
     return REGEX_ID.source;
   }
   
-
+  /**
+  * Gets the current value of field id.
+  * @returns the value  or undefined
+  */
   public getId(): string | undefined {
       return this.id;
   }
@@ -168,14 +171,37 @@ export class NutritionOrderEnteralFormula {
     }
     this.extension.push(newValue);
   }
-  public deleteExtensionAll() {
+  /**
+  * Removes all elements from the array extension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteExtensionAll(): Extension[] {
     if (typeof(this.extension) !== 'undefined') {
+       const oldArray = this.extension;
        delete this.extension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array extension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.extension) !== 'undefined') {
+       return this.extension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field extension.
+  * @returns the value  or undefined
+  */
   public getExtension(): Extension[] | undefined {
       return this.extension;
   }
@@ -193,14 +219,37 @@ export class NutritionOrderEnteralFormula {
     }
     this.modifierExtension.push(newValue);
   }
-  public deleteModifierExtensionAll() {
+  /**
+  * Removes all elements from the array modifierExtension, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteModifierExtensionAll(): Extension[] {
     if (typeof(this.modifierExtension) !== 'undefined') {
+       const oldArray = this.modifierExtension;
        delete this.modifierExtension;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array modifierExtension, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteModifierExtensionBySplice(start: number, deleteCount?: number): Extension[] {
+    if (typeof(this.modifierExtension) !== 'undefined') {
+       return this.modifierExtension.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field modifierExtension.
+  * @returns the value  or undefined
+  */
   public getModifierExtension(): Extension[] | undefined {
       return this.modifierExtension;
   }
@@ -228,7 +277,10 @@ export class NutritionOrderEnteralFormula {
     return REGEX_BASEFORMULAPRODUCTNAME.source;
   }
   
-
+  /**
+  * Gets the current value of field baseFormulaProductName.
+  * @returns the value  or undefined
+  */
   public getBaseFormulaProductName(): string | undefined {
       return this.baseFormulaProductName;
   }
@@ -256,7 +308,10 @@ export class NutritionOrderEnteralFormula {
     return REGEX_ADDITIVEPRODUCTNAME.source;
   }
   
-
+  /**
+  * Gets the current value of field additiveProductName.
+  * @returns the value  or undefined
+  */
   public getAdditiveProductName(): string | undefined {
       return this.additiveProductName;
   }
@@ -274,14 +329,37 @@ export class NutritionOrderEnteralFormula {
     }
     this.administration.push(newValue);
   }
-  public deleteAdministrationAll() {
+  /**
+  * Removes all elements from the array administration, returning the deleted elements.
+  * @returns An array containing the elements that were deleted.
+  */
+  public deleteAdministrationAll(): NutritionOrderAdministration[] {
     if (typeof(this.administration) !== 'undefined') {
+       const oldArray = this.administration;
        delete this.administration;
+       return oldArray;
     }
-    return;
+    return [];
   }
   
-
+  /**
+  * Removes elements from the array administration, returning the deleted elements.
+  * @param start The zero-based location in the array from which to start removing elements.
+  * @param deleteCount The number of elements to remove.
+  * @returns An array containing the elements that were deleted, or an empty array if the element
+  *     was undefined.
+  */
+  public deleteAdministrationBySplice(start: number, deleteCount?: number): NutritionOrderAdministration[] {
+    if (typeof(this.administration) !== 'undefined') {
+       return this.administration.splice(start, deleteCount);
+    }
+    return [];
+  }
+  
+  /**
+  * Gets the current value of field administration.
+  * @returns the value  or undefined
+  */
   public getAdministration(): NutritionOrderAdministration[] | undefined {
       return this.administration;
   }
@@ -309,7 +387,10 @@ export class NutritionOrderEnteralFormula {
     return REGEX_ADMINISTRATIONINSTRUCTION.source;
   }
   
-
+  /**
+  * Gets the current value of field administrationInstruction.
+  * @returns the value  or undefined
+  */
   public getAdministrationInstruction(): string | undefined {
       return this.administrationInstruction;
   }
