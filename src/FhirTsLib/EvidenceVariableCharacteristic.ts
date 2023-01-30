@@ -208,6 +208,17 @@ export class EvidenceVariableCharacteristic {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -253,6 +264,17 @@ export class EvidenceVariableCharacteristic {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -304,6 +326,17 @@ export class EvidenceVariableCharacteristic {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -335,6 +368,17 @@ export class EvidenceVariableCharacteristic {
       return this.description;
   }
 
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
+      return this.description;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -363,6 +407,17 @@ export class EvidenceVariableCharacteristic {
   * @returns the value  or undefined
   */
   public getDefinitionCanonical(): string | undefined {
+      return this.definitionCanonical;
+  }
+
+  /**
+  * Gets the current value of field definitionCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionCanonicalOrElse(defaultValue: string): string {
+      if (this.definitionCanonical == undefined || this.definitionCanonical == null ) { return defaultValue; }
       return this.definitionCanonical;
   }
 
@@ -414,6 +469,17 @@ export class EvidenceVariableCharacteristic {
       return this.usageContext;
   }
 
+  /**
+  * Gets the current value of field usageContext if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUsageContextOrElse(defaultValue: UsageContext[]): UsageContext[] {
+      if (this.usageContext == undefined || this.usageContext == null ) { return defaultValue; }
+      return this.usageContext;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -442,6 +508,17 @@ export class EvidenceVariableCharacteristic {
   * @returns the value  or undefined
   */
   public getParticipantEffectiveDateTime(): string | undefined {
+      return this.participantEffectiveDateTime;
+  }
+
+  /**
+  * Gets the current value of field participantEffectiveDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantEffectiveDateTimeOrElse(defaultValue: string): string {
+      if (this.participantEffectiveDateTime == undefined || this.participantEffectiveDateTime == null ) { return defaultValue; }
       return this.participantEffectiveDateTime;
   }
 
@@ -474,6 +551,17 @@ export class EvidenceVariableCharacteristic {
   * @returns the value  or undefined
   */
   public getGroupMeasure(): string | undefined {
+      return this.groupMeasure;
+  }
+
+  /**
+  * Gets the current value of field groupMeasure if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGroupMeasureOrElse(defaultValue: string): string {
+      if (this.groupMeasure == undefined || this.groupMeasure == null ) { return defaultValue; }
       return this.groupMeasure;
   }
 

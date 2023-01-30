@@ -150,6 +150,17 @@ export class BundleRequest {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -195,6 +206,17 @@ export class BundleRequest {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -246,6 +268,17 @@ export class BundleRequest {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -275,6 +308,17 @@ export class BundleRequest {
   * @returns the value  or undefined
   */
   public getMethod(): string | undefined {
+      return this.method;
+  }
+
+  /**
+  * Gets the current value of field method if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMethodOrElse(defaultValue: string): string {
+      if (this.method == undefined || this.method == null ) { return defaultValue; }
       return this.method;
   }
 
@@ -309,6 +353,17 @@ export class BundleRequest {
       return this.url;
   }
 
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
+      return this.url;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -337,6 +392,17 @@ export class BundleRequest {
   * @returns the value  or undefined
   */
   public getIfNoneMatch(): string | undefined {
+      return this.ifNoneMatch;
+  }
+
+  /**
+  * Gets the current value of field ifNoneMatch if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIfNoneMatchOrElse(defaultValue: string): string {
+      if (this.ifNoneMatch == undefined || this.ifNoneMatch == null ) { return defaultValue; }
       return this.ifNoneMatch;
   }
 
@@ -371,6 +437,17 @@ export class BundleRequest {
       return this.ifModifiedSince;
   }
 
+  /**
+  * Gets the current value of field ifModifiedSince if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIfModifiedSinceOrElse(defaultValue: string): string {
+      if (this.ifModifiedSince == undefined || this.ifModifiedSince == null ) { return defaultValue; }
+      return this.ifModifiedSince;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -402,6 +479,17 @@ export class BundleRequest {
       return this.ifMatch;
   }
 
+  /**
+  * Gets the current value of field ifMatch if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIfMatchOrElse(defaultValue: string): string {
+      if (this.ifMatch == undefined || this.ifMatch == null ) { return defaultValue; }
+      return this.ifMatch;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -430,6 +518,17 @@ export class BundleRequest {
   * @returns the value  or undefined
   */
   public getIfNoneExist(): string | undefined {
+      return this.ifNoneExist;
+  }
+
+  /**
+  * Gets the current value of field ifNoneExist if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIfNoneExistOrElse(defaultValue: string): string {
+      if (this.ifNoneExist == undefined || this.ifNoneExist == null ) { return defaultValue; }
       return this.ifNoneExist;
   }
 

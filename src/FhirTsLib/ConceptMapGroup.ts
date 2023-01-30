@@ -138,6 +138,17 @@ export class ConceptMapGroup {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -183,6 +194,17 @@ export class ConceptMapGroup {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -234,6 +256,17 @@ export class ConceptMapGroup {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -262,6 +295,17 @@ export class ConceptMapGroup {
   * @returns the value  or undefined
   */
   public getSource(): string | undefined {
+      return this.source;
+  }
+
+  /**
+  * Gets the current value of field source if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceOrElse(defaultValue: string): string {
+      if (this.source == undefined || this.source == null ) { return defaultValue; }
       return this.source;
   }
 
@@ -296,6 +340,17 @@ export class ConceptMapGroup {
       return this.sourceVersion;
   }
 
+  /**
+  * Gets the current value of field sourceVersion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceVersionOrElse(defaultValue: string): string {
+      if (this.sourceVersion == undefined || this.sourceVersion == null ) { return defaultValue; }
+      return this.sourceVersion;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -327,6 +382,17 @@ export class ConceptMapGroup {
       return this.target;
   }
 
+  /**
+  * Gets the current value of field target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetOrElse(defaultValue: string): string {
+      if (this.target == undefined || this.target == null ) { return defaultValue; }
+      return this.target;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -355,6 +421,17 @@ export class ConceptMapGroup {
   * @returns the value  or undefined
   */
   public getTargetVersion(): string | undefined {
+      return this.targetVersion;
+  }
+
+  /**
+  * Gets the current value of field targetVersion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetVersionOrElse(defaultValue: string): string {
+      if (this.targetVersion == undefined || this.targetVersion == null ) { return defaultValue; }
       return this.targetVersion;
   }
 
@@ -403,6 +480,17 @@ export class ConceptMapGroup {
   * @returns the value  or undefined
   */
   public getElement(): ConceptMapElement[] | undefined {
+      return this.element;
+  }
+
+  /**
+  * Gets the current value of field element if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getElementOrElse(defaultValue: ConceptMapElement[]): ConceptMapElement[] {
+      if (this.element == undefined || this.element == null ) { return defaultValue; }
       return this.element;
   }
 

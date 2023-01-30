@@ -388,6 +388,17 @@ export class ObservationDefinition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -419,6 +430,17 @@ export class ObservationDefinition {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -447,6 +469,17 @@ export class ObservationDefinition {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -498,6 +531,17 @@ export class ObservationDefinition {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -543,6 +587,17 @@ export class ObservationDefinition {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -594,6 +649,17 @@ export class ObservationDefinition {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addCategory(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.category) !== 'undefined') {
@@ -639,6 +705,17 @@ export class ObservationDefinition {
   * @returns the value  or undefined
   */
   public getCategory(): CodeableConcept[] | undefined {
+      return this.category;
+  }
+
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
       return this.category;
   }
 
@@ -690,6 +767,17 @@ export class ObservationDefinition {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   public addPermittedDataType(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.permittedDataType) !== 'undefined') {
@@ -735,6 +823,17 @@ export class ObservationDefinition {
   * @returns the value  or undefined
   */
   public getPermittedDataType(): string[] | undefined {
+      return this.permittedDataType;
+  }
+
+  /**
+  * Gets the current value of field permittedDataType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPermittedDataTypeOrElse(defaultValue: string[]): string[] {
+      if (this.permittedDataType == undefined || this.permittedDataType == null ) { return defaultValue; }
       return this.permittedDataType;
   }
 
@@ -786,6 +885,17 @@ export class ObservationDefinition {
       return this._permittedDataType;
   }
 
+  /**
+  * Gets the current value of field _permittedDataType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_permittedDataTypeOrElse(defaultValue: Element[]): Element[] {
+      if (this._permittedDataType == undefined || this._permittedDataType == null ) { return defaultValue; }
+      return this._permittedDataType;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -814,6 +924,17 @@ export class ObservationDefinition {
   * @returns the value  or undefined
   */
   public getPreferredReportName(): string | undefined {
+      return this.preferredReportName;
+  }
+
+  /**
+  * Gets the current value of field preferredReportName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPreferredReportNameOrElse(defaultValue: string): string {
+      if (this.preferredReportName == undefined || this.preferredReportName == null ) { return defaultValue; }
       return this.preferredReportName;
   }
 
@@ -862,6 +983,17 @@ export class ObservationDefinition {
   * @returns the value  or undefined
   */
   public getQualifiedInterval(): ObservationDefinitionQualifiedInterval[] | undefined {
+      return this.qualifiedInterval;
+  }
+
+  /**
+  * Gets the current value of field qualifiedInterval if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getQualifiedIntervalOrElse(defaultValue: ObservationDefinitionQualifiedInterval[]): ObservationDefinitionQualifiedInterval[] {
+      if (this.qualifiedInterval == undefined || this.qualifiedInterval == null ) { return defaultValue; }
       return this.qualifiedInterval;
   }
 

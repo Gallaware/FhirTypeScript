@@ -157,6 +157,17 @@ export class Bundle {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -188,6 +199,17 @@ export class Bundle {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -216,6 +238,17 @@ export class Bundle {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -251,6 +284,17 @@ export class Bundle {
       return this.type;
   }
 
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
+      return this.type;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -279,6 +323,17 @@ export class Bundle {
   * @returns the value  or undefined
   */
   public getTimestamp(): string | undefined {
+      return this.timestamp;
+  }
+
+  /**
+  * Gets the current value of field timestamp if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTimestampOrElse(defaultValue: string): string {
+      if (this.timestamp == undefined || this.timestamp == null ) { return defaultValue; }
       return this.timestamp;
   }
 
@@ -330,6 +385,17 @@ export class Bundle {
       return this.link;
   }
 
+  /**
+  * Gets the current value of field link if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkOrElse(defaultValue: BundleLink[]): BundleLink[] {
+      if (this.link == undefined || this.link == null ) { return defaultValue; }
+      return this.link;
+  }
+
   public addEntry(newValue: BundleEntry) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.entry) !== 'undefined') {
@@ -375,6 +441,17 @@ export class Bundle {
   * @returns the value  or undefined
   */
   public getEntry(): BundleEntry[] | undefined {
+      return this.entry;
+  }
+
+  /**
+  * Gets the current value of field entry if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEntryOrElse(defaultValue: BundleEntry[]): BundleEntry[] {
+      if (this.entry == undefined || this.entry == null ) { return defaultValue; }
       return this.entry;
   }
 

@@ -132,6 +132,17 @@ export class PatientContact {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -177,6 +188,17 @@ export class PatientContact {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -228,6 +250,17 @@ export class PatientContact {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addRelationship(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relationship) !== 'undefined') {
@@ -273,6 +306,17 @@ export class PatientContact {
   * @returns the value  or undefined
   */
   public getRelationship(): CodeableConcept[] | undefined {
+      return this.relationship;
+  }
+
+  /**
+  * Gets the current value of field relationship if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelationshipOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.relationship == undefined || this.relationship == null ) { return defaultValue; }
       return this.relationship;
   }
 
@@ -324,6 +368,17 @@ export class PatientContact {
       return this.telecom;
   }
 
+  /**
+  * Gets the current value of field telecom if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTelecomOrElse(defaultValue: ContactPoint[]): ContactPoint[] {
+      if (this.telecom == undefined || this.telecom == null ) { return defaultValue; }
+      return this.telecom;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -353,6 +408,17 @@ export class PatientContact {
   * @returns the value  or undefined
   */
   public getGender(): string | undefined {
+      return this.gender;
+  }
+
+  /**
+  * Gets the current value of field gender if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGenderOrElse(defaultValue: string): string {
+      if (this.gender == undefined || this.gender == null ) { return defaultValue; }
       return this.gender;
   }
 

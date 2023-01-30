@@ -456,6 +456,17 @@ export class MedicationAdministration {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -487,6 +498,17 @@ export class MedicationAdministration {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -515,6 +537,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -566,6 +599,17 @@ export class MedicationAdministration {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -611,6 +655,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -662,6 +717,17 @@ export class MedicationAdministration {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -707,6 +773,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -758,6 +835,17 @@ export class MedicationAdministration {
       return this.instantiates;
   }
 
+  /**
+  * Gets the current value of field instantiates if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesOrElse(defaultValue: string[]): string[] {
+      if (this.instantiates == undefined || this.instantiates == null ) { return defaultValue; }
+      return this.instantiates;
+  }
+
   public add_instantiates(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._instantiates) !== 'undefined') {
@@ -803,6 +891,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public get_instantiates(): Element[] | undefined {
+      return this._instantiates;
+  }
+
+  /**
+  * Gets the current value of field _instantiates if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_instantiatesOrElse(defaultValue: Element[]): Element[] {
+      if (this._instantiates == undefined || this._instantiates == null ) { return defaultValue; }
       return this._instantiates;
   }
 
@@ -854,6 +953,17 @@ export class MedicationAdministration {
       return this.partOf;
   }
 
+  /**
+  * Gets the current value of field partOf if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartOfOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.partOf == undefined || this.partOf == null ) { return defaultValue; }
+      return this.partOf;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -882,6 +992,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -933,6 +1054,17 @@ export class MedicationAdministration {
       return this.statusReason;
   }
 
+  /**
+  * Gets the current value of field statusReason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusReasonOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.statusReason == undefined || this.statusReason == null ) { return defaultValue; }
+      return this.statusReason;
+  }
+
   public addSupportingInformation(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.supportingInformation) !== 'undefined') {
@@ -981,6 +1113,17 @@ export class MedicationAdministration {
       return this.supportingInformation;
   }
 
+  /**
+  * Gets the current value of field supportingInformation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInformationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingInformation == undefined || this.supportingInformation == null ) { return defaultValue; }
+      return this.supportingInformation;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1009,6 +1152,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getEffectiveDateTime(): string | undefined {
+      return this.effectiveDateTime;
+  }
+
+  /**
+  * Gets the current value of field effectiveDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEffectiveDateTimeOrElse(defaultValue: string): string {
+      if (this.effectiveDateTime == undefined || this.effectiveDateTime == null ) { return defaultValue; }
       return this.effectiveDateTime;
   }
 
@@ -1060,6 +1214,17 @@ export class MedicationAdministration {
       return this.performer;
   }
 
+  /**
+  * Gets the current value of field performer if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPerformerOrElse(defaultValue: MedicationAdministrationPerformer[]): MedicationAdministrationPerformer[] {
+      if (this.performer == undefined || this.performer == null ) { return defaultValue; }
+      return this.performer;
+  }
+
   public addReasonCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonCode) !== 'undefined') {
@@ -1105,6 +1270,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getReasonCode(): CodeableConcept[] | undefined {
+      return this.reasonCode;
+  }
+
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
       return this.reasonCode;
   }
 
@@ -1156,6 +1332,17 @@ export class MedicationAdministration {
       return this.reasonReference;
   }
 
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
+      return this.reasonReference;
+  }
+
   public addDevice(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.device) !== 'undefined') {
@@ -1201,6 +1388,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getDevice(): Reference[] | undefined {
+      return this.device;
+  }
+
+  /**
+  * Gets the current value of field device if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDeviceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.device == undefined || this.device == null ) { return defaultValue; }
       return this.device;
   }
 
@@ -1252,6 +1450,17 @@ export class MedicationAdministration {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addEventHistory(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.eventHistory) !== 'undefined') {
@@ -1297,6 +1506,17 @@ export class MedicationAdministration {
   * @returns the value  or undefined
   */
   public getEventHistory(): Reference[] | undefined {
+      return this.eventHistory;
+  }
+
+  /**
+  * Gets the current value of field eventHistory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEventHistoryOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.eventHistory == undefined || this.eventHistory == null ) { return defaultValue; }
       return this.eventHistory;
   }
 

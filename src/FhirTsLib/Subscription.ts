@@ -365,6 +365,17 @@ export class Subscription {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -396,6 +407,17 @@ export class Subscription {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -424,6 +446,17 @@ export class Subscription {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -475,6 +508,17 @@ export class Subscription {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -520,6 +564,17 @@ export class Subscription {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -571,6 +626,17 @@ export class Subscription {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -600,6 +666,17 @@ export class Subscription {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -651,6 +728,17 @@ export class Subscription {
       return this.contact;
   }
 
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: ContactPoint[]): ContactPoint[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
+      return this.contact;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -679,6 +767,17 @@ export class Subscription {
   * @returns the value  or undefined
   */
   public getEnd(): string | undefined {
+      return this.end;
+  }
+
+  /**
+  * Gets the current value of field end if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEndOrElse(defaultValue: string): string {
+      if (this.end == undefined || this.end == null ) { return defaultValue; }
       return this.end;
   }
 
@@ -713,6 +812,17 @@ export class Subscription {
       return this.reason;
   }
 
+  /**
+  * Gets the current value of field reason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonOrElse(defaultValue: string): string {
+      if (this.reason == undefined || this.reason == null ) { return defaultValue; }
+      return this.reason;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -744,6 +854,17 @@ export class Subscription {
       return this.criteria;
   }
 
+  /**
+  * Gets the current value of field criteria if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCriteriaOrElse(defaultValue: string): string {
+      if (this.criteria == undefined || this.criteria == null ) { return defaultValue; }
+      return this.criteria;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -772,6 +893,17 @@ export class Subscription {
   * @returns the value  or undefined
   */
   public getError(): string | undefined {
+      return this.error;
+  }
+
+  /**
+  * Gets the current value of field error if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getErrorOrElse(defaultValue: string): string {
+      if (this.error == undefined || this.error == null ) { return defaultValue; }
       return this.error;
   }
 

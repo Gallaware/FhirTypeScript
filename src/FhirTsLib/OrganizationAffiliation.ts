@@ -370,6 +370,17 @@ export class OrganizationAffiliation {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -401,6 +412,17 @@ export class OrganizationAffiliation {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -429,6 +451,17 @@ export class OrganizationAffiliation {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -480,6 +513,17 @@ export class OrganizationAffiliation {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -525,6 +569,17 @@ export class OrganizationAffiliation {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -576,6 +631,17 @@ export class OrganizationAffiliation {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -621,6 +687,17 @@ export class OrganizationAffiliation {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -672,6 +749,17 @@ export class OrganizationAffiliation {
       return this.network;
   }
 
+  /**
+  * Gets the current value of field network if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNetworkOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.network == undefined || this.network == null ) { return defaultValue; }
+      return this.network;
+  }
+
   public addCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.code) !== 'undefined') {
@@ -717,6 +805,17 @@ export class OrganizationAffiliation {
   * @returns the value  or undefined
   */
   public getCode(): CodeableConcept[] | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -768,6 +867,17 @@ export class OrganizationAffiliation {
       return this.specialty;
   }
 
+  /**
+  * Gets the current value of field specialty if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialtyOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.specialty == undefined || this.specialty == null ) { return defaultValue; }
+      return this.specialty;
+  }
+
   public addLocation(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.location) !== 'undefined') {
@@ -813,6 +923,17 @@ export class OrganizationAffiliation {
   * @returns the value  or undefined
   */
   public getLocation(): Reference[] | undefined {
+      return this.location;
+  }
+
+  /**
+  * Gets the current value of field location if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLocationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.location == undefined || this.location == null ) { return defaultValue; }
       return this.location;
   }
 
@@ -864,6 +985,17 @@ export class OrganizationAffiliation {
       return this.healthcareService;
   }
 
+  /**
+  * Gets the current value of field healthcareService if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getHealthcareServiceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.healthcareService == undefined || this.healthcareService == null ) { return defaultValue; }
+      return this.healthcareService;
+  }
+
   public addTelecom(newValue: ContactPoint) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.telecom) !== 'undefined') {
@@ -912,6 +1044,17 @@ export class OrganizationAffiliation {
       return this.telecom;
   }
 
+  /**
+  * Gets the current value of field telecom if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTelecomOrElse(defaultValue: ContactPoint[]): ContactPoint[] {
+      if (this.telecom == undefined || this.telecom == null ) { return defaultValue; }
+      return this.telecom;
+  }
+
   public addEndpoint(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.endpoint) !== 'undefined') {
@@ -957,6 +1100,17 @@ export class OrganizationAffiliation {
   * @returns the value  or undefined
   */
   public getEndpoint(): Reference[] | undefined {
+      return this.endpoint;
+  }
+
+  /**
+  * Gets the current value of field endpoint if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEndpointOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.endpoint == undefined || this.endpoint == null ) { return defaultValue; }
       return this.endpoint;
   }
 

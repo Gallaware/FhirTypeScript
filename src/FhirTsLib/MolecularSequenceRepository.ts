@@ -150,6 +150,17 @@ export class MolecularSequenceRepository {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -195,6 +206,17 @@ export class MolecularSequenceRepository {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -246,6 +268,17 @@ export class MolecularSequenceRepository {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -275,6 +308,17 @@ export class MolecularSequenceRepository {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -309,6 +353,17 @@ export class MolecularSequenceRepository {
       return this.url;
   }
 
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
+      return this.url;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -337,6 +392,17 @@ export class MolecularSequenceRepository {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -371,6 +437,17 @@ export class MolecularSequenceRepository {
       return this.datasetId;
   }
 
+  /**
+  * Gets the current value of field datasetId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDatasetIdOrElse(defaultValue: string): string {
+      if (this.datasetId == undefined || this.datasetId == null ) { return defaultValue; }
+      return this.datasetId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -402,6 +479,17 @@ export class MolecularSequenceRepository {
       return this.variantsetId;
   }
 
+  /**
+  * Gets the current value of field variantsetId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVariantsetIdOrElse(defaultValue: string): string {
+      if (this.variantsetId == undefined || this.variantsetId == null ) { return defaultValue; }
+      return this.variantsetId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -430,6 +518,17 @@ export class MolecularSequenceRepository {
   * @returns the value  or undefined
   */
   public getReadsetId(): string | undefined {
+      return this.readsetId;
+  }
+
+  /**
+  * Gets the current value of field readsetId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReadsetIdOrElse(defaultValue: string): string {
+      if (this.readsetId == undefined || this.readsetId == null ) { return defaultValue; }
       return this.readsetId;
   }
 

@@ -390,6 +390,17 @@ export class Specimen {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -421,6 +432,17 @@ export class Specimen {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -449,6 +471,17 @@ export class Specimen {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -500,6 +533,17 @@ export class Specimen {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -545,6 +589,17 @@ export class Specimen {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -596,6 +651,17 @@ export class Specimen {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -644,6 +710,17 @@ export class Specimen {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -676,6 +753,17 @@ export class Specimen {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -704,6 +792,17 @@ export class Specimen {
   * @returns the value  or undefined
   */
   public getReceivedTime(): string | undefined {
+      return this.receivedTime;
+  }
+
+  /**
+  * Gets the current value of field receivedTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReceivedTimeOrElse(defaultValue: string): string {
+      if (this.receivedTime == undefined || this.receivedTime == null ) { return defaultValue; }
       return this.receivedTime;
   }
 
@@ -755,6 +854,17 @@ export class Specimen {
       return this.parent;
   }
 
+  /**
+  * Gets the current value of field parent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParentOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.parent == undefined || this.parent == null ) { return defaultValue; }
+      return this.parent;
+  }
+
   public addRequest(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.request) !== 'undefined') {
@@ -800,6 +910,17 @@ export class Specimen {
   * @returns the value  or undefined
   */
   public getRequest(): Reference[] | undefined {
+      return this.request;
+  }
+
+  /**
+  * Gets the current value of field request if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequestOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.request == undefined || this.request == null ) { return defaultValue; }
       return this.request;
   }
 
@@ -851,6 +972,17 @@ export class Specimen {
       return this.processing;
   }
 
+  /**
+  * Gets the current value of field processing if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcessingOrElse(defaultValue: SpecimenProcessing[]): SpecimenProcessing[] {
+      if (this.processing == undefined || this.processing == null ) { return defaultValue; }
+      return this.processing;
+  }
+
   public addContainer(newValue: SpecimenContainer) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.container) !== 'undefined') {
@@ -896,6 +1028,17 @@ export class Specimen {
   * @returns the value  or undefined
   */
   public getContainer(): SpecimenContainer[] | undefined {
+      return this.container;
+  }
+
+  /**
+  * Gets the current value of field container if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainerOrElse(defaultValue: SpecimenContainer[]): SpecimenContainer[] {
+      if (this.container == undefined || this.container == null ) { return defaultValue; }
       return this.container;
   }
 
@@ -947,6 +1090,17 @@ export class Specimen {
       return this.condition;
   }
 
+  /**
+  * Gets the current value of field condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.condition == undefined || this.condition == null ) { return defaultValue; }
+      return this.condition;
+  }
+
   public addNote(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.note) !== 'undefined') {
@@ -992,6 +1146,17 @@ export class Specimen {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 

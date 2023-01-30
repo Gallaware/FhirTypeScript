@@ -265,6 +265,17 @@ export class ResearchElementDefinitionCharacteristic {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -310,6 +321,17 @@ export class ResearchElementDefinitionCharacteristic {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -361,6 +383,17 @@ export class ResearchElementDefinitionCharacteristic {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -389,6 +422,17 @@ export class ResearchElementDefinitionCharacteristic {
   * @returns the value  or undefined
   */
   public getDefinitionCanonical(): string | undefined {
+      return this.definitionCanonical;
+  }
+
+  /**
+  * Gets the current value of field definitionCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionCanonicalOrElse(defaultValue: string): string {
+      if (this.definitionCanonical == undefined || this.definitionCanonical == null ) { return defaultValue; }
       return this.definitionCanonical;
   }
 
@@ -440,6 +484,17 @@ export class ResearchElementDefinitionCharacteristic {
       return this.usageContext;
   }
 
+  /**
+  * Gets the current value of field usageContext if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUsageContextOrElse(defaultValue: UsageContext[]): UsageContext[] {
+      if (this.usageContext == undefined || this.usageContext == null ) { return defaultValue; }
+      return this.usageContext;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -471,6 +526,17 @@ export class ResearchElementDefinitionCharacteristic {
       return this.studyEffectiveDescription;
   }
 
+  /**
+  * Gets the current value of field studyEffectiveDescription if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStudyEffectiveDescriptionOrElse(defaultValue: string): string {
+      if (this.studyEffectiveDescription == undefined || this.studyEffectiveDescription == null ) { return defaultValue; }
+      return this.studyEffectiveDescription;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -499,6 +565,17 @@ export class ResearchElementDefinitionCharacteristic {
   * @returns the value  or undefined
   */
   public getStudyEffectiveDateTime(): string | undefined {
+      return this.studyEffectiveDateTime;
+  }
+
+  /**
+  * Gets the current value of field studyEffectiveDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStudyEffectiveDateTimeOrElse(defaultValue: string): string {
+      if (this.studyEffectiveDateTime == undefined || this.studyEffectiveDateTime == null ) { return defaultValue; }
       return this.studyEffectiveDateTime;
   }
 
@@ -534,6 +611,17 @@ export class ResearchElementDefinitionCharacteristic {
       return this.studyEffectiveGroupMeasure;
   }
 
+  /**
+  * Gets the current value of field studyEffectiveGroupMeasure if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStudyEffectiveGroupMeasureOrElse(defaultValue: string): string {
+      if (this.studyEffectiveGroupMeasure == undefined || this.studyEffectiveGroupMeasure == null ) { return defaultValue; }
+      return this.studyEffectiveGroupMeasure;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -562,6 +650,17 @@ export class ResearchElementDefinitionCharacteristic {
   * @returns the value  or undefined
   */
   public getParticipantEffectiveDescription(): string | undefined {
+      return this.participantEffectiveDescription;
+  }
+
+  /**
+  * Gets the current value of field participantEffectiveDescription if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantEffectiveDescriptionOrElse(defaultValue: string): string {
+      if (this.participantEffectiveDescription == undefined || this.participantEffectiveDescription == null ) { return defaultValue; }
       return this.participantEffectiveDescription;
   }
 
@@ -596,6 +695,17 @@ export class ResearchElementDefinitionCharacteristic {
       return this.participantEffectiveDateTime;
   }
 
+  /**
+  * Gets the current value of field participantEffectiveDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantEffectiveDateTimeOrElse(defaultValue: string): string {
+      if (this.participantEffectiveDateTime == undefined || this.participantEffectiveDateTime == null ) { return defaultValue; }
+      return this.participantEffectiveDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -625,6 +735,17 @@ export class ResearchElementDefinitionCharacteristic {
   * @returns the value  or undefined
   */
   public getParticipantEffectiveGroupMeasure(): string | undefined {
+      return this.participantEffectiveGroupMeasure;
+  }
+
+  /**
+  * Gets the current value of field participantEffectiveGroupMeasure if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantEffectiveGroupMeasureOrElse(defaultValue: string): string {
+      if (this.participantEffectiveGroupMeasure == undefined || this.participantEffectiveGroupMeasure == null ) { return defaultValue; }
       return this.participantEffectiveGroupMeasure;
   }
 

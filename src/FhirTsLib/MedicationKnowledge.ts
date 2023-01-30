@@ -460,6 +460,17 @@ export class MedicationKnowledge {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -491,6 +502,17 @@ export class MedicationKnowledge {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -519,6 +541,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -570,6 +603,17 @@ export class MedicationKnowledge {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -615,6 +659,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -666,6 +721,17 @@ export class MedicationKnowledge {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -694,6 +760,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -745,6 +822,17 @@ export class MedicationKnowledge {
       return this.synonym;
   }
 
+  /**
+  * Gets the current value of field synonym if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSynonymOrElse(defaultValue: string[]): string[] {
+      if (this.synonym == undefined || this.synonym == null ) { return defaultValue; }
+      return this.synonym;
+  }
+
   public add_synonym(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._synonym) !== 'undefined') {
@@ -790,6 +878,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public get_synonym(): Element[] | undefined {
+      return this._synonym;
+  }
+
+  /**
+  * Gets the current value of field _synonym if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_synonymOrElse(defaultValue: Element[]): Element[] {
+      if (this._synonym == undefined || this._synonym == null ) { return defaultValue; }
       return this._synonym;
   }
 
@@ -841,6 +940,17 @@ export class MedicationKnowledge {
       return this.relatedMedicationKnowledge;
   }
 
+  /**
+  * Gets the current value of field relatedMedicationKnowledge if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatedMedicationKnowledgeOrElse(defaultValue: MedicationKnowledgeRelatedMedicationKnowledge[]): MedicationKnowledgeRelatedMedicationKnowledge[] {
+      if (this.relatedMedicationKnowledge == undefined || this.relatedMedicationKnowledge == null ) { return defaultValue; }
+      return this.relatedMedicationKnowledge;
+  }
+
   public addAssociatedMedication(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.associatedMedication) !== 'undefined') {
@@ -886,6 +996,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getAssociatedMedication(): Reference[] | undefined {
+      return this.associatedMedication;
+  }
+
+  /**
+  * Gets the current value of field associatedMedication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAssociatedMedicationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.associatedMedication == undefined || this.associatedMedication == null ) { return defaultValue; }
       return this.associatedMedication;
   }
 
@@ -937,6 +1058,17 @@ export class MedicationKnowledge {
       return this.productType;
   }
 
+  /**
+  * Gets the current value of field productType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProductTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.productType == undefined || this.productType == null ) { return defaultValue; }
+      return this.productType;
+  }
+
   public addMonograph(newValue: MedicationKnowledgeMonograph) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.monograph) !== 'undefined') {
@@ -982,6 +1114,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getMonograph(): MedicationKnowledgeMonograph[] | undefined {
+      return this.monograph;
+  }
+
+  /**
+  * Gets the current value of field monograph if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMonographOrElse(defaultValue: MedicationKnowledgeMonograph[]): MedicationKnowledgeMonograph[] {
+      if (this.monograph == undefined || this.monograph == null ) { return defaultValue; }
       return this.monograph;
   }
 
@@ -1033,6 +1176,17 @@ export class MedicationKnowledge {
       return this.ingredient;
   }
 
+  /**
+  * Gets the current value of field ingredient if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIngredientOrElse(defaultValue: MedicationKnowledgeIngredient[]): MedicationKnowledgeIngredient[] {
+      if (this.ingredient == undefined || this.ingredient == null ) { return defaultValue; }
+      return this.ingredient;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1061,6 +1215,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getPreparationInstruction(): string | undefined {
+      return this.preparationInstruction;
+  }
+
+  /**
+  * Gets the current value of field preparationInstruction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPreparationInstructionOrElse(defaultValue: string): string {
+      if (this.preparationInstruction == undefined || this.preparationInstruction == null ) { return defaultValue; }
       return this.preparationInstruction;
   }
 
@@ -1112,6 +1277,17 @@ export class MedicationKnowledge {
       return this.intendedRoute;
   }
 
+  /**
+  * Gets the current value of field intendedRoute if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIntendedRouteOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.intendedRoute == undefined || this.intendedRoute == null ) { return defaultValue; }
+      return this.intendedRoute;
+  }
+
   public addCost(newValue: MedicationKnowledgeCost) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.cost) !== 'undefined') {
@@ -1157,6 +1333,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getCost(): MedicationKnowledgeCost[] | undefined {
+      return this.cost;
+  }
+
+  /**
+  * Gets the current value of field cost if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCostOrElse(defaultValue: MedicationKnowledgeCost[]): MedicationKnowledgeCost[] {
+      if (this.cost == undefined || this.cost == null ) { return defaultValue; }
       return this.cost;
   }
 
@@ -1208,6 +1395,17 @@ export class MedicationKnowledge {
       return this.monitoringProgram;
   }
 
+  /**
+  * Gets the current value of field monitoringProgram if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMonitoringProgramOrElse(defaultValue: MedicationKnowledgeMonitoringProgram[]): MedicationKnowledgeMonitoringProgram[] {
+      if (this.monitoringProgram == undefined || this.monitoringProgram == null ) { return defaultValue; }
+      return this.monitoringProgram;
+  }
+
   public addAdministrationGuidelines(newValue: MedicationKnowledgeAdministrationGuidelines) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.administrationGuidelines) !== 'undefined') {
@@ -1253,6 +1451,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getAdministrationGuidelines(): MedicationKnowledgeAdministrationGuidelines[] | undefined {
+      return this.administrationGuidelines;
+  }
+
+  /**
+  * Gets the current value of field administrationGuidelines if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdministrationGuidelinesOrElse(defaultValue: MedicationKnowledgeAdministrationGuidelines[]): MedicationKnowledgeAdministrationGuidelines[] {
+      if (this.administrationGuidelines == undefined || this.administrationGuidelines == null ) { return defaultValue; }
       return this.administrationGuidelines;
   }
 
@@ -1304,6 +1513,17 @@ export class MedicationKnowledge {
       return this.medicineClassification;
   }
 
+  /**
+  * Gets the current value of field medicineClassification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMedicineClassificationOrElse(defaultValue: MedicationKnowledgeMedicineClassification[]): MedicationKnowledgeMedicineClassification[] {
+      if (this.medicineClassification == undefined || this.medicineClassification == null ) { return defaultValue; }
+      return this.medicineClassification;
+  }
+
   public addDrugCharacteristic(newValue: MedicationKnowledgeDrugCharacteristic) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.drugCharacteristic) !== 'undefined') {
@@ -1349,6 +1569,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getDrugCharacteristic(): MedicationKnowledgeDrugCharacteristic[] | undefined {
+      return this.drugCharacteristic;
+  }
+
+  /**
+  * Gets the current value of field drugCharacteristic if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDrugCharacteristicOrElse(defaultValue: MedicationKnowledgeDrugCharacteristic[]): MedicationKnowledgeDrugCharacteristic[] {
+      if (this.drugCharacteristic == undefined || this.drugCharacteristic == null ) { return defaultValue; }
       return this.drugCharacteristic;
   }
 
@@ -1400,6 +1631,17 @@ export class MedicationKnowledge {
       return this.contraindication;
   }
 
+  /**
+  * Gets the current value of field contraindication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContraindicationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.contraindication == undefined || this.contraindication == null ) { return defaultValue; }
+      return this.contraindication;
+  }
+
   public addRegulatory(newValue: MedicationKnowledgeRegulatory) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.regulatory) !== 'undefined') {
@@ -1448,6 +1690,17 @@ export class MedicationKnowledge {
       return this.regulatory;
   }
 
+  /**
+  * Gets the current value of field regulatory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRegulatoryOrElse(defaultValue: MedicationKnowledgeRegulatory[]): MedicationKnowledgeRegulatory[] {
+      if (this.regulatory == undefined || this.regulatory == null ) { return defaultValue; }
+      return this.regulatory;
+  }
+
   public addKinetics(newValue: MedicationKnowledgeKinetics) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.kinetics) !== 'undefined') {
@@ -1493,6 +1746,17 @@ export class MedicationKnowledge {
   * @returns the value  or undefined
   */
   public getKinetics(): MedicationKnowledgeKinetics[] | undefined {
+      return this.kinetics;
+  }
+
+  /**
+  * Gets the current value of field kinetics if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getKineticsOrElse(defaultValue: MedicationKnowledgeKinetics[]): MedicationKnowledgeKinetics[] {
+      if (this.kinetics == undefined || this.kinetics == null ) { return defaultValue; }
       return this.kinetics;
   }
 

@@ -508,6 +508,17 @@ export class ImplementationGuide {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -539,6 +550,17 @@ export class ImplementationGuide {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -567,6 +589,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -618,6 +651,17 @@ export class ImplementationGuide {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -663,6 +707,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -714,6 +769,17 @@ export class ImplementationGuide {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -742,6 +808,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getUrl(): string | undefined {
+      return this.url;
+  }
+
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
       return this.url;
   }
 
@@ -776,6 +853,17 @@ export class ImplementationGuide {
       return this.version;
   }
 
+  /**
+  * Gets the current value of field version if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionOrElse(defaultValue: string): string {
+      if (this.version == undefined || this.version == null ) { return defaultValue; }
+      return this.version;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -807,6 +895,17 @@ export class ImplementationGuide {
       return this.name;
   }
 
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
+      return this.name;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -835,6 +934,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getTitle(): string | undefined {
+      return this.title;
+  }
+
+  /**
+  * Gets the current value of field title if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTitleOrElse(defaultValue: string): string {
+      if (this.title == undefined || this.title == null ) { return defaultValue; }
       return this.title;
   }
 
@@ -870,6 +980,17 @@ export class ImplementationGuide {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -901,6 +1022,17 @@ export class ImplementationGuide {
       return this.date;
   }
 
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
+      return this.date;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -929,6 +1061,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getPublisher(): string | undefined {
+      return this.publisher;
+  }
+
+  /**
+  * Gets the current value of field publisher if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPublisherOrElse(defaultValue: string): string {
+      if (this.publisher == undefined || this.publisher == null ) { return defaultValue; }
       return this.publisher;
   }
 
@@ -980,6 +1123,17 @@ export class ImplementationGuide {
       return this.contact;
   }
 
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: ContactDetail[]): ContactDetail[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
+      return this.contact;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1008,6 +1162,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -1059,6 +1224,17 @@ export class ImplementationGuide {
       return this.useContext;
   }
 
+  /**
+  * Gets the current value of field useContext if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseContextOrElse(defaultValue: UsageContext[]): UsageContext[] {
+      if (this.useContext == undefined || this.useContext == null ) { return defaultValue; }
+      return this.useContext;
+  }
+
   public addJurisdiction(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.jurisdiction) !== 'undefined') {
@@ -1107,6 +1283,17 @@ export class ImplementationGuide {
       return this.jurisdiction;
   }
 
+  /**
+  * Gets the current value of field jurisdiction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getJurisdictionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.jurisdiction == undefined || this.jurisdiction == null ) { return defaultValue; }
+      return this.jurisdiction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1135,6 +1322,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getCopyright(): string | undefined {
+      return this.copyright;
+  }
+
+  /**
+  * Gets the current value of field copyright if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCopyrightOrElse(defaultValue: string): string {
+      if (this.copyright == undefined || this.copyright == null ) { return defaultValue; }
       return this.copyright;
   }
 
@@ -1169,6 +1367,17 @@ export class ImplementationGuide {
       return this.packageId;
   }
 
+  /**
+  * Gets the current value of field packageId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPackageIdOrElse(defaultValue: string): string {
+      if (this.packageId == undefined || this.packageId == null ) { return defaultValue; }
+      return this.packageId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1198,6 +1407,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getLicense(): string | undefined {
+      return this.license;
+  }
+
+  /**
+  * Gets the current value of field license if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLicenseOrElse(defaultValue: string): string {
+      if (this.license == undefined || this.license == null ) { return defaultValue; }
       return this.license;
   }
 
@@ -1249,6 +1469,17 @@ export class ImplementationGuide {
       return this.fhirVersion;
   }
 
+  /**
+  * Gets the current value of field fhirVersion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFhirVersionOrElse(defaultValue: string[]): string[] {
+      if (this.fhirVersion == undefined || this.fhirVersion == null ) { return defaultValue; }
+      return this.fhirVersion;
+  }
+
   public add_fhirVersion(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._fhirVersion) !== 'undefined') {
@@ -1294,6 +1525,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public get_fhirVersion(): Element[] | undefined {
+      return this._fhirVersion;
+  }
+
+  /**
+  * Gets the current value of field _fhirVersion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_fhirVersionOrElse(defaultValue: Element[]): Element[] {
+      if (this._fhirVersion == undefined || this._fhirVersion == null ) { return defaultValue; }
       return this._fhirVersion;
   }
 
@@ -1345,6 +1587,17 @@ export class ImplementationGuide {
       return this.dependsOn;
   }
 
+  /**
+  * Gets the current value of field dependsOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDependsOnOrElse(defaultValue: ImplementationGuideDependsOn[]): ImplementationGuideDependsOn[] {
+      if (this.dependsOn == undefined || this.dependsOn == null ) { return defaultValue; }
+      return this.dependsOn;
+  }
+
   public addGlobal(newValue: ImplementationGuideGlobal) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.global) !== 'undefined') {
@@ -1390,6 +1643,17 @@ export class ImplementationGuide {
   * @returns the value  or undefined
   */
   public getGlobal(): ImplementationGuideGlobal[] | undefined {
+      return this.global;
+  }
+
+  /**
+  * Gets the current value of field global if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGlobalOrElse(defaultValue: ImplementationGuideGlobal[]): ImplementationGuideGlobal[] {
+      if (this.global == undefined || this.global == null ) { return defaultValue; }
       return this.global;
   }
 

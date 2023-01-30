@@ -115,6 +115,17 @@ export class ImplementationGuideDefinition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -160,6 +171,17 @@ export class ImplementationGuideDefinition {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -211,6 +233,17 @@ export class ImplementationGuideDefinition {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addGrouping(newValue: ImplementationGuideGrouping) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.grouping) !== 'undefined') {
@@ -256,6 +289,17 @@ export class ImplementationGuideDefinition {
   * @returns the value  or undefined
   */
   public getGrouping(): ImplementationGuideGrouping[] | undefined {
+      return this.grouping;
+  }
+
+  /**
+  * Gets the current value of field grouping if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGroupingOrElse(defaultValue: ImplementationGuideGrouping[]): ImplementationGuideGrouping[] {
+      if (this.grouping == undefined || this.grouping == null ) { return defaultValue; }
       return this.grouping;
   }
 
@@ -307,6 +351,17 @@ export class ImplementationGuideDefinition {
       return this.resource;
   }
 
+  /**
+  * Gets the current value of field resource if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getResourceOrElse(defaultValue: ImplementationGuideResource[]): ImplementationGuideResource[] {
+      if (this.resource == undefined || this.resource == null ) { return defaultValue; }
+      return this.resource;
+  }
+
   public addParameter(newValue: ImplementationGuideParameter) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.parameter) !== 'undefined') {
@@ -355,6 +410,17 @@ export class ImplementationGuideDefinition {
       return this.parameter;
   }
 
+  /**
+  * Gets the current value of field parameter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParameterOrElse(defaultValue: ImplementationGuideParameter[]): ImplementationGuideParameter[] {
+      if (this.parameter == undefined || this.parameter == null ) { return defaultValue; }
+      return this.parameter;
+  }
+
   public addTemplate(newValue: ImplementationGuideTemplate) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.template) !== 'undefined') {
@@ -400,6 +466,17 @@ export class ImplementationGuideDefinition {
   * @returns the value  or undefined
   */
   public getTemplate(): ImplementationGuideTemplate[] | undefined {
+      return this.template;
+  }
+
+  /**
+  * Gets the current value of field template if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTemplateOrElse(defaultValue: ImplementationGuideTemplate[]): ImplementationGuideTemplate[] {
+      if (this.template == undefined || this.template == null ) { return defaultValue; }
       return this.template;
   }
 

@@ -97,6 +97,17 @@ export class DeviceProperty {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -142,6 +153,17 @@ export class DeviceProperty {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -193,6 +215,17 @@ export class DeviceProperty {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addValueQuantity(newValue: Quantity) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.valueQuantity) !== 'undefined') {
@@ -241,6 +274,17 @@ export class DeviceProperty {
       return this.valueQuantity;
   }
 
+  /**
+  * Gets the current value of field valueQuantity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueQuantityOrElse(defaultValue: Quantity[]): Quantity[] {
+      if (this.valueQuantity == undefined || this.valueQuantity == null ) { return defaultValue; }
+      return this.valueQuantity;
+  }
+
   public addValueCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.valueCode) !== 'undefined') {
@@ -286,6 +330,17 @@ export class DeviceProperty {
   * @returns the value  or undefined
   */
   public getValueCode(): CodeableConcept[] | undefined {
+      return this.valueCode;
+  }
+
+  /**
+  * Gets the current value of field valueCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.valueCode == undefined || this.valueCode == null ) { return defaultValue; }
       return this.valueCode;
   }
 

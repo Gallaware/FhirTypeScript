@@ -90,6 +90,17 @@ export class AdverseEventSuspectEntity {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -135,6 +146,17 @@ export class AdverseEventSuspectEntity {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -186,6 +208,17 @@ export class AdverseEventSuspectEntity {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addCausality(newValue: AdverseEventCausality) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.causality) !== 'undefined') {
@@ -231,6 +264,17 @@ export class AdverseEventSuspectEntity {
   * @returns the value  or undefined
   */
   public getCausality(): AdverseEventCausality[] | undefined {
+      return this.causality;
+  }
+
+  /**
+  * Gets the current value of field causality if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCausalityOrElse(defaultValue: AdverseEventCausality[]): AdverseEventCausality[] {
+      if (this.causality == undefined || this.causality == null ) { return defaultValue; }
       return this.causality;
   }
 

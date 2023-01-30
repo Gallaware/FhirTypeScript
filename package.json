@@ -4,7 +4,9 @@
   "description": "Implementation of FHIR JSON protocol using TypeScript. Includes valid values and multi-language oriented display labels.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["/dist"],
+  "files": [
+    "/dist"
+  ],
   "directories": {
     "test": "test"
   },
@@ -15,7 +17,8 @@
   },
   "scripts": {
     "test": "",
-    "debug": "node --inspect-brk --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage"
+    "debug": "node --inspect-brk --expose-gc ./node_modules/.bin/jest --runInBand --logHeapUsage",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
@@ -39,6 +42,7 @@
   "homepage": "https://github.com/Gallaware/FhirTypeScript#readme",
   "devDependencies": {
     "@types/node": "^18.7.6",
+    "jasmine": "^4.5.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.0"
   }

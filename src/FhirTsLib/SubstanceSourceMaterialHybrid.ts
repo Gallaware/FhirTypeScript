@@ -140,6 +140,17 @@ export class SubstanceSourceMaterialHybrid {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -185,6 +196,17 @@ export class SubstanceSourceMaterialHybrid {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -236,6 +258,17 @@ export class SubstanceSourceMaterialHybrid {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -264,6 +297,17 @@ export class SubstanceSourceMaterialHybrid {
   * @returns the value  or undefined
   */
   public getMaternalOrganismId(): string | undefined {
+      return this.maternalOrganismId;
+  }
+
+  /**
+  * Gets the current value of field maternalOrganismId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaternalOrganismIdOrElse(defaultValue: string): string {
+      if (this.maternalOrganismId == undefined || this.maternalOrganismId == null ) { return defaultValue; }
       return this.maternalOrganismId;
   }
 
@@ -298,6 +342,17 @@ export class SubstanceSourceMaterialHybrid {
       return this.maternalOrganismName;
   }
 
+  /**
+  * Gets the current value of field maternalOrganismName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaternalOrganismNameOrElse(defaultValue: string): string {
+      if (this.maternalOrganismName == undefined || this.maternalOrganismName == null ) { return defaultValue; }
+      return this.maternalOrganismName;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -329,6 +384,17 @@ export class SubstanceSourceMaterialHybrid {
       return this.paternalOrganismId;
   }
 
+  /**
+  * Gets the current value of field paternalOrganismId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPaternalOrganismIdOrElse(defaultValue: string): string {
+      if (this.paternalOrganismId == undefined || this.paternalOrganismId == null ) { return defaultValue; }
+      return this.paternalOrganismId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -357,6 +423,17 @@ export class SubstanceSourceMaterialHybrid {
   * @returns the value  or undefined
   */
   public getPaternalOrganismName(): string | undefined {
+      return this.paternalOrganismName;
+  }
+
+  /**
+  * Gets the current value of field paternalOrganismName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPaternalOrganismNameOrElse(defaultValue: string): string {
+      if (this.paternalOrganismName == undefined || this.paternalOrganismName == null ) { return defaultValue; }
       return this.paternalOrganismName;
   }
 

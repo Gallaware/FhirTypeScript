@@ -182,6 +182,17 @@ export class ExampleScenarioOperation {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -227,6 +238,17 @@ export class ExampleScenarioOperation {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -278,6 +300,17 @@ export class ExampleScenarioOperation {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -306,6 +339,17 @@ export class ExampleScenarioOperation {
   * @returns the value  or undefined
   */
   public getNumber(): string | undefined {
+      return this.number;
+  }
+
+  /**
+  * Gets the current value of field number if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNumberOrElse(defaultValue: string): string {
+      if (this.number == undefined || this.number == null ) { return defaultValue; }
       return this.number;
   }
 
@@ -340,6 +384,17 @@ export class ExampleScenarioOperation {
       return this.type;
   }
 
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
+      return this.type;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -368,6 +423,17 @@ export class ExampleScenarioOperation {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -402,6 +468,17 @@ export class ExampleScenarioOperation {
       return this.initiator;
   }
 
+  /**
+  * Gets the current value of field initiator if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInitiatorOrElse(defaultValue: string): string {
+      if (this.initiator == undefined || this.initiator == null ) { return defaultValue; }
+      return this.initiator;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -433,6 +510,17 @@ export class ExampleScenarioOperation {
       return this.receiver;
   }
 
+  /**
+  * Gets the current value of field receiver if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReceiverOrElse(defaultValue: string): string {
+      if (this.receiver == undefined || this.receiver == null ) { return defaultValue; }
+      return this.receiver;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -461,6 +549,17 @@ export class ExampleScenarioOperation {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 

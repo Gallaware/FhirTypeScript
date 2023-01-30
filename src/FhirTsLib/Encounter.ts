@@ -460,6 +460,17 @@ export class Encounter {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -491,6 +502,17 @@ export class Encounter {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -519,6 +541,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -570,6 +603,17 @@ export class Encounter {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -615,6 +659,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -666,6 +721,17 @@ export class Encounter {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -714,6 +780,17 @@ export class Encounter {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -743,6 +820,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -794,6 +882,17 @@ export class Encounter {
       return this.statusHistory;
   }
 
+  /**
+  * Gets the current value of field statusHistory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusHistoryOrElse(defaultValue: EncounterStatusHistory[]): EncounterStatusHistory[] {
+      if (this.statusHistory == undefined || this.statusHistory == null ) { return defaultValue; }
+      return this.statusHistory;
+  }
+
   public addClassHistory(newValue: EncounterClassHistory) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.classHistory) !== 'undefined') {
@@ -839,6 +938,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getClassHistory(): EncounterClassHistory[] | undefined {
+      return this.classHistory;
+  }
+
+  /**
+  * Gets the current value of field classHistory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getClassHistoryOrElse(defaultValue: EncounterClassHistory[]): EncounterClassHistory[] {
+      if (this.classHistory == undefined || this.classHistory == null ) { return defaultValue; }
       return this.classHistory;
   }
 
@@ -890,6 +1000,17 @@ export class Encounter {
       return this.type;
   }
 
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
+      return this.type;
+  }
+
   public addEpisodeOfCare(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.episodeOfCare) !== 'undefined') {
@@ -935,6 +1056,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getEpisodeOfCare(): Reference[] | undefined {
+      return this.episodeOfCare;
+  }
+
+  /**
+  * Gets the current value of field episodeOfCare if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEpisodeOfCareOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.episodeOfCare == undefined || this.episodeOfCare == null ) { return defaultValue; }
       return this.episodeOfCare;
   }
 
@@ -986,6 +1118,17 @@ export class Encounter {
       return this.basedOn;
   }
 
+  /**
+  * Gets the current value of field basedOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBasedOnOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.basedOn == undefined || this.basedOn == null ) { return defaultValue; }
+      return this.basedOn;
+  }
+
   public addParticipant(newValue: EncounterParticipant) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.participant) !== 'undefined') {
@@ -1031,6 +1174,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getParticipant(): EncounterParticipant[] | undefined {
+      return this.participant;
+  }
+
+  /**
+  * Gets the current value of field participant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantOrElse(defaultValue: EncounterParticipant[]): EncounterParticipant[] {
+      if (this.participant == undefined || this.participant == null ) { return defaultValue; }
       return this.participant;
   }
 
@@ -1082,6 +1236,17 @@ export class Encounter {
       return this.appointment;
   }
 
+  /**
+  * Gets the current value of field appointment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAppointmentOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.appointment == undefined || this.appointment == null ) { return defaultValue; }
+      return this.appointment;
+  }
+
   public addReasonCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonCode) !== 'undefined') {
@@ -1127,6 +1292,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getReasonCode(): CodeableConcept[] | undefined {
+      return this.reasonCode;
+  }
+
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
       return this.reasonCode;
   }
 
@@ -1178,6 +1354,17 @@ export class Encounter {
       return this.reasonReference;
   }
 
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
+      return this.reasonReference;
+  }
+
   public addDiagnosis(newValue: EncounterDiagnosis) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.diagnosis) !== 'undefined') {
@@ -1223,6 +1410,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getDiagnosis(): EncounterDiagnosis[] | undefined {
+      return this.diagnosis;
+  }
+
+  /**
+  * Gets the current value of field diagnosis if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDiagnosisOrElse(defaultValue: EncounterDiagnosis[]): EncounterDiagnosis[] {
+      if (this.diagnosis == undefined || this.diagnosis == null ) { return defaultValue; }
       return this.diagnosis;
   }
 
@@ -1274,6 +1472,17 @@ export class Encounter {
       return this.account;
   }
 
+  /**
+  * Gets the current value of field account if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAccountOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.account == undefined || this.account == null ) { return defaultValue; }
+      return this.account;
+  }
+
   public addLocation(newValue: EncounterLocation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.location) !== 'undefined') {
@@ -1319,6 +1528,17 @@ export class Encounter {
   * @returns the value  or undefined
   */
   public getLocation(): EncounterLocation[] | undefined {
+      return this.location;
+  }
+
+  /**
+  * Gets the current value of field location if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLocationOrElse(defaultValue: EncounterLocation[]): EncounterLocation[] {
+      if (this.location == undefined || this.location == null ) { return defaultValue; }
       return this.location;
   }
 

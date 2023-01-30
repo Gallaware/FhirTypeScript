@@ -140,6 +140,17 @@ export class SubstanceSpecificationStructure {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -185,6 +196,17 @@ export class SubstanceSpecificationStructure {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -236,6 +258,17 @@ export class SubstanceSpecificationStructure {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -267,6 +300,17 @@ export class SubstanceSpecificationStructure {
       return this.molecularFormula;
   }
 
+  /**
+  * Gets the current value of field molecularFormula if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMolecularFormulaOrElse(defaultValue: string): string {
+      if (this.molecularFormula == undefined || this.molecularFormula == null ) { return defaultValue; }
+      return this.molecularFormula;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -295,6 +339,17 @@ export class SubstanceSpecificationStructure {
   * @returns the value  or undefined
   */
   public getMolecularFormulaByMoiety(): string | undefined {
+      return this.molecularFormulaByMoiety;
+  }
+
+  /**
+  * Gets the current value of field molecularFormulaByMoiety if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMolecularFormulaByMoietyOrElse(defaultValue: string): string {
+      if (this.molecularFormulaByMoiety == undefined || this.molecularFormulaByMoiety == null ) { return defaultValue; }
       return this.molecularFormulaByMoiety;
   }
 
@@ -346,6 +401,17 @@ export class SubstanceSpecificationStructure {
       return this.isotope;
   }
 
+  /**
+  * Gets the current value of field isotope if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIsotopeOrElse(defaultValue: SubstanceSpecificationIsotope[]): SubstanceSpecificationIsotope[] {
+      if (this.isotope == undefined || this.isotope == null ) { return defaultValue; }
+      return this.isotope;
+  }
+
   public addSource(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.source) !== 'undefined') {
@@ -394,6 +460,17 @@ export class SubstanceSpecificationStructure {
       return this.source;
   }
 
+  /**
+  * Gets the current value of field source if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.source == undefined || this.source == null ) { return defaultValue; }
+      return this.source;
+  }
+
   public addRepresentation(newValue: SubstanceSpecificationRepresentation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.representation) !== 'undefined') {
@@ -439,6 +516,17 @@ export class SubstanceSpecificationStructure {
   * @returns the value  or undefined
   */
   public getRepresentation(): SubstanceSpecificationRepresentation[] | undefined {
+      return this.representation;
+  }
+
+  /**
+  * Gets the current value of field representation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRepresentationOrElse(defaultValue: SubstanceSpecificationRepresentation[]): SubstanceSpecificationRepresentation[] {
+      if (this.representation == undefined || this.representation == null ) { return defaultValue; }
       return this.representation;
   }
 

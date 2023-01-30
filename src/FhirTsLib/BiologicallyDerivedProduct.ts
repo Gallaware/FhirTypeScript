@@ -380,6 +380,17 @@ export class BiologicallyDerivedProduct {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -411,6 +422,17 @@ export class BiologicallyDerivedProduct {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -439,6 +461,17 @@ export class BiologicallyDerivedProduct {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -490,6 +523,17 @@ export class BiologicallyDerivedProduct {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -535,6 +579,17 @@ export class BiologicallyDerivedProduct {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -586,6 +641,17 @@ export class BiologicallyDerivedProduct {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -634,6 +700,17 @@ export class BiologicallyDerivedProduct {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -666,6 +743,17 @@ export class BiologicallyDerivedProduct {
       return this.productCategory;
   }
 
+  /**
+  * Gets the current value of field productCategory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProductCategoryOrElse(defaultValue: string): string {
+      if (this.productCategory == undefined || this.productCategory == null ) { return defaultValue; }
+      return this.productCategory;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -695,6 +783,17 @@ export class BiologicallyDerivedProduct {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -746,6 +845,17 @@ export class BiologicallyDerivedProduct {
       return this.request;
   }
 
+  /**
+  * Gets the current value of field request if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequestOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.request == undefined || this.request == null ) { return defaultValue; }
+      return this.request;
+  }
+
   public addParent(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.parent) !== 'undefined') {
@@ -791,6 +901,17 @@ export class BiologicallyDerivedProduct {
   * @returns the value  or undefined
   */
   public getParent(): Reference[] | undefined {
+      return this.parent;
+  }
+
+  /**
+  * Gets the current value of field parent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParentOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.parent == undefined || this.parent == null ) { return defaultValue; }
       return this.parent;
   }
 
@@ -842,6 +963,17 @@ export class BiologicallyDerivedProduct {
       return this.processing;
   }
 
+  /**
+  * Gets the current value of field processing if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcessingOrElse(defaultValue: BiologicallyDerivedProductProcessing[]): BiologicallyDerivedProductProcessing[] {
+      if (this.processing == undefined || this.processing == null ) { return defaultValue; }
+      return this.processing;
+  }
+
   public addStorage(newValue: BiologicallyDerivedProductStorage) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.storage) !== 'undefined') {
@@ -887,6 +1019,17 @@ export class BiologicallyDerivedProduct {
   * @returns the value  or undefined
   */
   public getStorage(): BiologicallyDerivedProductStorage[] | undefined {
+      return this.storage;
+  }
+
+  /**
+  * Gets the current value of field storage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStorageOrElse(defaultValue: BiologicallyDerivedProductStorage[]): BiologicallyDerivedProductStorage[] {
+      if (this.storage == undefined || this.storage == null ) { return defaultValue; }
       return this.storage;
   }
 

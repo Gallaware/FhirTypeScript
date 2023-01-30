@@ -153,6 +153,17 @@ export class CoverageEligibilityRequestItem {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -198,6 +209,17 @@ export class CoverageEligibilityRequestItem {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -249,6 +271,17 @@ export class CoverageEligibilityRequestItem {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addSupportingInfoSequence(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.supportingInfoSequence) !== 'undefined') {
@@ -294,6 +327,17 @@ export class CoverageEligibilityRequestItem {
   * @returns the value  or undefined
   */
   public getSupportingInfoSequence(): number[] | undefined {
+      return this.supportingInfoSequence;
+  }
+
+  /**
+  * Gets the current value of field supportingInfoSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInfoSequenceOrElse(defaultValue: number[]): number[] {
+      if (this.supportingInfoSequence == undefined || this.supportingInfoSequence == null ) { return defaultValue; }
       return this.supportingInfoSequence;
   }
 
@@ -345,6 +389,17 @@ export class CoverageEligibilityRequestItem {
       return this._supportingInfoSequence;
   }
 
+  /**
+  * Gets the current value of field _supportingInfoSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_supportingInfoSequenceOrElse(defaultValue: Element[]): Element[] {
+      if (this._supportingInfoSequence == undefined || this._supportingInfoSequence == null ) { return defaultValue; }
+      return this._supportingInfoSequence;
+  }
+
   public addModifier(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.modifier) !== 'undefined') {
@@ -390,6 +445,17 @@ export class CoverageEligibilityRequestItem {
   * @returns the value  or undefined
   */
   public getModifier(): CodeableConcept[] | undefined {
+      return this.modifier;
+  }
+
+  /**
+  * Gets the current value of field modifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.modifier == undefined || this.modifier == null ) { return defaultValue; }
       return this.modifier;
   }
 
@@ -441,6 +507,17 @@ export class CoverageEligibilityRequestItem {
       return this.diagnosis;
   }
 
+  /**
+  * Gets the current value of field diagnosis if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDiagnosisOrElse(defaultValue: CoverageEligibilityRequestDiagnosis[]): CoverageEligibilityRequestDiagnosis[] {
+      if (this.diagnosis == undefined || this.diagnosis == null ) { return defaultValue; }
+      return this.diagnosis;
+  }
+
   public addDetail(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.detail) !== 'undefined') {
@@ -486,6 +563,17 @@ export class CoverageEligibilityRequestItem {
   * @returns the value  or undefined
   */
   public getDetail(): Reference[] | undefined {
+      return this.detail;
+  }
+
+  /**
+  * Gets the current value of field detail if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDetailOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.detail == undefined || this.detail == null ) { return defaultValue; }
       return this.detail;
   }
 

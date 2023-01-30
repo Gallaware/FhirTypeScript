@@ -96,6 +96,17 @@ export class ChargeItemDefinitionPropertyGroup {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -141,6 +152,17 @@ export class ChargeItemDefinitionPropertyGroup {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -192,6 +214,17 @@ export class ChargeItemDefinitionPropertyGroup {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addApplicability(newValue: ChargeItemDefinitionApplicability) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.applicability) !== 'undefined') {
@@ -240,6 +273,17 @@ export class ChargeItemDefinitionPropertyGroup {
       return this.applicability;
   }
 
+  /**
+  * Gets the current value of field applicability if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getApplicabilityOrElse(defaultValue: ChargeItemDefinitionApplicability[]): ChargeItemDefinitionApplicability[] {
+      if (this.applicability == undefined || this.applicability == null ) { return defaultValue; }
+      return this.applicability;
+  }
+
   public addPriceComponent(newValue: ChargeItemDefinitionPriceComponent) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.priceComponent) !== 'undefined') {
@@ -285,6 +329,17 @@ export class ChargeItemDefinitionPropertyGroup {
   * @returns the value  or undefined
   */
   public getPriceComponent(): ChargeItemDefinitionPriceComponent[] | undefined {
+      return this.priceComponent;
+  }
+
+  /**
+  * Gets the current value of field priceComponent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPriceComponentOrElse(defaultValue: ChargeItemDefinitionPriceComponent[]): ChargeItemDefinitionPriceComponent[] {
+      if (this.priceComponent == undefined || this.priceComponent == null ) { return defaultValue; }
       return this.priceComponent;
   }
 

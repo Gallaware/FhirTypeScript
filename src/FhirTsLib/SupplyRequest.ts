@@ -434,6 +434,17 @@ export class SupplyRequest {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -465,6 +476,17 @@ export class SupplyRequest {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -493,6 +515,17 @@ export class SupplyRequest {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -544,6 +577,17 @@ export class SupplyRequest {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -589,6 +633,17 @@ export class SupplyRequest {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -640,6 +695,17 @@ export class SupplyRequest {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -688,6 +754,17 @@ export class SupplyRequest {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -720,6 +797,17 @@ export class SupplyRequest {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -748,6 +836,17 @@ export class SupplyRequest {
   * @returns the value  or undefined
   */
   public getPriority(): string | undefined {
+      return this.priority;
+  }
+
+  /**
+  * Gets the current value of field priority if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPriorityOrElse(defaultValue: string): string {
+      if (this.priority == undefined || this.priority == null ) { return defaultValue; }
       return this.priority;
   }
 
@@ -799,6 +898,17 @@ export class SupplyRequest {
       return this.parameter;
   }
 
+  /**
+  * Gets the current value of field parameter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParameterOrElse(defaultValue: SupplyRequestParameter[]): SupplyRequestParameter[] {
+      if (this.parameter == undefined || this.parameter == null ) { return defaultValue; }
+      return this.parameter;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -830,6 +940,17 @@ export class SupplyRequest {
       return this.occurrenceDateTime;
   }
 
+  /**
+  * Gets the current value of field occurrenceDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOccurrenceDateTimeOrElse(defaultValue: string): string {
+      if (this.occurrenceDateTime == undefined || this.occurrenceDateTime == null ) { return defaultValue; }
+      return this.occurrenceDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -858,6 +979,17 @@ export class SupplyRequest {
   * @returns the value  or undefined
   */
   public getAuthoredOn(): string | undefined {
+      return this.authoredOn;
+  }
+
+  /**
+  * Gets the current value of field authoredOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAuthoredOnOrElse(defaultValue: string): string {
+      if (this.authoredOn == undefined || this.authoredOn == null ) { return defaultValue; }
       return this.authoredOn;
   }
 
@@ -909,6 +1041,17 @@ export class SupplyRequest {
       return this.supplier;
   }
 
+  /**
+  * Gets the current value of field supplier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupplierOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supplier == undefined || this.supplier == null ) { return defaultValue; }
+      return this.supplier;
+  }
+
   public addReasonCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonCode) !== 'undefined') {
@@ -957,6 +1100,17 @@ export class SupplyRequest {
       return this.reasonCode;
   }
 
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
+      return this.reasonCode;
+  }
+
   public addReasonReference(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonReference) !== 'undefined') {
@@ -1002,6 +1156,17 @@ export class SupplyRequest {
   * @returns the value  or undefined
   */
   public getReasonReference(): Reference[] | undefined {
+      return this.reasonReference;
+  }
+
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
       return this.reasonReference;
   }
 

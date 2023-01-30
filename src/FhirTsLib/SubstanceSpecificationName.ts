@@ -162,6 +162,17 @@ export class SubstanceSpecificationName {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -207,6 +218,17 @@ export class SubstanceSpecificationName {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -258,6 +280,17 @@ export class SubstanceSpecificationName {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -286,6 +319,17 @@ export class SubstanceSpecificationName {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -337,6 +381,17 @@ export class SubstanceSpecificationName {
       return this.language;
   }
 
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
+      return this.language;
+  }
+
   public addDomain(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.domain) !== 'undefined') {
@@ -382,6 +437,17 @@ export class SubstanceSpecificationName {
   * @returns the value  or undefined
   */
   public getDomain(): CodeableConcept[] | undefined {
+      return this.domain;
+  }
+
+  /**
+  * Gets the current value of field domain if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDomainOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.domain == undefined || this.domain == null ) { return defaultValue; }
       return this.domain;
   }
 
@@ -433,6 +499,17 @@ export class SubstanceSpecificationName {
       return this.jurisdiction;
   }
 
+  /**
+  * Gets the current value of field jurisdiction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getJurisdictionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.jurisdiction == undefined || this.jurisdiction == null ) { return defaultValue; }
+      return this.jurisdiction;
+  }
+
   public addSynonym(newValue: SubstanceSpecificationName) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.synonym) !== 'undefined') {
@@ -478,6 +555,17 @@ export class SubstanceSpecificationName {
   * @returns the value  or undefined
   */
   public getSynonym(): SubstanceSpecificationName[] | undefined {
+      return this.synonym;
+  }
+
+  /**
+  * Gets the current value of field synonym if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSynonymOrElse(defaultValue: SubstanceSpecificationName[]): SubstanceSpecificationName[] {
+      if (this.synonym == undefined || this.synonym == null ) { return defaultValue; }
       return this.synonym;
   }
 
@@ -529,6 +617,17 @@ export class SubstanceSpecificationName {
       return this.translation;
   }
 
+  /**
+  * Gets the current value of field translation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTranslationOrElse(defaultValue: SubstanceSpecificationName[]): SubstanceSpecificationName[] {
+      if (this.translation == undefined || this.translation == null ) { return defaultValue; }
+      return this.translation;
+  }
+
   public addOfficial(newValue: SubstanceSpecificationOfficial) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.official) !== 'undefined') {
@@ -577,6 +676,17 @@ export class SubstanceSpecificationName {
       return this.official;
   }
 
+  /**
+  * Gets the current value of field official if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOfficialOrElse(defaultValue: SubstanceSpecificationOfficial[]): SubstanceSpecificationOfficial[] {
+      if (this.official == undefined || this.official == null ) { return defaultValue; }
+      return this.official;
+  }
+
   public addSource(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.source) !== 'undefined') {
@@ -622,6 +732,17 @@ export class SubstanceSpecificationName {
   * @returns the value  or undefined
   */
   public getSource(): Reference[] | undefined {
+      return this.source;
+  }
+
+  /**
+  * Gets the current value of field source if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.source == undefined || this.source == null ) { return defaultValue; }
       return this.source;
   }
 

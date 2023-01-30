@@ -160,6 +160,17 @@ export class MedicinalProductPackagedPackageItem {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -205,6 +216,17 @@ export class MedicinalProductPackagedPackageItem {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -256,6 +278,17 @@ export class MedicinalProductPackagedPackageItem {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -301,6 +334,17 @@ export class MedicinalProductPackagedPackageItem {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -352,6 +396,17 @@ export class MedicinalProductPackagedPackageItem {
       return this.material;
   }
 
+  /**
+  * Gets the current value of field material if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaterialOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.material == undefined || this.material == null ) { return defaultValue; }
+      return this.material;
+  }
+
   public addAlternateMaterial(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.alternateMaterial) !== 'undefined') {
@@ -397,6 +452,17 @@ export class MedicinalProductPackagedPackageItem {
   * @returns the value  or undefined
   */
   public getAlternateMaterial(): CodeableConcept[] | undefined {
+      return this.alternateMaterial;
+  }
+
+  /**
+  * Gets the current value of field alternateMaterial if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAlternateMaterialOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.alternateMaterial == undefined || this.alternateMaterial == null ) { return defaultValue; }
       return this.alternateMaterial;
   }
 
@@ -448,6 +514,17 @@ export class MedicinalProductPackagedPackageItem {
       return this.device;
   }
 
+  /**
+  * Gets the current value of field device if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDeviceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.device == undefined || this.device == null ) { return defaultValue; }
+      return this.device;
+  }
+
   public addManufacturedItem(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.manufacturedItem) !== 'undefined') {
@@ -493,6 +570,17 @@ export class MedicinalProductPackagedPackageItem {
   * @returns the value  or undefined
   */
   public getManufacturedItem(): Reference[] | undefined {
+      return this.manufacturedItem;
+  }
+
+  /**
+  * Gets the current value of field manufacturedItem if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getManufacturedItemOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.manufacturedItem == undefined || this.manufacturedItem == null ) { return defaultValue; }
       return this.manufacturedItem;
   }
 
@@ -544,6 +632,17 @@ export class MedicinalProductPackagedPackageItem {
       return this.packageItem;
   }
 
+  /**
+  * Gets the current value of field packageItem if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPackageItemOrElse(defaultValue: MedicinalProductPackagedPackageItem[]): MedicinalProductPackagedPackageItem[] {
+      if (this.packageItem == undefined || this.packageItem == null ) { return defaultValue; }
+      return this.packageItem;
+  }
+
   public addOtherCharacteristics(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.otherCharacteristics) !== 'undefined') {
@@ -589,6 +688,17 @@ export class MedicinalProductPackagedPackageItem {
   * @returns the value  or undefined
   */
   public getOtherCharacteristics(): CodeableConcept[] | undefined {
+      return this.otherCharacteristics;
+  }
+
+  /**
+  * Gets the current value of field otherCharacteristics if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOtherCharacteristicsOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.otherCharacteristics == undefined || this.otherCharacteristics == null ) { return defaultValue; }
       return this.otherCharacteristics;
   }
 
@@ -640,6 +750,17 @@ export class MedicinalProductPackagedPackageItem {
       return this.shelfLifeStorage;
   }
 
+  /**
+  * Gets the current value of field shelfLifeStorage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getShelfLifeStorageOrElse(defaultValue: ProductShelfLife[]): ProductShelfLife[] {
+      if (this.shelfLifeStorage == undefined || this.shelfLifeStorage == null ) { return defaultValue; }
+      return this.shelfLifeStorage;
+  }
+
   public addManufacturer(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.manufacturer) !== 'undefined') {
@@ -685,6 +806,17 @@ export class MedicinalProductPackagedPackageItem {
   * @returns the value  or undefined
   */
   public getManufacturer(): Reference[] | undefined {
+      return this.manufacturer;
+  }
+
+  /**
+  * Gets the current value of field manufacturer if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getManufacturerOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.manufacturer == undefined || this.manufacturer == null ) { return defaultValue; }
       return this.manufacturer;
   }
 

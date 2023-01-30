@@ -417,6 +417,17 @@ export class MolecularSequence {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -448,6 +459,17 @@ export class MolecularSequence {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -476,6 +498,17 @@ export class MolecularSequence {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -527,6 +560,17 @@ export class MolecularSequence {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -572,6 +616,17 @@ export class MolecularSequence {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -623,6 +678,17 @@ export class MolecularSequence {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -671,6 +737,17 @@ export class MolecularSequence {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -700,6 +777,17 @@ export class MolecularSequence {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -751,6 +839,17 @@ export class MolecularSequence {
       return this.variant;
   }
 
+  /**
+  * Gets the current value of field variant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVariantOrElse(defaultValue: MolecularSequenceVariant[]): MolecularSequenceVariant[] {
+      if (this.variant == undefined || this.variant == null ) { return defaultValue; }
+      return this.variant;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -779,6 +878,17 @@ export class MolecularSequence {
   * @returns the value  or undefined
   */
   public getObservedSeq(): string | undefined {
+      return this.observedSeq;
+  }
+
+  /**
+  * Gets the current value of field observedSeq if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getObservedSeqOrElse(defaultValue: string): string {
+      if (this.observedSeq == undefined || this.observedSeq == null ) { return defaultValue; }
       return this.observedSeq;
   }
 
@@ -830,6 +940,17 @@ export class MolecularSequence {
       return this.quality;
   }
 
+  /**
+  * Gets the current value of field quality if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getQualityOrElse(defaultValue: MolecularSequenceQuality[]): MolecularSequenceQuality[] {
+      if (this.quality == undefined || this.quality == null ) { return defaultValue; }
+      return this.quality;
+  }
+
   public addRepository(newValue: MolecularSequenceRepository) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.repository) !== 'undefined') {
@@ -875,6 +996,17 @@ export class MolecularSequence {
   * @returns the value  or undefined
   */
   public getRepository(): MolecularSequenceRepository[] | undefined {
+      return this.repository;
+  }
+
+  /**
+  * Gets the current value of field repository if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRepositoryOrElse(defaultValue: MolecularSequenceRepository[]): MolecularSequenceRepository[] {
+      if (this.repository == undefined || this.repository == null ) { return defaultValue; }
       return this.repository;
   }
 
@@ -926,6 +1058,17 @@ export class MolecularSequence {
       return this.pointer;
   }
 
+  /**
+  * Gets the current value of field pointer if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPointerOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.pointer == undefined || this.pointer == null ) { return defaultValue; }
+      return this.pointer;
+  }
+
   public addStructureVariant(newValue: MolecularSequenceStructureVariant) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.structureVariant) !== 'undefined') {
@@ -971,6 +1114,17 @@ export class MolecularSequence {
   * @returns the value  or undefined
   */
   public getStructureVariant(): MolecularSequenceStructureVariant[] | undefined {
+      return this.structureVariant;
+  }
+
+  /**
+  * Gets the current value of field structureVariant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStructureVariantOrElse(defaultValue: MolecularSequenceStructureVariant[]): MolecularSequenceStructureVariant[] {
+      if (this.structureVariant == undefined || this.structureVariant == null ) { return defaultValue; }
       return this.structureVariant;
   }
 

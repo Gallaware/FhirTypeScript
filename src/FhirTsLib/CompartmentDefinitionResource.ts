@@ -115,6 +115,17 @@ export class CompartmentDefinitionResource {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -160,6 +171,17 @@ export class CompartmentDefinitionResource {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -211,6 +233,17 @@ export class CompartmentDefinitionResource {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -240,6 +273,17 @@ export class CompartmentDefinitionResource {
   * @returns the value  or undefined
   */
   public getCode(): string | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -291,6 +335,17 @@ export class CompartmentDefinitionResource {
       return this.param;
   }
 
+  /**
+  * Gets the current value of field param if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParamOrElse(defaultValue: string[]): string[] {
+      if (this.param == undefined || this.param == null ) { return defaultValue; }
+      return this.param;
+  }
+
   public add_param(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._param) !== 'undefined') {
@@ -339,6 +394,17 @@ export class CompartmentDefinitionResource {
       return this._param;
   }
 
+  /**
+  * Gets the current value of field _param if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_paramOrElse(defaultValue: Element[]): Element[] {
+      if (this._param == undefined || this._param == null ) { return defaultValue; }
+      return this._param;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -367,6 +433,17 @@ export class CompartmentDefinitionResource {
   * @returns the value  or undefined
   */
   public getDocumentation(): string | undefined {
+      return this.documentation;
+  }
+
+  /**
+  * Gets the current value of field documentation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDocumentationOrElse(defaultValue: string): string {
+      if (this.documentation == undefined || this.documentation == null ) { return defaultValue; }
       return this.documentation;
   }
 

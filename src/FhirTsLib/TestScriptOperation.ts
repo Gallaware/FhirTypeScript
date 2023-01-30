@@ -280,6 +280,17 @@ export class TestScriptOperation {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -325,6 +336,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -376,6 +398,17 @@ export class TestScriptOperation {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -404,6 +437,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getResource(): string | undefined {
+      return this.resource;
+  }
+
+  /**
+  * Gets the current value of field resource if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getResourceOrElse(defaultValue: string): string {
+      if (this.resource == undefined || this.resource == null ) { return defaultValue; }
       return this.resource;
   }
 
@@ -438,6 +482,17 @@ export class TestScriptOperation {
       return this.label;
   }
 
+  /**
+  * Gets the current value of field label if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLabelOrElse(defaultValue: string): string {
+      if (this.label == undefined || this.label == null ) { return defaultValue; }
+      return this.label;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -466,6 +521,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -500,6 +566,17 @@ export class TestScriptOperation {
       return this.accept;
   }
 
+  /**
+  * Gets the current value of field accept if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAcceptOrElse(defaultValue: string): string {
+      if (this.accept == undefined || this.accept == null ) { return defaultValue; }
+      return this.accept;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -528,6 +605,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getContentType(): string | undefined {
+      return this.contentType;
+  }
+
+  /**
+  * Gets the current value of field contentType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContentTypeOrElse(defaultValue: string): string {
+      if (this.contentType == undefined || this.contentType == null ) { return defaultValue; }
       return this.contentType;
   }
 
@@ -563,6 +651,17 @@ export class TestScriptOperation {
       return this.method;
   }
 
+  /**
+  * Gets the current value of field method if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMethodOrElse(defaultValue: string): string {
+      if (this.method == undefined || this.method == null ) { return defaultValue; }
+      return this.method;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -591,6 +690,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getParams(): string | undefined {
+      return this.params;
+  }
+
+  /**
+  * Gets the current value of field params if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParamsOrElse(defaultValue: string): string {
+      if (this.params == undefined || this.params == null ) { return defaultValue; }
       return this.params;
   }
 
@@ -642,6 +752,17 @@ export class TestScriptOperation {
       return this.requestHeader;
   }
 
+  /**
+  * Gets the current value of field requestHeader if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequestHeaderOrElse(defaultValue: TestScriptRequestHeader[]): TestScriptRequestHeader[] {
+      if (this.requestHeader == undefined || this.requestHeader == null ) { return defaultValue; }
+      return this.requestHeader;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -670,6 +791,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getRequestId(): string | undefined {
+      return this.requestId;
+  }
+
+  /**
+  * Gets the current value of field requestId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequestIdOrElse(defaultValue: string): string {
+      if (this.requestId == undefined || this.requestId == null ) { return defaultValue; }
       return this.requestId;
   }
 
@@ -704,6 +836,17 @@ export class TestScriptOperation {
       return this.responseId;
   }
 
+  /**
+  * Gets the current value of field responseId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getResponseIdOrElse(defaultValue: string): string {
+      if (this.responseId == undefined || this.responseId == null ) { return defaultValue; }
+      return this.responseId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -732,6 +875,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getSourceId(): string | undefined {
+      return this.sourceId;
+  }
+
+  /**
+  * Gets the current value of field sourceId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceIdOrElse(defaultValue: string): string {
+      if (this.sourceId == undefined || this.sourceId == null ) { return defaultValue; }
       return this.sourceId;
   }
 
@@ -766,6 +920,17 @@ export class TestScriptOperation {
       return this.targetId;
   }
 
+  /**
+  * Gets the current value of field targetId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetIdOrElse(defaultValue: string): string {
+      if (this.targetId == undefined || this.targetId == null ) { return defaultValue; }
+      return this.targetId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -794,6 +959,17 @@ export class TestScriptOperation {
   * @returns the value  or undefined
   */
   public getUrl(): string | undefined {
+      return this.url;
+  }
+
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
       return this.url;
   }
 

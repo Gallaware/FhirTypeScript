@@ -116,6 +116,17 @@ export class CarePlanActivity {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -161,6 +172,17 @@ export class CarePlanActivity {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -212,6 +234,17 @@ export class CarePlanActivity {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addOutcomeCodeableConcept(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.outcomeCodeableConcept) !== 'undefined') {
@@ -257,6 +290,17 @@ export class CarePlanActivity {
   * @returns the value  or undefined
   */
   public getOutcomeCodeableConcept(): CodeableConcept[] | undefined {
+      return this.outcomeCodeableConcept;
+  }
+
+  /**
+  * Gets the current value of field outcomeCodeableConcept if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeCodeableConceptOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.outcomeCodeableConcept == undefined || this.outcomeCodeableConcept == null ) { return defaultValue; }
       return this.outcomeCodeableConcept;
   }
 
@@ -308,6 +352,17 @@ export class CarePlanActivity {
       return this.outcomeReference;
   }
 
+  /**
+  * Gets the current value of field outcomeReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.outcomeReference == undefined || this.outcomeReference == null ) { return defaultValue; }
+      return this.outcomeReference;
+  }
+
   public addProgress(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.progress) !== 'undefined') {
@@ -353,6 +408,17 @@ export class CarePlanActivity {
   * @returns the value  or undefined
   */
   public getProgress(): Annotation[] | undefined {
+      return this.progress;
+  }
+
+  /**
+  * Gets the current value of field progress if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProgressOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.progress == undefined || this.progress == null ) { return defaultValue; }
       return this.progress;
   }
 

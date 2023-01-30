@@ -430,6 +430,17 @@ export class Coverage {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -461,6 +472,17 @@ export class Coverage {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -489,6 +511,17 @@ export class Coverage {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -540,6 +573,17 @@ export class Coverage {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -585,6 +629,17 @@ export class Coverage {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -636,6 +691,17 @@ export class Coverage {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -684,6 +750,17 @@ export class Coverage {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -712,6 +789,17 @@ export class Coverage {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -746,6 +834,17 @@ export class Coverage {
       return this.subscriberId;
   }
 
+  /**
+  * Gets the current value of field subscriberId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubscriberIdOrElse(defaultValue: string): string {
+      if (this.subscriberId == undefined || this.subscriberId == null ) { return defaultValue; }
+      return this.subscriberId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -774,6 +873,17 @@ export class Coverage {
   * @returns the value  or undefined
   */
   public getDependent(): string | undefined {
+      return this.dependent;
+  }
+
+  /**
+  * Gets the current value of field dependent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDependentOrElse(defaultValue: string): string {
+      if (this.dependent == undefined || this.dependent == null ) { return defaultValue; }
       return this.dependent;
   }
 
@@ -825,6 +935,17 @@ export class Coverage {
       return this.payor;
   }
 
+  /**
+  * Gets the current value of field payor if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPayorOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.payor == undefined || this.payor == null ) { return defaultValue; }
+      return this.payor;
+  }
+
   public addClass(newValue: CoverageClass) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.class) !== 'undefined') {
@@ -873,6 +994,17 @@ export class Coverage {
       return this.class;
   }
 
+  /**
+  * Gets the current value of field class if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getClassOrElse(defaultValue: CoverageClass[]): CoverageClass[] {
+      if (this.class == undefined || this.class == null ) { return defaultValue; }
+      return this.class;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -901,6 +1033,17 @@ export class Coverage {
   * @returns the value  or undefined
   */
   public getNetwork(): string | undefined {
+      return this.network;
+  }
+
+  /**
+  * Gets the current value of field network if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNetworkOrElse(defaultValue: string): string {
+      if (this.network == undefined || this.network == null ) { return defaultValue; }
       return this.network;
   }
 
@@ -952,6 +1095,17 @@ export class Coverage {
       return this.costToBeneficiary;
   }
 
+  /**
+  * Gets the current value of field costToBeneficiary if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCostToBeneficiaryOrElse(defaultValue: CoverageCostToBeneficiary[]): CoverageCostToBeneficiary[] {
+      if (this.costToBeneficiary == undefined || this.costToBeneficiary == null ) { return defaultValue; }
+      return this.costToBeneficiary;
+  }
+
   public addContract(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.contract) !== 'undefined') {
@@ -997,6 +1151,17 @@ export class Coverage {
   * @returns the value  or undefined
   */
   public getContract(): Reference[] | undefined {
+      return this.contract;
+  }
+
+  /**
+  * Gets the current value of field contract if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContractOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.contract == undefined || this.contract == null ) { return defaultValue; }
       return this.contract;
   }
 

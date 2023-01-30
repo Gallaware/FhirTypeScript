@@ -128,6 +128,17 @@ export class DocumentReferenceContext {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -173,6 +184,17 @@ export class DocumentReferenceContext {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -224,6 +246,17 @@ export class DocumentReferenceContext {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addEncounter(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.encounter) !== 'undefined') {
@@ -269,6 +302,17 @@ export class DocumentReferenceContext {
   * @returns the value  or undefined
   */
   public getEncounter(): Reference[] | undefined {
+      return this.encounter;
+  }
+
+  /**
+  * Gets the current value of field encounter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEncounterOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.encounter == undefined || this.encounter == null ) { return defaultValue; }
       return this.encounter;
   }
 
@@ -320,6 +364,17 @@ export class DocumentReferenceContext {
       return this.event;
   }
 
+  /**
+  * Gets the current value of field event if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEventOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.event == undefined || this.event == null ) { return defaultValue; }
+      return this.event;
+  }
+
   public addRelated(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.related) !== 'undefined') {
@@ -365,6 +420,17 @@ export class DocumentReferenceContext {
   * @returns the value  or undefined
   */
   public getRelated(): Reference[] | undefined {
+      return this.related;
+  }
+
+  /**
+  * Gets the current value of field related if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatedOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.related == undefined || this.related == null ) { return defaultValue; }
       return this.related;
   }
 

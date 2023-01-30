@@ -144,6 +144,17 @@ export class HumanName {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -192,6 +203,17 @@ export class HumanName {
       return this.extension;
   }
 
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
+      return this.extension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -221,6 +243,17 @@ export class HumanName {
   * @returns the value  or undefined
   */
   public getUse(): string | undefined {
+      return this.use;
+  }
+
+  /**
+  * Gets the current value of field use if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseOrElse(defaultValue: string): string {
+      if (this.use == undefined || this.use == null ) { return defaultValue; }
       return this.use;
   }
 
@@ -255,6 +288,17 @@ export class HumanName {
       return this.text;
   }
 
+  /**
+  * Gets the current value of field text if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTextOrElse(defaultValue: string): string {
+      if (this.text == undefined || this.text == null ) { return defaultValue; }
+      return this.text;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -283,6 +327,17 @@ export class HumanName {
   * @returns the value  or undefined
   */
   public getFamily(): string | undefined {
+      return this.family;
+  }
+
+  /**
+  * Gets the current value of field family if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFamilyOrElse(defaultValue: string): string {
+      if (this.family == undefined || this.family == null ) { return defaultValue; }
       return this.family;
   }
 
@@ -334,6 +389,17 @@ export class HumanName {
       return this.given;
   }
 
+  /**
+  * Gets the current value of field given if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGivenOrElse(defaultValue: string[]): string[] {
+      if (this.given == undefined || this.given == null ) { return defaultValue; }
+      return this.given;
+  }
+
   public add_given(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._given) !== 'undefined') {
@@ -379,6 +445,17 @@ export class HumanName {
   * @returns the value  or undefined
   */
   public get_given(): Element[] | undefined {
+      return this._given;
+  }
+
+  /**
+  * Gets the current value of field _given if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_givenOrElse(defaultValue: Element[]): Element[] {
+      if (this._given == undefined || this._given == null ) { return defaultValue; }
       return this._given;
   }
 
@@ -430,6 +507,17 @@ export class HumanName {
       return this.prefix;
   }
 
+  /**
+  * Gets the current value of field prefix if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrefixOrElse(defaultValue: string[]): string[] {
+      if (this.prefix == undefined || this.prefix == null ) { return defaultValue; }
+      return this.prefix;
+  }
+
   public add_prefix(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._prefix) !== 'undefined') {
@@ -475,6 +563,17 @@ export class HumanName {
   * @returns the value  or undefined
   */
   public get_prefix(): Element[] | undefined {
+      return this._prefix;
+  }
+
+  /**
+  * Gets the current value of field _prefix if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_prefixOrElse(defaultValue: Element[]): Element[] {
+      if (this._prefix == undefined || this._prefix == null ) { return defaultValue; }
       return this._prefix;
   }
 
@@ -526,6 +625,17 @@ export class HumanName {
       return this.suffix;
   }
 
+  /**
+  * Gets the current value of field suffix if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSuffixOrElse(defaultValue: string[]): string[] {
+      if (this.suffix == undefined || this.suffix == null ) { return defaultValue; }
+      return this.suffix;
+  }
+
   public add_suffix(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._suffix) !== 'undefined') {
@@ -571,6 +681,17 @@ export class HumanName {
   * @returns the value  or undefined
   */
   public get_suffix(): Element[] | undefined {
+      return this._suffix;
+  }
+
+  /**
+  * Gets the current value of field _suffix if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_suffixOrElse(defaultValue: Element[]): Element[] {
+      if (this._suffix == undefined || this._suffix == null ) { return defaultValue; }
       return this._suffix;
   }
 

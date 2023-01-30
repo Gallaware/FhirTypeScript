@@ -155,6 +155,17 @@ export class OperationOutcomeIssue {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -200,6 +211,17 @@ export class OperationOutcomeIssue {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -251,6 +273,17 @@ export class OperationOutcomeIssue {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -280,6 +313,17 @@ export class OperationOutcomeIssue {
   * @returns the value  or undefined
   */
   public getSeverity(): string | undefined {
+      return this.severity;
+  }
+
+  /**
+  * Gets the current value of field severity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSeverityOrElse(defaultValue: string): string {
+      if (this.severity == undefined || this.severity == null ) { return defaultValue; }
       return this.severity;
   }
 
@@ -315,6 +359,17 @@ export class OperationOutcomeIssue {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -343,6 +398,17 @@ export class OperationOutcomeIssue {
   * @returns the value  or undefined
   */
   public getDiagnostics(): string | undefined {
+      return this.diagnostics;
+  }
+
+  /**
+  * Gets the current value of field diagnostics if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDiagnosticsOrElse(defaultValue: string): string {
+      if (this.diagnostics == undefined || this.diagnostics == null ) { return defaultValue; }
       return this.diagnostics;
   }
 
@@ -394,6 +460,17 @@ export class OperationOutcomeIssue {
       return this.location;
   }
 
+  /**
+  * Gets the current value of field location if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLocationOrElse(defaultValue: string[]): string[] {
+      if (this.location == undefined || this.location == null ) { return defaultValue; }
+      return this.location;
+  }
+
   public add_location(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._location) !== 'undefined') {
@@ -439,6 +516,17 @@ export class OperationOutcomeIssue {
   * @returns the value  or undefined
   */
   public get_location(): Element[] | undefined {
+      return this._location;
+  }
+
+  /**
+  * Gets the current value of field _location if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_locationOrElse(defaultValue: Element[]): Element[] {
+      if (this._location == undefined || this._location == null ) { return defaultValue; }
       return this._location;
   }
 
@@ -490,6 +578,17 @@ export class OperationOutcomeIssue {
       return this.expression;
   }
 
+  /**
+  * Gets the current value of field expression if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExpressionOrElse(defaultValue: string[]): string[] {
+      if (this.expression == undefined || this.expression == null ) { return defaultValue; }
+      return this.expression;
+  }
+
   public add_expression(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._expression) !== 'undefined') {
@@ -535,6 +634,17 @@ export class OperationOutcomeIssue {
   * @returns the value  or undefined
   */
   public get_expression(): Element[] | undefined {
+      return this._expression;
+  }
+
+  /**
+  * Gets the current value of field _expression if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_expressionOrElse(defaultValue: Element[]): Element[] {
+      if (this._expression == undefined || this._expression == null ) { return defaultValue; }
       return this._expression;
   }
 

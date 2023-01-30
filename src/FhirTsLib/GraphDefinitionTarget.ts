@@ -123,6 +123,17 @@ export class GraphDefinitionTarget {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -168,6 +179,17 @@ export class GraphDefinitionTarget {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -219,6 +241,17 @@ export class GraphDefinitionTarget {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -248,6 +281,17 @@ export class GraphDefinitionTarget {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -282,6 +326,17 @@ export class GraphDefinitionTarget {
       return this.params;
   }
 
+  /**
+  * Gets the current value of field params if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParamsOrElse(defaultValue: string): string {
+      if (this.params == undefined || this.params == null ) { return defaultValue; }
+      return this.params;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -310,6 +365,17 @@ export class GraphDefinitionTarget {
   * @returns the value  or undefined
   */
   public getProfile(): string | undefined {
+      return this.profile;
+  }
+
+  /**
+  * Gets the current value of field profile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProfileOrElse(defaultValue: string): string {
+      if (this.profile == undefined || this.profile == null ) { return defaultValue; }
       return this.profile;
   }
 
@@ -361,6 +427,17 @@ export class GraphDefinitionTarget {
       return this.compartment;
   }
 
+  /**
+  * Gets the current value of field compartment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCompartmentOrElse(defaultValue: GraphDefinitionCompartment[]): GraphDefinitionCompartment[] {
+      if (this.compartment == undefined || this.compartment == null ) { return defaultValue; }
+      return this.compartment;
+  }
+
   public addLink(newValue: GraphDefinitionLink) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.link) !== 'undefined') {
@@ -406,6 +483,17 @@ export class GraphDefinitionTarget {
   * @returns the value  or undefined
   */
   public getLink(): GraphDefinitionLink[] | undefined {
+      return this.link;
+  }
+
+  /**
+  * Gets the current value of field link if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkOrElse(defaultValue: GraphDefinitionLink[]): GraphDefinitionLink[] {
+      if (this.link == undefined || this.link == null ) { return defaultValue; }
       return this.link;
   }
 

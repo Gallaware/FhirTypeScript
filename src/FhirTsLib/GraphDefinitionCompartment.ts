@@ -141,6 +141,17 @@ export class GraphDefinitionCompartment {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -186,6 +197,17 @@ export class GraphDefinitionCompartment {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -237,6 +259,17 @@ export class GraphDefinitionCompartment {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -269,6 +302,17 @@ export class GraphDefinitionCompartment {
       return this.use;
   }
 
+  /**
+  * Gets the current value of field use if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseOrElse(defaultValue: string): string {
+      if (this.use == undefined || this.use == null ) { return defaultValue; }
+      return this.use;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -297,6 +341,17 @@ export class GraphDefinitionCompartment {
   * @returns the value  or undefined
   */
   public getCode(): string | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -332,6 +387,17 @@ export class GraphDefinitionCompartment {
       return this.rule;
   }
 
+  /**
+  * Gets the current value of field rule if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRuleOrElse(defaultValue: string): string {
+      if (this.rule == undefined || this.rule == null ) { return defaultValue; }
+      return this.rule;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -363,6 +429,17 @@ export class GraphDefinitionCompartment {
       return this.expression;
   }
 
+  /**
+  * Gets the current value of field expression if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExpressionOrElse(defaultValue: string): string {
+      if (this.expression == undefined || this.expression == null ) { return defaultValue; }
+      return this.expression;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -391,6 +468,17 @@ export class GraphDefinitionCompartment {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 

@@ -114,6 +114,17 @@ export class MedicinalProductAuthorizationProcedure {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -159,6 +170,17 @@ export class MedicinalProductAuthorizationProcedure {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -210,6 +232,17 @@ export class MedicinalProductAuthorizationProcedure {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -238,6 +271,17 @@ export class MedicinalProductAuthorizationProcedure {
   * @returns the value  or undefined
   */
   public getDateDateTime(): string | undefined {
+      return this.dateDateTime;
+  }
+
+  /**
+  * Gets the current value of field dateDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateDateTimeOrElse(defaultValue: string): string {
+      if (this.dateDateTime == undefined || this.dateDateTime == null ) { return defaultValue; }
       return this.dateDateTime;
   }
 
@@ -286,6 +330,17 @@ export class MedicinalProductAuthorizationProcedure {
   * @returns the value  or undefined
   */
   public getApplication(): MedicinalProductAuthorizationProcedure[] | undefined {
+      return this.application;
+  }
+
+  /**
+  * Gets the current value of field application if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getApplicationOrElse(defaultValue: MedicinalProductAuthorizationProcedure[]): MedicinalProductAuthorizationProcedure[] {
+      if (this.application == undefined || this.application == null ) { return defaultValue; }
       return this.application;
   }
 

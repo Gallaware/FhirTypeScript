@@ -138,6 +138,17 @@ export class ElementDefinitionType {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -183,6 +194,17 @@ export class ElementDefinitionType {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -234,6 +256,17 @@ export class ElementDefinitionType {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -262,6 +295,17 @@ export class ElementDefinitionType {
   * @returns the value  or undefined
   */
   public getCode(): string | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -313,6 +357,17 @@ export class ElementDefinitionType {
       return this.profile;
   }
 
+  /**
+  * Gets the current value of field profile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProfileOrElse(defaultValue: string[]): string[] {
+      if (this.profile == undefined || this.profile == null ) { return defaultValue; }
+      return this.profile;
+  }
+
   public addTargetProfile(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.targetProfile) !== 'undefined') {
@@ -358,6 +413,17 @@ export class ElementDefinitionType {
   * @returns the value  or undefined
   */
   public getTargetProfile(): string[] | undefined {
+      return this.targetProfile;
+  }
+
+  /**
+  * Gets the current value of field targetProfile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetProfileOrElse(defaultValue: string[]): string[] {
+      if (this.targetProfile == undefined || this.targetProfile == null ) { return defaultValue; }
       return this.targetProfile;
   }
 
@@ -409,6 +475,17 @@ export class ElementDefinitionType {
       return this.aggregation;
   }
 
+  /**
+  * Gets the current value of field aggregation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAggregationOrElse(defaultValue: string[]): string[] {
+      if (this.aggregation == undefined || this.aggregation == null ) { return defaultValue; }
+      return this.aggregation;
+  }
+
   public add_aggregation(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._aggregation) !== 'undefined') {
@@ -457,6 +534,17 @@ export class ElementDefinitionType {
       return this._aggregation;
   }
 
+  /**
+  * Gets the current value of field _aggregation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_aggregationOrElse(defaultValue: Element[]): Element[] {
+      if (this._aggregation == undefined || this._aggregation == null ) { return defaultValue; }
+      return this._aggregation;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -486,6 +574,17 @@ export class ElementDefinitionType {
   * @returns the value  or undefined
   */
   public getVersioning(): string | undefined {
+      return this.versioning;
+  }
+
+  /**
+  * Gets the current value of field versioning if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersioningOrElse(defaultValue: string): string {
+      if (this.versioning == undefined || this.versioning == null ) { return defaultValue; }
       return this.versioning;
   }
 

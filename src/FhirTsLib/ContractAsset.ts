@@ -203,6 +203,17 @@ export class ContractAsset {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -248,6 +259,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -299,6 +321,17 @@ export class ContractAsset {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addType(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.type) !== 'undefined') {
@@ -344,6 +377,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getType(): CodeableConcept[] | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -395,6 +439,17 @@ export class ContractAsset {
       return this.typeReference;
   }
 
+  /**
+  * Gets the current value of field typeReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.typeReference == undefined || this.typeReference == null ) { return defaultValue; }
+      return this.typeReference;
+  }
+
   public addSubtype(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.subtype) !== 'undefined') {
@@ -440,6 +495,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getSubtype(): CodeableConcept[] | undefined {
+      return this.subtype;
+  }
+
+  /**
+  * Gets the current value of field subtype if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubtypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.subtype == undefined || this.subtype == null ) { return defaultValue; }
       return this.subtype;
   }
 
@@ -491,6 +557,17 @@ export class ContractAsset {
       return this.context;
   }
 
+  /**
+  * Gets the current value of field context if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContextOrElse(defaultValue: ContractContext[]): ContractContext[] {
+      if (this.context == undefined || this.context == null ) { return defaultValue; }
+      return this.context;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -519,6 +596,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getCondition(): string | undefined {
+      return this.condition;
+  }
+
+  /**
+  * Gets the current value of field condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionOrElse(defaultValue: string): string {
+      if (this.condition == undefined || this.condition == null ) { return defaultValue; }
       return this.condition;
   }
 
@@ -570,6 +658,17 @@ export class ContractAsset {
       return this.periodType;
   }
 
+  /**
+  * Gets the current value of field periodType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPeriodTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.periodType == undefined || this.periodType == null ) { return defaultValue; }
+      return this.periodType;
+  }
+
   public addPeriod(newValue: Period) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.period) !== 'undefined') {
@@ -615,6 +714,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getPeriod(): Period[] | undefined {
+      return this.period;
+  }
+
+  /**
+  * Gets the current value of field period if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPeriodOrElse(defaultValue: Period[]): Period[] {
+      if (this.period == undefined || this.period == null ) { return defaultValue; }
       return this.period;
   }
 
@@ -666,6 +776,17 @@ export class ContractAsset {
       return this.usePeriod;
   }
 
+  /**
+  * Gets the current value of field usePeriod if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUsePeriodOrElse(defaultValue: Period[]): Period[] {
+      if (this.usePeriod == undefined || this.usePeriod == null ) { return defaultValue; }
+      return this.usePeriod;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -694,6 +815,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getText(): string | undefined {
+      return this.text;
+  }
+
+  /**
+  * Gets the current value of field text if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTextOrElse(defaultValue: string): string {
+      if (this.text == undefined || this.text == null ) { return defaultValue; }
       return this.text;
   }
 
@@ -745,6 +877,17 @@ export class ContractAsset {
       return this.linkId;
   }
 
+  /**
+  * Gets the current value of field linkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkIdOrElse(defaultValue: string[]): string[] {
+      if (this.linkId == undefined || this.linkId == null ) { return defaultValue; }
+      return this.linkId;
+  }
+
   public add_linkId(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._linkId) !== 'undefined') {
@@ -790,6 +933,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public get_linkId(): Element[] | undefined {
+      return this._linkId;
+  }
+
+  /**
+  * Gets the current value of field _linkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_linkIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._linkId == undefined || this._linkId == null ) { return defaultValue; }
       return this._linkId;
   }
 
@@ -841,6 +995,17 @@ export class ContractAsset {
       return this.answer;
   }
 
+  /**
+  * Gets the current value of field answer if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAnswerOrElse(defaultValue: ContractAnswer[]): ContractAnswer[] {
+      if (this.answer == undefined || this.answer == null ) { return defaultValue; }
+      return this.answer;
+  }
+
   public addSecurityLabelNumber(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.securityLabelNumber) !== 'undefined') {
@@ -886,6 +1051,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getSecurityLabelNumber(): number[] | undefined {
+      return this.securityLabelNumber;
+  }
+
+  /**
+  * Gets the current value of field securityLabelNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSecurityLabelNumberOrElse(defaultValue: number[]): number[] {
+      if (this.securityLabelNumber == undefined || this.securityLabelNumber == null ) { return defaultValue; }
       return this.securityLabelNumber;
   }
 
@@ -937,6 +1113,17 @@ export class ContractAsset {
       return this._securityLabelNumber;
   }
 
+  /**
+  * Gets the current value of field _securityLabelNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_securityLabelNumberOrElse(defaultValue: Element[]): Element[] {
+      if (this._securityLabelNumber == undefined || this._securityLabelNumber == null ) { return defaultValue; }
+      return this._securityLabelNumber;
+  }
+
   public addValuedItem(newValue: ContractValuedItem) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.valuedItem) !== 'undefined') {
@@ -982,6 +1169,17 @@ export class ContractAsset {
   * @returns the value  or undefined
   */
   public getValuedItem(): ContractValuedItem[] | undefined {
+      return this.valuedItem;
+  }
+
+  /**
+  * Gets the current value of field valuedItem if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValuedItemOrElse(defaultValue: ContractValuedItem[]): ContractValuedItem[] {
+      if (this.valuedItem == undefined || this.valuedItem == null ) { return defaultValue; }
       return this.valuedItem;
   }
 

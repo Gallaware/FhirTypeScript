@@ -374,6 +374,17 @@ export class Practitioner {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -405,6 +416,17 @@ export class Practitioner {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -433,6 +455,17 @@ export class Practitioner {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -484,6 +517,17 @@ export class Practitioner {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -529,6 +573,17 @@ export class Practitioner {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -580,6 +635,17 @@ export class Practitioner {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -625,6 +691,17 @@ export class Practitioner {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -676,6 +753,17 @@ export class Practitioner {
       return this.name;
   }
 
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: HumanName[]): HumanName[] {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
+      return this.name;
+  }
+
   public addTelecom(newValue: ContactPoint) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.telecom) !== 'undefined') {
@@ -721,6 +809,17 @@ export class Practitioner {
   * @returns the value  or undefined
   */
   public getTelecom(): ContactPoint[] | undefined {
+      return this.telecom;
+  }
+
+  /**
+  * Gets the current value of field telecom if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTelecomOrElse(defaultValue: ContactPoint[]): ContactPoint[] {
+      if (this.telecom == undefined || this.telecom == null ) { return defaultValue; }
       return this.telecom;
   }
 
@@ -772,6 +871,17 @@ export class Practitioner {
       return this.address;
   }
 
+  /**
+  * Gets the current value of field address if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAddressOrElse(defaultValue: Address[]): Address[] {
+      if (this.address == undefined || this.address == null ) { return defaultValue; }
+      return this.address;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -804,6 +914,17 @@ export class Practitioner {
       return this.gender;
   }
 
+  /**
+  * Gets the current value of field gender if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGenderOrElse(defaultValue: string): string {
+      if (this.gender == undefined || this.gender == null ) { return defaultValue; }
+      return this.gender;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -832,6 +953,17 @@ export class Practitioner {
   * @returns the value  or undefined
   */
   public getBirthDate(): string | undefined {
+      return this.birthDate;
+  }
+
+  /**
+  * Gets the current value of field birthDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBirthDateOrElse(defaultValue: string): string {
+      if (this.birthDate == undefined || this.birthDate == null ) { return defaultValue; }
       return this.birthDate;
   }
 
@@ -883,6 +1015,17 @@ export class Practitioner {
       return this.photo;
   }
 
+  /**
+  * Gets the current value of field photo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPhotoOrElse(defaultValue: Attachment[]): Attachment[] {
+      if (this.photo == undefined || this.photo == null ) { return defaultValue; }
+      return this.photo;
+  }
+
   public addQualification(newValue: PractitionerQualification) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.qualification) !== 'undefined') {
@@ -931,6 +1074,17 @@ export class Practitioner {
       return this.qualification;
   }
 
+  /**
+  * Gets the current value of field qualification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getQualificationOrElse(defaultValue: PractitionerQualification[]): PractitionerQualification[] {
+      if (this.qualification == undefined || this.qualification == null ) { return defaultValue; }
+      return this.qualification;
+  }
+
   public addCommunication(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.communication) !== 'undefined') {
@@ -976,6 +1130,17 @@ export class Practitioner {
   * @returns the value  or undefined
   */
   public getCommunication(): CodeableConcept[] | undefined {
+      return this.communication;
+  }
+
+  /**
+  * Gets the current value of field communication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommunicationOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.communication == undefined || this.communication == null ) { return defaultValue; }
       return this.communication;
   }
 

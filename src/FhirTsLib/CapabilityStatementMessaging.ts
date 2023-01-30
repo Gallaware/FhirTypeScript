@@ -115,6 +115,17 @@ export class CapabilityStatementMessaging {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -160,6 +171,17 @@ export class CapabilityStatementMessaging {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -211,6 +233,17 @@ export class CapabilityStatementMessaging {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addEndpoint(newValue: CapabilityStatementEndpoint) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.endpoint) !== 'undefined') {
@@ -259,6 +292,17 @@ export class CapabilityStatementMessaging {
       return this.endpoint;
   }
 
+  /**
+  * Gets the current value of field endpoint if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEndpointOrElse(defaultValue: CapabilityStatementEndpoint[]): CapabilityStatementEndpoint[] {
+      if (this.endpoint == undefined || this.endpoint == null ) { return defaultValue; }
+      return this.endpoint;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -287,6 +331,17 @@ export class CapabilityStatementMessaging {
   * @returns the value  or undefined
   */
   public getDocumentation(): string | undefined {
+      return this.documentation;
+  }
+
+  /**
+  * Gets the current value of field documentation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDocumentationOrElse(defaultValue: string): string {
+      if (this.documentation == undefined || this.documentation == null ) { return defaultValue; }
       return this.documentation;
   }
 
@@ -335,6 +390,17 @@ export class CapabilityStatementMessaging {
   * @returns the value  or undefined
   */
   public getSupportedMessage(): CapabilityStatementSupportedMessage[] | undefined {
+      return this.supportedMessage;
+  }
+
+  /**
+  * Gets the current value of field supportedMessage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportedMessageOrElse(defaultValue: CapabilityStatementSupportedMessage[]): CapabilityStatementSupportedMessage[] {
+      if (this.supportedMessage == undefined || this.supportedMessage == null ) { return defaultValue; }
       return this.supportedMessage;
   }
 

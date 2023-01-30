@@ -293,6 +293,17 @@ export class ContractAction {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -338,6 +349,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -389,6 +411,17 @@ export class ContractAction {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addSubject(newValue: ContractSubject) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.subject) !== 'undefined') {
@@ -434,6 +467,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public getSubject(): ContractSubject[] | undefined {
+      return this.subject;
+  }
+
+  /**
+  * Gets the current value of field subject if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubjectOrElse(defaultValue: ContractSubject[]): ContractSubject[] {
+      if (this.subject == undefined || this.subject == null ) { return defaultValue; }
       return this.subject;
   }
 
@@ -485,6 +529,17 @@ export class ContractAction {
       return this.linkId;
   }
 
+  /**
+  * Gets the current value of field linkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkIdOrElse(defaultValue: string[]): string[] {
+      if (this.linkId == undefined || this.linkId == null ) { return defaultValue; }
+      return this.linkId;
+  }
+
   public add_linkId(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._linkId) !== 'undefined') {
@@ -530,6 +585,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public get_linkId(): Element[] | undefined {
+      return this._linkId;
+  }
+
+  /**
+  * Gets the current value of field _linkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_linkIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._linkId == undefined || this._linkId == null ) { return defaultValue; }
       return this._linkId;
   }
 
@@ -581,6 +647,17 @@ export class ContractAction {
       return this.contextLinkId;
   }
 
+  /**
+  * Gets the current value of field contextLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContextLinkIdOrElse(defaultValue: string[]): string[] {
+      if (this.contextLinkId == undefined || this.contextLinkId == null ) { return defaultValue; }
+      return this.contextLinkId;
+  }
+
   public add_contextLinkId(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._contextLinkId) !== 'undefined') {
@@ -629,6 +706,17 @@ export class ContractAction {
       return this._contextLinkId;
   }
 
+  /**
+  * Gets the current value of field _contextLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_contextLinkIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._contextLinkId == undefined || this._contextLinkId == null ) { return defaultValue; }
+      return this._contextLinkId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -657,6 +745,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public getOccurrenceDateTime(): string | undefined {
+      return this.occurrenceDateTime;
+  }
+
+  /**
+  * Gets the current value of field occurrenceDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOccurrenceDateTimeOrElse(defaultValue: string): string {
+      if (this.occurrenceDateTime == undefined || this.occurrenceDateTime == null ) { return defaultValue; }
       return this.occurrenceDateTime;
   }
 
@@ -708,6 +807,17 @@ export class ContractAction {
       return this.requester;
   }
 
+  /**
+  * Gets the current value of field requester if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequesterOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.requester == undefined || this.requester == null ) { return defaultValue; }
+      return this.requester;
+  }
+
   public addRequesterLinkId(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.requesterLinkId) !== 'undefined') {
@@ -753,6 +863,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public getRequesterLinkId(): string[] | undefined {
+      return this.requesterLinkId;
+  }
+
+  /**
+  * Gets the current value of field requesterLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequesterLinkIdOrElse(defaultValue: string[]): string[] {
+      if (this.requesterLinkId == undefined || this.requesterLinkId == null ) { return defaultValue; }
       return this.requesterLinkId;
   }
 
@@ -804,6 +925,17 @@ export class ContractAction {
       return this._requesterLinkId;
   }
 
+  /**
+  * Gets the current value of field _requesterLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_requesterLinkIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._requesterLinkId == undefined || this._requesterLinkId == null ) { return defaultValue; }
+      return this._requesterLinkId;
+  }
+
   public addPerformerType(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.performerType) !== 'undefined') {
@@ -849,6 +981,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public getPerformerType(): CodeableConcept[] | undefined {
+      return this.performerType;
+  }
+
+  /**
+  * Gets the current value of field performerType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPerformerTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.performerType == undefined || this.performerType == null ) { return defaultValue; }
       return this.performerType;
   }
 
@@ -900,6 +1043,17 @@ export class ContractAction {
       return this.performerLinkId;
   }
 
+  /**
+  * Gets the current value of field performerLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPerformerLinkIdOrElse(defaultValue: string[]): string[] {
+      if (this.performerLinkId == undefined || this.performerLinkId == null ) { return defaultValue; }
+      return this.performerLinkId;
+  }
+
   public add_performerLinkId(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._performerLinkId) !== 'undefined') {
@@ -945,6 +1099,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public get_performerLinkId(): Element[] | undefined {
+      return this._performerLinkId;
+  }
+
+  /**
+  * Gets the current value of field _performerLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_performerLinkIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._performerLinkId == undefined || this._performerLinkId == null ) { return defaultValue; }
       return this._performerLinkId;
   }
 
@@ -996,6 +1161,17 @@ export class ContractAction {
       return this.reasonCode;
   }
 
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
+      return this.reasonCode;
+  }
+
   public addReasonReference(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonReference) !== 'undefined') {
@@ -1041,6 +1217,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public getReasonReference(): Reference[] | undefined {
+      return this.reasonReference;
+  }
+
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
       return this.reasonReference;
   }
 
@@ -1092,6 +1279,17 @@ export class ContractAction {
       return this.reason;
   }
 
+  /**
+  * Gets the current value of field reason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonOrElse(defaultValue: string[]): string[] {
+      if (this.reason == undefined || this.reason == null ) { return defaultValue; }
+      return this.reason;
+  }
+
   public add_reason(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._reason) !== 'undefined') {
@@ -1137,6 +1335,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public get_reason(): Element[] | undefined {
+      return this._reason;
+  }
+
+  /**
+  * Gets the current value of field _reason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_reasonOrElse(defaultValue: Element[]): Element[] {
+      if (this._reason == undefined || this._reason == null ) { return defaultValue; }
       return this._reason;
   }
 
@@ -1188,6 +1397,17 @@ export class ContractAction {
       return this.reasonLinkId;
   }
 
+  /**
+  * Gets the current value of field reasonLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonLinkIdOrElse(defaultValue: string[]): string[] {
+      if (this.reasonLinkId == undefined || this.reasonLinkId == null ) { return defaultValue; }
+      return this.reasonLinkId;
+  }
+
   public add_reasonLinkId(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._reasonLinkId) !== 'undefined') {
@@ -1233,6 +1453,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public get_reasonLinkId(): Element[] | undefined {
+      return this._reasonLinkId;
+  }
+
+  /**
+  * Gets the current value of field _reasonLinkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_reasonLinkIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._reasonLinkId == undefined || this._reasonLinkId == null ) { return defaultValue; }
       return this._reasonLinkId;
   }
 
@@ -1284,6 +1515,17 @@ export class ContractAction {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addSecurityLabelNumber(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.securityLabelNumber) !== 'undefined') {
@@ -1332,6 +1574,17 @@ export class ContractAction {
       return this.securityLabelNumber;
   }
 
+  /**
+  * Gets the current value of field securityLabelNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSecurityLabelNumberOrElse(defaultValue: number[]): number[] {
+      if (this.securityLabelNumber == undefined || this.securityLabelNumber == null ) { return defaultValue; }
+      return this.securityLabelNumber;
+  }
+
   public add_securityLabelNumber(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._securityLabelNumber) !== 'undefined') {
@@ -1377,6 +1630,17 @@ export class ContractAction {
   * @returns the value  or undefined
   */
   public get_securityLabelNumber(): Element[] | undefined {
+      return this._securityLabelNumber;
+  }
+
+  /**
+  * Gets the current value of field _securityLabelNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_securityLabelNumberOrElse(defaultValue: Element[]): Element[] {
+      if (this._securityLabelNumber == undefined || this._securityLabelNumber == null ) { return defaultValue; }
       return this._securityLabelNumber;
   }
 

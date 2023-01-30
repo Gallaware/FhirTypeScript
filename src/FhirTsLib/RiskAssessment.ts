@@ -420,6 +420,17 @@ export class RiskAssessment {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -451,6 +462,17 @@ export class RiskAssessment {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -479,6 +501,17 @@ export class RiskAssessment {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -530,6 +563,17 @@ export class RiskAssessment {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -575,6 +619,17 @@ export class RiskAssessment {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -626,6 +681,17 @@ export class RiskAssessment {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -674,6 +740,17 @@ export class RiskAssessment {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -705,6 +782,17 @@ export class RiskAssessment {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -733,6 +821,17 @@ export class RiskAssessment {
   * @returns the value  or undefined
   */
   public getOccurrenceDateTime(): string | undefined {
+      return this.occurrenceDateTime;
+  }
+
+  /**
+  * Gets the current value of field occurrenceDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOccurrenceDateTimeOrElse(defaultValue: string): string {
+      if (this.occurrenceDateTime == undefined || this.occurrenceDateTime == null ) { return defaultValue; }
       return this.occurrenceDateTime;
   }
 
@@ -784,6 +883,17 @@ export class RiskAssessment {
       return this.reasonCode;
   }
 
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
+      return this.reasonCode;
+  }
+
   public addReasonReference(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonReference) !== 'undefined') {
@@ -829,6 +939,17 @@ export class RiskAssessment {
   * @returns the value  or undefined
   */
   public getReasonReference(): Reference[] | undefined {
+      return this.reasonReference;
+  }
+
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
       return this.reasonReference;
   }
 
@@ -880,6 +1001,17 @@ export class RiskAssessment {
       return this.basis;
   }
 
+  /**
+  * Gets the current value of field basis if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBasisOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.basis == undefined || this.basis == null ) { return defaultValue; }
+      return this.basis;
+  }
+
   public addPrediction(newValue: RiskAssessmentPrediction) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.prediction) !== 'undefined') {
@@ -928,6 +1060,17 @@ export class RiskAssessment {
       return this.prediction;
   }
 
+  /**
+  * Gets the current value of field prediction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPredictionOrElse(defaultValue: RiskAssessmentPrediction[]): RiskAssessmentPrediction[] {
+      if (this.prediction == undefined || this.prediction == null ) { return defaultValue; }
+      return this.prediction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -956,6 +1099,17 @@ export class RiskAssessment {
   * @returns the value  or undefined
   */
   public getMitigation(): string | undefined {
+      return this.mitigation;
+  }
+
+  /**
+  * Gets the current value of field mitigation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMitigationOrElse(defaultValue: string): string {
+      if (this.mitigation == undefined || this.mitigation == null ) { return defaultValue; }
       return this.mitigation;
   }
 
@@ -1004,6 +1158,17 @@ export class RiskAssessment {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 

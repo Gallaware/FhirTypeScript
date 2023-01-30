@@ -268,6 +268,17 @@ export class CapabilityStatementResource {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -313,6 +324,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -364,6 +386,17 @@ export class CapabilityStatementResource {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -396,6 +429,17 @@ export class CapabilityStatementResource {
       return this.type;
   }
 
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
+      return this.type;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -424,6 +468,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public getProfile(): string | undefined {
+      return this.profile;
+  }
+
+  /**
+  * Gets the current value of field profile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProfileOrElse(defaultValue: string): string {
+      if (this.profile == undefined || this.profile == null ) { return defaultValue; }
       return this.profile;
   }
 
@@ -475,6 +530,17 @@ export class CapabilityStatementResource {
       return this.supportedProfile;
   }
 
+  /**
+  * Gets the current value of field supportedProfile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportedProfileOrElse(defaultValue: string[]): string[] {
+      if (this.supportedProfile == undefined || this.supportedProfile == null ) { return defaultValue; }
+      return this.supportedProfile;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -503,6 +569,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public getDocumentation(): string | undefined {
+      return this.documentation;
+  }
+
+  /**
+  * Gets the current value of field documentation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDocumentationOrElse(defaultValue: string): string {
+      if (this.documentation == undefined || this.documentation == null ) { return defaultValue; }
       return this.documentation;
   }
 
@@ -554,6 +631,17 @@ export class CapabilityStatementResource {
       return this.interaction;
   }
 
+  /**
+  * Gets the current value of field interaction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInteractionOrElse(defaultValue: CapabilityStatementInteraction[]): CapabilityStatementInteraction[] {
+      if (this.interaction == undefined || this.interaction == null ) { return defaultValue; }
+      return this.interaction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -583,6 +671,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public getVersioning(): string | undefined {
+      return this.versioning;
+  }
+
+  /**
+  * Gets the current value of field versioning if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersioningOrElse(defaultValue: string): string {
+      if (this.versioning == undefined || this.versioning == null ) { return defaultValue; }
       return this.versioning;
   }
 
@@ -618,6 +717,17 @@ export class CapabilityStatementResource {
       return this.conditionalRead;
   }
 
+  /**
+  * Gets the current value of field conditionalRead if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionalReadOrElse(defaultValue: string): string {
+      if (this.conditionalRead == undefined || this.conditionalRead == null ) { return defaultValue; }
+      return this.conditionalRead;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -647,6 +757,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public getConditionalDelete(): string | undefined {
+      return this.conditionalDelete;
+  }
+
+  /**
+  * Gets the current value of field conditionalDelete if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionalDeleteOrElse(defaultValue: string): string {
+      if (this.conditionalDelete == undefined || this.conditionalDelete == null ) { return defaultValue; }
       return this.conditionalDelete;
   }
 
@@ -698,6 +819,17 @@ export class CapabilityStatementResource {
       return this.referencePolicy;
   }
 
+  /**
+  * Gets the current value of field referencePolicy if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReferencePolicyOrElse(defaultValue: string[]): string[] {
+      if (this.referencePolicy == undefined || this.referencePolicy == null ) { return defaultValue; }
+      return this.referencePolicy;
+  }
+
   public add_referencePolicy(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._referencePolicy) !== 'undefined') {
@@ -743,6 +875,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public get_referencePolicy(): Element[] | undefined {
+      return this._referencePolicy;
+  }
+
+  /**
+  * Gets the current value of field _referencePolicy if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_referencePolicyOrElse(defaultValue: Element[]): Element[] {
+      if (this._referencePolicy == undefined || this._referencePolicy == null ) { return defaultValue; }
       return this._referencePolicy;
   }
 
@@ -794,6 +937,17 @@ export class CapabilityStatementResource {
       return this.searchInclude;
   }
 
+  /**
+  * Gets the current value of field searchInclude if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSearchIncludeOrElse(defaultValue: string[]): string[] {
+      if (this.searchInclude == undefined || this.searchInclude == null ) { return defaultValue; }
+      return this.searchInclude;
+  }
+
   public add_searchInclude(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._searchInclude) !== 'undefined') {
@@ -839,6 +993,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public get_searchInclude(): Element[] | undefined {
+      return this._searchInclude;
+  }
+
+  /**
+  * Gets the current value of field _searchInclude if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_searchIncludeOrElse(defaultValue: Element[]): Element[] {
+      if (this._searchInclude == undefined || this._searchInclude == null ) { return defaultValue; }
       return this._searchInclude;
   }
 
@@ -890,6 +1055,17 @@ export class CapabilityStatementResource {
       return this.searchRevInclude;
   }
 
+  /**
+  * Gets the current value of field searchRevInclude if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSearchRevIncludeOrElse(defaultValue: string[]): string[] {
+      if (this.searchRevInclude == undefined || this.searchRevInclude == null ) { return defaultValue; }
+      return this.searchRevInclude;
+  }
+
   public add_searchRevInclude(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._searchRevInclude) !== 'undefined') {
@@ -935,6 +1111,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public get_searchRevInclude(): Element[] | undefined {
+      return this._searchRevInclude;
+  }
+
+  /**
+  * Gets the current value of field _searchRevInclude if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_searchRevIncludeOrElse(defaultValue: Element[]): Element[] {
+      if (this._searchRevInclude == undefined || this._searchRevInclude == null ) { return defaultValue; }
       return this._searchRevInclude;
   }
 
@@ -986,6 +1173,17 @@ export class CapabilityStatementResource {
       return this.searchParam;
   }
 
+  /**
+  * Gets the current value of field searchParam if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSearchParamOrElse(defaultValue: CapabilityStatementSearchParam[]): CapabilityStatementSearchParam[] {
+      if (this.searchParam == undefined || this.searchParam == null ) { return defaultValue; }
+      return this.searchParam;
+  }
+
   public addOperation(newValue: CapabilityStatementOperation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.operation) !== 'undefined') {
@@ -1031,6 +1229,17 @@ export class CapabilityStatementResource {
   * @returns the value  or undefined
   */
   public getOperation(): CapabilityStatementOperation[] | undefined {
+      return this.operation;
+  }
+
+  /**
+  * Gets the current value of field operation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOperationOrElse(defaultValue: CapabilityStatementOperation[]): CapabilityStatementOperation[] {
+      if (this.operation == undefined || this.operation == null ) { return defaultValue; }
       return this.operation;
   }
 

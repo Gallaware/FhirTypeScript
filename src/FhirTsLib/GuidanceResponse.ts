@@ -436,6 +436,17 @@ export class GuidanceResponse {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -467,6 +478,17 @@ export class GuidanceResponse {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -495,6 +517,17 @@ export class GuidanceResponse {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -546,6 +579,17 @@ export class GuidanceResponse {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -591,6 +635,17 @@ export class GuidanceResponse {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -642,6 +697,17 @@ export class GuidanceResponse {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -690,6 +756,17 @@ export class GuidanceResponse {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -721,6 +798,17 @@ export class GuidanceResponse {
       return this.moduleUri;
   }
 
+  /**
+  * Gets the current value of field moduleUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModuleUriOrElse(defaultValue: string): string {
+      if (this.moduleUri == undefined || this.moduleUri == null ) { return defaultValue; }
+      return this.moduleUri;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -749,6 +837,17 @@ export class GuidanceResponse {
   * @returns the value  or undefined
   */
   public getModuleCanonical(): string | undefined {
+      return this.moduleCanonical;
+  }
+
+  /**
+  * Gets the current value of field moduleCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModuleCanonicalOrElse(defaultValue: string): string {
+      if (this.moduleCanonical == undefined || this.moduleCanonical == null ) { return defaultValue; }
       return this.moduleCanonical;
   }
 
@@ -784,6 +883,17 @@ export class GuidanceResponse {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -812,6 +922,17 @@ export class GuidanceResponse {
   * @returns the value  or undefined
   */
   public getOccurrenceDateTime(): string | undefined {
+      return this.occurrenceDateTime;
+  }
+
+  /**
+  * Gets the current value of field occurrenceDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOccurrenceDateTimeOrElse(defaultValue: string): string {
+      if (this.occurrenceDateTime == undefined || this.occurrenceDateTime == null ) { return defaultValue; }
       return this.occurrenceDateTime;
   }
 
@@ -863,6 +984,17 @@ export class GuidanceResponse {
       return this.reasonCode;
   }
 
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
+      return this.reasonCode;
+  }
+
   public addReasonReference(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonReference) !== 'undefined') {
@@ -908,6 +1040,17 @@ export class GuidanceResponse {
   * @returns the value  or undefined
   */
   public getReasonReference(): Reference[] | undefined {
+      return this.reasonReference;
+  }
+
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
       return this.reasonReference;
   }
 
@@ -959,6 +1102,17 @@ export class GuidanceResponse {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addEvaluationMessage(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.evaluationMessage) !== 'undefined') {
@@ -1007,6 +1161,17 @@ export class GuidanceResponse {
       return this.evaluationMessage;
   }
 
+  /**
+  * Gets the current value of field evaluationMessage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEvaluationMessageOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.evaluationMessage == undefined || this.evaluationMessage == null ) { return defaultValue; }
+      return this.evaluationMessage;
+  }
+
   public addDataRequirement(newValue: DataRequirement) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.dataRequirement) !== 'undefined') {
@@ -1052,6 +1217,17 @@ export class GuidanceResponse {
   * @returns the value  or undefined
   */
   public getDataRequirement(): DataRequirement[] | undefined {
+      return this.dataRequirement;
+  }
+
+  /**
+  * Gets the current value of field dataRequirement if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDataRequirementOrElse(defaultValue: DataRequirement[]): DataRequirement[] {
+      if (this.dataRequirement == undefined || this.dataRequirement == null ) { return defaultValue; }
       return this.dataRequirement;
   }
 

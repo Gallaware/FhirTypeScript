@@ -425,6 +425,17 @@ export class NamingSystem {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -456,6 +467,17 @@ export class NamingSystem {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -484,6 +506,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -535,6 +568,17 @@ export class NamingSystem {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -580,6 +624,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -631,6 +686,17 @@ export class NamingSystem {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -659,6 +725,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -694,6 +771,17 @@ export class NamingSystem {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -723,6 +811,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getKind(): string | undefined {
+      return this.kind;
+  }
+
+  /**
+  * Gets the current value of field kind if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getKindOrElse(defaultValue: string): string {
+      if (this.kind == undefined || this.kind == null ) { return defaultValue; }
       return this.kind;
   }
 
@@ -757,6 +856,17 @@ export class NamingSystem {
       return this.date;
   }
 
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
+      return this.date;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -785,6 +895,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getPublisher(): string | undefined {
+      return this.publisher;
+  }
+
+  /**
+  * Gets the current value of field publisher if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPublisherOrElse(defaultValue: string): string {
+      if (this.publisher == undefined || this.publisher == null ) { return defaultValue; }
       return this.publisher;
   }
 
@@ -836,6 +957,17 @@ export class NamingSystem {
       return this.contact;
   }
 
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: ContactDetail[]): ContactDetail[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
+      return this.contact;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -867,6 +999,17 @@ export class NamingSystem {
       return this.responsible;
   }
 
+  /**
+  * Gets the current value of field responsible if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getResponsibleOrElse(defaultValue: string): string {
+      if (this.responsible == undefined || this.responsible == null ) { return defaultValue; }
+      return this.responsible;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -895,6 +1038,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -946,6 +1100,17 @@ export class NamingSystem {
       return this.useContext;
   }
 
+  /**
+  * Gets the current value of field useContext if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseContextOrElse(defaultValue: UsageContext[]): UsageContext[] {
+      if (this.useContext == undefined || this.useContext == null ) { return defaultValue; }
+      return this.useContext;
+  }
+
   public addJurisdiction(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.jurisdiction) !== 'undefined') {
@@ -994,6 +1159,17 @@ export class NamingSystem {
       return this.jurisdiction;
   }
 
+  /**
+  * Gets the current value of field jurisdiction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getJurisdictionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.jurisdiction == undefined || this.jurisdiction == null ) { return defaultValue; }
+      return this.jurisdiction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1022,6 +1198,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getUsage(): string | undefined {
+      return this.usage;
+  }
+
+  /**
+  * Gets the current value of field usage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUsageOrElse(defaultValue: string): string {
+      if (this.usage == undefined || this.usage == null ) { return defaultValue; }
       return this.usage;
   }
 
@@ -1070,6 +1257,17 @@ export class NamingSystem {
   * @returns the value  or undefined
   */
   public getUniqueId(): NamingSystemUniqueId[] | undefined {
+      return this.uniqueId;
+  }
+
+  /**
+  * Gets the current value of field uniqueId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUniqueIdOrElse(defaultValue: NamingSystemUniqueId[]): NamingSystemUniqueId[] {
+      if (this.uniqueId == undefined || this.uniqueId == null ) { return defaultValue; }
       return this.uniqueId;
   }
 

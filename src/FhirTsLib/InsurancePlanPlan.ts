@@ -118,6 +118,17 @@ export class InsurancePlanPlan {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -163,6 +174,17 @@ export class InsurancePlanPlan {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -214,6 +236,17 @@ export class InsurancePlanPlan {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -259,6 +292,17 @@ export class InsurancePlanPlan {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -310,6 +354,17 @@ export class InsurancePlanPlan {
       return this.coverageArea;
   }
 
+  /**
+  * Gets the current value of field coverageArea if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCoverageAreaOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.coverageArea == undefined || this.coverageArea == null ) { return defaultValue; }
+      return this.coverageArea;
+  }
+
   public addNetwork(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.network) !== 'undefined') {
@@ -355,6 +410,17 @@ export class InsurancePlanPlan {
   * @returns the value  or undefined
   */
   public getNetwork(): Reference[] | undefined {
+      return this.network;
+  }
+
+  /**
+  * Gets the current value of field network if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNetworkOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.network == undefined || this.network == null ) { return defaultValue; }
       return this.network;
   }
 
@@ -406,6 +472,17 @@ export class InsurancePlanPlan {
       return this.generalCost;
   }
 
+  /**
+  * Gets the current value of field generalCost if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGeneralCostOrElse(defaultValue: InsurancePlanGeneralCost[]): InsurancePlanGeneralCost[] {
+      if (this.generalCost == undefined || this.generalCost == null ) { return defaultValue; }
+      return this.generalCost;
+  }
+
   public addSpecificCost(newValue: InsurancePlanSpecificCost) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.specificCost) !== 'undefined') {
@@ -451,6 +528,17 @@ export class InsurancePlanPlan {
   * @returns the value  or undefined
   */
   public getSpecificCost(): InsurancePlanSpecificCost[] | undefined {
+      return this.specificCost;
+  }
+
+  /**
+  * Gets the current value of field specificCost if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecificCostOrElse(defaultValue: InsurancePlanSpecificCost[]): InsurancePlanSpecificCost[] {
+      if (this.specificCost == undefined || this.specificCost == null ) { return defaultValue; }
       return this.specificCost;
   }
 

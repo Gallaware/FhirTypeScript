@@ -417,6 +417,17 @@ export class VerificationResult {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -448,6 +459,17 @@ export class VerificationResult {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -476,6 +498,17 @@ export class VerificationResult {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -527,6 +560,17 @@ export class VerificationResult {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -572,6 +616,17 @@ export class VerificationResult {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -623,6 +678,17 @@ export class VerificationResult {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addTarget(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.target) !== 'undefined') {
@@ -668,6 +734,17 @@ export class VerificationResult {
   * @returns the value  or undefined
   */
   public getTarget(): Reference[] | undefined {
+      return this.target;
+  }
+
+  /**
+  * Gets the current value of field target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.target == undefined || this.target == null ) { return defaultValue; }
       return this.target;
   }
 
@@ -719,6 +796,17 @@ export class VerificationResult {
       return this.targetLocation;
   }
 
+  /**
+  * Gets the current value of field targetLocation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetLocationOrElse(defaultValue: string[]): string[] {
+      if (this.targetLocation == undefined || this.targetLocation == null ) { return defaultValue; }
+      return this.targetLocation;
+  }
+
   public add_targetLocation(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._targetLocation) !== 'undefined') {
@@ -767,6 +855,17 @@ export class VerificationResult {
       return this._targetLocation;
   }
 
+  /**
+  * Gets the current value of field _targetLocation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_targetLocationOrElse(defaultValue: Element[]): Element[] {
+      if (this._targetLocation == undefined || this._targetLocation == null ) { return defaultValue; }
+      return this._targetLocation;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -798,6 +897,17 @@ export class VerificationResult {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -826,6 +936,17 @@ export class VerificationResult {
   * @returns the value  or undefined
   */
   public getStatusDate(): string | undefined {
+      return this.statusDate;
+  }
+
+  /**
+  * Gets the current value of field statusDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusDateOrElse(defaultValue: string): string {
+      if (this.statusDate == undefined || this.statusDate == null ) { return defaultValue; }
       return this.statusDate;
   }
 
@@ -877,6 +998,17 @@ export class VerificationResult {
       return this.validationProcess;
   }
 
+  /**
+  * Gets the current value of field validationProcess if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValidationProcessOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.validationProcess == undefined || this.validationProcess == null ) { return defaultValue; }
+      return this.validationProcess;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -908,6 +1040,17 @@ export class VerificationResult {
       return this.lastPerformed;
   }
 
+  /**
+  * Gets the current value of field lastPerformed if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLastPerformedOrElse(defaultValue: string): string {
+      if (this.lastPerformed == undefined || this.lastPerformed == null ) { return defaultValue; }
+      return this.lastPerformed;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -936,6 +1079,17 @@ export class VerificationResult {
   * @returns the value  or undefined
   */
   public getNextScheduled(): string | undefined {
+      return this.nextScheduled;
+  }
+
+  /**
+  * Gets the current value of field nextScheduled if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNextScheduledOrElse(defaultValue: string): string {
+      if (this.nextScheduled == undefined || this.nextScheduled == null ) { return defaultValue; }
       return this.nextScheduled;
   }
 
@@ -987,6 +1141,17 @@ export class VerificationResult {
       return this.primarySource;
   }
 
+  /**
+  * Gets the current value of field primarySource if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrimarySourceOrElse(defaultValue: VerificationResultPrimarySource[]): VerificationResultPrimarySource[] {
+      if (this.primarySource == undefined || this.primarySource == null ) { return defaultValue; }
+      return this.primarySource;
+  }
+
   public addValidator(newValue: VerificationResultValidator) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.validator) !== 'undefined') {
@@ -1032,6 +1197,17 @@ export class VerificationResult {
   * @returns the value  or undefined
   */
   public getValidator(): VerificationResultValidator[] | undefined {
+      return this.validator;
+  }
+
+  /**
+  * Gets the current value of field validator if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValidatorOrElse(defaultValue: VerificationResultValidator[]): VerificationResultValidator[] {
+      if (this.validator == undefined || this.validator == null ) { return defaultValue; }
       return this.validator;
   }
 

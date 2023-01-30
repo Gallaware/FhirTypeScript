@@ -139,6 +139,17 @@ export class MolecularSequenceVariant {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -184,6 +195,17 @@ export class MolecularSequenceVariant {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -235,6 +257,17 @@ export class MolecularSequenceVariant {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -263,6 +296,17 @@ export class MolecularSequenceVariant {
   * @returns the value  or undefined
   */
   public getObservedAllele(): string | undefined {
+      return this.observedAllele;
+  }
+
+  /**
+  * Gets the current value of field observedAllele if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getObservedAlleleOrElse(defaultValue: string): string {
+      if (this.observedAllele == undefined || this.observedAllele == null ) { return defaultValue; }
       return this.observedAllele;
   }
 
@@ -297,6 +341,17 @@ export class MolecularSequenceVariant {
       return this.referenceAllele;
   }
 
+  /**
+  * Gets the current value of field referenceAllele if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReferenceAlleleOrElse(defaultValue: string): string {
+      if (this.referenceAllele == undefined || this.referenceAllele == null ) { return defaultValue; }
+      return this.referenceAllele;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -325,6 +380,17 @@ export class MolecularSequenceVariant {
   * @returns the value  or undefined
   */
   public getCigar(): string | undefined {
+      return this.cigar;
+  }
+
+  /**
+  * Gets the current value of field cigar if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCigarOrElse(defaultValue: string): string {
+      if (this.cigar == undefined || this.cigar == null ) { return defaultValue; }
       return this.cigar;
   }
 

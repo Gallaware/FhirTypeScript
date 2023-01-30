@@ -120,6 +120,17 @@ export class ImplementationGuideResource1 {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -165,6 +176,17 @@ export class ImplementationGuideResource1 {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -216,6 +238,17 @@ export class ImplementationGuideResource1 {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -247,6 +280,17 @@ export class ImplementationGuideResource1 {
       return this.exampleCanonical;
   }
 
+  /**
+  * Gets the current value of field exampleCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExampleCanonicalOrElse(defaultValue: string): string {
+      if (this.exampleCanonical == undefined || this.exampleCanonical == null ) { return defaultValue; }
+      return this.exampleCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -275,6 +319,17 @@ export class ImplementationGuideResource1 {
   * @returns the value  or undefined
   */
   public getRelativePath(): string | undefined {
+      return this.relativePath;
+  }
+
+  /**
+  * Gets the current value of field relativePath if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelativePathOrElse(defaultValue: string): string {
+      if (this.relativePath == undefined || this.relativePath == null ) { return defaultValue; }
       return this.relativePath;
   }
 

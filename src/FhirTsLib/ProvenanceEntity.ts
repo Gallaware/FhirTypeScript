@@ -111,6 +111,17 @@ export class ProvenanceEntity {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -156,6 +167,17 @@ export class ProvenanceEntity {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -207,6 +229,17 @@ export class ProvenanceEntity {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -236,6 +269,17 @@ export class ProvenanceEntity {
   * @returns the value  or undefined
   */
   public getRole(): string | undefined {
+      return this.role;
+  }
+
+  /**
+  * Gets the current value of field role if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRoleOrElse(defaultValue: string): string {
+      if (this.role == undefined || this.role == null ) { return defaultValue; }
       return this.role;
   }
 
@@ -284,6 +328,17 @@ export class ProvenanceEntity {
   * @returns the value  or undefined
   */
   public getAgent(): ProvenanceAgent[] | undefined {
+      return this.agent;
+  }
+
+  /**
+  * Gets the current value of field agent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAgentOrElse(defaultValue: ProvenanceAgent[]): ProvenanceAgent[] {
+      if (this.agent == undefined || this.agent == null ) { return defaultValue; }
       return this.agent;
   }
 

@@ -109,6 +109,17 @@ export class MeasureGroup {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -154,6 +165,17 @@ export class MeasureGroup {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -205,6 +227,17 @@ export class MeasureGroup {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -233,6 +266,17 @@ export class MeasureGroup {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -284,6 +328,17 @@ export class MeasureGroup {
       return this.population;
   }
 
+  /**
+  * Gets the current value of field population if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPopulationOrElse(defaultValue: MeasurePopulation[]): MeasurePopulation[] {
+      if (this.population == undefined || this.population == null ) { return defaultValue; }
+      return this.population;
+  }
+
   public addStratifier(newValue: MeasureStratifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.stratifier) !== 'undefined') {
@@ -329,6 +384,17 @@ export class MeasureGroup {
   * @returns the value  or undefined
   */
   public getStratifier(): MeasureStratifier[] | undefined {
+      return this.stratifier;
+  }
+
+  /**
+  * Gets the current value of field stratifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStratifierOrElse(defaultValue: MeasureStratifier[]): MeasureStratifier[] {
+      if (this.stratifier == undefined || this.stratifier == null ) { return defaultValue; }
       return this.stratifier;
   }
 

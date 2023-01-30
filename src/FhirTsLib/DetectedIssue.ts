@@ -406,6 +406,17 @@ export class DetectedIssue {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -437,6 +448,17 @@ export class DetectedIssue {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -465,6 +487,17 @@ export class DetectedIssue {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -516,6 +549,17 @@ export class DetectedIssue {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -561,6 +605,17 @@ export class DetectedIssue {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -612,6 +667,17 @@ export class DetectedIssue {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -660,6 +726,17 @@ export class DetectedIssue {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -688,6 +765,17 @@ export class DetectedIssue {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -723,6 +811,17 @@ export class DetectedIssue {
       return this.severity;
   }
 
+  /**
+  * Gets the current value of field severity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSeverityOrElse(defaultValue: string): string {
+      if (this.severity == undefined || this.severity == null ) { return defaultValue; }
+      return this.severity;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -751,6 +850,17 @@ export class DetectedIssue {
   * @returns the value  or undefined
   */
   public getIdentifiedDateTime(): string | undefined {
+      return this.identifiedDateTime;
+  }
+
+  /**
+  * Gets the current value of field identifiedDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifiedDateTimeOrElse(defaultValue: string): string {
+      if (this.identifiedDateTime == undefined || this.identifiedDateTime == null ) { return defaultValue; }
       return this.identifiedDateTime;
   }
 
@@ -802,6 +912,17 @@ export class DetectedIssue {
       return this.implicated;
   }
 
+  /**
+  * Gets the current value of field implicated if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicatedOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.implicated == undefined || this.implicated == null ) { return defaultValue; }
+      return this.implicated;
+  }
+
   public addEvidence(newValue: DetectedIssueEvidence) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.evidence) !== 'undefined') {
@@ -850,6 +971,17 @@ export class DetectedIssue {
       return this.evidence;
   }
 
+  /**
+  * Gets the current value of field evidence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEvidenceOrElse(defaultValue: DetectedIssueEvidence[]): DetectedIssueEvidence[] {
+      if (this.evidence == undefined || this.evidence == null ) { return defaultValue; }
+      return this.evidence;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -881,6 +1013,17 @@ export class DetectedIssue {
       return this.detail;
   }
 
+  /**
+  * Gets the current value of field detail if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDetailOrElse(defaultValue: string): string {
+      if (this.detail == undefined || this.detail == null ) { return defaultValue; }
+      return this.detail;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -909,6 +1052,17 @@ export class DetectedIssue {
   * @returns the value  or undefined
   */
   public getReference(): string | undefined {
+      return this.reference;
+  }
+
+  /**
+  * Gets the current value of field reference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReferenceOrElse(defaultValue: string): string {
+      if (this.reference == undefined || this.reference == null ) { return defaultValue; }
       return this.reference;
   }
 
@@ -957,6 +1111,17 @@ export class DetectedIssue {
   * @returns the value  or undefined
   */
   public getMitigation(): DetectedIssueMitigation[] | undefined {
+      return this.mitigation;
+  }
+
+  /**
+  * Gets the current value of field mitigation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMitigationOrElse(defaultValue: DetectedIssueMitigation[]): DetectedIssueMitigation[] {
+      if (this.mitigation == undefined || this.mitigation == null ) { return defaultValue; }
       return this.mitigation;
   }
 

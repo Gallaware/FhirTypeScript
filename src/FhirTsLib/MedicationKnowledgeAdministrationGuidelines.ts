@@ -103,6 +103,17 @@ export class MedicationKnowledgeAdministrationGuidelines {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -148,6 +159,17 @@ export class MedicationKnowledgeAdministrationGuidelines {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -199,6 +221,17 @@ export class MedicationKnowledgeAdministrationGuidelines {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addDosage(newValue: MedicationKnowledgeDosage) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.dosage) !== 'undefined') {
@@ -247,6 +280,17 @@ export class MedicationKnowledgeAdministrationGuidelines {
       return this.dosage;
   }
 
+  /**
+  * Gets the current value of field dosage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDosageOrElse(defaultValue: MedicationKnowledgeDosage[]): MedicationKnowledgeDosage[] {
+      if (this.dosage == undefined || this.dosage == null ) { return defaultValue; }
+      return this.dosage;
+  }
+
   public addPatientCharacteristics(newValue: MedicationKnowledgePatientCharacteristics) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.patientCharacteristics) !== 'undefined') {
@@ -292,6 +336,17 @@ export class MedicationKnowledgeAdministrationGuidelines {
   * @returns the value  or undefined
   */
   public getPatientCharacteristics(): MedicationKnowledgePatientCharacteristics[] | undefined {
+      return this.patientCharacteristics;
+  }
+
+  /**
+  * Gets the current value of field patientCharacteristics if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatientCharacteristicsOrElse(defaultValue: MedicationKnowledgePatientCharacteristics[]): MedicationKnowledgePatientCharacteristics[] {
+      if (this.patientCharacteristics == undefined || this.patientCharacteristics == null ) { return defaultValue; }
       return this.patientCharacteristics;
   }
 

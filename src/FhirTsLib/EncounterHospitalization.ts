@@ -138,6 +138,17 @@ export class EncounterHospitalization {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -183,6 +194,17 @@ export class EncounterHospitalization {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -234,6 +256,17 @@ export class EncounterHospitalization {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addDietPreference(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.dietPreference) !== 'undefined') {
@@ -279,6 +312,17 @@ export class EncounterHospitalization {
   * @returns the value  or undefined
   */
   public getDietPreference(): CodeableConcept[] | undefined {
+      return this.dietPreference;
+  }
+
+  /**
+  * Gets the current value of field dietPreference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDietPreferenceOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.dietPreference == undefined || this.dietPreference == null ) { return defaultValue; }
       return this.dietPreference;
   }
 
@@ -330,6 +374,17 @@ export class EncounterHospitalization {
       return this.specialCourtesy;
   }
 
+  /**
+  * Gets the current value of field specialCourtesy if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialCourtesyOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.specialCourtesy == undefined || this.specialCourtesy == null ) { return defaultValue; }
+      return this.specialCourtesy;
+  }
+
   public addSpecialArrangement(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.specialArrangement) !== 'undefined') {
@@ -375,6 +430,17 @@ export class EncounterHospitalization {
   * @returns the value  or undefined
   */
   public getSpecialArrangement(): CodeableConcept[] | undefined {
+      return this.specialArrangement;
+  }
+
+  /**
+  * Gets the current value of field specialArrangement if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialArrangementOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.specialArrangement == undefined || this.specialArrangement == null ) { return defaultValue; }
       return this.specialArrangement;
   }
 

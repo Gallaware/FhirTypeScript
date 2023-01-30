@@ -164,6 +164,17 @@ export class CodeSystemProperty1 {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -209,6 +220,17 @@ export class CodeSystemProperty1 {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -260,6 +282,17 @@ export class CodeSystemProperty1 {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -288,6 +321,17 @@ export class CodeSystemProperty1 {
   * @returns the value  or undefined
   */
   public getCode(): string | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -322,6 +366,17 @@ export class CodeSystemProperty1 {
       return this.valueCode;
   }
 
+  /**
+  * Gets the current value of field valueCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueCodeOrElse(defaultValue: string): string {
+      if (this.valueCode == undefined || this.valueCode == null ) { return defaultValue; }
+      return this.valueCode;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -353,6 +408,17 @@ export class CodeSystemProperty1 {
       return this.valueString;
   }
 
+  /**
+  * Gets the current value of field valueString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueStringOrElse(defaultValue: string): string {
+      if (this.valueString == undefined || this.valueString == null ) { return defaultValue; }
+      return this.valueString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -381,6 +447,17 @@ export class CodeSystemProperty1 {
   * @returns the value  or undefined
   */
   public getValueDateTime(): string | undefined {
+      return this.valueDateTime;
+  }
+
+  /**
+  * Gets the current value of field valueDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueDateTimeOrElse(defaultValue: string): string {
+      if (this.valueDateTime == undefined || this.valueDateTime == null ) { return defaultValue; }
       return this.valueDateTime;
   }
 

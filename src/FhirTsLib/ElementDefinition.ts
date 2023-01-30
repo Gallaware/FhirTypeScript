@@ -2254,6 +2254,17 @@ export class ElementDefinition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -2299,6 +2310,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -2350,6 +2372,17 @@ export class ElementDefinition {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2378,6 +2411,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPath(): string | undefined {
+      return this.path;
+  }
+
+  /**
+  * Gets the current value of field path if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPathOrElse(defaultValue: string): string {
+      if (this.path == undefined || this.path == null ) { return defaultValue; }
       return this.path;
   }
 
@@ -2429,6 +2473,17 @@ export class ElementDefinition {
       return this.representation;
   }
 
+  /**
+  * Gets the current value of field representation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRepresentationOrElse(defaultValue: string[]): string[] {
+      if (this.representation == undefined || this.representation == null ) { return defaultValue; }
+      return this.representation;
+  }
+
   public add_representation(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._representation) !== 'undefined') {
@@ -2477,6 +2532,17 @@ export class ElementDefinition {
       return this._representation;
   }
 
+  /**
+  * Gets the current value of field _representation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_representationOrElse(defaultValue: Element[]): Element[] {
+      if (this._representation == undefined || this._representation == null ) { return defaultValue; }
+      return this._representation;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2508,6 +2574,17 @@ export class ElementDefinition {
       return this.sliceName;
   }
 
+  /**
+  * Gets the current value of field sliceName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSliceNameOrElse(defaultValue: string): string {
+      if (this.sliceName == undefined || this.sliceName == null ) { return defaultValue; }
+      return this.sliceName;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2536,6 +2613,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getLabel(): string | undefined {
+      return this.label;
+  }
+
+  /**
+  * Gets the current value of field label if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLabelOrElse(defaultValue: string): string {
+      if (this.label == undefined || this.label == null ) { return defaultValue; }
       return this.label;
   }
 
@@ -2587,6 +2675,17 @@ export class ElementDefinition {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2615,6 +2714,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getShort(): string | undefined {
+      return this.short;
+  }
+
+  /**
+  * Gets the current value of field short if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getShortOrElse(defaultValue: string): string {
+      if (this.short == undefined || this.short == null ) { return defaultValue; }
       return this.short;
   }
 
@@ -2649,6 +2759,17 @@ export class ElementDefinition {
       return this.definition;
   }
 
+  /**
+  * Gets the current value of field definition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionOrElse(defaultValue: string): string {
+      if (this.definition == undefined || this.definition == null ) { return defaultValue; }
+      return this.definition;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2680,6 +2801,17 @@ export class ElementDefinition {
       return this.comment;
   }
 
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
+      return this.comment;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2708,6 +2840,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getRequirements(): string | undefined {
+      return this.requirements;
+  }
+
+  /**
+  * Gets the current value of field requirements if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequirementsOrElse(defaultValue: string): string {
+      if (this.requirements == undefined || this.requirements == null ) { return defaultValue; }
       return this.requirements;
   }
 
@@ -2759,6 +2902,17 @@ export class ElementDefinition {
       return this.alias;
   }
 
+  /**
+  * Gets the current value of field alias if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAliasOrElse(defaultValue: string[]): string[] {
+      if (this.alias == undefined || this.alias == null ) { return defaultValue; }
+      return this.alias;
+  }
+
   public add_alias(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._alias) !== 'undefined') {
@@ -2807,6 +2961,17 @@ export class ElementDefinition {
       return this._alias;
   }
 
+  /**
+  * Gets the current value of field _alias if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_aliasOrElse(defaultValue: Element[]): Element[] {
+      if (this._alias == undefined || this._alias == null ) { return defaultValue; }
+      return this._alias;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2838,6 +3003,17 @@ export class ElementDefinition {
       return this.max;
   }
 
+  /**
+  * Gets the current value of field max if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaxOrElse(defaultValue: string): string {
+      if (this.max == undefined || this.max == null ) { return defaultValue; }
+      return this.max;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2866,6 +3042,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getContentReference(): string | undefined {
+      return this.contentReference;
+  }
+
+  /**
+  * Gets the current value of field contentReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContentReferenceOrElse(defaultValue: string): string {
+      if (this.contentReference == undefined || this.contentReference == null ) { return defaultValue; }
       return this.contentReference;
   }
 
@@ -2917,6 +3104,17 @@ export class ElementDefinition {
       return this.type;
   }
 
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: ElementDefinitionType[]): ElementDefinitionType[] {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
+      return this.type;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -2945,6 +3143,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getDefaultValueBase64Binary(): string | undefined {
+      return this.defaultValueBase64Binary;
+  }
+
+  /**
+  * Gets the current value of field defaultValueBase64Binary if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueBase64BinaryOrElse(defaultValue: string): string {
+      if (this.defaultValueBase64Binary == undefined || this.defaultValueBase64Binary == null ) { return defaultValue; }
       return this.defaultValueBase64Binary;
   }
 
@@ -2979,6 +3188,17 @@ export class ElementDefinition {
       return this.defaultValueCanonical;
   }
 
+  /**
+  * Gets the current value of field defaultValueCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueCanonicalOrElse(defaultValue: string): string {
+      if (this.defaultValueCanonical == undefined || this.defaultValueCanonical == null ) { return defaultValue; }
+      return this.defaultValueCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3007,6 +3227,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getDefaultValueCode(): string | undefined {
+      return this.defaultValueCode;
+  }
+
+  /**
+  * Gets the current value of field defaultValueCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueCodeOrElse(defaultValue: string): string {
+      if (this.defaultValueCode == undefined || this.defaultValueCode == null ) { return defaultValue; }
       return this.defaultValueCode;
   }
 
@@ -3041,6 +3272,17 @@ export class ElementDefinition {
       return this.defaultValueDate;
   }
 
+  /**
+  * Gets the current value of field defaultValueDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueDateOrElse(defaultValue: string): string {
+      if (this.defaultValueDate == undefined || this.defaultValueDate == null ) { return defaultValue; }
+      return this.defaultValueDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3069,6 +3311,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getDefaultValueDateTime(): string | undefined {
+      return this.defaultValueDateTime;
+  }
+
+  /**
+  * Gets the current value of field defaultValueDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueDateTimeOrElse(defaultValue: string): string {
+      if (this.defaultValueDateTime == undefined || this.defaultValueDateTime == null ) { return defaultValue; }
       return this.defaultValueDateTime;
   }
 
@@ -3103,6 +3356,17 @@ export class ElementDefinition {
       return this.defaultValueId;
   }
 
+  /**
+  * Gets the current value of field defaultValueId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueIdOrElse(defaultValue: string): string {
+      if (this.defaultValueId == undefined || this.defaultValueId == null ) { return defaultValue; }
+      return this.defaultValueId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3131,6 +3395,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getDefaultValueInstant(): string | undefined {
+      return this.defaultValueInstant;
+  }
+
+  /**
+  * Gets the current value of field defaultValueInstant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueInstantOrElse(defaultValue: string): string {
+      if (this.defaultValueInstant == undefined || this.defaultValueInstant == null ) { return defaultValue; }
       return this.defaultValueInstant;
   }
 
@@ -3165,6 +3440,17 @@ export class ElementDefinition {
       return this.defaultValueMarkdown;
   }
 
+  /**
+  * Gets the current value of field defaultValueMarkdown if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueMarkdownOrElse(defaultValue: string): string {
+      if (this.defaultValueMarkdown == undefined || this.defaultValueMarkdown == null ) { return defaultValue; }
+      return this.defaultValueMarkdown;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3193,6 +3479,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getDefaultValueOid(): string | undefined {
+      return this.defaultValueOid;
+  }
+
+  /**
+  * Gets the current value of field defaultValueOid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueOidOrElse(defaultValue: string): string {
+      if (this.defaultValueOid == undefined || this.defaultValueOid == null ) { return defaultValue; }
       return this.defaultValueOid;
   }
 
@@ -3227,6 +3524,17 @@ export class ElementDefinition {
       return this.defaultValueString;
   }
 
+  /**
+  * Gets the current value of field defaultValueString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueStringOrElse(defaultValue: string): string {
+      if (this.defaultValueString == undefined || this.defaultValueString == null ) { return defaultValue; }
+      return this.defaultValueString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3255,6 +3563,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getDefaultValueTime(): string | undefined {
+      return this.defaultValueTime;
+  }
+
+  /**
+  * Gets the current value of field defaultValueTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueTimeOrElse(defaultValue: string): string {
+      if (this.defaultValueTime == undefined || this.defaultValueTime == null ) { return defaultValue; }
       return this.defaultValueTime;
   }
 
@@ -3289,6 +3608,17 @@ export class ElementDefinition {
       return this.defaultValueUri;
   }
 
+  /**
+  * Gets the current value of field defaultValueUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueUriOrElse(defaultValue: string): string {
+      if (this.defaultValueUri == undefined || this.defaultValueUri == null ) { return defaultValue; }
+      return this.defaultValueUri;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3317,6 +3647,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getDefaultValueUrl(): string | undefined {
+      return this.defaultValueUrl;
+  }
+
+  /**
+  * Gets the current value of field defaultValueUrl if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueUrlOrElse(defaultValue: string): string {
+      if (this.defaultValueUrl == undefined || this.defaultValueUrl == null ) { return defaultValue; }
       return this.defaultValueUrl;
   }
 
@@ -3351,6 +3692,17 @@ export class ElementDefinition {
       return this.defaultValueUuid;
   }
 
+  /**
+  * Gets the current value of field defaultValueUuid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueUuidOrElse(defaultValue: string): string {
+      if (this.defaultValueUuid == undefined || this.defaultValueUuid == null ) { return defaultValue; }
+      return this.defaultValueUuid;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3379,6 +3731,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getMeaningWhenMissing(): string | undefined {
+      return this.meaningWhenMissing;
+  }
+
+  /**
+  * Gets the current value of field meaningWhenMissing if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMeaningWhenMissingOrElse(defaultValue: string): string {
+      if (this.meaningWhenMissing == undefined || this.meaningWhenMissing == null ) { return defaultValue; }
       return this.meaningWhenMissing;
   }
 
@@ -3413,6 +3776,17 @@ export class ElementDefinition {
       return this.orderMeaning;
   }
 
+  /**
+  * Gets the current value of field orderMeaning if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOrderMeaningOrElse(defaultValue: string): string {
+      if (this.orderMeaning == undefined || this.orderMeaning == null ) { return defaultValue; }
+      return this.orderMeaning;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3441,6 +3815,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getFixedBase64Binary(): string | undefined {
+      return this.fixedBase64Binary;
+  }
+
+  /**
+  * Gets the current value of field fixedBase64Binary if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedBase64BinaryOrElse(defaultValue: string): string {
+      if (this.fixedBase64Binary == undefined || this.fixedBase64Binary == null ) { return defaultValue; }
       return this.fixedBase64Binary;
   }
 
@@ -3475,6 +3860,17 @@ export class ElementDefinition {
       return this.fixedCanonical;
   }
 
+  /**
+  * Gets the current value of field fixedCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedCanonicalOrElse(defaultValue: string): string {
+      if (this.fixedCanonical == undefined || this.fixedCanonical == null ) { return defaultValue; }
+      return this.fixedCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3503,6 +3899,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getFixedCode(): string | undefined {
+      return this.fixedCode;
+  }
+
+  /**
+  * Gets the current value of field fixedCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedCodeOrElse(defaultValue: string): string {
+      if (this.fixedCode == undefined || this.fixedCode == null ) { return defaultValue; }
       return this.fixedCode;
   }
 
@@ -3537,6 +3944,17 @@ export class ElementDefinition {
       return this.fixedDate;
   }
 
+  /**
+  * Gets the current value of field fixedDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedDateOrElse(defaultValue: string): string {
+      if (this.fixedDate == undefined || this.fixedDate == null ) { return defaultValue; }
+      return this.fixedDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3565,6 +3983,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getFixedDateTime(): string | undefined {
+      return this.fixedDateTime;
+  }
+
+  /**
+  * Gets the current value of field fixedDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedDateTimeOrElse(defaultValue: string): string {
+      if (this.fixedDateTime == undefined || this.fixedDateTime == null ) { return defaultValue; }
       return this.fixedDateTime;
   }
 
@@ -3599,6 +4028,17 @@ export class ElementDefinition {
       return this.fixedId;
   }
 
+  /**
+  * Gets the current value of field fixedId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedIdOrElse(defaultValue: string): string {
+      if (this.fixedId == undefined || this.fixedId == null ) { return defaultValue; }
+      return this.fixedId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3627,6 +4067,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getFixedInstant(): string | undefined {
+      return this.fixedInstant;
+  }
+
+  /**
+  * Gets the current value of field fixedInstant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedInstantOrElse(defaultValue: string): string {
+      if (this.fixedInstant == undefined || this.fixedInstant == null ) { return defaultValue; }
       return this.fixedInstant;
   }
 
@@ -3661,6 +4112,17 @@ export class ElementDefinition {
       return this.fixedMarkdown;
   }
 
+  /**
+  * Gets the current value of field fixedMarkdown if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedMarkdownOrElse(defaultValue: string): string {
+      if (this.fixedMarkdown == undefined || this.fixedMarkdown == null ) { return defaultValue; }
+      return this.fixedMarkdown;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3689,6 +4151,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getFixedOid(): string | undefined {
+      return this.fixedOid;
+  }
+
+  /**
+  * Gets the current value of field fixedOid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedOidOrElse(defaultValue: string): string {
+      if (this.fixedOid == undefined || this.fixedOid == null ) { return defaultValue; }
       return this.fixedOid;
   }
 
@@ -3723,6 +4196,17 @@ export class ElementDefinition {
       return this.fixedString;
   }
 
+  /**
+  * Gets the current value of field fixedString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedStringOrElse(defaultValue: string): string {
+      if (this.fixedString == undefined || this.fixedString == null ) { return defaultValue; }
+      return this.fixedString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3751,6 +4235,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getFixedTime(): string | undefined {
+      return this.fixedTime;
+  }
+
+  /**
+  * Gets the current value of field fixedTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedTimeOrElse(defaultValue: string): string {
+      if (this.fixedTime == undefined || this.fixedTime == null ) { return defaultValue; }
       return this.fixedTime;
   }
 
@@ -3785,6 +4280,17 @@ export class ElementDefinition {
       return this.fixedUri;
   }
 
+  /**
+  * Gets the current value of field fixedUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedUriOrElse(defaultValue: string): string {
+      if (this.fixedUri == undefined || this.fixedUri == null ) { return defaultValue; }
+      return this.fixedUri;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3813,6 +4319,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getFixedUrl(): string | undefined {
+      return this.fixedUrl;
+  }
+
+  /**
+  * Gets the current value of field fixedUrl if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedUrlOrElse(defaultValue: string): string {
+      if (this.fixedUrl == undefined || this.fixedUrl == null ) { return defaultValue; }
       return this.fixedUrl;
   }
 
@@ -3847,6 +4364,17 @@ export class ElementDefinition {
       return this.fixedUuid;
   }
 
+  /**
+  * Gets the current value of field fixedUuid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFixedUuidOrElse(defaultValue: string): string {
+      if (this.fixedUuid == undefined || this.fixedUuid == null ) { return defaultValue; }
+      return this.fixedUuid;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3875,6 +4403,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPatternBase64Binary(): string | undefined {
+      return this.patternBase64Binary;
+  }
+
+  /**
+  * Gets the current value of field patternBase64Binary if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternBase64BinaryOrElse(defaultValue: string): string {
+      if (this.patternBase64Binary == undefined || this.patternBase64Binary == null ) { return defaultValue; }
       return this.patternBase64Binary;
   }
 
@@ -3909,6 +4448,17 @@ export class ElementDefinition {
       return this.patternCanonical;
   }
 
+  /**
+  * Gets the current value of field patternCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternCanonicalOrElse(defaultValue: string): string {
+      if (this.patternCanonical == undefined || this.patternCanonical == null ) { return defaultValue; }
+      return this.patternCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3937,6 +4487,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPatternCode(): string | undefined {
+      return this.patternCode;
+  }
+
+  /**
+  * Gets the current value of field patternCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternCodeOrElse(defaultValue: string): string {
+      if (this.patternCode == undefined || this.patternCode == null ) { return defaultValue; }
       return this.patternCode;
   }
 
@@ -3971,6 +4532,17 @@ export class ElementDefinition {
       return this.patternDate;
   }
 
+  /**
+  * Gets the current value of field patternDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternDateOrElse(defaultValue: string): string {
+      if (this.patternDate == undefined || this.patternDate == null ) { return defaultValue; }
+      return this.patternDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -3999,6 +4571,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPatternDateTime(): string | undefined {
+      return this.patternDateTime;
+  }
+
+  /**
+  * Gets the current value of field patternDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternDateTimeOrElse(defaultValue: string): string {
+      if (this.patternDateTime == undefined || this.patternDateTime == null ) { return defaultValue; }
       return this.patternDateTime;
   }
 
@@ -4033,6 +4616,17 @@ export class ElementDefinition {
       return this.patternId;
   }
 
+  /**
+  * Gets the current value of field patternId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternIdOrElse(defaultValue: string): string {
+      if (this.patternId == undefined || this.patternId == null ) { return defaultValue; }
+      return this.patternId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4061,6 +4655,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPatternInstant(): string | undefined {
+      return this.patternInstant;
+  }
+
+  /**
+  * Gets the current value of field patternInstant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternInstantOrElse(defaultValue: string): string {
+      if (this.patternInstant == undefined || this.patternInstant == null ) { return defaultValue; }
       return this.patternInstant;
   }
 
@@ -4095,6 +4700,17 @@ export class ElementDefinition {
       return this.patternMarkdown;
   }
 
+  /**
+  * Gets the current value of field patternMarkdown if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternMarkdownOrElse(defaultValue: string): string {
+      if (this.patternMarkdown == undefined || this.patternMarkdown == null ) { return defaultValue; }
+      return this.patternMarkdown;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4123,6 +4739,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPatternOid(): string | undefined {
+      return this.patternOid;
+  }
+
+  /**
+  * Gets the current value of field patternOid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternOidOrElse(defaultValue: string): string {
+      if (this.patternOid == undefined || this.patternOid == null ) { return defaultValue; }
       return this.patternOid;
   }
 
@@ -4157,6 +4784,17 @@ export class ElementDefinition {
       return this.patternString;
   }
 
+  /**
+  * Gets the current value of field patternString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternStringOrElse(defaultValue: string): string {
+      if (this.patternString == undefined || this.patternString == null ) { return defaultValue; }
+      return this.patternString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4185,6 +4823,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPatternTime(): string | undefined {
+      return this.patternTime;
+  }
+
+  /**
+  * Gets the current value of field patternTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternTimeOrElse(defaultValue: string): string {
+      if (this.patternTime == undefined || this.patternTime == null ) { return defaultValue; }
       return this.patternTime;
   }
 
@@ -4219,6 +4868,17 @@ export class ElementDefinition {
       return this.patternUri;
   }
 
+  /**
+  * Gets the current value of field patternUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternUriOrElse(defaultValue: string): string {
+      if (this.patternUri == undefined || this.patternUri == null ) { return defaultValue; }
+      return this.patternUri;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4250,6 +4910,17 @@ export class ElementDefinition {
       return this.patternUrl;
   }
 
+  /**
+  * Gets the current value of field patternUrl if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternUrlOrElse(defaultValue: string): string {
+      if (this.patternUrl == undefined || this.patternUrl == null ) { return defaultValue; }
+      return this.patternUrl;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4278,6 +4949,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getPatternUuid(): string | undefined {
+      return this.patternUuid;
+  }
+
+  /**
+  * Gets the current value of field patternUuid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatternUuidOrElse(defaultValue: string): string {
+      if (this.patternUuid == undefined || this.patternUuid == null ) { return defaultValue; }
       return this.patternUuid;
   }
 
@@ -4329,6 +5011,17 @@ export class ElementDefinition {
       return this.example;
   }
 
+  /**
+  * Gets the current value of field example if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExampleOrElse(defaultValue: ElementDefinitionExample[]): ElementDefinitionExample[] {
+      if (this.example == undefined || this.example == null ) { return defaultValue; }
+      return this.example;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4357,6 +5050,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getMinValueDate(): string | undefined {
+      return this.minValueDate;
+  }
+
+  /**
+  * Gets the current value of field minValueDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMinValueDateOrElse(defaultValue: string): string {
+      if (this.minValueDate == undefined || this.minValueDate == null ) { return defaultValue; }
       return this.minValueDate;
   }
 
@@ -4391,6 +5095,17 @@ export class ElementDefinition {
       return this.minValueDateTime;
   }
 
+  /**
+  * Gets the current value of field minValueDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMinValueDateTimeOrElse(defaultValue: string): string {
+      if (this.minValueDateTime == undefined || this.minValueDateTime == null ) { return defaultValue; }
+      return this.minValueDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4419,6 +5134,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getMinValueInstant(): string | undefined {
+      return this.minValueInstant;
+  }
+
+  /**
+  * Gets the current value of field minValueInstant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMinValueInstantOrElse(defaultValue: string): string {
+      if (this.minValueInstant == undefined || this.minValueInstant == null ) { return defaultValue; }
       return this.minValueInstant;
   }
 
@@ -4453,6 +5179,17 @@ export class ElementDefinition {
       return this.minValueTime;
   }
 
+  /**
+  * Gets the current value of field minValueTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMinValueTimeOrElse(defaultValue: string): string {
+      if (this.minValueTime == undefined || this.minValueTime == null ) { return defaultValue; }
+      return this.minValueTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4481,6 +5218,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getMaxValueDate(): string | undefined {
+      return this.maxValueDate;
+  }
+
+  /**
+  * Gets the current value of field maxValueDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaxValueDateOrElse(defaultValue: string): string {
+      if (this.maxValueDate == undefined || this.maxValueDate == null ) { return defaultValue; }
       return this.maxValueDate;
   }
 
@@ -4515,6 +5263,17 @@ export class ElementDefinition {
       return this.maxValueDateTime;
   }
 
+  /**
+  * Gets the current value of field maxValueDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaxValueDateTimeOrElse(defaultValue: string): string {
+      if (this.maxValueDateTime == undefined || this.maxValueDateTime == null ) { return defaultValue; }
+      return this.maxValueDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4546,6 +5305,17 @@ export class ElementDefinition {
       return this.maxValueInstant;
   }
 
+  /**
+  * Gets the current value of field maxValueInstant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaxValueInstantOrElse(defaultValue: string): string {
+      if (this.maxValueInstant == undefined || this.maxValueInstant == null ) { return defaultValue; }
+      return this.maxValueInstant;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4574,6 +5344,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getMaxValueTime(): string | undefined {
+      return this.maxValueTime;
+  }
+
+  /**
+  * Gets the current value of field maxValueTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaxValueTimeOrElse(defaultValue: string): string {
+      if (this.maxValueTime == undefined || this.maxValueTime == null ) { return defaultValue; }
       return this.maxValueTime;
   }
 
@@ -4625,6 +5406,17 @@ export class ElementDefinition {
       return this.condition;
   }
 
+  /**
+  * Gets the current value of field condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionOrElse(defaultValue: string[]): string[] {
+      if (this.condition == undefined || this.condition == null ) { return defaultValue; }
+      return this.condition;
+  }
+
   public add_condition(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._condition) !== 'undefined') {
@@ -4670,6 +5462,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public get_condition(): Element[] | undefined {
+      return this._condition;
+  }
+
+  /**
+  * Gets the current value of field _condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_conditionOrElse(defaultValue: Element[]): Element[] {
+      if (this._condition == undefined || this._condition == null ) { return defaultValue; }
       return this._condition;
   }
 
@@ -4721,6 +5524,17 @@ export class ElementDefinition {
       return this.constraint;
   }
 
+  /**
+  * Gets the current value of field constraint if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConstraintOrElse(defaultValue: ElementDefinitionConstraint[]): ElementDefinitionConstraint[] {
+      if (this.constraint == undefined || this.constraint == null ) { return defaultValue; }
+      return this.constraint;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -4749,6 +5563,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getIsModifierReason(): string | undefined {
+      return this.isModifierReason;
+  }
+
+  /**
+  * Gets the current value of field isModifierReason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIsModifierReasonOrElse(defaultValue: string): string {
+      if (this.isModifierReason == undefined || this.isModifierReason == null ) { return defaultValue; }
       return this.isModifierReason;
   }
 
@@ -4797,6 +5622,17 @@ export class ElementDefinition {
   * @returns the value  or undefined
   */
   public getMapping(): ElementDefinitionMapping[] | undefined {
+      return this.mapping;
+  }
+
+  /**
+  * Gets the current value of field mapping if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMappingOrElse(defaultValue: ElementDefinitionMapping[]): ElementDefinitionMapping[] {
+      if (this.mapping == undefined || this.mapping == null ) { return defaultValue; }
       return this.mapping;
   }
 

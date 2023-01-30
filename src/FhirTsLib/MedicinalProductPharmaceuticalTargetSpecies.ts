@@ -89,6 +89,17 @@ export class MedicinalProductPharmaceuticalTargetSpecies {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -134,6 +145,17 @@ export class MedicinalProductPharmaceuticalTargetSpecies {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -185,6 +207,17 @@ export class MedicinalProductPharmaceuticalTargetSpecies {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addWithdrawalPeriod(newValue: MedicinalProductPharmaceuticalWithdrawalPeriod) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.withdrawalPeriod) !== 'undefined') {
@@ -230,6 +263,17 @@ export class MedicinalProductPharmaceuticalTargetSpecies {
   * @returns the value  or undefined
   */
   public getWithdrawalPeriod(): MedicinalProductPharmaceuticalWithdrawalPeriod[] | undefined {
+      return this.withdrawalPeriod;
+  }
+
+  /**
+  * Gets the current value of field withdrawalPeriod if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getWithdrawalPeriodOrElse(defaultValue: MedicinalProductPharmaceuticalWithdrawalPeriod[]): MedicinalProductPharmaceuticalWithdrawalPeriod[] {
+      if (this.withdrawalPeriod == undefined || this.withdrawalPeriod == null ) { return defaultValue; }
       return this.withdrawalPeriod;
   }
 

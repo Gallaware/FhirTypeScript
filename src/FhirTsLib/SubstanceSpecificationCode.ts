@@ -123,6 +123,17 @@ export class SubstanceSpecificationCode {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -168,6 +179,17 @@ export class SubstanceSpecificationCode {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -219,6 +241,17 @@ export class SubstanceSpecificationCode {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -250,6 +283,17 @@ export class SubstanceSpecificationCode {
       return this.statusDate;
   }
 
+  /**
+  * Gets the current value of field statusDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusDateOrElse(defaultValue: string): string {
+      if (this.statusDate == undefined || this.statusDate == null ) { return defaultValue; }
+      return this.statusDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -278,6 +322,17 @@ export class SubstanceSpecificationCode {
   * @returns the value  or undefined
   */
   public getComment(): string | undefined {
+      return this.comment;
+  }
+
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
       return this.comment;
   }
 
@@ -326,6 +381,17 @@ export class SubstanceSpecificationCode {
   * @returns the value  or undefined
   */
   public getSource(): Reference[] | undefined {
+      return this.source;
+  }
+
+  /**
+  * Gets the current value of field source if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.source == undefined || this.source == null ) { return defaultValue; }
       return this.source;
   }
 

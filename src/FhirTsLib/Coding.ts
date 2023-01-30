@@ -119,6 +119,17 @@ export class Coding {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -167,6 +178,17 @@ export class Coding {
       return this.extension;
   }
 
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
+      return this.extension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -195,6 +217,17 @@ export class Coding {
   * @returns the value  or undefined
   */
   public getSystem(): string | undefined {
+      return this.system;
+  }
+
+  /**
+  * Gets the current value of field system if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSystemOrElse(defaultValue: string): string {
+      if (this.system == undefined || this.system == null ) { return defaultValue; }
       return this.system;
   }
 
@@ -229,6 +262,17 @@ export class Coding {
       return this.version;
   }
 
+  /**
+  * Gets the current value of field version if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionOrElse(defaultValue: string): string {
+      if (this.version == undefined || this.version == null ) { return defaultValue; }
+      return this.version;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -260,6 +304,17 @@ export class Coding {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -288,6 +343,17 @@ export class Coding {
   * @returns the value  or undefined
   */
   public getDisplay(): string | undefined {
+      return this.display;
+  }
+
+  /**
+  * Gets the current value of field display if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDisplayOrElse(defaultValue: string): string {
+      if (this.display == undefined || this.display == null ) { return defaultValue; }
       return this.display;
   }
 

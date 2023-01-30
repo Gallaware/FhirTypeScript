@@ -401,6 +401,17 @@ export class CatalogEntry {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -432,6 +443,17 @@ export class CatalogEntry {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -460,6 +482,17 @@ export class CatalogEntry {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -511,6 +544,17 @@ export class CatalogEntry {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -556,6 +600,17 @@ export class CatalogEntry {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -607,6 +662,17 @@ export class CatalogEntry {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -652,6 +718,17 @@ export class CatalogEntry {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -703,6 +780,17 @@ export class CatalogEntry {
       return this.additionalIdentifier;
   }
 
+  /**
+  * Gets the current value of field additionalIdentifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdditionalIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.additionalIdentifier == undefined || this.additionalIdentifier == null ) { return defaultValue; }
+      return this.additionalIdentifier;
+  }
+
   public addClassification(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.classification) !== 'undefined') {
@@ -751,6 +839,17 @@ export class CatalogEntry {
       return this.classification;
   }
 
+  /**
+  * Gets the current value of field classification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getClassificationOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.classification == undefined || this.classification == null ) { return defaultValue; }
+      return this.classification;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -780,6 +879,17 @@ export class CatalogEntry {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -814,6 +924,17 @@ export class CatalogEntry {
       return this.validTo;
   }
 
+  /**
+  * Gets the current value of field validTo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValidToOrElse(defaultValue: string): string {
+      if (this.validTo == undefined || this.validTo == null ) { return defaultValue; }
+      return this.validTo;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -842,6 +963,17 @@ export class CatalogEntry {
   * @returns the value  or undefined
   */
   public getLastUpdated(): string | undefined {
+      return this.lastUpdated;
+  }
+
+  /**
+  * Gets the current value of field lastUpdated if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLastUpdatedOrElse(defaultValue: string): string {
+      if (this.lastUpdated == undefined || this.lastUpdated == null ) { return defaultValue; }
       return this.lastUpdated;
   }
 
@@ -893,6 +1025,17 @@ export class CatalogEntry {
       return this.additionalCharacteristic;
   }
 
+  /**
+  * Gets the current value of field additionalCharacteristic if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdditionalCharacteristicOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.additionalCharacteristic == undefined || this.additionalCharacteristic == null ) { return defaultValue; }
+      return this.additionalCharacteristic;
+  }
+
   public addAdditionalClassification(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.additionalClassification) !== 'undefined') {
@@ -941,6 +1084,17 @@ export class CatalogEntry {
       return this.additionalClassification;
   }
 
+  /**
+  * Gets the current value of field additionalClassification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdditionalClassificationOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.additionalClassification == undefined || this.additionalClassification == null ) { return defaultValue; }
+      return this.additionalClassification;
+  }
+
   public addRelatedEntry(newValue: CatalogEntryRelatedEntry) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relatedEntry) !== 'undefined') {
@@ -986,6 +1140,17 @@ export class CatalogEntry {
   * @returns the value  or undefined
   */
   public getRelatedEntry(): CatalogEntryRelatedEntry[] | undefined {
+      return this.relatedEntry;
+  }
+
+  /**
+  * Gets the current value of field relatedEntry if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatedEntryOrElse(defaultValue: CatalogEntryRelatedEntry[]): CatalogEntryRelatedEntry[] {
+      if (this.relatedEntry == undefined || this.relatedEntry == null ) { return defaultValue; }
       return this.relatedEntry;
   }
 

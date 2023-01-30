@@ -420,6 +420,17 @@ export class SubstanceSpecification {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -451,6 +462,17 @@ export class SubstanceSpecification {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -479,6 +501,17 @@ export class SubstanceSpecification {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -530,6 +563,17 @@ export class SubstanceSpecification {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -575,6 +619,17 @@ export class SubstanceSpecification {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -626,6 +681,17 @@ export class SubstanceSpecification {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -654,6 +720,17 @@ export class SubstanceSpecification {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -705,6 +782,17 @@ export class SubstanceSpecification {
       return this.source;
   }
 
+  /**
+  * Gets the current value of field source if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.source == undefined || this.source == null ) { return defaultValue; }
+      return this.source;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -733,6 +821,17 @@ export class SubstanceSpecification {
   * @returns the value  or undefined
   */
   public getComment(): string | undefined {
+      return this.comment;
+  }
+
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
       return this.comment;
   }
 
@@ -784,6 +883,17 @@ export class SubstanceSpecification {
       return this.moiety;
   }
 
+  /**
+  * Gets the current value of field moiety if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMoietyOrElse(defaultValue: SubstanceSpecificationMoiety[]): SubstanceSpecificationMoiety[] {
+      if (this.moiety == undefined || this.moiety == null ) { return defaultValue; }
+      return this.moiety;
+  }
+
   public addProperty(newValue: SubstanceSpecificationProperty) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.property) !== 'undefined') {
@@ -829,6 +939,17 @@ export class SubstanceSpecification {
   * @returns the value  or undefined
   */
   public getProperty(): SubstanceSpecificationProperty[] | undefined {
+      return this.property;
+  }
+
+  /**
+  * Gets the current value of field property if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPropertyOrElse(defaultValue: SubstanceSpecificationProperty[]): SubstanceSpecificationProperty[] {
+      if (this.property == undefined || this.property == null ) { return defaultValue; }
       return this.property;
   }
 
@@ -880,6 +1001,17 @@ export class SubstanceSpecification {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: SubstanceSpecificationCode[]): SubstanceSpecificationCode[] {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   public addName(newValue: SubstanceSpecificationName) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.name) !== 'undefined') {
@@ -925,6 +1057,17 @@ export class SubstanceSpecification {
   * @returns the value  or undefined
   */
   public getName(): SubstanceSpecificationName[] | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: SubstanceSpecificationName[]): SubstanceSpecificationName[] {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -976,6 +1119,17 @@ export class SubstanceSpecification {
       return this.molecularWeight;
   }
 
+  /**
+  * Gets the current value of field molecularWeight if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMolecularWeightOrElse(defaultValue: SubstanceSpecificationMolecularWeight[]): SubstanceSpecificationMolecularWeight[] {
+      if (this.molecularWeight == undefined || this.molecularWeight == null ) { return defaultValue; }
+      return this.molecularWeight;
+  }
+
   public addRelationship(newValue: SubstanceSpecificationRelationship) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relationship) !== 'undefined') {
@@ -1021,6 +1175,17 @@ export class SubstanceSpecification {
   * @returns the value  or undefined
   */
   public getRelationship(): SubstanceSpecificationRelationship[] | undefined {
+      return this.relationship;
+  }
+
+  /**
+  * Gets the current value of field relationship if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelationshipOrElse(defaultValue: SubstanceSpecificationRelationship[]): SubstanceSpecificationRelationship[] {
+      if (this.relationship == undefined || this.relationship == null ) { return defaultValue; }
       return this.relationship;
   }
 

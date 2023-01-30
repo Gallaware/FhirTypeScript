@@ -154,6 +154,17 @@ export class TestScriptCapability {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -199,6 +210,17 @@ export class TestScriptCapability {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -250,6 +272,17 @@ export class TestScriptCapability {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -278,6 +311,17 @@ export class TestScriptCapability {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -329,6 +373,17 @@ export class TestScriptCapability {
       return this.origin;
   }
 
+  /**
+  * Gets the current value of field origin if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOriginOrElse(defaultValue: number[]): number[] {
+      if (this.origin == undefined || this.origin == null ) { return defaultValue; }
+      return this.origin;
+  }
+
   public add_origin(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._origin) !== 'undefined') {
@@ -374,6 +429,17 @@ export class TestScriptCapability {
   * @returns the value  or undefined
   */
   public get_origin(): Element[] | undefined {
+      return this._origin;
+  }
+
+  /**
+  * Gets the current value of field _origin if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_originOrElse(defaultValue: Element[]): Element[] {
+      if (this._origin == undefined || this._origin == null ) { return defaultValue; }
       return this._origin;
   }
 
@@ -425,6 +491,17 @@ export class TestScriptCapability {
       return this.link;
   }
 
+  /**
+  * Gets the current value of field link if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkOrElse(defaultValue: string[]): string[] {
+      if (this.link == undefined || this.link == null ) { return defaultValue; }
+      return this.link;
+  }
+
   public add_link(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._link) !== 'undefined') {
@@ -473,6 +550,17 @@ export class TestScriptCapability {
       return this._link;
   }
 
+  /**
+  * Gets the current value of field _link if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_linkOrElse(defaultValue: Element[]): Element[] {
+      if (this._link == undefined || this._link == null ) { return defaultValue; }
+      return this._link;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -501,6 +589,17 @@ export class TestScriptCapability {
   * @returns the value  or undefined
   */
   public getCapabilities(): string | undefined {
+      return this.capabilities;
+  }
+
+  /**
+  * Gets the current value of field capabilities if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCapabilitiesOrElse(defaultValue: string): string {
+      if (this.capabilities == undefined || this.capabilities == null ) { return defaultValue; }
       return this.capabilities;
   }
 

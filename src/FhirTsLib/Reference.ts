@@ -110,6 +110,17 @@ export class Reference {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -158,6 +169,17 @@ export class Reference {
       return this.extension;
   }
 
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
+      return this.extension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -186,6 +208,17 @@ export class Reference {
   * @returns the value  or undefined
   */
   public getReference(): string | undefined {
+      return this.reference;
+  }
+
+  /**
+  * Gets the current value of field reference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReferenceOrElse(defaultValue: string): string {
+      if (this.reference == undefined || this.reference == null ) { return defaultValue; }
       return this.reference;
   }
 
@@ -221,6 +254,17 @@ export class Reference {
       return this.type;
   }
 
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
+      return this.type;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -249,6 +293,17 @@ export class Reference {
   * @returns the value  or undefined
   */
   public getDisplay(): string | undefined {
+      return this.display;
+  }
+
+  /**
+  * Gets the current value of field display if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDisplayOrElse(defaultValue: string): string {
+      if (this.display == undefined || this.display == null ) { return defaultValue; }
       return this.display;
   }
 

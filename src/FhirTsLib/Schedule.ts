@@ -349,6 +349,17 @@ export class Schedule {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -380,6 +391,17 @@ export class Schedule {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -408,6 +430,17 @@ export class Schedule {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -459,6 +492,17 @@ export class Schedule {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -504,6 +548,17 @@ export class Schedule {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -555,6 +610,17 @@ export class Schedule {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -600,6 +666,17 @@ export class Schedule {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -651,6 +728,17 @@ export class Schedule {
       return this.serviceCategory;
   }
 
+  /**
+  * Gets the current value of field serviceCategory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getServiceCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.serviceCategory == undefined || this.serviceCategory == null ) { return defaultValue; }
+      return this.serviceCategory;
+  }
+
   public addServiceType(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.serviceType) !== 'undefined') {
@@ -696,6 +784,17 @@ export class Schedule {
   * @returns the value  or undefined
   */
   public getServiceType(): CodeableConcept[] | undefined {
+      return this.serviceType;
+  }
+
+  /**
+  * Gets the current value of field serviceType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getServiceTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.serviceType == undefined || this.serviceType == null ) { return defaultValue; }
       return this.serviceType;
   }
 
@@ -747,6 +846,17 @@ export class Schedule {
       return this.specialty;
   }
 
+  /**
+  * Gets the current value of field specialty if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialtyOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.specialty == undefined || this.specialty == null ) { return defaultValue; }
+      return this.specialty;
+  }
+
   public addActor(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.actor) !== 'undefined') {
@@ -795,6 +905,17 @@ export class Schedule {
       return this.actor;
   }
 
+  /**
+  * Gets the current value of field actor if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getActorOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.actor == undefined || this.actor == null ) { return defaultValue; }
+      return this.actor;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -823,6 +944,17 @@ export class Schedule {
   * @returns the value  or undefined
   */
   public getComment(): string | undefined {
+      return this.comment;
+  }
+
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
       return this.comment;
   }
 

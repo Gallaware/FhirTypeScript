@@ -165,6 +165,17 @@ export class ConsentProvision {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -210,6 +221,17 @@ export class ConsentProvision {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -261,6 +283,17 @@ export class ConsentProvision {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -290,6 +323,17 @@ export class ConsentProvision {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -341,6 +385,17 @@ export class ConsentProvision {
       return this.actor;
   }
 
+  /**
+  * Gets the current value of field actor if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getActorOrElse(defaultValue: ConsentActor[]): ConsentActor[] {
+      if (this.actor == undefined || this.actor == null ) { return defaultValue; }
+      return this.actor;
+  }
+
   public addAction(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.action) !== 'undefined') {
@@ -386,6 +441,17 @@ export class ConsentProvision {
   * @returns the value  or undefined
   */
   public getAction(): CodeableConcept[] | undefined {
+      return this.action;
+  }
+
+  /**
+  * Gets the current value of field action if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getActionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.action == undefined || this.action == null ) { return defaultValue; }
       return this.action;
   }
 
@@ -437,6 +503,17 @@ export class ConsentProvision {
       return this.securityLabel;
   }
 
+  /**
+  * Gets the current value of field securityLabel if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSecurityLabelOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.securityLabel == undefined || this.securityLabel == null ) { return defaultValue; }
+      return this.securityLabel;
+  }
+
   public addPurpose(newValue: Coding) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.purpose) !== 'undefined') {
@@ -482,6 +559,17 @@ export class ConsentProvision {
   * @returns the value  or undefined
   */
   public getPurpose(): Coding[] | undefined {
+      return this.purpose;
+  }
+
+  /**
+  * Gets the current value of field purpose if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPurposeOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.purpose == undefined || this.purpose == null ) { return defaultValue; }
       return this.purpose;
   }
 
@@ -533,6 +621,17 @@ export class ConsentProvision {
       return this.class;
   }
 
+  /**
+  * Gets the current value of field class if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getClassOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.class == undefined || this.class == null ) { return defaultValue; }
+      return this.class;
+  }
+
   public addCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.code) !== 'undefined') {
@@ -578,6 +677,17 @@ export class ConsentProvision {
   * @returns the value  or undefined
   */
   public getCode(): CodeableConcept[] | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -629,6 +739,17 @@ export class ConsentProvision {
       return this.data;
   }
 
+  /**
+  * Gets the current value of field data if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDataOrElse(defaultValue: ConsentData[]): ConsentData[] {
+      if (this.data == undefined || this.data == null ) { return defaultValue; }
+      return this.data;
+  }
+
   public addProvision(newValue: ConsentProvision) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.provision) !== 'undefined') {
@@ -674,6 +795,17 @@ export class ConsentProvision {
   * @returns the value  or undefined
   */
   public getProvision(): ConsentProvision[] | undefined {
+      return this.provision;
+  }
+
+  /**
+  * Gets the current value of field provision if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProvisionOrElse(defaultValue: ConsentProvision[]): ConsentProvision[] {
+      if (this.provision == undefined || this.provision == null ) { return defaultValue; }
       return this.provision;
   }
 

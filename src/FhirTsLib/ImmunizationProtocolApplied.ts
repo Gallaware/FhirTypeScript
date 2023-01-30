@@ -147,6 +147,17 @@ export class ImmunizationProtocolApplied {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -192,6 +203,17 @@ export class ImmunizationProtocolApplied {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -243,6 +265,17 @@ export class ImmunizationProtocolApplied {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -271,6 +304,17 @@ export class ImmunizationProtocolApplied {
   * @returns the value  or undefined
   */
   public getSeries(): string | undefined {
+      return this.series;
+  }
+
+  /**
+  * Gets the current value of field series if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSeriesOrElse(defaultValue: string): string {
+      if (this.series == undefined || this.series == null ) { return defaultValue; }
       return this.series;
   }
 
@@ -322,6 +366,17 @@ export class ImmunizationProtocolApplied {
       return this.targetDisease;
   }
 
+  /**
+  * Gets the current value of field targetDisease if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetDiseaseOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.targetDisease == undefined || this.targetDisease == null ) { return defaultValue; }
+      return this.targetDisease;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -353,6 +408,17 @@ export class ImmunizationProtocolApplied {
       return this.doseNumberString;
   }
 
+  /**
+  * Gets the current value of field doseNumberString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDoseNumberStringOrElse(defaultValue: string): string {
+      if (this.doseNumberString == undefined || this.doseNumberString == null ) { return defaultValue; }
+      return this.doseNumberString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -381,6 +447,17 @@ export class ImmunizationProtocolApplied {
   * @returns the value  or undefined
   */
   public getSeriesDosesString(): string | undefined {
+      return this.seriesDosesString;
+  }
+
+  /**
+  * Gets the current value of field seriesDosesString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSeriesDosesStringOrElse(defaultValue: string): string {
+      if (this.seriesDosesString == undefined || this.seriesDosesString == null ) { return defaultValue; }
       return this.seriesDosesString;
   }
 

@@ -504,6 +504,17 @@ export class ClaimResponse {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -535,6 +546,17 @@ export class ClaimResponse {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -563,6 +585,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -614,6 +647,17 @@ export class ClaimResponse {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -659,6 +703,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -710,6 +765,17 @@ export class ClaimResponse {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -758,6 +824,17 @@ export class ClaimResponse {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -786,6 +863,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -820,6 +908,17 @@ export class ClaimResponse {
       return this.use;
   }
 
+  /**
+  * Gets the current value of field use if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseOrElse(defaultValue: string): string {
+      if (this.use == undefined || this.use == null ) { return defaultValue; }
+      return this.use;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -848,6 +947,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getCreated(): string | undefined {
+      return this.created;
+  }
+
+  /**
+  * Gets the current value of field created if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCreatedOrElse(defaultValue: string): string {
+      if (this.created == undefined || this.created == null ) { return defaultValue; }
       return this.created;
   }
 
@@ -882,6 +992,17 @@ export class ClaimResponse {
       return this.outcome;
   }
 
+  /**
+  * Gets the current value of field outcome if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeOrElse(defaultValue: string): string {
+      if (this.outcome == undefined || this.outcome == null ) { return defaultValue; }
+      return this.outcome;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -913,6 +1034,17 @@ export class ClaimResponse {
       return this.disposition;
   }
 
+  /**
+  * Gets the current value of field disposition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDispositionOrElse(defaultValue: string): string {
+      if (this.disposition == undefined || this.disposition == null ) { return defaultValue; }
+      return this.disposition;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -941,6 +1073,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getPreAuthRef(): string | undefined {
+      return this.preAuthRef;
+  }
+
+  /**
+  * Gets the current value of field preAuthRef if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPreAuthRefOrElse(defaultValue: string): string {
+      if (this.preAuthRef == undefined || this.preAuthRef == null ) { return defaultValue; }
       return this.preAuthRef;
   }
 
@@ -992,6 +1135,17 @@ export class ClaimResponse {
       return this.item;
   }
 
+  /**
+  * Gets the current value of field item if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getItemOrElse(defaultValue: ClaimResponseItem[]): ClaimResponseItem[] {
+      if (this.item == undefined || this.item == null ) { return defaultValue; }
+      return this.item;
+  }
+
   public addAddItem(newValue: ClaimResponseAddItem) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.addItem) !== 'undefined') {
@@ -1037,6 +1191,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getAddItem(): ClaimResponseAddItem[] | undefined {
+      return this.addItem;
+  }
+
+  /**
+  * Gets the current value of field addItem if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAddItemOrElse(defaultValue: ClaimResponseAddItem[]): ClaimResponseAddItem[] {
+      if (this.addItem == undefined || this.addItem == null ) { return defaultValue; }
       return this.addItem;
   }
 
@@ -1088,6 +1253,17 @@ export class ClaimResponse {
       return this.adjudication;
   }
 
+  /**
+  * Gets the current value of field adjudication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdjudicationOrElse(defaultValue: ClaimResponseAdjudication[]): ClaimResponseAdjudication[] {
+      if (this.adjudication == undefined || this.adjudication == null ) { return defaultValue; }
+      return this.adjudication;
+  }
+
   public addTotal(newValue: ClaimResponseTotal) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.total) !== 'undefined') {
@@ -1133,6 +1309,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getTotal(): ClaimResponseTotal[] | undefined {
+      return this.total;
+  }
+
+  /**
+  * Gets the current value of field total if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTotalOrElse(defaultValue: ClaimResponseTotal[]): ClaimResponseTotal[] {
+      if (this.total == undefined || this.total == null ) { return defaultValue; }
       return this.total;
   }
 
@@ -1184,6 +1371,17 @@ export class ClaimResponse {
       return this.processNote;
   }
 
+  /**
+  * Gets the current value of field processNote if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcessNoteOrElse(defaultValue: ClaimResponseProcessNote[]): ClaimResponseProcessNote[] {
+      if (this.processNote == undefined || this.processNote == null ) { return defaultValue; }
+      return this.processNote;
+  }
+
   public addCommunicationRequest(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.communicationRequest) !== 'undefined') {
@@ -1229,6 +1427,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getCommunicationRequest(): Reference[] | undefined {
+      return this.communicationRequest;
+  }
+
+  /**
+  * Gets the current value of field communicationRequest if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommunicationRequestOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.communicationRequest == undefined || this.communicationRequest == null ) { return defaultValue; }
       return this.communicationRequest;
   }
 
@@ -1280,6 +1489,17 @@ export class ClaimResponse {
       return this.insurance;
   }
 
+  /**
+  * Gets the current value of field insurance if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInsuranceOrElse(defaultValue: ClaimResponseInsurance[]): ClaimResponseInsurance[] {
+      if (this.insurance == undefined || this.insurance == null ) { return defaultValue; }
+      return this.insurance;
+  }
+
   public addError(newValue: ClaimResponseError) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.error) !== 'undefined') {
@@ -1325,6 +1545,17 @@ export class ClaimResponse {
   * @returns the value  or undefined
   */
   public getError(): ClaimResponseError[] | undefined {
+      return this.error;
+  }
+
+  /**
+  * Gets the current value of field error if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getErrorOrElse(defaultValue: ClaimResponseError[]): ClaimResponseError[] {
+      if (this.error == undefined || this.error == null ) { return defaultValue; }
       return this.error;
   }
 

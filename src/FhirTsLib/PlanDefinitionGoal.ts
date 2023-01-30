@@ -128,6 +128,17 @@ export class PlanDefinitionGoal {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -173,6 +184,17 @@ export class PlanDefinitionGoal {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -224,6 +246,17 @@ export class PlanDefinitionGoal {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addAddresses(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.addresses) !== 'undefined') {
@@ -269,6 +302,17 @@ export class PlanDefinitionGoal {
   * @returns the value  or undefined
   */
   public getAddresses(): CodeableConcept[] | undefined {
+      return this.addresses;
+  }
+
+  /**
+  * Gets the current value of field addresses if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAddressesOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.addresses == undefined || this.addresses == null ) { return defaultValue; }
       return this.addresses;
   }
 
@@ -320,6 +364,17 @@ export class PlanDefinitionGoal {
       return this.documentation;
   }
 
+  /**
+  * Gets the current value of field documentation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDocumentationOrElse(defaultValue: RelatedArtifact[]): RelatedArtifact[] {
+      if (this.documentation == undefined || this.documentation == null ) { return defaultValue; }
+      return this.documentation;
+  }
+
   public addTarget(newValue: PlanDefinitionTarget) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.target) !== 'undefined') {
@@ -365,6 +420,17 @@ export class PlanDefinitionGoal {
   * @returns the value  or undefined
   */
   public getTarget(): PlanDefinitionTarget[] | undefined {
+      return this.target;
+  }
+
+  /**
+  * Gets the current value of field target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetOrElse(defaultValue: PlanDefinitionTarget[]): PlanDefinitionTarget[] {
+      if (this.target == undefined || this.target == null ) { return defaultValue; }
       return this.target;
   }
 

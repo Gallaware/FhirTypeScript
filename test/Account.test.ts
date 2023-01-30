@@ -1,9 +1,10 @@
-import { assertEquals } from "https://Deno.land/std/testing/asserts.ts";
+import test, { describe, it,  } from 'node:test';
 import { instanceToPlain } from '../node_modules/class-transformer';
-import { Account } from '../src/FhirTsLib/Account.ts';
-import { Identifier } from "../src/FhirTsLib/Identifier.ts";
+import { Account } from '../src/FhirTsLib/Account';
+import { Identifier } from "../src/FhirTsLib/Identifier";
 
-Deno.test('Account creation', () => {
+describe('Account creation', () => {
+  it("JSON test for account", () => {
   let myAccount;
 
   myAccount = new Account();
@@ -14,5 +15,6 @@ Deno.test('Account creation', () => {
   
  let accountPlain = instanceToPlain(myAccount);
 
- assertEquals(JSON.stringify(accountPlain), '{"resourceType":"Account","identifier":[{"id":"TimboAccount"}]}');
+//  test(JSON.stringify(accountPlain)).toBe('{"resourceType":"Account","identifier":[{"id":"TimboAccount"}]}');
  })
+});

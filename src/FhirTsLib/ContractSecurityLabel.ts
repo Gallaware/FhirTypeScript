@@ -111,6 +111,17 @@ export class ContractSecurityLabel {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -156,6 +167,17 @@ export class ContractSecurityLabel {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -207,6 +229,17 @@ export class ContractSecurityLabel {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addNumber(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.number) !== 'undefined') {
@@ -252,6 +285,17 @@ export class ContractSecurityLabel {
   * @returns the value  or undefined
   */
   public getNumber(): number[] | undefined {
+      return this.number;
+  }
+
+  /**
+  * Gets the current value of field number if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNumberOrElse(defaultValue: number[]): number[] {
+      if (this.number == undefined || this.number == null ) { return defaultValue; }
       return this.number;
   }
 
@@ -303,6 +347,17 @@ export class ContractSecurityLabel {
       return this._number;
   }
 
+  /**
+  * Gets the current value of field _number if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_numberOrElse(defaultValue: Element[]): Element[] {
+      if (this._number == undefined || this._number == null ) { return defaultValue; }
+      return this._number;
+  }
+
   public addCategory(newValue: Coding) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.category) !== 'undefined') {
@@ -351,6 +406,17 @@ export class ContractSecurityLabel {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   public addControl(newValue: Coding) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.control) !== 'undefined') {
@@ -396,6 +462,17 @@ export class ContractSecurityLabel {
   * @returns the value  or undefined
   */
   public getControl(): Coding[] | undefined {
+      return this.control;
+  }
+
+  /**
+  * Gets the current value of field control if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getControlOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.control == undefined || this.control == null ) { return defaultValue; }
       return this.control;
   }
 

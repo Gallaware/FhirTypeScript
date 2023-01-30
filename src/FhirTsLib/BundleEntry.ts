@@ -113,6 +113,17 @@ export class BundleEntry {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -158,6 +169,17 @@ export class BundleEntry {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -209,6 +231,17 @@ export class BundleEntry {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addLink(newValue: BundleLink) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.link) !== 'undefined') {
@@ -257,6 +290,17 @@ export class BundleEntry {
       return this.link;
   }
 
+  /**
+  * Gets the current value of field link if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkOrElse(defaultValue: BundleLink[]): BundleLink[] {
+      if (this.link == undefined || this.link == null ) { return defaultValue; }
+      return this.link;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -285,6 +329,17 @@ export class BundleEntry {
   * @returns the value  or undefined
   */
   public getFullUrl(): string | undefined {
+      return this.fullUrl;
+  }
+
+  /**
+  * Gets the current value of field fullUrl if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFullUrlOrElse(defaultValue: string): string {
+      if (this.fullUrl == undefined || this.fullUrl == null ) { return defaultValue; }
       return this.fullUrl;
   }
 

@@ -331,6 +331,17 @@ export class SubstancePolymer {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -362,6 +373,17 @@ export class SubstancePolymer {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -390,6 +412,17 @@ export class SubstancePolymer {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -441,6 +474,17 @@ export class SubstancePolymer {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -486,6 +530,17 @@ export class SubstancePolymer {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -537,6 +592,17 @@ export class SubstancePolymer {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addCopolymerConnectivity(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.copolymerConnectivity) !== 'undefined') {
@@ -582,6 +648,17 @@ export class SubstancePolymer {
   * @returns the value  or undefined
   */
   public getCopolymerConnectivity(): CodeableConcept[] | undefined {
+      return this.copolymerConnectivity;
+  }
+
+  /**
+  * Gets the current value of field copolymerConnectivity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCopolymerConnectivityOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.copolymerConnectivity == undefined || this.copolymerConnectivity == null ) { return defaultValue; }
       return this.copolymerConnectivity;
   }
 
@@ -633,6 +710,17 @@ export class SubstancePolymer {
       return this.modification;
   }
 
+  /**
+  * Gets the current value of field modification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModificationOrElse(defaultValue: string[]): string[] {
+      if (this.modification == undefined || this.modification == null ) { return defaultValue; }
+      return this.modification;
+  }
+
   public add_modification(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._modification) !== 'undefined') {
@@ -678,6 +766,17 @@ export class SubstancePolymer {
   * @returns the value  or undefined
   */
   public get_modification(): Element[] | undefined {
+      return this._modification;
+  }
+
+  /**
+  * Gets the current value of field _modification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_modificationOrElse(defaultValue: Element[]): Element[] {
+      if (this._modification == undefined || this._modification == null ) { return defaultValue; }
       return this._modification;
   }
 
@@ -729,6 +828,17 @@ export class SubstancePolymer {
       return this.monomerSet;
   }
 
+  /**
+  * Gets the current value of field monomerSet if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMonomerSetOrElse(defaultValue: SubstancePolymerMonomerSet[]): SubstancePolymerMonomerSet[] {
+      if (this.monomerSet == undefined || this.monomerSet == null ) { return defaultValue; }
+      return this.monomerSet;
+  }
+
   public addRepeat(newValue: SubstancePolymerRepeat) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.repeat) !== 'undefined') {
@@ -774,6 +884,17 @@ export class SubstancePolymer {
   * @returns the value  or undefined
   */
   public getRepeat(): SubstancePolymerRepeat[] | undefined {
+      return this.repeat;
+  }
+
+  /**
+  * Gets the current value of field repeat if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRepeatOrElse(defaultValue: SubstancePolymerRepeat[]): SubstancePolymerRepeat[] {
+      if (this.repeat == undefined || this.repeat == null ) { return defaultValue; }
       return this.repeat;
   }
 

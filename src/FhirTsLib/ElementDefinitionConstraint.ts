@@ -157,6 +157,17 @@ export class ElementDefinitionConstraint {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -202,6 +213,17 @@ export class ElementDefinitionConstraint {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -253,6 +275,17 @@ export class ElementDefinitionConstraint {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -284,6 +317,17 @@ export class ElementDefinitionConstraint {
       return this.key;
   }
 
+  /**
+  * Gets the current value of field key if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getKeyOrElse(defaultValue: string): string {
+      if (this.key == undefined || this.key == null ) { return defaultValue; }
+      return this.key;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -312,6 +356,17 @@ export class ElementDefinitionConstraint {
   * @returns the value  or undefined
   */
   public getRequirements(): string | undefined {
+      return this.requirements;
+  }
+
+  /**
+  * Gets the current value of field requirements if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequirementsOrElse(defaultValue: string): string {
+      if (this.requirements == undefined || this.requirements == null ) { return defaultValue; }
       return this.requirements;
   }
 
@@ -347,6 +402,17 @@ export class ElementDefinitionConstraint {
       return this.severity;
   }
 
+  /**
+  * Gets the current value of field severity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSeverityOrElse(defaultValue: string): string {
+      if (this.severity == undefined || this.severity == null ) { return defaultValue; }
+      return this.severity;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -375,6 +441,17 @@ export class ElementDefinitionConstraint {
   * @returns the value  or undefined
   */
   public getHuman(): string | undefined {
+      return this.human;
+  }
+
+  /**
+  * Gets the current value of field human if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getHumanOrElse(defaultValue: string): string {
+      if (this.human == undefined || this.human == null ) { return defaultValue; }
       return this.human;
   }
 
@@ -409,6 +486,17 @@ export class ElementDefinitionConstraint {
       return this.expression;
   }
 
+  /**
+  * Gets the current value of field expression if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExpressionOrElse(defaultValue: string): string {
+      if (this.expression == undefined || this.expression == null ) { return defaultValue; }
+      return this.expression;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -440,6 +528,17 @@ export class ElementDefinitionConstraint {
       return this.xpath;
   }
 
+  /**
+  * Gets the current value of field xpath if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getXpathOrElse(defaultValue: string): string {
+      if (this.xpath == undefined || this.xpath == null ) { return defaultValue; }
+      return this.xpath;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -468,6 +567,17 @@ export class ElementDefinitionConstraint {
   * @returns the value  or undefined
   */
   public getSource(): string | undefined {
+      return this.source;
+  }
+
+  /**
+  * Gets the current value of field source if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceOrElse(defaultValue: string): string {
+      if (this.source == undefined || this.source == null ) { return defaultValue; }
       return this.source;
   }
 

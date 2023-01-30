@@ -323,6 +323,17 @@ export class SubstanceReferenceInformation {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -354,6 +365,17 @@ export class SubstanceReferenceInformation {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -382,6 +404,17 @@ export class SubstanceReferenceInformation {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -433,6 +466,17 @@ export class SubstanceReferenceInformation {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -478,6 +522,17 @@ export class SubstanceReferenceInformation {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -529,6 +584,17 @@ export class SubstanceReferenceInformation {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -557,6 +623,17 @@ export class SubstanceReferenceInformation {
   * @returns the value  or undefined
   */
   public getComment(): string | undefined {
+      return this.comment;
+  }
+
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
       return this.comment;
   }
 
@@ -608,6 +685,17 @@ export class SubstanceReferenceInformation {
       return this.gene;
   }
 
+  /**
+  * Gets the current value of field gene if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGeneOrElse(defaultValue: SubstanceReferenceInformationGene[]): SubstanceReferenceInformationGene[] {
+      if (this.gene == undefined || this.gene == null ) { return defaultValue; }
+      return this.gene;
+  }
+
   public addGeneElement(newValue: SubstanceReferenceInformationGeneElement) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.geneElement) !== 'undefined') {
@@ -653,6 +741,17 @@ export class SubstanceReferenceInformation {
   * @returns the value  or undefined
   */
   public getGeneElement(): SubstanceReferenceInformationGeneElement[] | undefined {
+      return this.geneElement;
+  }
+
+  /**
+  * Gets the current value of field geneElement if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGeneElementOrElse(defaultValue: SubstanceReferenceInformationGeneElement[]): SubstanceReferenceInformationGeneElement[] {
+      if (this.geneElement == undefined || this.geneElement == null ) { return defaultValue; }
       return this.geneElement;
   }
 
@@ -704,6 +803,17 @@ export class SubstanceReferenceInformation {
       return this.classification;
   }
 
+  /**
+  * Gets the current value of field classification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getClassificationOrElse(defaultValue: SubstanceReferenceInformationClassification[]): SubstanceReferenceInformationClassification[] {
+      if (this.classification == undefined || this.classification == null ) { return defaultValue; }
+      return this.classification;
+  }
+
   public addTarget(newValue: SubstanceReferenceInformationTarget) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.target) !== 'undefined') {
@@ -749,6 +859,17 @@ export class SubstanceReferenceInformation {
   * @returns the value  or undefined
   */
   public getTarget(): SubstanceReferenceInformationTarget[] | undefined {
+      return this.target;
+  }
+
+  /**
+  * Gets the current value of field target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetOrElse(defaultValue: SubstanceReferenceInformationTarget[]): SubstanceReferenceInformationTarget[] {
+      if (this.target == undefined || this.target == null ) { return defaultValue; }
       return this.target;
   }
 

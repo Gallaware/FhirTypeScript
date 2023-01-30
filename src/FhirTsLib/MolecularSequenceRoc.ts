@@ -166,6 +166,17 @@ export class MolecularSequenceRoc {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -211,6 +222,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -262,6 +284,17 @@ export class MolecularSequenceRoc {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addScore(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.score) !== 'undefined') {
@@ -307,6 +340,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public getScore(): number[] | undefined {
+      return this.score;
+  }
+
+  /**
+  * Gets the current value of field score if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getScoreOrElse(defaultValue: number[]): number[] {
+      if (this.score == undefined || this.score == null ) { return defaultValue; }
       return this.score;
   }
 
@@ -358,6 +402,17 @@ export class MolecularSequenceRoc {
       return this._score;
   }
 
+  /**
+  * Gets the current value of field _score if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_scoreOrElse(defaultValue: Element[]): Element[] {
+      if (this._score == undefined || this._score == null ) { return defaultValue; }
+      return this._score;
+  }
+
   public addNumTP(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.numTP) !== 'undefined') {
@@ -403,6 +458,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public getNumTP(): number[] | undefined {
+      return this.numTP;
+  }
+
+  /**
+  * Gets the current value of field numTP if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNumTPOrElse(defaultValue: number[]): number[] {
+      if (this.numTP == undefined || this.numTP == null ) { return defaultValue; }
       return this.numTP;
   }
 
@@ -454,6 +520,17 @@ export class MolecularSequenceRoc {
       return this._numTP;
   }
 
+  /**
+  * Gets the current value of field _numTP if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_numTPOrElse(defaultValue: Element[]): Element[] {
+      if (this._numTP == undefined || this._numTP == null ) { return defaultValue; }
+      return this._numTP;
+  }
+
   public addNumFP(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.numFP) !== 'undefined') {
@@ -499,6 +576,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public getNumFP(): number[] | undefined {
+      return this.numFP;
+  }
+
+  /**
+  * Gets the current value of field numFP if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNumFPOrElse(defaultValue: number[]): number[] {
+      if (this.numFP == undefined || this.numFP == null ) { return defaultValue; }
       return this.numFP;
   }
 
@@ -550,6 +638,17 @@ export class MolecularSequenceRoc {
       return this._numFP;
   }
 
+  /**
+  * Gets the current value of field _numFP if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_numFPOrElse(defaultValue: Element[]): Element[] {
+      if (this._numFP == undefined || this._numFP == null ) { return defaultValue; }
+      return this._numFP;
+  }
+
   public addNumFN(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.numFN) !== 'undefined') {
@@ -595,6 +694,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public getNumFN(): number[] | undefined {
+      return this.numFN;
+  }
+
+  /**
+  * Gets the current value of field numFN if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNumFNOrElse(defaultValue: number[]): number[] {
+      if (this.numFN == undefined || this.numFN == null ) { return defaultValue; }
       return this.numFN;
   }
 
@@ -646,6 +756,17 @@ export class MolecularSequenceRoc {
       return this._numFN;
   }
 
+  /**
+  * Gets the current value of field _numFN if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_numFNOrElse(defaultValue: Element[]): Element[] {
+      if (this._numFN == undefined || this._numFN == null ) { return defaultValue; }
+      return this._numFN;
+  }
+
   public addPrecision(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.precision) !== 'undefined') {
@@ -691,6 +812,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public getPrecision(): number[] | undefined {
+      return this.precision;
+  }
+
+  /**
+  * Gets the current value of field precision if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrecisionOrElse(defaultValue: number[]): number[] {
+      if (this.precision == undefined || this.precision == null ) { return defaultValue; }
       return this.precision;
   }
 
@@ -742,6 +874,17 @@ export class MolecularSequenceRoc {
       return this._precision;
   }
 
+  /**
+  * Gets the current value of field _precision if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_precisionOrElse(defaultValue: Element[]): Element[] {
+      if (this._precision == undefined || this._precision == null ) { return defaultValue; }
+      return this._precision;
+  }
+
   public addSensitivity(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.sensitivity) !== 'undefined') {
@@ -787,6 +930,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public getSensitivity(): number[] | undefined {
+      return this.sensitivity;
+  }
+
+  /**
+  * Gets the current value of field sensitivity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSensitivityOrElse(defaultValue: number[]): number[] {
+      if (this.sensitivity == undefined || this.sensitivity == null ) { return defaultValue; }
       return this.sensitivity;
   }
 
@@ -838,6 +992,17 @@ export class MolecularSequenceRoc {
       return this._sensitivity;
   }
 
+  /**
+  * Gets the current value of field _sensitivity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_sensitivityOrElse(defaultValue: Element[]): Element[] {
+      if (this._sensitivity == undefined || this._sensitivity == null ) { return defaultValue; }
+      return this._sensitivity;
+  }
+
   public addFMeasure(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.fMeasure) !== 'undefined') {
@@ -886,6 +1051,17 @@ export class MolecularSequenceRoc {
       return this.fMeasure;
   }
 
+  /**
+  * Gets the current value of field fMeasure if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFMeasureOrElse(defaultValue: number[]): number[] {
+      if (this.fMeasure == undefined || this.fMeasure == null ) { return defaultValue; }
+      return this.fMeasure;
+  }
+
   public add_fMeasure(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._fMeasure) !== 'undefined') {
@@ -931,6 +1107,17 @@ export class MolecularSequenceRoc {
   * @returns the value  or undefined
   */
   public get_fMeasure(): Element[] | undefined {
+      return this._fMeasure;
+  }
+
+  /**
+  * Gets the current value of field _fMeasure if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_fMeasureOrElse(defaultValue: Element[]): Element[] {
+      if (this._fMeasure == undefined || this._fMeasure == null ) { return defaultValue; }
       return this._fMeasure;
   }
 

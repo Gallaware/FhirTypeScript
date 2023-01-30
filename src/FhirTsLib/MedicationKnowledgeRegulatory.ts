@@ -101,6 +101,17 @@ export class MedicationKnowledgeRegulatory {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -146,6 +157,17 @@ export class MedicationKnowledgeRegulatory {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -197,6 +219,17 @@ export class MedicationKnowledgeRegulatory {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addSubstitution(newValue: MedicationKnowledgeSubstitution) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.substitution) !== 'undefined') {
@@ -245,6 +278,17 @@ export class MedicationKnowledgeRegulatory {
       return this.substitution;
   }
 
+  /**
+  * Gets the current value of field substitution if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubstitutionOrElse(defaultValue: MedicationKnowledgeSubstitution[]): MedicationKnowledgeSubstitution[] {
+      if (this.substitution == undefined || this.substitution == null ) { return defaultValue; }
+      return this.substitution;
+  }
+
   public addSchedule(newValue: MedicationKnowledgeSchedule) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.schedule) !== 'undefined') {
@@ -290,6 +334,17 @@ export class MedicationKnowledgeRegulatory {
   * @returns the value  or undefined
   */
   public getSchedule(): MedicationKnowledgeSchedule[] | undefined {
+      return this.schedule;
+  }
+
+  /**
+  * Gets the current value of field schedule if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getScheduleOrElse(defaultValue: MedicationKnowledgeSchedule[]): MedicationKnowledgeSchedule[] {
+      if (this.schedule == undefined || this.schedule == null ) { return defaultValue; }
       return this.schedule;
   }
 

@@ -105,6 +105,17 @@ export class CompositionEvent {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -150,6 +161,17 @@ export class CompositionEvent {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -201,6 +223,17 @@ export class CompositionEvent {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.code) !== 'undefined') {
@@ -249,6 +282,17 @@ export class CompositionEvent {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   public addDetail(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.detail) !== 'undefined') {
@@ -294,6 +338,17 @@ export class CompositionEvent {
   * @returns the value  or undefined
   */
   public getDetail(): Reference[] | undefined {
+      return this.detail;
+  }
+
+  /**
+  * Gets the current value of field detail if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDetailOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.detail == undefined || this.detail == null ) { return defaultValue; }
       return this.detail;
   }
 

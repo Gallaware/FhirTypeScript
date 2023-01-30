@@ -110,6 +110,17 @@ export class MedicationDispenseSubstitution {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -155,6 +166,17 @@ export class MedicationDispenseSubstitution {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -206,6 +228,17 @@ export class MedicationDispenseSubstitution {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addReason(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reason) !== 'undefined') {
@@ -254,6 +287,17 @@ export class MedicationDispenseSubstitution {
       return this.reason;
   }
 
+  /**
+  * Gets the current value of field reason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reason == undefined || this.reason == null ) { return defaultValue; }
+      return this.reason;
+  }
+
   public addResponsibleParty(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.responsibleParty) !== 'undefined') {
@@ -299,6 +343,17 @@ export class MedicationDispenseSubstitution {
   * @returns the value  or undefined
   */
   public getResponsibleParty(): Reference[] | undefined {
+      return this.responsibleParty;
+  }
+
+  /**
+  * Gets the current value of field responsibleParty if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getResponsiblePartyOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.responsibleParty == undefined || this.responsibleParty == null ) { return defaultValue; }
       return this.responsibleParty;
   }
 

@@ -107,6 +107,17 @@ export class ExampleScenarioStep {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -152,6 +163,17 @@ export class ExampleScenarioStep {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -203,6 +225,17 @@ export class ExampleScenarioStep {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addProcess(newValue: ExampleScenarioProcess) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.process) !== 'undefined') {
@@ -251,6 +284,17 @@ export class ExampleScenarioStep {
       return this.process;
   }
 
+  /**
+  * Gets the current value of field process if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcessOrElse(defaultValue: ExampleScenarioProcess[]): ExampleScenarioProcess[] {
+      if (this.process == undefined || this.process == null ) { return defaultValue; }
+      return this.process;
+  }
+
   public addAlternative(newValue: ExampleScenarioAlternative) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.alternative) !== 'undefined') {
@@ -296,6 +340,17 @@ export class ExampleScenarioStep {
   * @returns the value  or undefined
   */
   public getAlternative(): ExampleScenarioAlternative[] | undefined {
+      return this.alternative;
+  }
+
+  /**
+  * Gets the current value of field alternative if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAlternativeOrElse(defaultValue: ExampleScenarioAlternative[]): ExampleScenarioAlternative[] {
+      if (this.alternative == undefined || this.alternative == null ) { return defaultValue; }
       return this.alternative;
   }
 

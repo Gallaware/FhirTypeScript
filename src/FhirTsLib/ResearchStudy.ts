@@ -477,6 +477,17 @@ export class ResearchStudy {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -508,6 +519,17 @@ export class ResearchStudy {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -536,6 +558,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -587,6 +620,17 @@ export class ResearchStudy {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -632,6 +676,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -683,6 +738,17 @@ export class ResearchStudy {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -731,6 +797,17 @@ export class ResearchStudy {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -759,6 +836,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getTitle(): string | undefined {
+      return this.title;
+  }
+
+  /**
+  * Gets the current value of field title if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTitleOrElse(defaultValue: string): string {
+      if (this.title == undefined || this.title == null ) { return defaultValue; }
       return this.title;
   }
 
@@ -810,6 +898,17 @@ export class ResearchStudy {
       return this.protocol;
   }
 
+  /**
+  * Gets the current value of field protocol if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProtocolOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.protocol == undefined || this.protocol == null ) { return defaultValue; }
+      return this.protocol;
+  }
+
   public addPartOf(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.partOf) !== 'undefined') {
@@ -858,6 +957,17 @@ export class ResearchStudy {
       return this.partOf;
   }
 
+  /**
+  * Gets the current value of field partOf if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartOfOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.partOf == undefined || this.partOf == null ) { return defaultValue; }
+      return this.partOf;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -887,6 +997,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -938,6 +1059,17 @@ export class ResearchStudy {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   public addFocus(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.focus) !== 'undefined') {
@@ -983,6 +1115,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getFocus(): CodeableConcept[] | undefined {
+      return this.focus;
+  }
+
+  /**
+  * Gets the current value of field focus if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFocusOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.focus == undefined || this.focus == null ) { return defaultValue; }
       return this.focus;
   }
 
@@ -1034,6 +1177,17 @@ export class ResearchStudy {
       return this.condition;
   }
 
+  /**
+  * Gets the current value of field condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.condition == undefined || this.condition == null ) { return defaultValue; }
+      return this.condition;
+  }
+
   public addContact(newValue: ContactDetail) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.contact) !== 'undefined') {
@@ -1079,6 +1233,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getContact(): ContactDetail[] | undefined {
+      return this.contact;
+  }
+
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: ContactDetail[]): ContactDetail[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
       return this.contact;
   }
 
@@ -1130,6 +1295,17 @@ export class ResearchStudy {
       return this.relatedArtifact;
   }
 
+  /**
+  * Gets the current value of field relatedArtifact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatedArtifactOrElse(defaultValue: RelatedArtifact[]): RelatedArtifact[] {
+      if (this.relatedArtifact == undefined || this.relatedArtifact == null ) { return defaultValue; }
+      return this.relatedArtifact;
+  }
+
   public addKeyword(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.keyword) !== 'undefined') {
@@ -1175,6 +1351,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getKeyword(): CodeableConcept[] | undefined {
+      return this.keyword;
+  }
+
+  /**
+  * Gets the current value of field keyword if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getKeywordOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.keyword == undefined || this.keyword == null ) { return defaultValue; }
       return this.keyword;
   }
 
@@ -1226,6 +1413,17 @@ export class ResearchStudy {
       return this.location;
   }
 
+  /**
+  * Gets the current value of field location if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLocationOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.location == undefined || this.location == null ) { return defaultValue; }
+      return this.location;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1254,6 +1452,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -1305,6 +1514,17 @@ export class ResearchStudy {
       return this.enrollment;
   }
 
+  /**
+  * Gets the current value of field enrollment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEnrollmentOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.enrollment == undefined || this.enrollment == null ) { return defaultValue; }
+      return this.enrollment;
+  }
+
   public addSite(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.site) !== 'undefined') {
@@ -1350,6 +1570,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getSite(): Reference[] | undefined {
+      return this.site;
+  }
+
+  /**
+  * Gets the current value of field site if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSiteOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.site == undefined || this.site == null ) { return defaultValue; }
       return this.site;
   }
 
@@ -1401,6 +1632,17 @@ export class ResearchStudy {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addArm(newValue: ResearchStudyArm) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.arm) !== 'undefined') {
@@ -1449,6 +1691,17 @@ export class ResearchStudy {
       return this.arm;
   }
 
+  /**
+  * Gets the current value of field arm if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getArmOrElse(defaultValue: ResearchStudyArm[]): ResearchStudyArm[] {
+      if (this.arm == undefined || this.arm == null ) { return defaultValue; }
+      return this.arm;
+  }
+
   public addObjective(newValue: ResearchStudyObjective) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.objective) !== 'undefined') {
@@ -1494,6 +1747,17 @@ export class ResearchStudy {
   * @returns the value  or undefined
   */
   public getObjective(): ResearchStudyObjective[] | undefined {
+      return this.objective;
+  }
+
+  /**
+  * Gets the current value of field objective if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getObjectiveOrElse(defaultValue: ResearchStudyObjective[]): ResearchStudyObjective[] {
+      if (this.objective == undefined || this.objective == null ) { return defaultValue; }
       return this.objective;
   }
 

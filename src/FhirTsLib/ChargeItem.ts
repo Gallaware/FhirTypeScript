@@ -519,6 +519,17 @@ export class ChargeItem {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -550,6 +561,17 @@ export class ChargeItem {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -578,6 +600,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -629,6 +662,17 @@ export class ChargeItem {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -674,6 +718,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -725,6 +780,17 @@ export class ChargeItem {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -770,6 +836,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -821,6 +898,17 @@ export class ChargeItem {
       return this.definitionUri;
   }
 
+  /**
+  * Gets the current value of field definitionUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionUriOrElse(defaultValue: string[]): string[] {
+      if (this.definitionUri == undefined || this.definitionUri == null ) { return defaultValue; }
+      return this.definitionUri;
+  }
+
   public add_definitionUri(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._definitionUri) !== 'undefined') {
@@ -866,6 +954,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public get_definitionUri(): Element[] | undefined {
+      return this._definitionUri;
+  }
+
+  /**
+  * Gets the current value of field _definitionUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_definitionUriOrElse(defaultValue: Element[]): Element[] {
+      if (this._definitionUri == undefined || this._definitionUri == null ) { return defaultValue; }
       return this._definitionUri;
   }
 
@@ -917,6 +1016,17 @@ export class ChargeItem {
       return this.definitionCanonical;
   }
 
+  /**
+  * Gets the current value of field definitionCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionCanonicalOrElse(defaultValue: string[]): string[] {
+      if (this.definitionCanonical == undefined || this.definitionCanonical == null ) { return defaultValue; }
+      return this.definitionCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -946,6 +1056,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -997,6 +1118,17 @@ export class ChargeItem {
       return this.partOf;
   }
 
+  /**
+  * Gets the current value of field partOf if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartOfOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.partOf == undefined || this.partOf == null ) { return defaultValue; }
+      return this.partOf;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1025,6 +1157,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getOccurrenceDateTime(): string | undefined {
+      return this.occurrenceDateTime;
+  }
+
+  /**
+  * Gets the current value of field occurrenceDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOccurrenceDateTimeOrElse(defaultValue: string): string {
+      if (this.occurrenceDateTime == undefined || this.occurrenceDateTime == null ) { return defaultValue; }
       return this.occurrenceDateTime;
   }
 
@@ -1076,6 +1219,17 @@ export class ChargeItem {
       return this.performer;
   }
 
+  /**
+  * Gets the current value of field performer if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPerformerOrElse(defaultValue: ChargeItemPerformer[]): ChargeItemPerformer[] {
+      if (this.performer == undefined || this.performer == null ) { return defaultValue; }
+      return this.performer;
+  }
+
   public addBodysite(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.bodysite) !== 'undefined') {
@@ -1124,6 +1278,17 @@ export class ChargeItem {
       return this.bodysite;
   }
 
+  /**
+  * Gets the current value of field bodysite if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBodysiteOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.bodysite == undefined || this.bodysite == null ) { return defaultValue; }
+      return this.bodysite;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1155,6 +1320,17 @@ export class ChargeItem {
       return this.overrideReason;
   }
 
+  /**
+  * Gets the current value of field overrideReason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOverrideReasonOrElse(defaultValue: string): string {
+      if (this.overrideReason == undefined || this.overrideReason == null ) { return defaultValue; }
+      return this.overrideReason;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1183,6 +1359,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getEnteredDate(): string | undefined {
+      return this.enteredDate;
+  }
+
+  /**
+  * Gets the current value of field enteredDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEnteredDateOrElse(defaultValue: string): string {
+      if (this.enteredDate == undefined || this.enteredDate == null ) { return defaultValue; }
       return this.enteredDate;
   }
 
@@ -1234,6 +1421,17 @@ export class ChargeItem {
       return this.reason;
   }
 
+  /**
+  * Gets the current value of field reason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reason == undefined || this.reason == null ) { return defaultValue; }
+      return this.reason;
+  }
+
   public addService(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.service) !== 'undefined') {
@@ -1279,6 +1477,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getService(): Reference[] | undefined {
+      return this.service;
+  }
+
+  /**
+  * Gets the current value of field service if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getServiceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.service == undefined || this.service == null ) { return defaultValue; }
       return this.service;
   }
 
@@ -1330,6 +1539,17 @@ export class ChargeItem {
       return this.account;
   }
 
+  /**
+  * Gets the current value of field account if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAccountOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.account == undefined || this.account == null ) { return defaultValue; }
+      return this.account;
+  }
+
   public addNote(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.note) !== 'undefined') {
@@ -1378,6 +1598,17 @@ export class ChargeItem {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addSupportingInformation(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.supportingInformation) !== 'undefined') {
@@ -1423,6 +1654,17 @@ export class ChargeItem {
   * @returns the value  or undefined
   */
   public getSupportingInformation(): Reference[] | undefined {
+      return this.supportingInformation;
+  }
+
+  /**
+  * Gets the current value of field supportingInformation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInformationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingInformation == undefined || this.supportingInformation == null ) { return defaultValue; }
       return this.supportingInformation;
   }
 

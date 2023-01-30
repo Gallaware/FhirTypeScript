@@ -123,6 +123,17 @@ export class Meta {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -171,6 +182,17 @@ export class Meta {
       return this.extension;
   }
 
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
+      return this.extension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -199,6 +221,17 @@ export class Meta {
   * @returns the value  or undefined
   */
   public getVersionId(): string | undefined {
+      return this.versionId;
+  }
+
+  /**
+  * Gets the current value of field versionId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionIdOrElse(defaultValue: string): string {
+      if (this.versionId == undefined || this.versionId == null ) { return defaultValue; }
       return this.versionId;
   }
 
@@ -233,6 +266,17 @@ export class Meta {
       return this.lastUpdated;
   }
 
+  /**
+  * Gets the current value of field lastUpdated if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLastUpdatedOrElse(defaultValue: string): string {
+      if (this.lastUpdated == undefined || this.lastUpdated == null ) { return defaultValue; }
+      return this.lastUpdated;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -261,6 +305,17 @@ export class Meta {
   * @returns the value  or undefined
   */
   public getSource(): string | undefined {
+      return this.source;
+  }
+
+  /**
+  * Gets the current value of field source if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSourceOrElse(defaultValue: string): string {
+      if (this.source == undefined || this.source == null ) { return defaultValue; }
       return this.source;
   }
 
@@ -312,6 +367,17 @@ export class Meta {
       return this.profile;
   }
 
+  /**
+  * Gets the current value of field profile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProfileOrElse(defaultValue: string[]): string[] {
+      if (this.profile == undefined || this.profile == null ) { return defaultValue; }
+      return this.profile;
+  }
+
   public addSecurity(newValue: Coding) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.security) !== 'undefined') {
@@ -360,6 +426,17 @@ export class Meta {
       return this.security;
   }
 
+  /**
+  * Gets the current value of field security if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSecurityOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.security == undefined || this.security == null ) { return defaultValue; }
+      return this.security;
+  }
+
   public addTag(newValue: Coding) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.tag) !== 'undefined') {
@@ -405,6 +482,17 @@ export class Meta {
   * @returns the value  or undefined
   */
   public getTag(): Coding[] | undefined {
+      return this.tag;
+  }
+
+  /**
+  * Gets the current value of field tag if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTagOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.tag == undefined || this.tag == null ) { return defaultValue; }
       return this.tag;
   }
 

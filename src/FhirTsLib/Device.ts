@@ -527,6 +527,17 @@ export class Device {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -558,6 +569,17 @@ export class Device {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -586,6 +608,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -637,6 +670,17 @@ export class Device {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -682,6 +726,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -733,6 +788,17 @@ export class Device {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -778,6 +844,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -829,6 +906,17 @@ export class Device {
       return this.udiCarrier;
   }
 
+  /**
+  * Gets the current value of field udiCarrier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUdiCarrierOrElse(defaultValue: DeviceUdiCarrier[]): DeviceUdiCarrier[] {
+      if (this.udiCarrier == undefined || this.udiCarrier == null ) { return defaultValue; }
+      return this.udiCarrier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -858,6 +946,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -909,6 +1008,17 @@ export class Device {
       return this.statusReason;
   }
 
+  /**
+  * Gets the current value of field statusReason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusReasonOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.statusReason == undefined || this.statusReason == null ) { return defaultValue; }
+      return this.statusReason;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -937,6 +1047,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getDistinctIdentifier(): string | undefined {
+      return this.distinctIdentifier;
+  }
+
+  /**
+  * Gets the current value of field distinctIdentifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDistinctIdentifierOrElse(defaultValue: string): string {
+      if (this.distinctIdentifier == undefined || this.distinctIdentifier == null ) { return defaultValue; }
       return this.distinctIdentifier;
   }
 
@@ -971,6 +1092,17 @@ export class Device {
       return this.manufacturer;
   }
 
+  /**
+  * Gets the current value of field manufacturer if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getManufacturerOrElse(defaultValue: string): string {
+      if (this.manufacturer == undefined || this.manufacturer == null ) { return defaultValue; }
+      return this.manufacturer;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -999,6 +1131,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getManufactureDate(): string | undefined {
+      return this.manufactureDate;
+  }
+
+  /**
+  * Gets the current value of field manufactureDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getManufactureDateOrElse(defaultValue: string): string {
+      if (this.manufactureDate == undefined || this.manufactureDate == null ) { return defaultValue; }
       return this.manufactureDate;
   }
 
@@ -1033,6 +1176,17 @@ export class Device {
       return this.expirationDate;
   }
 
+  /**
+  * Gets the current value of field expirationDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExpirationDateOrElse(defaultValue: string): string {
+      if (this.expirationDate == undefined || this.expirationDate == null ) { return defaultValue; }
+      return this.expirationDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1064,6 +1218,17 @@ export class Device {
       return this.lotNumber;
   }
 
+  /**
+  * Gets the current value of field lotNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLotNumberOrElse(defaultValue: string): string {
+      if (this.lotNumber == undefined || this.lotNumber == null ) { return defaultValue; }
+      return this.lotNumber;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1092,6 +1257,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getSerialNumber(): string | undefined {
+      return this.serialNumber;
+  }
+
+  /**
+  * Gets the current value of field serialNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSerialNumberOrElse(defaultValue: string): string {
+      if (this.serialNumber == undefined || this.serialNumber == null ) { return defaultValue; }
       return this.serialNumber;
   }
 
@@ -1143,6 +1319,17 @@ export class Device {
       return this.deviceName;
   }
 
+  /**
+  * Gets the current value of field deviceName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDeviceNameOrElse(defaultValue: DeviceDeviceName[]): DeviceDeviceName[] {
+      if (this.deviceName == undefined || this.deviceName == null ) { return defaultValue; }
+      return this.deviceName;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1174,6 +1361,17 @@ export class Device {
       return this.modelNumber;
   }
 
+  /**
+  * Gets the current value of field modelNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModelNumberOrElse(defaultValue: string): string {
+      if (this.modelNumber == undefined || this.modelNumber == null ) { return defaultValue; }
+      return this.modelNumber;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1202,6 +1400,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getPartNumber(): string | undefined {
+      return this.partNumber;
+  }
+
+  /**
+  * Gets the current value of field partNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartNumberOrElse(defaultValue: string): string {
+      if (this.partNumber == undefined || this.partNumber == null ) { return defaultValue; }
       return this.partNumber;
   }
 
@@ -1253,6 +1462,17 @@ export class Device {
       return this.specialization;
   }
 
+  /**
+  * Gets the current value of field specialization if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecializationOrElse(defaultValue: DeviceSpecialization[]): DeviceSpecialization[] {
+      if (this.specialization == undefined || this.specialization == null ) { return defaultValue; }
+      return this.specialization;
+  }
+
   public addVersion(newValue: DeviceVersion) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.version) !== 'undefined') {
@@ -1298,6 +1518,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getVersion(): DeviceVersion[] | undefined {
+      return this.version;
+  }
+
+  /**
+  * Gets the current value of field version if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionOrElse(defaultValue: DeviceVersion[]): DeviceVersion[] {
+      if (this.version == undefined || this.version == null ) { return defaultValue; }
       return this.version;
   }
 
@@ -1349,6 +1580,17 @@ export class Device {
       return this.property;
   }
 
+  /**
+  * Gets the current value of field property if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPropertyOrElse(defaultValue: DeviceProperty[]): DeviceProperty[] {
+      if (this.property == undefined || this.property == null ) { return defaultValue; }
+      return this.property;
+  }
+
   public addContact(newValue: ContactPoint) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.contact) !== 'undefined') {
@@ -1397,6 +1639,17 @@ export class Device {
       return this.contact;
   }
 
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: ContactPoint[]): ContactPoint[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
+      return this.contact;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1425,6 +1678,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getUrl(): string | undefined {
+      return this.url;
+  }
+
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
       return this.url;
   }
 
@@ -1476,6 +1740,17 @@ export class Device {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addSafety(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.safety) !== 'undefined') {
@@ -1521,6 +1796,17 @@ export class Device {
   * @returns the value  or undefined
   */
   public getSafety(): CodeableConcept[] | undefined {
+      return this.safety;
+  }
+
+  /**
+  * Gets the current value of field safety if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSafetyOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.safety == undefined || this.safety == null ) { return defaultValue; }
       return this.safety;
   }
 

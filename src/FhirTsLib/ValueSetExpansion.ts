@@ -142,6 +142,17 @@ export class ValueSetExpansion {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -187,6 +198,17 @@ export class ValueSetExpansion {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -238,6 +260,17 @@ export class ValueSetExpansion {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -269,6 +302,17 @@ export class ValueSetExpansion {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: string): string {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -297,6 +341,17 @@ export class ValueSetExpansion {
   * @returns the value  or undefined
   */
   public getTimestamp(): string | undefined {
+      return this.timestamp;
+  }
+
+  /**
+  * Gets the current value of field timestamp if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTimestampOrElse(defaultValue: string): string {
+      if (this.timestamp == undefined || this.timestamp == null ) { return defaultValue; }
       return this.timestamp;
   }
 
@@ -348,6 +403,17 @@ export class ValueSetExpansion {
       return this.parameter;
   }
 
+  /**
+  * Gets the current value of field parameter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParameterOrElse(defaultValue: ValueSetParameter[]): ValueSetParameter[] {
+      if (this.parameter == undefined || this.parameter == null ) { return defaultValue; }
+      return this.parameter;
+  }
+
   public addContains(newValue: ValueSetContains) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.contains) !== 'undefined') {
@@ -393,6 +459,17 @@ export class ValueSetExpansion {
   * @returns the value  or undefined
   */
   public getContains(): ValueSetContains[] | undefined {
+      return this.contains;
+  }
+
+  /**
+  * Gets the current value of field contains if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainsOrElse(defaultValue: ValueSetContains[]): ValueSetContains[] {
+      if (this.contains == undefined || this.contains == null ) { return defaultValue; }
       return this.contains;
   }
 

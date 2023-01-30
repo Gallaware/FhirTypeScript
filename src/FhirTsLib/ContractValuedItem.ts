@@ -219,6 +219,17 @@ export class ContractValuedItem {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -264,6 +275,17 @@ export class ContractValuedItem {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -315,6 +337,17 @@ export class ContractValuedItem {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -343,6 +376,17 @@ export class ContractValuedItem {
   * @returns the value  or undefined
   */
   public getEffectiveTime(): string | undefined {
+      return this.effectiveTime;
+  }
+
+  /**
+  * Gets the current value of field effectiveTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEffectiveTimeOrElse(defaultValue: string): string {
+      if (this.effectiveTime == undefined || this.effectiveTime == null ) { return defaultValue; }
       return this.effectiveTime;
   }
 
@@ -377,6 +421,17 @@ export class ContractValuedItem {
       return this.payment;
   }
 
+  /**
+  * Gets the current value of field payment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPaymentOrElse(defaultValue: string): string {
+      if (this.payment == undefined || this.payment == null ) { return defaultValue; }
+      return this.payment;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -405,6 +460,17 @@ export class ContractValuedItem {
   * @returns the value  or undefined
   */
   public getPaymentDate(): string | undefined {
+      return this.paymentDate;
+  }
+
+  /**
+  * Gets the current value of field paymentDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPaymentDateOrElse(defaultValue: string): string {
+      if (this.paymentDate == undefined || this.paymentDate == null ) { return defaultValue; }
       return this.paymentDate;
   }
 
@@ -456,6 +522,17 @@ export class ContractValuedItem {
       return this.linkId;
   }
 
+  /**
+  * Gets the current value of field linkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkIdOrElse(defaultValue: string[]): string[] {
+      if (this.linkId == undefined || this.linkId == null ) { return defaultValue; }
+      return this.linkId;
+  }
+
   public add_linkId(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._linkId) !== 'undefined') {
@@ -501,6 +578,17 @@ export class ContractValuedItem {
   * @returns the value  or undefined
   */
   public get_linkId(): Element[] | undefined {
+      return this._linkId;
+  }
+
+  /**
+  * Gets the current value of field _linkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_linkIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._linkId == undefined || this._linkId == null ) { return defaultValue; }
       return this._linkId;
   }
 
@@ -552,6 +640,17 @@ export class ContractValuedItem {
       return this.securityLabelNumber;
   }
 
+  /**
+  * Gets the current value of field securityLabelNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSecurityLabelNumberOrElse(defaultValue: number[]): number[] {
+      if (this.securityLabelNumber == undefined || this.securityLabelNumber == null ) { return defaultValue; }
+      return this.securityLabelNumber;
+  }
+
   public add_securityLabelNumber(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._securityLabelNumber) !== 'undefined') {
@@ -597,6 +696,17 @@ export class ContractValuedItem {
   * @returns the value  or undefined
   */
   public get_securityLabelNumber(): Element[] | undefined {
+      return this._securityLabelNumber;
+  }
+
+  /**
+  * Gets the current value of field _securityLabelNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_securityLabelNumberOrElse(defaultValue: Element[]): Element[] {
+      if (this._securityLabelNumber == undefined || this._securityLabelNumber == null ) { return defaultValue; }
       return this._securityLabelNumber;
   }
 

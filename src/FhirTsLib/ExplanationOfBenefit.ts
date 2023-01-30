@@ -620,6 +620,17 @@ export class ExplanationOfBenefit {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -651,6 +662,17 @@ export class ExplanationOfBenefit {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -679,6 +701,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -730,6 +763,17 @@ export class ExplanationOfBenefit {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -775,6 +819,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -826,6 +881,17 @@ export class ExplanationOfBenefit {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -874,6 +940,17 @@ export class ExplanationOfBenefit {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -903,6 +980,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -937,6 +1025,17 @@ export class ExplanationOfBenefit {
       return this.use;
   }
 
+  /**
+  * Gets the current value of field use if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseOrElse(defaultValue: string): string {
+      if (this.use == undefined || this.use == null ) { return defaultValue; }
+      return this.use;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -965,6 +1064,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getCreated(): string | undefined {
+      return this.created;
+  }
+
+  /**
+  * Gets the current value of field created if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCreatedOrElse(defaultValue: string): string {
+      if (this.created == undefined || this.created == null ) { return defaultValue; }
       return this.created;
   }
 
@@ -1016,6 +1126,17 @@ export class ExplanationOfBenefit {
       return this.related;
   }
 
+  /**
+  * Gets the current value of field related if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatedOrElse(defaultValue: ExplanationOfBenefitRelated[]): ExplanationOfBenefitRelated[] {
+      if (this.related == undefined || this.related == null ) { return defaultValue; }
+      return this.related;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1047,6 +1168,17 @@ export class ExplanationOfBenefit {
       return this.outcome;
   }
 
+  /**
+  * Gets the current value of field outcome if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeOrElse(defaultValue: string): string {
+      if (this.outcome == undefined || this.outcome == null ) { return defaultValue; }
+      return this.outcome;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1075,6 +1207,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getDisposition(): string | undefined {
+      return this.disposition;
+  }
+
+  /**
+  * Gets the current value of field disposition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDispositionOrElse(defaultValue: string): string {
+      if (this.disposition == undefined || this.disposition == null ) { return defaultValue; }
       return this.disposition;
   }
 
@@ -1126,6 +1269,17 @@ export class ExplanationOfBenefit {
       return this.preAuthRef;
   }
 
+  /**
+  * Gets the current value of field preAuthRef if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPreAuthRefOrElse(defaultValue: string[]): string[] {
+      if (this.preAuthRef == undefined || this.preAuthRef == null ) { return defaultValue; }
+      return this.preAuthRef;
+  }
+
   public add_preAuthRef(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._preAuthRef) !== 'undefined') {
@@ -1171,6 +1325,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public get_preAuthRef(): Element[] | undefined {
+      return this._preAuthRef;
+  }
+
+  /**
+  * Gets the current value of field _preAuthRef if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_preAuthRefOrElse(defaultValue: Element[]): Element[] {
+      if (this._preAuthRef == undefined || this._preAuthRef == null ) { return defaultValue; }
       return this._preAuthRef;
   }
 
@@ -1222,6 +1387,17 @@ export class ExplanationOfBenefit {
       return this.preAuthRefPeriod;
   }
 
+  /**
+  * Gets the current value of field preAuthRefPeriod if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPreAuthRefPeriodOrElse(defaultValue: Period[]): Period[] {
+      if (this.preAuthRefPeriod == undefined || this.preAuthRefPeriod == null ) { return defaultValue; }
+      return this.preAuthRefPeriod;
+  }
+
   public addCareTeam(newValue: ExplanationOfBenefitCareTeam) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.careTeam) !== 'undefined') {
@@ -1267,6 +1443,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getCareTeam(): ExplanationOfBenefitCareTeam[] | undefined {
+      return this.careTeam;
+  }
+
+  /**
+  * Gets the current value of field careTeam if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCareTeamOrElse(defaultValue: ExplanationOfBenefitCareTeam[]): ExplanationOfBenefitCareTeam[] {
+      if (this.careTeam == undefined || this.careTeam == null ) { return defaultValue; }
       return this.careTeam;
   }
 
@@ -1318,6 +1505,17 @@ export class ExplanationOfBenefit {
       return this.supportingInfo;
   }
 
+  /**
+  * Gets the current value of field supportingInfo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInfoOrElse(defaultValue: ExplanationOfBenefitSupportingInfo[]): ExplanationOfBenefitSupportingInfo[] {
+      if (this.supportingInfo == undefined || this.supportingInfo == null ) { return defaultValue; }
+      return this.supportingInfo;
+  }
+
   public addDiagnosis(newValue: ExplanationOfBenefitDiagnosis) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.diagnosis) !== 'undefined') {
@@ -1363,6 +1561,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getDiagnosis(): ExplanationOfBenefitDiagnosis[] | undefined {
+      return this.diagnosis;
+  }
+
+  /**
+  * Gets the current value of field diagnosis if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDiagnosisOrElse(defaultValue: ExplanationOfBenefitDiagnosis[]): ExplanationOfBenefitDiagnosis[] {
+      if (this.diagnosis == undefined || this.diagnosis == null ) { return defaultValue; }
       return this.diagnosis;
   }
 
@@ -1414,6 +1623,17 @@ export class ExplanationOfBenefit {
       return this.procedure;
   }
 
+  /**
+  * Gets the current value of field procedure if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcedureOrElse(defaultValue: ExplanationOfBenefitProcedure[]): ExplanationOfBenefitProcedure[] {
+      if (this.procedure == undefined || this.procedure == null ) { return defaultValue; }
+      return this.procedure;
+  }
+
   public addInsurance(newValue: ExplanationOfBenefitInsurance) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.insurance) !== 'undefined') {
@@ -1459,6 +1679,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getInsurance(): ExplanationOfBenefitInsurance[] | undefined {
+      return this.insurance;
+  }
+
+  /**
+  * Gets the current value of field insurance if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInsuranceOrElse(defaultValue: ExplanationOfBenefitInsurance[]): ExplanationOfBenefitInsurance[] {
+      if (this.insurance == undefined || this.insurance == null ) { return defaultValue; }
       return this.insurance;
   }
 
@@ -1510,6 +1741,17 @@ export class ExplanationOfBenefit {
       return this.item;
   }
 
+  /**
+  * Gets the current value of field item if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getItemOrElse(defaultValue: ExplanationOfBenefitItem[]): ExplanationOfBenefitItem[] {
+      if (this.item == undefined || this.item == null ) { return defaultValue; }
+      return this.item;
+  }
+
   public addAddItem(newValue: ExplanationOfBenefitAddItem) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.addItem) !== 'undefined') {
@@ -1555,6 +1797,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getAddItem(): ExplanationOfBenefitAddItem[] | undefined {
+      return this.addItem;
+  }
+
+  /**
+  * Gets the current value of field addItem if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAddItemOrElse(defaultValue: ExplanationOfBenefitAddItem[]): ExplanationOfBenefitAddItem[] {
+      if (this.addItem == undefined || this.addItem == null ) { return defaultValue; }
       return this.addItem;
   }
 
@@ -1606,6 +1859,17 @@ export class ExplanationOfBenefit {
       return this.adjudication;
   }
 
+  /**
+  * Gets the current value of field adjudication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdjudicationOrElse(defaultValue: ExplanationOfBenefitAdjudication[]): ExplanationOfBenefitAdjudication[] {
+      if (this.adjudication == undefined || this.adjudication == null ) { return defaultValue; }
+      return this.adjudication;
+  }
+
   public addTotal(newValue: ExplanationOfBenefitTotal) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.total) !== 'undefined') {
@@ -1651,6 +1915,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getTotal(): ExplanationOfBenefitTotal[] | undefined {
+      return this.total;
+  }
+
+  /**
+  * Gets the current value of field total if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTotalOrElse(defaultValue: ExplanationOfBenefitTotal[]): ExplanationOfBenefitTotal[] {
+      if (this.total == undefined || this.total == null ) { return defaultValue; }
       return this.total;
   }
 
@@ -1702,6 +1977,17 @@ export class ExplanationOfBenefit {
       return this.processNote;
   }
 
+  /**
+  * Gets the current value of field processNote if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcessNoteOrElse(defaultValue: ExplanationOfBenefitProcessNote[]): ExplanationOfBenefitProcessNote[] {
+      if (this.processNote == undefined || this.processNote == null ) { return defaultValue; }
+      return this.processNote;
+  }
+
   public addBenefitBalance(newValue: ExplanationOfBenefitBenefitBalance) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.benefitBalance) !== 'undefined') {
@@ -1747,6 +2033,17 @@ export class ExplanationOfBenefit {
   * @returns the value  or undefined
   */
   public getBenefitBalance(): ExplanationOfBenefitBenefitBalance[] | undefined {
+      return this.benefitBalance;
+  }
+
+  /**
+  * Gets the current value of field benefitBalance if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBenefitBalanceOrElse(defaultValue: ExplanationOfBenefitBenefitBalance[]): ExplanationOfBenefitBenefitBalance[] {
+      if (this.benefitBalance == undefined || this.benefitBalance == null ) { return defaultValue; }
       return this.benefitBalance;
   }
 

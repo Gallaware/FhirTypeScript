@@ -541,6 +541,17 @@ export class Task {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -572,6 +583,17 @@ export class Task {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -600,6 +622,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -651,6 +684,17 @@ export class Task {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -696,6 +740,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -747,6 +802,17 @@ export class Task {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -795,6 +861,17 @@ export class Task {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -826,6 +903,17 @@ export class Task {
       return this.instantiatesCanonical;
   }
 
+  /**
+  * Gets the current value of field instantiatesCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesCanonicalOrElse(defaultValue: string): string {
+      if (this.instantiatesCanonical == undefined || this.instantiatesCanonical == null ) { return defaultValue; }
+      return this.instantiatesCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -854,6 +942,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getInstantiatesUri(): string | undefined {
+      return this.instantiatesUri;
+  }
+
+  /**
+  * Gets the current value of field instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesUriOrElse(defaultValue: string): string {
+      if (this.instantiatesUri == undefined || this.instantiatesUri == null ) { return defaultValue; }
       return this.instantiatesUri;
   }
 
@@ -905,6 +1004,17 @@ export class Task {
       return this.basedOn;
   }
 
+  /**
+  * Gets the current value of field basedOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBasedOnOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.basedOn == undefined || this.basedOn == null ) { return defaultValue; }
+      return this.basedOn;
+  }
+
   public addPartOf(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.partOf) !== 'undefined') {
@@ -953,6 +1063,17 @@ export class Task {
       return this.partOf;
   }
 
+  /**
+  * Gets the current value of field partOf if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartOfOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.partOf == undefined || this.partOf == null ) { return defaultValue; }
+      return this.partOf;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -982,6 +1103,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -1017,6 +1149,17 @@ export class Task {
       return this.intent;
   }
 
+  /**
+  * Gets the current value of field intent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIntentOrElse(defaultValue: string): string {
+      if (this.intent == undefined || this.intent == null ) { return defaultValue; }
+      return this.intent;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1045,6 +1188,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getPriority(): string | undefined {
+      return this.priority;
+  }
+
+  /**
+  * Gets the current value of field priority if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPriorityOrElse(defaultValue: string): string {
+      if (this.priority == undefined || this.priority == null ) { return defaultValue; }
       return this.priority;
   }
 
@@ -1079,6 +1233,17 @@ export class Task {
       return this.description;
   }
 
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
+      return this.description;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1110,6 +1275,17 @@ export class Task {
       return this.authoredOn;
   }
 
+  /**
+  * Gets the current value of field authoredOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAuthoredOnOrElse(defaultValue: string): string {
+      if (this.authoredOn == undefined || this.authoredOn == null ) { return defaultValue; }
+      return this.authoredOn;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1138,6 +1314,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getLastModified(): string | undefined {
+      return this.lastModified;
+  }
+
+  /**
+  * Gets the current value of field lastModified if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLastModifiedOrElse(defaultValue: string): string {
+      if (this.lastModified == undefined || this.lastModified == null ) { return defaultValue; }
       return this.lastModified;
   }
 
@@ -1189,6 +1376,17 @@ export class Task {
       return this.performerType;
   }
 
+  /**
+  * Gets the current value of field performerType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPerformerTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.performerType == undefined || this.performerType == null ) { return defaultValue; }
+      return this.performerType;
+  }
+
   public addInsurance(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.insurance) !== 'undefined') {
@@ -1234,6 +1432,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getInsurance(): Reference[] | undefined {
+      return this.insurance;
+  }
+
+  /**
+  * Gets the current value of field insurance if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInsuranceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.insurance == undefined || this.insurance == null ) { return defaultValue; }
       return this.insurance;
   }
 
@@ -1285,6 +1494,17 @@ export class Task {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addRelevantHistory(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relevantHistory) !== 'undefined') {
@@ -1330,6 +1550,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getRelevantHistory(): Reference[] | undefined {
+      return this.relevantHistory;
+  }
+
+  /**
+  * Gets the current value of field relevantHistory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelevantHistoryOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.relevantHistory == undefined || this.relevantHistory == null ) { return defaultValue; }
       return this.relevantHistory;
   }
 
@@ -1381,6 +1612,17 @@ export class Task {
       return this.input;
   }
 
+  /**
+  * Gets the current value of field input if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInputOrElse(defaultValue: TaskInput[]): TaskInput[] {
+      if (this.input == undefined || this.input == null ) { return defaultValue; }
+      return this.input;
+  }
+
   public addOutput(newValue: TaskOutput) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.output) !== 'undefined') {
@@ -1426,6 +1668,17 @@ export class Task {
   * @returns the value  or undefined
   */
   public getOutput(): TaskOutput[] | undefined {
+      return this.output;
+  }
+
+  /**
+  * Gets the current value of field output if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutputOrElse(defaultValue: TaskOutput[]): TaskOutput[] {
+      if (this.output == undefined || this.output == null ) { return defaultValue; }
       return this.output;
   }
 

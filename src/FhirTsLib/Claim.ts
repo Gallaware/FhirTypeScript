@@ -491,6 +491,17 @@ export class Claim {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -522,6 +533,17 @@ export class Claim {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -550,6 +572,17 @@ export class Claim {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -601,6 +634,17 @@ export class Claim {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -646,6 +690,17 @@ export class Claim {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -697,6 +752,17 @@ export class Claim {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -745,6 +811,17 @@ export class Claim {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -773,6 +850,17 @@ export class Claim {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -808,6 +896,17 @@ export class Claim {
       return this.use;
   }
 
+  /**
+  * Gets the current value of field use if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseOrElse(defaultValue: string): string {
+      if (this.use == undefined || this.use == null ) { return defaultValue; }
+      return this.use;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -836,6 +935,17 @@ export class Claim {
   * @returns the value  or undefined
   */
   public getCreated(): string | undefined {
+      return this.created;
+  }
+
+  /**
+  * Gets the current value of field created if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCreatedOrElse(defaultValue: string): string {
+      if (this.created == undefined || this.created == null ) { return defaultValue; }
       return this.created;
   }
 
@@ -887,6 +997,17 @@ export class Claim {
       return this.related;
   }
 
+  /**
+  * Gets the current value of field related if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatedOrElse(defaultValue: ClaimRelated[]): ClaimRelated[] {
+      if (this.related == undefined || this.related == null ) { return defaultValue; }
+      return this.related;
+  }
+
   public addCareTeam(newValue: ClaimCareTeam) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.careTeam) !== 'undefined') {
@@ -932,6 +1053,17 @@ export class Claim {
   * @returns the value  or undefined
   */
   public getCareTeam(): ClaimCareTeam[] | undefined {
+      return this.careTeam;
+  }
+
+  /**
+  * Gets the current value of field careTeam if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCareTeamOrElse(defaultValue: ClaimCareTeam[]): ClaimCareTeam[] {
+      if (this.careTeam == undefined || this.careTeam == null ) { return defaultValue; }
       return this.careTeam;
   }
 
@@ -983,6 +1115,17 @@ export class Claim {
       return this.supportingInfo;
   }
 
+  /**
+  * Gets the current value of field supportingInfo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInfoOrElse(defaultValue: ClaimSupportingInfo[]): ClaimSupportingInfo[] {
+      if (this.supportingInfo == undefined || this.supportingInfo == null ) { return defaultValue; }
+      return this.supportingInfo;
+  }
+
   public addDiagnosis(newValue: ClaimDiagnosis) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.diagnosis) !== 'undefined') {
@@ -1028,6 +1171,17 @@ export class Claim {
   * @returns the value  or undefined
   */
   public getDiagnosis(): ClaimDiagnosis[] | undefined {
+      return this.diagnosis;
+  }
+
+  /**
+  * Gets the current value of field diagnosis if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDiagnosisOrElse(defaultValue: ClaimDiagnosis[]): ClaimDiagnosis[] {
+      if (this.diagnosis == undefined || this.diagnosis == null ) { return defaultValue; }
       return this.diagnosis;
   }
 
@@ -1079,6 +1233,17 @@ export class Claim {
       return this.procedure;
   }
 
+  /**
+  * Gets the current value of field procedure if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcedureOrElse(defaultValue: ClaimProcedure[]): ClaimProcedure[] {
+      if (this.procedure == undefined || this.procedure == null ) { return defaultValue; }
+      return this.procedure;
+  }
+
   public addInsurance(newValue: ClaimInsurance) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.insurance) !== 'undefined') {
@@ -1127,6 +1292,17 @@ export class Claim {
       return this.insurance;
   }
 
+  /**
+  * Gets the current value of field insurance if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInsuranceOrElse(defaultValue: ClaimInsurance[]): ClaimInsurance[] {
+      if (this.insurance == undefined || this.insurance == null ) { return defaultValue; }
+      return this.insurance;
+  }
+
   public addItem(newValue: ClaimItem) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.item) !== 'undefined') {
@@ -1172,6 +1348,17 @@ export class Claim {
   * @returns the value  or undefined
   */
   public getItem(): ClaimItem[] | undefined {
+      return this.item;
+  }
+
+  /**
+  * Gets the current value of field item if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getItemOrElse(defaultValue: ClaimItem[]): ClaimItem[] {
+      if (this.item == undefined || this.item == null ) { return defaultValue; }
       return this.item;
   }
 

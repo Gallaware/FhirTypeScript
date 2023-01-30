@@ -395,6 +395,17 @@ export class PlanDefinitionAction {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -440,6 +451,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -491,6 +513,17 @@ export class PlanDefinitionAction {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -519,6 +552,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getPrefix(): string | undefined {
+      return this.prefix;
+  }
+
+  /**
+  * Gets the current value of field prefix if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrefixOrElse(defaultValue: string): string {
+      if (this.prefix == undefined || this.prefix == null ) { return defaultValue; }
       return this.prefix;
   }
 
@@ -553,6 +597,17 @@ export class PlanDefinitionAction {
       return this.title;
   }
 
+  /**
+  * Gets the current value of field title if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTitleOrElse(defaultValue: string): string {
+      if (this.title == undefined || this.title == null ) { return defaultValue; }
+      return this.title;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -581,6 +636,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -615,6 +681,17 @@ export class PlanDefinitionAction {
       return this.textEquivalent;
   }
 
+  /**
+  * Gets the current value of field textEquivalent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTextEquivalentOrElse(defaultValue: string): string {
+      if (this.textEquivalent == undefined || this.textEquivalent == null ) { return defaultValue; }
+      return this.textEquivalent;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -643,6 +720,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getPriority(): string | undefined {
+      return this.priority;
+  }
+
+  /**
+  * Gets the current value of field priority if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPriorityOrElse(defaultValue: string): string {
+      if (this.priority == undefined || this.priority == null ) { return defaultValue; }
       return this.priority;
   }
 
@@ -694,6 +782,17 @@ export class PlanDefinitionAction {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   public addReason(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reason) !== 'undefined') {
@@ -739,6 +838,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getReason(): CodeableConcept[] | undefined {
+      return this.reason;
+  }
+
+  /**
+  * Gets the current value of field reason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reason == undefined || this.reason == null ) { return defaultValue; }
       return this.reason;
   }
 
@@ -790,6 +900,17 @@ export class PlanDefinitionAction {
       return this.documentation;
   }
 
+  /**
+  * Gets the current value of field documentation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDocumentationOrElse(defaultValue: RelatedArtifact[]): RelatedArtifact[] {
+      if (this.documentation == undefined || this.documentation == null ) { return defaultValue; }
+      return this.documentation;
+  }
+
   public addGoalId(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.goalId) !== 'undefined') {
@@ -835,6 +956,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getGoalId(): string[] | undefined {
+      return this.goalId;
+  }
+
+  /**
+  * Gets the current value of field goalId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGoalIdOrElse(defaultValue: string[]): string[] {
+      if (this.goalId == undefined || this.goalId == null ) { return defaultValue; }
       return this.goalId;
   }
 
@@ -886,6 +1018,17 @@ export class PlanDefinitionAction {
       return this._goalId;
   }
 
+  /**
+  * Gets the current value of field _goalId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_goalIdOrElse(defaultValue: Element[]): Element[] {
+      if (this._goalId == undefined || this._goalId == null ) { return defaultValue; }
+      return this._goalId;
+  }
+
   public addTrigger(newValue: TriggerDefinition) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.trigger) !== 'undefined') {
@@ -931,6 +1074,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getTrigger(): TriggerDefinition[] | undefined {
+      return this.trigger;
+  }
+
+  /**
+  * Gets the current value of field trigger if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTriggerOrElse(defaultValue: TriggerDefinition[]): TriggerDefinition[] {
+      if (this.trigger == undefined || this.trigger == null ) { return defaultValue; }
       return this.trigger;
   }
 
@@ -982,6 +1136,17 @@ export class PlanDefinitionAction {
       return this.condition;
   }
 
+  /**
+  * Gets the current value of field condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionOrElse(defaultValue: PlanDefinitionCondition[]): PlanDefinitionCondition[] {
+      if (this.condition == undefined || this.condition == null ) { return defaultValue; }
+      return this.condition;
+  }
+
   public addInput(newValue: DataRequirement) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.input) !== 'undefined') {
@@ -1027,6 +1192,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getInput(): DataRequirement[] | undefined {
+      return this.input;
+  }
+
+  /**
+  * Gets the current value of field input if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInputOrElse(defaultValue: DataRequirement[]): DataRequirement[] {
+      if (this.input == undefined || this.input == null ) { return defaultValue; }
       return this.input;
   }
 
@@ -1078,6 +1254,17 @@ export class PlanDefinitionAction {
       return this.output;
   }
 
+  /**
+  * Gets the current value of field output if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutputOrElse(defaultValue: DataRequirement[]): DataRequirement[] {
+      if (this.output == undefined || this.output == null ) { return defaultValue; }
+      return this.output;
+  }
+
   public addRelatedAction(newValue: PlanDefinitionRelatedAction) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relatedAction) !== 'undefined') {
@@ -1126,6 +1313,17 @@ export class PlanDefinitionAction {
       return this.relatedAction;
   }
 
+  /**
+  * Gets the current value of field relatedAction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatedActionOrElse(defaultValue: PlanDefinitionRelatedAction[]): PlanDefinitionRelatedAction[] {
+      if (this.relatedAction == undefined || this.relatedAction == null ) { return defaultValue; }
+      return this.relatedAction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1154,6 +1352,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getTimingDateTime(): string | undefined {
+      return this.timingDateTime;
+  }
+
+  /**
+  * Gets the current value of field timingDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTimingDateTimeOrElse(defaultValue: string): string {
+      if (this.timingDateTime == undefined || this.timingDateTime == null ) { return defaultValue; }
       return this.timingDateTime;
   }
 
@@ -1205,6 +1414,17 @@ export class PlanDefinitionAction {
       return this.participant;
   }
 
+  /**
+  * Gets the current value of field participant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantOrElse(defaultValue: PlanDefinitionParticipant[]): PlanDefinitionParticipant[] {
+      if (this.participant == undefined || this.participant == null ) { return defaultValue; }
+      return this.participant;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1234,6 +1454,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getGroupingBehavior(): string | undefined {
+      return this.groupingBehavior;
+  }
+
+  /**
+  * Gets the current value of field groupingBehavior if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGroupingBehaviorOrElse(defaultValue: string): string {
+      if (this.groupingBehavior == undefined || this.groupingBehavior == null ) { return defaultValue; }
       return this.groupingBehavior;
   }
 
@@ -1269,6 +1500,17 @@ export class PlanDefinitionAction {
       return this.selectionBehavior;
   }
 
+  /**
+  * Gets the current value of field selectionBehavior if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSelectionBehaviorOrElse(defaultValue: string): string {
+      if (this.selectionBehavior == undefined || this.selectionBehavior == null ) { return defaultValue; }
+      return this.selectionBehavior;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1298,6 +1540,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getRequiredBehavior(): string | undefined {
+      return this.requiredBehavior;
+  }
+
+  /**
+  * Gets the current value of field requiredBehavior if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequiredBehaviorOrElse(defaultValue: string): string {
+      if (this.requiredBehavior == undefined || this.requiredBehavior == null ) { return defaultValue; }
       return this.requiredBehavior;
   }
 
@@ -1333,6 +1586,17 @@ export class PlanDefinitionAction {
       return this.precheckBehavior;
   }
 
+  /**
+  * Gets the current value of field precheckBehavior if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrecheckBehaviorOrElse(defaultValue: string): string {
+      if (this.precheckBehavior == undefined || this.precheckBehavior == null ) { return defaultValue; }
+      return this.precheckBehavior;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1362,6 +1626,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getCardinalityBehavior(): string | undefined {
+      return this.cardinalityBehavior;
+  }
+
+  /**
+  * Gets the current value of field cardinalityBehavior if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCardinalityBehaviorOrElse(defaultValue: string): string {
+      if (this.cardinalityBehavior == undefined || this.cardinalityBehavior == null ) { return defaultValue; }
       return this.cardinalityBehavior;
   }
 
@@ -1396,6 +1671,17 @@ export class PlanDefinitionAction {
       return this.definitionCanonical;
   }
 
+  /**
+  * Gets the current value of field definitionCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionCanonicalOrElse(defaultValue: string): string {
+      if (this.definitionCanonical == undefined || this.definitionCanonical == null ) { return defaultValue; }
+      return this.definitionCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1427,6 +1713,17 @@ export class PlanDefinitionAction {
       return this.definitionUri;
   }
 
+  /**
+  * Gets the current value of field definitionUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionUriOrElse(defaultValue: string): string {
+      if (this.definitionUri == undefined || this.definitionUri == null ) { return defaultValue; }
+      return this.definitionUri;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1455,6 +1752,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getTransform(): string | undefined {
+      return this.transform;
+  }
+
+  /**
+  * Gets the current value of field transform if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTransformOrElse(defaultValue: string): string {
+      if (this.transform == undefined || this.transform == null ) { return defaultValue; }
       return this.transform;
   }
 
@@ -1506,6 +1814,17 @@ export class PlanDefinitionAction {
       return this.dynamicValue;
   }
 
+  /**
+  * Gets the current value of field dynamicValue if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDynamicValueOrElse(defaultValue: PlanDefinitionDynamicValue[]): PlanDefinitionDynamicValue[] {
+      if (this.dynamicValue == undefined || this.dynamicValue == null ) { return defaultValue; }
+      return this.dynamicValue;
+  }
+
   public addAction(newValue: PlanDefinitionAction) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.action) !== 'undefined') {
@@ -1551,6 +1870,17 @@ export class PlanDefinitionAction {
   * @returns the value  or undefined
   */
   public getAction(): PlanDefinitionAction[] | undefined {
+      return this.action;
+  }
+
+  /**
+  * Gets the current value of field action if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getActionOrElse(defaultValue: PlanDefinitionAction[]): PlanDefinitionAction[] {
+      if (this.action == undefined || this.action == null ) { return defaultValue; }
       return this.action;
   }
 

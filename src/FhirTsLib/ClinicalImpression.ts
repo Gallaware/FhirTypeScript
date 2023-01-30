@@ -471,6 +471,17 @@ export class ClinicalImpression {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -502,6 +513,17 @@ export class ClinicalImpression {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -530,6 +552,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -581,6 +614,17 @@ export class ClinicalImpression {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -626,6 +670,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -677,6 +732,17 @@ export class ClinicalImpression {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -725,6 +791,17 @@ export class ClinicalImpression {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -753,6 +830,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -787,6 +875,17 @@ export class ClinicalImpression {
       return this.description;
   }
 
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
+      return this.description;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -818,6 +917,17 @@ export class ClinicalImpression {
       return this.effectiveDateTime;
   }
 
+  /**
+  * Gets the current value of field effectiveDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEffectiveDateTimeOrElse(defaultValue: string): string {
+      if (this.effectiveDateTime == undefined || this.effectiveDateTime == null ) { return defaultValue; }
+      return this.effectiveDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -846,6 +956,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getDate(): string | undefined {
+      return this.date;
+  }
+
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
       return this.date;
   }
 
@@ -897,6 +1018,17 @@ export class ClinicalImpression {
       return this.problem;
   }
 
+  /**
+  * Gets the current value of field problem if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProblemOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.problem == undefined || this.problem == null ) { return defaultValue; }
+      return this.problem;
+  }
+
   public addInvestigation(newValue: ClinicalImpressionInvestigation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.investigation) !== 'undefined') {
@@ -942,6 +1074,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getInvestigation(): ClinicalImpressionInvestigation[] | undefined {
+      return this.investigation;
+  }
+
+  /**
+  * Gets the current value of field investigation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInvestigationOrElse(defaultValue: ClinicalImpressionInvestigation[]): ClinicalImpressionInvestigation[] {
+      if (this.investigation == undefined || this.investigation == null ) { return defaultValue; }
       return this.investigation;
   }
 
@@ -993,6 +1136,17 @@ export class ClinicalImpression {
       return this.protocol;
   }
 
+  /**
+  * Gets the current value of field protocol if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProtocolOrElse(defaultValue: string[]): string[] {
+      if (this.protocol == undefined || this.protocol == null ) { return defaultValue; }
+      return this.protocol;
+  }
+
   public add_protocol(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._protocol) !== 'undefined') {
@@ -1041,6 +1195,17 @@ export class ClinicalImpression {
       return this._protocol;
   }
 
+  /**
+  * Gets the current value of field _protocol if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_protocolOrElse(defaultValue: Element[]): Element[] {
+      if (this._protocol == undefined || this._protocol == null ) { return defaultValue; }
+      return this._protocol;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1069,6 +1234,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getSummary(): string | undefined {
+      return this.summary;
+  }
+
+  /**
+  * Gets the current value of field summary if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSummaryOrElse(defaultValue: string): string {
+      if (this.summary == undefined || this.summary == null ) { return defaultValue; }
       return this.summary;
   }
 
@@ -1120,6 +1296,17 @@ export class ClinicalImpression {
       return this.finding;
   }
 
+  /**
+  * Gets the current value of field finding if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFindingOrElse(defaultValue: ClinicalImpressionFinding[]): ClinicalImpressionFinding[] {
+      if (this.finding == undefined || this.finding == null ) { return defaultValue; }
+      return this.finding;
+  }
+
   public addPrognosisCodeableConcept(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.prognosisCodeableConcept) !== 'undefined') {
@@ -1165,6 +1352,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getPrognosisCodeableConcept(): CodeableConcept[] | undefined {
+      return this.prognosisCodeableConcept;
+  }
+
+  /**
+  * Gets the current value of field prognosisCodeableConcept if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrognosisCodeableConceptOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.prognosisCodeableConcept == undefined || this.prognosisCodeableConcept == null ) { return defaultValue; }
       return this.prognosisCodeableConcept;
   }
 
@@ -1216,6 +1414,17 @@ export class ClinicalImpression {
       return this.prognosisReference;
   }
 
+  /**
+  * Gets the current value of field prognosisReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrognosisReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.prognosisReference == undefined || this.prognosisReference == null ) { return defaultValue; }
+      return this.prognosisReference;
+  }
+
   public addSupportingInfo(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.supportingInfo) !== 'undefined') {
@@ -1264,6 +1473,17 @@ export class ClinicalImpression {
       return this.supportingInfo;
   }
 
+  /**
+  * Gets the current value of field supportingInfo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInfoOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingInfo == undefined || this.supportingInfo == null ) { return defaultValue; }
+      return this.supportingInfo;
+  }
+
   public addNote(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.note) !== 'undefined') {
@@ -1309,6 +1529,17 @@ export class ClinicalImpression {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 

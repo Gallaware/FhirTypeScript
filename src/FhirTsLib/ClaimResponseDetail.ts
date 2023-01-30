@@ -113,6 +113,17 @@ export class ClaimResponseDetail {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -158,6 +169,17 @@ export class ClaimResponseDetail {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -209,6 +231,17 @@ export class ClaimResponseDetail {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addNoteNumber(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.noteNumber) !== 'undefined') {
@@ -254,6 +287,17 @@ export class ClaimResponseDetail {
   * @returns the value  or undefined
   */
   public getNoteNumber(): number[] | undefined {
+      return this.noteNumber;
+  }
+
+  /**
+  * Gets the current value of field noteNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteNumberOrElse(defaultValue: number[]): number[] {
+      if (this.noteNumber == undefined || this.noteNumber == null ) { return defaultValue; }
       return this.noteNumber;
   }
 
@@ -305,6 +349,17 @@ export class ClaimResponseDetail {
       return this._noteNumber;
   }
 
+  /**
+  * Gets the current value of field _noteNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_noteNumberOrElse(defaultValue: Element[]): Element[] {
+      if (this._noteNumber == undefined || this._noteNumber == null ) { return defaultValue; }
+      return this._noteNumber;
+  }
+
   public addAdjudication(newValue: ClaimResponseAdjudication) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.adjudication) !== 'undefined') {
@@ -353,6 +408,17 @@ export class ClaimResponseDetail {
       return this.adjudication;
   }
 
+  /**
+  * Gets the current value of field adjudication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdjudicationOrElse(defaultValue: ClaimResponseAdjudication[]): ClaimResponseAdjudication[] {
+      if (this.adjudication == undefined || this.adjudication == null ) { return defaultValue; }
+      return this.adjudication;
+  }
+
   public addSubDetail(newValue: ClaimResponseSubDetail) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.subDetail) !== 'undefined') {
@@ -398,6 +464,17 @@ export class ClaimResponseDetail {
   * @returns the value  or undefined
   */
   public getSubDetail(): ClaimResponseSubDetail[] | undefined {
+      return this.subDetail;
+  }
+
+  /**
+  * Gets the current value of field subDetail if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubDetailOrElse(defaultValue: ClaimResponseSubDetail[]): ClaimResponseSubDetail[] {
+      if (this.subDetail == undefined || this.subDetail == null ) { return defaultValue; }
       return this.subDetail;
   }
 

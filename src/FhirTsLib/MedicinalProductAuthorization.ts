@@ -421,6 +421,17 @@ export class MedicinalProductAuthorization {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -452,6 +463,17 @@ export class MedicinalProductAuthorization {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -480,6 +502,17 @@ export class MedicinalProductAuthorization {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -531,6 +564,17 @@ export class MedicinalProductAuthorization {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -576,6 +620,17 @@ export class MedicinalProductAuthorization {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -627,6 +682,17 @@ export class MedicinalProductAuthorization {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -672,6 +738,17 @@ export class MedicinalProductAuthorization {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -723,6 +800,17 @@ export class MedicinalProductAuthorization {
       return this.country;
   }
 
+  /**
+  * Gets the current value of field country if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCountryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.country == undefined || this.country == null ) { return defaultValue; }
+      return this.country;
+  }
+
   public addJurisdiction(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.jurisdiction) !== 'undefined') {
@@ -771,6 +859,17 @@ export class MedicinalProductAuthorization {
       return this.jurisdiction;
   }
 
+  /**
+  * Gets the current value of field jurisdiction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getJurisdictionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.jurisdiction == undefined || this.jurisdiction == null ) { return defaultValue; }
+      return this.jurisdiction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -799,6 +898,17 @@ export class MedicinalProductAuthorization {
   * @returns the value  or undefined
   */
   public getStatusDate(): string | undefined {
+      return this.statusDate;
+  }
+
+  /**
+  * Gets the current value of field statusDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusDateOrElse(defaultValue: string): string {
+      if (this.statusDate == undefined || this.statusDate == null ) { return defaultValue; }
       return this.statusDate;
   }
 
@@ -833,6 +943,17 @@ export class MedicinalProductAuthorization {
       return this.restoreDate;
   }
 
+  /**
+  * Gets the current value of field restoreDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRestoreDateOrElse(defaultValue: string): string {
+      if (this.restoreDate == undefined || this.restoreDate == null ) { return defaultValue; }
+      return this.restoreDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -864,6 +985,17 @@ export class MedicinalProductAuthorization {
       return this.dateOfFirstAuthorization;
   }
 
+  /**
+  * Gets the current value of field dateOfFirstAuthorization if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOfFirstAuthorizationOrElse(defaultValue: string): string {
+      if (this.dateOfFirstAuthorization == undefined || this.dateOfFirstAuthorization == null ) { return defaultValue; }
+      return this.dateOfFirstAuthorization;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -892,6 +1024,17 @@ export class MedicinalProductAuthorization {
   * @returns the value  or undefined
   */
   public getInternationalBirthDate(): string | undefined {
+      return this.internationalBirthDate;
+  }
+
+  /**
+  * Gets the current value of field internationalBirthDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInternationalBirthDateOrElse(defaultValue: string): string {
+      if (this.internationalBirthDate == undefined || this.internationalBirthDate == null ) { return defaultValue; }
       return this.internationalBirthDate;
   }
 
@@ -940,6 +1083,17 @@ export class MedicinalProductAuthorization {
   * @returns the value  or undefined
   */
   public getJurisdictionalAuthorization(): MedicinalProductAuthorizationJurisdictionalAuthorization[] | undefined {
+      return this.jurisdictionalAuthorization;
+  }
+
+  /**
+  * Gets the current value of field jurisdictionalAuthorization if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getJurisdictionalAuthorizationOrElse(defaultValue: MedicinalProductAuthorizationJurisdictionalAuthorization[]): MedicinalProductAuthorizationJurisdictionalAuthorization[] {
+      if (this.jurisdictionalAuthorization == undefined || this.jurisdictionalAuthorization == null ) { return defaultValue; }
       return this.jurisdictionalAuthorization;
   }
 

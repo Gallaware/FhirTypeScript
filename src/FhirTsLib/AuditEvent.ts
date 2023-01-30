@@ -381,6 +381,17 @@ export class AuditEvent {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -412,6 +423,17 @@ export class AuditEvent {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -440,6 +462,17 @@ export class AuditEvent {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -491,6 +524,17 @@ export class AuditEvent {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -536,6 +580,17 @@ export class AuditEvent {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -587,6 +642,17 @@ export class AuditEvent {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addSubtype(newValue: Coding) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.subtype) !== 'undefined') {
@@ -635,6 +701,17 @@ export class AuditEvent {
       return this.subtype;
   }
 
+  /**
+  * Gets the current value of field subtype if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubtypeOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.subtype == undefined || this.subtype == null ) { return defaultValue; }
+      return this.subtype;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -667,6 +744,17 @@ export class AuditEvent {
       return this.action;
   }
 
+  /**
+  * Gets the current value of field action if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getActionOrElse(defaultValue: string): string {
+      if (this.action == undefined || this.action == null ) { return defaultValue; }
+      return this.action;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -695,6 +783,17 @@ export class AuditEvent {
   * @returns the value  or undefined
   */
   public getRecorded(): string | undefined {
+      return this.recorded;
+  }
+
+  /**
+  * Gets the current value of field recorded if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRecordedOrElse(defaultValue: string): string {
+      if (this.recorded == undefined || this.recorded == null ) { return defaultValue; }
       return this.recorded;
   }
 
@@ -730,6 +829,17 @@ export class AuditEvent {
       return this.outcome;
   }
 
+  /**
+  * Gets the current value of field outcome if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeOrElse(defaultValue: string): string {
+      if (this.outcome == undefined || this.outcome == null ) { return defaultValue; }
+      return this.outcome;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -758,6 +868,17 @@ export class AuditEvent {
   * @returns the value  or undefined
   */
   public getOutcomeDesc(): string | undefined {
+      return this.outcomeDesc;
+  }
+
+  /**
+  * Gets the current value of field outcomeDesc if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeDescOrElse(defaultValue: string): string {
+      if (this.outcomeDesc == undefined || this.outcomeDesc == null ) { return defaultValue; }
       return this.outcomeDesc;
   }
 
@@ -809,6 +930,17 @@ export class AuditEvent {
       return this.purposeOfEvent;
   }
 
+  /**
+  * Gets the current value of field purposeOfEvent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPurposeOfEventOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.purposeOfEvent == undefined || this.purposeOfEvent == null ) { return defaultValue; }
+      return this.purposeOfEvent;
+  }
+
   public addAgent(newValue: AuditEventAgent) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.agent) !== 'undefined') {
@@ -857,6 +989,17 @@ export class AuditEvent {
       return this.agent;
   }
 
+  /**
+  * Gets the current value of field agent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAgentOrElse(defaultValue: AuditEventAgent[]): AuditEventAgent[] {
+      if (this.agent == undefined || this.agent == null ) { return defaultValue; }
+      return this.agent;
+  }
+
   public addEntity(newValue: AuditEventEntity) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.entity) !== 'undefined') {
@@ -902,6 +1045,17 @@ export class AuditEvent {
   * @returns the value  or undefined
   */
   public getEntity(): AuditEventEntity[] | undefined {
+      return this.entity;
+  }
+
+  /**
+  * Gets the current value of field entity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEntityOrElse(defaultValue: AuditEventEntity[]): AuditEventEntity[] {
+      if (this.entity == undefined || this.entity == null ) { return defaultValue; }
       return this.entity;
   }
 

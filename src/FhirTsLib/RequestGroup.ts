@@ -447,6 +447,17 @@ export class RequestGroup {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -478,6 +489,17 @@ export class RequestGroup {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -506,6 +528,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -557,6 +590,17 @@ export class RequestGroup {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -602,6 +646,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -653,6 +708,17 @@ export class RequestGroup {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -698,6 +764,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -749,6 +826,17 @@ export class RequestGroup {
       return this.instantiatesCanonical;
   }
 
+  /**
+  * Gets the current value of field instantiatesCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesCanonicalOrElse(defaultValue: string[]): string[] {
+      if (this.instantiatesCanonical == undefined || this.instantiatesCanonical == null ) { return defaultValue; }
+      return this.instantiatesCanonical;
+  }
+
   public add_instantiatesCanonical(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._instantiatesCanonical) !== 'undefined') {
@@ -794,6 +882,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public get_instantiatesCanonical(): Element[] | undefined {
+      return this._instantiatesCanonical;
+  }
+
+  /**
+  * Gets the current value of field _instantiatesCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_instantiatesCanonicalOrElse(defaultValue: Element[]): Element[] {
+      if (this._instantiatesCanonical == undefined || this._instantiatesCanonical == null ) { return defaultValue; }
       return this._instantiatesCanonical;
   }
 
@@ -845,6 +944,17 @@ export class RequestGroup {
       return this.instantiatesUri;
   }
 
+  /**
+  * Gets the current value of field instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesUriOrElse(defaultValue: string[]): string[] {
+      if (this.instantiatesUri == undefined || this.instantiatesUri == null ) { return defaultValue; }
+      return this.instantiatesUri;
+  }
+
   public add_instantiatesUri(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._instantiatesUri) !== 'undefined') {
@@ -890,6 +1000,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public get_instantiatesUri(): Element[] | undefined {
+      return this._instantiatesUri;
+  }
+
+  /**
+  * Gets the current value of field _instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_instantiatesUriOrElse(defaultValue: Element[]): Element[] {
+      if (this._instantiatesUri == undefined || this._instantiatesUri == null ) { return defaultValue; }
       return this._instantiatesUri;
   }
 
@@ -941,6 +1062,17 @@ export class RequestGroup {
       return this.basedOn;
   }
 
+  /**
+  * Gets the current value of field basedOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBasedOnOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.basedOn == undefined || this.basedOn == null ) { return defaultValue; }
+      return this.basedOn;
+  }
+
   public addReplaces(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.replaces) !== 'undefined') {
@@ -989,6 +1121,17 @@ export class RequestGroup {
       return this.replaces;
   }
 
+  /**
+  * Gets the current value of field replaces if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReplacesOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.replaces == undefined || this.replaces == null ) { return defaultValue; }
+      return this.replaces;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1017,6 +1160,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -1051,6 +1205,17 @@ export class RequestGroup {
       return this.intent;
   }
 
+  /**
+  * Gets the current value of field intent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIntentOrElse(defaultValue: string): string {
+      if (this.intent == undefined || this.intent == null ) { return defaultValue; }
+      return this.intent;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1082,6 +1247,17 @@ export class RequestGroup {
       return this.priority;
   }
 
+  /**
+  * Gets the current value of field priority if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPriorityOrElse(defaultValue: string): string {
+      if (this.priority == undefined || this.priority == null ) { return defaultValue; }
+      return this.priority;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1110,6 +1286,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public getAuthoredOn(): string | undefined {
+      return this.authoredOn;
+  }
+
+  /**
+  * Gets the current value of field authoredOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAuthoredOnOrElse(defaultValue: string): string {
+      if (this.authoredOn == undefined || this.authoredOn == null ) { return defaultValue; }
       return this.authoredOn;
   }
 
@@ -1161,6 +1348,17 @@ export class RequestGroup {
       return this.reasonCode;
   }
 
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
+      return this.reasonCode;
+  }
+
   public addReasonReference(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonReference) !== 'undefined') {
@@ -1206,6 +1404,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public getReasonReference(): Reference[] | undefined {
+      return this.reasonReference;
+  }
+
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
       return this.reasonReference;
   }
 
@@ -1257,6 +1466,17 @@ export class RequestGroup {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addAction(newValue: RequestGroupAction) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.action) !== 'undefined') {
@@ -1302,6 +1522,17 @@ export class RequestGroup {
   * @returns the value  or undefined
   */
   public getAction(): RequestGroupAction[] | undefined {
+      return this.action;
+  }
+
+  /**
+  * Gets the current value of field action if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getActionOrElse(defaultValue: RequestGroupAction[]): RequestGroupAction[] {
+      if (this.action == undefined || this.action == null ) { return defaultValue; }
       return this.action;
   }
 

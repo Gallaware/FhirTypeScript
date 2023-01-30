@@ -125,6 +125,17 @@ export class ValueSetInclude {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -170,6 +181,17 @@ export class ValueSetInclude {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -221,6 +243,17 @@ export class ValueSetInclude {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -252,6 +285,17 @@ export class ValueSetInclude {
       return this.system;
   }
 
+  /**
+  * Gets the current value of field system if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSystemOrElse(defaultValue: string): string {
+      if (this.system == undefined || this.system == null ) { return defaultValue; }
+      return this.system;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -280,6 +324,17 @@ export class ValueSetInclude {
   * @returns the value  or undefined
   */
   public getVersion(): string | undefined {
+      return this.version;
+  }
+
+  /**
+  * Gets the current value of field version if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionOrElse(defaultValue: string): string {
+      if (this.version == undefined || this.version == null ) { return defaultValue; }
       return this.version;
   }
 
@@ -331,6 +386,17 @@ export class ValueSetInclude {
       return this.concept;
   }
 
+  /**
+  * Gets the current value of field concept if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConceptOrElse(defaultValue: ValueSetConcept[]): ValueSetConcept[] {
+      if (this.concept == undefined || this.concept == null ) { return defaultValue; }
+      return this.concept;
+  }
+
   public addFilter(newValue: ValueSetFilter) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.filter) !== 'undefined') {
@@ -379,6 +445,17 @@ export class ValueSetInclude {
       return this.filter;
   }
 
+  /**
+  * Gets the current value of field filter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFilterOrElse(defaultValue: ValueSetFilter[]): ValueSetFilter[] {
+      if (this.filter == undefined || this.filter == null ) { return defaultValue; }
+      return this.filter;
+  }
+
   public addValueSet(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.valueSet) !== 'undefined') {
@@ -424,6 +501,17 @@ export class ValueSetInclude {
   * @returns the value  or undefined
   */
   public getValueSet(): string[] | undefined {
+      return this.valueSet;
+  }
+
+  /**
+  * Gets the current value of field valueSet if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueSetOrElse(defaultValue: string[]): string[] {
+      if (this.valueSet == undefined || this.valueSet == null ) { return defaultValue; }
       return this.valueSet;
   }
 

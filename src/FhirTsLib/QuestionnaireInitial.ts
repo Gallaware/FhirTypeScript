@@ -196,6 +196,17 @@ export class QuestionnaireInitial {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -241,6 +252,17 @@ export class QuestionnaireInitial {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -292,6 +314,17 @@ export class QuestionnaireInitial {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -320,6 +353,17 @@ export class QuestionnaireInitial {
   * @returns the value  or undefined
   */
   public getValueDate(): string | undefined {
+      return this.valueDate;
+  }
+
+  /**
+  * Gets the current value of field valueDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueDateOrElse(defaultValue: string): string {
+      if (this.valueDate == undefined || this.valueDate == null ) { return defaultValue; }
       return this.valueDate;
   }
 
@@ -354,6 +398,17 @@ export class QuestionnaireInitial {
       return this.valueDateTime;
   }
 
+  /**
+  * Gets the current value of field valueDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueDateTimeOrElse(defaultValue: string): string {
+      if (this.valueDateTime == undefined || this.valueDateTime == null ) { return defaultValue; }
+      return this.valueDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -382,6 +437,17 @@ export class QuestionnaireInitial {
   * @returns the value  or undefined
   */
   public getValueTime(): string | undefined {
+      return this.valueTime;
+  }
+
+  /**
+  * Gets the current value of field valueTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueTimeOrElse(defaultValue: string): string {
+      if (this.valueTime == undefined || this.valueTime == null ) { return defaultValue; }
       return this.valueTime;
   }
 
@@ -416,6 +482,17 @@ export class QuestionnaireInitial {
       return this.valueString;
   }
 
+  /**
+  * Gets the current value of field valueString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueStringOrElse(defaultValue: string): string {
+      if (this.valueString == undefined || this.valueString == null ) { return defaultValue; }
+      return this.valueString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -444,6 +521,17 @@ export class QuestionnaireInitial {
   * @returns the value  or undefined
   */
   public getValueUri(): string | undefined {
+      return this.valueUri;
+  }
+
+  /**
+  * Gets the current value of field valueUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueUriOrElse(defaultValue: string): string {
+      if (this.valueUri == undefined || this.valueUri == null ) { return defaultValue; }
       return this.valueUri;
   }
 

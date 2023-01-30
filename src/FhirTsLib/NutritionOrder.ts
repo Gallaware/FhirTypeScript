@@ -444,6 +444,17 @@ export class NutritionOrder {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -475,6 +486,17 @@ export class NutritionOrder {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -503,6 +525,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -554,6 +587,17 @@ export class NutritionOrder {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -599,6 +643,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -650,6 +705,17 @@ export class NutritionOrder {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -695,6 +761,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -746,6 +823,17 @@ export class NutritionOrder {
       return this.instantiatesCanonical;
   }
 
+  /**
+  * Gets the current value of field instantiatesCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesCanonicalOrElse(defaultValue: string[]): string[] {
+      if (this.instantiatesCanonical == undefined || this.instantiatesCanonical == null ) { return defaultValue; }
+      return this.instantiatesCanonical;
+  }
+
   public addInstantiatesUri(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.instantiatesUri) !== 'undefined') {
@@ -791,6 +879,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getInstantiatesUri(): string[] | undefined {
+      return this.instantiatesUri;
+  }
+
+  /**
+  * Gets the current value of field instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesUriOrElse(defaultValue: string[]): string[] {
+      if (this.instantiatesUri == undefined || this.instantiatesUri == null ) { return defaultValue; }
       return this.instantiatesUri;
   }
 
@@ -842,6 +941,17 @@ export class NutritionOrder {
       return this._instantiatesUri;
   }
 
+  /**
+  * Gets the current value of field _instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_instantiatesUriOrElse(defaultValue: Element[]): Element[] {
+      if (this._instantiatesUri == undefined || this._instantiatesUri == null ) { return defaultValue; }
+      return this._instantiatesUri;
+  }
+
   public addInstantiates(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.instantiates) !== 'undefined') {
@@ -887,6 +997,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getInstantiates(): string[] | undefined {
+      return this.instantiates;
+  }
+
+  /**
+  * Gets the current value of field instantiates if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesOrElse(defaultValue: string[]): string[] {
+      if (this.instantiates == undefined || this.instantiates == null ) { return defaultValue; }
       return this.instantiates;
   }
 
@@ -938,6 +1059,17 @@ export class NutritionOrder {
       return this._instantiates;
   }
 
+  /**
+  * Gets the current value of field _instantiates if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_instantiatesOrElse(defaultValue: Element[]): Element[] {
+      if (this._instantiates == undefined || this._instantiates == null ) { return defaultValue; }
+      return this._instantiates;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -966,6 +1098,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -1000,6 +1143,17 @@ export class NutritionOrder {
       return this.intent;
   }
 
+  /**
+  * Gets the current value of field intent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIntentOrElse(defaultValue: string): string {
+      if (this.intent == undefined || this.intent == null ) { return defaultValue; }
+      return this.intent;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1028,6 +1182,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getDateTime(): string | undefined {
+      return this.dateTime;
+  }
+
+  /**
+  * Gets the current value of field dateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateTimeOrElse(defaultValue: string): string {
+      if (this.dateTime == undefined || this.dateTime == null ) { return defaultValue; }
       return this.dateTime;
   }
 
@@ -1079,6 +1244,17 @@ export class NutritionOrder {
       return this.allergyIntolerance;
   }
 
+  /**
+  * Gets the current value of field allergyIntolerance if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAllergyIntoleranceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.allergyIntolerance == undefined || this.allergyIntolerance == null ) { return defaultValue; }
+      return this.allergyIntolerance;
+  }
+
   public addFoodPreferenceModifier(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.foodPreferenceModifier) !== 'undefined') {
@@ -1124,6 +1300,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getFoodPreferenceModifier(): CodeableConcept[] | undefined {
+      return this.foodPreferenceModifier;
+  }
+
+  /**
+  * Gets the current value of field foodPreferenceModifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFoodPreferenceModifierOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.foodPreferenceModifier == undefined || this.foodPreferenceModifier == null ) { return defaultValue; }
       return this.foodPreferenceModifier;
   }
 
@@ -1175,6 +1362,17 @@ export class NutritionOrder {
       return this.excludeFoodModifier;
   }
 
+  /**
+  * Gets the current value of field excludeFoodModifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExcludeFoodModifierOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.excludeFoodModifier == undefined || this.excludeFoodModifier == null ) { return defaultValue; }
+      return this.excludeFoodModifier;
+  }
+
   public addSupplement(newValue: NutritionOrderSupplement) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.supplement) !== 'undefined') {
@@ -1223,6 +1421,17 @@ export class NutritionOrder {
       return this.supplement;
   }
 
+  /**
+  * Gets the current value of field supplement if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupplementOrElse(defaultValue: NutritionOrderSupplement[]): NutritionOrderSupplement[] {
+      if (this.supplement == undefined || this.supplement == null ) { return defaultValue; }
+      return this.supplement;
+  }
+
   public addNote(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.note) !== 'undefined') {
@@ -1268,6 +1477,17 @@ export class NutritionOrder {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 

@@ -137,6 +137,17 @@ export class ContractContentDefinition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -182,6 +193,17 @@ export class ContractContentDefinition {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -233,6 +255,17 @@ export class ContractContentDefinition {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -261,6 +294,17 @@ export class ContractContentDefinition {
   * @returns the value  or undefined
   */
   public getPublicationDate(): string | undefined {
+      return this.publicationDate;
+  }
+
+  /**
+  * Gets the current value of field publicationDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPublicationDateOrElse(defaultValue: string): string {
+      if (this.publicationDate == undefined || this.publicationDate == null ) { return defaultValue; }
       return this.publicationDate;
   }
 
@@ -295,6 +339,17 @@ export class ContractContentDefinition {
       return this.publicationStatus;
   }
 
+  /**
+  * Gets the current value of field publicationStatus if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPublicationStatusOrElse(defaultValue: string): string {
+      if (this.publicationStatus == undefined || this.publicationStatus == null ) { return defaultValue; }
+      return this.publicationStatus;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -323,6 +378,17 @@ export class ContractContentDefinition {
   * @returns the value  or undefined
   */
   public getCopyright(): string | undefined {
+      return this.copyright;
+  }
+
+  /**
+  * Gets the current value of field copyright if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCopyrightOrElse(defaultValue: string): string {
+      if (this.copyright == undefined || this.copyright == null ) { return defaultValue; }
       return this.copyright;
   }
 

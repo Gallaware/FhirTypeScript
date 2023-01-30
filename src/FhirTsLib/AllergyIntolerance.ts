@@ -463,6 +463,17 @@ export class AllergyIntolerance {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -494,6 +505,17 @@ export class AllergyIntolerance {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -522,6 +544,17 @@ export class AllergyIntolerance {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -573,6 +606,17 @@ export class AllergyIntolerance {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -618,6 +662,17 @@ export class AllergyIntolerance {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -669,6 +724,17 @@ export class AllergyIntolerance {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -717,6 +783,17 @@ export class AllergyIntolerance {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -746,6 +823,17 @@ export class AllergyIntolerance {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -797,6 +885,17 @@ export class AllergyIntolerance {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: string[]): string[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   public add_category(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._category) !== 'undefined') {
@@ -845,6 +944,17 @@ export class AllergyIntolerance {
       return this._category;
   }
 
+  /**
+  * Gets the current value of field _category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_categoryOrElse(defaultValue: Element[]): Element[] {
+      if (this._category == undefined || this._category == null ) { return defaultValue; }
+      return this._category;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -874,6 +984,17 @@ export class AllergyIntolerance {
   * @returns the value  or undefined
   */
   public getCriticality(): string | undefined {
+      return this.criticality;
+  }
+
+  /**
+  * Gets the current value of field criticality if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCriticalityOrElse(defaultValue: string): string {
+      if (this.criticality == undefined || this.criticality == null ) { return defaultValue; }
       return this.criticality;
   }
 
@@ -908,6 +1029,17 @@ export class AllergyIntolerance {
       return this.onsetDateTime;
   }
 
+  /**
+  * Gets the current value of field onsetDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOnsetDateTimeOrElse(defaultValue: string): string {
+      if (this.onsetDateTime == undefined || this.onsetDateTime == null ) { return defaultValue; }
+      return this.onsetDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -936,6 +1068,17 @@ export class AllergyIntolerance {
   * @returns the value  or undefined
   */
   public getOnsetString(): string | undefined {
+      return this.onsetString;
+  }
+
+  /**
+  * Gets the current value of field onsetString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOnsetStringOrElse(defaultValue: string): string {
+      if (this.onsetString == undefined || this.onsetString == null ) { return defaultValue; }
       return this.onsetString;
   }
 
@@ -970,6 +1113,17 @@ export class AllergyIntolerance {
       return this.recordedDate;
   }
 
+  /**
+  * Gets the current value of field recordedDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRecordedDateOrElse(defaultValue: string): string {
+      if (this.recordedDate == undefined || this.recordedDate == null ) { return defaultValue; }
+      return this.recordedDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -998,6 +1152,17 @@ export class AllergyIntolerance {
   * @returns the value  or undefined
   */
   public getLastOccurrence(): string | undefined {
+      return this.lastOccurrence;
+  }
+
+  /**
+  * Gets the current value of field lastOccurrence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLastOccurrenceOrElse(defaultValue: string): string {
+      if (this.lastOccurrence == undefined || this.lastOccurrence == null ) { return defaultValue; }
       return this.lastOccurrence;
   }
 
@@ -1049,6 +1214,17 @@ export class AllergyIntolerance {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addReaction(newValue: AllergyIntoleranceReaction) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reaction) !== 'undefined') {
@@ -1094,6 +1270,17 @@ export class AllergyIntolerance {
   * @returns the value  or undefined
   */
   public getReaction(): AllergyIntoleranceReaction[] | undefined {
+      return this.reaction;
+  }
+
+  /**
+  * Gets the current value of field reaction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReactionOrElse(defaultValue: AllergyIntoleranceReaction[]): AllergyIntoleranceReaction[] {
+      if (this.reaction == undefined || this.reaction == null ) { return defaultValue; }
       return this.reaction;
   }
 

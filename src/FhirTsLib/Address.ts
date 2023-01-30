@@ -181,6 +181,17 @@ export class Address {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -229,6 +240,17 @@ export class Address {
       return this.extension;
   }
 
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
+      return this.extension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -258,6 +280,17 @@ export class Address {
   * @returns the value  or undefined
   */
   public getUse(): string | undefined {
+      return this.use;
+  }
+
+  /**
+  * Gets the current value of field use if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseOrElse(defaultValue: string): string {
+      if (this.use == undefined || this.use == null ) { return defaultValue; }
       return this.use;
   }
 
@@ -293,6 +326,17 @@ export class Address {
       return this.type;
   }
 
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
+      return this.type;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -321,6 +365,17 @@ export class Address {
   * @returns the value  or undefined
   */
   public getText(): string | undefined {
+      return this.text;
+  }
+
+  /**
+  * Gets the current value of field text if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTextOrElse(defaultValue: string): string {
+      if (this.text == undefined || this.text == null ) { return defaultValue; }
       return this.text;
   }
 
@@ -372,6 +427,17 @@ export class Address {
       return this.line;
   }
 
+  /**
+  * Gets the current value of field line if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLineOrElse(defaultValue: string[]): string[] {
+      if (this.line == undefined || this.line == null ) { return defaultValue; }
+      return this.line;
+  }
+
   public add_line(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._line) !== 'undefined') {
@@ -420,6 +486,17 @@ export class Address {
       return this._line;
   }
 
+  /**
+  * Gets the current value of field _line if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_lineOrElse(defaultValue: Element[]): Element[] {
+      if (this._line == undefined || this._line == null ) { return defaultValue; }
+      return this._line;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -448,6 +525,17 @@ export class Address {
   * @returns the value  or undefined
   */
   public getCity(): string | undefined {
+      return this.city;
+  }
+
+  /**
+  * Gets the current value of field city if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCityOrElse(defaultValue: string): string {
+      if (this.city == undefined || this.city == null ) { return defaultValue; }
       return this.city;
   }
 
@@ -482,6 +570,17 @@ export class Address {
       return this.district;
   }
 
+  /**
+  * Gets the current value of field district if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDistrictOrElse(defaultValue: string): string {
+      if (this.district == undefined || this.district == null ) { return defaultValue; }
+      return this.district;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -510,6 +609,17 @@ export class Address {
   * @returns the value  or undefined
   */
   public getState(): string | undefined {
+      return this.state;
+  }
+
+  /**
+  * Gets the current value of field state if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStateOrElse(defaultValue: string): string {
+      if (this.state == undefined || this.state == null ) { return defaultValue; }
       return this.state;
   }
 
@@ -544,6 +654,17 @@ export class Address {
       return this.postalCode;
   }
 
+  /**
+  * Gets the current value of field postalCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPostalCodeOrElse(defaultValue: string): string {
+      if (this.postalCode == undefined || this.postalCode == null ) { return defaultValue; }
+      return this.postalCode;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -572,6 +693,17 @@ export class Address {
   * @returns the value  or undefined
   */
   public getCountry(): string | undefined {
+      return this.country;
+  }
+
+  /**
+  * Gets the current value of field country if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCountryOrElse(defaultValue: string): string {
+      if (this.country == undefined || this.country == null ) { return defaultValue; }
       return this.country;
   }
 

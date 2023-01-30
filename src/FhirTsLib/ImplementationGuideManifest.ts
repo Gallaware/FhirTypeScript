@@ -132,6 +132,17 @@ export class ImplementationGuideManifest {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -177,6 +188,17 @@ export class ImplementationGuideManifest {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -228,6 +250,17 @@ export class ImplementationGuideManifest {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -256,6 +289,17 @@ export class ImplementationGuideManifest {
   * @returns the value  or undefined
   */
   public getRendering(): string | undefined {
+      return this.rendering;
+  }
+
+  /**
+  * Gets the current value of field rendering if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRenderingOrElse(defaultValue: string): string {
+      if (this.rendering == undefined || this.rendering == null ) { return defaultValue; }
       return this.rendering;
   }
 
@@ -307,6 +351,17 @@ export class ImplementationGuideManifest {
       return this.resource;
   }
 
+  /**
+  * Gets the current value of field resource if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getResourceOrElse(defaultValue: ImplementationGuideResource1[]): ImplementationGuideResource1[] {
+      if (this.resource == undefined || this.resource == null ) { return defaultValue; }
+      return this.resource;
+  }
+
   public addPage(newValue: ImplementationGuidePage1) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.page) !== 'undefined') {
@@ -352,6 +407,17 @@ export class ImplementationGuideManifest {
   * @returns the value  or undefined
   */
   public getPage(): ImplementationGuidePage1[] | undefined {
+      return this.page;
+  }
+
+  /**
+  * Gets the current value of field page if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPageOrElse(defaultValue: ImplementationGuidePage1[]): ImplementationGuidePage1[] {
+      if (this.page == undefined || this.page == null ) { return defaultValue; }
       return this.page;
   }
 
@@ -403,6 +469,17 @@ export class ImplementationGuideManifest {
       return this.image;
   }
 
+  /**
+  * Gets the current value of field image if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImageOrElse(defaultValue: string[]): string[] {
+      if (this.image == undefined || this.image == null ) { return defaultValue; }
+      return this.image;
+  }
+
   public add_image(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._image) !== 'undefined') {
@@ -448,6 +525,17 @@ export class ImplementationGuideManifest {
   * @returns the value  or undefined
   */
   public get_image(): Element[] | undefined {
+      return this._image;
+  }
+
+  /**
+  * Gets the current value of field _image if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_imageOrElse(defaultValue: Element[]): Element[] {
+      if (this._image == undefined || this._image == null ) { return defaultValue; }
       return this._image;
   }
 
@@ -499,6 +587,17 @@ export class ImplementationGuideManifest {
       return this.other;
   }
 
+  /**
+  * Gets the current value of field other if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOtherOrElse(defaultValue: string[]): string[] {
+      if (this.other == undefined || this.other == null ) { return defaultValue; }
+      return this.other;
+  }
+
   public add_other(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._other) !== 'undefined') {
@@ -544,6 +643,17 @@ export class ImplementationGuideManifest {
   * @returns the value  or undefined
   */
   public get_other(): Element[] | undefined {
+      return this._other;
+  }
+
+  /**
+  * Gets the current value of field _other if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_otherOrElse(defaultValue: Element[]): Element[] {
+      if (this._other == undefined || this._other == null ) { return defaultValue; }
       return this._other;
   }
 

@@ -576,6 +576,17 @@ export class StructureDefinition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -607,6 +618,17 @@ export class StructureDefinition {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -635,6 +657,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -686,6 +719,17 @@ export class StructureDefinition {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -731,6 +775,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -782,6 +837,17 @@ export class StructureDefinition {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -810,6 +876,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getUrl(): string | undefined {
+      return this.url;
+  }
+
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
       return this.url;
   }
 
@@ -861,6 +938,17 @@ export class StructureDefinition {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -889,6 +977,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getVersion(): string | undefined {
+      return this.version;
+  }
+
+  /**
+  * Gets the current value of field version if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionOrElse(defaultValue: string): string {
+      if (this.version == undefined || this.version == null ) { return defaultValue; }
       return this.version;
   }
 
@@ -923,6 +1022,17 @@ export class StructureDefinition {
       return this.name;
   }
 
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
+      return this.name;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -951,6 +1061,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getTitle(): string | undefined {
+      return this.title;
+  }
+
+  /**
+  * Gets the current value of field title if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTitleOrElse(defaultValue: string): string {
+      if (this.title == undefined || this.title == null ) { return defaultValue; }
       return this.title;
   }
 
@@ -986,6 +1107,17 @@ export class StructureDefinition {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1017,6 +1149,17 @@ export class StructureDefinition {
       return this.date;
   }
 
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
+      return this.date;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1045,6 +1188,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getPublisher(): string | undefined {
+      return this.publisher;
+  }
+
+  /**
+  * Gets the current value of field publisher if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPublisherOrElse(defaultValue: string): string {
+      if (this.publisher == undefined || this.publisher == null ) { return defaultValue; }
       return this.publisher;
   }
 
@@ -1096,6 +1250,17 @@ export class StructureDefinition {
       return this.contact;
   }
 
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: ContactDetail[]): ContactDetail[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
+      return this.contact;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1124,6 +1289,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -1175,6 +1351,17 @@ export class StructureDefinition {
       return this.useContext;
   }
 
+  /**
+  * Gets the current value of field useContext if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseContextOrElse(defaultValue: UsageContext[]): UsageContext[] {
+      if (this.useContext == undefined || this.useContext == null ) { return defaultValue; }
+      return this.useContext;
+  }
+
   public addJurisdiction(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.jurisdiction) !== 'undefined') {
@@ -1223,6 +1410,17 @@ export class StructureDefinition {
       return this.jurisdiction;
   }
 
+  /**
+  * Gets the current value of field jurisdiction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getJurisdictionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.jurisdiction == undefined || this.jurisdiction == null ) { return defaultValue; }
+      return this.jurisdiction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1254,6 +1452,17 @@ export class StructureDefinition {
       return this.purpose;
   }
 
+  /**
+  * Gets the current value of field purpose if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPurposeOrElse(defaultValue: string): string {
+      if (this.purpose == undefined || this.purpose == null ) { return defaultValue; }
+      return this.purpose;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1282,6 +1491,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getCopyright(): string | undefined {
+      return this.copyright;
+  }
+
+  /**
+  * Gets the current value of field copyright if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCopyrightOrElse(defaultValue: string): string {
+      if (this.copyright == undefined || this.copyright == null ) { return defaultValue; }
       return this.copyright;
   }
 
@@ -1333,6 +1553,17 @@ export class StructureDefinition {
       return this.keyword;
   }
 
+  /**
+  * Gets the current value of field keyword if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getKeywordOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.keyword == undefined || this.keyword == null ) { return defaultValue; }
+      return this.keyword;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1362,6 +1593,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getFhirVersion(): string | undefined {
+      return this.fhirVersion;
+  }
+
+  /**
+  * Gets the current value of field fhirVersion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFhirVersionOrElse(defaultValue: string): string {
+      if (this.fhirVersion == undefined || this.fhirVersion == null ) { return defaultValue; }
       return this.fhirVersion;
   }
 
@@ -1413,6 +1655,17 @@ export class StructureDefinition {
       return this.mapping;
   }
 
+  /**
+  * Gets the current value of field mapping if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMappingOrElse(defaultValue: StructureDefinitionMapping[]): StructureDefinitionMapping[] {
+      if (this.mapping == undefined || this.mapping == null ) { return defaultValue; }
+      return this.mapping;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1442,6 +1695,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getKind(): string | undefined {
+      return this.kind;
+  }
+
+  /**
+  * Gets the current value of field kind if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getKindOrElse(defaultValue: string): string {
+      if (this.kind == undefined || this.kind == null ) { return defaultValue; }
       return this.kind;
   }
 
@@ -1493,6 +1757,17 @@ export class StructureDefinition {
       return this.context;
   }
 
+  /**
+  * Gets the current value of field context if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContextOrElse(defaultValue: StructureDefinitionContext[]): StructureDefinitionContext[] {
+      if (this.context == undefined || this.context == null ) { return defaultValue; }
+      return this.context;
+  }
+
   public addContextInvariant(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.contextInvariant) !== 'undefined') {
@@ -1538,6 +1813,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getContextInvariant(): string[] | undefined {
+      return this.contextInvariant;
+  }
+
+  /**
+  * Gets the current value of field contextInvariant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContextInvariantOrElse(defaultValue: string[]): string[] {
+      if (this.contextInvariant == undefined || this.contextInvariant == null ) { return defaultValue; }
       return this.contextInvariant;
   }
 
@@ -1589,6 +1875,17 @@ export class StructureDefinition {
       return this._contextInvariant;
   }
 
+  /**
+  * Gets the current value of field _contextInvariant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_contextInvariantOrElse(defaultValue: Element[]): Element[] {
+      if (this._contextInvariant == undefined || this._contextInvariant == null ) { return defaultValue; }
+      return this._contextInvariant;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1617,6 +1914,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -1651,6 +1959,17 @@ export class StructureDefinition {
       return this.baseDefinition;
   }
 
+  /**
+  * Gets the current value of field baseDefinition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBaseDefinitionOrElse(defaultValue: string): string {
+      if (this.baseDefinition == undefined || this.baseDefinition == null ) { return defaultValue; }
+      return this.baseDefinition;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1680,6 +1999,17 @@ export class StructureDefinition {
   * @returns the value  or undefined
   */
   public getDerivation(): string | undefined {
+      return this.derivation;
+  }
+
+  /**
+  * Gets the current value of field derivation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDerivationOrElse(defaultValue: string): string {
+      if (this.derivation == undefined || this.derivation == null ) { return defaultValue; }
       return this.derivation;
   }
 

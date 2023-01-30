@@ -168,6 +168,17 @@ export class ClaimDetail {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -213,6 +224,17 @@ export class ClaimDetail {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -264,6 +286,17 @@ export class ClaimDetail {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addModifier(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.modifier) !== 'undefined') {
@@ -309,6 +342,17 @@ export class ClaimDetail {
   * @returns the value  or undefined
   */
   public getModifier(): CodeableConcept[] | undefined {
+      return this.modifier;
+  }
+
+  /**
+  * Gets the current value of field modifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.modifier == undefined || this.modifier == null ) { return defaultValue; }
       return this.modifier;
   }
 
@@ -360,6 +404,17 @@ export class ClaimDetail {
       return this.programCode;
   }
 
+  /**
+  * Gets the current value of field programCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProgramCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.programCode == undefined || this.programCode == null ) { return defaultValue; }
+      return this.programCode;
+  }
+
   public addUdi(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.udi) !== 'undefined') {
@@ -408,6 +463,17 @@ export class ClaimDetail {
       return this.udi;
   }
 
+  /**
+  * Gets the current value of field udi if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUdiOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.udi == undefined || this.udi == null ) { return defaultValue; }
+      return this.udi;
+  }
+
   public addSubDetail(newValue: ClaimSubDetail) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.subDetail) !== 'undefined') {
@@ -453,6 +519,17 @@ export class ClaimDetail {
   * @returns the value  or undefined
   */
   public getSubDetail(): ClaimSubDetail[] | undefined {
+      return this.subDetail;
+  }
+
+  /**
+  * Gets the current value of field subDetail if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubDetailOrElse(defaultValue: ClaimSubDetail[]): ClaimSubDetail[] {
+      if (this.subDetail == undefined || this.subDetail == null ) { return defaultValue; }
       return this.subDetail;
   }
 

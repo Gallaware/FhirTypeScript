@@ -97,6 +97,17 @@ export class EffectEvidenceSynthesisCertainty {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -142,6 +153,17 @@ export class EffectEvidenceSynthesisCertainty {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -193,6 +215,17 @@ export class EffectEvidenceSynthesisCertainty {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addRating(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.rating) !== 'undefined') {
@@ -238,6 +271,17 @@ export class EffectEvidenceSynthesisCertainty {
   * @returns the value  or undefined
   */
   public getRating(): CodeableConcept[] | undefined {
+      return this.rating;
+  }
+
+  /**
+  * Gets the current value of field rating if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRatingOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.rating == undefined || this.rating == null ) { return defaultValue; }
       return this.rating;
   }
 
@@ -289,6 +333,17 @@ export class EffectEvidenceSynthesisCertainty {
       return this.note;
   }
 
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
+      return this.note;
+  }
+
   public addCertaintySubcomponent(newValue: EffectEvidenceSynthesisCertaintySubcomponent) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.certaintySubcomponent) !== 'undefined') {
@@ -334,6 +389,17 @@ export class EffectEvidenceSynthesisCertainty {
   * @returns the value  or undefined
   */
   public getCertaintySubcomponent(): EffectEvidenceSynthesisCertaintySubcomponent[] | undefined {
+      return this.certaintySubcomponent;
+  }
+
+  /**
+  * Gets the current value of field certaintySubcomponent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCertaintySubcomponentOrElse(defaultValue: EffectEvidenceSynthesisCertaintySubcomponent[]): EffectEvidenceSynthesisCertaintySubcomponent[] {
+      if (this.certaintySubcomponent == undefined || this.certaintySubcomponent == null ) { return defaultValue; }
       return this.certaintySubcomponent;
   }
 

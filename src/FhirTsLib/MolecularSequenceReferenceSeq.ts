@@ -170,6 +170,17 @@ export class MolecularSequenceReferenceSeq {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -215,6 +226,17 @@ export class MolecularSequenceReferenceSeq {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -266,6 +288,17 @@ export class MolecularSequenceReferenceSeq {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -294,6 +327,17 @@ export class MolecularSequenceReferenceSeq {
   * @returns the value  or undefined
   */
   public getGenomeBuild(): string | undefined {
+      return this.genomeBuild;
+  }
+
+  /**
+  * Gets the current value of field genomeBuild if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGenomeBuildOrElse(defaultValue: string): string {
+      if (this.genomeBuild == undefined || this.genomeBuild == null ) { return defaultValue; }
       return this.genomeBuild;
   }
 
@@ -329,6 +373,17 @@ export class MolecularSequenceReferenceSeq {
       return this.orientation;
   }
 
+  /**
+  * Gets the current value of field orientation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOrientationOrElse(defaultValue: string): string {
+      if (this.orientation == undefined || this.orientation == null ) { return defaultValue; }
+      return this.orientation;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -357,6 +412,17 @@ export class MolecularSequenceReferenceSeq {
   * @returns the value  or undefined
   */
   public getReferenceSeqString(): string | undefined {
+      return this.referenceSeqString;
+  }
+
+  /**
+  * Gets the current value of field referenceSeqString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReferenceSeqStringOrElse(defaultValue: string): string {
+      if (this.referenceSeqString == undefined || this.referenceSeqString == null ) { return defaultValue; }
       return this.referenceSeqString;
   }
 
@@ -389,6 +455,17 @@ export class MolecularSequenceReferenceSeq {
   * @returns the value  or undefined
   */
   public getStrand(): string | undefined {
+      return this.strand;
+  }
+
+  /**
+  * Gets the current value of field strand if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStrandOrElse(defaultValue: string): string {
+      if (this.strand == undefined || this.strand == null ) { return defaultValue; }
       return this.strand;
   }
 

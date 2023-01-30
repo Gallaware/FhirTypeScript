@@ -420,6 +420,17 @@ export class Composition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -451,6 +462,17 @@ export class Composition {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -479,6 +501,17 @@ export class Composition {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -530,6 +563,17 @@ export class Composition {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -575,6 +619,17 @@ export class Composition {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -626,6 +681,17 @@ export class Composition {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -655,6 +721,17 @@ export class Composition {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -706,6 +783,17 @@ export class Composition {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -734,6 +822,17 @@ export class Composition {
   * @returns the value  or undefined
   */
   public getDate(): string | undefined {
+      return this.date;
+  }
+
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
       return this.date;
   }
 
@@ -785,6 +884,17 @@ export class Composition {
       return this.author;
   }
 
+  /**
+  * Gets the current value of field author if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAuthorOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.author == undefined || this.author == null ) { return defaultValue; }
+      return this.author;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -816,6 +926,17 @@ export class Composition {
       return this.title;
   }
 
+  /**
+  * Gets the current value of field title if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTitleOrElse(defaultValue: string): string {
+      if (this.title == undefined || this.title == null ) { return defaultValue; }
+      return this.title;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -844,6 +965,17 @@ export class Composition {
   * @returns the value  or undefined
   */
   public getConfidentiality(): string | undefined {
+      return this.confidentiality;
+  }
+
+  /**
+  * Gets the current value of field confidentiality if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConfidentialityOrElse(defaultValue: string): string {
+      if (this.confidentiality == undefined || this.confidentiality == null ) { return defaultValue; }
       return this.confidentiality;
   }
 
@@ -895,6 +1027,17 @@ export class Composition {
       return this.attester;
   }
 
+  /**
+  * Gets the current value of field attester if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAttesterOrElse(defaultValue: CompositionAttester[]): CompositionAttester[] {
+      if (this.attester == undefined || this.attester == null ) { return defaultValue; }
+      return this.attester;
+  }
+
   public addRelatesTo(newValue: CompositionRelatesTo) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relatesTo) !== 'undefined') {
@@ -940,6 +1083,17 @@ export class Composition {
   * @returns the value  or undefined
   */
   public getRelatesTo(): CompositionRelatesTo[] | undefined {
+      return this.relatesTo;
+  }
+
+  /**
+  * Gets the current value of field relatesTo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatesToOrElse(defaultValue: CompositionRelatesTo[]): CompositionRelatesTo[] {
+      if (this.relatesTo == undefined || this.relatesTo == null ) { return defaultValue; }
       return this.relatesTo;
   }
 
@@ -991,6 +1145,17 @@ export class Composition {
       return this.event;
   }
 
+  /**
+  * Gets the current value of field event if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEventOrElse(defaultValue: CompositionEvent[]): CompositionEvent[] {
+      if (this.event == undefined || this.event == null ) { return defaultValue; }
+      return this.event;
+  }
+
   public addSection(newValue: CompositionSection) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.section) !== 'undefined') {
@@ -1036,6 +1201,17 @@ export class Composition {
   * @returns the value  or undefined
   */
   public getSection(): CompositionSection[] | undefined {
+      return this.section;
+  }
+
+  /**
+  * Gets the current value of field section if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSectionOrElse(defaultValue: CompositionSection[]): CompositionSection[] {
+      if (this.section == undefined || this.section == null ) { return defaultValue; }
       return this.section;
   }
 

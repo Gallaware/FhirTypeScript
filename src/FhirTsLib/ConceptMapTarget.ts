@@ -147,6 +147,17 @@ export class ConceptMapTarget {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -192,6 +203,17 @@ export class ConceptMapTarget {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -243,6 +265,17 @@ export class ConceptMapTarget {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -274,6 +307,17 @@ export class ConceptMapTarget {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -302,6 +346,17 @@ export class ConceptMapTarget {
   * @returns the value  or undefined
   */
   public getDisplay(): string | undefined {
+      return this.display;
+  }
+
+  /**
+  * Gets the current value of field display if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDisplayOrElse(defaultValue: string): string {
+      if (this.display == undefined || this.display == null ) { return defaultValue; }
       return this.display;
   }
 
@@ -337,6 +392,17 @@ export class ConceptMapTarget {
       return this.equivalence;
   }
 
+  /**
+  * Gets the current value of field equivalence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEquivalenceOrElse(defaultValue: string): string {
+      if (this.equivalence == undefined || this.equivalence == null ) { return defaultValue; }
+      return this.equivalence;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -365,6 +431,17 @@ export class ConceptMapTarget {
   * @returns the value  or undefined
   */
   public getComment(): string | undefined {
+      return this.comment;
+  }
+
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
       return this.comment;
   }
 
@@ -416,6 +493,17 @@ export class ConceptMapTarget {
       return this.dependsOn;
   }
 
+  /**
+  * Gets the current value of field dependsOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDependsOnOrElse(defaultValue: ConceptMapDependsOn[]): ConceptMapDependsOn[] {
+      if (this.dependsOn == undefined || this.dependsOn == null ) { return defaultValue; }
+      return this.dependsOn;
+  }
+
   public addProduct(newValue: ConceptMapDependsOn) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.product) !== 'undefined') {
@@ -461,6 +549,17 @@ export class ConceptMapTarget {
   * @returns the value  or undefined
   */
   public getProduct(): ConceptMapDependsOn[] | undefined {
+      return this.product;
+  }
+
+  /**
+  * Gets the current value of field product if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProductOrElse(defaultValue: ConceptMapDependsOn[]): ConceptMapDependsOn[] {
+      if (this.product == undefined || this.product == null ) { return defaultValue; }
       return this.product;
   }
 

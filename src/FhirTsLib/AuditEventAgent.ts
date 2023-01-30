@@ -173,6 +173,17 @@ export class AuditEventAgent {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -218,6 +229,17 @@ export class AuditEventAgent {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -269,6 +291,17 @@ export class AuditEventAgent {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addRole(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.role) !== 'undefined') {
@@ -317,6 +350,17 @@ export class AuditEventAgent {
       return this.role;
   }
 
+  /**
+  * Gets the current value of field role if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRoleOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.role == undefined || this.role == null ) { return defaultValue; }
+      return this.role;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -348,6 +392,17 @@ export class AuditEventAgent {
       return this.altId;
   }
 
+  /**
+  * Gets the current value of field altId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAltIdOrElse(defaultValue: string): string {
+      if (this.altId == undefined || this.altId == null ) { return defaultValue; }
+      return this.altId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -376,6 +431,17 @@ export class AuditEventAgent {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -427,6 +493,17 @@ export class AuditEventAgent {
       return this.policy;
   }
 
+  /**
+  * Gets the current value of field policy if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPolicyOrElse(defaultValue: string[]): string[] {
+      if (this.policy == undefined || this.policy == null ) { return defaultValue; }
+      return this.policy;
+  }
+
   public add_policy(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._policy) !== 'undefined') {
@@ -475,6 +552,17 @@ export class AuditEventAgent {
       return this._policy;
   }
 
+  /**
+  * Gets the current value of field _policy if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_policyOrElse(defaultValue: Element[]): Element[] {
+      if (this._policy == undefined || this._policy == null ) { return defaultValue; }
+      return this._policy;
+  }
+
   public addPurposeOfUse(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.purposeOfUse) !== 'undefined') {
@@ -520,6 +608,17 @@ export class AuditEventAgent {
   * @returns the value  or undefined
   */
   public getPurposeOfUse(): CodeableConcept[] | undefined {
+      return this.purposeOfUse;
+  }
+
+  /**
+  * Gets the current value of field purposeOfUse if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPurposeOfUseOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.purposeOfUse == undefined || this.purposeOfUse == null ) { return defaultValue; }
       return this.purposeOfUse;
   }
 

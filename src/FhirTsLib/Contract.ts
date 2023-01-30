@@ -589,6 +589,17 @@ export class Contract {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -620,6 +631,17 @@ export class Contract {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -648,6 +670,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -699,6 +732,17 @@ export class Contract {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -744,6 +788,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -795,6 +850,17 @@ export class Contract {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -843,6 +909,17 @@ export class Contract {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -871,6 +948,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getUrl(): string | undefined {
+      return this.url;
+  }
+
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
       return this.url;
   }
 
@@ -905,6 +993,17 @@ export class Contract {
       return this.version;
   }
 
+  /**
+  * Gets the current value of field version if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionOrElse(defaultValue: string): string {
+      if (this.version == undefined || this.version == null ) { return defaultValue; }
+      return this.version;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -933,6 +1032,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -967,6 +1077,17 @@ export class Contract {
       return this.instantiatesUri;
   }
 
+  /**
+  * Gets the current value of field instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesUriOrElse(defaultValue: string): string {
+      if (this.instantiatesUri == undefined || this.instantiatesUri == null ) { return defaultValue; }
+      return this.instantiatesUri;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -995,6 +1116,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getIssued(): string | undefined {
+      return this.issued;
+  }
+
+  /**
+  * Gets the current value of field issued if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIssuedOrElse(defaultValue: string): string {
+      if (this.issued == undefined || this.issued == null ) { return defaultValue; }
       return this.issued;
   }
 
@@ -1046,6 +1178,17 @@ export class Contract {
       return this.subject;
   }
 
+  /**
+  * Gets the current value of field subject if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubjectOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.subject == undefined || this.subject == null ) { return defaultValue; }
+      return this.subject;
+  }
+
   public addAuthority(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.authority) !== 'undefined') {
@@ -1091,6 +1234,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getAuthority(): Reference[] | undefined {
+      return this.authority;
+  }
+
+  /**
+  * Gets the current value of field authority if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAuthorityOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.authority == undefined || this.authority == null ) { return defaultValue; }
       return this.authority;
   }
 
@@ -1142,6 +1296,17 @@ export class Contract {
       return this.domain;
   }
 
+  /**
+  * Gets the current value of field domain if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDomainOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.domain == undefined || this.domain == null ) { return defaultValue; }
+      return this.domain;
+  }
+
   public addSite(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.site) !== 'undefined') {
@@ -1190,6 +1355,17 @@ export class Contract {
       return this.site;
   }
 
+  /**
+  * Gets the current value of field site if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSiteOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.site == undefined || this.site == null ) { return defaultValue; }
+      return this.site;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1218,6 +1394,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -1252,6 +1439,17 @@ export class Contract {
       return this.title;
   }
 
+  /**
+  * Gets the current value of field title if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTitleOrElse(defaultValue: string): string {
+      if (this.title == undefined || this.title == null ) { return defaultValue; }
+      return this.title;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1280,6 +1478,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getSubtitle(): string | undefined {
+      return this.subtitle;
+  }
+
+  /**
+  * Gets the current value of field subtitle if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubtitleOrElse(defaultValue: string): string {
+      if (this.subtitle == undefined || this.subtitle == null ) { return defaultValue; }
       return this.subtitle;
   }
 
@@ -1331,6 +1540,17 @@ export class Contract {
       return this.alias;
   }
 
+  /**
+  * Gets the current value of field alias if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAliasOrElse(defaultValue: string[]): string[] {
+      if (this.alias == undefined || this.alias == null ) { return defaultValue; }
+      return this.alias;
+  }
+
   public add_alias(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._alias) !== 'undefined') {
@@ -1376,6 +1596,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public get_alias(): Element[] | undefined {
+      return this._alias;
+  }
+
+  /**
+  * Gets the current value of field _alias if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_aliasOrElse(defaultValue: Element[]): Element[] {
+      if (this._alias == undefined || this._alias == null ) { return defaultValue; }
       return this._alias;
   }
 
@@ -1427,6 +1658,17 @@ export class Contract {
       return this.subType;
   }
 
+  /**
+  * Gets the current value of field subType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.subType == undefined || this.subType == null ) { return defaultValue; }
+      return this.subType;
+  }
+
   public addTerm(newValue: ContractTerm) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.term) !== 'undefined') {
@@ -1472,6 +1714,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getTerm(): ContractTerm[] | undefined {
+      return this.term;
+  }
+
+  /**
+  * Gets the current value of field term if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTermOrElse(defaultValue: ContractTerm[]): ContractTerm[] {
+      if (this.term == undefined || this.term == null ) { return defaultValue; }
       return this.term;
   }
 
@@ -1523,6 +1776,17 @@ export class Contract {
       return this.supportingInfo;
   }
 
+  /**
+  * Gets the current value of field supportingInfo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInfoOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingInfo == undefined || this.supportingInfo == null ) { return defaultValue; }
+      return this.supportingInfo;
+  }
+
   public addRelevantHistory(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relevantHistory) !== 'undefined') {
@@ -1568,6 +1832,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getRelevantHistory(): Reference[] | undefined {
+      return this.relevantHistory;
+  }
+
+  /**
+  * Gets the current value of field relevantHistory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelevantHistoryOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.relevantHistory == undefined || this.relevantHistory == null ) { return defaultValue; }
       return this.relevantHistory;
   }
 
@@ -1619,6 +1894,17 @@ export class Contract {
       return this.signer;
   }
 
+  /**
+  * Gets the current value of field signer if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSignerOrElse(defaultValue: ContractSigner[]): ContractSigner[] {
+      if (this.signer == undefined || this.signer == null ) { return defaultValue; }
+      return this.signer;
+  }
+
   public addFriendly(newValue: ContractFriendly) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.friendly) !== 'undefined') {
@@ -1664,6 +1950,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getFriendly(): ContractFriendly[] | undefined {
+      return this.friendly;
+  }
+
+  /**
+  * Gets the current value of field friendly if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFriendlyOrElse(defaultValue: ContractFriendly[]): ContractFriendly[] {
+      if (this.friendly == undefined || this.friendly == null ) { return defaultValue; }
       return this.friendly;
   }
 
@@ -1715,6 +2012,17 @@ export class Contract {
       return this.legal;
   }
 
+  /**
+  * Gets the current value of field legal if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLegalOrElse(defaultValue: ContractLegal[]): ContractLegal[] {
+      if (this.legal == undefined || this.legal == null ) { return defaultValue; }
+      return this.legal;
+  }
+
   public addRule(newValue: ContractRule) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.rule) !== 'undefined') {
@@ -1760,6 +2068,17 @@ export class Contract {
   * @returns the value  or undefined
   */
   public getRule(): ContractRule[] | undefined {
+      return this.rule;
+  }
+
+  /**
+  * Gets the current value of field rule if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRuleOrElse(defaultValue: ContractRule[]): ContractRule[] {
+      if (this.rule == undefined || this.rule == null ) { return defaultValue; }
       return this.rule;
   }
 

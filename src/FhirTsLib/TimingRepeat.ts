@@ -261,6 +261,17 @@ export class TimingRepeat {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -306,6 +317,17 @@ export class TimingRepeat {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -357,6 +379,17 @@ export class TimingRepeat {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -389,6 +422,17 @@ export class TimingRepeat {
       return this.durationUnit;
   }
 
+  /**
+  * Gets the current value of field durationUnit if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDurationUnitOrElse(defaultValue: string): string {
+      if (this.durationUnit == undefined || this.durationUnit == null ) { return defaultValue; }
+      return this.durationUnit;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -418,6 +462,17 @@ export class TimingRepeat {
   * @returns the value  or undefined
   */
   public getPeriodUnit(): string | undefined {
+      return this.periodUnit;
+  }
+
+  /**
+  * Gets the current value of field periodUnit if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPeriodUnitOrElse(defaultValue: string): string {
+      if (this.periodUnit == undefined || this.periodUnit == null ) { return defaultValue; }
       return this.periodUnit;
   }
 
@@ -469,6 +524,17 @@ export class TimingRepeat {
       return this.dayOfWeek;
   }
 
+  /**
+  * Gets the current value of field dayOfWeek if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDayOfWeekOrElse(defaultValue: string[]): string[] {
+      if (this.dayOfWeek == undefined || this.dayOfWeek == null ) { return defaultValue; }
+      return this.dayOfWeek;
+  }
+
   public add_dayOfWeek(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._dayOfWeek) !== 'undefined') {
@@ -514,6 +580,17 @@ export class TimingRepeat {
   * @returns the value  or undefined
   */
   public get_dayOfWeek(): Element[] | undefined {
+      return this._dayOfWeek;
+  }
+
+  /**
+  * Gets the current value of field _dayOfWeek if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_dayOfWeekOrElse(defaultValue: Element[]): Element[] {
+      if (this._dayOfWeek == undefined || this._dayOfWeek == null ) { return defaultValue; }
       return this._dayOfWeek;
   }
 
@@ -565,6 +642,17 @@ export class TimingRepeat {
       return this.timeOfDay;
   }
 
+  /**
+  * Gets the current value of field timeOfDay if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTimeOfDayOrElse(defaultValue: string[]): string[] {
+      if (this.timeOfDay == undefined || this.timeOfDay == null ) { return defaultValue; }
+      return this.timeOfDay;
+  }
+
   public add_timeOfDay(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._timeOfDay) !== 'undefined') {
@@ -610,6 +698,17 @@ export class TimingRepeat {
   * @returns the value  or undefined
   */
   public get_timeOfDay(): Element[] | undefined {
+      return this._timeOfDay;
+  }
+
+  /**
+  * Gets the current value of field _timeOfDay if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_timeOfDayOrElse(defaultValue: Element[]): Element[] {
+      if (this._timeOfDay == undefined || this._timeOfDay == null ) { return defaultValue; }
       return this._timeOfDay;
   }
 
@@ -661,6 +760,17 @@ export class TimingRepeat {
       return this.when;
   }
 
+  /**
+  * Gets the current value of field when if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getWhenOrElse(defaultValue: string[]): string[] {
+      if (this.when == undefined || this.when == null ) { return defaultValue; }
+      return this.when;
+  }
+
   public add_when(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._when) !== 'undefined') {
@@ -706,6 +816,17 @@ export class TimingRepeat {
   * @returns the value  or undefined
   */
   public get_when(): Element[] | undefined {
+      return this._when;
+  }
+
+  /**
+  * Gets the current value of field _when if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_whenOrElse(defaultValue: Element[]): Element[] {
+      if (this._when == undefined || this._when == null ) { return defaultValue; }
       return this._when;
   }
 

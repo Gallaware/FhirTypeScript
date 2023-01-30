@@ -240,6 +240,17 @@ export class QuestionnaireItem {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -285,6 +296,17 @@ export class QuestionnaireItem {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -336,6 +358,17 @@ export class QuestionnaireItem {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -367,6 +400,17 @@ export class QuestionnaireItem {
       return this.linkId;
   }
 
+  /**
+  * Gets the current value of field linkId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLinkIdOrElse(defaultValue: string): string {
+      if (this.linkId == undefined || this.linkId == null ) { return defaultValue; }
+      return this.linkId;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -395,6 +439,17 @@ export class QuestionnaireItem {
   * @returns the value  or undefined
   */
   public getDefinition(): string | undefined {
+      return this.definition;
+  }
+
+  /**
+  * Gets the current value of field definition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionOrElse(defaultValue: string): string {
+      if (this.definition == undefined || this.definition == null ) { return defaultValue; }
       return this.definition;
   }
 
@@ -446,6 +501,17 @@ export class QuestionnaireItem {
       return this.code;
   }
 
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: Coding[]): Coding[] {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
+      return this.code;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -474,6 +540,17 @@ export class QuestionnaireItem {
   * @returns the value  or undefined
   */
   public getPrefix(): string | undefined {
+      return this.prefix;
+  }
+
+  /**
+  * Gets the current value of field prefix if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPrefixOrElse(defaultValue: string): string {
+      if (this.prefix == undefined || this.prefix == null ) { return defaultValue; }
       return this.prefix;
   }
 
@@ -508,6 +585,17 @@ export class QuestionnaireItem {
       return this.text;
   }
 
+  /**
+  * Gets the current value of field text if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTextOrElse(defaultValue: string): string {
+      if (this.text == undefined || this.text == null ) { return defaultValue; }
+      return this.text;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -537,6 +625,17 @@ export class QuestionnaireItem {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -588,6 +687,17 @@ export class QuestionnaireItem {
       return this.enableWhen;
   }
 
+  /**
+  * Gets the current value of field enableWhen if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEnableWhenOrElse(defaultValue: QuestionnaireEnableWhen[]): QuestionnaireEnableWhen[] {
+      if (this.enableWhen == undefined || this.enableWhen == null ) { return defaultValue; }
+      return this.enableWhen;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -620,6 +730,17 @@ export class QuestionnaireItem {
       return this.enableBehavior;
   }
 
+  /**
+  * Gets the current value of field enableBehavior if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEnableBehaviorOrElse(defaultValue: string): string {
+      if (this.enableBehavior == undefined || this.enableBehavior == null ) { return defaultValue; }
+      return this.enableBehavior;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -648,6 +769,17 @@ export class QuestionnaireItem {
   * @returns the value  or undefined
   */
   public getAnswerValueSet(): string | undefined {
+      return this.answerValueSet;
+  }
+
+  /**
+  * Gets the current value of field answerValueSet if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAnswerValueSetOrElse(defaultValue: string): string {
+      if (this.answerValueSet == undefined || this.answerValueSet == null ) { return defaultValue; }
       return this.answerValueSet;
   }
 
@@ -699,6 +831,17 @@ export class QuestionnaireItem {
       return this.answerOption;
   }
 
+  /**
+  * Gets the current value of field answerOption if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAnswerOptionOrElse(defaultValue: QuestionnaireAnswerOption[]): QuestionnaireAnswerOption[] {
+      if (this.answerOption == undefined || this.answerOption == null ) { return defaultValue; }
+      return this.answerOption;
+  }
+
   public addInitial(newValue: QuestionnaireInitial) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.initial) !== 'undefined') {
@@ -747,6 +890,17 @@ export class QuestionnaireItem {
       return this.initial;
   }
 
+  /**
+  * Gets the current value of field initial if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInitialOrElse(defaultValue: QuestionnaireInitial[]): QuestionnaireInitial[] {
+      if (this.initial == undefined || this.initial == null ) { return defaultValue; }
+      return this.initial;
+  }
+
   public addItem(newValue: QuestionnaireItem) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.item) !== 'undefined') {
@@ -792,6 +946,17 @@ export class QuestionnaireItem {
   * @returns the value  or undefined
   */
   public getItem(): QuestionnaireItem[] | undefined {
+      return this.item;
+  }
+
+  /**
+  * Gets the current value of field item if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getItemOrElse(defaultValue: QuestionnaireItem[]): QuestionnaireItem[] {
+      if (this.item == undefined || this.item == null ) { return defaultValue; }
       return this.item;
   }
 

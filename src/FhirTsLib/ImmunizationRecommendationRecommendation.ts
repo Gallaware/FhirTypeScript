@@ -204,6 +204,17 @@ export class ImmunizationRecommendationRecommendation {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -249,6 +260,17 @@ export class ImmunizationRecommendationRecommendation {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -300,6 +322,17 @@ export class ImmunizationRecommendationRecommendation {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addVaccineCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.vaccineCode) !== 'undefined') {
@@ -345,6 +378,17 @@ export class ImmunizationRecommendationRecommendation {
   * @returns the value  or undefined
   */
   public getVaccineCode(): CodeableConcept[] | undefined {
+      return this.vaccineCode;
+  }
+
+  /**
+  * Gets the current value of field vaccineCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVaccineCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.vaccineCode == undefined || this.vaccineCode == null ) { return defaultValue; }
       return this.vaccineCode;
   }
 
@@ -396,6 +440,17 @@ export class ImmunizationRecommendationRecommendation {
       return this.contraindicatedVaccineCode;
   }
 
+  /**
+  * Gets the current value of field contraindicatedVaccineCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContraindicatedVaccineCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.contraindicatedVaccineCode == undefined || this.contraindicatedVaccineCode == null ) { return defaultValue; }
+      return this.contraindicatedVaccineCode;
+  }
+
   public addForecastReason(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.forecastReason) !== 'undefined') {
@@ -441,6 +496,17 @@ export class ImmunizationRecommendationRecommendation {
   * @returns the value  or undefined
   */
   public getForecastReason(): CodeableConcept[] | undefined {
+      return this.forecastReason;
+  }
+
+  /**
+  * Gets the current value of field forecastReason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getForecastReasonOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.forecastReason == undefined || this.forecastReason == null ) { return defaultValue; }
       return this.forecastReason;
   }
 
@@ -492,6 +558,17 @@ export class ImmunizationRecommendationRecommendation {
       return this.dateCriterion;
   }
 
+  /**
+  * Gets the current value of field dateCriterion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateCriterionOrElse(defaultValue: ImmunizationRecommendationDateCriterion[]): ImmunizationRecommendationDateCriterion[] {
+      if (this.dateCriterion == undefined || this.dateCriterion == null ) { return defaultValue; }
+      return this.dateCriterion;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -520,6 +597,17 @@ export class ImmunizationRecommendationRecommendation {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -554,6 +642,17 @@ export class ImmunizationRecommendationRecommendation {
       return this.series;
   }
 
+  /**
+  * Gets the current value of field series if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSeriesOrElse(defaultValue: string): string {
+      if (this.series == undefined || this.series == null ) { return defaultValue; }
+      return this.series;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -585,6 +684,17 @@ export class ImmunizationRecommendationRecommendation {
       return this.doseNumberString;
   }
 
+  /**
+  * Gets the current value of field doseNumberString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDoseNumberStringOrElse(defaultValue: string): string {
+      if (this.doseNumberString == undefined || this.doseNumberString == null ) { return defaultValue; }
+      return this.doseNumberString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -613,6 +723,17 @@ export class ImmunizationRecommendationRecommendation {
   * @returns the value  or undefined
   */
   public getSeriesDosesString(): string | undefined {
+      return this.seriesDosesString;
+  }
+
+  /**
+  * Gets the current value of field seriesDosesString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSeriesDosesStringOrElse(defaultValue: string): string {
+      if (this.seriesDosesString == undefined || this.seriesDosesString == null ) { return defaultValue; }
       return this.seriesDosesString;
   }
 
@@ -664,6 +785,17 @@ export class ImmunizationRecommendationRecommendation {
       return this.supportingImmunization;
   }
 
+  /**
+  * Gets the current value of field supportingImmunization if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingImmunizationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingImmunization == undefined || this.supportingImmunization == null ) { return defaultValue; }
+      return this.supportingImmunization;
+  }
+
   public addSupportingPatientInformation(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.supportingPatientInformation) !== 'undefined') {
@@ -709,6 +841,17 @@ export class ImmunizationRecommendationRecommendation {
   * @returns the value  or undefined
   */
   public getSupportingPatientInformation(): Reference[] | undefined {
+      return this.supportingPatientInformation;
+  }
+
+  /**
+  * Gets the current value of field supportingPatientInformation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingPatientInformationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingPatientInformation == undefined || this.supportingPatientInformation == null ) { return defaultValue; }
       return this.supportingPatientInformation;
   }
 

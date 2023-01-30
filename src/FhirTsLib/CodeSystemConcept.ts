@@ -136,6 +136,17 @@ export class CodeSystemConcept {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -181,6 +192,17 @@ export class CodeSystemConcept {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -232,6 +254,17 @@ export class CodeSystemConcept {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -260,6 +293,17 @@ export class CodeSystemConcept {
   * @returns the value  or undefined
   */
   public getCode(): string | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -294,6 +338,17 @@ export class CodeSystemConcept {
       return this.display;
   }
 
+  /**
+  * Gets the current value of field display if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDisplayOrElse(defaultValue: string): string {
+      if (this.display == undefined || this.display == null ) { return defaultValue; }
+      return this.display;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -322,6 +377,17 @@ export class CodeSystemConcept {
   * @returns the value  or undefined
   */
   public getDefinition(): string | undefined {
+      return this.definition;
+  }
+
+  /**
+  * Gets the current value of field definition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefinitionOrElse(defaultValue: string): string {
+      if (this.definition == undefined || this.definition == null ) { return defaultValue; }
       return this.definition;
   }
 
@@ -373,6 +439,17 @@ export class CodeSystemConcept {
       return this.designation;
   }
 
+  /**
+  * Gets the current value of field designation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDesignationOrElse(defaultValue: CodeSystemDesignation[]): CodeSystemDesignation[] {
+      if (this.designation == undefined || this.designation == null ) { return defaultValue; }
+      return this.designation;
+  }
+
   public addProperty(newValue: CodeSystemProperty1) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.property) !== 'undefined') {
@@ -421,6 +498,17 @@ export class CodeSystemConcept {
       return this.property;
   }
 
+  /**
+  * Gets the current value of field property if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPropertyOrElse(defaultValue: CodeSystemProperty1[]): CodeSystemProperty1[] {
+      if (this.property == undefined || this.property == null ) { return defaultValue; }
+      return this.property;
+  }
+
   public addConcept(newValue: CodeSystemConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.concept) !== 'undefined') {
@@ -466,6 +554,17 @@ export class CodeSystemConcept {
   * @returns the value  or undefined
   */
   public getConcept(): CodeSystemConcept[] | undefined {
+      return this.concept;
+  }
+
+  /**
+  * Gets the current value of field concept if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConceptOrElse(defaultValue: CodeSystemConcept[]): CodeSystemConcept[] {
+      if (this.concept == undefined || this.concept == null ) { return defaultValue; }
       return this.concept;
   }
 

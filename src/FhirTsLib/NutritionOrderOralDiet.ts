@@ -127,6 +127,17 @@ export class NutritionOrderOralDiet {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -172,6 +183,17 @@ export class NutritionOrderOralDiet {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -223,6 +245,17 @@ export class NutritionOrderOralDiet {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addType(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.type) !== 'undefined') {
@@ -268,6 +301,17 @@ export class NutritionOrderOralDiet {
   * @returns the value  or undefined
   */
   public getType(): CodeableConcept[] | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -319,6 +363,17 @@ export class NutritionOrderOralDiet {
       return this.schedule;
   }
 
+  /**
+  * Gets the current value of field schedule if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getScheduleOrElse(defaultValue: Timing[]): Timing[] {
+      if (this.schedule == undefined || this.schedule == null ) { return defaultValue; }
+      return this.schedule;
+  }
+
   public addNutrient(newValue: NutritionOrderNutrient) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.nutrient) !== 'undefined') {
@@ -364,6 +419,17 @@ export class NutritionOrderOralDiet {
   * @returns the value  or undefined
   */
   public getNutrient(): NutritionOrderNutrient[] | undefined {
+      return this.nutrient;
+  }
+
+  /**
+  * Gets the current value of field nutrient if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNutrientOrElse(defaultValue: NutritionOrderNutrient[]): NutritionOrderNutrient[] {
+      if (this.nutrient == undefined || this.nutrient == null ) { return defaultValue; }
       return this.nutrient;
   }
 
@@ -415,6 +481,17 @@ export class NutritionOrderOralDiet {
       return this.texture;
   }
 
+  /**
+  * Gets the current value of field texture if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTextureOrElse(defaultValue: NutritionOrderTexture[]): NutritionOrderTexture[] {
+      if (this.texture == undefined || this.texture == null ) { return defaultValue; }
+      return this.texture;
+  }
+
   public addFluidConsistencyType(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.fluidConsistencyType) !== 'undefined') {
@@ -463,6 +540,17 @@ export class NutritionOrderOralDiet {
       return this.fluidConsistencyType;
   }
 
+  /**
+  * Gets the current value of field fluidConsistencyType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFluidConsistencyTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.fluidConsistencyType == undefined || this.fluidConsistencyType == null ) { return defaultValue; }
+      return this.fluidConsistencyType;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -491,6 +579,17 @@ export class NutritionOrderOralDiet {
   * @returns the value  or undefined
   */
   public getInstruction(): string | undefined {
+      return this.instruction;
+  }
+
+  /**
+  * Gets the current value of field instruction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstructionOrElse(defaultValue: string): string {
+      if (this.instruction == undefined || this.instruction == null ) { return defaultValue; }
       return this.instruction;
   }
 

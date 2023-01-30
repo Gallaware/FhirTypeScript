@@ -429,6 +429,17 @@ export class MedicinalProduct {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -460,6 +471,17 @@ export class MedicinalProduct {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -488,6 +510,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -539,6 +572,17 @@ export class MedicinalProduct {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -584,6 +628,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -635,6 +690,17 @@ export class MedicinalProduct {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -680,6 +746,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -731,6 +808,17 @@ export class MedicinalProduct {
       return this.specialMeasures;
   }
 
+  /**
+  * Gets the current value of field specialMeasures if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialMeasuresOrElse(defaultValue: string[]): string[] {
+      if (this.specialMeasures == undefined || this.specialMeasures == null ) { return defaultValue; }
+      return this.specialMeasures;
+  }
+
   public add_specialMeasures(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._specialMeasures) !== 'undefined') {
@@ -776,6 +864,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public get_specialMeasures(): Element[] | undefined {
+      return this._specialMeasures;
+  }
+
+  /**
+  * Gets the current value of field _specialMeasures if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_specialMeasuresOrElse(defaultValue: Element[]): Element[] {
+      if (this._specialMeasures == undefined || this._specialMeasures == null ) { return defaultValue; }
       return this._specialMeasures;
   }
 
@@ -827,6 +926,17 @@ export class MedicinalProduct {
       return this.productClassification;
   }
 
+  /**
+  * Gets the current value of field productClassification if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProductClassificationOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.productClassification == undefined || this.productClassification == null ) { return defaultValue; }
+      return this.productClassification;
+  }
+
   public addMarketingStatus(newValue: MarketingStatus) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.marketingStatus) !== 'undefined') {
@@ -872,6 +982,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getMarketingStatus(): MarketingStatus[] | undefined {
+      return this.marketingStatus;
+  }
+
+  /**
+  * Gets the current value of field marketingStatus if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMarketingStatusOrElse(defaultValue: MarketingStatus[]): MarketingStatus[] {
+      if (this.marketingStatus == undefined || this.marketingStatus == null ) { return defaultValue; }
       return this.marketingStatus;
   }
 
@@ -923,6 +1044,17 @@ export class MedicinalProduct {
       return this.pharmaceuticalProduct;
   }
 
+  /**
+  * Gets the current value of field pharmaceuticalProduct if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPharmaceuticalProductOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.pharmaceuticalProduct == undefined || this.pharmaceuticalProduct == null ) { return defaultValue; }
+      return this.pharmaceuticalProduct;
+  }
+
   public addPackagedMedicinalProduct(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.packagedMedicinalProduct) !== 'undefined') {
@@ -968,6 +1100,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getPackagedMedicinalProduct(): Reference[] | undefined {
+      return this.packagedMedicinalProduct;
+  }
+
+  /**
+  * Gets the current value of field packagedMedicinalProduct if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPackagedMedicinalProductOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.packagedMedicinalProduct == undefined || this.packagedMedicinalProduct == null ) { return defaultValue; }
       return this.packagedMedicinalProduct;
   }
 
@@ -1019,6 +1162,17 @@ export class MedicinalProduct {
       return this.attachedDocument;
   }
 
+  /**
+  * Gets the current value of field attachedDocument if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAttachedDocumentOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.attachedDocument == undefined || this.attachedDocument == null ) { return defaultValue; }
+      return this.attachedDocument;
+  }
+
   public addMasterFile(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.masterFile) !== 'undefined') {
@@ -1064,6 +1218,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getMasterFile(): Reference[] | undefined {
+      return this.masterFile;
+  }
+
+  /**
+  * Gets the current value of field masterFile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMasterFileOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.masterFile == undefined || this.masterFile == null ) { return defaultValue; }
       return this.masterFile;
   }
 
@@ -1115,6 +1280,17 @@ export class MedicinalProduct {
       return this.contact;
   }
 
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
+      return this.contact;
+  }
+
   public addClinicalTrial(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.clinicalTrial) !== 'undefined') {
@@ -1160,6 +1336,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getClinicalTrial(): Reference[] | undefined {
+      return this.clinicalTrial;
+  }
+
+  /**
+  * Gets the current value of field clinicalTrial if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getClinicalTrialOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.clinicalTrial == undefined || this.clinicalTrial == null ) { return defaultValue; }
       return this.clinicalTrial;
   }
 
@@ -1211,6 +1398,17 @@ export class MedicinalProduct {
       return this.name;
   }
 
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: MedicinalProductName[]): MedicinalProductName[] {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
+      return this.name;
+  }
+
   public addCrossReference(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.crossReference) !== 'undefined') {
@@ -1256,6 +1454,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getCrossReference(): Identifier[] | undefined {
+      return this.crossReference;
+  }
+
+  /**
+  * Gets the current value of field crossReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCrossReferenceOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.crossReference == undefined || this.crossReference == null ) { return defaultValue; }
       return this.crossReference;
   }
 
@@ -1307,6 +1516,17 @@ export class MedicinalProduct {
       return this.manufacturingBusinessOperation;
   }
 
+  /**
+  * Gets the current value of field manufacturingBusinessOperation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getManufacturingBusinessOperationOrElse(defaultValue: MedicinalProductManufacturingBusinessOperation[]): MedicinalProductManufacturingBusinessOperation[] {
+      if (this.manufacturingBusinessOperation == undefined || this.manufacturingBusinessOperation == null ) { return defaultValue; }
+      return this.manufacturingBusinessOperation;
+  }
+
   public addSpecialDesignation(newValue: MedicinalProductSpecialDesignation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.specialDesignation) !== 'undefined') {
@@ -1352,6 +1572,17 @@ export class MedicinalProduct {
   * @returns the value  or undefined
   */
   public getSpecialDesignation(): MedicinalProductSpecialDesignation[] | undefined {
+      return this.specialDesignation;
+  }
+
+  /**
+  * Gets the current value of field specialDesignation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialDesignationOrElse(defaultValue: MedicinalProductSpecialDesignation[]): MedicinalProductSpecialDesignation[] {
+      if (this.specialDesignation == undefined || this.specialDesignation == null ) { return defaultValue; }
       return this.specialDesignation;
   }
 

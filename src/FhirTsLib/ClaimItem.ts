@@ -282,6 +282,17 @@ export class ClaimItem {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -327,6 +338,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -378,6 +400,17 @@ export class ClaimItem {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addCareTeamSequence(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.careTeamSequence) !== 'undefined') {
@@ -423,6 +456,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getCareTeamSequence(): number[] | undefined {
+      return this.careTeamSequence;
+  }
+
+  /**
+  * Gets the current value of field careTeamSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCareTeamSequenceOrElse(defaultValue: number[]): number[] {
+      if (this.careTeamSequence == undefined || this.careTeamSequence == null ) { return defaultValue; }
       return this.careTeamSequence;
   }
 
@@ -474,6 +518,17 @@ export class ClaimItem {
       return this._careTeamSequence;
   }
 
+  /**
+  * Gets the current value of field _careTeamSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_careTeamSequenceOrElse(defaultValue: Element[]): Element[] {
+      if (this._careTeamSequence == undefined || this._careTeamSequence == null ) { return defaultValue; }
+      return this._careTeamSequence;
+  }
+
   public addDiagnosisSequence(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.diagnosisSequence) !== 'undefined') {
@@ -519,6 +574,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getDiagnosisSequence(): number[] | undefined {
+      return this.diagnosisSequence;
+  }
+
+  /**
+  * Gets the current value of field diagnosisSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDiagnosisSequenceOrElse(defaultValue: number[]): number[] {
+      if (this.diagnosisSequence == undefined || this.diagnosisSequence == null ) { return defaultValue; }
       return this.diagnosisSequence;
   }
 
@@ -570,6 +636,17 @@ export class ClaimItem {
       return this._diagnosisSequence;
   }
 
+  /**
+  * Gets the current value of field _diagnosisSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_diagnosisSequenceOrElse(defaultValue: Element[]): Element[] {
+      if (this._diagnosisSequence == undefined || this._diagnosisSequence == null ) { return defaultValue; }
+      return this._diagnosisSequence;
+  }
+
   public addProcedureSequence(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.procedureSequence) !== 'undefined') {
@@ -615,6 +692,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getProcedureSequence(): number[] | undefined {
+      return this.procedureSequence;
+  }
+
+  /**
+  * Gets the current value of field procedureSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcedureSequenceOrElse(defaultValue: number[]): number[] {
+      if (this.procedureSequence == undefined || this.procedureSequence == null ) { return defaultValue; }
       return this.procedureSequence;
   }
 
@@ -666,6 +754,17 @@ export class ClaimItem {
       return this._procedureSequence;
   }
 
+  /**
+  * Gets the current value of field _procedureSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_procedureSequenceOrElse(defaultValue: Element[]): Element[] {
+      if (this._procedureSequence == undefined || this._procedureSequence == null ) { return defaultValue; }
+      return this._procedureSequence;
+  }
+
   public addInformationSequence(newValue: number) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.informationSequence) !== 'undefined') {
@@ -711,6 +810,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getInformationSequence(): number[] | undefined {
+      return this.informationSequence;
+  }
+
+  /**
+  * Gets the current value of field informationSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInformationSequenceOrElse(defaultValue: number[]): number[] {
+      if (this.informationSequence == undefined || this.informationSequence == null ) { return defaultValue; }
       return this.informationSequence;
   }
 
@@ -762,6 +872,17 @@ export class ClaimItem {
       return this._informationSequence;
   }
 
+  /**
+  * Gets the current value of field _informationSequence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_informationSequenceOrElse(defaultValue: Element[]): Element[] {
+      if (this._informationSequence == undefined || this._informationSequence == null ) { return defaultValue; }
+      return this._informationSequence;
+  }
+
   public addModifier(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.modifier) !== 'undefined') {
@@ -807,6 +928,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getModifier(): CodeableConcept[] | undefined {
+      return this.modifier;
+  }
+
+  /**
+  * Gets the current value of field modifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.modifier == undefined || this.modifier == null ) { return defaultValue; }
       return this.modifier;
   }
 
@@ -858,6 +990,17 @@ export class ClaimItem {
       return this.programCode;
   }
 
+  /**
+  * Gets the current value of field programCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProgramCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.programCode == undefined || this.programCode == null ) { return defaultValue; }
+      return this.programCode;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -886,6 +1029,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getServicedDate(): string | undefined {
+      return this.servicedDate;
+  }
+
+  /**
+  * Gets the current value of field servicedDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getServicedDateOrElse(defaultValue: string): string {
+      if (this.servicedDate == undefined || this.servicedDate == null ) { return defaultValue; }
       return this.servicedDate;
   }
 
@@ -937,6 +1091,17 @@ export class ClaimItem {
       return this.udi;
   }
 
+  /**
+  * Gets the current value of field udi if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUdiOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.udi == undefined || this.udi == null ) { return defaultValue; }
+      return this.udi;
+  }
+
   public addSubSite(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.subSite) !== 'undefined') {
@@ -982,6 +1147,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getSubSite(): CodeableConcept[] | undefined {
+      return this.subSite;
+  }
+
+  /**
+  * Gets the current value of field subSite if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSubSiteOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.subSite == undefined || this.subSite == null ) { return defaultValue; }
       return this.subSite;
   }
 
@@ -1033,6 +1209,17 @@ export class ClaimItem {
       return this.encounter;
   }
 
+  /**
+  * Gets the current value of field encounter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEncounterOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.encounter == undefined || this.encounter == null ) { return defaultValue; }
+      return this.encounter;
+  }
+
   public addDetail(newValue: ClaimDetail) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.detail) !== 'undefined') {
@@ -1078,6 +1265,17 @@ export class ClaimItem {
   * @returns the value  or undefined
   */
   public getDetail(): ClaimDetail[] | undefined {
+      return this.detail;
+  }
+
+  /**
+  * Gets the current value of field detail if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDetailOrElse(defaultValue: ClaimDetail[]): ClaimDetail[] {
+      if (this.detail == undefined || this.detail == null ) { return defaultValue; }
       return this.detail;
   }
 

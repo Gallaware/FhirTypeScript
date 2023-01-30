@@ -421,6 +421,17 @@ export class SubstanceSourceMaterial {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -452,6 +463,17 @@ export class SubstanceSourceMaterial {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -480,6 +502,17 @@ export class SubstanceSourceMaterial {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -531,6 +564,17 @@ export class SubstanceSourceMaterial {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -576,6 +620,17 @@ export class SubstanceSourceMaterial {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -627,6 +682,17 @@ export class SubstanceSourceMaterial {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -655,6 +721,17 @@ export class SubstanceSourceMaterial {
   * @returns the value  or undefined
   */
   public getOrganismName(): string | undefined {
+      return this.organismName;
+  }
+
+  /**
+  * Gets the current value of field organismName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOrganismNameOrElse(defaultValue: string): string {
+      if (this.organismName == undefined || this.organismName == null ) { return defaultValue; }
       return this.organismName;
   }
 
@@ -706,6 +783,17 @@ export class SubstanceSourceMaterial {
       return this.parentSubstanceId;
   }
 
+  /**
+  * Gets the current value of field parentSubstanceId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParentSubstanceIdOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.parentSubstanceId == undefined || this.parentSubstanceId == null ) { return defaultValue; }
+      return this.parentSubstanceId;
+  }
+
   public addParentSubstanceName(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.parentSubstanceName) !== 'undefined') {
@@ -751,6 +839,17 @@ export class SubstanceSourceMaterial {
   * @returns the value  or undefined
   */
   public getParentSubstanceName(): string[] | undefined {
+      return this.parentSubstanceName;
+  }
+
+  /**
+  * Gets the current value of field parentSubstanceName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParentSubstanceNameOrElse(defaultValue: string[]): string[] {
+      if (this.parentSubstanceName == undefined || this.parentSubstanceName == null ) { return defaultValue; }
       return this.parentSubstanceName;
   }
 
@@ -802,6 +901,17 @@ export class SubstanceSourceMaterial {
       return this._parentSubstanceName;
   }
 
+  /**
+  * Gets the current value of field _parentSubstanceName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_parentSubstanceNameOrElse(defaultValue: Element[]): Element[] {
+      if (this._parentSubstanceName == undefined || this._parentSubstanceName == null ) { return defaultValue; }
+      return this._parentSubstanceName;
+  }
+
   public addCountryOfOrigin(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.countryOfOrigin) !== 'undefined') {
@@ -847,6 +957,17 @@ export class SubstanceSourceMaterial {
   * @returns the value  or undefined
   */
   public getCountryOfOrigin(): CodeableConcept[] | undefined {
+      return this.countryOfOrigin;
+  }
+
+  /**
+  * Gets the current value of field countryOfOrigin if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCountryOfOriginOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.countryOfOrigin == undefined || this.countryOfOrigin == null ) { return defaultValue; }
       return this.countryOfOrigin;
   }
 
@@ -898,6 +1019,17 @@ export class SubstanceSourceMaterial {
       return this.geographicalLocation;
   }
 
+  /**
+  * Gets the current value of field geographicalLocation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGeographicalLocationOrElse(defaultValue: string[]): string[] {
+      if (this.geographicalLocation == undefined || this.geographicalLocation == null ) { return defaultValue; }
+      return this.geographicalLocation;
+  }
+
   public add_geographicalLocation(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._geographicalLocation) !== 'undefined') {
@@ -943,6 +1075,17 @@ export class SubstanceSourceMaterial {
   * @returns the value  or undefined
   */
   public get_geographicalLocation(): Element[] | undefined {
+      return this._geographicalLocation;
+  }
+
+  /**
+  * Gets the current value of field _geographicalLocation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_geographicalLocationOrElse(defaultValue: Element[]): Element[] {
+      if (this._geographicalLocation == undefined || this._geographicalLocation == null ) { return defaultValue; }
       return this._geographicalLocation;
   }
 
@@ -994,6 +1137,17 @@ export class SubstanceSourceMaterial {
       return this.fractionDescription;
   }
 
+  /**
+  * Gets the current value of field fractionDescription if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFractionDescriptionOrElse(defaultValue: SubstanceSourceMaterialFractionDescription[]): SubstanceSourceMaterialFractionDescription[] {
+      if (this.fractionDescription == undefined || this.fractionDescription == null ) { return defaultValue; }
+      return this.fractionDescription;
+  }
+
   public addPartDescription(newValue: SubstanceSourceMaterialPartDescription) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.partDescription) !== 'undefined') {
@@ -1039,6 +1193,17 @@ export class SubstanceSourceMaterial {
   * @returns the value  or undefined
   */
   public getPartDescription(): SubstanceSourceMaterialPartDescription[] | undefined {
+      return this.partDescription;
+  }
+
+  /**
+  * Gets the current value of field partDescription if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartDescriptionOrElse(defaultValue: SubstanceSourceMaterialPartDescription[]): SubstanceSourceMaterialPartDescription[] {
+      if (this.partDescription == undefined || this.partDescription == null ) { return defaultValue; }
       return this.partDescription;
   }
 

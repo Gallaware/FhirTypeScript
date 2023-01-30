@@ -386,6 +386,17 @@ export class Provenance {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -417,6 +428,17 @@ export class Provenance {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -445,6 +467,17 @@ export class Provenance {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -496,6 +529,17 @@ export class Provenance {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -541,6 +585,17 @@ export class Provenance {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -592,6 +647,17 @@ export class Provenance {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addTarget(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.target) !== 'undefined') {
@@ -640,6 +706,17 @@ export class Provenance {
       return this.target;
   }
 
+  /**
+  * Gets the current value of field target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.target == undefined || this.target == null ) { return defaultValue; }
+      return this.target;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -671,6 +748,17 @@ export class Provenance {
       return this.occurredDateTime;
   }
 
+  /**
+  * Gets the current value of field occurredDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOccurredDateTimeOrElse(defaultValue: string): string {
+      if (this.occurredDateTime == undefined || this.occurredDateTime == null ) { return defaultValue; }
+      return this.occurredDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -699,6 +787,17 @@ export class Provenance {
   * @returns the value  or undefined
   */
   public getRecorded(): string | undefined {
+      return this.recorded;
+  }
+
+  /**
+  * Gets the current value of field recorded if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRecordedOrElse(defaultValue: string): string {
+      if (this.recorded == undefined || this.recorded == null ) { return defaultValue; }
       return this.recorded;
   }
 
@@ -750,6 +849,17 @@ export class Provenance {
       return this.policy;
   }
 
+  /**
+  * Gets the current value of field policy if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPolicyOrElse(defaultValue: string[]): string[] {
+      if (this.policy == undefined || this.policy == null ) { return defaultValue; }
+      return this.policy;
+  }
+
   public add_policy(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._policy) !== 'undefined') {
@@ -795,6 +905,17 @@ export class Provenance {
   * @returns the value  or undefined
   */
   public get_policy(): Element[] | undefined {
+      return this._policy;
+  }
+
+  /**
+  * Gets the current value of field _policy if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_policyOrElse(defaultValue: Element[]): Element[] {
+      if (this._policy == undefined || this._policy == null ) { return defaultValue; }
       return this._policy;
   }
 
@@ -846,6 +967,17 @@ export class Provenance {
       return this.reason;
   }
 
+  /**
+  * Gets the current value of field reason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reason == undefined || this.reason == null ) { return defaultValue; }
+      return this.reason;
+  }
+
   public addAgent(newValue: ProvenanceAgent) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.agent) !== 'undefined') {
@@ -891,6 +1023,17 @@ export class Provenance {
   * @returns the value  or undefined
   */
   public getAgent(): ProvenanceAgent[] | undefined {
+      return this.agent;
+  }
+
+  /**
+  * Gets the current value of field agent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAgentOrElse(defaultValue: ProvenanceAgent[]): ProvenanceAgent[] {
+      if (this.agent == undefined || this.agent == null ) { return defaultValue; }
       return this.agent;
   }
 
@@ -942,6 +1085,17 @@ export class Provenance {
       return this.entity;
   }
 
+  /**
+  * Gets the current value of field entity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEntityOrElse(defaultValue: ProvenanceEntity[]): ProvenanceEntity[] {
+      if (this.entity == undefined || this.entity == null ) { return defaultValue; }
+      return this.entity;
+  }
+
   public addSignature(newValue: Signature) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.signature) !== 'undefined') {
@@ -987,6 +1141,17 @@ export class Provenance {
   * @returns the value  or undefined
   */
   public getSignature(): Signature[] | undefined {
+      return this.signature;
+  }
+
+  /**
+  * Gets the current value of field signature if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSignatureOrElse(defaultValue: Signature[]): Signature[] {
+      if (this.signature == undefined || this.signature == null ) { return defaultValue; }
       return this.signature;
   }
 

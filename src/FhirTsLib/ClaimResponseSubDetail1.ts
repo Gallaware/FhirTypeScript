@@ -140,6 +140,17 @@ export class ClaimResponseSubDetail1 {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -185,6 +196,17 @@ export class ClaimResponseSubDetail1 {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -236,6 +258,17 @@ export class ClaimResponseSubDetail1 {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addModifier(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.modifier) !== 'undefined') {
@@ -281,6 +314,17 @@ export class ClaimResponseSubDetail1 {
   * @returns the value  or undefined
   */
   public getModifier(): CodeableConcept[] | undefined {
+      return this.modifier;
+  }
+
+  /**
+  * Gets the current value of field modifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.modifier == undefined || this.modifier == null ) { return defaultValue; }
       return this.modifier;
   }
 
@@ -332,6 +376,17 @@ export class ClaimResponseSubDetail1 {
       return this.noteNumber;
   }
 
+  /**
+  * Gets the current value of field noteNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteNumberOrElse(defaultValue: number[]): number[] {
+      if (this.noteNumber == undefined || this.noteNumber == null ) { return defaultValue; }
+      return this.noteNumber;
+  }
+
   public add_noteNumber(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._noteNumber) !== 'undefined') {
@@ -380,6 +435,17 @@ export class ClaimResponseSubDetail1 {
       return this._noteNumber;
   }
 
+  /**
+  * Gets the current value of field _noteNumber if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_noteNumberOrElse(defaultValue: Element[]): Element[] {
+      if (this._noteNumber == undefined || this._noteNumber == null ) { return defaultValue; }
+      return this._noteNumber;
+  }
+
   public addAdjudication(newValue: ClaimResponseAdjudication) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.adjudication) !== 'undefined') {
@@ -425,6 +491,17 @@ export class ClaimResponseSubDetail1 {
   * @returns the value  or undefined
   */
   public getAdjudication(): ClaimResponseAdjudication[] | undefined {
+      return this.adjudication;
+  }
+
+  /**
+  * Gets the current value of field adjudication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAdjudicationOrElse(defaultValue: ClaimResponseAdjudication[]): ClaimResponseAdjudication[] {
+      if (this.adjudication == undefined || this.adjudication == null ) { return defaultValue; }
       return this.adjudication;
   }
 

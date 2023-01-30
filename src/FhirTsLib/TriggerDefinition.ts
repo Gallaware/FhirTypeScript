@@ -141,6 +141,17 @@ export class TriggerDefinition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -189,6 +200,17 @@ export class TriggerDefinition {
       return this.extension;
   }
 
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
+      return this.extension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -218,6 +240,17 @@ export class TriggerDefinition {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -252,6 +285,17 @@ export class TriggerDefinition {
       return this.name;
   }
 
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
+      return this.name;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -283,6 +327,17 @@ export class TriggerDefinition {
       return this.timingDate;
   }
 
+  /**
+  * Gets the current value of field timingDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTimingDateOrElse(defaultValue: string): string {
+      if (this.timingDate == undefined || this.timingDate == null ) { return defaultValue; }
+      return this.timingDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -311,6 +366,17 @@ export class TriggerDefinition {
   * @returns the value  or undefined
   */
   public getTimingDateTime(): string | undefined {
+      return this.timingDateTime;
+  }
+
+  /**
+  * Gets the current value of field timingDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTimingDateTimeOrElse(defaultValue: string): string {
+      if (this.timingDateTime == undefined || this.timingDateTime == null ) { return defaultValue; }
       return this.timingDateTime;
   }
 
@@ -359,6 +425,17 @@ export class TriggerDefinition {
   * @returns the value  or undefined
   */
   public getData(): DataRequirement[] | undefined {
+      return this.data;
+  }
+
+  /**
+  * Gets the current value of field data if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDataOrElse(defaultValue: DataRequirement[]): DataRequirement[] {
+      if (this.data == undefined || this.data == null ) { return defaultValue; }
       return this.data;
   }
 

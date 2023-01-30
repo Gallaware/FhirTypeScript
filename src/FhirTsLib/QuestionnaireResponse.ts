@@ -375,6 +375,17 @@ export class QuestionnaireResponse {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -406,6 +417,17 @@ export class QuestionnaireResponse {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -434,6 +456,17 @@ export class QuestionnaireResponse {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -485,6 +518,17 @@ export class QuestionnaireResponse {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -530,6 +574,17 @@ export class QuestionnaireResponse {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -581,6 +636,17 @@ export class QuestionnaireResponse {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addBasedOn(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.basedOn) !== 'undefined') {
@@ -626,6 +692,17 @@ export class QuestionnaireResponse {
   * @returns the value  or undefined
   */
   public getBasedOn(): Reference[] | undefined {
+      return this.basedOn;
+  }
+
+  /**
+  * Gets the current value of field basedOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBasedOnOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.basedOn == undefined || this.basedOn == null ) { return defaultValue; }
       return this.basedOn;
   }
 
@@ -677,6 +754,17 @@ export class QuestionnaireResponse {
       return this.partOf;
   }
 
+  /**
+  * Gets the current value of field partOf if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartOfOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.partOf == undefined || this.partOf == null ) { return defaultValue; }
+      return this.partOf;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -705,6 +793,17 @@ export class QuestionnaireResponse {
   * @returns the value  or undefined
   */
   public getQuestionnaire(): string | undefined {
+      return this.questionnaire;
+  }
+
+  /**
+  * Gets the current value of field questionnaire if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getQuestionnaireOrElse(defaultValue: string): string {
+      if (this.questionnaire == undefined || this.questionnaire == null ) { return defaultValue; }
       return this.questionnaire;
   }
 
@@ -740,6 +839,17 @@ export class QuestionnaireResponse {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -768,6 +878,17 @@ export class QuestionnaireResponse {
   * @returns the value  or undefined
   */
   public getAuthored(): string | undefined {
+      return this.authored;
+  }
+
+  /**
+  * Gets the current value of field authored if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAuthoredOrElse(defaultValue: string): string {
+      if (this.authored == undefined || this.authored == null ) { return defaultValue; }
       return this.authored;
   }
 
@@ -816,6 +937,17 @@ export class QuestionnaireResponse {
   * @returns the value  or undefined
   */
   public getItem(): QuestionnaireResponseItem[] | undefined {
+      return this.item;
+  }
+
+  /**
+  * Gets the current value of field item if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getItemOrElse(defaultValue: QuestionnaireResponseItem[]): QuestionnaireResponseItem[] {
+      if (this.item == undefined || this.item == null ) { return defaultValue; }
       return this.item;
   }
 

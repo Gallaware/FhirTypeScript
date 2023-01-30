@@ -425,6 +425,17 @@ export class DocumentReference {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -456,6 +467,17 @@ export class DocumentReference {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -484,6 +506,17 @@ export class DocumentReference {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -535,6 +568,17 @@ export class DocumentReference {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -580,6 +624,17 @@ export class DocumentReference {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -631,6 +686,17 @@ export class DocumentReference {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -679,6 +745,17 @@ export class DocumentReference {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -711,6 +788,17 @@ export class DocumentReference {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -739,6 +827,17 @@ export class DocumentReference {
   * @returns the value  or undefined
   */
   public getDocStatus(): string | undefined {
+      return this.docStatus;
+  }
+
+  /**
+  * Gets the current value of field docStatus if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDocStatusOrElse(defaultValue: string): string {
+      if (this.docStatus == undefined || this.docStatus == null ) { return defaultValue; }
       return this.docStatus;
   }
 
@@ -790,6 +889,17 @@ export class DocumentReference {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -818,6 +928,17 @@ export class DocumentReference {
   * @returns the value  or undefined
   */
   public getDate(): string | undefined {
+      return this.date;
+  }
+
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
       return this.date;
   }
 
@@ -869,6 +990,17 @@ export class DocumentReference {
       return this.author;
   }
 
+  /**
+  * Gets the current value of field author if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAuthorOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.author == undefined || this.author == null ) { return defaultValue; }
+      return this.author;
+  }
+
   public addRelatesTo(newValue: DocumentReferenceRelatesTo) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.relatesTo) !== 'undefined') {
@@ -917,6 +1049,17 @@ export class DocumentReference {
       return this.relatesTo;
   }
 
+  /**
+  * Gets the current value of field relatesTo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRelatesToOrElse(defaultValue: DocumentReferenceRelatesTo[]): DocumentReferenceRelatesTo[] {
+      if (this.relatesTo == undefined || this.relatesTo == null ) { return defaultValue; }
+      return this.relatesTo;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -945,6 +1088,17 @@ export class DocumentReference {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -996,6 +1150,17 @@ export class DocumentReference {
       return this.securityLabel;
   }
 
+  /**
+  * Gets the current value of field securityLabel if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSecurityLabelOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.securityLabel == undefined || this.securityLabel == null ) { return defaultValue; }
+      return this.securityLabel;
+  }
+
   public addContent(newValue: DocumentReferenceContent) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.content) !== 'undefined') {
@@ -1041,6 +1206,17 @@ export class DocumentReference {
   * @returns the value  or undefined
   */
   public getContent(): DocumentReferenceContent[] | undefined {
+      return this.content;
+  }
+
+  /**
+  * Gets the current value of field content if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContentOrElse(defaultValue: DocumentReferenceContent[]): DocumentReferenceContent[] {
+      if (this.content == undefined || this.content == null ) { return defaultValue; }
       return this.content;
   }
 

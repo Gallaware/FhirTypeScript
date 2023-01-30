@@ -637,6 +637,17 @@ export class StructureMapSource {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -682,6 +693,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -733,6 +755,17 @@ export class StructureMapSource {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -761,6 +794,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getContext(): string | undefined {
+      return this.context;
+  }
+
+  /**
+  * Gets the current value of field context if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContextOrElse(defaultValue: string): string {
+      if (this.context == undefined || this.context == null ) { return defaultValue; }
       return this.context;
   }
 
@@ -795,6 +839,17 @@ export class StructureMapSource {
       return this.max;
   }
 
+  /**
+  * Gets the current value of field max if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMaxOrElse(defaultValue: string): string {
+      if (this.max == undefined || this.max == null ) { return defaultValue; }
+      return this.max;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -823,6 +878,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -857,6 +923,17 @@ export class StructureMapSource {
       return this.defaultValueBase64Binary;
   }
 
+  /**
+  * Gets the current value of field defaultValueBase64Binary if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueBase64BinaryOrElse(defaultValue: string): string {
+      if (this.defaultValueBase64Binary == undefined || this.defaultValueBase64Binary == null ) { return defaultValue; }
+      return this.defaultValueBase64Binary;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -885,6 +962,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getDefaultValueCanonical(): string | undefined {
+      return this.defaultValueCanonical;
+  }
+
+  /**
+  * Gets the current value of field defaultValueCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueCanonicalOrElse(defaultValue: string): string {
+      if (this.defaultValueCanonical == undefined || this.defaultValueCanonical == null ) { return defaultValue; }
       return this.defaultValueCanonical;
   }
 
@@ -919,6 +1007,17 @@ export class StructureMapSource {
       return this.defaultValueCode;
   }
 
+  /**
+  * Gets the current value of field defaultValueCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueCodeOrElse(defaultValue: string): string {
+      if (this.defaultValueCode == undefined || this.defaultValueCode == null ) { return defaultValue; }
+      return this.defaultValueCode;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -947,6 +1046,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getDefaultValueDate(): string | undefined {
+      return this.defaultValueDate;
+  }
+
+  /**
+  * Gets the current value of field defaultValueDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueDateOrElse(defaultValue: string): string {
+      if (this.defaultValueDate == undefined || this.defaultValueDate == null ) { return defaultValue; }
       return this.defaultValueDate;
   }
 
@@ -981,6 +1091,17 @@ export class StructureMapSource {
       return this.defaultValueDateTime;
   }
 
+  /**
+  * Gets the current value of field defaultValueDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueDateTimeOrElse(defaultValue: string): string {
+      if (this.defaultValueDateTime == undefined || this.defaultValueDateTime == null ) { return defaultValue; }
+      return this.defaultValueDateTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1009,6 +1130,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getDefaultValueId(): string | undefined {
+      return this.defaultValueId;
+  }
+
+  /**
+  * Gets the current value of field defaultValueId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueIdOrElse(defaultValue: string): string {
+      if (this.defaultValueId == undefined || this.defaultValueId == null ) { return defaultValue; }
       return this.defaultValueId;
   }
 
@@ -1043,6 +1175,17 @@ export class StructureMapSource {
       return this.defaultValueInstant;
   }
 
+  /**
+  * Gets the current value of field defaultValueInstant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueInstantOrElse(defaultValue: string): string {
+      if (this.defaultValueInstant == undefined || this.defaultValueInstant == null ) { return defaultValue; }
+      return this.defaultValueInstant;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1071,6 +1214,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getDefaultValueMarkdown(): string | undefined {
+      return this.defaultValueMarkdown;
+  }
+
+  /**
+  * Gets the current value of field defaultValueMarkdown if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueMarkdownOrElse(defaultValue: string): string {
+      if (this.defaultValueMarkdown == undefined || this.defaultValueMarkdown == null ) { return defaultValue; }
       return this.defaultValueMarkdown;
   }
 
@@ -1105,6 +1259,17 @@ export class StructureMapSource {
       return this.defaultValueOid;
   }
 
+  /**
+  * Gets the current value of field defaultValueOid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueOidOrElse(defaultValue: string): string {
+      if (this.defaultValueOid == undefined || this.defaultValueOid == null ) { return defaultValue; }
+      return this.defaultValueOid;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1133,6 +1298,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getDefaultValueString(): string | undefined {
+      return this.defaultValueString;
+  }
+
+  /**
+  * Gets the current value of field defaultValueString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueStringOrElse(defaultValue: string): string {
+      if (this.defaultValueString == undefined || this.defaultValueString == null ) { return defaultValue; }
       return this.defaultValueString;
   }
 
@@ -1167,6 +1343,17 @@ export class StructureMapSource {
       return this.defaultValueTime;
   }
 
+  /**
+  * Gets the current value of field defaultValueTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueTimeOrElse(defaultValue: string): string {
+      if (this.defaultValueTime == undefined || this.defaultValueTime == null ) { return defaultValue; }
+      return this.defaultValueTime;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1195,6 +1382,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getDefaultValueUri(): string | undefined {
+      return this.defaultValueUri;
+  }
+
+  /**
+  * Gets the current value of field defaultValueUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueUriOrElse(defaultValue: string): string {
+      if (this.defaultValueUri == undefined || this.defaultValueUri == null ) { return defaultValue; }
       return this.defaultValueUri;
   }
 
@@ -1229,6 +1427,17 @@ export class StructureMapSource {
       return this.defaultValueUrl;
   }
 
+  /**
+  * Gets the current value of field defaultValueUrl if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueUrlOrElse(defaultValue: string): string {
+      if (this.defaultValueUrl == undefined || this.defaultValueUrl == null ) { return defaultValue; }
+      return this.defaultValueUrl;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1260,6 +1469,17 @@ export class StructureMapSource {
       return this.defaultValueUuid;
   }
 
+  /**
+  * Gets the current value of field defaultValueUuid if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDefaultValueUuidOrElse(defaultValue: string): string {
+      if (this.defaultValueUuid == undefined || this.defaultValueUuid == null ) { return defaultValue; }
+      return this.defaultValueUuid;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1288,6 +1508,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getElement(): string | undefined {
+      return this.element;
+  }
+
+  /**
+  * Gets the current value of field element if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getElementOrElse(defaultValue: string): string {
+      if (this.element == undefined || this.element == null ) { return defaultValue; }
       return this.element;
   }
 
@@ -1323,6 +1554,17 @@ export class StructureMapSource {
       return this.listMode;
   }
 
+  /**
+  * Gets the current value of field listMode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getListModeOrElse(defaultValue: string): string {
+      if (this.listMode == undefined || this.listMode == null ) { return defaultValue; }
+      return this.listMode;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1351,6 +1593,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getVariable(): string | undefined {
+      return this.variable;
+  }
+
+  /**
+  * Gets the current value of field variable if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVariableOrElse(defaultValue: string): string {
+      if (this.variable == undefined || this.variable == null ) { return defaultValue; }
       return this.variable;
   }
 
@@ -1385,6 +1638,17 @@ export class StructureMapSource {
       return this.condition;
   }
 
+  /**
+  * Gets the current value of field condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionOrElse(defaultValue: string): string {
+      if (this.condition == undefined || this.condition == null ) { return defaultValue; }
+      return this.condition;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1416,6 +1680,17 @@ export class StructureMapSource {
       return this.check;
   }
 
+  /**
+  * Gets the current value of field check if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCheckOrElse(defaultValue: string): string {
+      if (this.check == undefined || this.check == null ) { return defaultValue; }
+      return this.check;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1444,6 +1719,17 @@ export class StructureMapSource {
   * @returns the value  or undefined
   */
   public getLogMessage(): string | undefined {
+      return this.logMessage;
+  }
+
+  /**
+  * Gets the current value of field logMessage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLogMessageOrElse(defaultValue: string): string {
+      if (this.logMessage == undefined || this.logMessage == null ) { return defaultValue; }
       return this.logMessage;
   }
 

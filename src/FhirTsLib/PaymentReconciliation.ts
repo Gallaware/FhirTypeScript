@@ -416,6 +416,17 @@ export class PaymentReconciliation {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -447,6 +458,17 @@ export class PaymentReconciliation {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -475,6 +497,17 @@ export class PaymentReconciliation {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -526,6 +559,17 @@ export class PaymentReconciliation {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -571,6 +615,17 @@ export class PaymentReconciliation {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -622,6 +677,17 @@ export class PaymentReconciliation {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -670,6 +736,17 @@ export class PaymentReconciliation {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -701,6 +778,17 @@ export class PaymentReconciliation {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -729,6 +817,17 @@ export class PaymentReconciliation {
   * @returns the value  or undefined
   */
   public getCreated(): string | undefined {
+      return this.created;
+  }
+
+  /**
+  * Gets the current value of field created if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCreatedOrElse(defaultValue: string): string {
+      if (this.created == undefined || this.created == null ) { return defaultValue; }
       return this.created;
   }
 
@@ -764,6 +863,17 @@ export class PaymentReconciliation {
       return this.outcome;
   }
 
+  /**
+  * Gets the current value of field outcome if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeOrElse(defaultValue: string): string {
+      if (this.outcome == undefined || this.outcome == null ) { return defaultValue; }
+      return this.outcome;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -795,6 +905,17 @@ export class PaymentReconciliation {
       return this.disposition;
   }
 
+  /**
+  * Gets the current value of field disposition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDispositionOrElse(defaultValue: string): string {
+      if (this.disposition == undefined || this.disposition == null ) { return defaultValue; }
+      return this.disposition;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -823,6 +944,17 @@ export class PaymentReconciliation {
   * @returns the value  or undefined
   */
   public getPaymentDate(): string | undefined {
+      return this.paymentDate;
+  }
+
+  /**
+  * Gets the current value of field paymentDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPaymentDateOrElse(defaultValue: string): string {
+      if (this.paymentDate == undefined || this.paymentDate == null ) { return defaultValue; }
       return this.paymentDate;
   }
 
@@ -874,6 +1006,17 @@ export class PaymentReconciliation {
       return this.detail;
   }
 
+  /**
+  * Gets the current value of field detail if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDetailOrElse(defaultValue: PaymentReconciliationDetail[]): PaymentReconciliationDetail[] {
+      if (this.detail == undefined || this.detail == null ) { return defaultValue; }
+      return this.detail;
+  }
+
   public addProcessNote(newValue: PaymentReconciliationProcessNote) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.processNote) !== 'undefined') {
@@ -919,6 +1062,17 @@ export class PaymentReconciliation {
   * @returns the value  or undefined
   */
   public getProcessNote(): PaymentReconciliationProcessNote[] | undefined {
+      return this.processNote;
+  }
+
+  /**
+  * Gets the current value of field processNote if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProcessNoteOrElse(defaultValue: PaymentReconciliationProcessNote[]): PaymentReconciliationProcessNote[] {
+      if (this.processNote == undefined || this.processNote == null ) { return defaultValue; }
       return this.processNote;
   }
 

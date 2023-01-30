@@ -485,6 +485,17 @@ export class CarePlan {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -516,6 +527,17 @@ export class CarePlan {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -544,6 +566,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -595,6 +628,17 @@ export class CarePlan {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -640,6 +684,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -691,6 +746,17 @@ export class CarePlan {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -736,6 +802,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -787,6 +864,17 @@ export class CarePlan {
       return this.instantiatesCanonical;
   }
 
+  /**
+  * Gets the current value of field instantiatesCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesCanonicalOrElse(defaultValue: string[]): string[] {
+      if (this.instantiatesCanonical == undefined || this.instantiatesCanonical == null ) { return defaultValue; }
+      return this.instantiatesCanonical;
+  }
+
   public addInstantiatesUri(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.instantiatesUri) !== 'undefined') {
@@ -832,6 +920,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getInstantiatesUri(): string[] | undefined {
+      return this.instantiatesUri;
+  }
+
+  /**
+  * Gets the current value of field instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getInstantiatesUriOrElse(defaultValue: string[]): string[] {
+      if (this.instantiatesUri == undefined || this.instantiatesUri == null ) { return defaultValue; }
       return this.instantiatesUri;
   }
 
@@ -883,6 +982,17 @@ export class CarePlan {
       return this._instantiatesUri;
   }
 
+  /**
+  * Gets the current value of field _instantiatesUri if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_instantiatesUriOrElse(defaultValue: Element[]): Element[] {
+      if (this._instantiatesUri == undefined || this._instantiatesUri == null ) { return defaultValue; }
+      return this._instantiatesUri;
+  }
+
   public addBasedOn(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.basedOn) !== 'undefined') {
@@ -928,6 +1038,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getBasedOn(): Reference[] | undefined {
+      return this.basedOn;
+  }
+
+  /**
+  * Gets the current value of field basedOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBasedOnOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.basedOn == undefined || this.basedOn == null ) { return defaultValue; }
       return this.basedOn;
   }
 
@@ -979,6 +1100,17 @@ export class CarePlan {
       return this.replaces;
   }
 
+  /**
+  * Gets the current value of field replaces if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReplacesOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.replaces == undefined || this.replaces == null ) { return defaultValue; }
+      return this.replaces;
+  }
+
   public addPartOf(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.partOf) !== 'undefined') {
@@ -1027,6 +1159,17 @@ export class CarePlan {
       return this.partOf;
   }
 
+  /**
+  * Gets the current value of field partOf if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPartOfOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.partOf == undefined || this.partOf == null ) { return defaultValue; }
+      return this.partOf;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1058,6 +1201,17 @@ export class CarePlan {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1086,6 +1240,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getIntent(): string | undefined {
+      return this.intent;
+  }
+
+  /**
+  * Gets the current value of field intent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIntentOrElse(defaultValue: string): string {
+      if (this.intent == undefined || this.intent == null ) { return defaultValue; }
       return this.intent;
   }
 
@@ -1137,6 +1302,17 @@ export class CarePlan {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1165,6 +1341,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getTitle(): string | undefined {
+      return this.title;
+  }
+
+  /**
+  * Gets the current value of field title if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTitleOrElse(defaultValue: string): string {
+      if (this.title == undefined || this.title == null ) { return defaultValue; }
       return this.title;
   }
 
@@ -1199,6 +1386,17 @@ export class CarePlan {
       return this.description;
   }
 
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
+      return this.description;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1227,6 +1425,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getCreated(): string | undefined {
+      return this.created;
+  }
+
+  /**
+  * Gets the current value of field created if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCreatedOrElse(defaultValue: string): string {
+      if (this.created == undefined || this.created == null ) { return defaultValue; }
       return this.created;
   }
 
@@ -1278,6 +1487,17 @@ export class CarePlan {
       return this.contributor;
   }
 
+  /**
+  * Gets the current value of field contributor if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContributorOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.contributor == undefined || this.contributor == null ) { return defaultValue; }
+      return this.contributor;
+  }
+
   public addCareTeam(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.careTeam) !== 'undefined') {
@@ -1323,6 +1543,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getCareTeam(): Reference[] | undefined {
+      return this.careTeam;
+  }
+
+  /**
+  * Gets the current value of field careTeam if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCareTeamOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.careTeam == undefined || this.careTeam == null ) { return defaultValue; }
       return this.careTeam;
   }
 
@@ -1374,6 +1605,17 @@ export class CarePlan {
       return this.addresses;
   }
 
+  /**
+  * Gets the current value of field addresses if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAddressesOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.addresses == undefined || this.addresses == null ) { return defaultValue; }
+      return this.addresses;
+  }
+
   public addSupportingInfo(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.supportingInfo) !== 'undefined') {
@@ -1419,6 +1661,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getSupportingInfo(): Reference[] | undefined {
+      return this.supportingInfo;
+  }
+
+  /**
+  * Gets the current value of field supportingInfo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInfoOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingInfo == undefined || this.supportingInfo == null ) { return defaultValue; }
       return this.supportingInfo;
   }
 
@@ -1470,6 +1723,17 @@ export class CarePlan {
       return this.goal;
   }
 
+  /**
+  * Gets the current value of field goal if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGoalOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.goal == undefined || this.goal == null ) { return defaultValue; }
+      return this.goal;
+  }
+
   public addActivity(newValue: CarePlanActivity) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.activity) !== 'undefined') {
@@ -1518,6 +1782,17 @@ export class CarePlan {
       return this.activity;
   }
 
+  /**
+  * Gets the current value of field activity if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getActivityOrElse(defaultValue: CarePlanActivity[]): CarePlanActivity[] {
+      if (this.activity == undefined || this.activity == null ) { return defaultValue; }
+      return this.activity;
+  }
+
   public addNote(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.note) !== 'undefined') {
@@ -1563,6 +1838,17 @@ export class CarePlan {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 

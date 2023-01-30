@@ -420,6 +420,17 @@ export class Invoice {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -451,6 +462,17 @@ export class Invoice {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -479,6 +501,17 @@ export class Invoice {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -530,6 +563,17 @@ export class Invoice {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -575,6 +619,17 @@ export class Invoice {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -626,6 +681,17 @@ export class Invoice {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -674,6 +740,17 @@ export class Invoice {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -703,6 +780,17 @@ export class Invoice {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -737,6 +825,17 @@ export class Invoice {
       return this.cancelledReason;
   }
 
+  /**
+  * Gets the current value of field cancelledReason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCancelledReasonOrElse(defaultValue: string): string {
+      if (this.cancelledReason == undefined || this.cancelledReason == null ) { return defaultValue; }
+      return this.cancelledReason;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -765,6 +864,17 @@ export class Invoice {
   * @returns the value  or undefined
   */
   public getDate(): string | undefined {
+      return this.date;
+  }
+
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
       return this.date;
   }
 
@@ -816,6 +926,17 @@ export class Invoice {
       return this.participant;
   }
 
+  /**
+  * Gets the current value of field participant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantOrElse(defaultValue: InvoiceParticipant[]): InvoiceParticipant[] {
+      if (this.participant == undefined || this.participant == null ) { return defaultValue; }
+      return this.participant;
+  }
+
   public addLineItem(newValue: InvoiceLineItem) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.lineItem) !== 'undefined') {
@@ -861,6 +982,17 @@ export class Invoice {
   * @returns the value  or undefined
   */
   public getLineItem(): InvoiceLineItem[] | undefined {
+      return this.lineItem;
+  }
+
+  /**
+  * Gets the current value of field lineItem if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLineItemOrElse(defaultValue: InvoiceLineItem[]): InvoiceLineItem[] {
+      if (this.lineItem == undefined || this.lineItem == null ) { return defaultValue; }
       return this.lineItem;
   }
 
@@ -912,6 +1044,17 @@ export class Invoice {
       return this.totalPriceComponent;
   }
 
+  /**
+  * Gets the current value of field totalPriceComponent if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTotalPriceComponentOrElse(defaultValue: InvoicePriceComponent[]): InvoicePriceComponent[] {
+      if (this.totalPriceComponent == undefined || this.totalPriceComponent == null ) { return defaultValue; }
+      return this.totalPriceComponent;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -940,6 +1083,17 @@ export class Invoice {
   * @returns the value  or undefined
   */
   public getPaymentTerms(): string | undefined {
+      return this.paymentTerms;
+  }
+
+  /**
+  * Gets the current value of field paymentTerms if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPaymentTermsOrElse(defaultValue: string): string {
+      if (this.paymentTerms == undefined || this.paymentTerms == null ) { return defaultValue; }
       return this.paymentTerms;
   }
 
@@ -988,6 +1142,17 @@ export class Invoice {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 

@@ -101,6 +101,17 @@ export class OperationDefinitionOverload {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -146,6 +157,17 @@ export class OperationDefinitionOverload {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -197,6 +219,17 @@ export class OperationDefinitionOverload {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addParameterName(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.parameterName) !== 'undefined') {
@@ -242,6 +275,17 @@ export class OperationDefinitionOverload {
   * @returns the value  or undefined
   */
   public getParameterName(): string[] | undefined {
+      return this.parameterName;
+  }
+
+  /**
+  * Gets the current value of field parameterName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParameterNameOrElse(defaultValue: string[]): string[] {
+      if (this.parameterName == undefined || this.parameterName == null ) { return defaultValue; }
       return this.parameterName;
   }
 
@@ -293,6 +337,17 @@ export class OperationDefinitionOverload {
       return this._parameterName;
   }
 
+  /**
+  * Gets the current value of field _parameterName if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_parameterNameOrElse(defaultValue: Element[]): Element[] {
+      if (this._parameterName == undefined || this._parameterName == null ) { return defaultValue; }
+      return this._parameterName;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -321,6 +376,17 @@ export class OperationDefinitionOverload {
   * @returns the value  or undefined
   */
   public getComment(): string | undefined {
+      return this.comment;
+  }
+
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
       return this.comment;
   }
 

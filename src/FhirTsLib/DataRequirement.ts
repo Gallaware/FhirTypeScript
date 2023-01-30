@@ -148,6 +148,17 @@ export class DataRequirement {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -196,6 +207,17 @@ export class DataRequirement {
       return this.extension;
   }
 
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
+      return this.extension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -224,6 +246,17 @@ export class DataRequirement {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -275,6 +308,17 @@ export class DataRequirement {
       return this.profile;
   }
 
+  /**
+  * Gets the current value of field profile if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProfileOrElse(defaultValue: string[]): string[] {
+      if (this.profile == undefined || this.profile == null ) { return defaultValue; }
+      return this.profile;
+  }
+
   public addMustSupport(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.mustSupport) !== 'undefined') {
@@ -320,6 +364,17 @@ export class DataRequirement {
   * @returns the value  or undefined
   */
   public getMustSupport(): string[] | undefined {
+      return this.mustSupport;
+  }
+
+  /**
+  * Gets the current value of field mustSupport if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getMustSupportOrElse(defaultValue: string[]): string[] {
+      if (this.mustSupport == undefined || this.mustSupport == null ) { return defaultValue; }
       return this.mustSupport;
   }
 
@@ -371,6 +426,17 @@ export class DataRequirement {
       return this._mustSupport;
   }
 
+  /**
+  * Gets the current value of field _mustSupport if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_mustSupportOrElse(defaultValue: Element[]): Element[] {
+      if (this._mustSupport == undefined || this._mustSupport == null ) { return defaultValue; }
+      return this._mustSupport;
+  }
+
   public addCodeFilter(newValue: DataRequirementCodeFilter) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.codeFilter) !== 'undefined') {
@@ -416,6 +482,17 @@ export class DataRequirement {
   * @returns the value  or undefined
   */
   public getCodeFilter(): DataRequirementCodeFilter[] | undefined {
+      return this.codeFilter;
+  }
+
+  /**
+  * Gets the current value of field codeFilter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeFilterOrElse(defaultValue: DataRequirementCodeFilter[]): DataRequirementCodeFilter[] {
+      if (this.codeFilter == undefined || this.codeFilter == null ) { return defaultValue; }
       return this.codeFilter;
   }
 
@@ -467,6 +544,17 @@ export class DataRequirement {
       return this.dateFilter;
   }
 
+  /**
+  * Gets the current value of field dateFilter if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateFilterOrElse(defaultValue: DataRequirementDateFilter[]): DataRequirementDateFilter[] {
+      if (this.dateFilter == undefined || this.dateFilter == null ) { return defaultValue; }
+      return this.dateFilter;
+  }
+
   public addSort(newValue: DataRequirementSort) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.sort) !== 'undefined') {
@@ -512,6 +600,17 @@ export class DataRequirement {
   * @returns the value  or undefined
   */
   public getSort(): DataRequirementSort[] | undefined {
+      return this.sort;
+  }
+
+  /**
+  * Gets the current value of field sort if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSortOrElse(defaultValue: DataRequirementSort[]): DataRequirementSort[] {
+      if (this.sort == undefined || this.sort == null ) { return defaultValue; }
       return this.sort;
   }
 

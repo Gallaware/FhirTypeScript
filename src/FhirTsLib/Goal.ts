@@ -427,6 +427,17 @@ export class Goal {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -458,6 +469,17 @@ export class Goal {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -486,6 +508,17 @@ export class Goal {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -537,6 +570,17 @@ export class Goal {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -582,6 +626,17 @@ export class Goal {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -633,6 +688,17 @@ export class Goal {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -681,6 +747,17 @@ export class Goal {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -710,6 +787,17 @@ export class Goal {
   * @returns the value  or undefined
   */
   public getLifecycleStatus(): string | undefined {
+      return this.lifecycleStatus;
+  }
+
+  /**
+  * Gets the current value of field lifecycleStatus if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLifecycleStatusOrElse(defaultValue: string): string {
+      if (this.lifecycleStatus == undefined || this.lifecycleStatus == null ) { return defaultValue; }
       return this.lifecycleStatus;
   }
 
@@ -761,6 +849,17 @@ export class Goal {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -789,6 +888,17 @@ export class Goal {
   * @returns the value  or undefined
   */
   public getStartDate(): string | undefined {
+      return this.startDate;
+  }
+
+  /**
+  * Gets the current value of field startDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStartDateOrElse(defaultValue: string): string {
+      if (this.startDate == undefined || this.startDate == null ) { return defaultValue; }
       return this.startDate;
   }
 
@@ -840,6 +950,17 @@ export class Goal {
       return this.target;
   }
 
+  /**
+  * Gets the current value of field target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetOrElse(defaultValue: GoalTarget[]): GoalTarget[] {
+      if (this.target == undefined || this.target == null ) { return defaultValue; }
+      return this.target;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -871,6 +992,17 @@ export class Goal {
       return this.statusDate;
   }
 
+  /**
+  * Gets the current value of field statusDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusDateOrElse(defaultValue: string): string {
+      if (this.statusDate == undefined || this.statusDate == null ) { return defaultValue; }
+      return this.statusDate;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -899,6 +1031,17 @@ export class Goal {
   * @returns the value  or undefined
   */
   public getStatusReason(): string | undefined {
+      return this.statusReason;
+  }
+
+  /**
+  * Gets the current value of field statusReason if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusReasonOrElse(defaultValue: string): string {
+      if (this.statusReason == undefined || this.statusReason == null ) { return defaultValue; }
       return this.statusReason;
   }
 
@@ -950,6 +1093,17 @@ export class Goal {
       return this.addresses;
   }
 
+  /**
+  * Gets the current value of field addresses if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAddressesOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.addresses == undefined || this.addresses == null ) { return defaultValue; }
+      return this.addresses;
+  }
+
   public addNote(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.note) !== 'undefined') {
@@ -995,6 +1149,17 @@ export class Goal {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 
@@ -1046,6 +1211,17 @@ export class Goal {
       return this.outcomeCode;
   }
 
+  /**
+  * Gets the current value of field outcomeCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.outcomeCode == undefined || this.outcomeCode == null ) { return defaultValue; }
+      return this.outcomeCode;
+  }
+
   public addOutcomeReference(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.outcomeReference) !== 'undefined') {
@@ -1091,6 +1267,17 @@ export class Goal {
   * @returns the value  or undefined
   */
   public getOutcomeReference(): Reference[] | undefined {
+      return this.outcomeReference;
+  }
+
+  /**
+  * Gets the current value of field outcomeReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOutcomeReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.outcomeReference == undefined || this.outcomeReference == null ) { return defaultValue; }
       return this.outcomeReference;
   }
 

@@ -484,6 +484,17 @@ export class Condition {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -515,6 +526,17 @@ export class Condition {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -543,6 +565,17 @@ export class Condition {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -594,6 +627,17 @@ export class Condition {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -639,6 +683,17 @@ export class Condition {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -690,6 +745,17 @@ export class Condition {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -735,6 +801,17 @@ export class Condition {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -786,6 +863,17 @@ export class Condition {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   public addBodySite(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.bodySite) !== 'undefined') {
@@ -834,6 +922,17 @@ export class Condition {
       return this.bodySite;
   }
 
+  /**
+  * Gets the current value of field bodySite if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBodySiteOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.bodySite == undefined || this.bodySite == null ) { return defaultValue; }
+      return this.bodySite;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -862,6 +961,17 @@ export class Condition {
   * @returns the value  or undefined
   */
   public getOnsetDateTime(): string | undefined {
+      return this.onsetDateTime;
+  }
+
+  /**
+  * Gets the current value of field onsetDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOnsetDateTimeOrElse(defaultValue: string): string {
+      if (this.onsetDateTime == undefined || this.onsetDateTime == null ) { return defaultValue; }
       return this.onsetDateTime;
   }
 
@@ -896,6 +1006,17 @@ export class Condition {
       return this.onsetString;
   }
 
+  /**
+  * Gets the current value of field onsetString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getOnsetStringOrElse(defaultValue: string): string {
+      if (this.onsetString == undefined || this.onsetString == null ) { return defaultValue; }
+      return this.onsetString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -924,6 +1045,17 @@ export class Condition {
   * @returns the value  or undefined
   */
   public getAbatementDateTime(): string | undefined {
+      return this.abatementDateTime;
+  }
+
+  /**
+  * Gets the current value of field abatementDateTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAbatementDateTimeOrElse(defaultValue: string): string {
+      if (this.abatementDateTime == undefined || this.abatementDateTime == null ) { return defaultValue; }
       return this.abatementDateTime;
   }
 
@@ -958,6 +1090,17 @@ export class Condition {
       return this.abatementString;
   }
 
+  /**
+  * Gets the current value of field abatementString if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAbatementStringOrElse(defaultValue: string): string {
+      if (this.abatementString == undefined || this.abatementString == null ) { return defaultValue; }
+      return this.abatementString;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -986,6 +1129,17 @@ export class Condition {
   * @returns the value  or undefined
   */
   public getRecordedDate(): string | undefined {
+      return this.recordedDate;
+  }
+
+  /**
+  * Gets the current value of field recordedDate if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRecordedDateOrElse(defaultValue: string): string {
+      if (this.recordedDate == undefined || this.recordedDate == null ) { return defaultValue; }
       return this.recordedDate;
   }
 
@@ -1037,6 +1191,17 @@ export class Condition {
       return this.stage;
   }
 
+  /**
+  * Gets the current value of field stage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStageOrElse(defaultValue: ConditionStage[]): ConditionStage[] {
+      if (this.stage == undefined || this.stage == null ) { return defaultValue; }
+      return this.stage;
+  }
+
   public addEvidence(newValue: ConditionEvidence) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.evidence) !== 'undefined') {
@@ -1085,6 +1250,17 @@ export class Condition {
       return this.evidence;
   }
 
+  /**
+  * Gets the current value of field evidence if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEvidenceOrElse(defaultValue: ConditionEvidence[]): ConditionEvidence[] {
+      if (this.evidence == undefined || this.evidence == null ) { return defaultValue; }
+      return this.evidence;
+  }
+
   public addNote(newValue: Annotation) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.note) !== 'undefined') {
@@ -1130,6 +1306,17 @@ export class Condition {
   * @returns the value  or undefined
   */
   public getNote(): Annotation[] | undefined {
+      return this.note;
+  }
+
+  /**
+  * Gets the current value of field note if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNoteOrElse(defaultValue: Annotation[]): Annotation[] {
+      if (this.note == undefined || this.note == null ) { return defaultValue; }
       return this.note;
   }
 

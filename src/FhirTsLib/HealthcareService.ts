@@ -483,6 +483,17 @@ export class HealthcareService {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -514,6 +525,17 @@ export class HealthcareService {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -542,6 +564,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -593,6 +626,17 @@ export class HealthcareService {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -638,6 +682,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -689,6 +744,17 @@ export class HealthcareService {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -734,6 +800,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getIdentifier(): Identifier[] | undefined {
+      return this.identifier;
+  }
+
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
       return this.identifier;
   }
 
@@ -785,6 +862,17 @@ export class HealthcareService {
       return this.category;
   }
 
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
+      return this.category;
+  }
+
   public addType(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.type) !== 'undefined') {
@@ -830,6 +918,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getType(): CodeableConcept[] | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -881,6 +980,17 @@ export class HealthcareService {
       return this.specialty;
   }
 
+  /**
+  * Gets the current value of field specialty if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialtyOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.specialty == undefined || this.specialty == null ) { return defaultValue; }
+      return this.specialty;
+  }
+
   public addLocation(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.location) !== 'undefined') {
@@ -929,6 +1039,17 @@ export class HealthcareService {
       return this.location;
   }
 
+  /**
+  * Gets the current value of field location if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLocationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.location == undefined || this.location == null ) { return defaultValue; }
+      return this.location;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -957,6 +1078,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -991,6 +1123,17 @@ export class HealthcareService {
       return this.comment;
   }
 
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
+      return this.comment;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1019,6 +1162,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getExtraDetails(): string | undefined {
+      return this.extraDetails;
+  }
+
+  /**
+  * Gets the current value of field extraDetails if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtraDetailsOrElse(defaultValue: string): string {
+      if (this.extraDetails == undefined || this.extraDetails == null ) { return defaultValue; }
       return this.extraDetails;
   }
 
@@ -1070,6 +1224,17 @@ export class HealthcareService {
       return this.telecom;
   }
 
+  /**
+  * Gets the current value of field telecom if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTelecomOrElse(defaultValue: ContactPoint[]): ContactPoint[] {
+      if (this.telecom == undefined || this.telecom == null ) { return defaultValue; }
+      return this.telecom;
+  }
+
   public addCoverageArea(newValue: Reference) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.coverageArea) !== 'undefined') {
@@ -1115,6 +1280,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getCoverageArea(): Reference[] | undefined {
+      return this.coverageArea;
+  }
+
+  /**
+  * Gets the current value of field coverageArea if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCoverageAreaOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.coverageArea == undefined || this.coverageArea == null ) { return defaultValue; }
       return this.coverageArea;
   }
 
@@ -1166,6 +1342,17 @@ export class HealthcareService {
       return this.serviceProvisionCode;
   }
 
+  /**
+  * Gets the current value of field serviceProvisionCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getServiceProvisionCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.serviceProvisionCode == undefined || this.serviceProvisionCode == null ) { return defaultValue; }
+      return this.serviceProvisionCode;
+  }
+
   public addEligibility(newValue: HealthcareServiceEligibility) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.eligibility) !== 'undefined') {
@@ -1211,6 +1398,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getEligibility(): HealthcareServiceEligibility[] | undefined {
+      return this.eligibility;
+  }
+
+  /**
+  * Gets the current value of field eligibility if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEligibilityOrElse(defaultValue: HealthcareServiceEligibility[]): HealthcareServiceEligibility[] {
+      if (this.eligibility == undefined || this.eligibility == null ) { return defaultValue; }
       return this.eligibility;
   }
 
@@ -1262,6 +1460,17 @@ export class HealthcareService {
       return this.program;
   }
 
+  /**
+  * Gets the current value of field program if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getProgramOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.program == undefined || this.program == null ) { return defaultValue; }
+      return this.program;
+  }
+
   public addCharacteristic(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.characteristic) !== 'undefined') {
@@ -1307,6 +1516,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getCharacteristic(): CodeableConcept[] | undefined {
+      return this.characteristic;
+  }
+
+  /**
+  * Gets the current value of field characteristic if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCharacteristicOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.characteristic == undefined || this.characteristic == null ) { return defaultValue; }
       return this.characteristic;
   }
 
@@ -1358,6 +1578,17 @@ export class HealthcareService {
       return this.communication;
   }
 
+  /**
+  * Gets the current value of field communication if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommunicationOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.communication == undefined || this.communication == null ) { return defaultValue; }
+      return this.communication;
+  }
+
   public addReferralMethod(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.referralMethod) !== 'undefined') {
@@ -1403,6 +1634,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getReferralMethod(): CodeableConcept[] | undefined {
+      return this.referralMethod;
+  }
+
+  /**
+  * Gets the current value of field referralMethod if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReferralMethodOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.referralMethod == undefined || this.referralMethod == null ) { return defaultValue; }
       return this.referralMethod;
   }
 
@@ -1454,6 +1696,17 @@ export class HealthcareService {
       return this.availableTime;
   }
 
+  /**
+  * Gets the current value of field availableTime if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAvailableTimeOrElse(defaultValue: HealthcareServiceAvailableTime[]): HealthcareServiceAvailableTime[] {
+      if (this.availableTime == undefined || this.availableTime == null ) { return defaultValue; }
+      return this.availableTime;
+  }
+
   public addNotAvailable(newValue: HealthcareServiceNotAvailable) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.notAvailable) !== 'undefined') {
@@ -1502,6 +1755,17 @@ export class HealthcareService {
       return this.notAvailable;
   }
 
+  /**
+  * Gets the current value of field notAvailable if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNotAvailableOrElse(defaultValue: HealthcareServiceNotAvailable[]): HealthcareServiceNotAvailable[] {
+      if (this.notAvailable == undefined || this.notAvailable == null ) { return defaultValue; }
+      return this.notAvailable;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1530,6 +1794,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getAvailabilityExceptions(): string | undefined {
+      return this.availabilityExceptions;
+  }
+
+  /**
+  * Gets the current value of field availabilityExceptions if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAvailabilityExceptionsOrElse(defaultValue: string): string {
+      if (this.availabilityExceptions == undefined || this.availabilityExceptions == null ) { return defaultValue; }
       return this.availabilityExceptions;
   }
 
@@ -1578,6 +1853,17 @@ export class HealthcareService {
   * @returns the value  or undefined
   */
   public getEndpoint(): Reference[] | undefined {
+      return this.endpoint;
+  }
+
+  /**
+  * Gets the current value of field endpoint if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEndpointOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.endpoint == undefined || this.endpoint == null ) { return defaultValue; }
       return this.endpoint;
   }
 

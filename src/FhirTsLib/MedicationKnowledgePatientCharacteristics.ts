@@ -103,6 +103,17 @@ export class MedicationKnowledgePatientCharacteristics {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -148,6 +159,17 @@ export class MedicationKnowledgePatientCharacteristics {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -199,6 +221,17 @@ export class MedicationKnowledgePatientCharacteristics {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addValue(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.value) !== 'undefined') {
@@ -247,6 +280,17 @@ export class MedicationKnowledgePatientCharacteristics {
       return this.value;
   }
 
+  /**
+  * Gets the current value of field value if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getValueOrElse(defaultValue: string[]): string[] {
+      if (this.value == undefined || this.value == null ) { return defaultValue; }
+      return this.value;
+  }
+
   public add_value(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._value) !== 'undefined') {
@@ -292,6 +336,17 @@ export class MedicationKnowledgePatientCharacteristics {
   * @returns the value  or undefined
   */
   public get_value(): Element[] | undefined {
+      return this._value;
+  }
+
+  /**
+  * Gets the current value of field _value if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_valueOrElse(defaultValue: Element[]): Element[] {
+      if (this._value == undefined || this._value == null ) { return defaultValue; }
       return this._value;
   }
 

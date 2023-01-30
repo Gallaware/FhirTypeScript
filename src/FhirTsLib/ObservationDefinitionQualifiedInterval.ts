@@ -147,6 +147,17 @@ export class ObservationDefinitionQualifiedInterval {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -192,6 +203,17 @@ export class ObservationDefinitionQualifiedInterval {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -243,6 +265,17 @@ export class ObservationDefinitionQualifiedInterval {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -272,6 +305,17 @@ export class ObservationDefinitionQualifiedInterval {
   * @returns the value  or undefined
   */
   public getCategory(): string | undefined {
+      return this.category;
+  }
+
+  /**
+  * Gets the current value of field category if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCategoryOrElse(defaultValue: string): string {
+      if (this.category == undefined || this.category == null ) { return defaultValue; }
       return this.category;
   }
 
@@ -323,6 +367,17 @@ export class ObservationDefinitionQualifiedInterval {
       return this.appliesTo;
   }
 
+  /**
+  * Gets the current value of field appliesTo if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getAppliesToOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.appliesTo == undefined || this.appliesTo == null ) { return defaultValue; }
+      return this.appliesTo;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -355,6 +410,17 @@ export class ObservationDefinitionQualifiedInterval {
       return this.gender;
   }
 
+  /**
+  * Gets the current value of field gender if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGenderOrElse(defaultValue: string): string {
+      if (this.gender == undefined || this.gender == null ) { return defaultValue; }
+      return this.gender;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -383,6 +449,17 @@ export class ObservationDefinitionQualifiedInterval {
   * @returns the value  or undefined
   */
   public getCondition(): string | undefined {
+      return this.condition;
+  }
+
+  /**
+  * Gets the current value of field condition if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getConditionOrElse(defaultValue: string): string {
+      if (this.condition == undefined || this.condition == null ) { return defaultValue; }
       return this.condition;
   }
 

@@ -586,6 +586,17 @@ export class SearchParameter {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -617,6 +628,17 @@ export class SearchParameter {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -645,6 +667,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -696,6 +729,17 @@ export class SearchParameter {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -741,6 +785,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -792,6 +847,17 @@ export class SearchParameter {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -820,6 +886,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getUrl(): string | undefined {
+      return this.url;
+  }
+
+  /**
+  * Gets the current value of field url if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUrlOrElse(defaultValue: string): string {
+      if (this.url == undefined || this.url == null ) { return defaultValue; }
       return this.url;
   }
 
@@ -854,6 +931,17 @@ export class SearchParameter {
       return this.version;
   }
 
+  /**
+  * Gets the current value of field version if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getVersionOrElse(defaultValue: string): string {
+      if (this.version == undefined || this.version == null ) { return defaultValue; }
+      return this.version;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -885,6 +973,17 @@ export class SearchParameter {
       return this.name;
   }
 
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
+      return this.name;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -913,6 +1012,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getDerivedFrom(): string | undefined {
+      return this.derivedFrom;
+  }
+
+  /**
+  * Gets the current value of field derivedFrom if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDerivedFromOrElse(defaultValue: string): string {
+      if (this.derivedFrom == undefined || this.derivedFrom == null ) { return defaultValue; }
       return this.derivedFrom;
   }
 
@@ -948,6 +1058,17 @@ export class SearchParameter {
       return this.status;
   }
 
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
+      return this.status;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -979,6 +1100,17 @@ export class SearchParameter {
       return this.date;
   }
 
+  /**
+  * Gets the current value of field date if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDateOrElse(defaultValue: string): string {
+      if (this.date == undefined || this.date == null ) { return defaultValue; }
+      return this.date;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1007,6 +1139,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getPublisher(): string | undefined {
+      return this.publisher;
+  }
+
+  /**
+  * Gets the current value of field publisher if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPublisherOrElse(defaultValue: string): string {
+      if (this.publisher == undefined || this.publisher == null ) { return defaultValue; }
       return this.publisher;
   }
 
@@ -1058,6 +1201,17 @@ export class SearchParameter {
       return this.contact;
   }
 
+  /**
+  * Gets the current value of field contact if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContactOrElse(defaultValue: ContactDetail[]): ContactDetail[] {
+      if (this.contact == undefined || this.contact == null ) { return defaultValue; }
+      return this.contact;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1086,6 +1240,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -1137,6 +1302,17 @@ export class SearchParameter {
       return this.useContext;
   }
 
+  /**
+  * Gets the current value of field useContext if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getUseContextOrElse(defaultValue: UsageContext[]): UsageContext[] {
+      if (this.useContext == undefined || this.useContext == null ) { return defaultValue; }
+      return this.useContext;
+  }
+
   public addJurisdiction(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.jurisdiction) !== 'undefined') {
@@ -1185,6 +1361,17 @@ export class SearchParameter {
       return this.jurisdiction;
   }
 
+  /**
+  * Gets the current value of field jurisdiction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getJurisdictionOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.jurisdiction == undefined || this.jurisdiction == null ) { return defaultValue; }
+      return this.jurisdiction;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1216,6 +1403,17 @@ export class SearchParameter {
       return this.purpose;
   }
 
+  /**
+  * Gets the current value of field purpose if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPurposeOrElse(defaultValue: string): string {
+      if (this.purpose == undefined || this.purpose == null ) { return defaultValue; }
+      return this.purpose;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1244,6 +1442,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getCode(): string | undefined {
+      return this.code;
+  }
+
+  /**
+  * Gets the current value of field code if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCodeOrElse(defaultValue: string): string {
+      if (this.code == undefined || this.code == null ) { return defaultValue; }
       return this.code;
   }
 
@@ -1295,6 +1504,17 @@ export class SearchParameter {
       return this.base;
   }
 
+  /**
+  * Gets the current value of field base if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBaseOrElse(defaultValue: string[]): string[] {
+      if (this.base == undefined || this.base == null ) { return defaultValue; }
+      return this.base;
+  }
+
   public add_base(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._base) !== 'undefined') {
@@ -1343,6 +1563,17 @@ export class SearchParameter {
       return this._base;
   }
 
+  /**
+  * Gets the current value of field _base if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_baseOrElse(defaultValue: Element[]): Element[] {
+      if (this._base == undefined || this._base == null ) { return defaultValue; }
+      return this._base;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -1372,6 +1603,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getType(): string | undefined {
+      return this.type;
+  }
+
+  /**
+  * Gets the current value of field type if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTypeOrElse(defaultValue: string): string {
+      if (this.type == undefined || this.type == null ) { return defaultValue; }
       return this.type;
   }
 
@@ -1406,6 +1648,17 @@ export class SearchParameter {
       return this.expression;
   }
 
+  /**
+  * Gets the current value of field expression if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExpressionOrElse(defaultValue: string): string {
+      if (this.expression == undefined || this.expression == null ) { return defaultValue; }
+      return this.expression;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1434,6 +1687,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getXpath(): string | undefined {
+      return this.xpath;
+  }
+
+  /**
+  * Gets the current value of field xpath if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getXpathOrElse(defaultValue: string): string {
+      if (this.xpath == undefined || this.xpath == null ) { return defaultValue; }
       return this.xpath;
   }
 
@@ -1466,6 +1730,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getXpathUsage(): string | undefined {
+      return this.xpathUsage;
+  }
+
+  /**
+  * Gets the current value of field xpathUsage if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getXpathUsageOrElse(defaultValue: string): string {
+      if (this.xpathUsage == undefined || this.xpathUsage == null ) { return defaultValue; }
       return this.xpathUsage;
   }
 
@@ -1517,6 +1792,17 @@ export class SearchParameter {
       return this.target;
   }
 
+  /**
+  * Gets the current value of field target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getTargetOrElse(defaultValue: string[]): string[] {
+      if (this.target == undefined || this.target == null ) { return defaultValue; }
+      return this.target;
+  }
+
   public add_target(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._target) !== 'undefined') {
@@ -1562,6 +1848,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public get_target(): Element[] | undefined {
+      return this._target;
+  }
+
+  /**
+  * Gets the current value of field _target if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_targetOrElse(defaultValue: Element[]): Element[] {
+      if (this._target == undefined || this._target == null ) { return defaultValue; }
       return this._target;
   }
 
@@ -1613,6 +1910,17 @@ export class SearchParameter {
       return this.comparator;
   }
 
+  /**
+  * Gets the current value of field comparator if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getComparatorOrElse(defaultValue: string[]): string[] {
+      if (this.comparator == undefined || this.comparator == null ) { return defaultValue; }
+      return this.comparator;
+  }
+
   public add_comparator(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._comparator) !== 'undefined') {
@@ -1658,6 +1966,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public get_comparator(): Element[] | undefined {
+      return this._comparator;
+  }
+
+  /**
+  * Gets the current value of field _comparator if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_comparatorOrElse(defaultValue: Element[]): Element[] {
+      if (this._comparator == undefined || this._comparator == null ) { return defaultValue; }
       return this._comparator;
   }
 
@@ -1709,6 +2028,17 @@ export class SearchParameter {
       return this.modifier;
   }
 
+  /**
+  * Gets the current value of field modifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierOrElse(defaultValue: string[]): string[] {
+      if (this.modifier == undefined || this.modifier == null ) { return defaultValue; }
+      return this.modifier;
+  }
+
   public add_modifier(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._modifier) !== 'undefined') {
@@ -1754,6 +2084,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public get_modifier(): Element[] | undefined {
+      return this._modifier;
+  }
+
+  /**
+  * Gets the current value of field _modifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_modifierOrElse(defaultValue: Element[]): Element[] {
+      if (this._modifier == undefined || this._modifier == null ) { return defaultValue; }
       return this._modifier;
   }
 
@@ -1805,6 +2146,17 @@ export class SearchParameter {
       return this.chain;
   }
 
+  /**
+  * Gets the current value of field chain if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getChainOrElse(defaultValue: string[]): string[] {
+      if (this.chain == undefined || this.chain == null ) { return defaultValue; }
+      return this.chain;
+  }
+
   public add_chain(newValue: Element) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this._chain) !== 'undefined') {
@@ -1853,6 +2205,17 @@ export class SearchParameter {
       return this._chain;
   }
 
+  /**
+  * Gets the current value of field _chain if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_chainOrElse(defaultValue: Element[]): Element[] {
+      if (this._chain == undefined || this._chain == null ) { return defaultValue; }
+      return this._chain;
+  }
+
   public addComponent(newValue: SearchParameterComponent) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.component) !== 'undefined') {
@@ -1898,6 +2261,17 @@ export class SearchParameter {
   * @returns the value  or undefined
   */
   public getComponent(): SearchParameterComponent[] | undefined {
+      return this.component;
+  }
+
+  /**
+  * Gets the current value of field component if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getComponentOrElse(defaultValue: SearchParameterComponent[]): SearchParameterComponent[] {
+      if (this.component == undefined || this.component == null ) { return defaultValue; }
       return this.component;
   }
 

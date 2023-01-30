@@ -160,6 +160,17 @@ export class ImplementationGuideResource {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -205,6 +216,17 @@ export class ImplementationGuideResource {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -256,6 +278,17 @@ export class ImplementationGuideResource {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addFhirVersion(newValue: string) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.fhirVersion) !== 'undefined') {
@@ -301,6 +334,17 @@ export class ImplementationGuideResource {
   * @returns the value  or undefined
   */
   public getFhirVersion(): string[] | undefined {
+      return this.fhirVersion;
+  }
+
+  /**
+  * Gets the current value of field fhirVersion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getFhirVersionOrElse(defaultValue: string[]): string[] {
+      if (this.fhirVersion == undefined || this.fhirVersion == null ) { return defaultValue; }
       return this.fhirVersion;
   }
 
@@ -352,6 +396,17 @@ export class ImplementationGuideResource {
       return this._fhirVersion;
   }
 
+  /**
+  * Gets the current value of field _fhirVersion if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public get_fhirVersionOrElse(defaultValue: Element[]): Element[] {
+      if (this._fhirVersion == undefined || this._fhirVersion == null ) { return defaultValue; }
+      return this._fhirVersion;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -380,6 +435,17 @@ export class ImplementationGuideResource {
   * @returns the value  or undefined
   */
   public getName(): string | undefined {
+      return this.name;
+  }
+
+  /**
+  * Gets the current value of field name if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getNameOrElse(defaultValue: string): string {
+      if (this.name == undefined || this.name == null ) { return defaultValue; }
       return this.name;
   }
 
@@ -414,6 +480,17 @@ export class ImplementationGuideResource {
       return this.description;
   }
 
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
+      return this.description;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -445,6 +522,17 @@ export class ImplementationGuideResource {
       return this.exampleCanonical;
   }
 
+  /**
+  * Gets the current value of field exampleCanonical if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExampleCanonicalOrElse(defaultValue: string): string {
+      if (this.exampleCanonical == undefined || this.exampleCanonical == null ) { return defaultValue; }
+      return this.exampleCanonical;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -473,6 +561,17 @@ export class ImplementationGuideResource {
   * @returns the value  or undefined
   */
   public getGroupingId(): string | undefined {
+      return this.groupingId;
+  }
+
+  /**
+  * Gets the current value of field groupingId if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getGroupingIdOrElse(defaultValue: string): string {
+      if (this.groupingId == undefined || this.groupingId == null ) { return defaultValue; }
       return this.groupingId;
   }
 

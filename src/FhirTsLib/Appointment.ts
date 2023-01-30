@@ -500,6 +500,17 @@ export class Appointment {
       return this.id;
   }
 
+  /**
+  * Gets the current value of field id if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdOrElse(defaultValue: string): string {
+      if (this.id == undefined || this.id == null ) { return defaultValue; }
+      return this.id;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -531,6 +542,17 @@ export class Appointment {
       return this.implicitRules;
   }
 
+  /**
+  * Gets the current value of field implicitRules if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getImplicitRulesOrElse(defaultValue: string): string {
+      if (this.implicitRules == undefined || this.implicitRules == null ) { return defaultValue; }
+      return this.implicitRules;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -559,6 +581,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getLanguage(): string | undefined {
+      return this.language;
+  }
+
+  /**
+  * Gets the current value of field language if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getLanguageOrElse(defaultValue: string): string {
+      if (this.language == undefined || this.language == null ) { return defaultValue; }
       return this.language;
   }
 
@@ -610,6 +643,17 @@ export class Appointment {
       return this.contained;
   }
 
+  /**
+  * Gets the current value of field contained if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getContainedOrElse(defaultValue: ResourceList[]): ResourceList[] {
+      if (this.contained == undefined || this.contained == null ) { return defaultValue; }
+      return this.contained;
+  }
+
   public addExtension(newValue: Extension) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.extension) !== 'undefined') {
@@ -655,6 +699,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getExtension(): Extension[] | undefined {
+      return this.extension;
+  }
+
+  /**
+  * Gets the current value of field extension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.extension == undefined || this.extension == null ) { return defaultValue; }
       return this.extension;
   }
 
@@ -706,6 +761,17 @@ export class Appointment {
       return this.modifierExtension;
   }
 
+  /**
+  * Gets the current value of field modifierExtension if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getModifierExtensionOrElse(defaultValue: Extension[]): Extension[] {
+      if (this.modifierExtension == undefined || this.modifierExtension == null ) { return defaultValue; }
+      return this.modifierExtension;
+  }
+
   public addIdentifier(newValue: Identifier) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.identifier) !== 'undefined') {
@@ -754,6 +820,17 @@ export class Appointment {
       return this.identifier;
   }
 
+  /**
+  * Gets the current value of field identifier if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getIdentifierOrElse(defaultValue: Identifier[]): Identifier[] {
+      if (this.identifier == undefined || this.identifier == null ) { return defaultValue; }
+      return this.identifier;
+  }
+
   /*
   * This sets the data ensuring that the value is valid.  If not valid, it throws an error
   * that should be caught.
@@ -783,6 +860,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getStatus(): string | undefined {
+      return this.status;
+  }
+
+  /**
+  * Gets the current value of field status if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStatusOrElse(defaultValue: string): string {
+      if (this.status == undefined || this.status == null ) { return defaultValue; }
       return this.status;
   }
 
@@ -834,6 +922,17 @@ export class Appointment {
       return this.serviceCategory;
   }
 
+  /**
+  * Gets the current value of field serviceCategory if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getServiceCategoryOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.serviceCategory == undefined || this.serviceCategory == null ) { return defaultValue; }
+      return this.serviceCategory;
+  }
+
   public addServiceType(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.serviceType) !== 'undefined') {
@@ -879,6 +978,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getServiceType(): CodeableConcept[] | undefined {
+      return this.serviceType;
+  }
+
+  /**
+  * Gets the current value of field serviceType if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getServiceTypeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.serviceType == undefined || this.serviceType == null ) { return defaultValue; }
       return this.serviceType;
   }
 
@@ -930,6 +1040,17 @@ export class Appointment {
       return this.specialty;
   }
 
+  /**
+  * Gets the current value of field specialty if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSpecialtyOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.specialty == undefined || this.specialty == null ) { return defaultValue; }
+      return this.specialty;
+  }
+
   public addReasonCode(newValue: CodeableConcept) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.reasonCode) !== 'undefined') {
@@ -975,6 +1096,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getReasonCode(): CodeableConcept[] | undefined {
+      return this.reasonCode;
+  }
+
+  /**
+  * Gets the current value of field reasonCode if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonCodeOrElse(defaultValue: CodeableConcept[]): CodeableConcept[] {
+      if (this.reasonCode == undefined || this.reasonCode == null ) { return defaultValue; }
       return this.reasonCode;
   }
 
@@ -1026,6 +1158,17 @@ export class Appointment {
       return this.reasonReference;
   }
 
+  /**
+  * Gets the current value of field reasonReference if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getReasonReferenceOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.reasonReference == undefined || this.reasonReference == null ) { return defaultValue; }
+      return this.reasonReference;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1054,6 +1197,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getDescription(): string | undefined {
+      return this.description;
+  }
+
+  /**
+  * Gets the current value of field description if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getDescriptionOrElse(defaultValue: string): string {
+      if (this.description == undefined || this.description == null ) { return defaultValue; }
       return this.description;
   }
 
@@ -1105,6 +1259,17 @@ export class Appointment {
       return this.supportingInformation;
   }
 
+  /**
+  * Gets the current value of field supportingInformation if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSupportingInformationOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.supportingInformation == undefined || this.supportingInformation == null ) { return defaultValue; }
+      return this.supportingInformation;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1136,6 +1301,17 @@ export class Appointment {
       return this.start;
   }
 
+  /**
+  * Gets the current value of field start if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getStartOrElse(defaultValue: string): string {
+      if (this.start == undefined || this.start == null ) { return defaultValue; }
+      return this.start;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1164,6 +1340,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getEnd(): string | undefined {
+      return this.end;
+  }
+
+  /**
+  * Gets the current value of field end if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getEndOrElse(defaultValue: string): string {
+      if (this.end == undefined || this.end == null ) { return defaultValue; }
       return this.end;
   }
 
@@ -1215,6 +1402,17 @@ export class Appointment {
       return this.slot;
   }
 
+  /**
+  * Gets the current value of field slot if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getSlotOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.slot == undefined || this.slot == null ) { return defaultValue; }
+      return this.slot;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1243,6 +1441,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getCreated(): string | undefined {
+      return this.created;
+  }
+
+  /**
+  * Gets the current value of field created if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCreatedOrElse(defaultValue: string): string {
+      if (this.created == undefined || this.created == null ) { return defaultValue; }
       return this.created;
   }
 
@@ -1277,6 +1486,17 @@ export class Appointment {
       return this.comment;
   }
 
+  /**
+  * Gets the current value of field comment if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getCommentOrElse(defaultValue: string): string {
+      if (this.comment == undefined || this.comment == null ) { return defaultValue; }
+      return this.comment;
+  }
+
   /*
   * This sets the data ensuring that the value is valid pattern.  If not valid, it throws an error
   * that should be caught.
@@ -1305,6 +1525,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getPatientInstruction(): string | undefined {
+      return this.patientInstruction;
+  }
+
+  /**
+  * Gets the current value of field patientInstruction if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getPatientInstructionOrElse(defaultValue: string): string {
+      if (this.patientInstruction == undefined || this.patientInstruction == null ) { return defaultValue; }
       return this.patientInstruction;
   }
 
@@ -1356,6 +1587,17 @@ export class Appointment {
       return this.basedOn;
   }
 
+  /**
+  * Gets the current value of field basedOn if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getBasedOnOrElse(defaultValue: Reference[]): Reference[] {
+      if (this.basedOn == undefined || this.basedOn == null ) { return defaultValue; }
+      return this.basedOn;
+  }
+
   public addParticipant(newValue: AppointmentParticipant) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.participant) !== 'undefined') {
@@ -1404,6 +1646,17 @@ export class Appointment {
       return this.participant;
   }
 
+  /**
+  * Gets the current value of field participant if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getParticipantOrElse(defaultValue: AppointmentParticipant[]): AppointmentParticipant[] {
+      if (this.participant == undefined || this.participant == null ) { return defaultValue; }
+      return this.participant;
+  }
+
   public addRequestedPeriod(newValue: Period) {
     if (typeof(newValue) === 'undefined') {
       if (typeof(this.requestedPeriod) !== 'undefined') {
@@ -1449,6 +1702,17 @@ export class Appointment {
   * @returns the value  or undefined
   */
   public getRequestedPeriod(): Period[] | undefined {
+      return this.requestedPeriod;
+  }
+
+  /**
+  * Gets the current value of field requestedPeriod if it exists,
+  * but if it is 'undefined' it will return the value supplied
+  * as the parameter.
+  * @returns the value or the parameter value
+  */
+  public getRequestedPeriodOrElse(defaultValue: Period[]): Period[] {
+      if (this.requestedPeriod == undefined || this.requestedPeriod == null ) { return defaultValue; }
       return this.requestedPeriod;
   }
 
